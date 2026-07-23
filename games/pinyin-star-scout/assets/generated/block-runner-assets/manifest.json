@@ -1,0 +1,85 @@
+{
+  "source": "assets/generated/reference/pinyin-star-scout-asset-sheet-02-crisp-arcade.png",
+  "selectedParts": {
+    "board": "assets/generated/reference/pinyin-star-scout-selected-parts/part-01_438x420.png",
+    "scout": "assets/generated/reference/pinyin-star-scout-selected-parts/part-02_238x196.png",
+    "tile_yellow": "assets/generated/reference/pinyin-star-scout-selected-parts/part-03_203x190.png",
+    "tile_coral": "assets/generated/reference/pinyin-star-scout-selected-parts/part-04_205x193.png",
+    "tile_blue": "assets/generated/reference/pinyin-star-scout-selected-parts/part-05_201x194.png",
+    "star_badge": "assets/generated/reference/pinyin-star-scout-selected-parts/part-06_156x152.png",
+    "task_card": "assets/generated/reference/pinyin-star-scout-selected-parts/part-07_372x189.png",
+    "progress_strip": "assets/generated/reference/pinyin-star-scout-selected-parts/part-08_438x136.png",
+    "portal_gate": "assets/generated/reference/pinyin-star-scout-selected-parts/part-09_218x242.png",
+    "fx_combo": "assets/generated/reference/pinyin-star-scout-selected-parts/part-10_136x178.png",
+    "warning_cloud": "assets/generated/reference/pinyin-star-scout-selected-parts/part-11_246x188.png",
+    "star_shard": "assets/generated/reference/pinyin-star-scout-selected-parts/part-12_171x163.png",
+    "arrow_button": "assets/generated/reference/pinyin-star-scout-selected-parts/part-13_149x130.png"
+  },
+  "style": "star scout generated assets with local touch-ups",
+  "assets": [
+    {
+      "name": "arrow_hint_button",
+      "file": "assets/generated/block-runner-assets/arrow_hint_button.png"
+    },
+    {
+      "name": "board_12x12",
+      "file": "assets/generated/block-runner-assets/board_12x12.png"
+    },
+    {
+      "name": "cursor_token",
+      "file": "assets/generated/block-runner-assets/cursor_token.png"
+    },
+    {
+      "name": "hover_scout",
+      "file": "assets/generated/block-runner-assets/hover_scout.png"
+    },
+    {
+      "name": "pinyin_tile_blue",
+      "file": "assets/generated/block-runner-assets/pinyin_tile_blue.png"
+    },
+    {
+      "name": "pinyin_tile_coral",
+      "file": "assets/generated/block-runner-assets/pinyin_tile_coral.png"
+    },
+    {
+      "name": "pinyin_tile_mint",
+      "file": "assets/generated/block-runner-assets/pinyin_tile_mint.png"
+    },
+    {
+      "name": "pinyin_tile_yellow",
+      "file": "assets/generated/block-runner-assets/pinyin_tile_yellow.png"
+    },
+    {
+      "name": "portal_gate",
+      "file": "assets/generated/block-runner-assets/portal_gate.png"
+    },
+    {
+      "name": "progress_strip",
+      "file": "assets/generated/block-runner-assets/progress_strip.png"
+    },
+    {
+      "name": "sparkle_burst",
+      "file": "assets/generated/block-runner-assets/sparkle_burst.png"
+    },
+    {
+      "name": "star_badge",
+      "file": "assets/generated/block-runner-assets/star_badge.png"
+    },
+    {
+      "name": "star_shard",
+      "file": "assets/generated/block-runner-assets/star_shard.png"
+    },
+    {
+      "name": "task_card_plaque",
+      "file": "assets/generated/block-runner-assets/task_card_plaque.png"
+    },
+    {
+      "name": "trail_glow",
+      "file": "assets/generated/block-runner-assets/trail_glow.png"
+    },
+    {
+      "name": "warning_puff",
+      "file": "assets/generated/block-runner-assets/warning_puff.png"
+    }
+  ]
+}

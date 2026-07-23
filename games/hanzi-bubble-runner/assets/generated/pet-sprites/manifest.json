@@ -1,0 +1,107 @@
+{
+  "source": "G:\\StudyCode\\宠物积分系统\\prj\\汉字泡泡跑酷\\assets\\generated\\reference\\pet-sprite-sheet.png",
+  "frames": [
+    {
+      "name": "pet_idle",
+      "file": "G:\\StudyCode\\宠物积分系统\\prj\\汉字泡泡跑酷\\assets\\generated\\pet-sprites\\pet_idle.png",
+      "sourceCell": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "size": [
+        122,
+        160
+      ],
+      "opaquePixels": 7390,
+      "transparentPixels": 12130,
+      "transparentCorners": true
+    },
+    {
+      "name": "pet_run",
+      "file": "G:\\StudyCode\\宠物积分系统\\prj\\汉字泡泡跑酷\\assets\\generated\\pet-sprites\\pet_run.png",
+      "sourceCell": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "size": [
+        183,
+        165
+      ],
+      "opaquePixels": 6335,
+      "transparentPixels": 23860,
+      "transparentCorners": true
+    },
+    {
+      "name": "pet_jump",
+      "file": "G:\\StudyCode\\宠物积分系统\\prj\\汉字泡泡跑酷\\assets\\generated\\pet-sprites\\pet_jump.png",
+      "sourceCell": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "size": [
+        183,
+        156
+      ],
+      "opaquePixels": 6062,
+      "transparentPixels": 22486,
+      "transparentCorners": true
+    },
+    {
+      "name": "pet_catch",
+      "file": "G:\\StudyCode\\宠物积分系统\\prj\\汉字泡泡跑酷\\assets\\generated\\pet-sprites\\pet_catch.png",
+      "sourceCell": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "size": [
+        126,
+        146
+      ],
+      "opaquePixels": 6107,
+      "transparentPixels": 12289,
+      "transparentCorners": true
+    },
+    {
+      "name": "pet_hit",
+      "file": "G:\\StudyCode\\宠物积分系统\\prj\\汉字泡泡跑酷\\assets\\generated\\pet-sprites\\pet_hit.png",
+      "sourceCell": [
+        1024,
+        0,
+        256,
+        256
+      ],
+      "size": [
+        132,
+        160
+      ],
+      "opaquePixels": 4728,
+      "transparentPixels": 16392,
+      "transparentCorners": true
+    },
+    {
+      "name": "pet_celebrate",
+      "file": "G:\\StudyCode\\宠物积分系统\\prj\\汉字泡泡跑酷\\assets\\generated\\pet-sprites\\pet_celebrate.png",
+      "sourceCell": [
+        1280,
+        0,
+        256,
+        256
+      ],
+      "size": [
+        179,
+        160
+      ],
+      "opaquePixels": 7430,
+      "transparentPixels": 21210,
+      "transparentCorners": true
+    }
+  ]
+}

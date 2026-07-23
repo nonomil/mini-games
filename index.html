@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>小游戏项目</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="小游戏项目首页"><span class="brand-mark" aria-hidden="true">玩</span><span><strong>小游戏项目</strong><small>轻量挑战，独立运行</small></span></a>
+    <nav class="site-nav" aria-label="项目导航">
+      <a href="#games">游戏库</a>
+      <a href="#projects">项目互链</a>
+    </nav>
+    <span class="profile-badge" data-profile-label>独立游戏空间</span>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">MINI GAMES · STANDALONE</p>
+        <h1 id="page-title">选一项挑战，打开新窗口开始</h1>
+        <p class="hero-copy">汉字和拼音游戏各自独立运行，进度保存在本项目。由宠物积分总站启动时，完成一局后可回传完成事件。</p>
+      </div>
+      <div class="hero-note"><strong data-game-count>2</strong><span>款独立小游戏</span></div>
+    </section>
+
+    <div class="notice" data-notice aria-live="polite"></div>
+
+    <section id="games" class="section-block" aria-labelledby="games-title">
+      <div class="section-heading"><div><p class="eyebrow">GAME LIBRARY</p><h2 id="games-title">游戏库</h2></div><span class="section-caption">每款游戏在新页面打开</span></div>
+      <div class="game-grid" data-game-grid></div>
+    </section>
+
+    <section id="projects" class="section-block project-links" aria-labelledby="projects-title">
+      <div class="section-heading"><div><p class="eyebrow">CONNECTED PROJECTS</p><h2 id="projects-title">项目互链</h2></div></div>
+      <div class="link-row" data-project-links></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>小游戏项目只维护本项目游戏进度和完成记录。</span><span>生产发布地址待确认</span></footer>
+
+  <script src="./bridge.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

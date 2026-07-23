@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>汉字泡泡跑酷</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-game="hanzi-bubble-runner">
+  <main class="runner-shell">
+    <section class="runner-game" id="runnerGame" aria-label="汉字泡泡跑酷">
+      <div class="runner-scene" id="runnerScene">
+        <div class="parallax far"></div>
+        <div class="parallax near"></div>
+        <div class="cloud cloud-a"></div>
+        <div class="cloud cloud-b"></div>
+
+        <section class="mission-card" id="missionCard" aria-label="当前任务">
+          <img id="missionImage" alt="" src="../../assets/hanzi-img/山.webp">
+          <div>
+            <span id="missionPinyin">shan</span>
+            <strong id="missionSentence">我们一起去爬＿。</strong>
+          </div>
+          <button class="voice-button" id="voiceButton" type="button" aria-label="重听提示" title="重听提示">♪</button>
+        </section>
+
+        <section class="runner-hud" aria-label="游戏状态">
+          <span id="timeLeft">60s</span>
+          <span id="comboText">连击 0</span>
+          <span id="starText">0/12</span>
+          <span id="rankText">热身</span>
+        </section>
+        <div class="combo-meter" aria-hidden="true"><span id="comboFill"></span></div>
+        <div class="goal-meter" aria-hidden="true">
+          <span id="goalFill"></span>
+          <b id="goalLabel">目标 0/12</b>
+        </div>
+
+        <div class="lane-field" id="laneField" aria-label="跑酷轨道"></div>
+        <img class="runner-pet" id="runnerPet" src="../../assets/pet/bianmu.webp" alt="" aria-hidden="true">
+
+        <section class="start-panel" id="startPanel" aria-label="开始游戏">
+          <span>汉字泡泡跑酷</span>
+          <h1>听提示，接正确气泡</h1>
+          <p>60 秒短局。左右键换平台，空格跳起接气泡。</p>
+          <p class="best-line" id="bestLine">最佳 0/12 / 连击 0</p>
+          <button type="button" id="startButton">开始一局</button>
+        </section>
+
+        <section class="result-panel" id="resultPanel" hidden aria-label="本局结果">
+          <span>本局完成</span>
+          <div class="result-stars" id="resultStars" aria-hidden="true">☆☆☆</div>
+          <h2 id="resultTitle">获得 0 颗星</h2>
+          <p id="resultDetail">最高连击 0</p>
+          <p class="record-detail" id="recordDetail">最佳 0/12 / 连击 0</p>
+          <div class="review-list" id="reviewList"></div>
+          <button type="button" id="restartButton">再来一局</button>
+        </section>
+
+        <p class="runner-feedback" id="feedback">准备开始。</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="./game.js"></script>
+</body>
+</html>

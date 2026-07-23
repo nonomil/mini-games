@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "projectId": "mini-games",
+  "title": "小游戏项目",
+  "subtitle": "轻量挑战，独立运行",
+  "devProjectUrl": "http://127.0.0.1:7003/",
+  "projectUrl": "",
+  "games": [
+    {
+      "id": "hanzi-bubble-runner",
+      "title": "汉字泡泡跑酷",
+      "kicker": "汉字认读",
+      "description": "听提示、换平台、接住正确汉字气泡，在短局里练习认读和反应。",
+      "path": "games/hanzi-bubble-runner/",
+      "tags": ["听提示", "认字", "短局"],
+      "accent": "#dc765b"
+    },
+    {
+      "id": "pinyin-star-scout",
+      "title": "拼音星际巡航",
+      "kicker": "拼音拼读",
+      "description": "按顺序收集拼音块，让巡航小队穿过星门，完成一轮拼读任务。",
+      "path": "games/pinyin-star-scout/",
+      "tags": ["拼音", "语音", "探索"],
+      "accent": "#3caa9c"
+    }
+  ],
+  "links": {
+    "petbank": { "title": "宠物积分总站", "url": "", "devUrl": "http://127.0.0.1:7000/" },
+    "learningCenter": { "title": "学习中心", "url": "", "devUrl": "http://127.0.0.1:7001/" },
+    "picturebooks": { "title": "独立绘本馆", "url": "", "devUrl": "http://127.0.0.1:5174/picturebook-library/" },
+    "wordQuest": { "title": "单词远征", "url": "", "devUrl": "http://127.0.0.1:7002/" }
+  }
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>拼音巡航 | Star Scout</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css?v=star-scout-4">
+</head>
+<body>
+  <main class="runner-app" data-prototype="pinyin-star-scout">
+    <section class="game-surface" aria-label="拼音星际巡航">
+      <div class="surface-spark surface-spark-a" aria-hidden="true"></div>
+      <div class="surface-spark surface-spark-b" aria-hidden="true"></div>
+
+      <header class="topbar" aria-label="关卡状态">
+        <div class="title-cluster">
+          <span class="level-pill" id="levelText">第 1 关</span>
+          <div class="title-stack">
+            <p class="eyebrow">Star Scout</p>
+            <h1>拼音巡航</h1>
+          </div>
+        </div>
+
+        <section class="task-panel" aria-label="当前任务">
+          <img class="task-bg" src="./assets/generated/block-runner-assets/task_card_plaque.png" alt="">
+          <div class="char-frame">
+            <strong id="targetChar">山</strong>
+          </div>
+          <div class="task-copy">
+            <span id="targetPinyin" class="target-pinyin">shan</span>
+            <div id="pieceRow" class="piece-row"></div>
+          </div>
+          <div class="progress-meter" aria-hidden="true">
+            <img class="progress-bg" src="./assets/generated/block-runner-assets/progress_strip.png" alt="">
+            <span id="progressFill"></span>
+          </div>
+        </section>
+
+        <div class="score-strip" aria-label="星星统计">
+          <img class="score-shard score-shard-a" src="./assets/generated/block-runner-assets/star_shard.png" alt="">
+          <img class="score-shard score-shard-b" src="./assets/generated/block-runner-assets/star_shard.png" alt="">
+          <img src="./assets/generated/block-runner-assets/star_badge.png" alt="">
+          <div class="score-copy">
+            <span class="score-label">星星</span>
+            <strong id="score">0</strong>
+            <div class="star-row" id="starRow" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="topbar-actions" aria-label="语音控制">
+          <button type="button" class="topbar-icon-button" id="speakButton" aria-label="朗读当前任务" title="朗读当前任务">♪</button>
+        </div>
+      </header>
+
+      <section class="board-shell" aria-label="巡航棋盘">
+        <div class="board-stage">
+          <div class="board-stage__halo" aria-hidden="true"></div>
+          <div class="board-stage__shadow" aria-hidden="true"></div>
+          <div class="board" id="board"></div>
+        </div>
+        <img class="sparkle" id="sparkle" src="./assets/generated/block-runner-assets/sparkle_burst.png" alt="" hidden>
+        <img class="warning" id="warning" src="./assets/generated/block-runner-assets/warning_puff.png" alt="" hidden>
+      </section>
+
+      <aside class="bottom-hud" aria-label="即时反馈">
+        <div class="feedback-card">
+          <span>目标</span>
+          <strong id="feedback">sh</strong>
+        </div>
+        <div class="length-card">
+          <span>长度</span>
+          <strong id="lengthValue">3</strong>
+        </div>
+        <div class="control-band" aria-label="控制方式">
+          <div class="control-art">
+            <img src="./assets/generated/block-runner-assets/arrow_hint_button.png" alt="">
+          </div>
+          <div class="control-copy">
+            <p>方向 / WASD / IJKL</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <script src="./game.js?v=star-scout-4"></script>
+</body>
+</html>

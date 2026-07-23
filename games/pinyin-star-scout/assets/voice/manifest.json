@@ -1,0 +1,16 @@
+{
+  "prototypeId": "pinyin-star-scout",
+  "source": {
+    "id": "pinyin-star-scout",
+    "kind": "hanzi-questions",
+    "dataFile": "G:/StudyCode/宠物积分系统/data/hanzi-questions.json"
+  },
+  "title": "拼音块收集台原型",
+  "fields": [
+    "char",
+    "pinyin",
+    "example"
+  ],
+  "limit": 12,
+  "generatedCount": 35
+}

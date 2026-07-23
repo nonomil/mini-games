@@ -1,0 +1,235 @@
+{
+  "source": "assets/generated/reference/adventure-assets-sheet-magenta.png",
+  "alphaKey": "#ff00ff",
+  "method": "border-connected chroma flood remove",
+  "assets": [
+    {
+      "name": "platform_grass_round",
+      "file": "assets/generated/adventure-assets/platform_grass_round.png",
+      "grid": [
+        0,
+        0
+      ],
+      "crop": [
+        42,
+        79,
+        212,
+        183
+      ],
+      "size": [
+        212,
+        183
+      ],
+      "opaquePixels": 19100
+    },
+    {
+      "name": "platform_wood",
+      "file": "assets/generated/adventure-assets/platform_wood.png",
+      "grid": [
+        1,
+        0
+      ],
+      "crop": [
+        282,
+        85,
+        220,
+        175
+      ],
+      "size": [
+        220,
+        175
+      ],
+      "opaquePixels": 17665
+    },
+    {
+      "name": "platform_stone",
+      "file": "assets/generated/adventure-assets/platform_stone.png",
+      "grid": [
+        2,
+        0
+      ],
+      "crop": [
+        534,
+        93,
+        203,
+        166
+      ],
+      "size": [
+        203,
+        166
+      ],
+      "opaquePixels": 20765
+    },
+    {
+      "name": "platform_cloud",
+      "file": "assets/generated/adventure-assets/platform_cloud.png",
+      "grid": [
+        3,
+        0
+      ],
+      "crop": [
+        769,
+        81,
+        213,
+        158
+      ],
+      "size": [
+        213,
+        158
+      ],
+      "opaquePixels": 17634
+    },
+    {
+      "name": "platform_grass_small",
+      "file": "assets/generated/adventure-assets/platform_grass_small.png",
+      "grid": [
+        0,
+        1
+      ],
+      "crop": [
+        42,
+        421,
+        214,
+        175
+      ],
+      "size": [
+        214,
+        175
+      ],
+      "opaquePixels": 19082
+    },
+    {
+      "name": "bubble_normal",
+      "file": "assets/generated/adventure-assets/bubble_normal.png",
+      "grid": [
+        1,
+        1
+      ],
+      "crop": [
+        298,
+        407,
+        187,
+        189
+      ],
+      "size": [
+        187,
+        189
+      ],
+      "opaquePixels": 20741
+    },
+    {
+      "name": "bubble_gold",
+      "file": "assets/generated/adventure-assets/bubble_gold.png",
+      "grid": [
+        2,
+        1
+      ],
+      "crop": [
+        525,
+        391,
+        218,
+        291
+      ],
+      "size": [
+        218,
+        291
+      ],
+      "opaquePixels": 30380
+    },
+    {
+      "name": "bubble_success",
+      "file": "assets/generated/adventure-assets/bubble_success.png",
+      "grid": [
+        3,
+        1
+      ],
+      "crop": [
+        768,
+        393,
+        216,
+        217
+      ],
+      "size": [
+        216,
+        217
+      ],
+      "opaquePixels": 29123
+    },
+    {
+      "name": "reward_star",
+      "file": "assets/generated/adventure-assets/reward_star.png",
+      "grid": [
+        0,
+        2
+      ],
+      "crop": [
+        59,
+        769,
+        178,
+        170
+      ],
+      "size": [
+        178,
+        170
+      ],
+      "opaquePixels": 13665
+    },
+    {
+      "name": "sparkle_burst",
+      "file": "assets/generated/adventure-assets/sparkle_burst.png",
+      "grid": [
+        1,
+        2
+      ],
+      "crop": [
+        276,
+        779,
+        226,
+        148
+      ],
+      "size": [
+        226,
+        148
+      ],
+      "opaquePixels": 20638
+    },
+    {
+      "name": "mission_plaque",
+      "file": "assets/generated/adventure-assets/mission_plaque.png",
+      "grid": [
+        2,
+        2
+      ],
+      "crop": [
+        527,
+        682,
+        222,
+        243
+      ],
+      "size": [
+        222,
+        243
+      ],
+      "opaquePixels": 21154
+    },
+    {
+      "name": "hud_badge",
+      "file": "assets/generated/adventure-assets/hud_badge.png",
+      "grid": [
+        3,
+        2
+      ],
+      "crop": [
+        793,
+        771,
+        169,
+        175
+      ],
+      "size": [
+        169,
+        175
+      ],
+      "opaquePixels": 16694
+    }
+  ]
+}
