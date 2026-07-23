@@ -4,7 +4,7 @@
   "title": "小游戏项目",
   "subtitle": "轻量挑战，独立运行",
   "devProjectUrl": "http://127.0.0.1:7003/",
-  "projectUrl": "",
+  "projectUrl": "https://nonomil.github.io/mini-games/",
   "games": [
     {
       "id": "hanzi-bubble-runner",
@@ -26,9 +26,9 @@
     }
   ],
   "links": {
-    "petbank": { "title": "宠物积分总站", "url": "", "devUrl": "http://127.0.0.1:7000/" },
-    "learningCenter": { "title": "学习中心", "url": "", "devUrl": "http://127.0.0.1:7001/" },
-    "picturebooks": { "title": "独立绘本馆", "url": "", "devUrl": "http://127.0.0.1:5174/picturebook-library/" },
-    "wordQuest": { "title": "单词远征", "url": "", "devUrl": "http://127.0.0.1:7002/" }
+    "petbank": { "title": "宠物积分总站", "url": "https://nonomil.github.io/pet-bank/", "devUrl": "http://127.0.0.1:7000/" },
+    "learningCenter": { "title": "学习中心", "url": "https://nonomil.github.io/learning-center/", "devUrl": "http://127.0.0.1:7001/" },
+    "picturebooks": { "title": "独立绘本馆", "url": "https://nonomil.github.io/picturebook-library/", "devUrl": "http://127.0.0.1:5174/picturebook-library/" },
+    "wordQuest": { "title": "单词远征", "url": "https://nonomil.github.io/word-quest-learning-game/", "devUrl": "http://127.0.0.1:7002/" }
   }
 }
