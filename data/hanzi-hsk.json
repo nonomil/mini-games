@@ -1,0 +1,9928 @@
+{
+  "source": "HSK 3.0 Level 1",
+  "version": "1.0",
+  "generated": "2026-07-02",
+  "note": "由 scripts/generators/gen_hanzi_hsk.py 从 ivankra/hsk30 词表生成。词组填空 example 用「？+剩余字」占位（免 LLM）；单字题 example 留空待 E3 SiliconFlow API 补；单字 pinyin 为词级占位，待 E3 校准。",
+  "levels": {
+    "hsk1": [
+      {
+        "type": "fill-blank",
+        "word": "爱好",
+        "pinyin": "àihào",
+        "pos": "V/N",
+        "emoji": "",
+        "example": "爱？",
+        "answer": "好",
+        "opts": [
+          "南",
+          "好",
+          "去",
+          "准"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "白天",
+        "pinyin": "báitiān",
+        "pos": "N",
+        "emoji": "",
+        "example": "白？",
+        "answer": "天",
+        "opts": [
+          "客",
+          "天",
+          "谢",
+          "非"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "半年",
+        "pinyin": "bàn nián",
+        "pos": "",
+        "emoji": "",
+        "example": "半？",
+        "answer": "年",
+        "opts": [
+          "她",
+          "班",
+          "年",
+          "飞"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "半天",
+        "pinyin": "bàntiān",
+        "pos": "",
+        "emoji": "",
+        "example": "半？",
+        "answer": "天",
+        "opts": [
+          "机",
+          "间",
+          "天",
+          "今"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "帮忙",
+        "pinyin": "bāngmáng",
+        "pos": "",
+        "emoji": "",
+        "example": "帮？",
+        "answer": "忙",
+        "opts": [
+          "忙",
+          "的",
+          "非",
+          "校"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "包子",
+        "pinyin": "bāozi",
+        "pos": "N",
+        "emoji": "",
+        "example": "包？",
+        "answer": "子",
+        "opts": [
+          "子",
+          "门",
+          "校",
+          "西"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "杯子",
+        "pinyin": "bēizi",
+        "pos": "N",
+        "emoji": "",
+        "example": "杯？",
+        "answer": "子",
+        "opts": [
+          "话",
+          "今",
+          "子",
+          "妈"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "北边",
+        "pinyin": "běibian",
+        "pos": "N",
+        "emoji": "",
+        "example": "北？",
+        "answer": "边",
+        "opts": [
+          "都",
+          "床",
+          "国",
+          "边"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "北京",
+        "pinyin": "Běijīng",
+        "pos": "N",
+        "emoji": "",
+        "example": "北？",
+        "answer": "京",
+        "opts": [
+          "六",
+          "个",
+          "元",
+          "京"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "本子",
+        "pinyin": "běnzi",
+        "pos": "N",
+        "emoji": "",
+        "example": "本？",
+        "answer": "子",
+        "opts": [
+          "都",
+          "子",
+          "六",
+          "条"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "别的",
+        "pinyin": "biéde",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "别？",
+        "answer": "的",
+        "opts": [
+          "毛",
+          "的",
+          "叫",
+          "左"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "别人",
+        "pinyin": "biérén",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "别？",
+        "answer": "人",
+        "opts": [
+          "现",
+          "假",
+          "人",
+          "十"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "病人",
+        "pinyin": "bìngrén",
+        "pos": "N",
+        "emoji": "",
+        "example": "病？",
+        "answer": "人",
+        "opts": [
+          "人",
+          "火",
+          "说",
+          "文"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "不大",
+        "pinyin": "bù dà",
+        "pos": "",
+        "emoji": "",
+        "example": "不？",
+        "answer": "大",
+        "opts": [
+          "大",
+          "房",
+          "送",
+          "歌"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "不对",
+        "pinyin": "bùduì",
+        "pos": "Adj",
+        "emoji": "",
+        "example": "不？",
+        "answer": "对",
+        "opts": [
+          "方",
+          "笑",
+          "对",
+          "事"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "不客气",
+        "pinyin": "bù kèqì",
+        "pos": "",
+        "emoji": "",
+        "example": "不客？",
+        "answer": "气",
+        "opts": [
+          "姐",
+          "别",
+          "些",
+          "气"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "不用",
+        "pinyin": "bùyòng",
+        "pos": "Adv",
+        "emoji": "",
+        "example": "不？",
+        "answer": "用",
+        "opts": [
+          "用",
+          "西",
+          "里",
+          "再"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "常常",
+        "pinyin": "chángcháng",
+        "pos": "Adv",
+        "emoji": "",
+        "example": "常？",
+        "answer": "常",
+        "opts": [
+          "肉",
+          "常",
+          "差",
+          "比"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "唱歌",
+        "pinyin": "chànggē",
+        "pos": "",
+        "emoji": "",
+        "example": "唱？",
+        "answer": "歌",
+        "opts": [
+          "歌",
+          "话",
+          "生",
+          "会"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "车票",
+        "pinyin": "chēpiào",
+        "pos": "N",
+        "emoji": "",
+        "example": "车？",
+        "answer": "票",
+        "opts": [
+          "票",
+          "包",
+          "点",
+          "零"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "车上",
+        "pinyin": "chē shang",
+        "pos": "",
+        "emoji": "",
+        "example": "车？",
+        "answer": "上",
+        "opts": [
+          "记",
+          "习",
+          "放",
+          "上"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "车站",
+        "pinyin": "chēzhàn",
+        "pos": "N",
+        "emoji": "",
+        "example": "车？",
+        "answer": "站",
+        "opts": [
+          "站",
+          "哥",
+          "杯",
+          "生"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "吃饭",
+        "pinyin": "chīfàn",
+        "pos": "",
+        "emoji": "",
+        "example": "吃？",
+        "answer": "饭",
+        "opts": [
+          "床",
+          "饭",
+          "关",
+          "用"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "出来",
+        "pinyin": "chūlái",
+        "pos": "",
+        "emoji": "",
+        "example": "出？",
+        "answer": "来",
+        "opts": [
+          "白",
+          "来",
+          "分",
+          "也"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "出去",
+        "pinyin": "chūqù",
+        "pos": "",
+        "emoji": "",
+        "example": "出？",
+        "answer": "去",
+        "opts": [
+          "去",
+          "天",
+          "四",
+          "气"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "打车",
+        "pinyin": "dǎchē",
+        "pos": "",
+        "emoji": "",
+        "example": "打？",
+        "answer": "车",
+        "opts": [
+          "好",
+          "车",
+          "买",
+          "体"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "打电话",
+        "pinyin": "dǎ diànhuà",
+        "pos": "",
+        "emoji": "",
+        "example": "打电？",
+        "answer": "话",
+        "opts": [
+          "话",
+          "汉",
+          "您",
+          "绍"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "打开",
+        "pinyin": "dǎkāi",
+        "pos": "",
+        "emoji": "",
+        "example": "打？",
+        "answer": "开",
+        "opts": [
+          "呢",
+          "饭",
+          "开",
+          "孩"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "打球",
+        "pinyin": "dǎ qiú",
+        "pos": "",
+        "emoji": "",
+        "example": "打？",
+        "answer": "球",
+        "opts": [
+          "肉",
+          "果",
+          "睡",
+          "球"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "大学",
+        "pinyin": "dàxué",
+        "pos": "N",
+        "emoji": "",
+        "example": "大？",
+        "answer": "学",
+        "opts": [
+          "开",
+          "学",
+          "比",
+          "米"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "大学生",
+        "pinyin": "dàxuéshēng",
+        "pos": "N",
+        "emoji": "",
+        "example": "大学？",
+        "answer": "生",
+        "opts": [
+          "年",
+          "生",
+          "子",
+          "进"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "得到",
+        "pinyin": "dédào",
+        "pos": "",
+        "emoji": "",
+        "example": "得？",
+        "answer": "到",
+        "opts": [
+          "到",
+          "时",
+          "最",
+          "右"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "地点",
+        "pinyin": "dìdiǎn",
+        "pos": "N",
+        "emoji": "",
+        "example": "地？",
+        "answer": "点",
+        "opts": [
+          "渴",
+          "馆",
+          "点",
+          "友"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "地方",
+        "pinyin": "dìfang",
+        "pos": "N",
+        "emoji": "",
+        "example": "地？",
+        "answer": "方",
+        "opts": [
+          "白",
+          "星",
+          "方",
+          "慢"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "地上",
+        "pinyin": "dìshang",
+        "pos": "",
+        "emoji": "",
+        "example": "地？",
+        "answer": "上",
+        "opts": [
+          "上",
+          "文",
+          "院",
+          "样"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "地图",
+        "pinyin": "dìtú",
+        "pos": "N",
+        "emoji": "",
+        "example": "地？",
+        "answer": "图",
+        "opts": [
+          "图",
+          "人",
+          "包",
+          "会"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "电话",
+        "pinyin": "diànhuà",
+        "pos": "N",
+        "emoji": "",
+        "example": "电？",
+        "answer": "话",
+        "opts": [
+          "百",
+          "手",
+          "话",
+          "找"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "电脑",
+        "pinyin": "diànnǎo",
+        "pos": "N",
+        "emoji": "",
+        "example": "电？",
+        "answer": "脑",
+        "opts": [
+          "脑",
+          "校",
+          "说",
+          "几"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "电视",
+        "pinyin": "diànshì",
+        "pos": "N",
+        "emoji": "",
+        "example": "电？",
+        "answer": "视",
+        "opts": [
+          "校",
+          "慢",
+          "视",
+          "午"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "电视机",
+        "pinyin": "diànshìjī",
+        "pos": "N",
+        "emoji": "",
+        "example": "电视？",
+        "answer": "机",
+        "opts": [
+          "视",
+          "网",
+          "兴",
+          "机"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "电影",
+        "pinyin": "diànyǐng",
+        "pos": "N",
+        "emoji": "",
+        "example": "电？",
+        "answer": "影",
+        "opts": [
+          "跟",
+          "影",
+          "火",
+          "差"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "电影院",
+        "pinyin": "diànyǐngyuàn",
+        "pos": "N",
+        "emoji": "",
+        "example": "电影？",
+        "answer": "院",
+        "opts": [
+          "明",
+          "方",
+          "热",
+          "院"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "东边",
+        "pinyin": "dōngbian",
+        "pos": "N",
+        "emoji": "",
+        "example": "东？",
+        "answer": "边",
+        "opts": [
+          "字",
+          "友",
+          "鸡",
+          "边"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "东西",
+        "pinyin": "dōngxi",
+        "pos": "N",
+        "emoji": "",
+        "example": "东？",
+        "answer": "西",
+        "opts": [
+          "奶",
+          "的",
+          "网",
+          "西"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "动作",
+        "pinyin": "dòngzuò",
+        "pos": "N",
+        "emoji": "",
+        "example": "动？",
+        "answer": "作",
+        "opts": [
+          "请",
+          "写",
+          "菜",
+          "作"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "读书",
+        "pinyin": "dúshū",
+        "pos": "",
+        "emoji": "",
+        "example": "读？",
+        "answer": "书",
+        "opts": [
+          "书",
+          "哥",
+          "前",
+          "友"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "对不起",
+        "pinyin": "duìbuqǐ",
+        "pos": "V",
+        "emoji": "",
+        "example": "对不？",
+        "answer": "起",
+        "opts": [
+          "馆",
+          "送",
+          "起",
+          "考"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "多少",
+        "pinyin": "duōshao",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "多？",
+        "answer": "少",
+        "opts": [
+          "午",
+          "少",
+          "忙",
+          "明"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "儿子",
+        "pinyin": "érzi",
+        "pos": "N",
+        "emoji": "",
+        "example": "儿？",
+        "answer": "子",
+        "opts": [
+          "饿",
+          "做",
+          "很",
+          "子"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "饭店",
+        "pinyin": "fàndiàn",
+        "pos": "N",
+        "emoji": "",
+        "example": "饭？",
+        "answer": "店",
+        "opts": [
+          "放",
+          "商",
+          "兴",
+          "店"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "房间",
+        "pinyin": "fángjiān",
+        "pos": "N",
+        "emoji": "",
+        "example": "房？",
+        "answer": "间",
+        "opts": [
+          "客",
+          "间",
+          "样",
+          "怎"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "房子",
+        "pinyin": "fángzi",
+        "pos": "N",
+        "emoji": "",
+        "example": "房？",
+        "answer": "子",
+        "opts": [
+          "零",
+          "都",
+          "很",
+          "子"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "放假",
+        "pinyin": "fàngjià",
+        "pos": "",
+        "emoji": "",
+        "example": "放？",
+        "answer": "假",
+        "opts": [
+          "白",
+          "假",
+          "干",
+          "地"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "放学",
+        "pinyin": "fàngxué",
+        "pos": "",
+        "emoji": "",
+        "example": "放？",
+        "answer": "学",
+        "opts": [
+          "玩",
+          "休",
+          "学",
+          "诉"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "飞机",
+        "pinyin": "fēijī",
+        "pos": "N",
+        "emoji": "",
+        "example": "飞？",
+        "answer": "机",
+        "opts": [
+          "机",
+          "马",
+          "菜",
+          "班"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "非常",
+        "pinyin": "fēicháng",
+        "pos": "Adv",
+        "emoji": "",
+        "example": "非？",
+        "answer": "常",
+        "opts": [
+          "欢",
+          "常",
+          "左",
+          "休"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "干净",
+        "pinyin": "gānjìng",
+        "pos": "Adj",
+        "emoji": "",
+        "example": "干？",
+        "answer": "净",
+        "opts": [
+          "净",
+          "东",
+          "哪",
+          "男"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "干什么",
+        "pinyin": "gàn shénme",
+        "pos": "",
+        "emoji": "",
+        "example": "干什？",
+        "answer": "么",
+        "opts": [
+          "您",
+          "没",
+          "么",
+          "上"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "高兴",
+        "pinyin": "gāoxìng",
+        "pos": "Adj",
+        "emoji": "",
+        "example": "高？",
+        "answer": "兴",
+        "opts": [
+          "兴",
+          "对",
+          "问",
+          "备"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "告诉",
+        "pinyin": "gàosu",
+        "pos": "V",
+        "emoji": "",
+        "example": "告？",
+        "answer": "诉",
+        "opts": [
+          "哪",
+          "诉",
+          "外",
+          "那"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "工人",
+        "pinyin": "gōngrén",
+        "pos": "N",
+        "emoji": "",
+        "example": "工？",
+        "answer": "人",
+        "opts": [
+          "绍",
+          "人",
+          "的",
+          "第"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "工作",
+        "pinyin": "gōngzuò",
+        "pos": "V/N",
+        "emoji": "",
+        "example": "工？",
+        "answer": "作",
+        "opts": [
+          "作",
+          "馆",
+          "商",
+          "班"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "关上",
+        "pinyin": "guānshang",
+        "pos": "",
+        "emoji": "",
+        "example": "关？",
+        "answer": "上",
+        "opts": [
+          "行",
+          "息",
+          "上",
+          "期"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "国家",
+        "pinyin": "guójiā",
+        "pos": "N",
+        "emoji": "",
+        "example": "国？",
+        "answer": "家",
+        "opts": [
+          "女",
+          "放",
+          "店",
+          "家"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "国外",
+        "pinyin": "guó wài",
+        "pos": "",
+        "emoji": "",
+        "example": "国？",
+        "answer": "外",
+        "opts": [
+          "外",
+          "能",
+          "肉",
+          "那"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "还是",
+        "pinyin": "háishi",
+        "pos": "Adv/Conj",
+        "emoji": "",
+        "example": "还？",
+        "answer": "是",
+        "opts": [
+          "门",
+          "床",
+          "是",
+          "爱"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "还有",
+        "pinyin": "hái yǒu",
+        "pos": "",
+        "emoji": "",
+        "example": "还？",
+        "answer": "有",
+        "opts": [
+          "有",
+          "们",
+          "慢",
+          "动"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "孩子",
+        "pinyin": "háizi",
+        "pos": "N",
+        "emoji": "",
+        "example": "孩？",
+        "answer": "子",
+        "opts": [
+          "吧",
+          "票",
+          "校",
+          "子"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "汉语",
+        "pinyin": "Hànyǔ",
+        "pos": "N",
+        "emoji": "",
+        "example": "汉？",
+        "answer": "语",
+        "opts": [
+          "忘",
+          "语",
+          "汽",
+          "个"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "汉字",
+        "pinyin": "Hànzì",
+        "pos": "N",
+        "emoji": "",
+        "example": "汉？",
+        "answer": "字",
+        "opts": [
+          "男",
+          "字",
+          "对",
+          "知"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "好吃",
+        "pinyin": "hǎochī",
+        "pos": "Adj",
+        "emoji": "",
+        "example": "好？",
+        "answer": "吃",
+        "opts": [
+          "笑",
+          "吃",
+          "也",
+          "识"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "好看",
+        "pinyin": "hǎokàn",
+        "pos": "Adj",
+        "emoji": "",
+        "example": "好？",
+        "answer": "看",
+        "opts": [
+          "病",
+          "叫",
+          "说",
+          "看"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "好听",
+        "pinyin": "hǎotīng",
+        "pos": "Adj",
+        "emoji": "",
+        "example": "好？",
+        "answer": "听",
+        "opts": [
+          "车",
+          "听",
+          "站",
+          "左"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "好玩儿",
+        "pinyin": "hǎowánr",
+        "pos": "Adj",
+        "emoji": "",
+        "example": "好玩？",
+        "answer": "儿",
+        "opts": [
+          "妈",
+          "条",
+          "半",
+          "儿"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "后边",
+        "pinyin": "hòubian",
+        "pos": "N",
+        "emoji": "",
+        "example": "后？",
+        "answer": "边",
+        "opts": [
+          "边",
+          "树",
+          "都",
+          "进"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "后天",
+        "pinyin": "hòutiān",
+        "pos": "N",
+        "emoji": "",
+        "example": "后？",
+        "answer": "天",
+        "opts": [
+          "九",
+          "吗",
+          "今",
+          "天"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "回答",
+        "pinyin": "huídá",
+        "pos": "V/N",
+        "emoji": "",
+        "example": "回？",
+        "answer": "答",
+        "opts": [
+          "球",
+          "难",
+          "汉",
+          "答"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "回到",
+        "pinyin": "huídào",
+        "pos": "V",
+        "emoji": "",
+        "example": "回？",
+        "answer": "到",
+        "opts": [
+          "到",
+          "两",
+          "写",
+          "觉"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "回家",
+        "pinyin": "huí jiā",
+        "pos": "",
+        "emoji": "",
+        "example": "回？",
+        "answer": "家",
+        "opts": [
+          "岁",
+          "们",
+          "场",
+          "家"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "回来",
+        "pinyin": "huílái",
+        "pos": "",
+        "emoji": "",
+        "example": "回？",
+        "answer": "来",
+        "opts": [
+          "来",
+          "过",
+          "慢",
+          "我"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "回去",
+        "pinyin": "huíqù",
+        "pos": "",
+        "emoji": "",
+        "example": "回？",
+        "answer": "去",
+        "opts": [
+          "去",
+          "妈",
+          "错",
+          "二"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "火车",
+        "pinyin": "huǒchē",
+        "pos": "N",
+        "emoji": "",
+        "example": "火？",
+        "answer": "车",
+        "opts": [
+          "就",
+          "能",
+          "车",
+          "姐"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "机场",
+        "pinyin": "jīchǎng",
+        "pos": "N",
+        "emoji": "",
+        "example": "机？",
+        "answer": "场",
+        "opts": [
+          "场",
+          "过",
+          "从",
+          "他"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "机票",
+        "pinyin": "jīpiào",
+        "pos": "N",
+        "emoji": "",
+        "example": "机？",
+        "answer": "票",
+        "opts": [
+          "票",
+          "住",
+          "很",
+          "他"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "鸡蛋",
+        "pinyin": "jīdàn",
+        "pos": "N",
+        "emoji": "",
+        "example": "鸡？",
+        "answer": "蛋",
+        "opts": [
+          "姐",
+          "蛋",
+          "作",
+          "忙"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "记得",
+        "pinyin": "jìde",
+        "pos": "V",
+        "emoji": "",
+        "example": "记？",
+        "answer": "得",
+        "opts": [
+          "四",
+          "得",
+          "分",
+          "两"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "记住",
+        "pinyin": "jìzhù",
+        "pos": "",
+        "emoji": "",
+        "example": "记？",
+        "answer": "住",
+        "opts": [
+          "认",
+          "国",
+          "冷",
+          "住"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "家里",
+        "pinyin": "jiā li",
+        "pos": "",
+        "emoji": "",
+        "example": "家？",
+        "answer": "里",
+        "opts": [
+          "生",
+          "里",
+          "本",
+          "假"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "家人",
+        "pinyin": "jiārén",
+        "pos": "N",
+        "emoji": "",
+        "example": "家？",
+        "answer": "人",
+        "opts": [
+          "影",
+          "高",
+          "人",
+          "关"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "见面",
+        "pinyin": "jiànmiàn",
+        "pos": "",
+        "emoji": "",
+        "example": "见？",
+        "answer": "面",
+        "opts": [
+          "前",
+          "记",
+          "面",
+          "七"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "教学楼",
+        "pinyin": "jiàoxuélóu",
+        "pos": "N",
+        "emoji": "",
+        "example": "教学？",
+        "answer": "楼",
+        "opts": [
+          "爸",
+          "白",
+          "的",
+          "楼"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "介绍",
+        "pinyin": "jièshào",
+        "pos": "V",
+        "emoji": "",
+        "example": "介？",
+        "answer": "绍",
+        "opts": [
+          "爸",
+          "家",
+          "绍",
+          "名"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "今年",
+        "pinyin": "jīnnián",
+        "pos": "N",
+        "emoji": "",
+        "example": "今？",
+        "answer": "年",
+        "opts": [
+          "哪",
+          "两",
+          "问",
+          "年"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "今天",
+        "pinyin": "jīntiān",
+        "pos": "N",
+        "emoji": "",
+        "example": "今？",
+        "answer": "天",
+        "opts": [
+          "楼",
+          "视",
+          "天",
+          "床"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "进来",
+        "pinyin": "jìnlái",
+        "pos": "",
+        "emoji": "",
+        "example": "进？",
+        "answer": "来",
+        "opts": [
+          "票",
+          "来",
+          "老",
+          "要"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "进去",
+        "pinyin": "jìnqù",
+        "pos": "",
+        "emoji": "",
+        "example": "进？",
+        "answer": "去",
+        "opts": [
+          "去",
+          "间",
+          "喜",
+          "人"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "觉得",
+        "pinyin": "juéde",
+        "pos": "V",
+        "emoji": "",
+        "example": "觉？",
+        "answer": "得",
+        "opts": [
+          "得",
+          "喝",
+          "么",
+          "外"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "开车",
+        "pinyin": "kāichē",
+        "pos": "",
+        "emoji": "",
+        "example": "开？",
+        "answer": "车",
+        "opts": [
+          "别",
+          "午",
+          "车",
+          "重"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "开会",
+        "pinyin": "kāihuì",
+        "pos": "",
+        "emoji": "",
+        "example": "开？",
+        "answer": "会",
+        "opts": [
+          "子",
+          "息",
+          "会",
+          "准"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "开玩笑",
+        "pinyin": "kāi wánxiào",
+        "pos": "",
+        "emoji": "",
+        "example": "开玩？",
+        "answer": "笑",
+        "opts": [
+          "笑",
+          "喝",
+          "想",
+          "楼"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "看病",
+        "pinyin": "kànbìng",
+        "pos": "",
+        "emoji": "",
+        "example": "看？",
+        "answer": "病",
+        "opts": [
+          "净",
+          "早",
+          "病",
+          "样"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "看到",
+        "pinyin": "kàndào",
+        "pos": "",
+        "emoji": "",
+        "example": "看？",
+        "answer": "到",
+        "opts": [
+          "到",
+          "日",
+          "牛",
+          "晚"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "看见",
+        "pinyin": "kànjiàn",
+        "pos": "",
+        "emoji": "",
+        "example": "看？",
+        "answer": "见",
+        "opts": [
+          "进",
+          "给",
+          "见",
+          "前"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "考试",
+        "pinyin": "kǎoshì",
+        "pos": "",
+        "emoji": "",
+        "example": "考？",
+        "answer": "试",
+        "opts": [
+          "毛",
+          "脑",
+          "试",
+          "天"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "课本",
+        "pinyin": "kèběn",
+        "pos": "N",
+        "emoji": "",
+        "example": "课？",
+        "answer": "本",
+        "opts": [
+          "些",
+          "病",
+          "先",
+          "本"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "课文",
+        "pinyin": "kèwén",
+        "pos": "N",
+        "emoji": "",
+        "example": "课？",
+        "answer": "文",
+        "opts": [
+          "息",
+          "中",
+          "慢",
+          "文"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "来到",
+        "pinyin": "láidào",
+        "pos": "V",
+        "emoji": "",
+        "example": "来？",
+        "answer": "到",
+        "opts": [
+          "找",
+          "到",
+          "昨",
+          "认"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "老人",
+        "pinyin": "lǎorén",
+        "pos": "N",
+        "emoji": "",
+        "example": "老？",
+        "answer": "人",
+        "opts": [
+          "爷",
+          "记",
+          "渴",
+          "人"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "老师",
+        "pinyin": "lǎoshī",
+        "pos": "N",
+        "emoji": "",
+        "example": "老？",
+        "answer": "师",
+        "opts": [
+          "蛋",
+          "干",
+          "师",
+          "找"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "里边",
+        "pinyin": "lǐbian",
+        "pos": "N",
+        "emoji": "",
+        "example": "里？",
+        "answer": "边",
+        "opts": [
+          "气",
+          "爷",
+          "两",
+          "边"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "楼上",
+        "pinyin": "lóu shàng",
+        "pos": "",
+        "emoji": "",
+        "example": "楼？",
+        "answer": "上",
+        "opts": [
+          "上",
+          "八",
+          "我",
+          "去"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "楼下",
+        "pinyin": "lóu xià",
+        "pos": "",
+        "emoji": "",
+        "example": "楼？",
+        "answer": "下",
+        "opts": [
+          "睡",
+          "问",
+          "书",
+          "下"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "路口",
+        "pinyin": "lùkǒu",
+        "pos": "N",
+        "emoji": "",
+        "example": "路？",
+        "answer": "口",
+        "opts": [
+          "网",
+          "汉",
+          "喜",
+          "口"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "路上",
+        "pinyin": "lùshang",
+        "pos": "N",
+        "emoji": "",
+        "example": "路？",
+        "answer": "上",
+        "opts": [
+          "南",
+          "上",
+          "呢",
+          "边"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "马路",
+        "pinyin": "mǎlù",
+        "pos": "N",
+        "emoji": "",
+        "example": "马？",
+        "answer": "路",
+        "opts": [
+          "谁",
+          "路",
+          "饿",
+          "毛"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "马上",
+        "pinyin": "mǎshàng",
+        "pos": "Adv",
+        "emoji": "",
+        "example": "马？",
+        "answer": "上",
+        "opts": [
+          "六",
+          "远",
+          "上",
+          "谁"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "没关系",
+        "pinyin": "méi guānxi",
+        "pos": "",
+        "emoji": "",
+        "example": "没关？",
+        "answer": "系",
+        "opts": [
+          "送",
+          "系",
+          "站",
+          "页"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "没什么",
+        "pinyin": "méi shénme",
+        "pos": "",
+        "emoji": "",
+        "example": "没什？",
+        "answer": "么",
+        "opts": [
+          "么",
+          "得",
+          "难",
+          "记"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "没事儿",
+        "pinyin": "méishìr",
+        "pos": "",
+        "emoji": "",
+        "example": "没事？",
+        "answer": "儿",
+        "opts": [
+          "她",
+          "网",
+          "儿",
+          "去"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "没有",
+        "pinyin": "méiyǒu",
+        "pos": "V/Adv",
+        "emoji": "",
+        "example": "没？",
+        "answer": "有",
+        "opts": [
+          "诉",
+          "有",
+          "雨",
+          "出"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "门口",
+        "pinyin": "ménkǒu",
+        "pos": "N",
+        "emoji": "",
+        "example": "门？",
+        "answer": "口",
+        "opts": [
+          "树",
+          "次",
+          "太",
+          "口"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "门票",
+        "pinyin": "ménpiào",
+        "pos": "N",
+        "emoji": "",
+        "example": "门？",
+        "answer": "票",
+        "opts": [
+          "饭",
+          "听",
+          "票",
+          "路"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "们朋友们",
+        "pinyin": "men (péngyoumen)",
+        "pos": "Suffix",
+        "emoji": "",
+        "example": "们朋友？",
+        "answer": "们",
+        "opts": [
+          "友",
+          "手",
+          "开",
+          "们"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "米饭",
+        "pinyin": "mǐfàn",
+        "pos": "N",
+        "emoji": "",
+        "example": "米？",
+        "answer": "饭",
+        "opts": [
+          "谁",
+          "零",
+          "饭",
+          "六"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "面包",
+        "pinyin": "miànbāo",
+        "pos": "N",
+        "emoji": "",
+        "example": "面？",
+        "answer": "包",
+        "opts": [
+          "页",
+          "包",
+          "饭",
+          "准"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "面条儿",
+        "pinyin": "miàntiáor",
+        "pos": "N",
+        "emoji": "",
+        "example": "面条？",
+        "answer": "儿",
+        "opts": [
+          "站",
+          "儿",
+          "小",
+          "前"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "名字",
+        "pinyin": "míngzi",
+        "pos": "N",
+        "emoji": "",
+        "example": "名？",
+        "answer": "字",
+        "opts": [
+          "右",
+          "晚",
+          "字",
+          "什"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "明白",
+        "pinyin": "míngbai",
+        "pos": "Adj/V",
+        "emoji": "",
+        "example": "明？",
+        "answer": "白",
+        "opts": [
+          "呢",
+          "一",
+          "白",
+          "比"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "明年",
+        "pinyin": "míngnián",
+        "pos": "N",
+        "emoji": "",
+        "example": "明？",
+        "answer": "年",
+        "opts": [
+          "白",
+          "国",
+          "年",
+          "正"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "明天",
+        "pinyin": "míngtiān",
+        "pos": "N",
+        "emoji": "",
+        "example": "明？",
+        "answer": "天",
+        "opts": [
+          "课",
+          "忙",
+          "少",
+          "天"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "哪里",
+        "pinyin": "nǎlǐ",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "哪？",
+        "answer": "里",
+        "opts": [
+          "里",
+          "次",
+          "想",
+          "有"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "哪儿",
+        "pinyin": "nǎr",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "哪？",
+        "answer": "儿",
+        "opts": [
+          "果",
+          "回",
+          "儿",
+          "会"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "哪些",
+        "pinyin": "nǎxiē",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "哪？",
+        "answer": "些",
+        "opts": [
+          "些",
+          "场",
+          "忙",
+          "忘"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "那边",
+        "pinyin": "nàbiān",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "那？",
+        "answer": "边",
+        "opts": [
+          "边",
+          "友",
+          "饿",
+          "欢"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "那里",
+        "pinyin": "nàlǐ",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "那？",
+        "answer": "里",
+        "opts": [
+          "里",
+          "很",
+          "识",
+          "妹"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "那儿",
+        "pinyin": "nàr",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "那？",
+        "answer": "儿",
+        "opts": [
+          "几",
+          "儿",
+          "昨",
+          "考"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "那些",
+        "pinyin": "nàxiē",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "那？",
+        "answer": "些",
+        "opts": [
+          "有",
+          "怎",
+          "前",
+          "些"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "奶奶",
+        "pinyin": "nǎinai",
+        "pos": "N",
+        "emoji": "",
+        "example": "奶？",
+        "answer": "奶",
+        "opts": [
+          "请",
+          "间",
+          "奶",
+          "儿"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "男孩儿",
+        "pinyin": "nánháir",
+        "pos": "N",
+        "emoji": "",
+        "example": "男孩？",
+        "answer": "儿",
+        "opts": [
+          "儿",
+          "票",
+          "牛",
+          "午"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "男朋友",
+        "pinyin": "nánpéngyou",
+        "pos": "N",
+        "emoji": "",
+        "example": "男朋？",
+        "answer": "友",
+        "opts": [
+          "慢",
+          "吃",
+          "友",
+          "贵"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "男人",
+        "pinyin": "nánrén",
+        "pos": "N",
+        "emoji": "",
+        "example": "男？",
+        "answer": "人",
+        "opts": [
+          "怎",
+          "很",
+          "知",
+          "人"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "男生",
+        "pinyin": "nánshēng",
+        "pos": "N",
+        "emoji": "",
+        "example": "男？",
+        "answer": "生",
+        "opts": [
+          "是",
+          "店",
+          "生",
+          "进"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "南边",
+        "pinyin": "nánbian",
+        "pos": "N",
+        "emoji": "",
+        "example": "南？",
+        "answer": "边",
+        "opts": [
+          "床",
+          "楼",
+          "边",
+          "行"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "你们",
+        "pinyin": "nǐmen",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "你？",
+        "answer": "们",
+        "opts": [
+          "们",
+          "站",
+          "今",
+          "说"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "牛奶",
+        "pinyin": "niúnǎi",
+        "pos": "N",
+        "emoji": "",
+        "example": "牛？",
+        "answer": "奶",
+        "opts": [
+          "歌",
+          "奶",
+          "答",
+          "吃"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "女儿",
+        "pinyin": "nǚ'ér",
+        "pos": "N",
+        "emoji": "",
+        "example": "女？",
+        "answer": "儿",
+        "opts": [
+          "儿",
+          "早",
+          "看",
+          "唱"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "女孩儿",
+        "pinyin": "nǚháir",
+        "pos": "N",
+        "emoji": "",
+        "example": "女孩？",
+        "answer": "儿",
+        "opts": [
+          "校",
+          "口",
+          "觉",
+          "儿"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "女朋友",
+        "pinyin": "nǚpéngyou",
+        "pos": "N",
+        "emoji": "",
+        "example": "女朋？",
+        "answer": "友",
+        "opts": [
+          "呢",
+          "风",
+          "友",
+          "没"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "女人",
+        "pinyin": "nǚrén",
+        "pos": "N",
+        "emoji": "",
+        "example": "女？",
+        "answer": "人",
+        "opts": [
+          "叫",
+          "人",
+          "得",
+          "南"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "女生",
+        "pinyin": "nǚshēng",
+        "pos": "N",
+        "emoji": "",
+        "example": "女？",
+        "answer": "生",
+        "opts": [
+          "师",
+          "妈",
+          "拿",
+          "生"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "旁边",
+        "pinyin": "pángbiān",
+        "pos": "N",
+        "emoji": "",
+        "example": "旁？",
+        "answer": "边",
+        "opts": [
+          "个",
+          "给",
+          "边",
+          "送"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "朋友",
+        "pinyin": "péngyou",
+        "pos": "N",
+        "emoji": "",
+        "example": "朋？",
+        "answer": "友",
+        "opts": [
+          "次",
+          "再",
+          "友",
+          "真"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "起床",
+        "pinyin": "qǐchuáng",
+        "pos": "",
+        "emoji": "",
+        "example": "起？",
+        "answer": "床",
+        "opts": [
+          "中",
+          "要",
+          "过",
+          "床"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "起来",
+        "pinyin": "qǐlái",
+        "pos": "",
+        "emoji": "",
+        "example": "起？",
+        "answer": "来",
+        "opts": [
+          "七",
+          "来",
+          "工",
+          "生"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "汽车",
+        "pinyin": "qìchē",
+        "pos": "N",
+        "emoji": "",
+        "example": "汽？",
+        "answer": "车",
+        "opts": [
+          "冷",
+          "图",
+          "车",
+          "也"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "前边",
+        "pinyin": "qiánbian",
+        "pos": "N",
+        "emoji": "",
+        "example": "前？",
+        "answer": "边",
+        "opts": [
+          "楼",
+          "旁",
+          "边",
+          "动"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "前天",
+        "pinyin": "qiántiān",
+        "pos": "N",
+        "emoji": "",
+        "example": "前？",
+        "answer": "天",
+        "opts": [
+          "进",
+          "班",
+          "作",
+          "天"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "钱包",
+        "pinyin": "qiánbāo",
+        "pos": "N",
+        "emoji": "",
+        "example": "钱？",
+        "answer": "包",
+        "opts": [
+          "行",
+          "教",
+          "包",
+          "是"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "请假",
+        "pinyin": "qǐngjià",
+        "pos": "",
+        "emoji": "",
+        "example": "请？",
+        "answer": "假",
+        "opts": [
+          "假",
+          "哥",
+          "什",
+          "蛋"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "请进",
+        "pinyin": "qǐng jìn",
+        "pos": "",
+        "emoji": "",
+        "example": "请？",
+        "answer": "进",
+        "opts": [
+          "三",
+          "没",
+          "牛",
+          "进"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "请问",
+        "pinyin": "qǐngwèn",
+        "pos": "V",
+        "emoji": "",
+        "example": "请？",
+        "answer": "问",
+        "opts": [
+          "问",
+          "玩",
+          "谢",
+          "么"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "请坐",
+        "pinyin": "qǐng zuò",
+        "pos": "",
+        "emoji": "",
+        "example": "请？",
+        "answer": "坐",
+        "opts": [
+          "里",
+          "你",
+          "左",
+          "坐"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "去年",
+        "pinyin": "qùnián",
+        "pos": "N",
+        "emoji": "",
+        "example": "去？",
+        "answer": "年",
+        "opts": [
+          "雨",
+          "常",
+          "年",
+          "去"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "认识",
+        "pinyin": "rènshi",
+        "pos": "V/N",
+        "emoji": "",
+        "example": "认？",
+        "answer": "识",
+        "opts": [
+          "名",
+          "对",
+          "识",
+          "女"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "认真",
+        "pinyin": "rènzhēn",
+        "pos": "Adj",
+        "emoji": "",
+        "example": "认？",
+        "answer": "真",
+        "opts": [
+          "网",
+          "真",
+          "果",
+          "再"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "日期",
+        "pinyin": "rìqī",
+        "pos": "N",
+        "emoji": "",
+        "example": "日？",
+        "answer": "期",
+        "opts": [
+          "坏",
+          "期",
+          "毛",
+          "远"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "商场",
+        "pinyin": "shāngchǎng",
+        "pos": "N",
+        "emoji": "",
+        "example": "商？",
+        "answer": "场",
+        "opts": [
+          "脑",
+          "起",
+          "场",
+          "早"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "商店",
+        "pinyin": "shāngdiàn",
+        "pos": "N",
+        "emoji": "",
+        "example": "商？",
+        "answer": "店",
+        "opts": [
+          "都",
+          "店",
+          "文",
+          "饭"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "上班",
+        "pinyin": "shàngbān",
+        "pos": "",
+        "emoji": "",
+        "example": "上？",
+        "answer": "班",
+        "opts": [
+          "干",
+          "班",
+          "条",
+          "茶"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "上边",
+        "pinyin": "shàngbian",
+        "pos": "N",
+        "emoji": "",
+        "example": "上？",
+        "answer": "边",
+        "opts": [
+          "病",
+          "次",
+          "真",
+          "边"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "上车",
+        "pinyin": "shàng chē",
+        "pos": "",
+        "emoji": "",
+        "example": "上？",
+        "answer": "车",
+        "opts": [
+          "里",
+          "车",
+          "杯",
+          "名"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "上次",
+        "pinyin": "shàng cì",
+        "pos": "",
+        "emoji": "",
+        "example": "上？",
+        "answer": "次",
+        "opts": [
+          "个",
+          "两",
+          "次",
+          "人"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "上课",
+        "pinyin": "shàngkè",
+        "pos": "",
+        "emoji": "",
+        "example": "上？",
+        "answer": "课",
+        "opts": [
+          "课",
+          "多",
+          "图",
+          "都"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "上网",
+        "pinyin": "shàngwǎng",
+        "pos": "",
+        "emoji": "",
+        "example": "上？",
+        "answer": "网",
+        "opts": [
+          "国",
+          "网",
+          "医",
+          "汉"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "上午",
+        "pinyin": "shàngwǔ",
+        "pos": "N",
+        "emoji": "",
+        "example": "上？",
+        "answer": "午",
+        "opts": [
+          "午",
+          "息",
+          "网",
+          "子"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "上学",
+        "pinyin": "shàngxué",
+        "pos": "",
+        "emoji": "",
+        "example": "上？",
+        "answer": "学",
+        "opts": [
+          "学",
+          "来",
+          "月",
+          "重"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "身上",
+        "pinyin": "shēnshang",
+        "pos": "N",
+        "emoji": "",
+        "example": "身？",
+        "answer": "上",
+        "opts": [
+          "上",
+          "年",
+          "房",
+          "桌"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "身体",
+        "pinyin": "shēntǐ",
+        "pos": "N",
+        "emoji": "",
+        "example": "身？",
+        "answer": "体",
+        "opts": [
+          "工",
+          "体",
+          "饭",
+          "见"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "什么",
+        "pinyin": "shénme",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "什？",
+        "answer": "么",
+        "opts": [
+          "帮",
+          "么",
+          "三",
+          "前"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "生病",
+        "pinyin": "shēngbìng",
+        "pos": "",
+        "emoji": "",
+        "example": "生？",
+        "answer": "病",
+        "opts": [
+          "们",
+          "动",
+          "病",
+          "右"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "生气",
+        "pinyin": "shēngqì",
+        "pos": "",
+        "emoji": "",
+        "example": "生？",
+        "answer": "气",
+        "opts": [
+          "谢",
+          "气",
+          "左",
+          "学"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "生日",
+        "pinyin": "shēngrì",
+        "pos": "N",
+        "emoji": "",
+        "example": "生？",
+        "answer": "日",
+        "opts": [
+          "雨",
+          "八",
+          "错",
+          "日"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "时候",
+        "pinyin": "shíhou",
+        "pos": "N",
+        "emoji": "",
+        "example": "时？",
+        "answer": "候",
+        "opts": [
+          "欢",
+          "米",
+          "候",
+          "备"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "时间",
+        "pinyin": "shíjiān",
+        "pos": "N",
+        "emoji": "",
+        "example": "时？",
+        "answer": "间",
+        "opts": [
+          "坏",
+          "间",
+          "错",
+          "得"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "是不是",
+        "pinyin": "shì bu shì",
+        "pos": "",
+        "emoji": "",
+        "example": "是不？",
+        "answer": "是",
+        "opts": [
+          "是",
+          "们",
+          "远",
+          "条"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "手机",
+        "pinyin": "shǒujī",
+        "pos": "N",
+        "emoji": "",
+        "example": "手？",
+        "answer": "机",
+        "opts": [
+          "爱",
+          "方",
+          "机",
+          "唱"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "书包",
+        "pinyin": "shūbāo",
+        "pos": "N",
+        "emoji": "",
+        "example": "书？",
+        "answer": "包",
+        "opts": [
+          "包",
+          "火",
+          "网",
+          "服"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "书店",
+        "pinyin": "shūdiàn",
+        "pos": "N",
+        "emoji": "",
+        "example": "书？",
+        "answer": "店",
+        "opts": [
+          "字",
+          "店",
+          "做",
+          "跟"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "水果",
+        "pinyin": "shuǐguǒ",
+        "pos": "N",
+        "emoji": "",
+        "example": "水？",
+        "answer": "果",
+        "opts": [
+          "地",
+          "不",
+          "果",
+          "月"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "睡觉",
+        "pinyin": "shuìjiào",
+        "pos": "",
+        "emoji": "",
+        "example": "睡？",
+        "answer": "觉",
+        "opts": [
+          "觉",
+          "包",
+          "分",
+          "个"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "说话",
+        "pinyin": "shuōhuà",
+        "pos": "",
+        "emoji": "",
+        "example": "说？",
+        "answer": "话",
+        "opts": [
+          "不",
+          "院",
+          "话",
+          "拿"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "他们",
+        "pinyin": "tāmen",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "他？",
+        "answer": "们",
+        "opts": [
+          "了",
+          "们",
+          "爱",
+          "火"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "她们",
+        "pinyin": "tāmen",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "她？",
+        "answer": "们",
+        "opts": [
+          "几",
+          "岁",
+          "来",
+          "们"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "天气",
+        "pinyin": "tiānqì",
+        "pos": "N",
+        "emoji": "",
+        "example": "天？",
+        "answer": "气",
+        "opts": [
+          "站",
+          "听",
+          "还",
+          "气"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "听到",
+        "pinyin": "tīngdào",
+        "pos": "",
+        "emoji": "",
+        "example": "听？",
+        "answer": "到",
+        "opts": [
+          "到",
+          "号",
+          "服",
+          "后"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "听见",
+        "pinyin": "tīngjiàn",
+        "pos": "",
+        "emoji": "",
+        "example": "听？",
+        "answer": "见",
+        "opts": [
+          "文",
+          "去",
+          "见",
+          "些"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "听写",
+        "pinyin": "tīngxiě",
+        "pos": "V",
+        "emoji": "",
+        "example": "听？",
+        "answer": "写",
+        "opts": [
+          "大",
+          "写",
+          "睡",
+          "国"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "同学",
+        "pinyin": "tóngxué",
+        "pos": "N",
+        "emoji": "",
+        "example": "同？",
+        "answer": "学",
+        "opts": [
+          "是",
+          "干",
+          "右",
+          "学"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "图书馆",
+        "pinyin": "túshūguǎn",
+        "pos": "N",
+        "emoji": "",
+        "example": "图书？",
+        "answer": "馆",
+        "opts": [
+          "馆",
+          "毛",
+          "差",
+          "班"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "外边",
+        "pinyin": "wàibian",
+        "pos": "N",
+        "emoji": "",
+        "example": "外？",
+        "answer": "边",
+        "opts": [
+          "爸",
+          "还",
+          "边",
+          "少"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "外国",
+        "pinyin": "wàiguó",
+        "pos": "N",
+        "emoji": "",
+        "example": "外？",
+        "answer": "国",
+        "opts": [
+          "说",
+          "国",
+          "快",
+          "跟"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "外语",
+        "pinyin": "wàiyǔ",
+        "pos": "N",
+        "emoji": "",
+        "example": "外？",
+        "answer": "语",
+        "opts": [
+          "谁",
+          "教",
+          "送",
+          "语"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "玩儿",
+        "pinyin": "wánr",
+        "pos": "V",
+        "emoji": "",
+        "example": "玩？",
+        "answer": "儿",
+        "opts": [
+          "右",
+          "机",
+          "儿",
+          "脑"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "晚饭",
+        "pinyin": "wǎnfàn",
+        "pos": "N",
+        "emoji": "",
+        "example": "晚？",
+        "answer": "饭",
+        "opts": [
+          "分",
+          "饭",
+          "干",
+          "坐"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "晚上",
+        "pinyin": "wǎnshang",
+        "pos": "N",
+        "emoji": "",
+        "example": "晚？",
+        "answer": "上",
+        "opts": [
+          "雨",
+          "店",
+          "房",
+          "上"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "网上",
+        "pinyin": "wǎng shang",
+        "pos": "",
+        "emoji": "",
+        "example": "网？",
+        "answer": "上",
+        "opts": [
+          "十",
+          "系",
+          "影",
+          "上"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "网友",
+        "pinyin": "wǎngyǒu",
+        "pos": "N",
+        "emoji": "",
+        "example": "网？",
+        "answer": "友",
+        "opts": [
+          "元",
+          "放",
+          "友",
+          "叫"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "忘记",
+        "pinyin": "wàngjì",
+        "pos": "V",
+        "emoji": "",
+        "example": "忘？",
+        "answer": "记",
+        "opts": [
+          "记",
+          "师",
+          "医",
+          "女"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "我们",
+        "pinyin": "wǒmen",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "我？",
+        "answer": "们",
+        "opts": [
+          "们",
+          "开",
+          "你",
+          "道"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "午饭",
+        "pinyin": "wǔfàn",
+        "pos": "N",
+        "emoji": "",
+        "example": "午？",
+        "answer": "饭",
+        "opts": [
+          "您",
+          "下",
+          "吃",
+          "饭"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "西边",
+        "pinyin": "xībian",
+        "pos": "N",
+        "emoji": "",
+        "example": "西？",
+        "answer": "边",
+        "opts": [
+          "边",
+          "欢",
+          "四",
+          "影"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "洗手间",
+        "pinyin": "xǐshǒujiān",
+        "pos": "N",
+        "emoji": "",
+        "example": "洗手？",
+        "answer": "间",
+        "opts": [
+          "姐",
+          "找",
+          "记",
+          "间"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "喜欢",
+        "pinyin": "xǐhuan",
+        "pos": "V",
+        "emoji": "",
+        "example": "喜？",
+        "answer": "欢",
+        "opts": [
+          "想",
+          "欢",
+          "书",
+          "米"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "下班",
+        "pinyin": "xiàbān",
+        "pos": "",
+        "emoji": "",
+        "example": "下？",
+        "answer": "班",
+        "opts": [
+          "口",
+          "习",
+          "在",
+          "班"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "下边",
+        "pinyin": "xiàbian",
+        "pos": "N",
+        "emoji": "",
+        "example": "下？",
+        "answer": "边",
+        "opts": [
+          "边",
+          "名",
+          "北",
+          "肉"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "下车",
+        "pinyin": "xià chē",
+        "pos": "",
+        "emoji": "",
+        "example": "下？",
+        "answer": "车",
+        "opts": [
+          "日",
+          "车",
+          "子",
+          "净"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "下次",
+        "pinyin": "xià cì",
+        "pos": "",
+        "emoji": "",
+        "example": "下？",
+        "answer": "次",
+        "opts": [
+          "国",
+          "房",
+          "喜",
+          "次"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "下课",
+        "pinyin": "xiàkè",
+        "pos": "",
+        "emoji": "",
+        "example": "下？",
+        "answer": "课",
+        "opts": [
+          "课",
+          "见",
+          "桌",
+          "书"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "下午",
+        "pinyin": "xiàwǔ",
+        "pos": "N",
+        "emoji": "",
+        "example": "下？",
+        "answer": "午",
+        "opts": [
+          "呢",
+          "午",
+          "西",
+          "号"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "下雨",
+        "pinyin": "xià yǔ",
+        "pos": "",
+        "emoji": "",
+        "example": "下？",
+        "answer": "雨",
+        "opts": [
+          "好",
+          "动",
+          "零",
+          "雨"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "先生",
+        "pinyin": "xiānsheng",
+        "pos": "N",
+        "emoji": "",
+        "example": "先？",
+        "answer": "生",
+        "opts": [
+          "快",
+          "生",
+          "本",
+          "欢"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "现在",
+        "pinyin": "xiànzài",
+        "pos": "N",
+        "emoji": "",
+        "example": "现？",
+        "answer": "在",
+        "opts": [
+          "在",
+          "第",
+          "休",
+          "能"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "小孩儿",
+        "pinyin": "xiǎoháir",
+        "pos": "N",
+        "emoji": "",
+        "example": "小孩？",
+        "answer": "儿",
+        "opts": [
+          "儿",
+          "休",
+          "白",
+          "最"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "小姐",
+        "pinyin": "xiǎojiě",
+        "pos": "N",
+        "emoji": "",
+        "example": "小？",
+        "answer": "姐",
+        "opts": [
+          "姐",
+          "干",
+          "身",
+          "商"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "小朋友",
+        "pinyin": "xiǎopéngyǒu",
+        "pos": "N",
+        "emoji": "",
+        "example": "小朋？",
+        "answer": "友",
+        "opts": [
+          "杯",
+          "着",
+          "友",
+          "到"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "小时",
+        "pinyin": "xiǎoshí",
+        "pos": "N",
+        "emoji": "",
+        "example": "小？",
+        "answer": "时",
+        "opts": [
+          "时",
+          "们",
+          "山",
+          "关"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "小学",
+        "pinyin": "xiǎoxué",
+        "pos": "N",
+        "emoji": "",
+        "example": "小？",
+        "answer": "学",
+        "opts": [
+          "学",
+          "比",
+          "别",
+          "馆"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "小学生",
+        "pinyin": "xiǎoxuéshēng",
+        "pos": "N",
+        "emoji": "",
+        "example": "小学？",
+        "answer": "生",
+        "opts": [
+          "道",
+          "图",
+          "生",
+          "号"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "谢谢",
+        "pinyin": "xièxie",
+        "pos": "V",
+        "emoji": "",
+        "example": "谢？",
+        "answer": "谢",
+        "opts": [
+          "谢",
+          "馆",
+          "住",
+          "花"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "新年",
+        "pinyin": "xīnnián",
+        "pos": "N",
+        "emoji": "",
+        "example": "新？",
+        "answer": "年",
+        "opts": [
+          "服",
+          "上",
+          "年",
+          "十"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "星期",
+        "pinyin": "xīngqī",
+        "pos": "N",
+        "emoji": "",
+        "example": "星？",
+        "answer": "期",
+        "opts": [
+          "呢",
+          "别",
+          "差",
+          "期"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "星期日",
+        "pinyin": "xīngqīrì",
+        "pos": "N",
+        "emoji": "",
+        "example": "星期？",
+        "answer": "日",
+        "opts": [
+          "桌",
+          "日",
+          "中",
+          "都"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "星期天",
+        "pinyin": "xīngqītiān",
+        "pos": "N",
+        "emoji": "",
+        "example": "星期？",
+        "answer": "天",
+        "opts": [
+          "天",
+          "商",
+          "上",
+          "说"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "休息",
+        "pinyin": "xiūxi",
+        "pos": "V",
+        "emoji": "",
+        "example": "休？",
+        "answer": "息",
+        "opts": [
+          "日",
+          "息",
+          "样",
+          "半"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "学生",
+        "pinyin": "xuéshēng",
+        "pos": "N",
+        "emoji": "",
+        "example": "学？",
+        "answer": "生",
+        "opts": [
+          "请",
+          "图",
+          "喜",
+          "生"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "学习",
+        "pinyin": "xuéxí",
+        "pos": "V",
+        "emoji": "",
+        "example": "学？",
+        "answer": "习",
+        "opts": [
+          "爸",
+          "汽",
+          "习",
+          "写"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "学校",
+        "pinyin": "xuéxiào",
+        "pos": "N",
+        "emoji": "",
+        "example": "学？",
+        "answer": "校",
+        "opts": [
+          "校",
+          "火",
+          "老",
+          "习"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "学院",
+        "pinyin": "xuéyuàn",
+        "pos": "N",
+        "emoji": "",
+        "example": "学？",
+        "answer": "院",
+        "opts": [
+          "睡",
+          "小",
+          "跟",
+          "院"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "爷爷",
+        "pinyin": "yéye",
+        "pos": "N",
+        "emoji": "",
+        "example": "爷？",
+        "answer": "爷",
+        "opts": [
+          "爷",
+          "右",
+          "毛",
+          "那"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "衣服",
+        "pinyin": "yīfu",
+        "pos": "N",
+        "emoji": "",
+        "example": "衣？",
+        "answer": "服",
+        "opts": [
+          "服",
+          "认",
+          "喜",
+          "星"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "医生",
+        "pinyin": "yīshēng",
+        "pos": "N",
+        "emoji": "",
+        "example": "医？",
+        "answer": "生",
+        "opts": [
+          "唱",
+          "生",
+          "工",
+          "年"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "医院",
+        "pinyin": "yīyuàn",
+        "pos": "N",
+        "emoji": "",
+        "example": "医？",
+        "answer": "院",
+        "opts": [
+          "会",
+          "手",
+          "他",
+          "院"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "一半",
+        "pinyin": "yībàn",
+        "pos": "Num",
+        "emoji": "",
+        "example": "一？",
+        "answer": "半",
+        "opts": [
+          "要",
+          "子",
+          "西",
+          "半"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "一会儿",
+        "pinyin": "yīhuìr",
+        "pos": "",
+        "emoji": "",
+        "example": "一会？",
+        "answer": "儿",
+        "opts": [
+          "儿",
+          "记",
+          "谁",
+          "的"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "一块儿",
+        "pinyin": "yīkuàir",
+        "pos": "N/Adv",
+        "emoji": "",
+        "example": "一块？",
+        "answer": "儿",
+        "opts": [
+          "明",
+          "人",
+          "儿",
+          "兴"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "一下儿",
+        "pinyin": "yīxiàr",
+        "pos": "",
+        "emoji": "",
+        "example": "一下？",
+        "answer": "儿",
+        "opts": [
+          "净",
+          "日",
+          "分",
+          "儿"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "一样",
+        "pinyin": "yīyàng",
+        "pos": "Adj",
+        "emoji": "",
+        "example": "一？",
+        "answer": "样",
+        "opts": [
+          "还",
+          "你",
+          "新",
+          "样"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "一边",
+        "pinyin": "yībiān",
+        "pos": "N/Adv",
+        "emoji": "",
+        "example": "一？",
+        "answer": "边",
+        "opts": [
+          "块",
+          "热",
+          "要",
+          "边"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "一点儿",
+        "pinyin": "yīdiǎnr",
+        "pos": "",
+        "emoji": "",
+        "example": "一点？",
+        "answer": "儿",
+        "opts": [
+          "么",
+          "儿",
+          "干",
+          "十"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "一起",
+        "pinyin": "yīqǐ",
+        "pos": "Adv/N",
+        "emoji": "",
+        "example": "一？",
+        "answer": "起",
+        "opts": [
+          "起",
+          "楼",
+          "这",
+          "茶"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "一些",
+        "pinyin": "yīxiē",
+        "pos": "",
+        "emoji": "",
+        "example": "一？",
+        "answer": "些",
+        "opts": [
+          "些",
+          "鸡",
+          "跑",
+          "二"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "有的",
+        "pinyin": "yǒude",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "有？",
+        "answer": "的",
+        "opts": [
+          "米",
+          "鸡",
+          "的",
+          "用"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "有名",
+        "pinyin": "yǒumíng",
+        "pos": "",
+        "emoji": "",
+        "example": "有？",
+        "answer": "名",
+        "opts": [
+          "正",
+          "山",
+          "很",
+          "名"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "有时候有时",
+        "pinyin": "yǒushíhou|yǒushí",
+        "pos": "Adv",
+        "emoji": "",
+        "example": "有时候有？",
+        "answer": "时",
+        "opts": [
+          "八",
+          "时",
+          "楼",
+          "唱"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "有一些",
+        "pinyin": "yǒu(yī)xiē",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "有一？",
+        "answer": "些",
+        "opts": [
+          "条",
+          "来",
+          "买",
+          "些"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "有用",
+        "pinyin": "yǒuyòng",
+        "pos": "V",
+        "emoji": "",
+        "example": "有？",
+        "answer": "用",
+        "opts": [
+          "用",
+          "来",
+          "馆",
+          "页"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "右边",
+        "pinyin": "yòubian",
+        "pos": "N",
+        "emoji": "",
+        "example": "右？",
+        "answer": "边",
+        "opts": [
+          "呢",
+          "边",
+          "女",
+          "车"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "再见",
+        "pinyin": "zàijiàn",
+        "pos": "V",
+        "emoji": "",
+        "example": "再？",
+        "answer": "见",
+        "opts": [
+          "休",
+          "见",
+          "同",
+          "出"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "在家",
+        "pinyin": "zàijiā",
+        "pos": "V",
+        "emoji": "",
+        "example": "在？",
+        "answer": "家",
+        "opts": [
+          "家",
+          "树",
+          "的",
+          "次"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "早饭",
+        "pinyin": "zǎofàn",
+        "pos": "N",
+        "emoji": "",
+        "example": "早？",
+        "answer": "饭",
+        "opts": [
+          "期",
+          "饭",
+          "院",
+          "医"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "早上",
+        "pinyin": "zǎoshang",
+        "pos": "N",
+        "emoji": "",
+        "example": "早？",
+        "answer": "上",
+        "opts": [
+          "我",
+          "来",
+          "二",
+          "上"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "怎？",
+        "answer": "么",
+        "opts": [
+          "渴",
+          "医",
+          "么",
+          "上"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "找到",
+        "pinyin": "zhǎodào",
+        "pos": "",
+        "emoji": "",
+        "example": "找？",
+        "answer": "到",
+        "opts": [
+          "弟",
+          "到",
+          "贵",
+          "国"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "这边",
+        "pinyin": "zhèbiān",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "这？",
+        "answer": "边",
+        "opts": [
+          "边",
+          "关",
+          "院",
+          "热"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "这里",
+        "pinyin": "zhèlǐ",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "这？",
+        "answer": "里",
+        "opts": [
+          "吧",
+          "里",
+          "坏",
+          "网"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "这儿",
+        "pinyin": "zhèr",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "这？",
+        "answer": "儿",
+        "opts": [
+          "从",
+          "不",
+          "三",
+          "儿"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "这些",
+        "pinyin": "zhèxiē",
+        "pos": "Pron",
+        "emoji": "",
+        "example": "这？",
+        "answer": "些",
+        "opts": [
+          "些",
+          "今",
+          "店",
+          "听"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "真的",
+        "pinyin": "zhēn de",
+        "pos": "",
+        "emoji": "",
+        "example": "真？",
+        "answer": "的",
+        "opts": [
+          "跑",
+          "的",
+          "觉",
+          "明"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "正在",
+        "pinyin": "zhèngzài",
+        "pos": "Adv",
+        "emoji": "",
+        "example": "正？",
+        "answer": "在",
+        "opts": [
+          "饭",
+          "在",
+          "打",
+          "教"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "知道",
+        "pinyin": "zhīdào",
+        "pos": "V",
+        "emoji": "",
+        "example": "知？",
+        "answer": "道",
+        "opts": [
+          "间",
+          "道",
+          "玩",
+          "绍"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "知识",
+        "pinyin": "zhīshi",
+        "pos": "N",
+        "emoji": "",
+        "example": "知？",
+        "answer": "识",
+        "opts": [
+          "话",
+          "考",
+          "识",
+          "见"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "中国",
+        "pinyin": "Zhōngguó",
+        "pos": "N",
+        "emoji": "",
+        "example": "中？",
+        "answer": "国",
+        "opts": [
+          "睡",
+          "边",
+          "国",
+          "重"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "中间",
+        "pinyin": "zhōngjiān",
+        "pos": "N",
+        "emoji": "",
+        "example": "中？",
+        "answer": "间",
+        "opts": [
+          "回",
+          "吧",
+          "远",
+          "间"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "中文",
+        "pinyin": "Zhōngwén",
+        "pos": "N",
+        "emoji": "",
+        "example": "中？",
+        "answer": "文",
+        "opts": [
+          "帮",
+          "文",
+          "前",
+          "冷"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "中午",
+        "pinyin": "zhōngwǔ",
+        "pos": "N",
+        "emoji": "",
+        "example": "中？",
+        "answer": "午",
+        "opts": [
+          "商",
+          "午",
+          "打",
+          "见"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "中学",
+        "pinyin": "zhōngxué",
+        "pos": "N",
+        "emoji": "",
+        "example": "中？",
+        "answer": "学",
+        "opts": [
+          "房",
+          "学",
+          "和",
+          "怎"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "中学生",
+        "pinyin": "zhōngxuéshēng",
+        "pos": "N",
+        "emoji": "",
+        "example": "中学？",
+        "answer": "生",
+        "opts": [
+          "这",
+          "生",
+          "蛋",
+          "西"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "重要",
+        "pinyin": "zhòngyào",
+        "pos": "Adj",
+        "emoji": "",
+        "example": "重？",
+        "answer": "要",
+        "opts": [
+          "没",
+          "月",
+          "要",
+          "病"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "准备",
+        "pinyin": "zhǔnbèi",
+        "pos": "V",
+        "emoji": "",
+        "example": "准？",
+        "answer": "备",
+        "opts": [
+          "做",
+          "写",
+          "奶",
+          "备"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "桌子",
+        "pinyin": "zhuōzi",
+        "pos": "N",
+        "emoji": "",
+        "example": "桌？",
+        "answer": "子",
+        "opts": [
+          "教",
+          "子",
+          "馆",
+          "起"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "子桌子",
+        "pinyin": "zi (zhuōzi)",
+        "pos": "Suffix",
+        "emoji": "",
+        "example": "子桌？",
+        "answer": "子",
+        "opts": [
+          "有",
+          "子",
+          "饭",
+          "错"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "走路",
+        "pinyin": "zǒulù",
+        "pos": "",
+        "emoji": "",
+        "example": "走？",
+        "answer": "路",
+        "opts": [
+          "路",
+          "给",
+          "昨",
+          "关"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "最好",
+        "pinyin": "zuìhǎo",
+        "pos": "Adv",
+        "emoji": "",
+        "example": "最？",
+        "answer": "好",
+        "opts": [
+          "重",
+          "好",
+          "真",
+          "干"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "最后",
+        "pinyin": "zuìhòu",
+        "pos": "N",
+        "emoji": "",
+        "example": "最？",
+        "answer": "后",
+        "opts": [
+          "后",
+          "坏",
+          "场",
+          "冷"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "昨天",
+        "pinyin": "zuótiān",
+        "pos": "N",
+        "emoji": "",
+        "example": "昨？",
+        "answer": "天",
+        "opts": [
+          "弟",
+          "块",
+          "天",
+          "床"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "左边",
+        "pinyin": "zuǒbian",
+        "pos": "N",
+        "emoji": "",
+        "example": "左？",
+        "answer": "边",
+        "opts": [
+          "您",
+          "高",
+          "边",
+          "气"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "type": "fill-blank",
+        "word": "坐下",
+        "pinyin": "zuò xia",
+        "pos": "",
+        "emoji": "",
+        "example": "坐？",
+        "answer": "下",
+        "opts": [
+          "下",
+          "边",
+          "高",
+          "洗"
+        ],
+        "modes": [
+          "fill-blank"
+        ]
+      },
+      {
+        "char": "一",
+        "pinyin": "yī",
+        "emoji": "1️⃣",
+        "example": "今天我吃了**一**个苹果",
+        "answer": "一",
+        "opts": [
+          "饿",
+          "一",
+          "孩",
+          "桌"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "七",
+        "pinyin": "qī",
+        "emoji": "7️⃣",
+        "example": "我有**七**个彩色气球。",
+        "answer": "七",
+        "opts": [
+          "和",
+          "唱",
+          "的",
+          "七"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "三",
+        "pinyin": "sān",
+        "emoji": "3️⃣",
+        "example": "一加二等于**三**。",
+        "answer": "三",
+        "opts": [
+          "八",
+          "电",
+          "三",
+          "钱"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "上",
+        "pinyin": "shàng",
+        "emoji": "⬆️",
+        "example": "今天我要**上**学去。",
+        "answer": "上",
+        "opts": [
+          "唱",
+          "大",
+          "上",
+          "息"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "下",
+        "pinyin": "xià",
+        "emoji": "⬇️",
+        "example": "秋天到了，树叶飘**下**来。",
+        "answer": "下",
+        "opts": [
+          "下",
+          "次",
+          "差",
+          "京"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "不",
+        "pinyin": "bù",
+        "emoji": "🚫",
+        "example": "我**不**会放弃我的梦想",
+        "answer": "不",
+        "opts": [
+          "不",
+          "们",
+          "分",
+          "了"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "东",
+        "pinyin": "dōng",
+        "emoji": "",
+        "example": "太阳从**东**边升起来。",
+        "answer": "东",
+        "opts": [
+          "喜",
+          "东",
+          "这",
+          "朋"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "两",
+        "pinyin": "liǎng",
+        "emoji": "",
+        "example": "今天小明吃了**两**碗米饭",
+        "answer": "两",
+        "opts": [
+          "欢",
+          "票",
+          "服",
+          "两"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "个",
+        "pinyin": "gè",
+        "emoji": "🔢",
+        "example": "他是**个**好学生。",
+        "answer": "个",
+        "opts": [
+          "是",
+          "个",
+          "起",
+          "爸"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "中",
+        "pinyin": "zhōng",
+        "emoji": "🎯",
+        "example": "**中**间有一棵大树。",
+        "answer": "中",
+        "opts": [
+          "中",
+          "休",
+          "路",
+          "在"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "么",
+        "pinyin": "me",
+        "emoji": "",
+        "example": "你最喜欢吃什**么**?",
+        "answer": "么",
+        "opts": [
+          "么",
+          "牛",
+          "百",
+          "怎"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "九",
+        "pinyin": "jiǔ",
+        "emoji": "9️⃣",
+        "example": "今天学了数字**九**。",
+        "answer": "九",
+        "opts": [
+          "书",
+          "九",
+          "床",
+          "班"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "也",
+        "pinyin": "yě",
+        "emoji": "",
+        "example": "我**也**想去公园玩。",
+        "answer": "也",
+        "opts": [
+          "也",
+          "树",
+          "绍",
+          "很"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "习",
+        "pinyin": "xí",
+        "emoji": "",
+        "example": "我们要养成好**习**惯。",
+        "answer": "习",
+        "opts": [
+          "习",
+          "五",
+          "中",
+          "打"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "书",
+        "pinyin": "shū",
+        "emoji": "📖",
+        "example": "我喜欢和妈妈一起看**书**。",
+        "answer": "书",
+        "opts": [
+          "块",
+          "书",
+          "答",
+          "百"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "买",
+        "pinyin": "mǎi",
+        "emoji": "🛒",
+        "example": "妈妈给我**买**了一个新书包。",
+        "answer": "买",
+        "opts": [
+          "地",
+          "买",
+          "友",
+          "茶"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "了",
+        "pinyin": "le",
+        "emoji": "🔚",
+        "example": "我和朋友一起玩**了**游戏。",
+        "answer": "了",
+        "opts": [
+          "怎",
+          "六",
+          "了",
+          "假"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "事",
+        "pinyin": "shì",
+        "emoji": "",
+        "example": "我们认真做**事**。",
+        "answer": "事",
+        "opts": [
+          "最",
+          "事",
+          "饭",
+          "分"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "二",
+        "pinyin": "èr",
+        "emoji": "2️⃣",
+        "example": "我有一个**二**元硬币。",
+        "answer": "二",
+        "opts": [
+          "方",
+          "也",
+          "二",
+          "谁"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "五",
+        "pinyin": "wǔ",
+        "emoji": "5️⃣",
+        "example": "我有**五**个彩色气球。",
+        "answer": "五",
+        "opts": [
+          "五",
+          "习",
+          "钱",
+          "雨"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "些",
+        "pinyin": "xiē",
+        "emoji": "",
+        "example": "我每天都吃**些**水果和蔬菜。",
+        "answer": "些",
+        "opts": [
+          "儿",
+          "些",
+          "你",
+          "火"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "京",
+        "pinyin": "jīng",
+        "emoji": "",
+        "example": "**京**是中国的首都。",
+        "answer": "京",
+        "opts": [
+          "六",
+          "后",
+          "京",
+          "快"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "人",
+        "pinyin": "rén",
+        "emoji": "🧑",
+        "example": "我要努力成为一个优秀的**人**。",
+        "answer": "人",
+        "opts": [
+          "很",
+          "院",
+          "人",
+          "妹"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "什",
+        "pinyin": "shén",
+        "emoji": "",
+        "example": "你在做**什**么呢？",
+        "answer": "什",
+        "opts": [
+          "想",
+          "错",
+          "吧",
+          "什"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "今",
+        "pinyin": "jīn",
+        "emoji": "",
+        "example": "从**今**以后我要好好学习",
+        "answer": "今",
+        "opts": [
+          "今",
+          "外",
+          "快",
+          "页"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "介",
+        "pinyin": "jiè",
+        "emoji": "",
+        "example": "请你**介**绍一下你自己。",
+        "answer": "介",
+        "opts": [
+          "飞",
+          "介",
+          "页",
+          "到"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "从",
+        "pinyin": "cóng",
+        "emoji": "",
+        "example": "小朋友**从**家里出发去上学。",
+        "answer": "从",
+        "opts": [
+          "穿",
+          "床",
+          "从",
+          "四"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "他",
+        "pinyin": "tā",
+        "emoji": "",
+        "example": "**他**是我的好伙伴。",
+        "answer": "他",
+        "opts": [
+          "关",
+          "么",
+          "包",
+          "他"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "们",
+        "pinyin": "men",
+        "emoji": "",
+        "example": "我**们**一起去公园玩。",
+        "answer": "们",
+        "opts": [
+          "什",
+          "打",
+          "们",
+          "怎"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "休",
+        "pinyin": "xiū",
+        "emoji": "",
+        "example": "**休**息好了才能精神饱满地学习",
+        "answer": "休",
+        "opts": [
+          "页",
+          "休",
+          "几",
+          "拿"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "会",
+        "pinyin": "huì",
+        "emoji": "",
+        "example": "我**会**自己整理书包。",
+        "answer": "会",
+        "opts": [
+          "视",
+          "会",
+          "汉",
+          "日"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "住",
+        "pinyin": "zhù",
+        "emoji": "",
+        "example": "我**住**在美丽的城市里",
+        "answer": "住",
+        "opts": [
+          "准",
+          "兴",
+          "住",
+          "试"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "体",
+        "pinyin": "tǐ",
+        "emoji": "",
+        "example": "我爱**体**育运动。",
+        "answer": "体",
+        "opts": [
+          "网",
+          "图",
+          "兴",
+          "体"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "作",
+        "pinyin": "zuò",
+        "emoji": "",
+        "example": "我在认真写**作**业。",
+        "answer": "作",
+        "opts": [
+          "先",
+          "旁",
+          "要",
+          "作"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "你",
+        "pinyin": "nǐ",
+        "emoji": "",
+        "example": "**你**真是一个聪明的小朋友。",
+        "answer": "你",
+        "opts": [
+          "床",
+          "方",
+          "两",
+          "你"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "候",
+        "pinyin": "hòu",
+        "emoji": "",
+        "example": "等**候**公交车要耐心排队。",
+        "answer": "候",
+        "opts": [
+          "星",
+          "多",
+          "假",
+          "候"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "做",
+        "pinyin": "zuò",
+        "emoji": "",
+        "example": "我们一起来**做**手工吧。",
+        "answer": "做",
+        "opts": [
+          "您",
+          "门",
+          "做",
+          "马"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "儿",
+        "pinyin": "ér",
+        "emoji": "",
+        "example": "妈妈爱她的**儿**子。",
+        "answer": "儿",
+        "opts": [
+          "得",
+          "儿",
+          "晚",
+          "二"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "元",
+        "pinyin": "yuán",
+        "emoji": "",
+        "example": "**元**旦是新年第一天。",
+        "answer": "元",
+        "opts": [
+          "商",
+          "服",
+          "元",
+          "工"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "先",
+        "pinyin": "xiān",
+        "emoji": "",
+        "example": "我们**先**完成作业再看电视。",
+        "answer": "先",
+        "opts": [
+          "先",
+          "路",
+          "饭",
+          "都"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "八",
+        "pinyin": "bā",
+        "emoji": "8️⃣",
+        "example": "小明一共有**八**个好朋友。",
+        "answer": "八",
+        "opts": [
+          "朋",
+          "明",
+          "八",
+          "里"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "六",
+        "pinyin": "liù",
+        "emoji": "6️⃣",
+        "example": "我有**六**个苹果。",
+        "answer": "六",
+        "opts": [
+          "帮",
+          "六",
+          "弟",
+          "期"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "关",
+        "pinyin": "guān",
+        "emoji": "",
+        "example": "请**关**上那扇门。",
+        "answer": "关",
+        "opts": [
+          "同",
+          "拿",
+          "关",
+          "服"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "兴",
+        "pinyin": "xīng",
+        "emoji": "",
+        "example": "我们为祖国的**兴**旺感到自豪。",
+        "answer": "兴",
+        "opts": [
+          "电",
+          "高",
+          "兴",
+          "弟"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "再",
+        "pinyin": "zài",
+        "emoji": "",
+        "example": "我们**再**玩一会儿。",
+        "answer": "再",
+        "opts": [
+          "茶",
+          "再",
+          "妹",
+          "好"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "写",
+        "pinyin": "xiě",
+        "emoji": "✍️",
+        "example": "我们每天都要认真**写**作业。",
+        "answer": "写",
+        "opts": [
+          "这",
+          "话",
+          "写",
+          "钱"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "冷",
+        "pinyin": "lěng",
+        "emoji": "",
+        "example": "冬天虽然很**冷**，但是我们可以玩雪。",
+        "answer": "冷",
+        "opts": [
+          "杯",
+          "点",
+          "冷",
+          "做"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "净",
+        "pinyin": "jìng",
+        "emoji": "",
+        "example": "教室被我们打扫干**净**了。",
+        "answer": "净",
+        "opts": [
+          "净",
+          "饿",
+          "门",
+          "网"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "准",
+        "pinyin": "zhǔn",
+        "emoji": "",
+        "example": "我们要**准**时上课。",
+        "answer": "准",
+        "opts": [
+          "准",
+          "旁",
+          "饿",
+          "走"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "几",
+        "pinyin": "jǐ",
+        "emoji": "",
+        "example": "你的书包里有**几**本书？",
+        "answer": "几",
+        "opts": [
+          "半",
+          "几",
+          "身",
+          "体"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "出",
+        "pinyin": "chū",
+        "emoji": "",
+        "example": "我们**出**去玩耍吧。",
+        "answer": "出",
+        "opts": [
+          "听",
+          "出",
+          "新",
+          "期"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "分",
+        "pinyin": "fēn",
+        "emoji": "📐",
+        "example": "大家一起**分**享玩具真开心。",
+        "answer": "分",
+        "opts": [
+          "分",
+          "从",
+          "少",
+          "小"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "别",
+        "pinyin": "bié",
+        "emoji": "",
+        "example": "上课时请**别**说话，专心听讲。",
+        "answer": "别",
+        "opts": [
+          "在",
+          "票",
+          "别",
+          "米"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "到",
+        "pinyin": "dào",
+        "emoji": "",
+        "example": "我马上就**到**家了。",
+        "answer": "到",
+        "opts": [
+          "到",
+          "你",
+          "喜",
+          "歌"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "前",
+        "pinyin": "qián",
+        "emoji": "",
+        "example": "每天**前**进一步，就会离梦想更近。",
+        "answer": "前",
+        "opts": [
+          "前",
+          "床",
+          "给",
+          "干"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "动",
+        "pinyin": "dòng",
+        "emoji": "",
+        "example": "我们要保护**动**物。",
+        "answer": "动",
+        "opts": [
+          "星",
+          "动",
+          "很",
+          "绍"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "包",
+        "pinyin": "bāo",
+        "emoji": "",
+        "example": "我每天背着**包**去上学。",
+        "answer": "包",
+        "opts": [
+          "息",
+          "包",
+          "哪",
+          "图"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "北",
+        "pinyin": "běi",
+        "emoji": "",
+        "example": "我们一起去**北**方看雪吧！",
+        "answer": "北",
+        "opts": [
+          "北",
+          "桌",
+          "车",
+          "岁"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "医",
+        "pinyin": "yī",
+        "emoji": "",
+        "example": "我长大想成为**医**生。",
+        "answer": "医",
+        "opts": [
+          "山",
+          "是",
+          "今",
+          "医"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "十",
+        "pinyin": "shí",
+        "emoji": "🔟",
+        "example": "这是一**十**分的努力。",
+        "answer": "十",
+        "opts": [
+          "商",
+          "上",
+          "难",
+          "十"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "午",
+        "pinyin": "wǔ",
+        "emoji": "",
+        "example": "中**午**我们吃面条。",
+        "answer": "午",
+        "opts": [
+          "好",
+          "蛋",
+          "午",
+          "友"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "半",
+        "pinyin": "bàn",
+        "emoji": "",
+        "example": "我把**半**块蛋糕留给了弟弟。",
+        "answer": "半",
+        "opts": [
+          "半",
+          "白",
+          "说",
+          "们"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "南",
+        "pinyin": "nán",
+        "emoji": "",
+        "example": "指南针的一端指着**南**。",
+        "answer": "南",
+        "opts": [
+          "好",
+          "南",
+          "影",
+          "床"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "去",
+        "pinyin": "qù",
+        "emoji": "🚶",
+        "example": "今天我要**去**公园玩耍。",
+        "answer": "去",
+        "opts": [
+          "试",
+          "对",
+          "去",
+          "起"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "口",
+        "pinyin": "kǒu",
+        "emoji": "👄",
+        "example": "请张**口**说出你的名字。",
+        "answer": "口",
+        "opts": [
+          "朋",
+          "口",
+          "块",
+          "假"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "叫",
+        "pinyin": "jiào",
+        "emoji": "",
+        "example": "每天早上闹钟都会**叫**我起床。",
+        "answer": "叫",
+        "opts": [
+          "页",
+          "三",
+          "叫",
+          "右"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "右",
+        "pinyin": "yòu",
+        "emoji": "➡️",
+        "example": "我习惯用**右**手写漂亮的字。",
+        "answer": "右",
+        "opts": [
+          "图",
+          "再",
+          "右",
+          "吗"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "号",
+        "pinyin": "hào",
+        "emoji": "",
+        "example": "我的学**号**是123",
+        "answer": "号",
+        "opts": [
+          "号",
+          "做",
+          "京",
+          "还"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "吃",
+        "pinyin": "chī",
+        "emoji": "🍽️",
+        "example": "弟弟正在**吃**蛋糕。",
+        "answer": "吃",
+        "opts": [
+          "吃",
+          "班",
+          "边",
+          "睡"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "同",
+        "pinyin": "tóng",
+        "emoji": "",
+        "example": "我们**同**学关系很好。",
+        "answer": "同",
+        "opts": [
+          "渴",
+          "本",
+          "课",
+          "同"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "名",
+        "pinyin": "míng",
+        "emoji": "",
+        "example": "我的**名**字叫小红。",
+        "answer": "名",
+        "opts": [
+          "呢",
+          "名",
+          "七",
+          "最"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "后",
+        "pinyin": "hòu",
+        "emoji": "",
+        "example": "放学**后**，我和同学一起做游戏。",
+        "answer": "后",
+        "opts": [
+          "后",
+          "晚",
+          "正",
+          "间"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "吗",
+        "pinyin": "ma",
+        "emoji": "",
+        "example": "你今天在学校开心**吗**？",
+        "answer": "吗",
+        "opts": [
+          "介",
+          "影",
+          "肉",
+          "吗"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "吧",
+        "pinyin": "bā",
+        "emoji": "",
+        "example": "让我们一起努力**吧**。",
+        "answer": "吧",
+        "opts": [
+          "吧",
+          "的",
+          "牛",
+          "工"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "听",
+        "pinyin": "tīng",
+        "emoji": "👂",
+        "example": "每天放学后，我都**听**爷爷讲故事。",
+        "answer": "听",
+        "opts": [
+          "听",
+          "后",
+          "们",
+          "电"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "告",
+        "pinyin": "gào",
+        "emoji": "",
+        "example": "老师**告**诉我们明天去春游。",
+        "answer": "告",
+        "opts": [
+          "里",
+          "告",
+          "昨",
+          "七"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "呢",
+        "pinyin": "ne",
+        "emoji": "",
+        "example": "你**呢**在做什么？",
+        "answer": "呢",
+        "opts": [
+          "呢",
+          "同",
+          "们",
+          "坐"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "和",
+        "pinyin": "hé",
+        "emoji": "",
+        "example": "我们**和**平相处。",
+        "answer": "和",
+        "opts": [
+          "干",
+          "雨",
+          "和",
+          "字"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "哥",
+        "pinyin": "gē",
+        "emoji": "👦",
+        "example": "表**哥**教我写字。",
+        "answer": "哥",
+        "opts": [
+          "杯",
+          "哥",
+          "桌",
+          "边"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "哪",
+        "pinyin": "nǎ",
+        "emoji": "",
+        "example": "你最喜欢**哪**个季节？",
+        "answer": "哪",
+        "opts": [
+          "病",
+          "哪",
+          "方",
+          "书"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "唱",
+        "pinyin": "chàng",
+        "emoji": "",
+        "example": "我们一起来**唱**歌吧。",
+        "answer": "唱",
+        "opts": [
+          "唱",
+          "她",
+          "去",
+          "十"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "商",
+        "pinyin": "shāng",
+        "emoji": "",
+        "example": "我们去**商**店买文具。",
+        "answer": "商",
+        "opts": [
+          "汉",
+          "商",
+          "正",
+          "本"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "喜",
+        "pinyin": "xǐ",
+        "emoji": "",
+        "example": "小明**喜**欢在公园里放风筝。",
+        "answer": "喜",
+        "opts": [
+          "杯",
+          "喜",
+          "怎",
+          "第"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "喝",
+        "pinyin": "hē",
+        "emoji": "🥤",
+        "example": "我每天都要**喝**很多水。",
+        "answer": "喝",
+        "opts": [
+          "准",
+          "喝",
+          "没",
+          "左"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "四",
+        "pinyin": "sì",
+        "emoji": "4️⃣",
+        "example": "今天老师教我们写**四**个字。",
+        "answer": "四",
+        "opts": [
+          "四",
+          "进",
+          "等",
+          "蛋"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "回",
+        "pinyin": "huí",
+        "emoji": "",
+        "example": "我们**回**到温暖的家中。",
+        "answer": "回",
+        "opts": [
+          "飞",
+          "回",
+          "机",
+          "里"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "国",
+        "pinyin": "guó",
+        "emoji": "🎌",
+        "example": "我爱我的**国**家，它很美丽。",
+        "answer": "国",
+        "opts": [
+          "比",
+          "面",
+          "国",
+          "语"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "图",
+        "pinyin": "tú",
+        "emoji": "",
+        "example": "我喜欢看**图**画书。",
+        "answer": "图",
+        "opts": [
+          "吧",
+          "远",
+          "图",
+          "七"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "在",
+        "pinyin": "zài",
+        "emoji": "",
+        "example": "我**在**教室里认真读书。",
+        "answer": "在",
+        "opts": [
+          "国",
+          "在",
+          "边",
+          "手"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "地",
+        "pinyin": "dì",
+        "emoji": "🌍",
+        "example": "我们在**地**上画画。",
+        "answer": "地",
+        "opts": [
+          "呢",
+          "南",
+          "年",
+          "地"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "场",
+        "pinyin": "chǎng",
+        "emoji": "",
+        "example": "我们在操**场**上玩耍。",
+        "answer": "场",
+        "opts": [
+          "场",
+          "和",
+          "等",
+          "坐"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "坏",
+        "pinyin": "huài",
+        "emoji": "",
+        "example": "苹果**坏**了就不能吃了。",
+        "answer": "坏",
+        "opts": [
+          "坏",
+          "重",
+          "回",
+          "树"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "坐",
+        "pinyin": "zuò",
+        "emoji": "🪑",
+        "example": "同学们**坐**在教室里上课。",
+        "answer": "坐",
+        "opts": [
+          "坐",
+          "名",
+          "从",
+          "院"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "块",
+        "pinyin": "kuài",
+        "emoji": "",
+        "example": "妈妈切了一**块**西瓜。",
+        "answer": "块",
+        "opts": [
+          "太",
+          "块",
+          "年",
+          "习"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "备",
+        "pinyin": "bèi",
+        "emoji": "",
+        "example": "我们提前**备**好明天上课用的书本。",
+        "answer": "备",
+        "opts": [
+          "备",
+          "听",
+          "体",
+          "女"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "外",
+        "pinyin": "wài",
+        "emoji": "",
+        "example": "**外**面的世界很精彩。",
+        "answer": "外",
+        "opts": [
+          "绍",
+          "文",
+          "外",
+          "热"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "多",
+        "pinyin": "duō",
+        "emoji": "➕",
+        "example": "**多**喝水有益健康。",
+        "answer": "多",
+        "opts": [
+          "馆",
+          "穿",
+          "同",
+          "多"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "大",
+        "pinyin": "dà",
+        "emoji": "🔼",
+        "example": "我画了一个红**大**苹果。",
+        "answer": "大",
+        "opts": [
+          "牛",
+          "大",
+          "茶",
+          "考"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "天",
+        "pinyin": "tiān",
+        "emoji": "🌤️",
+        "example": "**天**空是蓝蓝的。",
+        "answer": "天",
+        "opts": [
+          "牛",
+          "天",
+          "九",
+          "果"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "太",
+        "pinyin": "tài",
+        "emoji": "",
+        "example": "今天的天气**太**好了。",
+        "answer": "太",
+        "opts": [
+          "妹",
+          "太",
+          "玩",
+          "就"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "女",
+        "pinyin": "nǚ",
+        "emoji": "",
+        "example": "小**女**孩在花园里跳舞。",
+        "answer": "女",
+        "opts": [
+          "菜",
+          "些",
+          "女",
+          "跟"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "奶",
+        "pinyin": "nǎi",
+        "emoji": "",
+        "example": "多喝牛**奶**能长得更高。",
+        "answer": "奶",
+        "opts": [
+          "假",
+          "奶",
+          "能",
+          "累"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "她",
+        "pinyin": "tā",
+        "emoji": "",
+        "example": "**她**是我最好的朋友。",
+        "answer": "她",
+        "opts": [
+          "水",
+          "岁",
+          "课",
+          "她"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "好",
+        "pinyin": "hǎo",
+        "emoji": "👍",
+        "example": "**好**孩子要诚实。",
+        "answer": "好",
+        "opts": [
+          "好",
+          "会",
+          "天",
+          "些"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "妈",
+        "pinyin": "mā",
+        "emoji": "",
+        "example": "我爱我的**妈**。",
+        "answer": "妈",
+        "opts": [
+          "叫",
+          "球",
+          "妈",
+          "是"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "妹",
+        "pinyin": "mèi",
+        "emoji": "",
+        "example": "姐姐疼爱小**妹**。",
+        "answer": "妹",
+        "opts": [
+          "找",
+          "妹",
+          "喜",
+          "汉"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "姐",
+        "pinyin": "jiě",
+        "emoji": "👧",
+        "example": "**姐**，你的书包真漂亮。",
+        "answer": "姐",
+        "opts": [
+          "姐",
+          "马",
+          "热",
+          "多"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "子",
+        "pinyin": "zǐ",
+        "emoji": "",
+        "example": "外婆煮的莲**子**汤真甜。",
+        "answer": "子",
+        "opts": [
+          "书",
+          "茶",
+          "错",
+          "子"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "字",
+        "pinyin": "zì",
+        "emoji": "",
+        "example": "我们每天都要练**字**。",
+        "answer": "字",
+        "opts": [
+          "系",
+          "工",
+          "字",
+          "白"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "学",
+        "pinyin": "xué",
+        "emoji": "🎓",
+        "example": "我爱**学**写字。",
+        "answer": "学",
+        "opts": [
+          "学",
+          "都",
+          "识",
+          "会"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "孩",
+        "pinyin": "hái",
+        "emoji": "",
+        "example": "每个**孩**子都应该快乐成长。",
+        "answer": "孩",
+        "opts": [
+          "孩",
+          "多",
+          "元",
+          "能"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "客",
+        "pinyin": "kè",
+        "emoji": "",
+        "example": "**客**人来了，我们热情招待。",
+        "answer": "客",
+        "opts": [
+          "汉",
+          "喝",
+          "客",
+          "八"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "家",
+        "pinyin": "jiā",
+        "emoji": "🏠",
+        "example": "每天放学后，我都回到温暖的**家**。",
+        "answer": "家",
+        "opts": [
+          "月",
+          "家",
+          "页",
+          "图"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "对",
+        "pinyin": "duì",
+        "emoji": "",
+        "example": "我们要**对**老师有礼貌。",
+        "answer": "对",
+        "opts": [
+          "哥",
+          "先",
+          "对",
+          "看"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "小",
+        "pinyin": "xiǎo",
+        "emoji": "🔽",
+        "example": "今天看到一只**小**猫。",
+        "answer": "小",
+        "opts": [
+          "课",
+          "小",
+          "错",
+          "得"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "少",
+        "pinyin": "shǎo",
+        "emoji": "➖",
+        "example": "请**少**吃零食，多运动。",
+        "answer": "少",
+        "opts": [
+          "坐",
+          "习",
+          "少",
+          "准"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "就",
+        "pinyin": "jiù",
+        "emoji": "",
+        "example": "我**就**住在学校旁边。",
+        "answer": "就",
+        "opts": [
+          "想",
+          "就",
+          "汽",
+          "左"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "山",
+        "pinyin": "shān",
+        "emoji": "⛰️",
+        "example": "我们要去爬**山**。",
+        "answer": "山",
+        "opts": [
+          "北",
+          "有",
+          "山",
+          "回"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "岁",
+        "pinyin": "suì",
+        "emoji": "",
+        "example": "我今年已经七**岁**了，准备上小学。",
+        "answer": "岁",
+        "opts": [
+          "岁",
+          "房",
+          "读",
+          "坏"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "工",
+        "pinyin": "gōng",
+        "emoji": "",
+        "example": "我长大了想当**工**程师。",
+        "answer": "工",
+        "opts": [
+          "百",
+          "马",
+          "七",
+          "工"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "左",
+        "pinyin": "zuǒ",
+        "emoji": "⬅️",
+        "example": "我**左**手拿着红旗。",
+        "answer": "左",
+        "opts": [
+          "左",
+          "新",
+          "什",
+          "班"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "差",
+        "pinyin": "chà",
+        "emoji": "",
+        "example": "你**差**一分就满分了，真棒！",
+        "answer": "差",
+        "opts": [
+          "儿",
+          "同",
+          "差",
+          "会"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "师",
+        "pinyin": "shī",
+        "emoji": "",
+        "example": "老**师**是我们学习的榜样。",
+        "answer": "师",
+        "opts": [
+          "很",
+          "师",
+          "火",
+          "呢"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "帮",
+        "pinyin": "bāng",
+        "emoji": "",
+        "example": "同学之间要互相**帮**助。",
+        "answer": "帮",
+        "opts": [
+          "帮",
+          "新",
+          "热",
+          "脑"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "常",
+        "pinyin": "cháng",
+        "emoji": "",
+        "example": "我**常**和爸爸一起读书。",
+        "answer": "常",
+        "opts": [
+          "星",
+          "买",
+          "常",
+          "图"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "干",
+        "pinyin": "gān",
+        "emoji": "",
+        "example": "妈妈把衣服晾**干**了。",
+        "answer": "干",
+        "opts": [
+          "干",
+          "跑",
+          "差",
+          "过"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "年",
+        "pinyin": "nián",
+        "emoji": "📅",
+        "example": "过**年**的时候要穿新衣服",
+        "answer": "年",
+        "opts": [
+          "年",
+          "渴",
+          "友",
+          "朋"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "床",
+        "pinyin": "chuáng",
+        "emoji": "🛏️",
+        "example": "睡在自己的小**床**上真舒服。",
+        "answer": "床",
+        "opts": [
+          "五",
+          "有",
+          "吃",
+          "床"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "店",
+        "pinyin": "diàn",
+        "emoji": "",
+        "example": "我喜欢去街角的书**店**看书。",
+        "answer": "店",
+        "opts": [
+          "字",
+          "店",
+          "衣",
+          "楼"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "开",
+        "pinyin": "kāi",
+        "emoji": "",
+        "example": "每天早上，我会**开**窗户通风。",
+        "answer": "开",
+        "opts": [
+          "候",
+          "店",
+          "说",
+          "开"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "弟",
+        "pinyin": "dì",
+        "emoji": "",
+        "example": "我的表**弟**非常聪明。",
+        "answer": "弟",
+        "opts": [
+          "弟",
+          "看",
+          "买",
+          "面"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "影",
+        "pinyin": "yǐng",
+        "emoji": "",
+        "example": "**影**子是我的好朋友。",
+        "answer": "影",
+        "opts": [
+          "影",
+          "打",
+          "起",
+          "西"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "很",
+        "pinyin": "hěn",
+        "emoji": "",
+        "example": "今天天气**很**好。",
+        "answer": "很",
+        "opts": [
+          "错",
+          "慢",
+          "很",
+          "唱"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "得",
+        "pinyin": "dé",
+        "emoji": "",
+        "example": "小明**得**到了第一名。",
+        "answer": "得",
+        "opts": [
+          "条",
+          "回",
+          "班",
+          "得"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "忘",
+        "pinyin": "wàng",
+        "emoji": "",
+        "example": "不要**忘**记带上你的微笑。",
+        "answer": "忘",
+        "opts": [
+          "忘",
+          "十",
+          "雨",
+          "车"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "忙",
+        "pinyin": "máng",
+        "emoji": "",
+        "example": "**忙**碌的一天开始了，要加油哦！",
+        "answer": "忙",
+        "opts": [
+          "今",
+          "百",
+          "忙",
+          "票"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "快",
+        "pinyin": "kuài",
+        "emoji": "",
+        "example": "**快**起床，太阳晒屁股啦！",
+        "answer": "快",
+        "opts": [
+          "晚",
+          "怎",
+          "文",
+          "快"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "怎",
+        "pinyin": "zěn",
+        "emoji": "",
+        "example": "你**怎**么这么棒！",
+        "answer": "怎",
+        "opts": [
+          "怎",
+          "吧",
+          "七",
+          "从"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "您",
+        "pinyin": "nín",
+        "emoji": "",
+        "example": "**您**真是一位好老师。",
+        "answer": "您",
+        "opts": [
+          "您",
+          "再",
+          "十",
+          "月"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "想",
+        "pinyin": "xiǎng",
+        "emoji": "",
+        "example": "我**想**成为一名优秀的科学家。",
+        "answer": "想",
+        "opts": [
+          "什",
+          "想",
+          "介",
+          "两"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "慢",
+        "pinyin": "màn",
+        "emoji": "",
+        "example": "小乌龟虽然爬得很**慢**，但它坚持到了终点。",
+        "answer": "慢",
+        "opts": [
+          "见",
+          "场",
+          "了",
+          "慢"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "我",
+        "pinyin": "wǒ",
+        "emoji": "",
+        "example": "**我**是快乐的少先队员。",
+        "answer": "我",
+        "opts": [
+          "要",
+          "我",
+          "左",
+          "记"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "房",
+        "pinyin": "fáng",
+        "emoji": "",
+        "example": "我每天都会打扫自己的**房**间。",
+        "answer": "房",
+        "opts": [
+          "谢",
+          "房",
+          "家",
+          "着"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "手",
+        "pinyin": "shǒu",
+        "emoji": "✋",
+        "example": "小**手**真能干。",
+        "answer": "手",
+        "opts": [
+          "里",
+          "半",
+          "手",
+          "门"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "打",
+        "pinyin": "dǎ",
+        "emoji": "",
+        "example": "我喜欢和爸爸一起**打**篮球。",
+        "answer": "打",
+        "opts": [
+          "新",
+          "没",
+          "房",
+          "打"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "找",
+        "pinyin": "zhǎo",
+        "emoji": "",
+        "example": "我在**找**我的橡皮。",
+        "answer": "找",
+        "opts": [
+          "找",
+          "歌",
+          "拿",
+          "出"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "拿",
+        "pinyin": "ná",
+        "emoji": "",
+        "example": "他**拿**到了一份礼物",
+        "answer": "拿",
+        "opts": [
+          "觉",
+          "二",
+          "火",
+          "拿"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "放",
+        "pinyin": "fàng",
+        "emoji": "",
+        "example": "在草地上**放**风筝真开心。",
+        "answer": "放",
+        "opts": [
+          "给",
+          "妹",
+          "放",
+          "问"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "教",
+        "pinyin": "jiào",
+        "emoji": "",
+        "example": "**教**育是国家的根本。",
+        "answer": "教",
+        "opts": [
+          "教",
+          "期",
+          "好",
+          "答"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "文",
+        "pinyin": "wén",
+        "emoji": "",
+        "example": "我喜欢读**文**学故事。",
+        "answer": "文",
+        "opts": [
+          "吗",
+          "别",
+          "文",
+          "什"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "新",
+        "pinyin": "xīn",
+        "emoji": "",
+        "example": "我背上了**新**书包去上学。",
+        "answer": "新",
+        "opts": [
+          "米",
+          "新",
+          "病",
+          "进"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "方",
+        "pinyin": "fāng",
+        "emoji": "",
+        "example": "我们要做一个正**方**的人。",
+        "answer": "方",
+        "opts": [
+          "正",
+          "茶",
+          "方",
+          "姐"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "旁",
+        "pinyin": "páng",
+        "emoji": "",
+        "example": "我坐在**旁**边看书写字。",
+        "answer": "旁",
+        "opts": [
+          "慢",
+          "们",
+          "旁",
+          "菜"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "日",
+        "pinyin": "rì",
+        "emoji": "☀️",
+        "example": "今天**日**出时间很早。",
+        "answer": "日",
+        "opts": [
+          "买",
+          "日",
+          "冷",
+          "块"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "早",
+        "pinyin": "zǎo",
+        "emoji": "",
+        "example": "**早**晨的阳光真温暖，让人充满活力。",
+        "answer": "早",
+        "opts": [
+          "净",
+          "起",
+          "号",
+          "早"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "时",
+        "pinyin": "shí",
+        "emoji": "⏰",
+        "example": "我们每天都要按**时**上学。",
+        "answer": "时",
+        "opts": [
+          "字",
+          "时",
+          "别",
+          "机"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "明",
+        "pinyin": "míng",
+        "emoji": "",
+        "example": "今天的天气很晴朗，**明**天我们去放风筝。",
+        "answer": "明",
+        "opts": [
+          "难",
+          "明",
+          "请",
+          "关"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "星",
+        "pinyin": "xīng",
+        "emoji": "⭐",
+        "example": "晚上，我和爸爸一起看**星**。",
+        "answer": "星",
+        "opts": [
+          "儿",
+          "第",
+          "钱",
+          "星"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "昨",
+        "pinyin": "zuó",
+        "emoji": "",
+        "example": "我**昨**天和好朋友一起踢足球。",
+        "answer": "昨",
+        "opts": [
+          "昨",
+          "钱",
+          "去",
+          "歌"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "是",
+        "pinyin": "shì",
+        "emoji": "✅",
+        "example": "今天**是**一个晴朗的好日子。",
+        "answer": "是",
+        "opts": [
+          "是",
+          "大",
+          "有",
+          "叫"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "晚",
+        "pinyin": "wǎn",
+        "emoji": "",
+        "example": "今天**晚**上我们一起看星星。",
+        "answer": "晚",
+        "opts": [
+          "家",
+          "中",
+          "晚",
+          "拿"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "最",
+        "pinyin": "zuì",
+        "emoji": "",
+        "example": "你是**最**棒的小学生。",
+        "answer": "最",
+        "opts": [
+          "最",
+          "花",
+          "都",
+          "半"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "月",
+        "pinyin": "yuè",
+        "emoji": "🌙",
+        "example": "圆圆的**月**亮像玉盘。",
+        "answer": "月",
+        "opts": [
+          "元",
+          "花",
+          "月",
+          "书"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "有",
+        "pinyin": "yǒu",
+        "emoji": "",
+        "example": "我们**有**一个美丽的校园。",
+        "answer": "有",
+        "opts": [
+          "几",
+          "体",
+          "有",
+          "休"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "朋",
+        "pinyin": "péng",
+        "emoji": "",
+        "example": "小明是我的好**朋**友。",
+        "answer": "朋",
+        "opts": [
+          "元",
+          "朋",
+          "语",
+          "课"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "服",
+        "pinyin": "fú",
+        "emoji": "",
+        "example": "穿上新**服**真精神！",
+        "answer": "服",
+        "opts": [
+          "服",
+          "先",
+          "衣",
+          "花"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "期",
+        "pinyin": "qī",
+        "emoji": "",
+        "example": "我**期**待暑假的到来。",
+        "answer": "期",
+        "opts": [
+          "期",
+          "课",
+          "道",
+          "九"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "本",
+        "pinyin": "běn",
+        "emoji": "",
+        "example": "我的**本**子上画了一朵小花。",
+        "answer": "本",
+        "opts": [
+          "渴",
+          "南",
+          "绍",
+          "本"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "机",
+        "pinyin": "jī",
+        "emoji": "",
+        "example": "**机**器人真有趣。",
+        "answer": "机",
+        "opts": [
+          "点",
+          "机",
+          "间",
+          "叫"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "条",
+        "pinyin": "tiáo",
+        "emoji": "",
+        "example": "我有一**条**漂亮的围巾。",
+        "answer": "条",
+        "opts": [
+          "知",
+          "下",
+          "条",
+          "语"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "来",
+        "pinyin": "lái",
+        "emoji": "🏃",
+        "example": "小明请**来**我家玩。",
+        "answer": "来",
+        "opts": [
+          "知",
+          "老",
+          "边",
+          "来"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "杯",
+        "pinyin": "bēi",
+        "emoji": "",
+        "example": "我每天早上用**杯**子喝水。",
+        "answer": "杯",
+        "opts": [
+          "杯",
+          "坐",
+          "走",
+          "净"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "果",
+        "pinyin": "guǒ",
+        "emoji": "",
+        "example": "秋天，树上的**果**子成熟了。",
+        "answer": "果",
+        "opts": [
+          "图",
+          "路",
+          "果",
+          "年"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "树",
+        "pinyin": "shù",
+        "emoji": "🌲",
+        "example": "春天的小**树**发出了嫩绿的新芽。",
+        "answer": "树",
+        "opts": [
+          "诉",
+          "电",
+          "树",
+          "时"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "校",
+        "pinyin": "xiào",
+        "emoji": "",
+        "example": "我每天去**校**上学。",
+        "answer": "校",
+        "opts": [
+          "些",
+          "怎",
+          "字",
+          "校"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "样",
+        "pinyin": "yàng",
+        "emoji": "",
+        "example": "这个**样**子真好看。",
+        "answer": "样",
+        "opts": [
+          "样",
+          "牛",
+          "哥",
+          "净"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "桌",
+        "pinyin": "zhuō",
+        "emoji": "🪑",
+        "example": "我每天在**桌**子上写作业。",
+        "answer": "桌",
+        "opts": [
+          "点",
+          "真",
+          "着",
+          "桌"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "楼",
+        "pinyin": "lóu",
+        "emoji": "",
+        "example": "我站在**楼**顶，能看见整个公园。",
+        "answer": "楼",
+        "opts": [
+          "觉",
+          "楼",
+          "开",
+          "院"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "次",
+        "pinyin": "cì",
+        "emoji": "",
+        "example": "请按**次**序排队。",
+        "answer": "次",
+        "opts": [
+          "点",
+          "次",
+          "网",
+          "做"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "欢",
+        "pinyin": "huān",
+        "emoji": "",
+        "example": "我们**欢**迎新同学。",
+        "answer": "欢",
+        "opts": [
+          "都",
+          "少",
+          "妈",
+          "欢"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "歌",
+        "pinyin": "gē",
+        "emoji": "",
+        "example": "我们一起来唱**歌**吧。",
+        "answer": "歌",
+        "opts": [
+          "贵",
+          "歌",
+          "本",
+          "系"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "正",
+        "pinyin": "zhèng",
+        "emoji": "",
+        "example": "我们要做**正**直的人。",
+        "answer": "正",
+        "opts": [
+          "备",
+          "走",
+          "票",
+          "正"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "比",
+        "pinyin": "bǐ",
+        "emoji": "",
+        "example": "我们要**比**谁更有爱心",
+        "answer": "比",
+        "opts": [
+          "手",
+          "事",
+          "比",
+          "南"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "毛",
+        "pinyin": "máo",
+        "emoji": "",
+        "example": "小鸡的**毛**黄黄的。",
+        "answer": "毛",
+        "opts": [
+          "正",
+          "山",
+          "个",
+          "毛"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "气",
+        "pinyin": "qì",
+        "emoji": "",
+        "example": "每天呼吸新鲜空**气**身体好。",
+        "answer": "气",
+        "opts": [
+          "气",
+          "介",
+          "师",
+          "洗"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "水",
+        "pinyin": "shuǐ",
+        "emoji": "💧",
+        "example": "每天喝八杯**水**对身体好。",
+        "answer": "水",
+        "opts": [
+          "忘",
+          "人",
+          "水",
+          "新"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "汉",
+        "pinyin": "hàn",
+        "emoji": "",
+        "example": "我爱写**汉**字。",
+        "answer": "汉",
+        "opts": [
+          "洗",
+          "钱",
+          "谢",
+          "汉"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "汽",
+        "pinyin": "qì",
+        "emoji": "",
+        "example": "小朋友们喜欢坐**汽**车去郊游。",
+        "answer": "汽",
+        "opts": [
+          "汽",
+          "话",
+          "桌",
+          "站"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "没",
+        "pinyin": "méi",
+        "emoji": "",
+        "example": "今天**没**有下雨，我们去公园玩。",
+        "answer": "没",
+        "opts": [
+          "吃",
+          "没",
+          "放",
+          "弟"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "洗",
+        "pinyin": "xǐ",
+        "emoji": "",
+        "example": "早上起床后要记得**洗**脸。",
+        "answer": "洗",
+        "opts": [
+          "汉",
+          "洗",
+          "妹",
+          "星"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "渴",
+        "pinyin": "kě",
+        "emoji": "",
+        "example": "我**渴**了，想喝水。",
+        "answer": "渴",
+        "opts": [
+          "来",
+          "次",
+          "渴",
+          "国"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "火",
+        "pinyin": "huǒ",
+        "emoji": "🔥",
+        "example": "**火**能带来温暖和光明。",
+        "answer": "火",
+        "opts": [
+          "写",
+          "百",
+          "火",
+          "吧"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "点",
+        "pinyin": "diǎn",
+        "emoji": "📍",
+        "example": "小雨**点**落在地上。",
+        "answer": "点",
+        "opts": [
+          "电",
+          "桌",
+          "点",
+          "走"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "热",
+        "pinyin": "rè",
+        "emoji": "",
+        "example": "今天真**热**，我们一起去游泳吧！",
+        "answer": "热",
+        "opts": [
+          "路",
+          "热",
+          "花",
+          "晚"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "爱",
+        "pinyin": "ài",
+        "emoji": "❤️",
+        "example": "我们都要**爱**惜粮食。",
+        "answer": "爱",
+        "opts": [
+          "上",
+          "京",
+          "月",
+          "爱"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "爷",
+        "pinyin": "yé",
+        "emoji": "",
+        "example": "**爷**，请喝茶。",
+        "answer": "爷",
+        "opts": [
+          "开",
+          "别",
+          "想",
+          "爷"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "爸",
+        "pinyin": "bà",
+        "emoji": "",
+        "example": "我的**爸**很爱我",
+        "answer": "爸",
+        "opts": [
+          "班",
+          "写",
+          "爸",
+          "些"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "牛",
+        "pinyin": "niú",
+        "emoji": "🐂",
+        "example": "小**牛**在草地上吃草。",
+        "answer": "牛",
+        "opts": [
+          "门",
+          "后",
+          "牛",
+          "远"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "玩",
+        "pinyin": "wán",
+        "emoji": "",
+        "example": "今天我和弟弟**玩**捉迷藏。",
+        "answer": "玩",
+        "opts": [
+          "玩",
+          "孩",
+          "儿",
+          "视"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "现",
+        "pinyin": "xiàn",
+        "emoji": "",
+        "example": "我**现**在是一名小学生。",
+        "answer": "现",
+        "opts": [
+          "吗",
+          "现",
+          "电",
+          "能"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "班",
+        "pinyin": "bān",
+        "emoji": "",
+        "example": "我们**班**今天得到了流动红旗",
+        "answer": "班",
+        "opts": [
+          "这",
+          "现",
+          "上",
+          "班"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "球",
+        "pinyin": "qiú",
+        "emoji": "",
+        "example": "我喜欢踢**球**。",
+        "answer": "球",
+        "opts": [
+          "很",
+          "重",
+          "球",
+          "汽"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "生",
+        "pinyin": "shēng",
+        "emoji": "",
+        "example": "**生**活中有很多美好的事物。",
+        "answer": "生",
+        "opts": [
+          "准",
+          "呢",
+          "生",
+          "汉"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "用",
+        "pinyin": "yòng",
+        "emoji": "",
+        "example": "我们一起**用**积木搭房子。",
+        "answer": "用",
+        "opts": [
+          "系",
+          "什",
+          "用",
+          "请"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "电",
+        "pinyin": "diàn",
+        "emoji": "⚡",
+        "example": "**电**是我们生活中重要的能源。",
+        "answer": "电",
+        "opts": [
+          "电",
+          "呢",
+          "道",
+          "玩"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "男",
+        "pinyin": "nán",
+        "emoji": "",
+        "example": "他是一个勇敢的**男**孩。",
+        "answer": "男",
+        "opts": [
+          "试",
+          "和",
+          "爸",
+          "男"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "病",
+        "pinyin": "bìng",
+        "emoji": "",
+        "example": "多锻炼身体可以少生**病**。",
+        "answer": "病",
+        "opts": [
+          "欢",
+          "净",
+          "病",
+          "么"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "白",
+        "pinyin": "bái",
+        "emoji": "",
+        "example": "天空中的**白**云像棉花糖",
+        "answer": "白",
+        "opts": [
+          "姐",
+          "白",
+          "什",
+          "左"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "百",
+        "pinyin": "bǎi",
+        "emoji": "",
+        "example": "我有一**百**本书。",
+        "answer": "百",
+        "opts": [
+          "岁",
+          "百",
+          "页",
+          "火"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "的",
+        "pinyin": "de",
+        "emoji": "📌",
+        "example": "这是我**的**新书包。",
+        "answer": "的",
+        "opts": [
+          "很",
+          "的",
+          "热",
+          "识"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "看",
+        "pinyin": "kàn",
+        "emoji": "👁️",
+        "example": "妈妈带我去**看**美丽的海豚表演。",
+        "answer": "看",
+        "opts": [
+          "常",
+          "坐",
+          "看",
+          "关"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "真",
+        "pinyin": "zhēn",
+        "emoji": "",
+        "example": "我们要做一个**真**诚的好孩子。",
+        "answer": "真",
+        "opts": [
+          "下",
+          "们",
+          "真",
+          "出"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "着",
+        "pinyin": "zháo",
+        "emoji": "",
+        "example": "**着**火了，快跑啊！",
+        "answer": "着",
+        "opts": [
+          "页",
+          "旁",
+          "着",
+          "得"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "睡",
+        "pinyin": "shuì",
+        "emoji": "",
+        "example": "我每天晚上都**睡**得很香。",
+        "answer": "睡",
+        "opts": [
+          "还",
+          "下",
+          "几",
+          "睡"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "知",
+        "pinyin": "zhī",
+        "emoji": "",
+        "example": "他**知**道如何帮助别人。",
+        "answer": "知",
+        "opts": [
+          "听",
+          "行",
+          "弟",
+          "知"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "票",
+        "pinyin": "piào",
+        "emoji": "",
+        "example": "小明用零花钱买了一张电影**票**。",
+        "answer": "票",
+        "opts": [
+          "哥",
+          "第",
+          "票",
+          "吧"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "穿",
+        "pinyin": "chuān",
+        "emoji": "",
+        "example": "我自己学会了**穿**鞋子。",
+        "answer": "穿",
+        "opts": [
+          "穿",
+          "个",
+          "她",
+          "房"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "站",
+        "pinyin": "zhàn",
+        "emoji": "🧍",
+        "example": "他**站**在讲台上发言",
+        "answer": "站",
+        "opts": [
+          "站",
+          "影",
+          "语",
+          "高"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "笑",
+        "pinyin": "xiào",
+        "emoji": "",
+        "example": "小明考试得了满分，高兴地**笑**了。",
+        "answer": "笑",
+        "opts": [
+          "笑",
+          "过",
+          "四",
+          "七"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "第",
+        "pinyin": "dì",
+        "emoji": "",
+        "example": "他获得了比赛**第**一名。",
+        "answer": "第",
+        "opts": [
+          "第",
+          "告",
+          "都",
+          "会"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "等",
+        "pinyin": "děng",
+        "emoji": "",
+        "example": "放学后，我在校门口**等**妈妈。",
+        "answer": "等",
+        "opts": [
+          "常",
+          "桌",
+          "知",
+          "等"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "答",
+        "pinyin": "dá",
+        "emoji": "",
+        "example": "小明**答**对了老师的问题。",
+        "answer": "答",
+        "opts": [
+          "知",
+          "子",
+          "答",
+          "七"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "米",
+        "pinyin": "mǐ",
+        "emoji": "🍚",
+        "example": "今天的**米**饭格外香甜。",
+        "answer": "米",
+        "opts": [
+          "票",
+          "饭",
+          "米",
+          "二"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "系",
+        "pinyin": "xì",
+        "emoji": "",
+        "example": "我们和老师之间的关**系**非常融洽。",
+        "answer": "系",
+        "opts": [
+          "工",
+          "系",
+          "百",
+          "爷"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "累",
+        "pinyin": "lèi",
+        "emoji": "",
+        "example": "学习有时会很**累**，但收获快乐。",
+        "answer": "累",
+        "opts": [
+          "网",
+          "喜",
+          "累",
+          "孩"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "绍",
+        "pinyin": "shào",
+        "emoji": "",
+        "example": "我给大家**绍**一下我的新朋友。",
+        "answer": "绍",
+        "opts": [
+          "校",
+          "晚",
+          "右",
+          "绍"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "给",
+        "pinyin": "gěi",
+        "emoji": "",
+        "example": "妈妈**给**我买了一个玩具。",
+        "answer": "给",
+        "opts": [
+          "树",
+          "给",
+          "医",
+          "去"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "网",
+        "pinyin": "wǎng",
+        "emoji": "",
+        "example": "蜘蛛在墙角织了一张**网**。",
+        "answer": "网",
+        "opts": [
+          "雨",
+          "网",
+          "少",
+          "认"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "老",
+        "pinyin": "lǎo",
+        "emoji": "",
+        "example": "**老**师教我们读书写字。",
+        "answer": "老",
+        "opts": [
+          "吧",
+          "西",
+          "老",
+          "从"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "考",
+        "pinyin": "kǎo",
+        "emoji": "",
+        "example": "每次**考**试前都要认真复习。",
+        "answer": "考",
+        "opts": [
+          "考",
+          "学",
+          "桌",
+          "你"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "肉",
+        "pinyin": "ròu",
+        "emoji": "",
+        "example": "我们一家人围坐在一起吃**肉**。",
+        "answer": "肉",
+        "opts": [
+          "肉",
+          "字",
+          "息",
+          "在"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "能",
+        "pinyin": "néng",
+        "emoji": "",
+        "example": "我相**能**通过努力取得成功。",
+        "answer": "能",
+        "opts": [
+          "一",
+          "能",
+          "认",
+          "孩"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "脑",
+        "pinyin": "nǎo",
+        "emoji": "",
+        "example": "我们用**脑**思考和学习新知识。",
+        "answer": "脑",
+        "opts": [
+          "歌",
+          "脑",
+          "视",
+          "今"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "花",
+        "pinyin": "huā",
+        "emoji": "🌸",
+        "example": "我得到一朵美丽的**花**。",
+        "answer": "花",
+        "opts": [
+          "花",
+          "假",
+          "错",
+          "口"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "茶",
+        "pinyin": "chá",
+        "emoji": "🍵",
+        "example": "爷爷每天都要喝一杯**茶**。",
+        "answer": "茶",
+        "opts": [
+          "茶",
+          "快",
+          "口",
+          "什"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "菜",
+        "pinyin": "cài",
+        "emoji": "",
+        "example": "多吃**菜**可以让身体更健康。",
+        "answer": "菜",
+        "opts": [
+          "难",
+          "菜",
+          "话",
+          "气"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "蛋",
+        "pinyin": "dàn",
+        "emoji": "",
+        "example": "小鸡从**蛋**里孵出来。",
+        "answer": "蛋",
+        "opts": [
+          "飞",
+          "工",
+          "楼",
+          "蛋"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "行",
+        "pinyin": "xíng",
+        "emoji": "",
+        "example": "我每天**行**走锻炼身体。",
+        "answer": "行",
+        "opts": [
+          "走",
+          "妹",
+          "读",
+          "行"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "衣",
+        "pinyin": "yī",
+        "emoji": "👕",
+        "example": "我穿上了漂亮的**衣**服。",
+        "answer": "衣",
+        "opts": [
+          "现",
+          "衣",
+          "馆",
+          "备"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "西",
+        "pinyin": "xī",
+        "emoji": "",
+        "example": "我家的**西**边有一条小河。",
+        "answer": "西",
+        "opts": [
+          "回",
+          "哪",
+          "考",
+          "西"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "要",
+        "pinyin": "yào",
+        "emoji": "",
+        "example": "我**要**做一个诚实的好孩子。",
+        "answer": "要",
+        "opts": [
+          "怎",
+          "觉",
+          "们",
+          "要"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "见",
+        "pinyin": "jiàn",
+        "emoji": "",
+        "example": "我**见**到了美丽的彩虹。",
+        "answer": "见",
+        "opts": [
+          "弟",
+          "见",
+          "爸",
+          "都"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "视",
+        "pinyin": "shì",
+        "emoji": "",
+        "example": "我们要从小保护**视**力。",
+        "answer": "视",
+        "opts": [
+          "记",
+          "路",
+          "开",
+          "视"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "觉",
+        "pinyin": "jué",
+        "emoji": "",
+        "example": "我**觉**得大自然很美丽。",
+        "answer": "觉",
+        "opts": [
+          "岁",
+          "诉",
+          "觉",
+          "元"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "认",
+        "pinyin": "rèn",
+        "emoji": "",
+        "example": "我**认**识了很多生字",
+        "answer": "认",
+        "opts": [
+          "认",
+          "现",
+          "新",
+          "米"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "记",
+        "pinyin": "jì",
+        "emoji": "",
+        "example": "请**记**住这个重要的知识点。",
+        "answer": "记",
+        "opts": [
+          "分",
+          "常",
+          "记",
+          "姐"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "识",
+        "pinyin": "shí",
+        "emoji": "",
+        "example": "今天我认**识**了一个新朋友",
+        "answer": "识",
+        "opts": [
+          "爱",
+          "两",
+          "介",
+          "识"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "诉",
+        "pinyin": "sù",
+        "emoji": "",
+        "example": "他向我**诉**说成功的喜悦。",
+        "answer": "诉",
+        "opts": [
+          "休",
+          "诉",
+          "哪",
+          "次"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "试",
+        "pinyin": "shì",
+        "emoji": "",
+        "example": "我**试**着解出了这道数学题。",
+        "answer": "试",
+        "opts": [
+          "汽",
+          "难",
+          "试",
+          "中"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "话",
+        "pinyin": "huà",
+        "emoji": "",
+        "example": "小朋友要学会说文明**话**。",
+        "answer": "话",
+        "opts": [
+          "肉",
+          "笑",
+          "话",
+          "米"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "语",
+        "pinyin": "yǔ",
+        "emoji": "",
+        "example": "我爱学习中文**语**。",
+        "answer": "语",
+        "opts": [
+          "语",
+          "怎",
+          "右",
+          "别"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "说",
+        "pinyin": "shuō",
+        "emoji": "💬",
+        "example": "**说**话要诚实。",
+        "answer": "说",
+        "opts": [
+          "非",
+          "旁",
+          "教",
+          "说"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "请",
+        "pinyin": "qǐng",
+        "emoji": "",
+        "example": "**请**你帮我把书递过来。",
+        "answer": "请",
+        "opts": [
+          "请",
+          "时",
+          "帮",
+          "几"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "读",
+        "pinyin": "dú",
+        "emoji": "📖",
+        "example": "小朋友要大声**读**书。",
+        "answer": "读",
+        "opts": [
+          "读",
+          "备",
+          "服",
+          "忘"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "课",
+        "pinyin": "kè",
+        "emoji": "",
+        "example": "今天的**课**真有趣。",
+        "answer": "课",
+        "opts": [
+          "课",
+          "日",
+          "累",
+          "不"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "谁",
+        "pinyin": "shéi",
+        "emoji": "",
+        "example": "今天**谁**第一个到校？",
+        "answer": "谁",
+        "opts": [
+          "影",
+          "二",
+          "不",
+          "谁"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "谢",
+        "pinyin": "xiè",
+        "emoji": "",
+        "example": "他**谢**了大家。",
+        "answer": "谢",
+        "opts": [
+          "爱",
+          "去",
+          "谢",
+          "树"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "贵",
+        "pinyin": "guì",
+        "emoji": "",
+        "example": "我们要珍惜**贵**重的友谊。",
+        "answer": "贵",
+        "opts": [
+          "问",
+          "贵",
+          "教",
+          "作"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "走",
+        "pinyin": "zǒu",
+        "emoji": "🚶",
+        "example": "妹妹学会**走**路了真开心",
+        "answer": "走",
+        "opts": [
+          "楼",
+          "走",
+          "服",
+          "体"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "起",
+        "pinyin": "qǐ",
+        "emoji": "",
+        "example": "太阳从东方升**起**了。",
+        "answer": "起",
+        "opts": [
+          "起",
+          "考",
+          "鸡",
+          "我"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "跑",
+        "pinyin": "pǎo",
+        "emoji": "🏃",
+        "example": "他每天早晨都去公园**跑**步。",
+        "answer": "跑",
+        "opts": [
+          "们",
+          "影",
+          "跑",
+          "人"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "跟",
+        "pinyin": "gēn",
+        "emoji": "",
+        "example": "请你**跟**我一起做游戏。",
+        "answer": "跟",
+        "opts": [
+          "奶",
+          "叫",
+          "牛",
+          "跟"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "路",
+        "pinyin": "lù",
+        "emoji": "🛣️",
+        "example": "这条**路**一直通向学校。",
+        "answer": "路",
+        "opts": [
+          "路",
+          "穿",
+          "上",
+          "系"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "身",
+        "pinyin": "shēn",
+        "emoji": "",
+        "example": "我们要保持**身**体健康。",
+        "answer": "身",
+        "opts": [
+          "校",
+          "身",
+          "有",
+          "时"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "车",
+        "pinyin": "chē",
+        "emoji": "🚗",
+        "example": "爸爸开**车**带我去公园。",
+        "answer": "车",
+        "opts": [
+          "票",
+          "白",
+          "车",
+          "到"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "边",
+        "pinyin": "biān",
+        "emoji": "",
+        "example": "河**边**的柳树发芽了。",
+        "answer": "边",
+        "opts": [
+          "四",
+          "话",
+          "边",
+          "忙"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "过",
+        "pinyin": "guò",
+        "emoji": "",
+        "example": "我**过**马路要小心。",
+        "answer": "过",
+        "opts": [
+          "半",
+          "过",
+          "白",
+          "岁"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "还",
+        "pinyin": "hái",
+        "emoji": "",
+        "example": "我**还**想再吃一块蛋糕。",
+        "answer": "还",
+        "opts": [
+          "唱",
+          "校",
+          "还",
+          "语"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "这",
+        "pinyin": "zhè",
+        "emoji": "",
+        "example": "**这**是我的新书包。",
+        "answer": "这",
+        "opts": [
+          "右",
+          "这",
+          "们",
+          "差"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "进",
+        "pinyin": "jìn",
+        "emoji": "",
+        "example": "请**进**来坐下。",
+        "answer": "进",
+        "opts": [
+          "用",
+          "进",
+          "口",
+          "常"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "远",
+        "pinyin": "yuǎn",
+        "emoji": "",
+        "example": "学校离家很**远**。",
+        "answer": "远",
+        "opts": [
+          "下",
+          "远",
+          "分",
+          "点"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "送",
+        "pinyin": "sòng",
+        "emoji": "",
+        "example": "我**送**给妈妈一朵花。",
+        "answer": "送",
+        "opts": [
+          "很",
+          "汉",
+          "干",
+          "送"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "道",
+        "pinyin": "dào",
+        "emoji": "",
+        "example": "**道**路两边种满了花草。",
+        "answer": "道",
+        "opts": [
+          "左",
+          "同",
+          "道",
+          "票"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "那",
+        "pinyin": "nà",
+        "emoji": "",
+        "example": "**那**只小鸟飞得真高。",
+        "answer": "那",
+        "opts": [
+          "得",
+          "那",
+          "先",
+          "认"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "都",
+        "pinyin": "dōu",
+        "emoji": "",
+        "example": "我们**都**要爱护环境。",
+        "answer": "都",
+        "opts": [
+          "两",
+          "都",
+          "备",
+          "门"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "里",
+        "pinyin": "lǐ",
+        "emoji": "",
+        "example": "**里**面的糖果真好吃。",
+        "answer": "里",
+        "opts": [
+          "四",
+          "得",
+          "里",
+          "准"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "重",
+        "pinyin": "zhòng",
+        "emoji": "",
+        "example": "小明搬不动这个**重**箱子。",
+        "answer": "重",
+        "opts": [
+          "果",
+          "重",
+          "昨",
+          "车"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "钱",
+        "pinyin": "qián",
+        "emoji": "💰",
+        "example": "我用**钱**买了喜欢的书。",
+        "answer": "钱",
+        "opts": [
+          "号",
+          "零",
+          "钱",
+          "小"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "错",
+        "pinyin": "cuò",
+        "emoji": "",
+        "example": "知**错**能改就是好孩子",
+        "answer": "错",
+        "opts": [
+          "用",
+          "错",
+          "友",
+          "会"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "门",
+        "pinyin": "mén",
+        "emoji": "🚪",
+        "example": "请打开**门**。",
+        "answer": "门",
+        "opts": [
+          "妈",
+          "门",
+          "服",
+          "病"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "问",
+        "pinyin": "wèn",
+        "emoji": "",
+        "example": "在学习中遇到困难就要主动**问**老师。",
+        "answer": "问",
+        "opts": [
+          "问",
+          "放",
+          "快",
+          "告"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "间",
+        "pinyin": "jiān",
+        "emoji": "",
+        "example": "朋友**间**的信任很重要。",
+        "answer": "间",
+        "opts": [
+          "朋",
+          "想",
+          "他",
+          "间"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "院",
+        "pinyin": "yuàn",
+        "emoji": "",
+        "example": "**院**子里开满了鲜花。",
+        "answer": "院",
+        "opts": [
+          "院",
+          "放",
+          "诉",
+          "渴"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "难",
+        "pinyin": "nán",
+        "emoji": "",
+        "example": "这件事很**难**，但我们一定能做好。",
+        "answer": "难",
+        "opts": [
+          "给",
+          "你",
+          "难",
+          "吗"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "雨",
+        "pinyin": "yǔ",
+        "emoji": "🌧️",
+        "example": "**雨**后天空出现彩虹。",
+        "answer": "雨",
+        "opts": [
+          "息",
+          "五",
+          "雨",
+          "校"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "零",
+        "pinyin": "líng",
+        "emoji": "",
+        "example": "从**零**开始学习新知识。",
+        "answer": "零",
+        "opts": [
+          "零",
+          "少",
+          "家",
+          "要"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "非",
+        "pinyin": "fēi",
+        "emoji": "",
+        "example": "他**非**要去游乐园玩",
+        "answer": "非",
+        "opts": [
+          "包",
+          "非",
+          "就",
+          "日"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "面",
+        "pinyin": "miàn",
+        "emoji": "",
+        "example": "放学后我和朋友一起去吃**面**。",
+        "answer": "面",
+        "opts": [
+          "做",
+          "楼",
+          "面",
+          "正"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "页",
+        "pinyin": "yè",
+        "emoji": "",
+        "example": "请你翻到书的第**页**。",
+        "answer": "页",
+        "opts": [
+          "树",
+          "样",
+          "页",
+          "师"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "风",
+        "pinyin": "fēng",
+        "emoji": "🌬️",
+        "example": "温暖的**风**吹在脸上真舒服。",
+        "answer": "风",
+        "opts": [
+          "风",
+          "现",
+          "关",
+          "吃"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "飞",
+        "pinyin": "fēi",
+        "emoji": "",
+        "example": "小鸟在蓝天上**飞**翔。",
+        "answer": "飞",
+        "opts": [
+          "系",
+          "飞",
+          "妹",
+          "差"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "饭",
+        "pinyin": "fàn",
+        "emoji": "",
+        "example": "今天中午的**饭**特别香。",
+        "answer": "饭",
+        "opts": [
+          "杯",
+          "候",
+          "人",
+          "饭"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "饿",
+        "pinyin": "è",
+        "emoji": "",
+        "example": "小猫咪**饿**了，它想吃鱼。",
+        "answer": "饿",
+        "opts": [
+          "书",
+          "饿",
+          "十",
+          "们"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "馆",
+        "pinyin": "guǎn",
+        "emoji": "",
+        "example": "我喜欢去图书**馆**看书。",
+        "answer": "馆",
+        "opts": [
+          "馆",
+          "渴",
+          "看",
+          "喝"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "马",
+        "pinyin": "mǎ",
+        "emoji": "🐎",
+        "example": "小**马**在草地上快乐地奔跑。",
+        "answer": "马",
+        "opts": [
+          "哪",
+          "马",
+          "坐",
+          "吗"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "高",
+        "pinyin": "gāo",
+        "emoji": "",
+        "example": "我的同桌小明长得特别**高**。",
+        "answer": "高",
+        "opts": [
+          "备",
+          "三",
+          "高",
+          "不"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      },
+      {
+        "char": "鸡",
+        "pinyin": "jī",
+        "emoji": "",
+        "example": "大**鸡**在院子里散步。",
+        "answer": "鸡",
+        "opts": [
+          "鸡",
+          "冷",
+          "系",
+          "门"
+        ],
+        "modes": [
+          "choose-char-by-pinyin"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,759 @@
+{
+  "items": [
+    {
+      "id": "alien_tech",
+      "name": "外星科技",
+      "emoji": "👾",
+      "type": "material",
+      "rarity": "rare",
+      "description": "太空材料",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "arena_ticket",
+      "name": "额外对战券",
+      "emoji": "🎫",
+      "type": "ticket",
+      "rarity": "common",
+      "description": "今日3场用完后，每张可多打1场",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "ancient_bandage",
+      "name": "古老绷带",
+      "emoji": "🩹",
+      "type": "material",
+      "rarity": "rare",
+      "description": "带着旧时代气息的绷带",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "armor_iron",
+      "name": "铁护甲",
+      "emoji": "🛡️",
+      "type": "equip",
+      "slot": "armor",
+      "rarity": "rare",
+      "description": "HP +50",
+      "effect": {
+        "max_hp": 50
+      },
+      "stack_max": 1
+    },
+    {
+      "id": "armor_leather",
+      "name": "皮革护甲",
+      "emoji": "🦺",
+      "type": "equip",
+      "slot": "armor",
+      "rarity": "common",
+      "description": "HP +20",
+      "effect": {
+        "max_hp": 20
+      },
+      "stack_max": 1
+    },
+    {
+      "id": "battery",
+      "name": "能量电池",
+      "emoji": "🔋",
+      "type": "material",
+      "rarity": "common",
+      "description": "太空场景掉落的备用能源电池",
+      "effect": {},
+      "stack_max": 999
+    },
+    {
+      "id": "battle_atk_elixir",
+      "name": "攻击药",
+      "emoji": "⚔️",
+      "type": "battle",
+      "rarity": "common",
+      "description": "对战中本场上场宠物 atk +30%（本战有效）",
+      "effect": { "atk_buff": 0.3 },
+      "stack_max": 99
+    },
+    {
+      "id": "battle_bomb",
+      "name": "炸弹",
+      "emoji": "💣",
+      "type": "battle",
+      "rarity": "common",
+      "description": "对战中敌方上场宠物固定 -30 HP",
+      "effect": { "dmg": 30 },
+      "stack_max": 99
+    },
+    {
+      "id": "battle_def_elixir",
+      "name": "防御药",
+      "emoji": "🛡️",
+      "type": "battle",
+      "rarity": "common",
+      "description": "对战中本场上场宠物 def +30%（本战有效）",
+      "effect": { "def_buff": 0.3 },
+      "stack_max": 99
+    },
+    {
+      "id": "battle_heal_potion",
+      "name": "回血药",
+      "emoji": "🧪",
+      "type": "battle",
+      "rarity": "common",
+      "description": "对战中本场上场宠物回 30% maxHp",
+      "effect": { "heal_pct": 30 },
+      "stack_max": 99
+    },
+    {
+      "id": "battle_revive",
+      "name": "复活符",
+      "emoji": "🌟",
+      "type": "battle",
+      "rarity": "common",
+      "description": "对战中复活第一个阵亡替补（50% hp），无阵亡则存标记自动触发",
+      "effect": { "revive_pct": 50 },
+      "stack_max": 99
+    },
+    {
+      "id": "bone",
+      "name": "香香骨头",
+      "emoji": "🦴",
+      "type": "material",
+      "rarity": "common",
+      "description": "宠物会喜欢的散步战利品",
+      "effect": {},
+      "stack_max": 999
+    },
+    {
+      "id": "cake_slice",
+      "name": "蛋糕切片",
+      "emoji": "🍰",
+      "type": "material",
+      "rarity": "rare",
+      "description": "闻起来香甜的蛋糕切片",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "candy",
+      "name": "彩虹糖",
+      "emoji": "🍬",
+      "type": "material",
+      "rarity": "common",
+      "description": "糖果王国材料",
+      "effect": {},
+      "stack_max": 999
+    },
+    {
+      "id": "carrot",
+      "name": "新鲜胡萝卜",
+      "emoji": "🥕",
+      "type": "material",
+      "rarity": "common",
+      "description": "森林材料，可喂兔子",
+      "effect": {},
+      "stack_max": 999
+    },
+    {
+      "id": "castle_gem",
+      "name": "城堡徽晶",
+      "emoji": "🏰",
+      "type": "material",
+      "rarity": "epic",
+      "description": "彩虹城堡的象征宝石",
+      "effect": {},
+      "stack_max": 9
+    },
+    {
+      "id": "cave_gem",
+      "name": "洞穴秘晶",
+      "emoji": "🪨",
+      "type": "material",
+      "rarity": "epic",
+      "description": "洞穴深处孕育的秘晶",
+      "effect": {},
+      "stack_max": 9
+    },
+    {
+      "id": "chest_fragment",
+      "name": "宝箱碎片",
+      "emoji": "🧩",
+      "type": "material",
+      "rarity": "rare",
+      "description": "也许能拼出隐藏宝箱",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "circuit",
+      "name": "电路板",
+      "emoji": "🔌",
+      "type": "material",
+      "rarity": "common",
+      "description": "太空材料",
+      "effect": {},
+      "stack_max": 999
+    },
+    {
+      "id": "crystal_shard",
+      "name": "水晶碎片",
+      "emoji": "🔹",
+      "type": "material",
+      "rarity": "rare",
+      "description": "洞穴中找到的发光碎晶",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "desert_gem",
+      "name": "沙海之眼",
+      "emoji": "🏜️",
+      "type": "material",
+      "rarity": "epic",
+      "description": "沙漠场景的稀有宝石",
+      "effect": {},
+      "stack_max": 9
+    },
+    {
+      "id": "desert_pearl",
+      "name": "沙漠珍珠",
+      "emoji": "🤎",
+      "type": "material",
+      "rarity": "rare",
+      "description": "沙海中埋藏的珍贵珠子",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "dragon_scale",
+      "name": "幼龙鳞片",
+      "emoji": "🐉",
+      "type": "material",
+      "rarity": "epic",
+      "description": "闪闪发亮的龙族鳞片",
+      "effect": {},
+      "stack_max": 20
+    },
+    {
+      "id": "exp_potion",
+      "name": "经验药水",
+      "emoji": "✨",
+      "type": "consumable",
+      "rarity": "rare",
+      "description": "增加 30 EXP",
+      "effect": {
+        "exp": 30
+      },
+      "stack_max": 30
+    },
+    {
+      "id": "feather",
+      "name": "发光羽毛",
+      "emoji": "🪶",
+      "type": "material",
+      "rarity": "rare",
+      "description": "轻盈闪亮的羽毛",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "fire_scale",
+      "name": "火焰鳞片",
+      "emoji": "🔥",
+      "type": "material",
+      "rarity": "rare",
+      "description": "火山边冷却后仍温热的鳞片",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "fish_frozen",
+      "name": "冰冻小鱼",
+      "emoji": "🐟",
+      "type": "material",
+      "rarity": "common",
+      "description": "雪原里封在冰中的小鱼",
+      "effect": {},
+      "stack_max": 999
+    },
+    {
+      "id": "forest_gem",
+      "name": "森林之泪",
+      "emoji": "💚",
+      "type": "material",
+      "rarity": "epic",
+      "description": "森林稀有宝石",
+      "effect": {},
+      "stack_max": 9
+    },
+    {
+      "id": "fur",
+      "name": "温暖毛皮",
+      "emoji": "🧶",
+      "type": "material",
+      "rarity": "common",
+      "description": "雪山材料",
+      "effect": {},
+      "stack_max": 999
+    },
+    {
+      "id": "glow_jelly",
+      "name": "荧光水母胶",
+      "emoji": "🪼",
+      "type": "material",
+      "rarity": "rare",
+      "description": "海底水母留下的发光凝胶",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "glowing_mushroom",
+      "name": "发光蘑菇",
+      "emoji": "🍄",
+      "type": "material",
+      "rarity": "rare",
+      "description": "在黑暗中微微发亮的蘑菇",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "golden_scale",
+      "name": "金色鳞片",
+      "emoji": "🪙",
+      "type": "material",
+      "rarity": "epic",
+      "description": "稀有生物掉落的金色鳞片",
+      "effect": {},
+      "stack_max": 20
+    },
+    {
+      "id": "ice_crystal",
+      "name": "冰晶",
+      "emoji": "❄️",
+      "type": "material",
+      "rarity": "rare",
+      "description": "雪山材料",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "ink_sac",
+      "name": "墨囊",
+      "emoji": "🖋️",
+      "type": "material",
+      "rarity": "common",
+      "description": "深海墨鱼留下的墨囊",
+      "effect": {},
+      "stack_max": 999
+    },
+    {
+      "id": "knight_shield",
+      "name": "骑士小盾",
+      "emoji": "🛡️",
+      "type": "material",
+      "rarity": "rare",
+      "description": "彩虹城堡里找到的迷你盾牌",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "lava_crystal",
+      "name": "熔岩水晶",
+      "emoji": "🟥",
+      "type": "material",
+      "rarity": "epic",
+      "description": "火山温泉凝成的红色晶体",
+      "effect": {},
+      "stack_max": 20
+    },
+    {
+      "id": "leaf",
+      "name": "翠绿叶子",
+      "emoji": "🍃",
+      "type": "material",
+      "rarity": "common",
+      "description": "森林材料，可合成",
+      "effect": {},
+      "stack_max": 999
+    },
+    {
+      "id": "lily_pad",
+      "name": "金荷叶",
+      "emoji": "🪷",
+      "type": "material",
+      "rarity": "rare",
+      "description": "瀑布秘境里的幸运荷叶",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "lollipop",
+      "name": "棒棒糖",
+      "emoji": "🍭",
+      "type": "material",
+      "rarity": "common",
+      "description": "糖果王国的甜蜜战利品",
+      "effect": {},
+      "stack_max": 999
+    },
+    {
+      "id": "magic_wand",
+      "name": "魔法卷杖",
+      "emoji": "🪄",
+      "type": "material",
+      "rarity": "epic",
+      "description": "图书馆旧书中掉出的神秘卷杖",
+      "effect": {},
+      "stack_max": 20
+    },
+    {
+      "id": "moon_cake",
+      "name": "月亮糕",
+      "emoji": "🥮",
+      "type": "material",
+      "rarity": "rare",
+      "description": "星狐脚印尽头找到的月亮形点心",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "mushroom",
+      "name": "魔法蘑菇",
+      "emoji": "🍄",
+      "type": "material",
+      "rarity": "common",
+      "description": "森林材料，可恢复 5 HP",
+      "effect": {
+        "hp": 5
+      },
+      "stack_max": 999
+    },
+    {
+      "id": "ocean_crown",
+      "name": "海皇冠饰",
+      "emoji": "👑",
+      "type": "material",
+      "rarity": "legendary",
+      "description": "深海王冠的一部分",
+      "effect": {},
+      "stack_max": 9
+    },
+    {
+      "id": "ocean_gem",
+      "name": "海洋之心",
+      "emoji": "💙",
+      "type": "material",
+      "rarity": "epic",
+      "description": "海洋稀有宝石",
+      "effect": {},
+      "stack_max": 9
+    },
+    {
+      "id": "pearl",
+      "name": "珍珠",
+      "emoji": "🦪",
+      "type": "material",
+      "rarity": "rare",
+      "description": "海滩稀有材料",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "pet_food_basic",
+      "name": "宠物粮",
+      "emoji": "🥣",
+      "type": "consumable",
+      "rarity": "common",
+      "description": "恢复宠物 20 HP",
+      "effect": {
+        "hp": 20
+      },
+      "stack_max": 99
+    },
+    {
+      "id": "pet_food_premium",
+      "name": "高级宠物粮",
+      "emoji": "🍖",
+      "type": "consumable",
+      "rarity": "rare",
+      "description": "恢复宠物 50 HP + 5 EXP",
+      "effect": {
+        "hp": 50,
+        "exp": 5
+      },
+      "stack_max": 50
+    },
+    {
+      "id": "phoenix_feather",
+      "name": "凤凰羽毛",
+      "emoji": "🪶",
+      "type": "material",
+      "rarity": "legendary",
+      "description": "传说中的不死鸟羽毛",
+      "effect": {},
+      "stack_max": 9
+    },
+    {
+      "id": "potion_large",
+      "name": "大型治疗药水",
+      "emoji": "⚗️",
+      "type": "consumable",
+      "rarity": "rare",
+      "description": "恢复 100 HP",
+      "effect": {
+        "hp": 100
+      },
+      "stack_max": 20
+    },
+    {
+      "id": "potion_small",
+      "name": "小型治疗药水",
+      "emoji": "🧪",
+      "type": "consumable",
+      "rarity": "common",
+      "description": "恢复 30 HP",
+      "effect": {
+        "hp": 30
+      },
+      "stack_max": 99
+    },
+    {
+      "id": "rainbow_dew",
+      "name": "彩虹露珠",
+      "emoji": "💧",
+      "type": "material",
+      "rarity": "rare",
+      "description": "瀑布水雾凝成的彩色露珠",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "rainbow_gem",
+      "name": "彩虹糖晶",
+      "emoji": "🌈",
+      "type": "material",
+      "rarity": "epic",
+      "description": "糖果王国稀有宝石",
+      "effect": {},
+      "stack_max": 9
+    },
+    {
+      "id": "rainbow_gem2",
+      "name": "彩瀑灵晶",
+      "emoji": "🌈",
+      "type": "material",
+      "rarity": "epic",
+      "description": "瀑布秘境的第二枚彩虹灵晶",
+      "effect": {},
+      "stack_max": 9
+    },
+    {
+      "id": "revive_potion",
+      "name": "复活药水",
+      "emoji": "💖",
+      "type": "consumable",
+      "rarity": "epic",
+      "description": "HP 为 0 时自动复活并恢复 50% HP",
+      "effect": {
+        "revive": true,
+        "hp_percent": 50
+      },
+      "stack_max": 5
+    },
+    {
+      "id": "sand_shell",
+      "name": "沙纹贝壳",
+      "emoji": "🐚",
+      "type": "material",
+      "rarity": "common",
+      "description": "沙漠遗迹里发现的奇异贝壳",
+      "effect": {},
+      "stack_max": 999
+    },
+    {
+      "id": "seaweed",
+      "name": "海草",
+      "emoji": "🌿",
+      "type": "material",
+      "rarity": "common",
+      "description": "海边常见材料",
+      "effect": {},
+      "stack_max": 999
+    },
+    {
+      "id": "shark_tooth",
+      "name": "鲨鱼牙",
+      "emoji": "🦷",
+      "type": "material",
+      "rarity": "rare",
+      "description": "锋利的海底战利品",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "shell",
+      "name": "彩色贝壳",
+      "emoji": "🐚",
+      "type": "material",
+      "rarity": "common",
+      "description": "海滩材料",
+      "effect": {},
+      "stack_max": 999
+    },
+    {
+      "id": "silk",
+      "name": "蜘蛛丝",
+      "emoji": "🕸️",
+      "type": "material",
+      "rarity": "common",
+      "description": "森林里收集到的柔韧蛛丝",
+      "effect": {},
+      "stack_max": 999
+    },
+    {
+      "id": "snow_gem",
+      "name": "雪莲之魂",
+      "emoji": "🤍",
+      "type": "material",
+      "rarity": "epic",
+      "description": "雪山稀有宝石",
+      "effect": {},
+      "stack_max": 9
+    },
+    {
+      "id": "space_rock",
+      "name": "太空岩",
+      "emoji": "🪨",
+      "type": "material",
+      "rarity": "rare",
+      "description": "带着星光的宇宙矿石",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "star_dust",
+      "name": "星尘",
+      "emoji": "✨",
+      "type": "material",
+      "rarity": "rare",
+      "description": "夜空花园里采集到的星尘",
+      "effect": {},
+      "stack_max": 99
+    },
+    {
+      "id": "star_fragment",
+      "name": "星星碎片",
+      "emoji": "🌟",
+      "type": "material",
+      "rarity": "epic",
+      "description": "月亮灯笼里藏着的星光碎片",
+      "effect": {},
+      "stack_max": 20
+    },
+    {
+      "id": "star_gem",
+      "name": "星辰碎片",
+      "emoji": "⭐",
+      "type": "material",
+      "rarity": "legendary",
+      "description": "传说级材料",
+      "effect": {},
+      "stack_max": 9
+    },
+    {
+      "id": "star_gem2",
+      "name": "星辉核心",
+      "emoji": "🌠",
+      "type": "material",
+      "rarity": "legendary",
+      "description": "星空花园的核心结晶",
+      "effect": {},
+      "stack_max": 9
+    },
+    {
+      "id": "stone",
+      "name": "刻纹石",
+      "emoji": "🪨",
+      "type": "material",
+      "rarity": "common",
+      "description": "带有神秘纹样的小石头",
+      "effect": {},
+      "stack_max": 999
+    },
+    {
+      "id": "sword_diamond",
+      "name": "钻石剑",
+      "emoji": "💎",
+      "type": "equip",
+      "slot": "weapon",
+      "rarity": "epic",
+      "description": "ATK +20",
+      "effect": {
+        "atk": 20
+      },
+      "stack_max": 1
+    },
+    {
+      "id": "sword_iron",
+      "name": "铁剑",
+      "emoji": "⚔️",
+      "type": "equip",
+      "slot": "weapon",
+      "rarity": "rare",
+      "description": "ATK +8",
+      "effect": {
+        "atk": 8
+      },
+      "stack_max": 1
+    },
+    {
+      "id": "sword_wood",
+      "name": "木剑",
+      "emoji": "🗡️",
+      "type": "equip",
+      "slot": "weapon",
+      "rarity": "common",
+      "description": "ATK +3",
+      "effect": {
+        "atk": 3
+      },
+      "stack_max": 1
+    },
+    {
+      "id": "toy_ball",
+      "name": "玩具球",
+      "emoji": "⚽",
+      "type": "material",
+      "rarity": "common",
+      "description": "遛弯时捡到的小球",
+      "effect": {},
+      "stack_max": 999
+    },
+    {
+      "id": "volcano_gem",
+      "name": "火山之心",
+      "emoji": "🌋",
+      "type": "material",
+      "rarity": "epic",
+      "description": "火山场景的炽热宝石",
+      "effect": {},
+      "stack_max": 9
+    },
+    {
+      "id": "yarn",
+      "name": "毛线球",
+      "emoji": "🧶",
+      "type": "material",
+      "rarity": "common",
+      "description": "柔软的毛线团",
+      "effect": {},
+      "stack_max": 999
+    }
+  ],
+  "equip_slots": [
+    "weapon",
+    "armor"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "levelId": "sf-04",
+  "chapterId": "sf-04",
+  "worldId": "sci-fi",
+  "title": "星尘维修区：修好飞船",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "dock",
+      "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-04.webp",
+      "lines": [
+        {
+          "type": "narration",
+          "text": "维修区里，星尘像金色小雨一样落下。飞船的推进器少了一块发光零件，正好需要光核来测试。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“星尘维修区：修好飞船”。我们要把会发光的零件放回推进器，再用光核测试它能不能带我们穿过风暴区。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "推进器一阵一阵地咳嗽，旁边的蓝色零件还在发光。它就在维修台附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "零件装错位置会让飞船更危险。我们先对准卡槽，再让光核做一次小小测试。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "repair",
+          "prompt": "把会发光的零件放回推进器，再用光核做安全测试，让推进器修复的线索显现出来。",
+          "character": "star_engineer",
+          "position": "center",
+          "actions": [
+            {
+              "label": "放入蓝色零件",
+              "feedback": "放入蓝色零件后，推进器亮起稳定蓝光；漂浮温室的方向更清楚了。"
+            },
+            {
+              "label": "拧紧银色螺丝",
+              "feedback": "拧紧银色螺丝后，光核发出短短的提示音；修好的推进器可以安全出发了。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "推进器接住了光核的蓝光，飞船终于能稳定前进。漂浮温室的信号也被重新听见了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“修”不是把坏东西藏起来，而是让它重新帮助大家。我们把维修结果记在星图旁。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见漂浮温室里小叶子的沙沙声了。那里好像有一个朋友正在等我们。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "星尘工程师松了一口气：光核没有被风暴吹坏，推进器也愿意带我们继续找答案。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：修好工具，才能帮助更远的朋友。下一站去漂浮温室看看是谁发来了信号。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "推进器修好了，漂浮温室的入口亮起。我们带着“修”和安全航线继续出发。",
+          "character": "hero",
+          "position": "left"
+        }
+      ],
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "pet",
+          "star_engineer",
+          "hero"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/sci-fi/sf-04.webp"
+        ]
+      }
+    }
+  ],
+  "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-04.webp",
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/repair-gear.webp"
+}

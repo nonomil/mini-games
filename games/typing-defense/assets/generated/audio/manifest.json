@@ -1,0 +1,74 @@
+{
+  "defaultMode": "words",
+  "roundGoal": 6,
+  "voicePreset": "活泼老师",
+  "voicePresets": {
+    "cnCue": {
+      "label": "活泼老师",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "-10%",
+      "pitch": "+6Hz",
+      "volume": "+0%",
+      "desc": "官方 Cartoon 音色，活泼生动，适合冒险/搞笑类绘本"
+    },
+    "enWord": {
+      "label": "英文单词",
+      "voice": "en-US-AnaNeural",
+      "rate": "-8%",
+      "pitch": "+4Hz",
+      "volume": "+0%",
+      "desc": "英文单词使用 Cartoon 英文音色，和中文活泼老师保持儿童感一致"
+    }
+  },
+  "voiceAssignments": {
+    "cues": "cnCue",
+    "pinyin": "cnCue",
+    "letters": "cnCue",
+    "numbers": "cnCue",
+    "words": "enWord"
+  },
+  "cues": {
+    "start": "../assets/generated/audio/cue_start.mp3",
+    "win": "../assets/generated/audio/cue_win.mp3",
+    "lose": "../assets/generated/audio/cue_lose.mp3"
+  },
+  "tasks": {
+    "pinyin:a": "../assets/generated/audio/task_pinyin_a.mp3",
+    "pinyin:o": "../assets/generated/audio/task_pinyin_o.mp3",
+    "pinyin:e": "../assets/generated/audio/task_pinyin_e.mp3",
+    "pinyin:ai": "../assets/generated/audio/task_pinyin_ai.mp3",
+    "pinyin:ao": "../assets/generated/audio/task_pinyin_ao.mp3",
+    "pinyin:ma": "../assets/generated/audio/task_pinyin_ma.mp3",
+    "pinyin:ba": "../assets/generated/audio/task_pinyin_ba.mp3",
+    "pinyin:pin": "../assets/generated/audio/task_pinyin_pin.mp3",
+    "pinyin:shi": "../assets/generated/audio/task_pinyin_shi.mp3",
+    "letters:b": "../assets/generated/audio/task_letters_b.mp3",
+    "letters:p": "../assets/generated/audio/task_letters_p.mp3",
+    "letters:m": "../assets/generated/audio/task_letters_m.mp3",
+    "letters:f": "../assets/generated/audio/task_letters_f.mp3",
+    "letters:d": "../assets/generated/audio/task_letters_d.mp3",
+    "letters:t": "../assets/generated/audio/task_letters_t.mp3",
+    "letters:n": "../assets/generated/audio/task_letters_n.mp3",
+    "letters:l": "../assets/generated/audio/task_letters_l.mp3",
+    "words:cat": "../assets/generated/audio/task_words_cat.mp3",
+    "words:dog": "../assets/generated/audio/task_words_dog.mp3",
+    "words:fox": "../assets/generated/audio/task_words_fox.mp3",
+    "words:bat": "../assets/generated/audio/task_words_bat.mp3",
+    "words:bear": "../assets/generated/audio/task_words_bear.mp3",
+    "words:frog": "../assets/generated/audio/task_words_frog.mp3",
+    "words:deer": "../assets/generated/audio/task_words_deer.mp3",
+    "words:panda": "../assets/generated/audio/task_words_panda.mp3",
+    "numbers:1": "../assets/generated/audio/task_numbers_1.mp3",
+    "numbers:2": "../assets/generated/audio/task_numbers_2.mp3",
+    "numbers:5": "../assets/generated/audio/task_numbers_5.mp3",
+    "numbers:7": "../assets/generated/audio/task_numbers_7.mp3",
+    "numbers:10": "../assets/generated/audio/task_numbers_10.mp3",
+    "numbers:12": "../assets/generated/audio/task_numbers_12.mp3",
+    "numbers:20": "../assets/generated/audio/task_numbers_20.mp3"
+  },
+  "sfx": {
+    "letter": "../assets/generated/audio/sfx_letter.wav",
+    "countdown": "../assets/generated/audio/sfx_countdown.wav",
+    "explosion": "../assets/generated/audio/sfx_explosion.wav"
+  }
+}

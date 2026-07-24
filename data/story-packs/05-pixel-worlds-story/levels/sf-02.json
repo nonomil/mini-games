@@ -1,0 +1,105 @@
+{
+  "levelId": "sf-02",
+  "chapterId": "sf-02",
+  "worldId": "sci-fi",
+  "title": "月环补给站：找到光核",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "station",
+      "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-02.webp",
+      "lines": [
+        {
+          "type": "narration",
+          "text": "月环补给站像一只停在月光里的小船。蓝光碎片撞开了补给箱，箱里露出一枚光核。它可能是修复蓝线的能源。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“月环补给站：找到光核”。我们要打开带有蓝色光环的补给箱，确认光核碎片能不能接回断掉的蓝线。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "补给箱里有蓝色舱灯和轻轻的电流声。光核碎片就在里面，可它的光还不够稳定。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "星尘工程师发现，光核不是普通的宝物，它会记住蓝光经过的方向。我们要先确认它没有被风暴损坏。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "collect",
+          "prompt": "打开带有蓝色光环的补给箱，检查光核碎片，让它记录的风暴方向显现出来。",
+          "character": "pet",
+          "position": "right",
+          "actions": [
+            {
+              "label": "打开蓝色箱子",
+              "feedback": "打开蓝色箱子后，光核碎片出现了；它把一条微光指向云朵信号带。"
+            },
+            {
+              "label": "拍拍黄色箱子",
+              "feedback": "拍拍黄色箱子后，箱底的风痕亮起来；光核记录的方向也指向云朵信号带。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "光核碎片没有坏，它只是缺少一条稳定航线。云朵信号带的方向亮起，那里可能有把光核送回星图的方法。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“核”不是终点，而是修复蓝线的心。我们把它和星图上的断口对照起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见云朵信号带的风声了。光核好像在告诉我们，那里有一条还没有断的路。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "星尘工程师把光核放进保护盒。它的微光还在指向云朵信号带，这就是下一步的理由。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：找到能源还不够，还要找到安全航线。光核会把我们带到云朵信号带。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "光核碎片被安全收好，云朵信号带的入口亮起。我们带着“核”和第一条证据继续走。",
+          "character": "hero",
+          "position": "left"
+        }
+      ],
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/sci-fi/sf-02.webp"
+        ]
+      }
+    }
+  ],
+  "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-02.webp",
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/signal-beacon.webp"
+}

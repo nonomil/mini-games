@@ -1,0 +1,19 @@
+{
+  "id": "forest-9grid-world-single",
+  "theme": "forest",
+  "mode": "single",
+  "image": "./assets/generated/world-bg-single/farm-panorama.png",
+  "labels": [
+    "松林入口",
+    "树冠岔路",
+    "玻璃树屋",
+    "溪桥营地",
+    "苔石空地",
+    "蘑菇弯道",
+    "月杉湖岸",
+    "萤火草坡",
+    "古树回廊"
+  ],
+  "rows": 3,
+  "cols": 3
+}

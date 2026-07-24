@@ -1,0 +1,18 @@
+.travel-memory-visual { display: grid; place-items: center; width: 58px; height: 58px; flex: 0 0 auto; border-radius: 14px; background: rgba(255,255,255,0.14); overflow: hidden; }
+.travel-memory-art { width: 58px; height: 58px; object-fit: contain; filter: drop-shadow(0 3px 5px rgba(0,0,0,.2)); }
+.travel-memory-collection { display: grid; gap: 10px; }
+.travel-memory-collection-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.travel-memory-collection-head h4 { margin: 0; }
+.travel-memory-collection-head span { color: #6c5ce7; font-size: 12px; font-weight: 800; }
+.travel-memory-collection > p { margin: -4px 0 0; color: #777; font-size: 12px; }
+.travel-memory-collection-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.travel-memory-collection-card { display: grid; gap: 7px; min-width: 0; padding: 8px; border: 1px solid #e7e1fb; border-radius: 12px; background: #faf9ff; }
+.travel-memory-collection-artbox { display: grid; place-items: center; min-height: 76px; border-radius: 10px; background: linear-gradient(180deg, #fff, #f0edff); overflow: hidden; }
+.travel-memory-collection-artbox > span { font-size: 34px; }
+.travel-memory-collection-art { width: 76px; height: 76px; object-fit: contain; }
+.travel-memory-collection-copy { display: grid; gap: 3px; min-width: 0; }
+.travel-memory-collection-copy strong { overflow: hidden; color: #4c3c82; font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
+.travel-memory-collection-copy small { min-height: 2.8em; color: #777; font-size: 10px; line-height: 1.4; }
+.travel-memory-collection-copy button { padding: 5px 6px; border: 1px solid #d9d0ff; border-radius: 8px; background: #fff; color: #5b4dc2; cursor: pointer; font-size: 11px; font-weight: 700; }
+.travel-memory-owned { color: #00a77a; font-size: 10px; font-weight: 800; }
+@media (max-width: 520px) { .travel-memory-collection-grid { grid-template-columns: 1fr; } .travel-memory-collection-card { grid-template-columns: 72px minmax(0, 1fr); align-items: center; } .travel-memory-collection-artbox { min-height: 72px; } }

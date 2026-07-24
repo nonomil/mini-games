@@ -1,0 +1,105 @@
+{
+  "levelId": "sf-14",
+  "chapterId": "sf-14",
+  "worldId": "sci-fi",
+  "title": "彩虹观景台",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "sf-14-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-14.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "star_engineer"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/sci-fi/sf-14.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "彩虹观景台正在发生变化。现在是“遇到困难”的一步：我们要找到绿色箭头，再把线索送向星门候车室。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“彩虹观景台”。我们的任务是“从彩虹里找出通往森林的箭头”，先看清绿色箭头，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "蓝色舱灯和轻轻的电流声告诉我，绿色箭头就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在彩虹观景台，遇到困难不能只靠着急。我们要把光线接回星图，先处理绿色箭头，也要照顾身边的朋友。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "scan",
+          "prompt": "从彩虹里找出通往森林的箭头，让绿色箭头的线索显现出来。",
+          "character": "star_engineer",
+          "position": "right",
+          "actions": [
+            {
+              "label": "看绿色箭头",
+              "feedback": "看绿色箭头后，绿色箭头出现了；星门候车室的方向更清楚了。"
+            },
+            {
+              "label": "看蓝色箭头",
+              "feedback": "看蓝色箭头让另一个细节亮起来：方标记指向星门候车室。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "绿色箭头被找到后，星门候车室的方向亮了起来。把光线接回星图，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“方”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见星门候车室传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "绿色箭头让大家知道，星门候车室不是远处的名字，而是一条可以走到的路。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：绿色箭头不是终点，它会把故事带到星门候车室。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，星门候车室的入口已经亮起。我们带着“方”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/landing-pad.webp"
+}

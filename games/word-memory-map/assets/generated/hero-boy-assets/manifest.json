@@ -1,0 +1,150 @@
+{
+  "source": "assets/主角图/小男孩--主角多角度动态图.png",
+  "cols": 6,
+  "rows": 4,
+  "assets": [
+    {
+      "name": "boy_down_idle",
+      "file": "assets/generated/hero-boy-assets/boy_down_idle.png",
+      "row": 0,
+      "col": 0,
+      "size": [
+        127,
+        207
+      ]
+    },
+    {
+      "name": "boy_down_walk_a",
+      "file": "assets/generated/hero-boy-assets/boy_down_walk_a.png",
+      "row": 0,
+      "col": 2,
+      "size": [
+        131,
+        211
+      ]
+    },
+    {
+      "name": "boy_up_idle",
+      "file": "assets/generated/hero-boy-assets/boy_up_idle.png",
+      "row": 1,
+      "col": 0,
+      "size": [
+        128,
+        205
+      ]
+    },
+    {
+      "name": "boy_up_walk_a",
+      "file": "assets/generated/hero-boy-assets/boy_up_walk_a.png",
+      "row": 1,
+      "col": 2,
+      "size": [
+        130,
+        205
+      ]
+    },
+    {
+      "name": "boy_side_idle",
+      "file": "assets/generated/hero-boy-assets/boy_side_idle.png",
+      "row": 2,
+      "col": 0,
+      "size": [
+        124,
+        201
+      ]
+    },
+    {
+      "name": "boy_side_walk_a",
+      "file": "assets/generated/hero-boy-assets/boy_side_walk_a.png",
+      "row": 2,
+      "col": 2,
+      "size": [
+        124,
+        200
+      ]
+    },
+    {
+      "name": "boy_side_walk_b",
+      "file": "assets/generated/hero-boy-assets/boy_side_walk_b.png",
+      "row": 2,
+      "col": 4,
+      "size": [
+        123,
+        195
+      ]
+    },
+    {
+      "name": "boy_right_walk_a",
+      "file": "assets/generated/hero-boy-assets/boy_right_walk_a.png",
+      "row": 3,
+      "col": 2,
+      "size": [
+        137,
+        186
+      ]
+    },
+    {
+      "name": "boy_down_walk_b",
+      "file": "assets/generated/hero-boy-assets/boy_down_walk_b.png",
+      "aliasOf": "boy_down_walk_a",
+      "size": [
+        131,
+        211
+      ]
+    },
+    {
+      "name": "boy_up_walk_b",
+      "file": "assets/generated/hero-boy-assets/boy_up_walk_b.png",
+      "aliasOf": "boy_up_walk_a",
+      "size": [
+        130,
+        205
+      ]
+    },
+    {
+      "name": "boy_right_idle",
+      "file": "assets/generated/hero-boy-assets/boy_right_idle.png",
+      "aliasOf": "boy_right_walk_a",
+      "size": [
+        137,
+        186
+      ]
+    },
+    {
+      "name": "boy_right_walk_b",
+      "file": "assets/generated/hero-boy-assets/boy_right_walk_b.png",
+      "aliasOf": "boy_right_walk_a",
+      "size": [
+        137,
+        186
+      ]
+    },
+    {
+      "name": "boy_cast",
+      "file": "assets/generated/hero-boy-assets/boy_cast.png",
+      "aliasOf": "boy_side_walk_b",
+      "size": [
+        123,
+        195
+      ]
+    },
+    {
+      "name": "boy_cast_right",
+      "file": "assets/generated/hero-boy-assets/boy_cast_right.png",
+      "aliasOf": "boy_right_walk_a",
+      "size": [
+        137,
+        186
+      ]
+    },
+    {
+      "name": "boy_happy",
+      "file": "assets/generated/hero-boy-assets/boy_happy.png",
+      "aliasOf": "boy_down_idle",
+      "size": [
+        127,
+        207
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "pixel-worlds-story-audio-sf-01",
+  "chapterId": "sf-01",
+  "audioFormat": "wav",
+  "audioSubtype": "source",
+  "scenes": [
+    {
+      "sceneId": "arrival",
+      "lines": [
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-01/lines/arrival-00.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-01/lines/arrival-01.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-01/lines/arrival-02.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-01/lines/arrival-03.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-01/lines/arrival-04.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-01/lines/arrival-05.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-01/lines/arrival-06.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-01/lines/arrival-07.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-01/lines/arrival-08.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-01/lines/arrival-09.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-01/lines/arrival-10.wav"
+        }
+      ]
+    }
+  ]
+}

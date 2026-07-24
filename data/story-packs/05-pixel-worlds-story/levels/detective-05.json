@@ -1,0 +1,105 @@
+{
+  "levelId": "detective-05",
+  "chapterId": "detective-05",
+  "worldId": "detective",
+  "title": "谁在温室里",
+  "rewards": {
+    "growthPoints": 3
+  },
+  "scenes": [
+    {
+      "sceneId": "detective-05-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-05.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "detective_helper"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/detective/detective-05.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "案件记录来到第5站：“谁在温室里”出现了新的变化。我们要找到星芽声音，看看它和消失的桥片有什么关系。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“谁在温室里”。我们的任务是“找出发出沙沙声的星芽”，先看清星芽声音，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "放大镜下闪动的线索光告诉我，星芽声音就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在“谁在温室里”案件里，发现问题不能只靠着急。我们要把可靠的证据放回案件记录，先处理星芽声音，也要照顾身边的朋友。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "scan",
+          "prompt": "找出发出沙沙声的星芽，让星芽声音的线索显现出来。",
+          "character": "detective_helper",
+          "position": "right",
+          "actions": [
+            {
+              "label": "观察摇动的叶子",
+              "feedback": "观察摇动的叶子后，星芽声音出现了；消失的桥片的方向更清楚了。"
+            },
+            {
+              "label": "打开柔光灯",
+              "feedback": "打开柔光灯让另一个细节亮起来：声标记指向消失的桥片。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "线索被记录下来：星芽声音和消失的桥片之间出现了联系。案件向前推进了一步。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "我把“声”记在案件本上，这条证据不能漏掉。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我发现这不是一条孤单的线索，它正指向消失的桥片。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "先保留可靠的细节，下一站还会用到“星芽声音”的证据。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：星芽声音不是终点，它会把故事带到消失的桥片。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "第一组线索拼好了：蓝光是被风暴打散的，不是被谁偷走的。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/detective/evidence-tray.webp"
+}

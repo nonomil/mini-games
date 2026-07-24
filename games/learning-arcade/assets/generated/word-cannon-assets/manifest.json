@@ -1,0 +1,383 @@
+{
+  "source": "assets/大炮打单词/大炮打单词参考设计-多元素爆炸图.png",
+  "assets": [
+    {
+      "name": "target_frame_blue",
+      "file": "assets/generated/word-cannon-assets/target_frame_blue.png",
+      "box": [
+        20,
+        20,
+        314,
+        170
+      ],
+      "size": [
+        285,
+        146
+      ]
+    },
+    {
+      "name": "target_frame_red",
+      "file": "assets/generated/word-cannon-assets/target_frame_red.png",
+      "box": [
+        328,
+        10,
+        628,
+        170
+      ],
+      "size": [
+        284,
+        149
+      ]
+    },
+    {
+      "name": "target_frame_square_red",
+      "file": "assets/generated/word-cannon-assets/target_frame_square_red.png",
+      "box": [
+        632,
+        20,
+        798,
+        186
+      ],
+      "size": [
+        164,
+        166
+      ]
+    },
+    {
+      "name": "explosion_cluster",
+      "file": "assets/generated/word-cannon-assets/explosion_cluster.png",
+      "box": [
+        812,
+        18,
+        1070,
+        240
+      ],
+      "size": [
+        253,
+        217
+      ]
+    },
+    {
+      "name": "explosion_flash",
+      "file": "assets/generated/word-cannon-assets/explosion_flash.png",
+      "box": [
+        1082,
+        18,
+        1402,
+        240
+      ],
+      "size": [
+        283,
+        208
+      ]
+    },
+    {
+      "name": "target_frame_purple",
+      "file": "assets/generated/word-cannon-assets/target_frame_purple.png",
+      "box": [
+        20,
+        184,
+        304,
+        330
+      ],
+      "size": [
+        284,
+        144
+      ]
+    },
+    {
+      "name": "target_frame_yellow",
+      "file": "assets/generated/word-cannon-assets/target_frame_yellow.png",
+      "box": [
+        328,
+        184,
+        616,
+        330
+      ],
+      "size": [
+        283,
+        144
+      ]
+    },
+    {
+      "name": "target_frame_green",
+      "file": "assets/generated/word-cannon-assets/target_frame_green.png",
+      "box": [
+        20,
+        332,
+        304,
+        494
+      ],
+      "size": [
+        283,
+        144
+      ]
+    },
+    {
+      "name": "beam_double",
+      "file": "assets/generated/word-cannon-assets/beam_double.png",
+      "box": [
+        684,
+        214,
+        718,
+        446
+      ],
+      "size": [
+        26,
+        230
+      ]
+    },
+    {
+      "name": "cannon_front_large",
+      "file": "assets/generated/word-cannon-assets/cannon_front_large.png",
+      "box": [
+        720,
+        272,
+        944,
+        540
+      ],
+      "size": [
+        219,
+        263
+      ]
+    },
+    {
+      "name": "cannon_angle_large",
+      "file": "assets/generated/word-cannon-assets/cannon_angle_large.png",
+      "box": [
+        960,
+        268,
+        1146,
+        486
+      ],
+      "size": [
+        184,
+        215
+      ]
+    },
+    {
+      "name": "hud_panel_tall",
+      "file": "assets/generated/word-cannon-assets/hud_panel_tall.png",
+      "box": [
+        1176,
+        256,
+        1396,
+        652
+      ],
+      "size": [
+        198,
+        389
+      ]
+    },
+    {
+      "name": "cannon_base_blue",
+      "file": "assets/generated/word-cannon-assets/cannon_base_blue.png",
+      "box": [
+        20,
+        496,
+        128,
+        546
+      ],
+      "size": [
+        108,
+        50
+      ]
+    },
+    {
+      "name": "cannon_base_red",
+      "file": "assets/generated/word-cannon-assets/cannon_base_red.png",
+      "box": [
+        136,
+        492,
+        260,
+        546
+      ],
+      "size": [
+        112,
+        51
+      ]
+    },
+    {
+      "name": "cannon_base_purple",
+      "file": "assets/generated/word-cannon-assets/cannon_base_purple.png",
+      "box": [
+        268,
+        492,
+        382,
+        546
+      ],
+      "size": [
+        112,
+        51
+      ]
+    },
+    {
+      "name": "cannon_base_yellow",
+      "file": "assets/generated/word-cannon-assets/cannon_base_yellow.png",
+      "box": [
+        396,
+        496,
+        508,
+        546
+      ],
+      "size": [
+        112,
+        50
+      ]
+    },
+    {
+      "name": "cannon_base_green",
+      "file": "assets/generated/word-cannon-assets/cannon_base_green.png",
+      "box": [
+        524,
+        496,
+        636,
+        546
+      ],
+      "size": [
+        112,
+        50
+      ]
+    },
+    {
+      "name": "shield_icon_blue",
+      "file": "assets/generated/word-cannon-assets/shield_icon_blue.png",
+      "box": [
+        24,
+        568,
+        104,
+        650
+      ],
+      "size": [
+        79,
+        78
+      ]
+    },
+    {
+      "name": "gem_icon_red",
+      "file": "assets/generated/word-cannon-assets/gem_icon_red.png",
+      "box": [
+        124,
+        568,
+        202,
+        646
+      ],
+      "size": [
+        78,
+        77
+      ]
+    },
+    {
+      "name": "coin_icon_yellow",
+      "file": "assets/generated/word-cannon-assets/coin_icon_yellow.png",
+      "box": [
+        222,
+        568,
+        300,
+        652
+      ],
+      "size": [
+        77,
+        78
+      ]
+    },
+    {
+      "name": "heal_icon_green",
+      "file": "assets/generated/word-cannon-assets/heal_icon_green.png",
+      "box": [
+        316,
+        568,
+        398,
+        650
+      ],
+      "size": [
+        79,
+        78
+      ]
+    },
+    {
+      "name": "star_icon_gold",
+      "file": "assets/generated/word-cannon-assets/star_icon_gold.png",
+      "box": [
+        438,
+        568,
+        516,
+        646
+      ],
+      "size": [
+        78,
+        77
+      ]
+    },
+    {
+      "name": "cannon_pedestal_top",
+      "file": "assets/generated/word-cannon-assets/cannon_pedestal_top.png",
+      "box": [
+        536,
+        576,
+        668,
+        640
+      ],
+      "size": [
+        124,
+        64
+      ]
+    },
+    {
+      "name": "crosshair_blue",
+      "file": "assets/generated/word-cannon-assets/crosshair_blue.png",
+      "box": [
+        700,
+        544,
+        814,
+        658
+      ],
+      "size": [
+        113,
+        113
+      ]
+    },
+    {
+      "name": "crosshair_orange",
+      "file": "assets/generated/word-cannon-assets/crosshair_orange.png",
+      "box": [
+        824,
+        544,
+        940,
+        658
+      ],
+      "size": [
+        116,
+        113
+      ]
+    },
+    {
+      "name": "cannon_front_small",
+      "file": "assets/generated/word-cannon-assets/cannon_front_small.png",
+      "box": [
+        972,
+        510,
+        1152,
+        652
+      ],
+      "size": [
+        180,
+        135
+      ]
+    },
+    {
+      "name": "arena_background",
+      "file": "assets/generated/word-cannon-assets/arena_background.png",
+      "box": [
+        0,
+        673,
+        1402,
+        1122
+      ],
+      "size": [
+        1402,
+        449
+      ]
+    }
+  ]
+}

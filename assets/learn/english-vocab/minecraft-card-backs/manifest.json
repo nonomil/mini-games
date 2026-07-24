@@ -1,0 +1,715 @@
+{
+  "schemaVersion": 1,
+  "status": "generated-mixed-provider-batched-theme-scenes",
+  "generator": "mixed-agnes-grok",
+  "batchLayout": "2x2 sheet cropped locally",
+  "assets": [
+    {
+      "id": "theme-blocks-building-1",
+      "theme": "blocks-building",
+      "panel": 1,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/blocks-building-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-blocks-building-1.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-blocks-building-2",
+      "theme": "blocks-building",
+      "panel": 2,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/blocks-building-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-blocks-building-2.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-blocks-building-3",
+      "theme": "blocks-building",
+      "panel": 3,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/blocks-building-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-blocks-building-3.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-blocks-building-4",
+      "theme": "blocks-building",
+      "panel": 4,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/blocks-building-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-blocks-building-4.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-tools-mining-1",
+      "theme": "tools-mining",
+      "panel": 1,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/tools-mining-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-tools-mining-1.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-tools-mining-2",
+      "theme": "tools-mining",
+      "panel": 2,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/tools-mining-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-tools-mining-2.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-tools-mining-3",
+      "theme": "tools-mining",
+      "panel": 3,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/tools-mining-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-tools-mining-3.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-tools-mining-4",
+      "theme": "tools-mining",
+      "panel": 4,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/tools-mining-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-tools-mining-4.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-mobs-friendly-1",
+      "theme": "mobs-friendly",
+      "panel": 1,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/mobs-friendly-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-mobs-friendly-1.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-mobs-friendly-2",
+      "theme": "mobs-friendly",
+      "panel": 2,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/mobs-friendly-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-mobs-friendly-2.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-mobs-friendly-3",
+      "theme": "mobs-friendly",
+      "panel": 3,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/mobs-friendly-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-mobs-friendly-3.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-mobs-friendly-4",
+      "theme": "mobs-friendly",
+      "panel": 4,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/mobs-friendly-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-mobs-friendly-4.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-mobs-hostile-1",
+      "theme": "mobs-hostile",
+      "panel": 1,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/mobs-hostile-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-mobs-hostile-1.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-mobs-hostile-2",
+      "theme": "mobs-hostile",
+      "panel": 2,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/mobs-hostile-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-mobs-hostile-2.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-mobs-hostile-3",
+      "theme": "mobs-hostile",
+      "panel": 3,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/mobs-hostile-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-mobs-hostile-3.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-mobs-hostile-4",
+      "theme": "mobs-hostile",
+      "panel": 4,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/mobs-hostile-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-mobs-hostile-4.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-plants-food-1",
+      "theme": "plants-food",
+      "panel": 1,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/plants-food-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-plants-food-1.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-plants-food-2",
+      "theme": "plants-food",
+      "panel": 2,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/plants-food-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-plants-food-2.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-plants-food-3",
+      "theme": "plants-food",
+      "panel": 3,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/plants-food-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-plants-food-3.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-plants-food-4",
+      "theme": "plants-food",
+      "panel": 4,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/plants-food-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-plants-food-4.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-village-structures-1",
+      "theme": "village-structures",
+      "panel": 1,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/village-structures-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-village-structures-1.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-village-structures-2",
+      "theme": "village-structures",
+      "panel": 2,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/village-structures-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-village-structures-2.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-village-structures-3",
+      "theme": "village-structures",
+      "panel": 3,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/village-structures-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-village-structures-3.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-village-structures-4",
+      "theme": "village-structures",
+      "panel": 4,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/village-structures-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-village-structures-4.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-biomes-weather-1",
+      "theme": "biomes-weather",
+      "panel": 1,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/biomes-weather-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-biomes-weather-1.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-biomes-weather-2",
+      "theme": "biomes-weather",
+      "panel": 2,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/biomes-weather-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-biomes-weather-2.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-biomes-weather-3",
+      "theme": "biomes-weather",
+      "panel": 3,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/biomes-weather-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-biomes-weather-3.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-biomes-weather-4",
+      "theme": "biomes-weather",
+      "panel": 4,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/biomes-weather-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-biomes-weather-4.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-nether-lava-1",
+      "theme": "nether-lava",
+      "panel": 1,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/nether-lava-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-nether-lava-1.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-nether-lava-2",
+      "theme": "nether-lava",
+      "panel": 2,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/nether-lava-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-nether-lava-2.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-nether-lava-3",
+      "theme": "nether-lava",
+      "panel": 3,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/nether-lava-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-nether-lava-3.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-nether-lava-4",
+      "theme": "nether-lava",
+      "panel": 4,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/nether-lava-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-nether-lava-4.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-end-dragon-1",
+      "theme": "end-dragon",
+      "panel": 1,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/end-dragon-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-end-dragon-1.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-end-dragon-2",
+      "theme": "end-dragon",
+      "panel": 2,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/end-dragon-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-end-dragon-2.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-end-dragon-3",
+      "theme": "end-dragon",
+      "panel": 3,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/end-dragon-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-end-dragon-3.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-end-dragon-4",
+      "theme": "end-dragon",
+      "panel": 4,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/end-dragon-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-end-dragon-4.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-effects-potions-1",
+      "theme": "effects-potions",
+      "panel": 1,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/effects-potions-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-effects-potions-1.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-effects-potions-2",
+      "theme": "effects-potions",
+      "panel": 2,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/effects-potions-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-effects-potions-2.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-effects-potions-3",
+      "theme": "effects-potions",
+      "panel": 3,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/effects-potions-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-effects-potions-3.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-effects-potions-4",
+      "theme": "effects-potions",
+      "panel": 4,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/effects-potions-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-effects-potions-4.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-combat-items-1",
+      "theme": "combat-items",
+      "panel": 1,
+      "source": "grok-imagine-image-quality",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/combat-items-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-combat-items-1.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-combat-items-2",
+      "theme": "combat-items",
+      "panel": 2,
+      "source": "grok-imagine-image-quality",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/combat-items-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-combat-items-2.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-combat-items-3",
+      "theme": "combat-items",
+      "panel": 3,
+      "source": "grok-imagine-image-quality",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/combat-items-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-combat-items-3.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-combat-items-4",
+      "theme": "combat-items",
+      "panel": 4,
+      "source": "grok-imagine-image-quality",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/combat-items-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-combat-items-4.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-actions-modes-1",
+      "theme": "actions-modes",
+      "panel": 1,
+      "source": "grok-imagine-image-quality",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/actions-modes-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-actions-modes-1.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-actions-modes-2",
+      "theme": "actions-modes",
+      "panel": 2,
+      "source": "grok-imagine-image-quality",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/actions-modes-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-actions-modes-2.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-actions-modes-3",
+      "theme": "actions-modes",
+      "panel": 3,
+      "source": "grok-imagine-image-quality",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/actions-modes-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-actions-modes-3.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-actions-modes-4",
+      "theme": "actions-modes",
+      "panel": 4,
+      "source": "grok-imagine-image-quality",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/actions-modes-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-actions-modes-4.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-colors-icons-1",
+      "theme": "colors-icons",
+      "panel": 1,
+      "source": "grok-imagine-image-quality",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/colors-icons-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-colors-icons-1.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-colors-icons-2",
+      "theme": "colors-icons",
+      "panel": 2,
+      "source": "grok-imagine-image-quality",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/colors-icons-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-colors-icons-2.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-colors-icons-3",
+      "theme": "colors-icons",
+      "panel": 3,
+      "source": "grok-imagine-image-quality",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/colors-icons-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-colors-icons-3.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "theme-colors-icons-4",
+      "theme": "colors-icons",
+      "panel": 4,
+      "source": "grok-imagine-image-quality",
+      "sourceSheet": "tmp/minecraft-card-back-sheets/colors-icons-sheet.png",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/theme-colors-icons-4.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster"
+    },
+    {
+      "id": "card-back-mc-word-fire",
+      "theme": "village-structures",
+      "panel": null,
+      "source": "agnes-image-2.1-flash",
+      "sourceSheet": "",
+      "path": "assets/learn/english-vocab/minecraft-card-backs/card-1684-arrow-of-fire-resistance.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "presentation": "square-raster",
+      "cardId": "mc-word-fire"
+    }
+  ],
+  "themeCardCounts": {
+    "blocks-building": 593,
+    "tools-mining": 107,
+    "mobs-friendly": 219,
+    "mobs-hostile": 60,
+    "plants-food": 256,
+    "village-structures": 120,
+    "biomes-weather": 234,
+    "nether-lava": 5,
+    "end-dragon": 6,
+    "effects-potions": 47,
+    "combat-items": 15,
+    "actions-modes": 223,
+    "colors-icons": 283
+  },
+  "updatedAt": "2026-07-19T02:49:17.886442+00:00",
+  "textOverlayPolicy": "All English and Chinese labels remain in HTML/CSS."
+}

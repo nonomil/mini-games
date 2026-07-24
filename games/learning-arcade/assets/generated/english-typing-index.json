@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "id": "english-typing-index",
+  "type": "vocab-index",
+  "title": "英语学习路径打字射击词包",
+  "sourceViewId": "typing-view",
+  "generatedAt": "2026-07-20T11:41:07.556Z",
+  "packs": [
+    {
+      "id": "minecraft",
+      "title": "Minecraft",
+      "description": "我的世界主题词库，默认给飞机大战使用。",
+      "count": 514,
+      "files": [
+        "english-typing-minecraft.json"
+      ]
+    },
+    {
+      "id": "kindergarten",
+      "title": "幼儿园",
+      "description": "外部幼儿园英文词库，词更多但主题更泛。",
+      "count": 557,
+      "files": [
+        "english-typing-kindergarten.json"
+      ]
+    },
+    {
+      "id": "elementary",
+      "title": "小学",
+      "description": "外部小学英文词库。",
+      "count": 558,
+      "files": [
+        "english-typing-elementary.json"
+      ]
+    },
+    {
+      "id": "junior_high",
+      "title": "初中",
+      "description": "外部初中英文词库，难度偏高。",
+      "count": 1583,
+      "files": [
+        "english-typing-junior_high.json"
+      ]
+    },
+    {
+      "id": "core-english",
+      "title": "核心主线",
+      "description": "322 个高频核心词。",
+      "count": 322,
+      "files": [
+        "english-typing-core-english.json"
+      ]
+    },
+    {
+      "id": "extension-english",
+      "title": "可靠拓展",
+      "description": "512 个已通过字段与内容审计的拓展词。",
+      "count": 510,
+      "files": [
+        "english-typing-extension-english.json"
+      ]
+    },
+    {
+      "id": "all",
+      "title": "全部英文",
+      "description": "合并所有外部英文词库。",
+      "count": 3212,
+      "files": [
+        "english-typing-minecraft.json",
+        "english-typing-kindergarten.json",
+        "english-typing-elementary.json",
+        "english-typing-junior_high.json"
+      ]
+    },
+    {
+      "id": "curriculum-all",
+      "title": "完整英语路径",
+      "description": "核心主线与可靠拓展的可玩词。",
+      "count": 832,
+      "files": [
+        "english-typing-core-english.json",
+        "english-typing-extension-english.json"
+      ]
+    }
+  ]
+}

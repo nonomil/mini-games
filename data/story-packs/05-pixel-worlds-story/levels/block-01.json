@@ -1,0 +1,105 @@
+{
+  "levelId": "block-01",
+  "chapterId": "block-01",
+  "worldId": "block",
+  "title": "方块村门口：搭起路牌",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "village",
+      "background": "assets/story/pixel-worlds-v1/scenes/block/block-01.webp",
+      "lines": [
+        {
+          "type": "narration",
+          "text": "穿过古树门，小小探险家来到方块村。森林的绿色光已经抵达，可地下城星门没有亮，因为村里没人知道安全入口在哪里。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“方块村门口：搭起路牌”。星门缺少启动条件，我们要先把村口路牌搭起来，确认通往地下城的安全方向。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块碰撞声从草地边传来。倒下的路牌旁有一点绿色光，像是森林送来的钥匙提示。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块工匠说：星门不会因为着急就打开。先让每个人看懂方向，后面的火把、水渠和机关才不会走错。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "build",
+          "prompt": "把路牌的方块一块块搭起来，让地下城星门的安全方向显现出来。",
+          "character": "hero",
+          "position": "left",
+          "actions": [
+            {
+              "label": "放上木方块",
+              "feedback": "放上木方块后，绿色光在路牌顶端亮了一下；矿洞火把路的方向清楚了。"
+            },
+            {
+              "label": "装上小灯",
+              "feedback": "装上小灯后，路牌背面的星门标记显现；下一步要找能照亮矿洞的安全火把。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "村口路牌被搭正，大家终于知道地下城入口在矿洞深处。可矿洞太暗，第二个启动条件还没有找到。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“方”也能把方向搭出来。我们把路牌和绿色光记在星门准备图上。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见矿洞里的风声了。路牌告诉我们该往哪里走，可还没有告诉我们怎么安全走进去。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块工匠把第一块准备图交给我们：方向已经确定，下一步要找一盏不会熄灭的安全火把。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：先把方向说明白，大家才走得到星门。下一站去矿洞找亮处。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "村口路牌已经立好，矿洞火把路的入口亮起。我们带着“方”和绿色光的提示，去找安全火把。",
+          "character": "block_builder",
+          "position": "right"
+        }
+      ],
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "block_builder",
+          "hero"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/block/block-01.webp"
+        ]
+      }
+    }
+  ],
+  "background": "assets/story/pixel-worlds-v1/scenes/block/block-01.webp",
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/block/village-gate.webp"
+}

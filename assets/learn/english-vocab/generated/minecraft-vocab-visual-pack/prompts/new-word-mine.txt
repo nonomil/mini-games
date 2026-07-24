@@ -1,0 +1,9 @@
+Create a bright child-friendly voxel block-world illustration for the new-word introduction stage of a Minecraft vocabulary lesson.
+
+Scene: a safe shallow mine entrance in daylight, colorful ore blocks, a wooden rail cart carrying blank vocabulary cards, lanterns, and tiny glowing word-star particles.
+
+Composition: wide landscape, strong image for a learning card background, keep the center-right object area clear enough for HTML text panels nearby, no clutter.
+
+Style: polished 3D voxel game art, warm amber lights balanced with natural green and blue daylight, crisp readable shapes, educational adventure mood.
+
+Hard constraints: no readable text, no letters, no numbers, no UI buttons, no logo, no watermark, no brand mark, no scary cave monsters, no gloomy horror lighting.

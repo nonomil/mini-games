@@ -1,0 +1,93 @@
+{
+  "id": "stargarden",
+  "name": "星光花园",
+  "emoji": "🌟",
+  "chapter": 5,
+  "chapter_name": "星空终点",
+  "min_level": 5,
+  "danger_level": 5,
+  "chapter_flow": {
+    "mode": "short",
+    "see": [0, 1],
+    "choose": 3,
+    "challenge": { "math": 2, "battle": 4 }
+  },
+  "events": [
+    {
+      "type": "narrate",
+      "text": "你翻开最后一册空白图鉴，花园里的光点自动聚成一句话：只记录战斗，是看不见真正伙伴的，这里是最终登记地。",
+      "shortText": "星光聚成字！终章开始了。",
+      "detailText": "你翻开最后一册空白图鉴，花园光点提醒你：只记录战斗，看不见真正伙伴。",
+      "petMood": "surprised",
+      "id": "stargarden.narrate0"
+    },
+    {
+      "type": "discover",
+      "emoji": "🌟",
+      "text": "每一朵星花和每一条光路都在补足线索，像在把压轴伙伴的来历、责任与愿望一页页递到你手里。",
+      "shortText": "星花亮了！最后线索出现。",
+      "detailText": "星花和光路正在补足压轴伙伴的来历、责任与愿望。",
+      "petMood": "happy",
+      "item": "star_dust",
+      "chance": 0.6,
+      "id": "stargarden.discover1"
+    },
+    {
+      "type": "math",
+      "mathType": "logic",
+      "difficulty": "hard",
+      "text": "这是图鉴馆的毕业考核，只有找出星花花环一圈圈增加的规律，你才有资格为终章伙伴写下完整档案……",
+      "shortText": "规律题：第四圈有几颗？",
+      "detailText": "找出星花花环一圈圈增加的规律，完成终章伙伴的记录。",
+      "petMood": "worried",
+      "reward": {
+        "exp": 30,
+        "msg": "星座连成一线，星路打开！+30 经验"
+      },
+      "id": "stargarden.math2",
+      "question": "星花第一圈有 3 颗，第二圈有 6 颗，第三圈有 9 颗。第四圈应该有几颗？",
+      "answer": 12,
+      "options": [
+        10,
+        11,
+        12,
+        15
+      ],
+      "skill": "固定步长规律",
+      "hint": "先看每一圈都比前一圈多了几颗星花。",
+      "explanation": "3、6、9 每次都增加 3，所以第四圈是 9 + 3 = 12。"
+    },
+    {
+      "type": "choice",
+      "text": "瑞兽路、星瞳路和幻想终章路在你面前展开，你决定先追哪一条线索去见压轴伙伴？",
+      "shortText": "追月亮灯，还是跟星狐？",
+      "detailText": "三条线索路在面前展开，选择一条去见压轴伙伴。",
+      "petMood": "surprised",
+      "options": [
+        {
+          "text": "🌕 摘一个月亮灯笼",
+          "reward": "灯笼一碰就变轻，里面的星尘流进你的手心！",
+          "item": "star_fragment",
+          "chance": 0.3
+        },
+        {
+          "text": "🦊 跟着星狐的脚印走",
+          "reward": "脚印尽头有一块月亮形状的糕点！",
+          "item": "moon_cake",
+          "chance": 0.4
+        }
+      ],
+      "id": "stargarden.choice3"
+    },
+    {
+      "type": "encounter",
+      "text": "星光里走出一位像最终审稿人一样的伙伴，它想确认你是否真的把伙伴写成了有来历、有工作、有性格的人物……",
+      "shortText": "星光伙伴来考考你！",
+      "detailText": "星光伙伴想确认你是否真的记住了伙伴的来历、工作和性格。",
+      "petMood": "proud",
+      "id": "stargarden.encounter4"
+    }
+  ],
+  "chapter_skill": "pattern_logic",
+  "ending_text": "星光花园的终章调查终于补完，图鉴馆总册写下了这只压轴伙伴的完整档案，你也从见习调查员升级成了正式记录员。"
+}

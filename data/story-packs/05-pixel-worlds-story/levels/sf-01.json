@@ -1,0 +1,105 @@
+{
+  "levelId": "sf-01",
+  "chapterId": "sf-01",
+  "worldId": "sci-fi",
+  "title": "星港登船舱：看见信号",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "arrival",
+      "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-01.webp",
+      "lines": [
+        {
+          "type": "narration",
+          "text": "星港的玻璃穹顶忽然闪了一下。回家的星图上，第一道蓝线断了，蓝光碎片落在登船舱外。小小探险家和星尘伙伴要先找出原因。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“星港登船舱：看见信号”。第一道蓝线断了，我们要启动扫描器，找出会闪烁的蓝色信号，看看它是不是被风暴吹散的。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "蓝色舱灯一闪一闪的，地上还有细小的月尘脚印。蓝色信号就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "风暴刚经过星港，不能急着说是谁拿走了蓝光。先看清脚印和风向，我们才能把事实放回星图。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "scan",
+          "prompt": "启动扫描器，找出蓝光碎片和月尘脚印，让风暴留下的线索显现出来。",
+          "character": "pet",
+          "position": "right",
+          "actions": [
+            {
+              "label": "扫描蓝色光点",
+              "feedback": "扫描蓝色光点后，碎片旁的月尘脚印显现出来；脚印通向月环补给站。"
+            },
+            {
+              "label": "打开舱门灯",
+              "feedback": "打开舱门灯后，风吹过的方向亮了起来；蓝光不是被偷走的，像是被风暴推向月环补给站。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "蓝光碎片和月尘脚印放在一起，说明第一道蓝线是被风暴吹断的。月环补给站也许还留着更多碎片。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“光”也会被风吹散。我们把蓝光碎片记在星图上，下一站去月环补给站查清楚。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见月环补给站的警报声了。我们不是在追一个小偷，而是在追风暴留下的路。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "星尘工程师把月尘脚印放进记录板。现在我们知道：蓝光还在路上，月环补给站是第一处调查点。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：先找到事实，再追随线索。蓝光会把我们带到月环补给站。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "第一道蓝线的断口被标记好了。月环补给站的入口亮起，我们带着“光”和风暴线索出发。",
+          "character": "pet",
+          "position": "right"
+        }
+      ],
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/sci-fi/sf-01.webp"
+        ]
+      }
+    }
+  ],
+  "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-01.webp",
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/moon-station.webp"
+}

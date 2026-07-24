@@ -1,0 +1,19 @@
+{
+  "id": "alien-9grid-world",
+  "theme": "alien",
+  "tileWidth": 543,
+  "tileHeight": 298,
+  "rows": 3,
+  "cols": 3,
+  "tiles": [
+    { "id": "tile-1", "label": "孢子入口", "row": 0, "col": 0, "src": "./assets/generated/world-bg-tiles/farm-9grid/farm_tile_r1_c1.png" },
+    { "id": "tile-2", "label": "晶脉路口", "row": 0, "col": 1, "src": "./assets/generated/world-bg-tiles/farm-9grid/farm_tile_r1_c2.png" },
+    { "id": "tile-3", "label": "薄雾温舱", "row": 0, "col": 2, "src": "./assets/generated/world-bg-tiles/farm-9grid/farm_tile_r1_c3.png" },
+    { "id": "tile-4", "label": "酸湖栈桥", "row": 1, "col": 0, "src": "./assets/generated/world-bg-tiles/farm-9grid/farm_tile_r2_c1.png" },
+    { "id": "tile-5", "label": "中央菌坪", "row": 1, "col": 1, "src": "./assets/generated/world-bg-tiles/farm-9grid/farm_tile_r2_c2.png" },
+    { "id": "tile-6", "label": "荧石弯谷", "row": 1, "col": 2, "src": "./assets/generated/world-bg-tiles/farm-9grid/farm_tile_r2_c3.png" },
+    { "id": "tile-7", "label": "双月浅岸", "row": 2, "col": 0, "src": "./assets/generated/world-bg-tiles/farm-9grid/farm_tile_r3_c1.png" },
+    { "id": "tile-8", "label": "脉冲草坡", "row": 2, "col": 1, "src": "./assets/generated/world-bg-tiles/farm-9grid/farm_tile_r3_c2.png" },
+    { "id": "tile-9", "label": "异光环口", "row": 2, "col": 2, "src": "./assets/generated/world-bg-tiles/farm-9grid/farm_tile_r3_c3.png" }
+  ]
+}

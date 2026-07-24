@@ -1,0 +1,105 @@
+{
+  "levelId": "block-05",
+  "chapterId": "block-05",
+  "worldId": "block",
+  "title": "遗迹图书馆：找出旧地图",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "ruins",
+      "background": "assets/story/pixel-worlds-v1/scenes/block/block-05.webp",
+      "lines": [
+        {
+          "type": "narration",
+          "text": "红石机关打开遗迹图书馆，石头书架一排排亮起。一本标着星光的旧地图藏在会发光的书后面，可能记录着星门钥匙的顺序。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“遗迹图书馆：找出旧地图”。星门能源已经准备好，但钥匙不能乱按。我们要取下旧地图，确认绿色光、供水和能源对应的钥匙顺序。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块碰撞和远处的机关声告诉我，旧地图就在附近。地图边上的星光正排成一列，像是在告诉我们先后顺序。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "地下城守门人说：钥匙顺序是给大家看的安全提示。先读懂旧地图，再按顺序启动星门，这样朋友们就能一起通过。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "collect",
+          "prompt": "从书架上取下标着星光的旧地图，确认星门钥匙顺序，让第一幕的最后线索显现出来。",
+          "character": "cave_keeper",
+          "position": "right",
+          "actions": [
+            {
+              "label": "取下蓝边地图",
+              "feedback": "取下蓝边地图后，旧地图出现了；绿色光、供水和能源的钥匙顺序清楚了。"
+            },
+            {
+              "label": "翻开厚故事书",
+              "feedback": "翻开厚故事书后，地图背面的星门图亮起；它确认最后一站就是地下城星门。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "旧地图被找到后，钥匙顺序终于确认：先接绿色光，再接供水，最后启动能源。地下城星门的方向亮了起来，第一幕的道路完整了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“图”不只是画出远方，还能告诉我们钥匙顺序。我们把路牌、火把、水渠、红石机关和旧地图连成一条线。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见地下城星门传来的低低回声了。顺序找对了，星门就不会把大家带错地方。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "旧地图让大家知道，地下城星门不是远处的名字，而是按正确钥匙顺序就能安全到达的地方。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：线索要一个接一个连起来，地图要先读懂再行动。现在，地下城星门的钥匙顺序已经准备好了。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "第一幕完成了：绿色光找到方向，火把照亮道路，水渠完成供水，红石机关准备能源，旧地图确认钥匙顺序。我们带着“图”和完整线索，走向地下城星门。",
+          "character": "cave_keeper",
+          "position": "right"
+        }
+      ],
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "cave_keeper"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/block/block-05.webp"
+        ]
+      }
+    }
+  ],
+  "background": "assets/story/pixel-worlds-v1/scenes/block/block-05.webp",
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/block/water-channel.webp"
+}

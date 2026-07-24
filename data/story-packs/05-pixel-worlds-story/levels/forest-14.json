@@ -1,0 +1,105 @@
+{
+  "levelId": "forest-14",
+  "chapterId": "forest-14",
+  "worldId": "forest",
+  "title": "月光草坡",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "forest-14-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-14.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "forest_guide"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/forest/forest-14.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "月光草坡正在发生变化。现在是“遇到困难”的一步：我们要找到月亮草，再把线索送向萤火剧场。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“月光草坡”。我们的任务是“在月光下找到开花的月亮草”，先看清月亮草，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "树叶、溪水和萤火虫的声音告诉我，月亮草就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在月光草坡，遇到困难不能只靠着急。我们要用温柔的动作帮助森林朋友，先处理月亮草，也要照顾身边的朋友。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "scan",
+          "prompt": "在月光下找到开花的月亮草，让月亮草的线索显现出来。",
+          "character": "forest_guide",
+          "position": "right",
+          "actions": [
+            {
+              "label": "看银色花瓣",
+              "feedback": "看银色花瓣后，月亮草出现了；萤火剧场的方向更清楚了。"
+            },
+            {
+              "label": "轻声说晚安",
+              "feedback": "轻声说晚安让另一个细节亮起来：月标记指向萤火剧场。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "月亮草被找到后，萤火剧场的方向亮了起来。用温柔的动作帮助森林朋友，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“月”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见萤火剧场传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "月亮草让大家知道，萤火剧场不是远处的名字，而是一条可以走到的路。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：月亮草不是终点，它会把故事带到萤火剧场。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，萤火剧场的入口已经亮起。我们带着“月”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/forest/little-waterfall.webp"
+}

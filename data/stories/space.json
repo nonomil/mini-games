@@ -1,0 +1,93 @@
+{
+  "id": "space",
+  "name": "太空站",
+  "emoji": "🚀",
+  "chapter": 5,
+  "chapter_name": "星空终点",
+  "min_level": 5,
+  "danger_level": 4,
+  "chapter_flow": {
+    "mode": "short",
+    "see": [0, 1],
+    "choose": 3,
+    "challenge": { "math": 2, "battle": 4 }
+  },
+  "events": [
+    {
+      "type": "narrate",
+      "text": "舷窗外的星轨和图鉴页上的空白轨道重叠在一起，图鉴馆要你在太空站补完观测员、导航员和实验型伙伴的职能档案。",
+      "shortText": "星轨和图鉴连上了！",
+      "detailText": "图鉴馆要你在太空站补完观测、导航和实验伙伴的职能档案。",
+      "petMood": "surprised",
+      "id": "space.narrate0"
+    },
+    {
+      "type": "discover",
+      "emoji": "✨",
+      "text": "操控台旁散着星尘和观测笔记，像在提醒你这里的伙伴最重视方向感、判断力和协作秩序。",
+      "shortText": "星尘和观测笔记出现！",
+      "detailText": "星尘和观测笔记提示伙伴重视方向感、判断力与合作。",
+      "petMood": "happy",
+      "item": "star_dust",
+      "chance": 0.5,
+      "id": "space.discover1"
+    },
+    {
+      "type": "math",
+      "text": "这道题像真正的太空站值班表，只有找出星轨规律，图鉴馆才会把你的观察写进正式档案……",
+      "shortText": "星轨题：下一个是多少？",
+      "detailText": "找出星轨规律，把观察写进太空站档案。",
+      "petMood": "worried",
+      "difficulty": "hard",
+      "reward": {
+        "exp": 30,
+        "msg": "舱门打开了，星光涌入！+30 经验"
+      },
+      "id": "space.math2",
+      "mathType": "logic",
+      "question": "星际灯塔按 2、4、8、16 的亮度刻度启动，下一个刻度是多少？",
+      "answer": 32,
+      "options": [
+        24,
+        30,
+        32,
+        36
+      ],
+      "skill": "倍增规律",
+      "hint": "看看后一个数字是不是前一个数字的 2 倍。",
+      "explanation": "2 变 4，4 变 8，8 变 16，都是翻一倍，所以 16 后面是 32。"
+    },
+    {
+      "type": "choice",
+      "text": "前方舱段会通向实验室、星图室或花园舱，你想先去调查哪一类星空伙伴的工作位置？",
+      "shortText": "去实验室，还是星图室？",
+      "detailText": "三个舱段藏着不同星空伙伴的工作线索。",
+      "petMood": "surprised",
+      "options": [
+        {
+          "text": "🧪 去实验室",
+          "reward": "你找到了一块外星高科技芯片！",
+          "item": "alien_tech",
+          "chance": 0.5
+        },
+        {
+          "text": "🌻 去花园舱",
+          "reward": "太空花的种子在发光，你小心地收集了一些！",
+          "item": "space_rock",
+          "chance": 0.4
+        }
+      ],
+      "id": "space.choice3"
+    },
+    {
+      "type": "encounter",
+      "text": "舷窗外贴上一位挥手打招呼的星际伙伴，但它真正想确认的，是你有没有资格登记它掌握的导航数据……",
+      "shortText": "星际伙伴来打招呼！",
+      "detailText": "星际伙伴要确认你是否有资格登记它掌握的导航数据。",
+      "petMood": "proud",
+      "id": "space.encounter4"
+    }
+  ],
+  "chapter_skill": "pattern_logic",
+  "ending_text": "太空站的观测调查完成后，图鉴页点亮了这只伙伴专属的星轨徽记，你也顺利完成了收录登记。"
+}

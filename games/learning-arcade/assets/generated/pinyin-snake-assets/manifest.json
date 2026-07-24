@@ -1,0 +1,295 @@
+{
+  "source": "assets/generated/reference/pinyin-snake-assets-sheet.png",
+  "alphaThreshold": 24,
+  "assets": [
+    {
+      "name": "board_10x10",
+      "file": "assets/generated/pinyin-snake-assets/board_10x10.png",
+      "bbox": [
+        0,
+        68,
+        642,
+        670
+      ],
+      "crop": [
+        0,
+        56,
+        654,
+        694
+      ],
+      "opaquePixels": 428639
+    },
+    {
+      "name": "snake_head_right",
+      "file": "assets/generated/pinyin-snake-assets/snake_head_right.png",
+      "bbox": [
+        702,
+        74,
+        150,
+        131
+      ],
+      "crop": [
+        690,
+        62,
+        174,
+        155
+      ],
+      "opaquePixels": 16090
+    },
+    {
+      "name": "pinyin_prompt_top",
+      "file": "assets/generated/pinyin-snake-assets/pinyin_prompt_top.png",
+      "bbox": [
+        885,
+        115,
+        592,
+        104
+      ],
+      "crop": [
+        873,
+        103,
+        616,
+        128
+      ],
+      "opaquePixels": 56914
+    },
+    {
+      "name": "controller_panel",
+      "file": "assets/generated/pinyin-snake-assets/controller_panel.png",
+      "bbox": [
+        1236,
+        266,
+        254,
+        525
+      ],
+      "crop": [
+        1224,
+        254,
+        278,
+        549
+      ],
+      "opaquePixels": 122911
+    },
+    {
+      "name": "snake_body_horizontal",
+      "file": "assets/generated/pinyin-snake-assets/snake_body_horizontal.png",
+      "bbox": [
+        702,
+        272,
+        294,
+        97
+      ],
+      "crop": [
+        690,
+        260,
+        318,
+        121
+      ],
+      "opaquePixels": 25028
+    },
+    {
+      "name": "snake_body_vertical",
+      "file": "assets/generated/pinyin-snake-assets/snake_body_vertical.png",
+      "bbox": [
+        1073,
+        275,
+        78,
+        220
+      ],
+      "crop": [
+        1061,
+        263,
+        102,
+        244
+      ],
+      "opaquePixels": 15720
+    },
+    {
+      "name": "snake_tail",
+      "file": "assets/generated/pinyin-snake-assets/snake_tail.png",
+      "bbox": [
+        879,
+        410,
+        118,
+        84
+      ],
+      "crop": [
+        867,
+        398,
+        142,
+        108
+      ],
+      "opaquePixels": 7834
+    },
+    {
+      "name": "snake_corner",
+      "file": "assets/generated/pinyin-snake-assets/snake_corner.png",
+      "bbox": [
+        691,
+        418,
+        115,
+        161
+      ],
+      "crop": [
+        679,
+        406,
+        139,
+        185
+      ],
+      "opaquePixels": 12969
+    },
+    {
+      "name": "food_tile_1",
+      "file": "assets/generated/pinyin-snake-assets/food_tile_1.png",
+      "bbox": [
+        859,
+        545,
+        128,
+        126
+      ],
+      "crop": [
+        847,
+        533,
+        152,
+        150
+      ],
+      "opaquePixels": 15754
+    },
+    {
+      "name": "food_tile_2",
+      "file": "assets/generated/pinyin-snake-assets/food_tile_2.png",
+      "bbox": [
+        1057,
+        545,
+        121,
+        127
+      ],
+      "crop": [
+        1045,
+        533,
+        145,
+        151
+      ],
+      "opaquePixels": 14934
+    },
+    {
+      "name": "food_tile_3",
+      "file": "assets/generated/pinyin-snake-assets/food_tile_3.png",
+      "bbox": [
+        858,
+        716,
+        124,
+        124
+      ],
+      "crop": [
+        846,
+        704,
+        148,
+        148
+      ],
+      "opaquePixels": 15211
+    },
+    {
+      "name": "food_tile_4",
+      "file": "assets/generated/pinyin-snake-assets/food_tile_4.png",
+      "bbox": [
+        1056,
+        716,
+        129,
+        124
+      ],
+      "crop": [
+        1044,
+        704,
+        153,
+        148
+      ],
+      "opaquePixels": 15700
+    },
+    {
+      "name": "score_trophy_badge",
+      "file": "assets/generated/pinyin-snake-assets/score_trophy_badge.png",
+      "bbox": [
+        555,
+        788,
+        197,
+        139
+      ],
+      "crop": [
+        543,
+        776,
+        221,
+        163
+      ],
+      "opaquePixels": 17506
+    },
+    {
+      "name": "pinyin_prompt_compact",
+      "file": "assets/generated/pinyin-snake-assets/pinyin_prompt_compact.png",
+      "bbox": [
+        7,
+        798,
+        498,
+        102
+      ],
+      "crop": [
+        0,
+        786,
+        517,
+        126
+      ],
+      "opaquePixels": 45794
+    },
+    {
+      "name": "round_icon_button_1",
+      "file": "assets/generated/pinyin-snake-assets/round_icon_button_1.png",
+      "bbox": [
+        1221,
+        842,
+        84,
+        87
+      ],
+      "crop": [
+        1209,
+        830,
+        108,
+        111
+      ],
+      "opaquePixels": 5247
+    },
+    {
+      "name": "round_icon_button_2",
+      "file": "assets/generated/pinyin-snake-assets/round_icon_button_2.png",
+      "bbox": [
+        1325,
+        842,
+        85,
+        88
+      ],
+      "crop": [
+        1313,
+        830,
+        109,
+        112
+      ],
+      "opaquePixels": 5305
+    },
+    {
+      "name": "round_icon_button_3",
+      "file": "assets/generated/pinyin-snake-assets/round_icon_button_3.png",
+      "bbox": [
+        1420,
+        842,
+        84,
+        87
+      ],
+      "crop": [
+        1408,
+        830,
+        108,
+        111
+      ],
+      "opaquePixels": 5268
+    }
+  ]
+}

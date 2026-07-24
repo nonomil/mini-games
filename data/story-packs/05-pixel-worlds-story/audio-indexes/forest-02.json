@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "pixel-worlds-story-audio-forest-02",
+  "chapterId": "forest-02",
+  "audioFormat": "wav",
+  "audioSubtype": "source",
+  "scenes": [
+    {
+      "sceneId": "creek",
+      "lines": [
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-02/lines/creek-00.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-02/lines/creek-01.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-02/lines/creek-02.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-02/lines/creek-03.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-02/lines/creek-04.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-02/lines/creek-05.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-02/lines/creek-06.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-02/lines/creek-07.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-02/lines/creek-08.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-02/lines/creek-09.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-02/lines/creek-10.wav"
+        }
+      ]
+    }
+  ]
+}

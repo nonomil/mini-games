@@ -1,0 +1,105 @@
+{
+  "levelId": "forest-13",
+  "chapterId": "forest-13",
+  "worldId": "forest",
+  "title": "蘑菇邮路",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "forest-13-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-13.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "forest_guide"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/forest/forest-13.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "蘑菇邮路正在发生变化。现在是“遇到困难”的一步：我们要找到绿色信封，再把线索送向月光草坡。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“蘑菇邮路”。我们的任务是“取下蘑菇伞下的绿色信封”，先看清绿色信封，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "树叶、溪水和萤火虫的声音告诉我，绿色信封就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在蘑菇邮路，遇到困难不能只靠着急。我们要用温柔的动作帮助森林朋友，先处理绿色信封，也要照顾身边的朋友。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "collect",
+          "prompt": "取下蘑菇伞下的绿色信封，让绿色信封的线索显现出来。",
+          "character": "forest_guide",
+          "position": "right",
+          "actions": [
+            {
+              "label": "拿起绿色信封",
+              "feedback": "拿起绿色信封后，绿色信封出现了；月光草坡的方向更清楚了。"
+            },
+            {
+              "label": "摇响邮差铃",
+              "feedback": "摇响邮差铃让另一个细节亮起来：信标记指向月光草坡。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "绿色信封被找到后，月光草坡的方向亮了起来。用温柔的动作帮助森林朋友，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“信”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见月光草坡传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "绿色信封让大家知道，月光草坡不是远处的名字，而是一条可以走到的路。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：绿色信封不是终点，它会把故事带到月光草坡。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，月光草坡的入口已经亮起。我们带着“信”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/forest/squirrel-den.webp"
+}

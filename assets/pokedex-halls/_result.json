@@ -1,0 +1,43 @@
+{
+  "model": "agnes-image-2.1-flash",
+  "size": "1024x1024",
+  "results": [
+    {
+      "ok": true,
+      "slug": "sunshine",
+      "title": "阳光花园馆",
+      "path": "G:\\StudyCode\\宠物积分系统\\assets\\pokedex-halls\\sunshine.png",
+      "size_kb": 1987.1,
+      "elapsed": 25.7,
+      "prompt": "storybook children's illustration of a warm sunflower garden hall, gentle golden morning light, cute plant companions peeking from flowers and leaves, whimsical botanical museum entrance, soft watercolor gouache texture, airy center space for UI overlay, detailed edges, no text, no words, no icons, no interface, no HUD, no buttons"
+    },
+    {
+      "ok": true,
+      "slug": "adventure",
+      "title": "奇趣冒险馆",
+      "path": "G:\\StudyCode\\宠物积分系统\\assets\\pokedex-halls\\adventure.png",
+      "size_kb": 1869.6,
+      "elapsed": 33.5,
+      "prompt": "storybook children's illustration of an adventure pet hall, tiny camp trail, star compass, backpack, lanterns, fantasy forest clearing, magical explorer mood, warm pink sunset glow, airy center space for UI overlay, soft gouache texture, no text, no words, no icons, no interface, no HUD, no buttons"
+    },
+    {
+      "ok": true,
+      "slug": "classroom",
+      "title": "创想课堂馆",
+      "path": "G:\\StudyCode\\宠物积分系统\\assets\\pokedex-halls\\classroom.png",
+      "size_kb": 2000.2,
+      "elapsed": 28.3,
+      "prompt": "storybook children's illustration of a creative classroom pet hall, sketchbooks, crayons, craft table, paper cutouts, bookshelves, friendly animal doodles and book corners, bright blue daylight, airy center space for UI overlay, hand-painted gouache texture, no text, no words, no icons, no interface, no HUD, no buttons, no app overlay"
+    },
+    {
+      "ok": true,
+      "slug": "blocky",
+      "title": "方块生态馆",
+      "path": "G:\\StudyCode\\宠物积分系统\\assets\\pokedex-halls\\blocky.png",
+      "size_kb": 1484.8,
+      "elapsed": 17.2,
+      "prompt": "storybook children's illustration of a blocky ecology pet hall, cubic grassland, voxel trees, small square animals, observation platform, breezy green landscape, airy center space for UI overlay, soft painted texture, no text, no words, no icons, no interface, no HUD, no buttons, no menu symbols"
+    }
+  ],
+  "total_elapsed": 106.3
+}

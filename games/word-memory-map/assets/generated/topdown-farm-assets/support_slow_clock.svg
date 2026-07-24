@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="slowClockBg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#e4f8ff"/>
+      <stop offset="1" stop-color="#91d8ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="52" height="52" rx="16" fill="url(#slowClockBg)" stroke="#458fbd" stroke-width="3"/>
+  <circle cx="32" cy="35" r="15" fill="#f6fdff" stroke="#38759d" stroke-width="3"/>
+  <path d="M26 13h12" stroke="#38759d" stroke-width="4" stroke-linecap="round"/>
+  <path d="M24 18l-4 4M40 18l4 4" stroke="#5ba5d1" stroke-width="4" stroke-linecap="round"/>
+  <path d="M32 35V27M32 35l6 4" stroke="#38759d" stroke-width="4" stroke-linecap="round"/>
+  <path d="M18 45c4 4 10 6 14 6" stroke="#5ba5d1" stroke-width="3" stroke-linecap="round" fill="none"/>
+</svg>

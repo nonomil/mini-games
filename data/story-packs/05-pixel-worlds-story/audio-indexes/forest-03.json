@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "pixel-worlds-story-audio-forest-03",
+  "chapterId": "forest-03",
+  "audioFormat": "wav",
+  "audioSubtype": "source",
+  "scenes": [
+    {
+      "sceneId": "post",
+      "lines": [
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-03/lines/post-00.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-03/lines/post-01.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-03/lines/post-02.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-03/lines/post-03.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-03/lines/post-04.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-03/lines/post-05.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-03/lines/post-06.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-03/lines/post-07.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-03/lines/post-08.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-03/lines/post-09.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-03/lines/post-10.wav"
+        }
+      ]
+    }
+  ]
+}

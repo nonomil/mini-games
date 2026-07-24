@@ -1,0 +1,1038 @@
+{
+  "name": "typing-defense-assets",
+  "status": "project-derived-v1",
+  "note": "Derived from existing project MC pose assets plus local pixel UI art. Replace same filenames after GPT/Agnes asset generation.",
+  "alphaValidation": "ok",
+  "preview": "assets/generated/typing-defense-assets/_preview_contact_sheet.jpg",
+  "animated": [
+    {
+      "name": "creeper_stride_cycle",
+      "frames": [
+        "assets/generated/typing-defense-assets/creeper_stride_0.png",
+        "assets/generated/typing-defense-assets/creeper_stride_1.png",
+        "assets/generated/typing-defense-assets/creeper_stride_2.png",
+        "assets/generated/typing-defense-assets/creeper_stride_3.png"
+      ],
+      "fps": 8,
+      "note": "Four-frame left/right foot stride cycle for grounded approach movement."
+    },
+    {
+      "name": "bow_launcher_fire_cycle",
+      "frames": [
+        "assets/generated/typing-defense-assets/bow_launcher_idle.png",
+        "assets/generated/typing-defense-assets/bow_launcher_draw.png",
+        "assets/generated/typing-defense-assets/bow_launcher_release.png"
+      ],
+      "fps": 10,
+      "note": "Bow state frames used when typing and firing."
+    },
+    {
+      "name": "creeper_gpt_action_cycle",
+      "frames": [
+        "assets/generated/typing-defense-assets/creeper_gpt_idle.png",
+        "assets/generated/typing-defense-assets/creeper_gpt_walk_0.png",
+        "assets/generated/typing-defense-assets/creeper_gpt_walk_1.png",
+        "assets/generated/typing-defense-assets/creeper_gpt_walk_2.png",
+        "assets/generated/typing-defense-assets/creeper_gpt_walk_3.png",
+        "assets/generated/typing-defense-assets/creeper_gpt_danger_mid.png",
+        "assets/generated/typing-defense-assets/creeper_gpt_danger_near.png",
+        "assets/generated/typing-defense-assets/creeper_gpt_attack_warning.png",
+        "assets/generated/typing-defense-assets/creeper_gpt_hit_reaction.png",
+        "assets/generated/typing-defense-assets/creeper_gpt_explosion_0.png",
+        "assets/generated/typing-defense-assets/creeper_gpt_explosion_1.png",
+        "assets/generated/typing-defense-assets/creeper_gpt_explosion_2.png"
+      ],
+      "fps": 8,
+      "note": "GPT-generated creeper-like multi-action sheet split into runtime frames."
+    },
+    {
+      "name": "explosion_shockwave_cycle",
+      "frames": [
+        "assets/generated/typing-defense-assets/explosion_shockwave_0.png",
+        "assets/generated/typing-defense-assets/explosion_shockwave_1.png",
+        "assets/generated/typing-defense-assets/explosion_shockwave_2.png"
+      ],
+      "fps": 12,
+      "note": "Transparent broken shockwave frames with gaps and radial blocks; replaces CSS circular explosion ring."
+    }
+  ],
+  "assets": [
+    {
+      "name": "creeper_idle",
+      "file": "assets/generated/typing-defense-assets/creeper_idle.png",
+      "size": [
+        300,
+        338
+      ],
+      "bbox": [
+        51,
+        14,
+        248,
+        338
+      ]
+    },
+    {
+      "name": "creeper_attack",
+      "file": "assets/generated/typing-defense-assets/creeper_attack.png",
+      "size": [
+        300,
+        338
+      ],
+      "bbox": [
+        1,
+        43,
+        298,
+        338
+      ]
+    },
+    {
+      "name": "creeper_happy",
+      "file": "assets/generated/typing-defense-assets/creeper_happy.png",
+      "size": [
+        300,
+        338
+      ],
+      "bbox": [
+        22,
+        18,
+        275,
+        338
+      ]
+    },
+    {
+      "name": "creeper_walk_0",
+      "file": "assets/generated/typing-defense-assets/creeper_walk_0.png",
+      "size": [
+        300,
+        338
+      ],
+      "bbox": [
+        51,
+        14,
+        248,
+        338
+      ]
+    },
+    {
+      "name": "creeper_walk_1",
+      "file": "assets/generated/typing-defense-assets/creeper_walk_1.png",
+      "size": [
+        300,
+        338
+      ],
+      "bbox": [
+        39,
+        17,
+        237,
+        338
+      ]
+    },
+    {
+      "name": "creeper_walk_2",
+      "file": "assets/generated/typing-defense-assets/creeper_walk_2.png",
+      "size": [
+        300,
+        338
+      ],
+      "bbox": [
+        1,
+        43,
+        298,
+        338
+      ]
+    },
+    {
+      "name": "creeper_walk_3",
+      "file": "assets/generated/typing-defense-assets/creeper_walk_3.png",
+      "size": [
+        300,
+        338
+      ],
+      "bbox": [
+        63,
+        17,
+        260,
+        338
+      ]
+    },
+    {
+      "name": "heart_full",
+      "file": "assets/generated/typing-defense-assets/heart_full.png",
+      "size": [
+        96,
+        84
+      ],
+      "bbox": [
+        6,
+        6,
+        90,
+        74
+      ]
+    },
+    {
+      "name": "heart_empty",
+      "file": "assets/generated/typing-defense-assets/heart_empty.png",
+      "size": [
+        96,
+        84
+      ],
+      "bbox": [
+        6,
+        6,
+        90,
+        74
+      ]
+    },
+    {
+      "name": "heart_cracked",
+      "file": "assets/generated/typing-defense-assets/heart_cracked.png",
+      "size": [
+        96,
+        84
+      ],
+      "bbox": [
+        6,
+        6,
+        90,
+        74
+      ]
+    },
+    {
+      "name": "star_full",
+      "file": "assets/generated/typing-defense-assets/star_full.png",
+      "size": [
+        96,
+        96
+      ],
+      "bbox": [
+        10,
+        8,
+        87,
+        83
+      ]
+    },
+    {
+      "name": "star_empty",
+      "file": "assets/generated/typing-defense-assets/star_empty.png",
+      "size": [
+        96,
+        96
+      ],
+      "bbox": [
+        10,
+        8,
+        87,
+        83
+      ]
+    },
+    {
+      "name": "particle_green",
+      "file": "assets/generated/typing-defense-assets/particle_green.png",
+      "size": [
+        56,
+        56
+      ],
+      "bbox": [
+        14,
+        10,
+        51,
+        48
+      ]
+    },
+    {
+      "name": "particle_gold",
+      "file": "assets/generated/typing-defense-assets/particle_gold.png",
+      "size": [
+        56,
+        56
+      ],
+      "bbox": [
+        14,
+        10,
+        51,
+        48
+      ]
+    },
+    {
+      "name": "impact_flash",
+      "file": "assets/generated/typing-defense-assets/impact_flash.png",
+      "size": [
+        180,
+        180
+      ],
+      "bbox": [
+        12,
+        8,
+        171,
+        173
+      ]
+    },
+    {
+      "name": "target_bubble_blank",
+      "file": "assets/generated/typing-defense-assets/target_bubble_blank.png",
+      "size": [
+        256,
+        118
+      ],
+      "bbox": [
+        8,
+        8,
+        249,
+        118
+      ]
+    },
+    {
+      "name": "bow_launcher_agnes",
+      "file": "assets/generated/typing-defense-assets/bow_launcher_agnes.png",
+      "size": [
+        256,
+        192
+      ],
+      "bbox": [
+        79,
+        10,
+        176,
+        182
+      ],
+      "source": "agnes-image-2.1-flash"
+    },
+    {
+      "name": "creeper_generated_far",
+      "file": "assets/generated/typing-defense-assets/creeper_generated_far.png",
+      "size": [
+        360,
+        420
+      ],
+      "bbox": [
+        42,
+        27,
+        317,
+        401
+      ],
+      "source": "agnes-image-2.1-flash"
+    },
+    {
+      "name": "creeper_generated_mid",
+      "file": "assets/generated/typing-defense-assets/creeper_generated_mid.png",
+      "size": [
+        360,
+        420
+      ],
+      "bbox": [
+        22,
+        23,
+        337,
+        405
+      ],
+      "source": "agnes-image-2.1-flash"
+    },
+    {
+      "name": "creeper_generated_near",
+      "file": "assets/generated/typing-defense-assets/creeper_generated_near.png",
+      "size": [
+        360,
+        420
+      ],
+      "bbox": [
+        39,
+        23,
+        319,
+        404
+      ],
+      "source": "agnes-image-2.1-flash"
+    },
+    {
+      "name": "creeper_generated_danger",
+      "file": "assets/generated/typing-defense-assets/creeper_generated_danger.png",
+      "size": [
+        360,
+        420
+      ],
+      "bbox": [
+        19,
+        54,
+        341,
+        405
+      ],
+      "source": "agnes-image-2.1-flash"
+    },
+    {
+      "name": "creeper_explosion_0",
+      "file": "assets/generated/typing-defense-assets/creeper_explosion_0.png",
+      "size": [
+        420,
+        420
+      ],
+      "bbox": [
+        14,
+        16,
+        398,
+        405
+      ],
+      "source": "agnes-image-2.1-flash"
+    },
+    {
+      "name": "creeper_explosion_1",
+      "file": "assets/generated/typing-defense-assets/creeper_explosion_1.png",
+      "size": [
+        420,
+        420
+      ],
+      "bbox": [
+        19,
+        26,
+        401,
+        405
+      ],
+      "source": "agnes-image-2.1-flash"
+    },
+    {
+      "name": "creeper_explosion_2",
+      "file": "assets/generated/typing-defense-assets/creeper_explosion_2.png",
+      "size": [
+        420,
+        420
+      ],
+      "bbox": [
+        30,
+        24,
+        389,
+        404
+      ],
+      "source": "agnes-image-2.1-flash"
+    },
+    {
+      "name": "creeper_stride_0",
+      "file": "assets/generated/typing-defense-assets/creeper_stride_0.png",
+      "size": [
+        300,
+        320
+      ],
+      "bbox": [
+        55,
+        24,
+        246,
+        320
+      ],
+      "source": "local-pixel-stride-generator"
+    },
+    {
+      "name": "creeper_stride_1",
+      "file": "assets/generated/typing-defense-assets/creeper_stride_1.png",
+      "size": [
+        300,
+        320
+      ],
+      "bbox": [
+        55,
+        20,
+        246,
+        320
+      ],
+      "source": "local-pixel-stride-generator"
+    },
+    {
+      "name": "creeper_stride_2",
+      "file": "assets/generated/typing-defense-assets/creeper_stride_2.png",
+      "size": [
+        300,
+        320
+      ],
+      "bbox": [
+        55,
+        24,
+        246,
+        320
+      ],
+      "source": "local-pixel-stride-generator"
+    },
+    {
+      "name": "creeper_stride_3",
+      "file": "assets/generated/typing-defense-assets/creeper_stride_3.png",
+      "size": [
+        300,
+        320
+      ],
+      "bbox": [
+        55,
+        20,
+        246,
+        320
+      ],
+      "source": "local-pixel-stride-generator"
+    },
+    {
+      "name": "bow_launcher_idle",
+      "file": "assets/generated/typing-defense-assets/bow_launcher_idle.png",
+      "size": [
+        560,
+        220
+      ],
+      "bbox": [
+        36,
+        30,
+        524,
+        204
+      ],
+      "source": "local-bow-arrow-compositor"
+    },
+    {
+      "name": "bow_launcher_draw",
+      "file": "assets/generated/typing-defense-assets/bow_launcher_draw.png",
+      "size": [
+        560,
+        220
+      ],
+      "bbox": [
+        36,
+        30,
+        524,
+        204
+      ],
+      "source": "local-bow-arrow-compositor"
+    },
+    {
+      "name": "bow_launcher_release",
+      "file": "assets/generated/typing-defense-assets/bow_launcher_release.png",
+      "size": [
+        560,
+        220
+      ],
+      "bbox": [
+        36,
+        23,
+        524,
+        204
+      ],
+      "source": "local-bow-arrow-compositor"
+    },
+    {
+      "name": "arrow_projectile",
+      "file": "assets/generated/typing-defense-assets/arrow_projectile.png",
+      "size": [
+        220,
+        72
+      ],
+      "bbox": [
+        16,
+        13,
+        190,
+        60
+      ],
+      "source": "local-bow-arrow-compositor"
+    },
+    {
+      "name": "arrow_projectile_trail",
+      "file": "assets/generated/typing-defense-assets/arrow_projectile_trail.png",
+      "size": [
+        220,
+        72
+      ],
+      "bbox": [
+        0,
+        13,
+        190,
+        60
+      ],
+      "source": "local-bow-arrow-compositor"
+    },
+    {
+      "name": "creeper_gpt_idle",
+      "file": "assets/generated/typing-defense-assets/creeper_gpt_idle.png",
+      "size": [
+        320,
+        320
+      ],
+      "bbox": [
+        94,
+        29,
+        225,
+        308
+      ],
+      "source": "gpt-creeper-multi-action-sheet"
+    },
+    {
+      "name": "creeper_gpt_walk_0",
+      "file": "assets/generated/typing-defense-assets/creeper_gpt_walk_0.png",
+      "size": [
+        320,
+        320
+      ],
+      "bbox": [
+        87,
+        29,
+        232,
+        308
+      ],
+      "source": "gpt-creeper-multi-action-sheet"
+    },
+    {
+      "name": "creeper_gpt_walk_1",
+      "file": "assets/generated/typing-defense-assets/creeper_gpt_walk_1.png",
+      "size": [
+        320,
+        320
+      ],
+      "bbox": [
+        101,
+        29,
+        219,
+        308
+      ],
+      "source": "gpt-creeper-multi-action-sheet"
+    },
+    {
+      "name": "creeper_gpt_walk_2",
+      "file": "assets/generated/typing-defense-assets/creeper_gpt_walk_2.png",
+      "size": [
+        320,
+        320
+      ],
+      "bbox": [
+        99,
+        29,
+        207,
+        308
+      ],
+      "source": "gpt-creeper-multi-action-sheet"
+    },
+    {
+      "name": "creeper_gpt_walk_3",
+      "file": "assets/generated/typing-defense-assets/creeper_gpt_walk_3.png",
+      "size": [
+        320,
+        320
+      ],
+      "bbox": [
+        92,
+        30,
+        227,
+        294
+      ],
+      "source": "gpt-creeper-multi-action-sheet"
+    },
+    {
+      "name": "creeper_gpt_danger_mid",
+      "file": "assets/generated/typing-defense-assets/creeper_gpt_danger_mid.png",
+      "size": [
+        320,
+        320
+      ],
+      "bbox": [
+        93,
+        30,
+        227,
+        294
+      ],
+      "source": "gpt-creeper-multi-action-sheet"
+    },
+    {
+      "name": "creeper_gpt_danger_near",
+      "file": "assets/generated/typing-defense-assets/creeper_gpt_danger_near.png",
+      "size": [
+        320,
+        320
+      ],
+      "bbox": [
+        75,
+        30,
+        236,
+        294
+      ],
+      "source": "gpt-creeper-multi-action-sheet"
+    },
+    {
+      "name": "creeper_gpt_attack_warning",
+      "file": "assets/generated/typing-defense-assets/creeper_gpt_attack_warning.png",
+      "size": [
+        320,
+        320
+      ],
+      "bbox": [
+        73,
+        30,
+        232,
+        307
+      ],
+      "source": "gpt-creeper-multi-action-sheet"
+    },
+    {
+      "name": "creeper_gpt_hit_reaction",
+      "file": "assets/generated/typing-defense-assets/creeper_gpt_hit_reaction.png",
+      "size": [
+        320,
+        320
+      ],
+      "bbox": [
+        68,
+        29,
+        264,
+        295
+      ],
+      "source": "gpt-creeper-multi-action-sheet"
+    },
+    {
+      "name": "creeper_gpt_explosion_0",
+      "file": "assets/generated/typing-defense-assets/creeper_gpt_explosion_0.png",
+      "size": [
+        320,
+        320
+      ],
+      "bbox": [
+        32,
+        27,
+        301,
+        295
+      ],
+      "source": "gpt-creeper-multi-action-sheet"
+    },
+    {
+      "name": "creeper_gpt_explosion_1",
+      "file": "assets/generated/typing-defense-assets/creeper_gpt_explosion_1.png",
+      "size": [
+        320,
+        320
+      ],
+      "bbox": [
+        20,
+        16,
+        299,
+        295
+      ],
+      "source": "gpt-creeper-multi-action-sheet"
+    },
+    {
+      "name": "creeper_gpt_explosion_2",
+      "file": "assets/generated/typing-defense-assets/creeper_gpt_explosion_2.png",
+      "size": [
+        320,
+        320
+      ],
+      "bbox": [
+        42,
+        30,
+        264,
+        294
+      ],
+      "source": "gpt-creeper-multi-action-sheet"
+    },
+    {
+      "name": "explosion_shockwave_0",
+      "file": "assets/generated/typing-defense-assets/explosion_shockwave_0.png",
+      "size": [
+        360,
+        360
+      ],
+      "bbox": [
+        59,
+        53,
+        307,
+        302
+      ],
+      "source": "local-transparent-shockwave-generator"
+    },
+    {
+      "name": "explosion_shockwave_1",
+      "file": "assets/generated/typing-defense-assets/explosion_shockwave_1.png",
+      "size": [
+        360,
+        360
+      ],
+      "bbox": [
+        31,
+        21,
+        338,
+        331
+      ],
+      "source": "local-transparent-shockwave-generator"
+    },
+    {
+      "name": "explosion_shockwave_2",
+      "file": "assets/generated/typing-defense-assets/explosion_shockwave_2.png",
+      "size": [
+        360,
+        360
+      ],
+      "bbox": [
+        0,
+        0,
+        360,
+        360
+      ],
+      "source": "local-transparent-shockwave-generator"
+    },
+    {
+      "name": "voxel_map_background_agnes",
+      "file": "assets/generated/typing-defense-assets/voxel_map_background_agnes.jpg",
+      "size": [
+        1600,
+        900
+      ],
+      "source": "agnes-image-2.1-flash",
+      "prompt": "Create an absolutely empty 16:9 voxel game landscape background for a children's typing and arithmetic defense web game. Bright sunny daytime, original block-world style. The scene"
+    },
+    {
+      "name": "voxel_ground_lanes_agnes",
+      "file": "assets/generated/typing-defense-assets/voxel_ground_lanes_agnes.jpg",
+      "size": [
+        1600,
+        900
+      ],
+      "source": "agnes-image-2.1-flash",
+      "prompt": "Create a near-ground foreground texture layer for a children's voxel typing-defense game. 16:9 landscape, only the lower gameplay ground: bright grass, three obvious dirt path lane"
+    },
+    {
+      "name": "voxel_ground_foreground_agnes",
+      "file": "assets/generated/typing-defense-assets/voxel_ground_foreground_agnes.png",
+      "size": [
+        1600,
+        900
+      ],
+      "source": "agnes-image-2.1-flash + local-alpha-mask",
+      "prompt": "Create an absolutely empty 16:9 voxel game landscape background for a children's typing and arithmetic defense web game. Bright sunny daytime, original block-world style. The scene"
+    },
+    {
+      "name": "voxel_map_background_dusk_agnes",
+      "file": "assets/generated/typing-defense-assets/voxel_map_background_dusk_agnes.jpg",
+      "size": [
+        1600,
+        900
+      ],
+      "source": "agnes-image-2.1-flash",
+      "prompt": "Create an absolutely empty 16:9 voxel game landscape background for a children's typing and arithmetic defense web game at warm sunset. Original block-world style, kid-friendly and"
+    },
+    {
+      "name": "voxel_ground_foreground_dusk_agnes",
+      "file": "assets/generated/typing-defense-assets/voxel_ground_foreground_dusk_agnes.png",
+      "size": [
+        1600,
+        900
+      ],
+      "source": "agnes-image-2.1-flash + local-alpha-mask",
+      "prompt": "Create an absolutely empty 16:9 voxel game landscape background for a children's typing and arithmetic defense web game at warm sunset. Original block-world style, kid-friendly and"
+    },
+    {
+      "name": "voxel_map_background_overcast_agnes",
+      "file": "assets/generated/typing-defense-assets/voxel_map_background_overcast_agnes.jpg",
+      "size": [
+        1600,
+        900
+      ],
+      "source": "agnes-image-2.1-flash",
+      "prompt": "Create an absolutely empty 16:9 voxel game landscape background for a children's typing and arithmetic defense web game on a bright overcast forest-edge day. Original block-world s"
+    },
+    {
+      "name": "voxel_ground_foreground_overcast_agnes",
+      "file": "assets/generated/typing-defense-assets/voxel_ground_foreground_overcast_agnes.png",
+      "size": [
+        1600,
+        900
+      ],
+      "source": "agnes-image-2.1-flash + local-alpha-mask",
+      "prompt": "Create an absolutely empty 16:9 voxel game landscape background for a children's typing and arithmetic defense web game on a bright overcast forest-edge day. Original block-world s"
+    },
+    {
+      "name": "horizon_day_back_agnes",
+      "file": "assets/generated/typing-defense-assets/horizon_day_back_agnes.png",
+      "size": [
+        2048,
+        256
+      ],
+      "bbox": [
+        0,
+        11,
+        2048,
+        256
+      ],
+      "source": "agnes-image-2.1-flash + local-horizon-strip",
+      "pack": "day",
+      "layer": "back"
+    },
+    {
+      "name": "horizon_day_mid_agnes",
+      "file": "assets/generated/typing-defense-assets/horizon_day_mid_agnes.png",
+      "size": [
+        2048,
+        256
+      ],
+      "bbox": [
+        0,
+        11,
+        2048,
+        256
+      ],
+      "source": "agnes-image-2.1-flash + local-horizon-strip",
+      "pack": "day",
+      "layer": "mid"
+    },
+    {
+      "name": "horizon_day_front_agnes",
+      "file": "assets/generated/typing-defense-assets/horizon_day_front_agnes.png",
+      "size": [
+        2048,
+        256
+      ],
+      "bbox": [
+        0,
+        11,
+        2048,
+        256
+      ],
+      "source": "agnes-image-2.1-flash + local-horizon-strip",
+      "pack": "day",
+      "layer": "front"
+    },
+    {
+      "name": "horizon_dusk_back_agnes",
+      "file": "assets/generated/typing-defense-assets/horizon_dusk_back_agnes.png",
+      "size": [
+        2048,
+        256
+      ],
+      "bbox": [
+        0,
+        11,
+        2048,
+        256
+      ],
+      "source": "agnes-image-2.1-flash + local-horizon-strip",
+      "pack": "dusk",
+      "layer": "back"
+    },
+    {
+      "name": "horizon_dusk_mid_agnes",
+      "file": "assets/generated/typing-defense-assets/horizon_dusk_mid_agnes.png",
+      "size": [
+        2048,
+        256
+      ],
+      "bbox": [
+        0,
+        11,
+        2048,
+        256
+      ],
+      "source": "agnes-image-2.1-flash + local-horizon-strip",
+      "pack": "dusk",
+      "layer": "mid"
+    },
+    {
+      "name": "horizon_dusk_front_agnes",
+      "file": "assets/generated/typing-defense-assets/horizon_dusk_front_agnes.png",
+      "size": [
+        2048,
+        256
+      ],
+      "bbox": [
+        0,
+        11,
+        2048,
+        256
+      ],
+      "source": "agnes-image-2.1-flash + local-horizon-strip",
+      "pack": "dusk",
+      "layer": "front"
+    },
+    {
+      "name": "horizon_overcast_back_agnes",
+      "file": "assets/generated/typing-defense-assets/horizon_overcast_back_agnes.png",
+      "size": [
+        2048,
+        256
+      ],
+      "bbox": [
+        0,
+        11,
+        2048,
+        256
+      ],
+      "source": "agnes-image-2.1-flash + local-horizon-strip",
+      "pack": "overcast",
+      "layer": "back"
+    },
+    {
+      "name": "horizon_overcast_mid_agnes",
+      "file": "assets/generated/typing-defense-assets/horizon_overcast_mid_agnes.png",
+      "size": [
+        2048,
+        256
+      ],
+      "bbox": [
+        0,
+        11,
+        2048,
+        256
+      ],
+      "source": "agnes-image-2.1-flash + local-horizon-strip",
+      "pack": "overcast",
+      "layer": "mid"
+    },
+    {
+      "name": "horizon_overcast_front_agnes",
+      "file": "assets/generated/typing-defense-assets/horizon_overcast_front_agnes.png",
+      "size": [
+        2048,
+        256
+      ],
+      "bbox": [
+        0,
+        11,
+        2048,
+        256
+      ],
+      "source": "agnes-image-2.1-flash + local-horizon-strip",
+      "pack": "overcast",
+      "layer": "front"
+    }
+  ],
+  "agnes": {
+    "model": "agnes-image-2.1-flash",
+    "promptFile": "assets/generated/reference/bow-launcher-agnes-prompt.md",
+    "lastRun": "2026-07-08T01:17:10+0800",
+    "status": "ok"
+  },
+  "agnesCreeperSequence": {
+    "model": "agnes-image-2.1-flash",
+    "promptFile": "assets/generated/reference/creeper-sequence-agnes-prompts.md",
+    "lastRun": "2026-07-08T09:14:53+0800",
+    "status": "ok",
+    "errors": {}
+  },
+  "agnesBackgrounds": {
+    "model": "agnes-image-2.1-flash",
+    "promptFile": "assets/generated/reference/agnes-background-prompts.md",
+    "lastRun": "2026-07-09T12:05:26+0800",
+    "status": "ok"
+  },
+  "agnesHorizonStrips": {
+    "sources": {
+      "day": "assets/generated/typing-defense-assets/voxel_map_background_agnes.jpg",
+      "dusk": "assets/generated/typing-defense-assets/voxel_map_background_dusk_agnes.jpg",
+      "overcast": "assets/generated/typing-defense-assets/voxel_map_background_overcast_agnes.jpg"
+    },
+    "packs": [
+      "day",
+      "dusk",
+      "overcast"
+    ],
+    "layers": [
+      "back",
+      "mid",
+      "front"
+    ],
+    "lastRun": "2026-07-09T12:05:46+0800",
+    "status": "ok"
+  },
+  "agnesDuskBackgrounds": {
+    "model": "agnes-image-2.1-flash",
+    "promptFile": "assets/generated/reference/agnes-background-prompts.md",
+    "lastRun": "2026-07-09T12:05:26+0800",
+    "status": "ok"
+  },
+  "agnesOvercastBackgrounds": {
+    "model": "agnes-image-2.1-flash",
+    "promptFile": "assets/generated/reference/agnes-background-prompts.md",
+    "lastRun": "2026-07-09T12:05:26+0800",
+    "status": "ok"
+  }
+}

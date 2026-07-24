@@ -1,0 +1,19 @@
+{
+  "id": "forest-9grid-world",
+  "theme": "forest",
+  "tileWidth": 1536,
+  "tileHeight": 1024,
+  "rows": 3,
+  "cols": 3,
+  "tiles": [
+    { "id": "tile-1", "label": "松林入口", "row": 0, "col": 0, "src": "./assets/generated/world-bg-tiles/forest-gpt-9grid/forest_tile_r1_c1.png?v=20260711" },
+    { "id": "tile-2", "label": "树冠岔路", "row": 0, "col": 1, "src": "./assets/generated/world-bg-tiles/forest-gpt-9grid/forest_tile_r1_c2.png?v=20260711" },
+    { "id": "tile-3", "label": "玻璃树屋", "row": 0, "col": 2, "src": "./assets/generated/world-bg-tiles/forest-gpt-9grid/forest_tile_r1_c3.png?v=20260711" },
+    { "id": "tile-4", "label": "溪桥营地", "row": 1, "col": 0, "src": "./assets/generated/world-bg-tiles/forest-gpt-9grid/forest_tile_r2_c1.png?v=20260711" },
+    { "id": "tile-5", "label": "苔石空地", "row": 1, "col": 1, "src": "./assets/generated/world-bg-tiles/forest-gpt-9grid/forest_tile_r2_c2.png?v=20260711" },
+    { "id": "tile-6", "label": "蘑菇弯道", "row": 1, "col": 2, "src": "./assets/generated/world-bg-tiles/forest-gpt-9grid/forest_tile_r2_c3.png?v=20260711" },
+    { "id": "tile-7", "label": "月杉湖岸", "row": 2, "col": 0, "src": "./assets/generated/world-bg-tiles/forest-gpt-9grid/forest_tile_r3_c1.png?v=20260711" },
+    { "id": "tile-8", "label": "萤火草坡", "row": 2, "col": 1, "src": "./assets/generated/world-bg-tiles/forest-gpt-9grid/forest_tile_r3_c2.png?v=20260711" },
+    { "id": "tile-9", "label": "古树回廊", "row": 2, "col": 2, "src": "./assets/generated/world-bg-tiles/forest-gpt-9grid/forest_tile_r3_c3.png?v=20260711" }
+  ]
+}

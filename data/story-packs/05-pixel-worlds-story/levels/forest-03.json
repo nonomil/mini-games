@@ -1,0 +1,105 @@
+{
+  "levelId": "forest-03",
+  "chapterId": "forest-03",
+  "worldId": "forest",
+  "title": "树屋邮局：送出信件",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "post",
+      "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-03.webp",
+      "lines": [
+        {
+          "type": "narration",
+          "text": "树屋邮局收到了蓝色水光，可风把信纸吹得满天都是。朋友们看不见信，森林的回应又要停下来了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“树屋邮局：送出信件”。我们要把发光的朋友信件送到对应信箱，不能让森林的回应卡在半路。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "水光在信封上画出小小的蓝线，可信箱的叶片门都关着。朋友信件就在附近，却送不出去。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "林间向导说：每封信都要找到自己的朋友。我们先看颜色和气味，不能把问候送错地方。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "route",
+          "prompt": "把发光的信件送到对应的树屋信箱，让送不出去的森林回应显现出来。",
+          "character": "forest_guide",
+          "position": "right",
+          "actions": [
+            {
+              "label": "送到红叶信箱",
+              "feedback": "送到红叶信箱后，信箱门打开了；蓝光问候指向蘑菇谷。"
+            },
+            {
+              "label": "送到蓝花信箱",
+              "feedback": "送到蓝花信箱后，树屋响起回信声；蘑菇谷的小芽正在等待帮助。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "信件终于送到朋友手里，树屋邮局的蓝光连成一条线。蘑菇谷传来一封急急的回信。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“信”不只是纸，也是朋友说“我听见了”的方法。我们把回信标在地图上。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见蘑菇谷传来的沙沙声了。小芽好像被风吹得不敢回应。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "林间向导收好最后一封回信：蘑菇谷需要的不只是信，还需要有人温柔地陪小芽长大。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：回应送到朋友手里，故事才会继续。下一站去蘑菇谷照顾小芽。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "朋友信件已经送出，蘑菇谷的入口亮起。我们带着“信”和回声出发。",
+          "character": "forest_guide",
+          "position": "right"
+        }
+      ],
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "forest_guide"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/forest/forest-03.webp"
+        ]
+      }
+    }
+  ],
+  "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-03.webp",
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/forest/acorn-lantern.webp"
+}

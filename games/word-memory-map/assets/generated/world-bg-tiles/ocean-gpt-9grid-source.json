@@ -1,0 +1,10 @@
+{
+  "generator": "ChatGPT browser export for r1c1-r2c2; Agnes agnes-image-2.1-flash for r2c3-r3c3",
+  "generatedAt": "2026-07-11",
+  "theme": "bright shallow turquoise pixel-art ocean",
+  "tiles": [
+    "ocean_tile_r1_c1.png", "ocean_tile_r1_c2.png", "ocean_tile_r1_c3.png",
+    "ocean_tile_r2_c1.png", "ocean_tile_r2_c2.png", "ocean_tile_r2_c3.png",
+    "ocean_tile_r3_c1.png", "ocean_tile_r3_c2.png", "ocean_tile_r3_c3.png"
+  ]
+}

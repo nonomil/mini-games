@@ -1,0 +1,105 @@
+{
+  "levelId": "forest-10",
+  "chapterId": "forest-10",
+  "worldId": "forest",
+  "title": "树洞诊所",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "forest-10-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-10.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "forest_guide"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/forest/forest-10.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "树洞诊所正在发生变化。现在是“收集线索”的一步：我们要找到受伤小鸟，再把线索送向风的广场。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“树洞诊所”。我们的任务是“照顾落下来的小鸟”，先看清受伤小鸟，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "树叶、溪水和萤火虫的声音告诉我，受伤小鸟就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在树洞诊所，收集线索不能只靠着急。我们要用温柔的动作帮助森林朋友，先处理受伤小鸟，也要照顾身边的朋友。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "care",
+          "prompt": "照顾落下来的小鸟，让受伤小鸟的线索显现出来。",
+          "character": "forest_guide",
+          "position": "right",
+          "actions": [
+            {
+              "label": "用软叶擦干",
+              "feedback": "用软叶擦干后，受伤小鸟出现了；风的广场的方向更清楚了。"
+            },
+            {
+              "label": "递一颗浆果",
+              "feedback": "递一颗浆果让另一个细节亮起来：鸟标记指向风的广场。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "受伤小鸟被找到后，风的广场的方向亮了起来。用温柔的动作帮助森林朋友，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“鸟”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见风的广场传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "受伤小鸟让大家知道，风的广场不是远处的名字，而是一条可以走到的路。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：受伤小鸟不是终点，它会把故事带到风的广场。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，风的广场的入口已经亮起。我们带着“鸟”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/forest/firefly-jar.webp"
+}

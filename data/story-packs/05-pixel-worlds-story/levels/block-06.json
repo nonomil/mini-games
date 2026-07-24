@@ -1,0 +1,105 @@
+{
+  "levelId": "block-06",
+  "chapterId": "block-06",
+  "worldId": "block",
+  "title": "地下城星门：唤醒回家门",
+  "rewards": {
+    "growthPoints": 8
+  },
+  "scenes": [
+    {
+      "sceneId": "gate",
+      "background": "assets/story/pixel-worlds-v1/scenes/block/block-06.webp",
+      "lines": [
+        {
+          "type": "narration",
+          "text": "旧地图确认了绿色光、供水和能源的顺序，星门晶石放进地下城中央。三张地图的光一起聚拢，第一幕的线索终于连成了一条路，但回家门前还没有安全路线。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“地下城星门：唤醒回家门”。我们要给星门放上最后一颗温暖的伙伴之心，让回家门亮起来，再找出大家可以一起走的安全路线。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块碰撞和远处的机关声告诉我，三界星门就在附近。门缝里有一条木色的微光，可它还没有变成可以走的路。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块工匠说：回家门亮起只是开始，大家还需要一条不会迷路的安全路线。我们先把伙伴之心放好，再一起听门后的方向。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "care",
+          "prompt": "给星门放上最后一颗温暖的伙伴之心，让回家门和安全路线的线索显现出来。",
+          "character": "pet",
+          "position": "right",
+          "actions": [
+            {
+              "label": "放上伙伴之心",
+              "feedback": "放上伙伴之心后，回家门亮起温暖的光；门上的准备图显示，木门小路还需要搭成安全路线。"
+            },
+            {
+              "label": "和朋友击掌",
+              "feedback": "和朋友击掌后，伙伴愿意一起出发；门标记指向木门小路，那里是安全路线的第一段。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "回家门被唤醒后，木门小路的方向亮了起来。第一幕完成了，但回家的光还需要一条真正能走的安全路线。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“门”不是一下子把大家送回家，它还要先告诉我们从哪里安全出发。我们把回家门和木门小路连到地图上。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见木门小路传来的木板声了。只要把路搭稳，大家就能跟着回家门的光一起走。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "回家门让大家知道，木门小路不是远处的名字，而是要由我们一步一步搭出的安全路线。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：打开一扇门后，还要照顾一起走的人，并把路线说明白。下一站去木门小路搭出通道。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "回家门已经唤醒，木门小路的入口亮起。我们带着“门”和第一幕的完整线索，去搭出安全通道。",
+          "character": "narrator",
+          "position": "center"
+        }
+      ],
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/block/block-06.webp"
+        ]
+      }
+    }
+  ],
+  "background": "assets/story/pixel-worlds-v1/scenes/block/block-06.webp",
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/block/amber-lamp.webp"
+}

@@ -1,0 +1,105 @@
+{
+  "levelId": "sf-18",
+  "chapterId": "sf-18",
+  "worldId": "sci-fi",
+  "title": "维修月台",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "sf-18-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-18.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "star_engineer"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/sci-fi/sf-18.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "维修月台正在发生变化。现在是“打开新路”的一步：我们要找到星桥缺口，再把线索送向导航塔顶。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“维修月台”。我们的任务是“修补连接森林和方块世界的星桥”，先看清星桥缺口，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "蓝色舱灯和轻轻的电流声告诉我，星桥缺口就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在维修月台，打开新路不能只靠着急。我们要把光线接回星图，先处理星桥缺口，也要照顾身边的朋友。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "repair",
+          "prompt": "修补连接森林和方块世界的星桥，让星桥缺口的线索显现出来。",
+          "character": "star_engineer",
+          "position": "right",
+          "actions": [
+            {
+              "label": "装上蓝色桥板",
+              "feedback": "装上蓝色桥板后，星桥缺口出现了；导航塔顶的方向更清楚了。"
+            },
+            {
+              "label": "拧紧金色螺栓",
+              "feedback": "拧紧金色螺栓让另一个细节亮起来：桥标记指向导航塔顶。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "星桥缺口被找到后，导航塔顶的方向亮了起来。把光线接回星图，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“桥”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见导航塔顶传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "星桥缺口让大家知道，导航塔顶不是远处的名字，而是一条可以走到的路。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：星桥缺口不是终点，它会把故事带到导航塔顶。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，导航塔顶的入口已经亮起。我们带着“桥”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/star-map-fragment.webp"
+}

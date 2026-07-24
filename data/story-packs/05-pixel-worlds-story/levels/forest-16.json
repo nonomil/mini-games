@@ -1,0 +1,105 @@
+{
+  "levelId": "forest-16",
+  "chapterId": "forest-16",
+  "worldId": "forest",
+  "title": "树冠缆车",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "forest-16-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-16.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "forest_guide"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/forest/forest-16.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "树冠缆车正在发生变化。现在是“打开新路”的一步：我们要找到树冠缆车，再把线索送向种子仓库。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“树冠缆车”。我们的任务是“选择通往古树树冠的缆车”，先看清树冠缆车，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "树叶、溪水和萤火虫的声音告诉我，树冠缆车就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在树冠缆车，打开新路不能只靠着急。我们要用温柔的动作帮助森林朋友，先处理树冠缆车，也要照顾身边的朋友。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "route",
+          "prompt": "选择通往古树树冠的缆车，让树冠缆车的线索显现出来。",
+          "character": "forest_guide",
+          "position": "right",
+          "actions": [
+            {
+              "label": "拉绿色缆绳",
+              "feedback": "拉绿色缆绳后，树冠缆车出现了；种子仓库的方向更清楚了。"
+            },
+            {
+              "label": "按下树果按钮",
+              "feedback": "按下树果按钮让另一个细节亮起来：高标记指向种子仓库。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "树冠缆车被找到后，种子仓库的方向亮了起来。用温柔的动作帮助森林朋友，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“高”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见种子仓库传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "树冠缆车让大家知道，种子仓库不是远处的名字，而是一条可以走到的路。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：树冠缆车不是终点，它会把故事带到种子仓库。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，种子仓库的入口已经亮起。我们带着“高”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/forest/pinecone-workshop.webp"
+}

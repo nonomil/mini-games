@@ -1,0 +1,105 @@
+{
+  "levelId": "forest-20",
+  "chapterId": "forest-20",
+  "worldId": "forest",
+  "title": "三界树门",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "forest-20-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-20.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "forest_guide"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/forest/forest-20.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "三界树门正在发生变化。现在是“打开新路”的一步：我们要找到绿色光门，再把线索送向方块地下城。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“三界树门”。我们的任务是“把森林收集的绿色光交给三界树门”，先看清绿色光门，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "树叶、溪水和萤火虫的声音告诉我，绿色光门就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在三界树门，打开新路不能只靠着急。我们要用温柔的动作帮助森林朋友，先处理绿色光门，也要照顾身边的朋友。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "care",
+          "prompt": "把森林收集的绿色光交给三界树门，让绿色光门的线索显现出来。",
+          "character": "forest_guide",
+          "position": "right",
+          "actions": [
+            {
+              "label": "放入绿色光核",
+              "feedback": "放入绿色光核后，绿色光门出现了；方块地下城的方向更清楚了。"
+            },
+            {
+              "label": "和森林朋友道别",
+              "feedback": "和森林朋友道别让另一个细节亮起来：光标记指向方块地下城。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "绿色光门被找到后，方块地下城的方向亮了起来。用温柔的动作帮助森林朋友，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“光”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见方块地下城传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "绿色光门让大家知道，方块地下城不是远处的名字，而是一条可以走到的路。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：绿色光门不是终点，它会把故事带到方块地下城。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "绿色光已经交给三界树门，方块地下城的入口在树根下亮了起来。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/forest/camp-lantern.webp"
+}

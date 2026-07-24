@@ -1,0 +1,105 @@
+{
+  "levelId": "forest-08",
+  "chapterId": "forest-08",
+  "worldId": "forest",
+  "title": "雾林小桥",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "forest-08-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-08.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "forest_guide"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/forest/forest-08.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "雾林小桥正在发生变化。现在是“收集线索”的一步：我们要找到安静小桥，再把线索送向花瓣车站。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“雾林小桥”。我们的任务是“选择不会打扰小鱼的过桥路线”，先看清安静小桥，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "树叶、溪水和萤火虫的声音告诉我，安静小桥就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在雾林小桥，收集线索不能只靠着急。我们要用温柔的动作帮助森林朋友，先处理安静小桥，也要照顾身边的朋友。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "route",
+          "prompt": "选择不会打扰小鱼的过桥路线，让安静小桥的线索显现出来。",
+          "character": "forest_guide",
+          "position": "right",
+          "actions": [
+            {
+              "label": "走木桥中央",
+              "feedback": "走木桥中央后，安静小桥出现了；花瓣车站的方向更清楚了。"
+            },
+            {
+              "label": "踩着圆石过河",
+              "feedback": "踩着圆石过河让另一个细节亮起来：桥标记指向花瓣车站。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "安静小桥被找到后，花瓣车站的方向亮了起来。用温柔的动作帮助森林朋友，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“桥”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见花瓣车站传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "安静小桥让大家知道，花瓣车站不是远处的名字，而是一条可以走到的路。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：安静小桥不是终点，它会把故事带到花瓣车站。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，花瓣车站的入口已经亮起。我们带着“桥”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/forest/rain-puddle.webp"
+}

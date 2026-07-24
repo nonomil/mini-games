@@ -1,0 +1,105 @@
+{
+  "levelId": "sf-19",
+  "chapterId": "sf-19",
+  "worldId": "sci-fi",
+  "title": "导航塔顶",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "sf-19-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-19.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "star_engineer"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/sci-fi/sf-19.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "导航塔顶正在发生变化。现在是“打开新路”的一步：我们要找到绿色星标，再把线索送向星港新航线。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“导航塔顶”。我们的任务是“从星图上找到下一颗绿色星标”，先看清绿色星标，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "蓝色舱灯和轻轻的电流声告诉我，绿色星标就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在导航塔顶，打开新路不能只靠着急。我们要把光线接回星图，先处理绿色星标，也要照顾身边的朋友。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "scan",
+          "prompt": "从星图上找到下一颗绿色星标，让绿色星标的线索显现出来。",
+          "character": "star_engineer",
+          "position": "right",
+          "actions": [
+            {
+              "label": "点亮绿色星标",
+              "feedback": "点亮绿色星标后，绿色星标出现了；星港新航线的方向更清楚了。"
+            },
+            {
+              "label": "转动望远镜",
+              "feedback": "转动望远镜让另一个细节亮起来：标标记指向星港新航线。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "绿色星标被找到后，星港新航线的方向亮了起来。把光线接回星图，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“标”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见星港新航线传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "绿色星标让大家知道，星港新航线不是远处的名字，而是一条可以走到的路。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：绿色星标不是终点，它会把故事带到星港新航线。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，星港新航线的入口已经亮起。我们带着“标”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/docking-ring.webp"
+}

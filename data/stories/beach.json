@@ -1,0 +1,93 @@
+{
+  "id": "beach",
+  "name": "蔚蓝海滩",
+  "emoji": "🏖️",
+  "chapter": 2,
+  "chapter_name": "森林边界",
+  "min_level": 2,
+  "danger_level": 2,
+  "chapter_flow": {
+    "mode": "short",
+    "see": [0, 1],
+    "choose": 3,
+    "challenge": { "math": 2, "battle": 4 }
+  },
+  "events": [
+    {
+      "type": "narrate",
+      "text": "海浪把一串写着宠物名字缩写的漂流瓶推到你脚边，图鉴馆要你在这片海滩补齐旅行型伙伴的调查记录。",
+      "shortText": "漂流瓶来了！海滩线索出现。",
+      "detailText": "海浪把写着宠物名字缩写的漂流瓶推到脚边，海滩调查开始了。",
+      "petMood": "surprised",
+      "id": "beach.narrate0"
+    },
+    {
+      "type": "discover",
+      "emoji": "🐚",
+      "text": "你捡起一枚特别的贝壳，里面夹着巡岸伙伴留下的线索，像在悄悄说明它喜欢和谁一起远行。",
+      "shortText": "贝壳里藏着旅行线索！",
+      "detailText": "特别的贝壳里夹着巡岸伙伴留下的线索，说明它喜欢和谁一起远行。",
+      "petMood": "happy",
+      "item": "shell",
+      "chance": 0.6,
+      "id": "beach.discover1"
+    },
+    {
+      "type": "math",
+      "mathType": "word",
+      "difficulty": "easy",
+      "text": "这里的题目更像外勤路线登记，只有把两段沙滩路程接起来算清楚，图鉴馆才会相信你的观察准确无误……",
+      "shortText": "路线题：一共走几步？",
+      "detailText": "把漂流瓶到栈桥、栈桥到贝壳堆的两段路程接起来。",
+      "petMood": "worried",
+      "reward": {
+        "exp": 18,
+        "msg": "路线登记完成，沙滩精灵为你让路！+18 经验"
+      },
+      "id": "beach.math2",
+      "question": "从漂流瓶到栈桥要走 6 步，从栈桥到贝壳堆要走 4 步。先到栈桥再去贝壳堆，一共走几步？",
+      "answer": 10,
+      "options": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "skill": "路线合计",
+      "hint": "这是连续走两段路，把第一段和第二段加起来。",
+      "explanation": "先走 6 步到栈桥，再走 4 步到贝壳堆，6 + 4 = 10，所以一共走 10 步。"
+    },
+    {
+      "type": "choice",
+      "text": "海鸥叼着补给袋从头顶飞过，你要先追线索，还是继续在沙滩上补完调查记录？",
+      "shortText": "追海鸥，还是继续寻宝？",
+      "detailText": "海鸥叼着补给袋飞过，你可以追线索，也可以继续补完沙滩调查。",
+      "petMood": "surprised",
+      "options": [
+        {
+          "text": "🏃 追上去看看",
+          "reward": "海鸥绕你飞了一圈，抖落一根闪闪发光的羽毛！",
+          "item": "feather",
+          "chance": 0.5
+        },
+        {
+          "text": "🏖️ 继续在沙滩寻宝",
+          "reward": "你在沙子里挖出了一颗小珍珠！",
+          "item": "pearl",
+          "chance": 0.2
+        }
+      ],
+      "id": "beach.choice3"
+    },
+    {
+      "type": "encounter",
+      "text": "沙堡顶上跳下一只挥着大钳子的巡岸守卫，它像在确认你够不够资格把海边伙伴写进图鉴……",
+      "shortText": "沙堡守卫出现了！",
+      "detailText": "挥着大钳子的巡岸守卫跳下沙堡，要确认你是否有资格记录海边伙伴。",
+      "petMood": "proud",
+      "id": "beach.encounter4"
+    }
+  ],
+  "chapter_skill": "add_sub_apply",
+  "ending_text": "海风吹开图鉴页角，你补上了这只海边伙伴的社交习惯和远行档案，也顺利收下了它的调查卡。"
+}

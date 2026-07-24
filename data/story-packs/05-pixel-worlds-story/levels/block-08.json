@@ -1,0 +1,105 @@
+{
+  "levelId": "block-08",
+  "chapterId": "block-08",
+  "worldId": "block",
+  "title": "方块农场",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "block-08-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/block/block-08.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "block_builder"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/block/block-08.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "木门通道把大家带到方块农场，可广场的路标还没有足够的材料继续发光。小鸡和伙伴们也在等一份温暖的补给。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“方块农场”。我们要收集成熟的方块麦穗，一部分照顾农场伙伴，一部分装进补给篮，带到石砖广场修好路标。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块碰撞和远处的机关声告诉我，方块麦穗就在附近。金色的麦穗旁，小鸡正轻轻叫着，像是在提醒我们先照顾它。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块农场主说：补给要分清用途。先照顾小鸡和身边的伙伴，再把剩下的麦穗装好，石砖广场的路标就有材料可以修复。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "collect",
+          "prompt": "收集成熟的方块麦穗，照顾农场伙伴并准备补给物资，让石砖广场的线索显现出来。",
+          "character": "block_builder",
+          "position": "right",
+          "actions": [
+            {
+              "label": "收下金色麦穗",
+              "feedback": "收下金色麦穗后，补给篮装满了；石砖广场的方向更清楚了，路标有了修复材料。"
+            },
+            {
+              "label": "给小鸡留一把",
+              "feedback": "给小鸡留一把后，小鸡安心地吃起来；麦标记亮起，提醒我们把物资带到石砖广场。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "方块麦穗被分成伙伴的食物和路标的补给物资。石砖广场的方向亮了起来，回家路线又多了一份准备。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“麦”不只是农场里的食物，也能帮助大家修好路标。我们把麦穗、伙伴和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见石砖广场传来的石砖声了。伙伴吃饱了，补给也准备好了，我们可以放心继续走。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块麦穗让大家知道，石砖广场不是远处的名字，而是能用补给物资修好路标的下一站。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：出发前先照顾伙伴、准备物资，路上的每一盏灯才会更稳。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "伙伴已经被照顾好，补给物资也装上了。石砖广场的入口亮起，我们带着“麦”和回家路线继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/block/safe-mine-cart.webp"
+}

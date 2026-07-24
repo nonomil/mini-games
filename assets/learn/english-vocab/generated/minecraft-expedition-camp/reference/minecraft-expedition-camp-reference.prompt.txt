@@ -1,0 +1,9 @@
+Create a polished landscape desktop web UI reference mockup for a children's English vocabulary adventure game inspired by a cozy block-built fantasy expedition camp, not a replica of any existing game. Viewport 1536x1024, readable composition for ages 7-12.
+
+Composition: a warm pixel-art camp hub at dusk, with a wooden expedition desk in the center, a large blank map board and a blank card display area on the desk, a friendly original blocky pet companion near the desk, a small tent and campfire in the background, a treasure chest and badge shelf on the right, and a clear path leading toward a distant forest, swamp, mine, village and red-rock portal landmarks. The main focus is the desk and the future vocabulary-card learning route.
+
+UI composition zones: left side is a clean blank vertical progress panel with blank rounded rows and blank progress bars; center is the hero expedition desk and map; right side is a blank reward/collection panel. Use empty panels, abstract icon shapes, and short neutral placeholder bars only; do not render readable words, letters, numbers, Chinese characters, English, fake writing, logos, brand marks, or watermarks. Keep the upper and side panels uncluttered so HTML/CSS can overlay all text later.
+
+Visual style: handcrafted voxel-inspired pixel art, soft isometric perspective, chunky block geometry, warm lantern light, moss green, parchment cream, deep spruce, muted teal and amber accents, tactile wood and stone materials, friendly and calm rather than combat-heavy. High contrast between panels and background, strong visual hierarchy, no tiny unreadable details, no UI screenshot frame, no device frame.
+
+No text, no letters, no numbers, no Chinese characters, no pinyin, no fake writing, no logos, no watermark, no copyrighted character likenesses, no exact Minecraft Dungeons interface, no copied game screenshot.

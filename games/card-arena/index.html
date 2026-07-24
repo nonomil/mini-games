@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>卡牌训练营 · 小游戏项目</title>
+  <link rel="stylesheet" href="../../vendor/css/style.css">
+  <link rel="stylesheet" href="../../vendor/css/card-collection.css">
+  <link rel="stylesheet" href="../../vendor/css/arena.css">
+  <style>body{margin:0;background:#f7f7f2}.shell-bar{display:flex;gap:12px;align-items:center;padding:12px 16px;background:#fff;border-bottom:1px solid #dbe4eb}.shell-bar a{color:#237f7c;text-decoration:none;font-weight:700}.arena-page{padding:20px;max-width:1120px;margin:auto}.arena-modal{display:none;position:fixed;inset:0;z-index:20;background:rgba(20,30,40,.55);padding:18px;overflow:auto}.arena-modal.show{display:block}.arena-modal-inner{max-width:980px;margin:2vh auto;background:#fff;border-radius:18px;padding:20px;min-height:90vh}.arena-modal-close{float:right;border:0;background:transparent;font-size:24px;cursor:pointer}.arena-stages-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.arena-team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}.arena-battle-stage{min-height:70vh}@media(max-width:680px){.arena-stages-grid{grid-template-columns:1fr}}</style>
+</head>
+<body class="mini-games-card-arena-shell">
+  <div class="shell-bar"><a href="../../index.html#games">← 返回游戏库</a><strong>卡牌训练营</strong><span>完整 10 关、自由练习与本地双人对战</span></div>
+  <main class="arena-page">
+    <h1>卡牌训练营</h1>
+    <p>从完整宠物图鉴中组队，挑战五大区域的全部训练关卡。</p>
+    <button type="button" class="btn-primary" onclick="CardArenaUI.openStages()">打开训练地图</button>
+  </main>
+  <section class="arena-modal" id="arenaStagesModal" aria-label="训练地图"><div class="arena-modal-inner"><button class="arena-modal-close" type="button" onclick="CardArenaUI.closeStages()">×</button><h2>训练地图</h2><div class="arena-stages-grid" id="arenaStagesGrid"></div></div></section>
+  <section class="arena-modal" id="arenaTeamModal" aria-label="选择队伍"><div class="arena-modal-inner"><button class="arena-modal-close" type="button" onclick="CardArenaUI.closeTeamModal()">×</button><h2>选择出战伙伴</h2><div class="arena-team-grid" id="arenaTeamGrid"></div><p id="arenaTeamCount">已选 0 / 2</p><button class="btn-primary" id="arenaTeamConfirm" type="button" onclick="CardArenaUI.confirmTeam()" disabled>确认队伍</button></div></section>
+  <section class="arena-modal" id="arenaBattleModal" aria-label="卡牌对战"><div class="arena-battle-stage" id="arenaStage"></div></section>
+  <script src="../../host/petbank-host-shim.js"></script>
+  <script src="../../vendor/js/asset-loader.js"></script>
+  <script src="../../vendor/js/pet.js"></script>
+  <script src="../../vendor/js/inventory.js"></script>
+  <script src="../../vendor/js/travel-memory.js"></script>
+  <script src="../../vendor/js/card-collection.js"></script>
+  <script src="../../vendor/js/battle-engine.js"></script>
+  <script src="../../vendor/js/card-arena.js"></script>
+  <script src="../../vendor/js/card-arena-ui.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async function () {
+      try {
+        PetSystem.load();
+        await PetSystem.loadPetDB();
+        await InventorySystem.loadItemsData();
+        InventorySystem.load();
+        CardCollection.init();
+        const starterIds = PetSystem.getAllSpecies().slice(0, 2).map((pet) => pet.id);
+        if (CardCollection.getCollectedIds().length < 2) starterIds.forEach((id) => CardCollection.addCard(id));
+        CardArenaUI.openStages();
+      } catch (error) {
+        console.warn('[card-arena] boot failed', error);
+        document.querySelector('.arena-page').insertAdjacentHTML('beforeend', '<p>卡牌训练营加载失败：' + (error && error.message ? error.message : error) + '</p>');
+      }
+    });
+  </script>
+</body>
+</html>

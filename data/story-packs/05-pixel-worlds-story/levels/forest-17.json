@@ -1,0 +1,105 @@
+{
+  "levelId": "forest-17",
+  "chapterId": "forest-17",
+  "worldId": "forest",
+  "title": "种子仓库",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "forest-17-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-17.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "forest_guide"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/forest/forest-17.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "种子仓库正在发生变化。现在是“打开新路”的一步：我们要找到发光种子，再把线索送向守林人小屋。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“种子仓库”。我们的任务是“把会发光的种子放进仓库”，先看清发光种子，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "树叶、溪水和萤火虫的声音告诉我，发光种子就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在种子仓库，打开新路不能只靠着急。我们要用温柔的动作帮助森林朋友，先处理发光种子，也要照顾身边的朋友。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "collect",
+          "prompt": "把会发光的种子放进仓库，让发光种子的线索显现出来。",
+          "character": "forest_guide",
+          "position": "right",
+          "actions": [
+            {
+              "label": "收好绿色种子",
+              "feedback": "收好绿色种子后，发光种子出现了；守林人小屋的方向更清楚了。"
+            },
+            {
+              "label": "收好金色种子",
+              "feedback": "收好金色种子让另一个细节亮起来：种标记指向守林人小屋。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "发光种子被找到后，守林人小屋的方向亮了起来。用温柔的动作帮助森林朋友，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“种”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见守林人小屋传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "发光种子让大家知道，守林人小屋不是远处的名字，而是一条可以走到的路。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：发光种子不是终点，它会把故事带到守林人小屋。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，守林人小屋的入口已经亮起。我们带着“种”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/forest/forest-bell.webp"
+}

@@ -1,0 +1,906 @@
+{
+  "source": "assets/generated/reference/topdown-asset-sheet-chatgpt.png",
+  "alphaThreshold": 24,
+  "assets": [
+    {
+      "name": "guardian_golem",
+      "file": "assets/generated/topdown-farm-assets/guardian_golem.png",
+      "bbox": [
+        8,
+        8,
+        264,
+        261
+      ],
+      "crop": [
+        0,
+        0,
+        280,
+        277
+      ],
+      "opaquePixels": 46716
+    },
+    {
+      "name": "hero_child_idle",
+      "file": "assets/generated/topdown-farm-assets/hero_child_idle.png",
+      "bbox": [
+        8,
+        8,
+        112,
+        190
+      ],
+      "crop": [
+        0,
+        0,
+        128,
+        206
+      ],
+      "opaquePixels": 16774
+    },
+    {
+      "name": "hero_child_walk_a",
+      "file": "assets/generated/topdown-farm-assets/hero_child_walk_a.png",
+      "bbox": [
+        8,
+        8,
+        113,
+        196
+      ],
+      "crop": [
+        0,
+        0,
+        129,
+        212
+      ],
+      "opaquePixels": 15921
+    },
+    {
+      "name": "hero_child_walk_b",
+      "file": "assets/generated/topdown-farm-assets/hero_child_walk_b.png",
+      "bbox": [
+        8,
+        8,
+        108,
+        191
+      ],
+      "crop": [
+        0,
+        0,
+        124,
+        207
+      ],
+      "opaquePixels": 15243
+    },
+    {
+      "name": "hero_child_throw",
+      "file": "assets/generated/topdown-farm-assets/hero_child_throw.png",
+      "bbox": [
+        8,
+        8,
+        165,
+        185
+      ],
+      "crop": [
+        0,
+        0,
+        181,
+        201
+      ],
+      "opaquePixels": 17580
+    },
+    {
+      "name": "enemy_chicken",
+      "file": "assets/generated/topdown-farm-assets/enemy_chicken.png",
+      "bbox": [
+        8,
+        8,
+        106,
+        118
+      ],
+      "crop": [
+        0,
+        0,
+        122,
+        134
+      ],
+      "opaquePixels": 7754
+    },
+    {
+      "name": "enemy_boar",
+      "file": "assets/generated/topdown-farm-assets/enemy_boar.png",
+      "bbox": [
+        8,
+        8,
+        136,
+        116
+      ],
+      "crop": [
+        0,
+        0,
+        152,
+        132
+      ],
+      "opaquePixels": 10704
+    },
+    {
+      "name": "enemy_chick",
+      "file": "assets/generated/topdown-farm-assets/enemy_chick.png",
+      "bbox": [
+        8,
+        8,
+        90,
+        111
+      ],
+      "crop": [
+        0,
+        0,
+        106,
+        127
+      ],
+      "opaquePixels": 6388
+    },
+    {
+      "name": "enemy_sheep",
+      "file": "assets/generated/topdown-farm-assets/enemy_sheep.png",
+      "bbox": [
+        8,
+        8,
+        122,
+        108
+      ],
+      "crop": [
+        0,
+        0,
+        138,
+        124
+      ],
+      "opaquePixels": 9527
+    },
+    {
+      "name": "enemy_pig",
+      "file": "assets/generated/topdown-farm-assets/enemy_pig.png",
+      "bbox": [
+        8,
+        8,
+        114,
+        101
+      ],
+      "crop": [
+        0,
+        0,
+        130,
+        117
+      ],
+      "opaquePixels": 8508
+    },
+    {
+      "name": "enemy_mouse",
+      "file": "assets/generated/topdown-farm-assets/enemy_mouse.png",
+      "bbox": [
+        8,
+        8,
+        103,
+        97
+      ],
+      "crop": [
+        0,
+        0,
+        119,
+        113
+      ],
+      "opaquePixels": 6207
+    },
+    {
+      "name": "bomb_plain",
+      "file": "assets/generated/topdown-farm-assets/bomb_plain.png",
+      "bbox": [
+        8,
+        8,
+        95,
+        140
+      ],
+      "crop": [
+        0,
+        0,
+        111,
+        156
+      ],
+      "opaquePixels": 8460
+    },
+    {
+      "name": "bomb_ring",
+      "file": "assets/generated/topdown-farm-assets/bomb_ring.png",
+      "bbox": [
+        8,
+        8,
+        95,
+        139
+      ],
+      "crop": [
+        0,
+        0,
+        111,
+        155
+      ],
+      "opaquePixels": 8406
+    },
+    {
+      "name": "bomb_skull",
+      "file": "assets/generated/topdown-farm-assets/bomb_skull.png",
+      "bbox": [
+        8,
+        8,
+        93,
+        139
+      ],
+      "crop": [
+        0,
+        0,
+        109,
+        155
+      ],
+      "opaquePixels": 8308
+    },
+    {
+      "name": "bomb_rope",
+      "file": "assets/generated/topdown-farm-assets/bomb_rope.png",
+      "bbox": [
+        8,
+        8,
+        93,
+        139
+      ],
+      "crop": [
+        0,
+        0,
+        109,
+        155
+      ],
+      "opaquePixels": 8307
+    },
+    {
+      "name": "bomb_band",
+      "file": "assets/generated/topdown-farm-assets/bomb_band.png",
+      "bbox": [
+        8,
+        8,
+        94,
+        139
+      ],
+      "crop": [
+        0,
+        0,
+        110,
+        155
+      ],
+      "opaquePixels": 8340
+    },
+    {
+      "name": "bomb_star",
+      "file": "assets/generated/topdown-farm-assets/bomb_star.png",
+      "bbox": [
+        8,
+        8,
+        94,
+        138
+      ],
+      "crop": [
+        0,
+        0,
+        110,
+        154
+      ],
+      "opaquePixels": 8348
+    },
+    {
+      "name": "label_capsule_wide_a",
+      "file": "assets/generated/topdown-farm-assets/label_capsule_wide_a.png",
+      "bbox": [
+        8,
+        8,
+        201,
+        69
+      ],
+      "crop": [
+        0,
+        0,
+        217,
+        85
+      ],
+      "opaquePixels": 13159
+    },
+    {
+      "name": "label_capsule_wide_b",
+      "file": "assets/generated/topdown-farm-assets/label_capsule_wide_b.png",
+      "bbox": [
+        8,
+        8,
+        198,
+        69
+      ],
+      "crop": [
+        0,
+        0,
+        214,
+        85
+      ],
+      "opaquePixels": 13003
+    },
+    {
+      "name": "label_capsule_wide_c",
+      "file": "assets/generated/topdown-farm-assets/label_capsule_wide_c.png",
+      "bbox": [
+        8,
+        8,
+        201,
+        69
+      ],
+      "crop": [
+        0,
+        0,
+        217,
+        85
+      ],
+      "opaquePixels": 13144
+    },
+    {
+      "name": "label_capsule_wide_d",
+      "file": "assets/generated/topdown-farm-assets/label_capsule_wide_d.png",
+      "bbox": [
+        8,
+        8,
+        198,
+        69
+      ],
+      "crop": [
+        0,
+        0,
+        214,
+        85
+      ],
+      "opaquePixels": 12990
+    },
+    {
+      "name": "hit_burst_star",
+      "file": "assets/generated/topdown-farm-assets/hit_burst_star.png",
+      "bbox": [
+        8,
+        8,
+        120,
+        120
+      ],
+      "crop": [
+        0,
+        0,
+        136,
+        136
+      ],
+      "opaquePixels": 6672
+    },
+    {
+      "name": "hit_burst_spike",
+      "file": "assets/generated/topdown-farm-assets/hit_burst_spike.png",
+      "bbox": [
+        8,
+        8,
+        118,
+        114
+      ],
+      "crop": [
+        0,
+        0,
+        134,
+        130
+      ],
+      "opaquePixels": 7440
+    },
+    {
+      "name": "hit_burst_flash",
+      "file": "assets/generated/topdown-farm-assets/hit_burst_flash.png",
+      "bbox": [
+        8,
+        8,
+        108,
+        108
+      ],
+      "crop": [
+        0,
+        0,
+        124,
+        124
+      ],
+      "opaquePixels": 6430
+    },
+    {
+      "name": "hit_burst_badge",
+      "file": "assets/generated/topdown-farm-assets/hit_burst_badge.png",
+      "bbox": [
+        8,
+        8,
+        108,
+        100
+      ],
+      "crop": [
+        0,
+        0,
+        124,
+        116
+      ],
+      "opaquePixels": 4686
+    },
+    {
+      "name": "dust_puff_soft",
+      "file": "assets/generated/topdown-farm-assets/dust_puff_soft.png",
+      "bbox": [
+        8,
+        8,
+        104,
+        92
+      ],
+      "crop": [
+        0,
+        0,
+        120,
+        108
+      ],
+      "opaquePixels": 6775
+    },
+    {
+      "name": "dust_puff_pop",
+      "file": "assets/generated/topdown-farm-assets/dust_puff_pop.png",
+      "bbox": [
+        8,
+        8,
+        103,
+        85
+      ],
+      "crop": [
+        0,
+        0,
+        119,
+        101
+      ],
+      "opaquePixels": 5489
+    },
+    {
+      "name": "dust_puff_cloud",
+      "file": "assets/generated/topdown-farm-assets/dust_puff_cloud.png",
+      "bbox": [
+        8,
+        8,
+        100,
+        82
+      ],
+      "crop": [
+        0,
+        0,
+        116,
+        98
+      ],
+      "opaquePixels": 5155
+    },
+    {
+      "name": "shadow_wide",
+      "file": "assets/generated/topdown-farm-assets/shadow_wide.png",
+      "bbox": [
+        8,
+        8,
+        103,
+        33
+      ],
+      "crop": [
+        0,
+        0,
+        119,
+        49
+      ],
+      "opaquePixels": 2659
+    },
+    {
+      "name": "shadow_wider",
+      "file": "assets/generated/topdown-farm-assets/shadow_wider.png",
+      "bbox": [
+        8,
+        8,
+        103,
+        32
+      ],
+      "crop": [
+        0,
+        0,
+        119,
+        48
+      ],
+      "opaquePixels": 2532
+    },
+    {
+      "name": "shadow_small",
+      "file": "assets/generated/topdown-farm-assets/shadow_small.png",
+      "bbox": [
+        8,
+        8,
+        45,
+        19
+      ],
+      "crop": [
+        0,
+        0,
+        61,
+        35
+      ],
+      "opaquePixels": 647
+    },
+    {
+      "name": "signpost_wood",
+      "file": "assets/generated/topdown-farm-assets/signpost_wood.png",
+      "bbox": [
+        8,
+        8,
+        96,
+        149
+      ],
+      "crop": [
+        0,
+        0,
+        112,
+        165
+      ],
+      "opaquePixels": 8060
+    },
+    {
+      "name": "bush_green",
+      "file": "assets/generated/topdown-farm-assets/bush_green.png",
+      "bbox": [
+        8,
+        8,
+        219,
+        142
+      ],
+      "crop": [
+        0,
+        0,
+        235,
+        158
+      ],
+      "opaquePixels": 22434
+    },
+    {
+      "name": "flower_patch_mixed",
+      "file": "assets/generated/topdown-farm-assets/flower_patch_mixed.png",
+      "bbox": [
+        8,
+        8,
+        155,
+        135
+      ],
+      "crop": [
+        0,
+        0,
+        171,
+        151
+      ],
+      "opaquePixels": 15665
+    },
+    {
+      "name": "crate_wood",
+      "file": "assets/generated/topdown-farm-assets/crate_wood.png",
+      "bbox": [
+        8,
+        8,
+        106,
+        135
+      ],
+      "crop": [
+        0,
+        0,
+        122,
+        151
+      ],
+      "opaquePixels": 14274
+    },
+    {
+      "name": "flower_patch_sun",
+      "file": "assets/generated/topdown-farm-assets/flower_patch_sun.png",
+      "bbox": [
+        8,
+        8,
+        176,
+        133
+      ],
+      "crop": [
+        0,
+        0,
+        192,
+        149
+      ],
+      "opaquePixels": 17935
+    },
+    {
+      "name": "fence_wood",
+      "file": "assets/generated/topdown-farm-assets/fence_wood.png",
+      "bbox": [
+        8,
+        8,
+        180,
+        106
+      ],
+      "crop": [
+        0,
+        0,
+        196,
+        122
+      ],
+      "opaquePixels": 14859
+    },
+    {
+      "name": "fence_white",
+      "file": "assets/generated/topdown-farm-assets/fence_white.png",
+      "bbox": [
+        8,
+        8,
+        172,
+        102
+      ],
+      "crop": [
+        0,
+        0,
+        188,
+        118
+      ],
+      "opaquePixels": 13939
+    },
+    {
+      "name": "support_shield_leaf",
+      "file": "assets/generated/topdown-farm-assets/support_shield_leaf.png",
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "name": "support_slow_clock",
+      "file": "assets/generated/topdown-farm-assets/support_slow_clock.png",
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "name": "support_auto_star",
+      "file": "assets/generated/topdown-farm-assets/support_auto_star.png",
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "name": "support_speed_boots",
+      "file": "assets/generated/topdown-farm-assets/support_speed_boots.png",
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "name": "support_hint_card",
+      "file": "assets/generated/topdown-farm-assets/support_hint_card.png",
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "name": "support_combo_badge",
+      "file": "assets/generated/topdown-farm-assets/support_combo_badge.png",
+      "size": [
+        96,
+        96
+      ]
+    },
+    {
+      "name": "guardian_down_idle",
+      "file": "assets/generated/topdown-farm-assets/guardian_down_idle.png",
+      "sourceBox": [
+        85,
+        56,
+        297,
+        297
+      ],
+      "size": [
+        228,
+        257
+      ]
+    },
+    {
+      "name": "guardian_down_walk_a",
+      "file": "assets/generated/topdown-farm-assets/guardian_down_walk_a.png",
+      "sourceBox": [
+        445,
+        56,
+        647,
+        297
+      ],
+      "size": [
+        218,
+        257
+      ]
+    },
+    {
+      "name": "guardian_down_walk_b",
+      "file": "assets/generated/topdown-farm-assets/guardian_down_walk_b.png",
+      "sourceBox": [
+        804,
+        56,
+        1005,
+        297
+      ],
+      "size": [
+        217,
+        257
+      ]
+    },
+    {
+      "name": "guardian_up_idle",
+      "file": "assets/generated/topdown-farm-assets/guardian_up_idle.png",
+      "sourceBox": [
+        1154,
+        53,
+        1363,
+        297
+      ],
+      "size": [
+        225,
+        260
+      ]
+    },
+    {
+      "name": "guardian_up_walk_a",
+      "file": "assets/generated/topdown-farm-assets/guardian_up_walk_a.png",
+      "sourceBox": [
+        1519,
+        53,
+        1718,
+        297
+      ],
+      "size": [
+        215,
+        260
+      ]
+    },
+    {
+      "name": "guardian_up_walk_b",
+      "file": "assets/generated/topdown-farm-assets/guardian_up_walk_b.png",
+      "sourceBox": [
+        1870,
+        54,
+        2071,
+        297
+      ],
+      "size": [
+        217,
+        259
+      ]
+    },
+    {
+      "name": "guardian_side_idle",
+      "file": "assets/generated/topdown-farm-assets/guardian_side_idle.png",
+      "sourceBox": [
+        115,
+        393,
+        250,
+        633
+      ],
+      "size": [
+        151,
+        256
+      ]
+    },
+    {
+      "name": "guardian_side_walk_a",
+      "file": "assets/generated/topdown-farm-assets/guardian_side_walk_a.png",
+      "sourceBox": [
+        465,
+        395,
+        607,
+        633
+      ],
+      "size": [
+        158,
+        254
+      ]
+    },
+    {
+      "name": "guardian_side_walk_b",
+      "file": "assets/generated/topdown-farm-assets/guardian_side_walk_b.png",
+      "sourceBox": [
+        809,
+        395,
+        964,
+        633
+      ],
+      "size": [
+        171,
+        254
+      ]
+    },
+    {
+      "name": "guardian_cast",
+      "file": "assets/generated/topdown-farm-assets/guardian_cast.png",
+      "sourceBox": [
+        1080,
+        411,
+        1394,
+        649
+      ],
+      "size": [
+        330,
+        254
+      ]
+    },
+    {
+      "name": "guardian_happy",
+      "file": "assets/generated/topdown-farm-assets/guardian_happy.png",
+      "sourceBox": [
+        1471,
+        407,
+        1763,
+        639
+      ],
+      "size": [
+        308,
+        248
+      ]
+    },
+    {
+      "name": "guardian_right_idle",
+      "file": "assets/generated/topdown-farm-assets/guardian_right_idle.png",
+      "derivedFrom": "assets/generated/topdown-farm-assets/guardian_side_idle.png",
+      "size": [
+        151,
+        256
+      ]
+    },
+    {
+      "name": "guardian_right_walk_a",
+      "file": "assets/generated/topdown-farm-assets/guardian_right_walk_a.png",
+      "derivedFrom": "assets/generated/topdown-farm-assets/guardian_side_walk_a.png",
+      "size": [
+        158,
+        254
+      ]
+    },
+    {
+      "name": "guardian_right_walk_b",
+      "file": "assets/generated/topdown-farm-assets/guardian_right_walk_b.png",
+      "derivedFrom": "assets/generated/topdown-farm-assets/guardian_side_walk_b.png",
+      "size": [
+        171,
+        254
+      ]
+    },
+    {
+      "name": "guardian_cast_right",
+      "file": "assets/generated/topdown-farm-assets/guardian_cast_right.png",
+      "derivedFrom": "assets/generated/topdown-farm-assets/guardian_cast.png",
+      "size": [
+        330,
+        254
+      ]
+    }
+  ],
+  "heroDirectionalSheet": {
+    "source": "assets/generated/reference/guardian-direction-sheet-chatgpt-corrected.png",
+    "frames": [
+      "guardian_down_idle",
+      "guardian_down_walk_a",
+      "guardian_down_walk_b",
+      "guardian_up_idle",
+      "guardian_up_walk_a",
+      "guardian_up_walk_b",
+      "guardian_side_idle",
+      "guardian_side_walk_a",
+      "guardian_side_walk_b",
+      "guardian_cast",
+      "guardian_happy"
+    ]
+  }
+}

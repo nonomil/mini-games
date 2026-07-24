@@ -1,0 +1,19 @@
+{
+  "source": "../reference/word-shooter-levels-gpt-20260711/agnes-20260712/explosion-elements/explosion-elements.png",
+  "generator": "agnes-image-2.1-flash",
+  "alphaValidated": true,
+  "assets": [
+    { "name": "player-shield", "file": "player-shield.png" },
+    { "name": "enemy-energy-bolt", "file": "enemy-energy-bolt.png" },
+    { "name": "hit-spark", "file": "hit-spark.png" },
+    { "name": "impact-flash", "file": "impact-flash.png" },
+    { "name": "destroy-burst-star", "file": "destroy-burst-star.png" },
+    { "name": "shield-break-ring", "file": "shield-break-ring.png" },
+    { "name": "sparkle-cluster", "file": "sparkle-cluster.png" },
+    { "name": "warning-burst-ring", "file": "warning-burst-ring.png" },
+    { "name": "shield-repair-pickup", "file": "shield-repair-pickup.png" },
+    { "name": "triple-beam-pickup", "file": "triple-beam-pickup.png" },
+    { "name": "debris-shards", "file": "debris-shards.png" },
+    { "name": "victory-starburst", "file": "victory-starburst.png" }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "minecraft-expedition-scenes",
+  "schemaVersion": 1,
+  "status": "generated-mixed-agnes-grok-story-scenes",
+  "runtimeRoot": "assets/learn/english-vocab/generated/minecraft-expedition/",
+  "assets": [
+    {"id": "expedition-map", "purpose": "wide route map from camp to End", "path": "assets/learn/english-vocab/generated/minecraft-expedition/expedition-map.png", "dimensions": [1248, 832], "source": "agnes-image-2.1-flash", "runtime": true},
+    {"id": "grassland-trail", "purpose": "grassland node scene", "path": "assets/learn/english-vocab/generated/minecraft-expedition/grassland-trail.png", "dimensions": [1248, 832], "source": "agnes-image-2.1-flash", "runtime": true},
+    {"id": "village-gate", "purpose": "village node scene", "path": "assets/learn/english-vocab/generated/minecraft-expedition/village-gate.png", "dimensions": [1248, 832], "source": "agnes-image-2.1-flash", "runtime": true},
+    {"id": "deep-mine", "purpose": "mine node scene", "path": "assets/learn/english-vocab/generated/minecraft-expedition/deep-mine.png", "dimensions": [1248, 832], "source": "agnes-image-2.1-flash", "runtime": true},
+    {"id": "nether-portal", "purpose": "Nether node scene", "path": "assets/learn/english-vocab/generated/minecraft-expedition/nether-portal.png", "dimensions": [1248, 832], "source": "agnes-image-2.1-flash", "runtime": true},
+    {"id": "ender-dragon-arena", "purpose": "final Ender Dragon node scene", "path": "assets/learn/english-vocab/generated/minecraft-expedition/ender-dragon-arena.png", "dimensions": [1248, 832], "source": "agnes-image-2.1-flash", "runtime": true}
+    ,{"id": "story-camp", "purpose": "Grok story opening at the camp", "path": "assets/learn/english-vocab/generated/minecraft-expedition/story-camp.png", "dimensions": [1536, 1024], "source": "grok-imagine-image-quality", "runtime": true}
+    ,{"id": "story-grassland", "purpose": "Grok story chapter scene for the grassland trail", "path": "assets/learn/english-vocab/generated/minecraft-expedition/story-grassland.png", "dimensions": [1536, 1024], "source": "grok-imagine-image-quality", "runtime": true}
+    ,{"id": "story-village", "purpose": "Grok story chapter scene for the village", "path": "assets/learn/english-vocab/generated/minecraft-expedition/story-village.png", "dimensions": [1536, 1024], "source": "grok-imagine-image-quality", "runtime": true}
+    ,{"id": "story-deep-mine", "purpose": "Grok story chapter scene for the deep mine", "path": "assets/learn/english-vocab/generated/minecraft-expedition/story-deep-mine.png", "dimensions": [1536, 1024], "source": "grok-imagine-image-quality", "runtime": true}
+    ,{"id": "story-nether", "purpose": "Grok story chapter scene for the Nether portal", "path": "assets/learn/english-vocab/generated/minecraft-expedition/story-nether.png", "dimensions": [1536, 1024], "source": "grok-imagine-image-quality", "runtime": true}
+    ,{"id": "story-end", "purpose": "Grok story chapter scene for the End island", "path": "assets/learn/english-vocab/generated/minecraft-expedition/story-end.png", "dimensions": [1536, 1024], "source": "grok-imagine-image-quality", "runtime": true}
+    ,{"id": "story-dragon", "purpose": "Grok story finale scene for the Ender Dragon", "path": "assets/learn/english-vocab/generated/minecraft-expedition/story-dragon.png", "dimensions": [1536, 1024], "source": "grok-imagine-image-quality", "runtime": true}
+  ],
+  "promptRoot": "assets/learn/english-vocab/generated/minecraft-expedition/prompts/",
+  "textOverlayPolicy": "All English and Chinese labels are rendered by HTML/CSS; generated images contain no readable text."
+}

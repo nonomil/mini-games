@@ -1,0 +1,311 @@
+{
+  "sourceRun": "G:\\StudyCode\\宠物积分系统\\prj\\学习机玩法原型\\assets\\generated\\reference\\pinyin-racer-assets-gpt-image-2-20260709-213955",
+  "generator": "Bee API gpt-image-2",
+  "backgroundRemoval": "solid-color green tolerance 80 feather 1",
+  "assets": [
+    {
+      "name": "blank_road_sign_target",
+      "file": "assets/generated/pinyin-racer-assets/blank_road_sign_target.png",
+      "source": "split/main-assets/main-assets-01_432x236.png",
+      "size": [
+        432,
+        236
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "blank road sign / target panel candidate"
+    },
+    {
+      "name": "blank_road_sign_glow",
+      "file": "assets/generated/pinyin-racer-assets/blank_road_sign_glow.png",
+      "source": "split/main-assets/main-assets-02_536x247.png",
+      "size": [
+        536,
+        247
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "glowing road sign / target panel candidate"
+    },
+    {
+      "name": "race_car_main",
+      "file": "assets/generated/pinyin-racer-assets/race_car_main.png",
+      "source": "split/main-assets/main-assets-03_424x201.png",
+      "size": [
+        424,
+        201
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "main race car candidate"
+    },
+    {
+      "name": "race_car_boost",
+      "file": "assets/generated/pinyin-racer-assets/race_car_boost.png",
+      "source": "split/main-assets/main-assets-04_532x212.png",
+      "size": [
+        532,
+        212
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "boost race car candidate"
+    },
+    {
+      "name": "checkpoint_arch",
+      "file": "assets/generated/pinyin-racer-assets/checkpoint_arch.png",
+      "source": "split/main-assets/main-assets-05_529x275.png",
+      "size": [
+        529,
+        275
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "checkpoint arch candidate"
+    },
+    {
+      "name": "typing_input_panel",
+      "file": "assets/generated/pinyin-racer-assets/typing_input_panel.png",
+      "source": "split/main-assets/main-assets-06_587x201.png",
+      "size": [
+        587,
+        201
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "blank typing input panel candidate"
+    },
+    {
+      "name": "coin_reward",
+      "file": "assets/generated/pinyin-racer-assets/coin_reward.png",
+      "source": "split/main-assets/main-assets-07_165x162.png",
+      "size": [
+        165,
+        162
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "coin reward candidate"
+    },
+    {
+      "name": "star_reward",
+      "file": "assets/generated/pinyin-racer-assets/star_reward.png",
+      "source": "split/main-assets/main-assets-08_163x163.png",
+      "size": [
+        163,
+        163
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "star reward candidate"
+    },
+    {
+      "name": "diamond_reward",
+      "file": "assets/generated/pinyin-racer-assets/diamond_reward.png",
+      "source": "split/main-assets/main-assets-09_178x152.png",
+      "size": [
+        178,
+        152
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "diamond reward candidate"
+    },
+    {
+      "name": "hud_panel_blank",
+      "file": "assets/generated/pinyin-racer-assets/hud_panel_blank.png",
+      "source": "split/main-assets/main-assets-10_521x139.png",
+      "size": [
+        521,
+        139
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "blank HUD panel candidate"
+    },
+    {
+      "name": "tire_upgrade_icon",
+      "file": "assets/generated/pinyin-racer-assets/tire_upgrade_icon.png",
+      "source": "split/main-assets/main-assets-11_242x246.png",
+      "size": [
+        242,
+        246
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "tire upgrade icon candidate"
+    },
+    {
+      "name": "nitro_upgrade_icon",
+      "file": "assets/generated/pinyin-racer-assets/nitro_upgrade_icon.png",
+      "source": "split/main-assets/main-assets-12_292x230.png",
+      "size": [
+        292,
+        230
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "nitro upgrade icon candidate"
+    },
+    {
+      "name": "engine_upgrade_icon",
+      "file": "assets/generated/pinyin-racer-assets/engine_upgrade_icon.png",
+      "source": "split/main-assets/main-assets-13_293x225.png",
+      "size": [
+        293,
+        225
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "engine upgrade icon candidate"
+    },
+    {
+      "name": "car_pose_idle",
+      "file": "assets/generated/pinyin-racer-assets/car_pose_idle.png",
+      "source": "split/car-poses/car-poses-01_465x269.png",
+      "size": [
+        465,
+        269
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "car idle pose candidate"
+    },
+    {
+      "name": "car_pose_accelerate",
+      "file": "assets/generated/pinyin-racer-assets/car_pose_accelerate.png",
+      "source": "split/car-poses/car-poses-02_577x260.png",
+      "size": [
+        577,
+        260
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "car acceleration pose candidate"
+    },
+    {
+      "name": "car_pose_drift_left",
+      "file": "assets/generated/pinyin-racer-assets/car_pose_drift_left.png",
+      "source": "split/car-poses/car-poses-03_529x281.png",
+      "size": [
+        529,
+        281
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "car drift left candidate"
+    },
+    {
+      "name": "car_pose_drift_right",
+      "file": "assets/generated/pinyin-racer-assets/car_pose_drift_right.png",
+      "source": "split/car-poses/car-poses-04_495x267.png",
+      "size": [
+        495,
+        267
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "car drift right candidate"
+    },
+    {
+      "name": "car_pose_extra_fragment_1",
+      "file": "assets/generated/pinyin-racer-assets/car_pose_extra_fragment_1.png",
+      "source": "split/car-poses/car-poses-05_82x131.png",
+      "size": [
+        82,
+        131
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "small fragment; inspect before use"
+    },
+    {
+      "name": "car_pose_shield",
+      "file": "assets/generated/pinyin-racer-assets/car_pose_shield.png",
+      "source": "split/car-poses/car-poses-06_530x364.png",
+      "size": [
+        530,
+        364
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "shield / protected pose candidate"
+    },
+    {
+      "name": "car_pose_extra_fragment_2",
+      "file": "assets/generated/pinyin-racer-assets/car_pose_extra_fragment_2.png",
+      "source": "split/car-poses/car-poses-07_60x59.png",
+      "size": [
+        60,
+        59
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "small fragment; inspect before use"
+    },
+    {
+      "name": "car_pose_finish",
+      "file": "assets/generated/pinyin-racer-assets/car_pose_finish.png",
+      "source": "split/car-poses/car-poses-08_454x300.png",
+      "size": [
+        454,
+        300
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "finish celebration pose candidate"
+    },
+    {
+      "name": "speed_trail_long",
+      "file": "assets/generated/pinyin-racer-assets/speed_trail_long.png",
+      "source": "split/speed-vfx/speed-vfx-01_661x148.png",
+      "size": [
+        661,
+        148
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "long speed trail candidate"
+    },
+    {
+      "name": "speed_trail_short",
+      "file": "assets/generated/pinyin-racer-assets/speed_trail_short.png",
+      "source": "split/speed-vfx/speed-vfx-02_433x104.png",
+      "size": [
+        433,
+        104
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "short speed trail candidate"
+    },
+    {
+      "name": "nitro_burst",
+      "file": "assets/generated/pinyin-racer-assets/nitro_burst.png",
+      "source": "split/speed-vfx/speed-vfx-03_543x400.png",
+      "size": [
+        543,
+        400
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "nitro burst / cloud candidate"
+    },
+    {
+      "name": "lane_glow_strip",
+      "file": "assets/generated/pinyin-racer-assets/lane_glow_strip.png",
+      "source": "split/speed-vfx/speed-vfx-04_483x349.png",
+      "size": [
+        483,
+        349
+      ],
+      "mode": "RGBA",
+      "edgeAlphaMax": 0,
+      "note": "lane glow / checkpoint effect candidate"
+    }
+  ],
+  "notes": [
+    "Reward VFX sheet repeatedly timed out upstream; base reward icons are available from main sheet.",
+    "Small car pose fragments are retained but should be visually inspected before integration."
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "levelId": "block-07",
+  "chapterId": "block-07",
+  "worldId": "block",
+  "title": "木门小路",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "block-07-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/block/block-07.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "block_builder"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/block/block-07.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "回家门的光照到木门小路，可木板之间还缺一段连接。第一幕的方向已经确认，现在要把回家的光变成大家能走的木门通道。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“木门小路”。回家门需要一条安全路线，我们要把两块木板搭好，再挂上路标，让伙伴知道下一步去方块农场。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块碰撞和远处的机关声告诉我，木门通道就在附近。木板下面有一盏忽明忽暗的路灯，像是在等一个清楚的路标。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块工匠说：通道要先搭稳，路标要让每个人都看得懂。我们一步一步把回家门的光带过来，再一起去方块农场找补给。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "build",
+          "prompt": "把两块木板搭成回家门的安全通道，再挂上路标，让方块农场的方向显现出来。",
+          "character": "block_builder",
+          "position": "right",
+          "actions": [
+            {
+              "label": "放上木板",
+              "feedback": "放上木板后，木门通道接稳了；回家门的光可以通过，方块农场的方向更清楚了。"
+            },
+            {
+              "label": "挂上蓝灯",
+              "feedback": "挂上蓝灯后，路标亮了起来；它告诉伙伴们沿着木门通道去方块农场准备补给。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "木门通道搭稳后，路标把回家门的光送向方块农场。新的道路出现了，可伙伴们还需要一份能带上路的补给。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“路”不是一条凭空出现的线，它由木板、路标和伙伴的脚步一起组成。我们把通道和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见方块农场传来的小鸡叫声了。路标找到了方向，伙伴们也知道该往哪里准备食物。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "木门通道让大家知道，方块农场不是远处的名字，而是回家路上可以准备补给的第一站。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：安全路线不只要能通过，还要让伙伴知道下一步和需要准备什么。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "木门通道和路标已经完成，方块农场的入口亮起。我们带着“路”和回家门的光，去准备伙伴们需要的补给。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/block/cyan-crystal.webp"
+}

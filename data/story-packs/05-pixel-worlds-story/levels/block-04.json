@@ -1,0 +1,105 @@
+{
+  "levelId": "block-04",
+  "chapterId": "block-04",
+  "worldId": "block",
+  "title": "红石工坊：修复机关",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "workshop",
+      "background": "assets/story/pixel-worlds-v1/scenes/block/block-04.webp",
+      "lines": [
+        {
+          "type": "narration",
+          "text": "地下水渠送来的水力到了红石工坊，可机关门一会儿开、一会儿关。星门还缺少稳定的能源，最后一枚星门晶石被关在里面。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“红石工坊：修复机关”。供水已经接通，我们要把红石线接回发光的机关，把水力变成稳定能源，打开通往遗迹图书馆的门。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块碰撞和远处的机关声告诉我，红石机关就在附近。红石线断开的地方正闪着一点绿色光，像是在等我们把能源送进去。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块工匠说：有了供水，还要把力量接到机关上。我们一步一步接好红石线，让能源安全地通过，不让任何人被突然转动的方块吓到。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "repair",
+          "prompt": "把红石线接回发光的机关，让地下城星门需要的能源和遗迹图书馆的方向显现出来。",
+          "character": "hero",
+          "position": "left",
+          "actions": [
+            {
+              "label": "接上红石线",
+              "feedback": "接上红石线后，水力沿着红石线变成稳定能源；遗迹图书馆的方向更清楚了。"
+            },
+            {
+              "label": "按下启动按钮",
+              "feedback": "按下启动按钮后，星门准备图亮起；能源已经够用，工坊把遗迹图书馆的门锁打开了。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "红石机关稳定运转，水渠送来的力量变成了星门能源。遗迹图书馆的门锁打开，一条安全的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“工”不只是修方块，还能把供水变成能源。我们把红石机关和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见遗迹图书馆传来的翻书声了。能源亮起来，藏在书架里的线索也能被看见了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "红石机关让大家知道，遗迹图书馆不是远处的名字，而是被能源打开的下一道门。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：供水给了机关力量，红石线把力量送到正确的位置，能源才会真正帮助大家前进。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "星门能源已经稳定，遗迹图书馆的入口亮起。我们带着“工”和完整的启动线索，去寻找旧地图。",
+          "character": "block_builder",
+          "position": "right"
+        }
+      ],
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "block_builder",
+          "hero"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/block/block-04.webp"
+        ]
+      }
+    }
+  ],
+  "background": "assets/story/pixel-worlds-v1/scenes/block/block-04.webp",
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/block/glass-window.webp"
+}

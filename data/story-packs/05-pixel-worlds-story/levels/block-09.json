@@ -1,0 +1,105 @@
+{
+  "levelId": "block-09",
+  "chapterId": "block-09",
+  "worldId": "block",
+  "title": "石砖广场",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "block-09-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/block/block-09.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "block_builder"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/block/block-09.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "农场补给送到石砖广场，路标的灯重新亮了。石砖上还有一组星星图案，可能把回家路线整理成一张真正的地图。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“石砖广场”。我们要找出石砖上的星星图案，把路标、木门通道和水晶矿井画成一张大家都看得懂的地图。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块碰撞和远处的机关声告诉我，星星图案就在附近。星星正沿着路标排列，最后一颗指向水晶矿井。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块工匠说：地图不是把星星随便画上去，而是把已经走过的路和下一站的方向排清楚。我们一起读懂这组星星图案。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "scan",
+          "prompt": "找出石砖上藏着的星星图案，把路标整理成地图，让水晶矿井的线索显现出来。",
+          "character": "block_builder",
+          "position": "right",
+          "actions": [
+            {
+              "label": "观察星星石砖",
+              "feedback": "观察星星石砖后，星星图案出现了；木门通道、农场和水晶矿井的路线更清楚了。"
+            },
+            {
+              "label": "敲一敲圆石",
+              "feedback": "敲一敲圆石后，星标记和路标连成地图；最后的方向指向水晶矿井。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "星星图案被找到后，路标变成了一张清楚的地图。木门通道通向农场，农场之后就是水晶矿井，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“星”不只是装饰，它能把走过的路排成地图。我们把星星图案和回家门的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见水晶矿井传来的叮叮声了。地图已经说清方向，只要找到蓝色水晶，轨道车站就能得到力量。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "星星图案让大家知道，水晶矿井不是远处的名字，而是地图上下一处需要准备能源的地方。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：路标只有被读懂，才会真正变成地图。下一站去水晶矿井找能源。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "星星图案已经把回家路线整理成地图，水晶矿井的入口亮起。我们带着“星”和补给物资继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/block/bridge-symbol.webp"
+}

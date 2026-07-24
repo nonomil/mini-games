@@ -1,0 +1,46 @@
+[
+  {
+    "slug": "sunshine",
+    "output": "G:\\StudyCode\\宠物积分系统\\assets\\pokedex-halls\\sunshine.png",
+    "base": "G:\\StudyCode\\宠物积分系统\\assets\\pokedex-halls\\base\\sunshine.png",
+    "pet_ids": [
+      "pvz_peashooter",
+      "pvz_sunflower",
+      "pvz_cherrybomb"
+    ],
+    "card_dir": "assets/cards/composed-v2"
+  },
+  {
+    "slug": "adventure",
+    "output": "G:\\StudyCode\\宠物积分系统\\assets\\pokedex-halls\\adventure.png",
+    "base": "G:\\StudyCode\\宠物积分系统\\assets\\pokedex-halls\\base\\adventure.png",
+    "pet_ids": [
+      "4413441b-af1",
+      "2cd112b5-025",
+      "35a035d7-972"
+    ],
+    "card_dir": "assets/cards/composed-v2"
+  },
+  {
+    "slug": "classroom",
+    "output": "G:\\StudyCode\\宠物积分系统\\assets\\pokedex-halls\\classroom.png",
+    "base": "G:\\StudyCode\\宠物积分系统\\assets\\pokedex-halls\\base\\classroom.png",
+    "pet_ids": [
+      "cp_cat_01",
+      "cp_unicorn_01",
+      "cp_robot_01"
+    ],
+    "card_dir": "assets/cards/composed-v2"
+  },
+  {
+    "slug": "blocky",
+    "output": "G:\\StudyCode\\宠物积分系统\\assets\\pokedex-halls\\blocky.png",
+    "base": "G:\\StudyCode\\宠物积分系统\\assets\\pokedex-halls\\base\\blocky.png",
+    "pet_ids": [
+      "mc_wolf",
+      "mc_allay",
+      "mc_enderman"
+    ],
+    "card_dir": "assets/cards/composed-v2"
+  }
+]

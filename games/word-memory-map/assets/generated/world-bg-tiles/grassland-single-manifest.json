@@ -1,0 +1,19 @@
+{
+  "id": "grassland-9grid-world-single",
+  "theme": "grassland",
+  "mode": "single",
+  "image": "./assets/generated/world-bg-single/farm-panorama.png",
+  "labels": [
+    "风车坡口",
+    "云影大道",
+    "牧歌谷仓",
+    "浅溪草甸",
+    "中央高坡",
+    "向日花湾",
+    "白云湖边",
+    "长草跑道",
+    "石圈营地"
+  ],
+  "rows": 3,
+  "cols": 3
+}

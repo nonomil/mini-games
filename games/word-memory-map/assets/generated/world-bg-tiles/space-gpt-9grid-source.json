@@ -1,0 +1,11 @@
+{
+  "sourceImage": "prj/单词记忆射击场原型/assets/generated/world-bg-tiles/space-gpt-9grid/space_tile_r1_c1.png ... space_tile_r3_c3.png",
+  "manifest": "prj/单词记忆射击场原型/assets/generated/world-bg-tiles/space-9grid-manifest.json",
+  "tilesDir": "prj/单词记忆射击场原型/assets/generated/world-bg-tiles/space-gpt-9grid",
+  "workflowScript": "prj/browser-act-imagegen/README.md",
+  "exportScript": "prj/browser-act-imagegen/scripts/download_chatgpt_estuary_current.ps1",
+  "exportedAt": "2026-07-11",
+  "generatedViaBrowserActChatGPT": true,
+  "tileCount": 9,
+  "notes": "Nine native ChatGPT-generated space-station regions. Each image is independently playable and uses coordinated open glass-corridor exits for 3x3 map travel."
+}

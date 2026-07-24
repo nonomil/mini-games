@@ -1,0 +1,105 @@
+{
+  "levelId": "sf-05",
+  "chapterId": "sf-05",
+  "worldId": "sci-fi",
+  "title": "漂浮温室：照看星芽",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "garden",
+      "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-05.webp",
+      "lines": [
+        {
+          "type": "narration",
+          "text": "漂浮温室里，一颗小星芽正抱着叶子打瞌睡。它听见修好的推进器声，却还不肯抬头。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“漂浮温室：照看星芽”。我们要照顾星芽，让它抬起小脑袋，看看它能不能回应远方的蓝色信号。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "星芽身边有一点蓝光和一滴星水。它像是在等一个温柔的提醒。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "星芽不是机器，不能用力催它发光。我们要给它水、光和时间，让它自己做出回应。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "care",
+          "prompt": "温柔照顾星芽，让它抬起小脑袋，看看它会不会回应远方的蓝色信号。",
+          "character": "pet",
+          "position": "right",
+          "actions": [
+            {
+              "label": "浇一滴星水",
+              "feedback": "浇一滴星水后，星芽抬起小脑袋；它的微光沿着轨道电梯传向远方。"
+            },
+            {
+              "label": "打开柔光灯",
+              "feedback": "打开柔光灯后，星芽轻轻摇叶子；蓝色信号收到了一声跨过世界的回应。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "星芽没有只为自己发光。它把蓝色回应送上轨道电梯，告诉我们：森林世界听见了星港的呼唤。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“芽”会把希望顶出土，也会把问候送到远方。我们把森林回应记在星图上。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见轨道电梯传来的回声了。那不是维修铃，是森林朋友的回应。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "星尘工程师把蓝光、光核、云桥和星芽画成一条线。现在我们知道，下一幕要去森林找回家的另一半。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：照顾好一个小生命，也能让远方的朋友听见你。森林回应会沿着轨道电梯传来。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "星芽的回应已经接上星图。轨道电梯的入口亮起，我们带着“芽”和森林的问候，准备进入下一幕。",
+          "character": "pet",
+          "position": "right"
+        }
+      ],
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/sci-fi/sf-05.webp"
+        ]
+      }
+    }
+  ],
+  "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-05.webp",
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/glass-dome.webp"
+}

@@ -1,0 +1,17 @@
+{
+  "canvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "regions": [
+    { "name": "farm_tile_r1_c1", "x": 17, "y": 20, "w": 543, "h": 298 },
+    { "name": "farm_tile_r1_c2", "x": 563, "y": 20, "w": 548, "h": 298 },
+    { "name": "farm_tile_r1_c3", "x": 1113, "y": 20, "w": 542, "h": 298 },
+    { "name": "farm_tile_r2_c1", "x": 17, "y": 321, "w": 543, "h": 300 },
+    { "name": "farm_tile_r2_c2", "x": 563, "y": 321, "w": 548, "h": 300 },
+    { "name": "farm_tile_r2_c3", "x": 1113, "y": 321, "w": 542, "h": 300 },
+    { "name": "farm_tile_r3_c1", "x": 17, "y": 624, "w": 543, "h": 297 },
+    { "name": "farm_tile_r3_c2", "x": 563, "y": 624, "w": 548, "h": 297 },
+    { "name": "farm_tile_r3_c3", "x": 1113, "y": 624, "w": 542, "h": 297 }
+  ]
+}

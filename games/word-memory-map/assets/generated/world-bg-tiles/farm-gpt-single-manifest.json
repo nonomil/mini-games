@@ -1,0 +1,19 @@
+{
+  "id": "farm-gpt-9grid-world-single",
+  "theme": "farm",
+  "mode": "single",
+  "image": "./assets/generated/world-bg-single/farm-gpt-panorama.png",
+  "labels": [
+    "农场入口",
+    "河岸温室",
+    "斜路菜地",
+    "开阔草地",
+    "溪桥农庄",
+    "中央广场",
+    "樱树湖岸",
+    "南路草坡",
+    "围栏岔口"
+  ],
+  "rows": 3,
+  "cols": 3
+}

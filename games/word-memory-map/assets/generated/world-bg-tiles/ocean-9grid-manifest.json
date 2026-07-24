@@ -1,0 +1,19 @@
+{
+  "id": "ocean-9grid-world",
+  "theme": "ocean",
+  "tileWidth": 543,
+  "tileHeight": 298,
+  "rows": 3,
+  "cols": 3,
+  "tiles": [
+    { "id": "tile-1", "label": "珊瑚码头", "row": 0, "col": 0, "src": "./assets/generated/world-bg-tiles/ocean-gpt-9grid/ocean_tile_r1_c1.png?v=20260711" },
+    { "id": "tile-2", "label": "潮汐交汇", "row": 0, "col": 1, "src": "./assets/generated/world-bg-tiles/ocean-gpt-9grid/ocean_tile_r1_c2.png?v=20260711" },
+    { "id": "tile-3", "label": "海玻璃站", "row": 0, "col": 2, "src": "./assets/generated/world-bg-tiles/ocean-gpt-9grid/ocean_tile_r1_c3.png?v=20260711" },
+    { "id": "tile-4", "label": "蓝湾甲板", "row": 1, "col": 0, "src": "./assets/generated/world-bg-tiles/ocean-gpt-9grid/ocean_tile_r2_c1.png?v=20260711" },
+    { "id": "tile-5", "label": "中央泻湖", "row": 1, "col": 1, "src": "./assets/generated/world-bg-tiles/ocean-gpt-9grid/ocean_tile_r2_c2.png?v=20260711" },
+    { "id": "tile-6", "label": "海草水路", "row": 1, "col": 2, "src": "./assets/generated/world-bg-tiles/ocean-gpt-9grid/ocean_tile_r2_c3.png?v=20260711" },
+    { "id": "tile-7", "label": "鲸歌岸线", "row": 2, "col": 0, "src": "./assets/generated/world-bg-tiles/ocean-gpt-9grid/ocean_tile_r3_c1.png?v=20260711" },
+    { "id": "tile-8", "label": "浪花礁石", "row": 2, "col": 1, "src": "./assets/generated/world-bg-tiles/ocean-gpt-9grid/ocean_tile_r3_c2.png?v=20260711" },
+    { "id": "tile-9", "label": "深蓝回环", "row": 2, "col": 2, "src": "./assets/generated/world-bg-tiles/ocean-gpt-9grid/ocean_tile_r3_c3.png?v=20260711" }
+  ]
+}

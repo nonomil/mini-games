@@ -1,0 +1,334 @@
+/* ============================================================
+   css/hanzi-game.css
+   汉字答题玩法：全屏场景 HUD + 轮换背景
+   与 PK / 探索战斗保持同一类沉浸式游戏界面
+   ============================================================ */
+
+/* ---- 页面背景：复用首页地图底图 ---- */
+#page-hanzi {
+    position: relative;
+    min-height: 100vh;
+    background: transparent !important;
+    font-family: "Comic Sans MS", "Baloo 2", "Nunito", "Noto Sans SC", "PingFang SC", system-ui, sans-serif;
+    isolation: isolate;
+    padding: 20px 0 48px;
+}
+#page-hanzi::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(167, 214, 255, 0.72), rgba(227, 242, 255, 0.94)),
+        url('../../assets/scenes/stargarden.webp') center top / cover no-repeat;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#hanzi-container {
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+/* ---- 大厅：等级选择 ---- */
+.hz-lobby {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 24px;
+    background:
+        linear-gradient(180deg, rgba(249, 253, 255, 0.98), rgba(236, 247, 255, 0.94)),
+        radial-gradient(circle at 12% 0%, rgba(125, 211, 252, 0.24), transparent 38%);
+    backdrop-filter: blur(12px) saturate(1.15);
+    -webkit-backdrop-filter: blur(12px) saturate(1.15);
+    border-radius: 28px;
+    border: 1px solid rgba(169, 209, 243, 0.72);
+    box-shadow: 0 24px 60px rgba(70, 122, 167, 0.20);
+    color: #1f3a56;
+}
+
+.hz-page-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.hz-page-actions-right {
+    display: flex;
+    gap: 10px;
+}
+
+.hz-page-btn {
+    min-height: 40px;
+    padding: 0 16px;
+    border: 1px solid rgba(148, 186, 219, 0.72);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.92);
+    color: #2d4b69;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(116, 145, 176, 0.16);
+}
+
+.hz-page-btn.is-close {
+    background: rgba(45, 75, 105, 0.92);
+    color: #fff;
+}
+.hz-lobby-head { text-align: center; margin-bottom: 14px; }
+.hz-lobby-head h2 {
+    font-size: clamp(28px, 4vw, 42px); font-weight: 900; margin: 0 0 6px;
+    color: #173a5a;
+    text-shadow: 0 8px 22px rgba(153, 190, 222, 0.42);
+    font-family: "Noto Sans SC", "PingFang SC", "Comic Sans MS", "Baloo 2", "Nunito", system-ui, sans-serif;
+}
+.hz-lobby-head p { font-size: 14px; color: #6483a0; margin: 0; }
+
+.hz-level-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    margin: 12px 0 14px;
+}
+.hz-level-card {
+    appearance: none;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(201, 225, 243, 0.92);
+    border-radius: 18px;
+    padding: 16px 12px;
+    text-align: center;
+    cursor: pointer;
+    color: #31506e;
+    transition: transform .18s, box-shadow .18s, border-color .18s;
+    box-shadow: 0 12px 24px rgba(125, 166, 204, 0.18);
+}
+.hz-level-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 26px rgba(102, 150, 194, 0.24);
+    border-color: rgba(84, 164, 230, 0.62);
+}
+.hz-level-card:active { transform: translateY(0) scale(.97); }
+.hz-level-card.active {
+    border-color: #facc15;
+    box-shadow: 0 0 0 3px rgba(250,204,21,.18), 0 14px 24px rgba(102,150,194,.18);
+}
+
+.hz-level-num { font-size: 30px; font-weight: 900; color: #fde68a; line-height: 1; }
+.hz-level-label { font-size: 14px; margin-top: 6px; color: #6e8fb0; font-weight: 800; }
+.hz-level-sub { font-size: 12px; color: #7b91aa; margin-top: 3px; }
+
+.hz-start-btn {
+    display: block; width: 100%; max-width: 320px;
+    margin: 8px auto 0; padding: 14px 20px;
+    border: none; border-radius: 24px;
+    background: linear-gradient(135deg, #22c55e, #0ea5e9);
+    color: #fff; font-size: 16px; font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 12px 24px rgba(14, 165, 233, .28);
+    transition: transform .15s;
+}
+.hz-start-btn:hover { transform: translateY(-1px); }
+.hz-start-btn:active { transform: translateY(1px); }
+.hz-best-hint { text-align: center; font-size: 13px; color: #7290aa; margin-top: 12px; }
+
+/* ---- 全屏覆盖层（答题界面）---- */
+.hz-overlay {
+    position: fixed; inset: 0; z-index: 1000;
+    --hz-bg: url('../../assets/scenes/stargarden.webp');
+    background-image:
+        radial-gradient(circle at 50% 18%, rgba(250, 204, 21, 0.14), transparent 34%),
+        linear-gradient(180deg, rgba(4, 9, 20, 0.2) 0%, rgba(4, 9, 20, 0.76) 100%),
+        var(--hz-bg);
+    background-size: cover, cover, cover;
+    background-position: center, center, center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Comic Sans MS", "Baloo 2", "Nunito", "Noto Sans SC", "PingFang SC", system-ui, sans-serif;
+    display: flex; align-items: center; justify-content: center;
+    padding: 20px; overflow-y: auto;
+    transition: background-image .45s ease;
+}
+.hz-stage {
+    position: relative; z-index: 1;
+    width: min(1120px, calc(100vw - 40px));
+    min-height: min(760px, calc(100vh - 40px));
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    background:
+        linear-gradient(135deg, rgba(9, 15, 29, 0.82), rgba(20, 32, 50, 0.68)),
+        radial-gradient(circle at 16% 0%, rgba(125, 211, 252, 0.22), transparent 38%);
+    backdrop-filter: blur(14px) saturate(1.18);
+    -webkit-backdrop-filter: blur(14px) saturate(1.18);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 30px;
+    box-shadow: 0 26px 80px rgba(2, 6, 23, 0.46);
+    padding: 20px 22px 24px;
+    animation: hz-pop .3s ease;
+}
+@keyframes hz-pop { from{opacity:0;transform:scale(.94);} to{opacity:1;transform:scale(1);} }
+
+/* ---- 顶栏 ---- */
+.hz-topbar { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; font-size: 14px; }
+.hz-topbar-left,
+.hz-topbar-right,
+.hz-topbar-center {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hz-topbar-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.hz-pill {
+    background: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    color: #fff; padding: 5px 14px; border-radius: 999px;
+    font-weight: 800; box-shadow: 0 8px 18px rgba(2,6,23,.14);
+}
+.hz-score-pill { background: linear-gradient(135deg, #fef3c7, #fde68a); color: #713f12; border-color: rgba(254, 243, 199, 0.45); }
+.hz-exit-btn,
+.hz-home-btn {
+    background: rgba(255,255,255,.13); border: 1px solid rgba(255,255,255,.15);
+    border-radius: 999px; padding: 7px 14px; font-size: 13px;
+    color: #fff; cursor: pointer;
+}
+.hz-home-btn { background: rgba(255,255,255,.92); color: #23415f; }
+.hz-exit-btn:hover,
+.hz-home-btn:hover { background: rgba(255,255,255,.24); }
+.hz-home-btn:hover { background: rgba(255,255,255,.98); }
+
+/* ---- 题目卡片 ---- */
+.hz-card {
+    position: relative;
+    align-self: center;
+    text-align: center; padding: clamp(24px, 5vw, 48px) 24px; margin: 6px auto 0;
+    width: min(780px, 100%);
+    background: rgba(8, 13, 25, 0.58);
+    border-radius: 26px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 18px 42px rgba(2,6,23,.28);
+    transition: opacity .35s ease;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+}
+.hz-card.fading { opacity: 0; }
+.hz-mode-tag { display: inline-block; background: rgba(125,211,252,.16); color: #bae6fd; font-size: 12px; font-weight: 900; padding: 4px 12px; border-radius: 999px; margin-bottom: 12px; }
+.hz-emoji { font-size: clamp(62px, 8vw, 112px); line-height: 1.1; margin-bottom: 8px; animation: hz-breathe 2.4s ease-in-out infinite; }
+.hz-emoji-img { width: clamp(130px, 16vw, 190px); height: clamp(130px, 16vw, 190px); object-fit: contain; display: block; margin: 0 auto 8px; filter: drop-shadow(0 14px 24px rgba(0,0,0,.32)); animation: hz-pop .3s ease; pointer-events: none; user-select: none; }
+@keyframes hz-breathe { 0%,100%{transform:scale(1);} 50%{transform:scale(1.06);} }
+.hz-char { font-size: 84px; font-weight: 900; line-height: 1.1; color: #fff; margin: 4px 0; text-shadow: 0 4px 16px rgba(0,0,0,.38); font-family: "Noto Sans SC","PingFang SC","Comic Sans MS","Baloo 2","Nunito",system-ui,sans-serif; }
+.hz-pinyin { font-size: clamp(26px, 4vw, 42px); color: #fde68a; font-style: italic; letter-spacing: 3px; margin-bottom: 10px; font-weight: 900; }
+.hz-example { font-size: clamp(20px, 3vw, 30px); line-height: 1.7; color: #f8fafc; margin: 12px; }
+.hz-example .hz-blank { display: inline-block; min-width: 34px; padding: 0 8px; margin: 0 3px; border-bottom: 4px solid #fde68a; color: transparent; background: rgba(250,204,21,.14); border-radius: 7px 7px 0 0; }
+.hz-example .hz-target { color: #c04020; font-weight: 700; }
+
+/* ---- 选项按钮 ---- */
+.hz-opts { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; width: min(780px, 100%); margin: 18px auto 0; }
+.hz-opt {
+    background: rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 18px; padding: 20px 12px;
+    font-size: clamp(28px, 4.2vw, 44px); font-weight: 900;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 14px 26px rgba(2,6,23,.22);
+    transition: transform .12s, border-color .12s, background .12s;
+}
+.hz-opt:hover { transform: translateY(-3px); border-color: rgba(125,211,252,.62); background: rgba(255,255,255,.2); box-shadow: 0 18px 30px rgba(2,6,23,.3); }
+.hz-opt:active { transform: scale(.96); }
+.hz-opt.correct { background: rgba(34,197,94,.86); border-color: #86efac; color: #052e16; animation: hz-correct .5s ease; }
+.hz-opt.wrong { background: rgba(239,68,68,.84); border-color: #fecaca; color: #fff; animation: hz-wrong .45s ease; }
+.hz-opt.disabled { pointer-events: none; opacity: .6; }
+@keyframes hz-correct { 0%{transform:scale(1);} 40%{transform:scale(1.12);} 100%{transform:scale(1);} }
+@keyframes hz-wrong { 0%,100%{transform:translateX(0);} 20%{transform:translateX(-6px);} 40%{transform:translateX(6px);} 60%{transform:translateX(-4px);} 80%{transform:translateX(4px);} }
+
+/* ---- toast ---- */
+.hz-toast {
+    position: fixed; top: 18%; left: 50%; transform: translateX(-50%) translateY(-10px);
+    background: rgba(60,30,10,.9); color: #fff; padding: 10px 22px;
+    border-radius: 14px; font-size: 16px; font-weight: 600;
+    z-index: 1100; opacity: 0; pointer-events: none;
+    transition: opacity .25s, transform .25s;
+}
+.hz-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+.hz-toast.win { background: linear-gradient(135deg, #84cc16, #65A30D); }
+.hz-toast.lose { background: linear-gradient(135deg, #FF6B6B, #dc2626); }
+.hz-toast small { display: block; font-size: 12px; font-weight: 400; opacity: .9; margin-top: 2px; }
+
+/* ---- 结算 ---- */
+.hz-result {
+    text-align: center; padding: clamp(28px, 6vw, 58px) 18px;
+    background: rgba(8, 13, 25, 0.58);
+    border-radius: 26px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 18px 42px rgba(2,6,23,.28);
+    border: 1px solid rgba(255,255,255,.14);
+}
+.hz-result-emoji { font-size: 60px; line-height: 1; }
+.hz-result-title { font-size: 26px; font-weight: 900; margin: 8px 0 4px; color: #fff; font-family: "Noto Sans SC","PingFang SC","Comic Sans MS","Baloo 2","Nunito",system-ui,sans-serif; }
+.hz-result-score { font-size: 48px; font-weight: 900; color: #fde68a; margin: 6px 0; }
+.hz-result-meta { font-size: 15px; color: rgba(226,232,240,.82); margin-bottom: 16px; }
+.hz-result-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.hz-result-actions button { padding: 12px 24px; border: none; border-radius: 24px; font-size: 16px; font-weight: 700; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,.12); transition: transform .14s; }
+.hz-result-actions button:hover { transform: translateY(-2px); }
+.hz-result-actions button:active { transform: scale(.96); }
+.hz-btn-primary { background: linear-gradient(135deg, #22c55e, #0ea5e9); color: #fff; }
+.hz-btn-secondary { background: rgba(255,255,255,.14); color: #fff; }
+
+/* ---- 排行榜 tab ---- */
+.hz-lb-tabs { display: flex; gap: 8px; max-width: 760px; margin: 0 auto 8px; padding: 12px 16px 0; }
+.hz-lb-tab {
+    padding: 8px 18px; border: 1px solid rgba(180,140,80,.4);
+    background: rgba(245,235,210,.45); border-radius: 999px;
+    font-size: 13px; font-weight: 600; color: #6a4a2a; cursor: pointer; transition: all .15s;
+}
+.hz-lb-tab:hover { background: rgba(245,235,210,.7); }
+.hz-lb-tab.active { background: linear-gradient(135deg, #c8943e, #a07028); color: #fff; border-color: transparent; }
+
+/* ---- 学习记忆角标 ---- */
+.hz-level-prog { font-size: 11px; line-height: 1.4; color: #6d85a0; }
+.hz-level-prog b { color: #fde68a; font-weight: 800; }
+.hz-level-prog span { color: #4f84b5; }
+.hz-badge { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px; font-size: 11px; font-weight: 700; vertical-align: middle; line-height: 1.6; }
+.hz-badge-new { background: #dcfce7; color: #15803d; border: 1px solid #86efac; }
+.hz-badge-review { background: #ffedd5; color: #c2410c; border: 1px solid #fdba74; }
+
+@media (max-width: 760px) {
+    .hz-overlay {
+        padding: 10px;
+    }
+    .hz-stage {
+        width: calc(100vw - 20px);
+        min-height: calc(100vh - 20px);
+        border-radius: 22px;
+        padding: 14px;
+    }
+    .hz-topbar {
+        flex-wrap: wrap;
+    }
+    .hz-topbar-center {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+    .hz-card {
+        padding: 24px 12px;
+    }
+    .hz-opts {
+        gap: 10px;
+    }
+    .hz-opt {
+        border-radius: 14px;
+        padding: 16px 8px;
+    }
+}
+
+@media (max-width: 460px) {
+    .hz-opts {
+        grid-template-columns: 1fr;
+    }
+}

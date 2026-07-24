@@ -1,0 +1,21 @@
+{
+  "id": "minecraft-vocab-ui-pack",
+  "schemaVersion": 1,
+  "status": "generated-gpt-image-2",
+  "runtimeRoot": "assets/learn/english-vocab/generated/minecraft-vocab-ui-pack/",
+  "source": "Bee API gpt-image-2 asset sheet, green-screen removed and semantically renamed",
+  "textPolicy": "All learner-facing text remains HTML/CSS.",
+  "assets": [
+    { "id": "stage-warmup", "purpose": "Review warm-up badge", "path": "assets/learn/english-vocab/generated/minecraft-vocab-ui-pack/stage-warmup.png", "dimensions": [248, 274], "runtime": true },
+    { "id": "stage-new-word", "purpose": "New-word badge", "path": "assets/learn/english-vocab/generated/minecraft-vocab-ui-pack/stage-new-word.png", "dimensions": [251, 275], "runtime": true },
+    { "id": "stage-recall", "purpose": "Active recall badge", "path": "assets/learn/english-vocab/generated/minecraft-vocab-ui-pack/stage-recall.png", "dimensions": [250, 274], "runtime": true },
+    { "id": "stage-scene", "purpose": "Scene sentence badge", "path": "assets/learn/english-vocab/generated/minecraft-vocab-ui-pack/stage-scene.png", "dimensions": [254, 276], "runtime": true },
+    { "id": "reward-chest", "purpose": "Completion reward chest", "path": "assets/learn/english-vocab/generated/minecraft-vocab-ui-pack/reward-chest.png", "dimensions": [241, 302], "runtime": true },
+    { "id": "reward-star", "purpose": "Completion reward star", "path": "assets/learn/english-vocab/generated/minecraft-vocab-ui-pack/reward-star.png", "dimensions": [270, 253], "runtime": true },
+    { "id": "learning-companion", "purpose": "Friendly vocabulary learning companion", "path": "assets/learn/english-vocab/generated/minecraft-vocab-ui-pack/learning-companion.png", "dimensions": [224, 269], "runtime": true },
+    { "id": "card-corner-tl", "purpose": "Vocabulary card top-left corner", "path": "assets/learn/english-vocab/generated/minecraft-vocab-ui-pack/card-corner-tl.png", "dimensions": [117, 118], "runtime": true },
+    { "id": "card-corner-tr", "purpose": "Vocabulary card top-right corner", "path": "assets/learn/english-vocab/generated/minecraft-vocab-ui-pack/card-corner-tr.png", "dimensions": [114, 118], "runtime": true },
+    { "id": "card-corner-bl", "purpose": "Vocabulary card bottom-left corner", "path": "assets/learn/english-vocab/generated/minecraft-vocab-ui-pack/card-corner-bl.png", "dimensions": [117, 118], "runtime": true },
+    { "id": "card-corner-br", "purpose": "Vocabulary card bottom-right corner", "path": "assets/learn/english-vocab/generated/minecraft-vocab-ui-pack/card-corner-br.png", "dimensions": [115, 118], "runtime": true }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "pixel-worlds-story-audio-sf-04",
+  "chapterId": "sf-04",
+  "audioFormat": "wav",
+  "audioSubtype": "source",
+  "scenes": [
+    {
+      "sceneId": "dock",
+      "lines": [
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-04/lines/dock-00.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-04/lines/dock-01.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-04/lines/dock-02.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-04/lines/dock-03.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-04/lines/dock-04.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-04/lines/dock-05.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-04/lines/dock-06.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-04/lines/dock-07.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-04/lines/dock-08.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-04/lines/dock-09.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-04/lines/dock-10.wav"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+Create a low-distraction voxel block-world background for an Anki Minecraft vocabulary workbench web app.
+
+Scene: a tidy study table in a bright block-world room, shelves with simple cube objects, a window showing grass and sky, blank cards and safe learning tools on the desk.
+
+Composition: wide desktop background, keep the center and lower middle calm so card lists and detail panels remain readable; place decorative detail near edges only.
+
+Style: polished 3D voxel game art, clean educational interface backdrop, soft daylight, green, blue, off-white, and small amber accents.
+
+Hard constraints: no readable text, no letters, no numbers, no UI buttons, no logo, no watermark, no brand mark, no scary subjects, no dark palette.

@@ -1,0 +1,828 @@
+{
+  "scenes": [
+    {
+      "id": "forest",
+      "name": "神秘森林",
+      "emoji": "🌲",
+      "bg_color": "#A8D8A8",
+      "danger_level": 1,
+      "hp_cost": 5,
+      "duration": "5-10 分钟",
+      "min_level": 1,
+      "unlock_cost": 0,
+      "description": "阳光斑驳的森林，蘑菇和小动物出没",
+      "image": "assets/scenes/forest.webp",
+      "monsters": [
+        {
+          "id": "snail",
+          "name": "小蜗牛",
+          "emoji": "🐌",
+          "hp": 20,
+          "atk": 2,
+          "exp": 5,
+          "drops": [
+            {
+              "item_id": "leaf",
+              "rate": 0.6
+            },
+            {
+              "item_id": "mushroom",
+              "rate": 0.3
+            }
+          ]
+        },
+        {
+          "id": "rabbit_wild",
+          "name": "野兔子",
+          "emoji": "🐰",
+          "hp": 30,
+          "atk": 3,
+          "exp": 8,
+          "drops": [
+            {
+              "item_id": "carrot",
+              "rate": 0.5
+            },
+            {
+              "item_id": "leaf",
+              "rate": 0.4
+            }
+          ]
+        },
+        {
+          "id": "spider",
+          "name": "大蜘蛛",
+          "emoji": "🕷️",
+          "hp": 50,
+          "atk": 5,
+          "exp": 15,
+          "drops": [
+            {
+              "item_id": "silk",
+              "rate": 0.7
+            },
+            {
+              "item_id": "mushroom",
+              "rate": 0.3
+            }
+          ]
+        }
+      ],
+      "rare_drops": [
+        {
+          "item_id": "forest_gem",
+          "rate": 0.05,
+          "name": "森林之泪"
+        }
+      ],
+      "story": "你踏入了神秘森林的入口。阳光穿过树叶，在地上洒下金色的光斑。一只蜗牛爬过蘑菇，悄悄说：'小心哦，森林里的小精灵们喜欢和冒险者玩捉迷藏。'前方传来沙沙声，是朋友还是挑战？"
+    },
+    {
+      "id": "beach",
+      "name": "蔚蓝海滩",
+      "emoji": "🏖️",
+      "bg_color": "#B8E0F0",
+      "danger_level": 2,
+      "hp_cost": 8,
+      "duration": "10-15 分钟",
+      "min_level": 2,
+      "unlock_cost": 0,
+      "description": "阳光、沙滩、贝壳与小螃蟹",
+      "image": "assets/scenes/beach.webp",
+      "monsters": [
+        {
+          "id": "crab",
+          "name": "小螃蟹",
+          "emoji": "🦀",
+          "hp": 40,
+          "atk": 4,
+          "exp": 10,
+          "drops": [
+            {
+              "item_id": "shell",
+              "rate": 0.7
+            },
+            {
+              "item_id": "seaweed",
+              "rate": 0.3
+            }
+          ]
+        },
+        {
+          "id": "fish",
+          "name": "热带鱼",
+          "emoji": "🐠",
+          "hp": 25,
+          "atk": 2,
+          "exp": 6,
+          "drops": [
+            {
+              "item_id": "pearl",
+              "rate": 0.2
+            },
+            {
+              "item_id": "shell",
+              "rate": 0.5
+            }
+          ]
+        },
+        {
+          "id": "seagull",
+          "name": "海鸥",
+          "emoji": "🐦",
+          "hp": 35,
+          "atk": 5,
+          "exp": 12,
+          "drops": [
+            {
+              "item_id": "feather",
+              "rate": 0.6
+            }
+          ]
+        }
+      ],
+      "rare_drops": [
+        {
+          "item_id": "ocean_gem",
+          "rate": 0.04,
+          "name": "海洋之心"
+        }
+      ],
+      "story": "海风带着咸咸的味道吹来，沙滩上散落着五颜六色的贝壳。一只小螃蟹横着爬过来，举起钳子说：'欢迎来到蔚蓝海滩！你想不想来一场沙堡大战？'远处，海鸥在天空盘旋，好像在守护着什么秘密宝藏……"
+    },
+    {
+      "id": "mountain",
+      "name": "雪山之巅",
+      "emoji": "🏔️",
+      "bg_color": "#D8E8F0",
+      "danger_level": 3,
+      "hp_cost": 12,
+      "duration": "15-20 分钟",
+      "min_level": 3,
+      "unlock_cost": 0,
+      "description": "寒风呼啸，藏着稀有的冰晶",
+      "image": "assets/scenes/mountain.webp",
+      "monsters": [
+        {
+          "id": "wolf",
+          "name": "雪狼",
+          "emoji": "🐺",
+          "hp": 80,
+          "atk": 8,
+          "exp": 25,
+          "drops": [
+            {
+              "item_id": "ice_crystal",
+              "rate": 0.5
+            },
+            {
+              "item_id": "fur",
+              "rate": 0.4
+            }
+          ]
+        },
+        {
+          "id": "yeti",
+          "name": "小雪人",
+          "emoji": "☃️",
+          "hp": 100,
+          "atk": 6,
+          "exp": 30,
+          "drops": [
+            {
+              "item_id": "ice_crystal",
+              "rate": 0.7
+            }
+          ]
+        },
+        {
+          "id": "penguin",
+          "name": "企鹅",
+          "emoji": "🐧",
+          "hp": 60,
+          "atk": 5,
+          "exp": 18,
+          "drops": [
+            {
+              "item_id": "fish_frozen",
+              "rate": 0.6
+            }
+          ]
+        }
+      ],
+      "rare_drops": [
+        {
+          "item_id": "snow_gem",
+          "rate": 0.03,
+          "name": "雪莲之魂"
+        }
+      ],
+      "story": "你登上了雪山之巅，呼出的气变成了白雾。雪花轻轻飘落，脚下的冰面像镜子一样闪亮。一只雪狼在远处眺望，它转过身来说：'只有最勇敢的冒险者才能到达这里。冰晶深处藏着古老的力量……'"
+    },
+    {
+      "id": "space",
+      "name": "太空站",
+      "emoji": "🚀",
+      "bg_color": "#1A1A3E",
+      "danger_level": 4,
+      "hp_cost": 18,
+      "duration": "20-30 分钟",
+      "min_level": 5,
+      "unlock_cost": 50,
+      "description": "失重环境，外星生物漂浮",
+      "image": "assets/scenes/space.webp",
+      "monsters": [
+        {
+          "id": "alien",
+          "name": "小绿人",
+          "emoji": "👽",
+          "hp": 120,
+          "atk": 10,
+          "exp": 40,
+          "drops": [
+            {
+              "item_id": "alien_tech",
+              "rate": 0.6
+            }
+          ]
+        },
+        {
+          "id": "asteroid",
+          "name": "小行星",
+          "emoji": "☄️",
+          "hp": 80,
+          "atk": 12,
+          "exp": 35,
+          "drops": [
+            {
+              "item_id": "space_rock",
+              "rate": 0.7
+            }
+          ]
+        },
+        {
+          "id": "robot",
+          "name": "失灵机器人",
+          "emoji": "🤖",
+          "hp": 150,
+          "atk": 9,
+          "exp": 50,
+          "drops": [
+            {
+              "item_id": "circuit",
+              "rate": 0.6
+            },
+            {
+              "item_id": "battery",
+              "rate": 0.4
+            }
+          ]
+        }
+      ],
+      "rare_drops": [
+        {
+          "item_id": "star_gem",
+          "rate": 0.02,
+          "name": "星辰碎片"
+        }
+      ],
+      "story": "舱门缓缓打开，眼前是无尽的星空。失重的感觉让一切变得奇妙——小绿人飘浮在窗外挥手，一颗小行星从身边嗖嗖飞过。空间站的AI语音响起：'欢迎来到太空站，今天的任务是——在银河里找到那颗失落的星辰碎片。'"
+    },
+    {
+      "id": "candy",
+      "name": "糖果王国",
+      "emoji": "🍭",
+      "bg_color": "#FFD8E8",
+      "danger_level": 2,
+      "hp_cost": 6,
+      "duration": "10-15 分钟",
+      "min_level": 2,
+      "unlock_cost": 0,
+      "description": "棉花糖云朵，巧克力河流",
+      "image": "assets/scenes/candy.webp",
+      "monsters": [
+        {
+          "id": "gummy",
+          "name": "软糖怪",
+          "emoji": "🍬",
+          "hp": 50,
+          "atk": 3,
+          "exp": 15,
+          "drops": [
+            {
+              "item_id": "candy",
+              "rate": 0.7
+            }
+          ]
+        },
+        {
+          "id": "lollipop",
+          "name": "棒棒糖骑士",
+          "emoji": "🍭",
+          "hp": 70,
+          "atk": 6,
+          "exp": 20,
+          "drops": [
+            {
+              "item_id": "lollipop",
+              "rate": 0.5
+            },
+            {
+              "item_id": "candy",
+              "rate": 0.3
+            }
+          ]
+        },
+        {
+          "id": "cake",
+          "name": "蛋糕魔王",
+          "emoji": "🎂",
+          "hp": 100,
+          "atk": 8,
+          "exp": 30,
+          "drops": [
+            {
+              "item_id": "cake_slice",
+              "rate": 0.4
+            },
+            {
+              "item_id": "candy",
+              "rate": 0.5
+            }
+          ]
+        }
+      ],
+      "rare_drops": [
+        {
+          "item_id": "rainbow_gem",
+          "rate": 0.04,
+          "name": "彩虹糖晶"
+        }
+      ],
+      "story": "棉花糖云朵在头顶飘过，空气中弥漫着甜甜的巧克力味。棒棒糖骑士站在路边守卫着糖果王国，他说：'只有通过甜品考验的人，才能品尝传说中的彩虹糖晶。你准备好接受甜蜜的挑战了吗？'"
+    },
+    {
+      "id": "cave",
+      "name": "水晶洞窟",
+      "emoji": "💎",
+      "bg_color": "#4A2C6E",
+      "danger_level": 3,
+      "hp_cost": 10,
+      "duration": "15-20 分钟",
+      "min_level": 3,
+      "unlock_cost": 30,
+      "description": "发光的水晶与地下瀑布",
+      "image": "assets/scenes/cave.webp",
+      "monsters": [
+        {
+          "id": "bat",
+          "name": "洞穴蝙蝠",
+          "emoji": "🦇",
+          "hp": 45,
+          "atk": 6,
+          "exp": 12,
+          "drops": [
+            {
+              "item_id": "crystal_shard",
+              "rate": 0.5
+            }
+          ]
+        },
+        {
+          "id": "golem",
+          "name": "石头人",
+          "emoji": "🗿",
+          "hp": 90,
+          "atk": 7,
+          "exp": 22,
+          "drops": [
+            {
+              "item_id": "crystal_shard",
+              "rate": 0.6
+            },
+            {
+              "item_id": "stone",
+              "rate": 0.3
+            }
+          ]
+        },
+        {
+          "id": "mushroom_king",
+          "name": "蘑菇大王",
+          "emoji": "🍄",
+          "hp": 70,
+          "atk": 5,
+          "exp": 18,
+          "drops": [
+            {
+              "item_id": "glowing_mushroom",
+              "rate": 0.7
+            }
+          ]
+        }
+      ],
+      "rare_drops": [
+        {
+          "item_id": "cave_gem",
+          "rate": 0.04,
+          "name": "水晶之心"
+        }
+      ],
+      "story": "水晶洞窟的入口闪烁着紫色光芒。走进去，巨大的水晶像树木一样高，发出幽幽的蓝光。一只蝙蝠倒挂在水晶尖上，睁开一只眼说：'嘘——听，地下瀑布在唱歌。跟着声音走，你会找到洞穴最深的秘密。'"
+    },
+    {
+      "id": "waterfall",
+      "name": "彩虹瀑布",
+      "emoji": "🌈",
+      "bg_color": "#88CCEE",
+      "danger_level": 2,
+      "hp_cost": 7,
+      "duration": "10-15 分钟",
+      "min_level": 2,
+      "unlock_cost": 20,
+      "description": "翡翠池畔，锦鲤跳跃",
+      "image": "assets/scenes/waterfall.webp",
+      "monsters": [
+        {
+          "id": "frog",
+          "name": "剑蛙",
+          "emoji": "🐸",
+          "hp": 35,
+          "atk": 4,
+          "exp": 10,
+          "drops": [
+            {
+              "item_id": "lily_pad",
+              "rate": 0.6
+            }
+          ]
+        },
+        {
+          "id": "koi",
+          "name": "锦鲤",
+          "emoji": "🐟",
+          "hp": 40,
+          "atk": 3,
+          "exp": 12,
+          "drops": [
+            {
+              "item_id": "golden_scale",
+              "rate": 0.3
+            }
+          ]
+        },
+        {
+          "id": "dragonfly",
+          "name": "巨蜻蜓",
+          "emoji": "🪰",
+          "hp": 30,
+          "atk": 6,
+          "exp": 14,
+          "drops": [
+            {
+              "item_id": "rainbow_dew",
+              "rate": 0.5
+            }
+          ]
+        }
+      ],
+      "rare_drops": [
+        {
+          "item_id": "rainbow_gem2",
+          "rate": 0.03,
+          "name": "彩虹之露"
+        }
+      ],
+      "story": "彩虹瀑布的水雾在阳光下画出七种颜色。翡翠池里，一条金色锦鲤跃出水面，在空中画了一个圆：'传说，能在彩虹下许愿的人，愿望一定会实现。'你把手伸向水雾，指尖触到了一道温暖的光……"
+    },
+    {
+      "id": "desert",
+      "name": "沙漠绿洲",
+      "emoji": "🏜️",
+      "bg_color": "#F4D03F",
+      "danger_level": 3,
+      "hp_cost": 11,
+      "duration": "15-20 分钟",
+      "min_level": 3,
+      "unlock_cost": 40,
+      "description": "金色沙丘与清凉绿洲",
+      "image": "assets/scenes/desert.webp",
+      "monsters": [
+        {
+          "id": "scorpion",
+          "name": "沙漠蝎",
+          "emoji": "🦂",
+          "hp": 55,
+          "atk": 7,
+          "exp": 16,
+          "drops": [
+            {
+              "item_id": "sand_shell",
+              "rate": 0.6
+            }
+          ]
+        },
+        {
+          "id": "mummy",
+          "name": "小木乃伊",
+          "emoji": "🧟",
+          "hp": 75,
+          "atk": 5,
+          "exp": 20,
+          "drops": [
+            {
+              "item_id": "ancient_bandage",
+              "rate": 0.5
+            }
+          ]
+        },
+        {
+          "id": "sandworm",
+          "name": "沙虫",
+          "emoji": "🐛",
+          "hp": 100,
+          "atk": 9,
+          "exp": 28,
+          "drops": [
+            {
+              "item_id": "desert_pearl",
+              "rate": 0.3
+            }
+          ]
+        }
+      ],
+      "rare_drops": [
+        {
+          "item_id": "desert_gem",
+          "rate": 0.03,
+          "name": "沙漠之星"
+        }
+      ],
+      "story": "金色沙丘延伸到天边，但远处的棕榈树给了你希望——绿洲就在前方！一只骆驼悠悠走来说：'不要着急，沙漠教会人耐心。每一粒沙子里都藏着一个故事。'一阵风吹过，沙子组成了奇怪的文字……"
+    },
+    {
+      "id": "underwater",
+      "name": "珊瑚王国",
+      "emoji": "🐠",
+      "bg_color": "#1B6B93",
+      "danger_level": 4,
+      "hp_cost": 15,
+      "duration": "20-25 分钟",
+      "min_level": 4,
+      "unlock_cost": 60,
+      "description": "缤纷珊瑚礁与沉没宝箱",
+      "image": "assets/scenes/underwater.webp",
+      "monsters": [
+        {
+          "id": "jellyfish",
+          "name": "电水母",
+          "emoji": "🪼",
+          "hp": 60,
+          "atk": 8,
+          "exp": 18,
+          "drops": [
+            {
+              "item_id": "glow_jelly",
+              "rate": 0.6
+            }
+          ]
+        },
+        {
+          "id": "shark",
+          "name": "小鲨鱼",
+          "emoji": "🦈",
+          "hp": 110,
+          "atk": 11,
+          "exp": 35,
+          "drops": [
+            {
+              "item_id": "shark_tooth",
+              "rate": 0.4
+            }
+          ]
+        },
+        {
+          "id": "octopus",
+          "name": "墨鱼大王",
+          "emoji": "🐙",
+          "hp": 85,
+          "atk": 7,
+          "exp": 25,
+          "drops": [
+            {
+              "item_id": "ink_sac",
+              "rate": 0.6
+            },
+            {
+              "item_id": "pearl",
+              "rate": 0.2
+            }
+          ]
+        }
+      ],
+      "rare_drops": [
+        {
+          "item_id": "ocean_crown",
+          "rate": 0.02,
+          "name": "海神皇冠"
+        }
+      ],
+      "story": "你戴上魔法潜水头盔，缓缓沉入珊瑚王国。五颜六色的珊瑚像花园一样美丽，小鱼在你身边游来游去。一只章鱼伸出八条触手，递给你一封防水信：'海底深处有一座沉没的宝箱，钥匙就在珊瑚迷宫的尽头。'"
+    },
+    {
+      "id": "castle",
+      "name": "云端城堡",
+      "emoji": "🏰",
+      "bg_color": "#E8D5F5",
+      "danger_level": 4,
+      "hp_cost": 16,
+      "duration": "20-25 分钟",
+      "min_level": 4,
+      "unlock_cost": 80,
+      "description": "彩虹桥通往云端塔楼",
+      "image": "assets/scenes/castle.webp",
+      "monsters": [
+        {
+          "id": "knight",
+          "name": "铁甲骑士",
+          "emoji": "⚔️",
+          "hp": 130,
+          "atk": 10,
+          "exp": 40,
+          "drops": [
+            {
+              "item_id": "knight_shield",
+              "rate": 0.4
+            }
+          ]
+        },
+        {
+          "id": "dragon_mini",
+          "name": "幼龙",
+          "emoji": "🐉",
+          "hp": 100,
+          "atk": 12,
+          "exp": 45,
+          "drops": [
+            {
+              "item_id": "dragon_scale",
+              "rate": 0.5
+            }
+          ]
+        },
+        {
+          "id": "wizard",
+          "name": "迷路法师",
+          "emoji": "🧙",
+          "hp": 80,
+          "atk": 9,
+          "exp": 30,
+          "drops": [
+            {
+              "item_id": "magic_wand",
+              "rate": 0.3
+            }
+          ]
+        }
+      ],
+      "rare_drops": [
+        {
+          "item_id": "castle_gem",
+          "rate": 0.02,
+          "name": "天空之石"
+        }
+      ],
+      "story": "你踏上彩虹桥，一步一步走向云端城堡。城堡的塔尖在阳光下闪闪发光，一只幼龙盘踞在塔楼上，歪着头看你：'你是来挑战骑士的？还是来找宝藏的？这座城堡里什么都有，就看你敢不敢闯。'"
+    },
+    {
+      "id": "volcano",
+      "name": "温暖火山",
+      "emoji": "🌋",
+      "bg_color": "#FF6B35",
+      "danger_level": 5,
+      "hp_cost": 20,
+      "duration": "25-30 分钟",
+      "min_level": 5,
+      "unlock_cost": 100,
+      "description": "岩浆温泉与火蜥蜴乐园",
+      "image": "assets/scenes/volcano.webp",
+      "monsters": [
+        {
+          "id": "salamander",
+          "name": "火蜥蜴",
+          "emoji": "🦎",
+          "hp": 90,
+          "atk": 10,
+          "exp": 30,
+          "drops": [
+            {
+              "item_id": "fire_scale",
+              "rate": 0.6
+            }
+          ]
+        },
+        {
+          "id": "phoenix_chick",
+          "name": "小火鸟",
+          "emoji": "🐦‍🔥",
+          "hp": 120,
+          "atk": 13,
+          "exp": 50,
+          "drops": [
+            {
+              "item_id": "phoenix_feather",
+              "rate": 0.3
+            }
+          ]
+        },
+        {
+          "id": "lava_golem",
+          "name": "岩浆人",
+          "emoji": "🌋",
+          "hp": 150,
+          "atk": 11,
+          "exp": 45,
+          "drops": [
+            {
+              "item_id": "lava_crystal",
+              "rate": 0.5
+            }
+          ]
+        }
+      ],
+      "rare_drops": [
+        {
+          "item_id": "volcano_gem",
+          "rate": 0.02,
+          "name": "火焰之心"
+        }
+      ],
+      "story": "温暖的热浪扑面而来，但你并不觉得热——这里是座温柔的火山。岩浆温泉冒着泡泡，火蜥蜴在岸边晒太阳。一只小火鸟从火山口飞出，衔着一颗发光的蛋：'这是火山送给勇敢者的礼物，你能接住它吗？'"
+    },
+    {
+      "id": "stargarden",
+      "name": "星光花园",
+      "emoji": "🌟",
+      "bg_color": "#2C1654",
+      "danger_level": 5,
+      "hp_cost": 22,
+      "duration": "25-30 分钟",
+      "min_level": 5,
+      "unlock_cost": 150,
+      "description": "繁星化花，萤火虫编织星座",
+      "image": "assets/scenes/stargarden.webp",
+      "monsters": [
+        {
+          "id": "star_fox",
+          "name": "星狐",
+          "emoji": "🦊",
+          "hp": 140,
+          "atk": 12,
+          "exp": 55,
+          "drops": [
+            {
+              "item_id": "star_dust",
+              "rate": 0.6
+            }
+          ]
+        },
+        {
+          "id": "moon_rabbit",
+          "name": "月兔",
+          "emoji": "🐰",
+          "hp": 100,
+          "atk": 10,
+          "exp": 40,
+          "drops": [
+            {
+              "item_id": "moon_cake",
+              "rate": 0.4
+            }
+          ]
+        },
+        {
+          "id": "constellation",
+          "name": "星座守卫",
+          "emoji": "⭐",
+          "hp": 180,
+          "atk": 14,
+          "exp": 65,
+          "drops": [
+            {
+              "item_id": "star_fragment",
+              "rate": 0.3
+            }
+          ]
+        }
+      ],
+      "rare_drops": [
+        {
+          "item_id": "star_gem2",
+          "rate": 0.01,
+          "name": "宇宙之心"
+        }
+      ],
+      "story": "你走进星光花园，脚下是柔软的发光苔藓。天上的星星像是花瓣一样飘落，萤火虫编织出星座的图案。一只星狐从花丛中探出头，眨着发光的眼睛说：'每个孩子都有一颗属于自己的星星，你的在哪里呢？让我带你去找吧。'"
+    }
+  ]
+}

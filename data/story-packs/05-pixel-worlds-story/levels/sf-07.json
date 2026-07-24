@@ -1,0 +1,105 @@
+{
+  "levelId": "sf-07",
+  "chapterId": "sf-07",
+  "worldId": "sci-fi",
+  "title": "双星桥：连接两颗星",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "bridge",
+      "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-07.webp",
+      "lines": [
+        {
+          "type": "narration",
+          "text": "两颗小星星隔着一片黑色的宇宙。最后一段星桥，等着我们把它连起来。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“双星桥：连接两颗星”。我们的任务是“选择一块会发光的桥片，连接两颗小星”，先看清桥心电流，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "蓝色舱灯和轻轻的电流声告诉我，桥心电流就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在双星桥：连接两颗星，收集线索不能只靠着急。我们要把光线接回星图，先处理桥心电流，也要照顾身边的朋友。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "route",
+          "prompt": "选择一块会发光的桥片，连接两颗小星，让桥心电流的线索显现出来。",
+          "character": "hero",
+          "position": "left",
+          "actions": [
+            {
+              "label": "接上星光桥片",
+              "feedback": "接上星光桥片后，桥心电流出现了；回家发射台的方向更清楚了。"
+            },
+            {
+              "label": "摇响回家铃",
+              "feedback": "摇响回家铃让另一个细节亮起来：连标记指向回家发射台。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "桥心电流被找到后，回家发射台的方向亮了起来。把光线接回星图，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“连”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见回家发射台传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "桥心电流让大家知道，回家发射台不是远处的名字，而是一条可以走到的路。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：桥心电流不是终点，它会把故事带到回家发射台。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，回家发射台的入口已经亮起。我们带着“连”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ],
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "pet",
+          "hero"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/sci-fi/sf-07.webp"
+        ]
+      }
+    }
+  ],
+  "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-07.webp",
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/twin-star-bridge.webp"
+}

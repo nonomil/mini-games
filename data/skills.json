@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "skills": [
+    {
+      "id": "power_strike",
+      "name": "强力击",
+      "icon": "💥",
+      "desc": "造成 1.8 倍普攻伤害",
+      "multiplier": 1.8,
+      "cooldown": 2,
+      "type": "attack"
+    },
+    {
+      "id": "defend",
+      "name": "防御",
+      "icon": "🛡️",
+      "desc": "下回合受击减伤 50%",
+      "multiplier": 0,
+      "cooldown": 3,
+      "type": "defend"
+    },
+    {
+      "id": "ultimate",
+      "name": "必杀",
+      "icon": "⚡",
+      "desc": "造成 3 倍普攻伤害",
+      "multiplier": 3,
+      "cooldown": 5,
+      "type": "attack"
+    }
+  ]
+}

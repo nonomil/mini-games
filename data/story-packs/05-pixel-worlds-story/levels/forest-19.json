@@ -1,0 +1,105 @@
+{
+  "levelId": "forest-19",
+  "chapterId": "forest-19",
+  "worldId": "forest",
+  "title": "森林望远台",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "forest-19-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-19.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "forest_guide"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/forest/forest-19.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "森林望远台正在发生变化。现在是“打开新路”的一步：我们要找到远方方块光，再把线索送向三界树门。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“森林望远台”。我们的任务是“从树叶缝隙里找到方块世界的光”，先看清远方方块光，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "树叶、溪水和萤火虫的声音告诉我，远方方块光就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在森林望远台，打开新路不能只靠着急。我们要用温柔的动作帮助森林朋友，先处理远方方块光，也要照顾身边的朋友。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "scan",
+          "prompt": "从树叶缝隙里找到方块世界的光，让远方方块光的线索显现出来。",
+          "character": "forest_guide",
+          "position": "right",
+          "actions": [
+            {
+              "label": "转向山谷方向",
+              "feedback": "转向山谷方向后，远方方块光出现了；三界树门的方向更清楚了。"
+            },
+            {
+              "label": "擦亮望远镜",
+              "feedback": "擦亮望远镜让另一个细节亮起来：远标记指向三界树门。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "远方方块光被找到后，三界树门的方向亮了起来。用温柔的动作帮助森林朋友，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“远”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见三界树门传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "远方方块光让大家知道，三界树门不是远处的名字，而是一条可以走到的路。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：远方方块光不是终点，它会把故事带到三界树门。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，三界树门的入口已经亮起。我们带着“远”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/forest/seed-vault.webp"
+}

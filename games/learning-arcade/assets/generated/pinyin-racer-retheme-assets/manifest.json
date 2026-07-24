@@ -1,0 +1,16 @@
+{
+  "source": "assets/generated/reference/pinyin-racer-retheme-20260711/explosion-route-facilities/explosion-route-facilities-source.png",
+  "sourceMode": "RGB chroma-key source",
+  "cleanSource": "assets/generated/reference/pinyin-racer-retheme-20260711/explosion-route-facilities/clean/explosion-route-facilities-source_clean.png",
+  "alphaThreshold": 24,
+  "generator": "ChatGPT-web",
+  "style": "bright 3D toy racing learning playground",
+  "assets": [
+    {"name": "initial_sound_gate", "file": "assets/generated/pinyin-racer-retheme-assets/initial_sound_gate.png", "splitPart": "part-01_391x376.png"},
+    {"name": "fork_gate_pair", "file": "assets/generated/pinyin-racer-retheme-assets/fork_gate_pair.png", "splitPart": "part-02_447x376.png"},
+    {"name": "tone_hanging_sign", "file": "assets/generated/pinyin-racer-retheme-assets/tone_hanging_sign.png", "splitPart": "part-03_375x402.png"},
+    {"name": "picture_supply_kiosk", "file": "assets/generated/pinyin-racer-retheme-assets/picture_supply_kiosk.png", "splitPart": "part-04_371x452.png"},
+    {"name": "listening_tunnel_gate", "file": "assets/generated/pinyin-racer-retheme-assets/listening_tunnel_gate.png", "splitPart": "part-05_440x438.png"},
+    {"name": "finish_sprint_arch", "file": "assets/generated/pinyin-racer-retheme-assets/finish_sprint_arch.png", "splitPart": "part-06_489x404.png"}
+  ]
+}

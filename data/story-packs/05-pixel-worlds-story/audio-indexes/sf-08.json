@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "pixel-worlds-story-audio-sf-08",
+  "chapterId": "sf-08",
+  "audioFormat": "wav",
+  "audioSubtype": "source",
+  "scenes": [
+    {
+      "sceneId": "launch",
+      "lines": [
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-08/lines/launch-00.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-08/lines/launch-01.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-08/lines/launch-02.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-08/lines/launch-03.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-08/lines/launch-04.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-08/lines/launch-05.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-08/lines/launch-06.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-08/lines/launch-07.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-08/lines/launch-08.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-08/lines/launch-09.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-08/lines/launch-10.wav"
+        }
+      ]
+    }
+  ]
+}

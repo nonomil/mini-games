@@ -1,0 +1,43 @@
+{
+  "model": "agnes-image-2.1-flash",
+  "size": "1024x1024",
+  "results": [
+    {
+      "ok": true,
+      "slug": "common",
+      "title": "普通卡框底图",
+      "path": "G:\\StudyCode\\宠物积分系统\\assets\\cards\\v2\\frame-common-v2.png",
+      "size_kb": 1420.1,
+      "elapsed": 22.6,
+      "prompt": "storybook collectible pet card background template, warm parchment ivory and sage palette, soft decorative border, playful botanical corner ornaments, bright portrait area in upper middle, gentle blank information plate in lower area, child-friendly illustrated trading card mood, clean negative space for later text overlay, no character, no creature, no text, no letters, no numbers, no icons, no ui"
+    },
+    {
+      "ok": true,
+      "slug": "rare",
+      "title": "稀有卡框底图",
+      "path": "G:\\StudyCode\\宠物积分系统\\assets\\cards\\v2\\frame-rare-v2.png",
+      "size_kb": 1387.4,
+      "elapsed": 23.0,
+      "prompt": "storybook collectible pet card background template, bright sky blue and pearl gold palette, light crystal ribbon accents around the border, glowing portrait area in upper middle, clear lower information plate for later stat overlay, playful premium card look, clean negative space, no character, no creature, no text, no letters, no numbers, no icons, no ui"
+    },
+    {
+      "ok": true,
+      "slug": "epic",
+      "title": "史诗卡框底图",
+      "path": "G:\\StudyCode\\宠物积分系统\\assets\\cards\\v2\\frame-epic-v2.png",
+      "size_kb": 1809.3,
+      "elapsed": 25.8,
+      "prompt": "storybook collectible pet card background template, dreamy violet and rose gold palette, magical crystal flourishes and soft constellation ornament around the border, radiant portrait area in upper middle, structured lower information plate, premium illustrated fantasy card, clean negative space for later labels, no character, no creature, no text, no letters, no numbers, no icons, no ui"
+    },
+    {
+      "ok": true,
+      "slug": "legendary",
+      "title": "传说卡框底图",
+      "path": "G:\\StudyCode\\宠物积分系统\\assets\\cards\\v2\\frame-legendary-v2.png",
+      "size_kb": 1692.3,
+      "elapsed": 20.0,
+      "prompt": "storybook collectible pet card background template, sunlit gold amber and warm orange palette, heroic ornate border with radiant highlights, festive leaf and ribbon motifs, large luminous portrait area in upper middle, elegant lower information plate for later stats, high-end child-friendly trading card illustration, clean negative space, no character, no creature, no text, no letters, no numbers, no icons, no ui"
+    }
+  ],
+  "total_elapsed": 93.0
+}

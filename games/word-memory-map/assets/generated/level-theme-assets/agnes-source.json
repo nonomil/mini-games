@@ -1,0 +1,16 @@
+{
+  "generator": "Agnes agnes-image-2.1-flash",
+  "generatedAt": "2026-07-11",
+  "transparentProcessing": "solid chroma-key background removed to alpha PNG",
+  "enemyThemes": {
+    "forest": ["mushroom-sprite", "vine-sprout", "pinecone-roll"],
+    "grassland": ["tumble-puff", "cactus-hop", "dandelion-float"],
+    "ocean": ["coral-crab", "shell-bubble", "seagrass-jelly"],
+    "space": ["meteor-jelly", "stardust-orb"]
+  },
+  "supportThemeSkins": {
+    "grassland": "grassland-wind-speed",
+    "ocean": "ocean-pearl-auto",
+    "space": "space-comet-combo"
+  }
+}

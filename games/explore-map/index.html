@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>三世界故事地图 · 小游戏项目</title>
+  <link rel="stylesheet" href="../../vendor/css/pixel-story.css">
+  <style>
+    body{margin:0;background:#0f1b24;color:#f4f7fb;font-family:Microsoft YaHei,sans-serif}
+    .shell-bar{display:flex;gap:12px;align-items:center;padding:12px 16px;background:rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.08)}
+    .shell-bar a{color:#8ef0d8;text-decoration:none;font-weight:700}
+    #page-explore{min-height:calc(100vh - 52px)}
+    .explore-loading-state{padding:48px 24px;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="shell-bar"><a href="../../index.html#games">← 返回游戏库</a><strong>三世界故事地图</strong><span>完整章节与地图资源</span></div>
+  <div class="page active" id="page-explore">
+    <section class="explore-loading-state" id="exploreLoadingState" aria-live="polite">正在打开故事地图…</section>
+    <section id="pixelStoryMapHost" aria-label="三世界故事地图">
+      <div class="pixel-story-shell" id="pixelStoryShell" data-mode="story" data-view="map">
+        <div class="pixel-story-map-slot" id="pixelStoryMapContainer"></div>
+      </div>
+    </section>
+    <section id="pixelStoryChapterHost" aria-label="故事章节" hidden></section>
+  </div>
+  <script src="../../host/petbank-host-shim.js"></script>
+  <script src="../../bridge.js"></script>
+  <script src="../../vendor/js/pixel-story-engine.js"></script>
+  <script src="../../vendor/js/pixel-story-map.js"></script>
+  <script src="../../vendor/js/pixel-story-page.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async function () {
+      try {
+        if (window.PixelStoryPage && typeof PixelStoryPage.showMap === 'function') {
+          await PixelStoryPage.showMap();
+        } else if (window.PixelStoryMap && typeof PixelStoryMap.render === 'function') {
+          await PixelStoryMap.render('pixelStoryMapContainer');
+        } else {
+          document.getElementById('exploreLoadingState').textContent = '故事地图模块未就绪';
+        }
+      } catch (error) {
+        console.warn('[explore-map] boot failed', error);
+        document.getElementById('exploreLoadingState').textContent = '故事地图加载失败：' + (error && error.message ? error.message : error);
+      }
+    });
+  </script>
+</body>
+</html>

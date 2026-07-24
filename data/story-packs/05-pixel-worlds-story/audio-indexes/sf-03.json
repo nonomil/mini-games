@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "pixel-worlds-story-audio-sf-03",
+  "chapterId": "sf-03",
+  "audioFormat": "wav",
+  "audioSubtype": "source",
+  "scenes": [
+    {
+      "sceneId": "cloud",
+      "lines": [
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-03/lines/cloud-00.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-03/lines/cloud-01.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-03/lines/cloud-02.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-03/lines/cloud-03.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-03/lines/cloud-04.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-03/lines/cloud-05.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-03/lines/cloud-06.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-03/lines/cloud-07.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-03/lines/cloud-08.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-03/lines/cloud-09.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-03/lines/cloud-10.wav"
+        }
+      ]
+    }
+  ]
+}

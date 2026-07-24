@@ -1,0 +1,105 @@
+{
+  "levelId": "sf-15",
+  "chapterId": "sf-15",
+  "worldId": "sci-fi",
+  "title": "星门候车室",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "sf-15-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-15.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "star_engineer"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/sci-fi/sf-15.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "星门候车室正在发生变化。现在是“遇到困难”的一步：我们要找到三界旅行箱，再把线索送向星云滑梯。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“星门候车室”。我们的任务是“把地图、光核和伙伴徽章放进旅行箱”，先看清三界旅行箱，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "蓝色舱灯和轻轻的电流声告诉我，三界旅行箱就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在星门候车室，遇到困难不能只靠着急。我们要把光线接回星图，先处理三界旅行箱，也要照顾身边的朋友。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "collect",
+          "prompt": "把地图、光核和伙伴徽章放进旅行箱，让三界旅行箱的线索显现出来。",
+          "character": "star_engineer",
+          "position": "right",
+          "actions": [
+            {
+              "label": "放入蓝色地图",
+              "feedback": "放入蓝色地图后，三界旅行箱出现了；星云滑梯的方向更清楚了。"
+            },
+            {
+              "label": "别忘了伙伴徽章",
+              "feedback": "别忘了伙伴徽章让另一个细节亮起来：旅标记指向星云滑梯。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "三界旅行箱被找到后，星云滑梯的方向亮了起来。把光线接回星图，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“旅”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见星云滑梯传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "三界旅行箱让大家知道，星云滑梯不是远处的名字，而是一条可以走到的路。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：三界旅行箱不是终点，它会把故事带到星云滑梯。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，星云滑梯的入口已经亮起。我们带着“旅”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/constellation-lens.webp"
+}

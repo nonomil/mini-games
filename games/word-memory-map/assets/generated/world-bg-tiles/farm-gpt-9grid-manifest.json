@@ -1,0 +1,19 @@
+{
+  "id": "farm-gpt-9grid-world",
+  "theme": "farm",
+  "tileWidth": 543,
+  "tileHeight": 300,
+  "rows": 3,
+  "cols": 3,
+  "tiles": [
+    { "id": "tile-1", "label": "农场入口", "row": 0, "col": 0, "src": "./assets/generated/world-bg-tiles/farm-gpt-9grid/farm_tile_r1_c1.png" },
+    { "id": "tile-2", "label": "河岸温室", "row": 0, "col": 1, "src": "./assets/generated/world-bg-tiles/farm-gpt-9grid/farm_tile_r1_c2.png" },
+    { "id": "tile-3", "label": "斜路菜地", "row": 0, "col": 2, "src": "./assets/generated/world-bg-tiles/farm-gpt-9grid/farm_tile_r1_c3.png" },
+    { "id": "tile-4", "label": "开阔草地", "row": 1, "col": 0, "src": "./assets/generated/world-bg-tiles/farm-gpt-9grid/farm_tile_r2_c1.png" },
+    { "id": "tile-5", "label": "溪桥农庄", "row": 1, "col": 1, "src": "./assets/generated/world-bg-tiles/farm-gpt-9grid/farm_tile_r2_c2.png" },
+    { "id": "tile-6", "label": "中央广场", "row": 1, "col": 2, "src": "./assets/generated/world-bg-tiles/farm-gpt-9grid/farm_tile_r2_c3.png" },
+    { "id": "tile-7", "label": "樱树湖岸", "row": 2, "col": 0, "src": "./assets/generated/world-bg-tiles/farm-gpt-9grid/farm_tile_r3_c1.png" },
+    { "id": "tile-8", "label": "南路草坡", "row": 2, "col": 1, "src": "./assets/generated/world-bg-tiles/farm-gpt-9grid/farm_tile_r3_c2.png" },
+    { "id": "tile-9", "label": "围栏岔口", "row": 2, "col": 2, "src": "./assets/generated/world-bg-tiles/farm-gpt-9grid/farm_tile_r3_c3.png" }
+  ]
+}

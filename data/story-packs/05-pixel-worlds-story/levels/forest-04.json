@@ -1,0 +1,105 @@
+{
+  "levelId": "forest-04",
+  "chapterId": "forest-04",
+  "worldId": "forest",
+  "title": "蘑菇谷：照顾小芽",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "mushroom",
+      "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-04.webp",
+      "lines": [
+        {
+          "type": "narration",
+          "text": "蘑菇谷里住着一颗害羞的小芽。它收到了树屋的回信，却躲在大蘑菇后面，不敢把声音传回去。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“蘑菇谷：照顾小芽”。我们要选择温柔的照顾方式，让小芽敢于回应树屋的信，也让森林的声音继续走。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "大蘑菇后面有轻轻的叶片声。小芽就在附近，它缺一点安全感和一点水光。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "林间向导说：回应不能催出来。我们要让小芽知道，朋友会等它，也会保护它。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "care",
+          "prompt": "给小芽选择合适的照顾方式，让它愿意回应朋友的信。",
+          "character": "hero",
+          "position": "left",
+          "actions": [
+            {
+              "label": "放一片柔软树叶",
+              "feedback": "放一片柔软树叶后，小芽从蘑菇后探出头；它的芽光指向风铃瀑布。"
+            },
+            {
+              "label": "唱一首轻轻的歌",
+              "feedback": "唱一首轻轻的歌后，小芽发出细小的“你好”；风铃瀑布听见了这声回应。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "小芽终于发出一声“你好”。这声回应沿着水光传到风铃瀑布，可瀑布的风铃仍然没有响。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“芽”会慢慢长出勇气。我们把小芽的第一声回应和树屋回信连在一起。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见的不是风铃声，而是瀑布后面轻轻的水声。我们还要去找回失去的铃声。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "林间向导笑了：小芽愿意回应，说明森林的消息路正在恢复。风铃瀑布是下一处断点。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：朋友愿意开口，需要耐心等待。下一站要找回森林的声音。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "小芽的回应接上森林水路，风铃瀑布的入口亮起。我们带着“芽”和勇气继续走。",
+          "character": "hero",
+          "position": "left"
+        }
+      ],
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "forest_guide",
+          "hero"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/forest/forest-04.webp"
+        ]
+      }
+    }
+  ],
+  "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-04.webp",
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/forest/mushroom-circle.webp"
+}

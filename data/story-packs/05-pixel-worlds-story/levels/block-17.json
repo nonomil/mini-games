@@ -1,0 +1,105 @@
+{
+  "levelId": "block-17",
+  "chapterId": "block-17",
+  "worldId": "block",
+  "title": "旧矿车库",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "block-17-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/block/block-17.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "block_builder"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/block/block-17.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "旧矿车库正在发生变化。现在是“打开新路”的一步：我们要找到地下车票，再把线索送向回声石室。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“旧矿车库”。我们的任务是“找出通往星门的旧矿车票”，先看清地下车票，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块碰撞和远处的机关声告诉我，地下车票就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在旧矿车库，打开新路不能只靠着急。我们要一步一步搭出安全的路线，先处理地下车票，也要照顾身边的朋友。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "collect",
+          "prompt": "找出通往星门的旧矿车票，让地下车票的线索显现出来。",
+          "character": "block_builder",
+          "position": "right",
+          "actions": [
+            {
+              "label": "取下星星车票",
+              "feedback": "取下星星车票后，地下车票出现了；回声石室的方向更清楚了。"
+            },
+            {
+              "label": "打开木箱",
+              "feedback": "打开木箱让另一个细节亮起来：票标记指向回声石室。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "地下车票被找到后，回声石室的方向亮了起来。一步一步搭出安全的路线，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“票”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见回声石室传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "地下车票让大家知道，回声石室不是远处的名字，而是一条可以走到的路。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：地下车票不是终点，它会把故事带到回声石室。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，回声石室的入口已经亮起。我们带着“票”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/block/snow-block.webp"
+}

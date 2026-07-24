@@ -1,0 +1,213 @@
+{
+  "source": "assets/generated/reference/word-shooter-scifi-assets-sheet-chatgpt.png",
+  "alphaThreshold": 24,
+  "assets": [
+    {
+      "name": "back_button_round_scifi",
+      "file": "assets/generated/word-shooter-scifi-assets/back_button_round_scifi.png",
+      "size": [
+        178,
+        175
+      ],
+      "opaquePixels": 19671
+    },
+    {
+      "name": "hud_panel_hint",
+      "file": "assets/generated/word-shooter-scifi-assets/hud_panel_hint.png",
+      "size": [
+        192,
+        123
+      ],
+      "opaquePixels": 18125
+    },
+    {
+      "name": "hud_panel_long",
+      "file": "assets/generated/word-shooter-scifi-assets/hud_panel_long.png",
+      "size": [
+        432,
+        139
+      ],
+      "opaquePixels": 47832
+    },
+    {
+      "name": "hud_panel_weapon",
+      "file": "assets/generated/word-shooter-scifi-assets/hud_panel_weapon.png",
+      "size": [
+        142,
+        147
+      ],
+      "opaquePixels": 14096
+    },
+    {
+      "name": "impact_burst_ring",
+      "file": "assets/generated/word-shooter-scifi-assets/impact_burst_ring.png",
+      "size": [
+        293,
+        261
+      ],
+      "opaquePixels": 43839
+    },
+    {
+      "name": "impact_flash_scifi",
+      "file": "assets/generated/word-shooter-scifi-assets/impact_flash_scifi.png",
+      "size": [
+        200,
+        177
+      ],
+      "opaquePixels": 13851
+    },
+    {
+      "name": "interceptor_boost",
+      "file": "assets/generated/word-shooter-scifi-assets/interceptor_boost.png",
+      "size": [
+        274,
+        225
+      ],
+      "opaquePixels": 22132
+    },
+    {
+      "name": "interceptor_fire",
+      "file": "assets/generated/word-shooter-scifi-assets/interceptor_fire.png",
+      "size": [
+        290,
+        126
+      ],
+      "opaquePixels": 15784
+    },
+    {
+      "name": "interceptor_idle",
+      "file": "assets/generated/word-shooter-scifi-assets/interceptor_idle.png",
+      "size": [
+        239,
+        126
+      ],
+      "opaquePixels": 14051
+    },
+    {
+      "name": "pickup_homing_missile",
+      "file": "assets/generated/word-shooter-scifi-assets/pickup_homing_missile.png",
+      "size": [
+        171,
+        198
+      ],
+      "opaquePixels": 21277
+    },
+    {
+      "name": "pickup_pierce_laser",
+      "file": "assets/generated/word-shooter-scifi-assets/pickup_pierce_laser.png",
+      "size": [
+        170,
+        197
+      ],
+      "opaquePixels": 20866
+    },
+    {
+      "name": "pickup_triple_beam",
+      "file": "assets/generated/word-shooter-scifi-assets/pickup_triple_beam.png",
+      "size": [
+        174,
+        200
+      ],
+      "opaquePixels": 22055
+    },
+    {
+      "name": "reward_badge_scifi",
+      "file": "assets/generated/word-shooter-scifi-assets/reward_badge_scifi.png",
+      "size": [
+        213,
+        151
+      ],
+      "opaquePixels": 12794
+    },
+    {
+      "name": "shot_homing_missile",
+      "file": "assets/generated/word-shooter-scifi-assets/shot_homing_missile.png",
+      "size": [
+        258,
+        77
+      ],
+      "opaquePixels": 8806
+    },
+    {
+      "name": "shot_laser_basic",
+      "file": "assets/generated/word-shooter-scifi-assets/shot_laser_basic.png",
+      "size": [
+        231,
+        53
+      ],
+      "opaquePixels": 4003
+    },
+    {
+      "name": "shot_pierce_laser",
+      "file": "assets/generated/word-shooter-scifi-assets/shot_pierce_laser.png",
+      "size": [
+        359,
+        57
+      ],
+      "opaquePixels": 11649
+    },
+    {
+      "name": "shot_triple_beam",
+      "file": "assets/generated/word-shooter-scifi-assets/shot_triple_beam.png",
+      "size": [
+        181,
+        119
+      ],
+      "opaquePixels": 11731
+    },
+    {
+      "name": "target_cargo_crate",
+      "file": "assets/generated/word-shooter-scifi-assets/target_cargo_crate.png",
+      "size": [
+        224,
+        219
+      ],
+      "opaquePixels": 35746
+    },
+    {
+      "name": "target_drone_balloon",
+      "file": "assets/generated/word-shooter-scifi-assets/target_drone_balloon.png",
+      "size": [
+        209,
+        256
+      ],
+      "opaquePixels": 30037
+    },
+    {
+      "name": "target_energy_cloud",
+      "file": "assets/generated/word-shooter-scifi-assets/target_energy_cloud.png",
+      "size": [
+        287,
+        204
+      ],
+      "opaquePixels": 35451
+    },
+    {
+      "name": "target_hex_cube",
+      "file": "assets/generated/word-shooter-scifi-assets/target_hex_cube.png",
+      "size": [
+        214,
+        218
+      ],
+      "opaquePixels": 32943
+    },
+    {
+      "name": "target_orbit_sphere",
+      "file": "assets/generated/word-shooter-scifi-assets/target_orbit_sphere.png",
+      "size": [
+        195,
+        224
+      ],
+      "opaquePixels": 25397
+    },
+    {
+      "name": "target_shield_pod",
+      "file": "assets/generated/word-shooter-scifi-assets/target_shield_pod.png",
+      "size": [
+        242,
+        247
+      ],
+      "opaquePixels": 37496
+    }
+  ]
+}

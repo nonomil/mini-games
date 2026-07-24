@@ -1,0 +1,43 @@
+{
+  "tool": "publish_transparent_assets",
+  "input": "G:\\StudyCode\\宠物积分系统\\prj\\学习机玩法原型\\assets\\generated\\reference\\word-shooter-levels-gpt-20260711\\agnes-20260712\\explosion-elements\\grid-padded\\part-12_319x207.png",
+  "out_dir": "G:\\StudyCode\\宠物积分系统\\prj\\学习机玩法原型\\assets\\generated\\word-shooter-agnes-assets",
+  "items": [
+    {
+      "input": "G:\\StudyCode\\宠物积分系统\\prj\\学习机玩法原型\\assets\\generated\\reference\\word-shooter-levels-gpt-20260711\\agnes-20260712\\explosion-elements\\grid-padded\\part-12_319x207.png",
+      "base_name": "victory-starburst",
+      "size": {
+        "width": 351,
+        "height": 239
+      },
+      "source_edge_alpha": {
+        "nonzero": 0,
+        "max": 0
+      },
+      "png": {
+        "path": "G:\\StudyCode\\宠物积分系统\\prj\\学习机玩法原型\\assets\\generated\\word-shooter-agnes-assets\\victory-starburst.png",
+        "edge_alpha": {
+          "nonzero": 0,
+          "max": 0
+        }
+      },
+      "webp": {
+        "path": "G:\\StudyCode\\宠物积分系统\\prj\\学习机玩法原型\\assets\\generated\\word-shooter-agnes-assets\\victory-starburst.webp",
+        "edge_alpha": {
+          "nonzero": 0,
+          "max": 0
+        }
+      },
+      "settings": {
+        "mode": "none",
+        "feather": 0,
+        "erode": 0,
+        "fill_holes": false,
+        "trim": false,
+        "webp_quality": 92,
+        "lossy": false,
+        "max_edge_alpha": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>像素探险 | Pixel Adventure</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css?v=word-memory-topdown-v4">
+</head>
+<body data-minigames-full-content="true">
+  <main class="topdown-memory" data-prototype="word-memory-topdown">
+    <section class="hero-select-overlay" id="heroSelectOverlay" aria-label="选择角色">
+      <div class="hero-select-card">
+        <span class="hud-label" id="onboardingStep">准备出发</span>
+        <strong id="onboardingTitle">像素探险</strong>
+        <p class="onboarding-copy" id="onboardingCopy">先选好伙伴和地图，再开始今天的单词冒险。</p>
+        <div class="onboarding-welcome" id="onboardingWelcome">
+          <span>英文怪物头顶有单词；先点词卡预习，拿中文球后再投掷。</span>
+        </div>
+        <div class="hero-select-grid" id="heroSelectGrid" hidden></div>
+        <div class="world-option-grid" id="worldOptionGrid" hidden></div>
+        <button type="button" class="hero-select-start" id="onboardingNextButton">进入游戏</button>
+      </div>
+    </section>
+
+    <section class="map-scene world-scene" id="mapScene" aria-label="单词记忆俯视地图">
+      <div class="world-stage" id="worldStage" aria-hidden="true">
+        <section class="scene-backdrop world-backdrop" id="sceneBackdrop"></section>
+        <section class="decor-layer" id="decorLayer" aria-hidden="true"></section>
+        <section class="entity-layer" id="entityLayer" aria-label="地图单位"></section>
+      </div>
+      <section class="projectile-layer viewport-projectiles" id="projectileLayer" aria-hidden="true"></section>
+
+      <header class="hud hud-minimal">
+        <div class="hud-cluster">
+          <div class="hud-pill hud-score" aria-label="当前星星">
+            <span class="hud-label">星星</span>
+            <strong id="scoreText">0</strong>
+          </div>
+          <div class="hud-pill hud-progress" aria-label="当前进度">
+            <span class="hud-label">进度</span>
+            <strong id="progressText">0 / 0</strong>
+            <div class="star-strip" id="starStrip" aria-hidden="true"></div>
+          </div>
+          <div class="hud-pill hud-shield" aria-label="主角护盾">
+            <span class="hud-label">护盾</span>
+            <strong id="shieldText">3</strong>
+            <div class="shield-strip" id="shieldStrip" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="hud-actions">
+          <label class="category-control" for="vocabSelect">
+            <span>词包</span>
+            <select id="vocabSelect" aria-label="选择学习词包">
+              <option value="core">核心主线 322 词</option>
+              <option value="extension">可靠拓展 512 词</option>
+              <option value="all">全部词库</option>
+            </select>
+          </label>
+          <label class="category-control world-control" for="worldSelect">
+            <span>地图</span>
+            <select id="worldSelect" aria-label="选择地图主题">
+              <option value="farm">农场</option>
+            </select>
+          </label>
+          <label class="category-control" for="categorySelect">
+            <span>分类</span>
+            <select id="categorySelect" aria-label="选择单词分类">
+              <option value="all">全部</option>
+            </select>
+          </label>
+          <button type="button" class="icon-button" id="sceneButton" aria-label="切换地图" title="切换地图">▦</button>
+          <button type="button" class="icon-button" id="levelButton" aria-label="显示关卡" title="显示关卡">关</button>
+          <button type="button" class="icon-button" id="modeButton" aria-label="切换玩法" title="切换玩法">⇄</button>
+          <button type="button" class="icon-button" id="soundButton" aria-label="音效已开启" title="音效已开启">✦</button>
+          <button type="button" class="icon-button" id="speakButton" aria-label="朗读场上词" title="朗读场上词">♪</button>
+          <button type="button" class="icon-button" id="restartButton" aria-label="重新开始" title="重新开始">↻</button>
+        </div>
+      </header>
+
+      <aside class="level-panel" id="levelPanel" aria-label="关卡选择" hidden>
+        <div class="level-panel-head">
+          <span class="hud-label">当前关卡</span>
+          <strong id="levelText">第 1 关</strong>
+          <span id="levelDetailText">3 个词</span>
+        </div>
+        <div class="level-list" id="levelList"></div>
+      </aside>
+
+      <aside class="current-meaning" id="currentMeaning" aria-live="polite" hidden>
+        <span class="hud-label">当前中文球</span>
+        <strong id="currentMeaningText">点中文炸弹</strong>
+        <div class="current-meaning-actions">
+          <span class="wave-chip" id="waveText">第 1 区</span>
+          <button type="button" class="learn-hint-button" id="learningHintButton" aria-label="查看单词提示" title="查看单词提示">?</button>
+        </div>
+      </aside>
+
+      <aside class="support-tray" id="supportTray" aria-live="polite" aria-label="支援道具" hidden>
+        <div class="support-tray-head">
+          <span class="hud-label">支援道具</span>
+          <strong id="supportTrayTitle">地图上会掉落新的小道具</strong>
+        </div>
+        <div class="support-slot-list" id="supportSlotList"></div>
+      </aside>
+
+      <aside class="world-overview" id="worldOverview" aria-label="地图总览" hidden></aside>
+
+      <aside class="learning-hint-card" id="learningHintCard" hidden aria-live="polite">
+        <img id="learningHintImage" src="" alt="" decoding="async">
+        <div>
+          <span class="hud-label">单词提示</span>
+          <strong id="learningHintWord">word</strong>
+          <span id="learningHintMeaning">中文</span>
+          <span class="learning-hint-example" id="learningHintExample" hidden aria-label="用一用"></span>
+          <span class="learning-hint-example-zh" id="learningHintExampleZh" hidden></span>
+        </div>
+        <button type="button" class="learn-speak-button" id="learningHintSpeakButton" aria-label="播放发音" title="播放发音">♪</button>
+      </aside>
+
+      <section class="learning-toast" id="learningToast" hidden aria-live="polite">
+        <span class="hud-label">记住这个</span>
+        <strong id="learningToastWord">word</strong>
+        <span id="learningToastMeaning">中文</span>
+      </section>
+
+      <section class="mission-rail" id="missionRail" aria-live="polite" hidden>
+        <div class="mission-rail-top">
+          <div class="mission-copy">
+            <span class="hud-label">本图任务</span>
+            <strong id="missionCountText">0 / 0</strong>
+            <span class="mission-remaining" id="missionRemainingText">还剩 0 个</span>
+          </div>
+          <div class="combo-chip" id="comboChip">
+            <span class="hud-label">连对</span>
+            <strong id="comboText">0</strong>
+          </div>
+        </div>
+        <div class="mission-word-preview" id="missionWordPreview" aria-label="本图重点词"></div>
+        <div class="mission-progress-track">
+          <span class="mission-progress-fill" id="missionProgressFill" aria-hidden="true"></span>
+        </div>
+      </section>
+
+      <section class="chapter-banner" id="chapterBanner" hidden aria-live="polite">
+        <span class="chapter-banner-kicker" id="chapterKicker">进入新区域</span>
+        <strong id="chapterTitle">晴天果园</strong>
+      </section>
+
+      <div class="message-bar" id="messageText" hidden>清空当前大地图的全部敌人，才会进入下一关。</div>
+    </section>
+
+    <section class="classic-stage" id="classicStage" hidden aria-label="经典炮弹单词射击">
+      <header class="classic-hud">
+        <div>
+          <span class="hud-label">经典炮弹</span>
+          <strong>上方单词，下方炮弹</strong>
+        </div>
+        <div class="classic-hud-side">
+          <span id="classicProgressText">0 / 0</span>
+          <span id="classicStatusText">选择下方中文炮弹，再点上方英文目标。</span>
+          <button type="button" class="icon-button" id="classicModeButton" aria-label="切换到俯视地图" title="切换到俯视地图">▦</button>
+        </div>
+      </header>
+      <section class="classic-target-row" id="classicTargetRow" aria-label="英文目标"></section>
+      <section class="classic-flight-layer" id="classicFlightLayer" aria-hidden="true"></section>
+      <section class="classic-cannon-row" id="classicCannonRow" aria-label="中文炮弹"></section>
+    </section>
+
+    <section class="finish-modal" id="finishModal" hidden aria-live="polite">
+      <div class="finish-card">
+        <span class="finish-kicker">任务完成</span>
+        <h1>大地图清空了</h1>
+        <p id="finishSummary">一共点亮 0 颗星。</p>
+        <div class="finish-reward" id="finishReward" aria-live="polite"></div>
+        <div class="finish-report" id="finishReport"></div>
+        <div class="finish-stats" id="finishStats"></div>
+        <div class="finish-badges" id="finishBadges" aria-hidden="true"></div>
+        <button type="button" id="nextLevelButton" hidden>下一关</button>
+        <button type="button" id="changeWorldButton" hidden>换地图再出发</button>
+        <button type="button" id="equipRewardButton" hidden>装备本次道具</button>
+        <button type="button" id="finishRestartButton">再来一局</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function loadFileFallbackScripts() {
+      if (window.location.protocol !== 'file:') return;
+      const vocabMode = new URLSearchParams(window.location.search).get('vocab');
+      const cardScript = vocabMode === 'extension'
+        ? './assets/word-memory-extension-cards.js?v=extension-english-memory-v1'
+        : (vocabMode === 'all'
+          ? './assets/word-memory-cards.js?v=word-memory-topdown-v4'
+          : './assets/word-memory-core-cards.js?v=core-english-memory-v1');
+      document.write([cardScript, './assets/voice/map.js?v=word-memory-topdown-v4'].map(function (src) {
+        return '<script src="' + src + '"><\/script>';
+      }).join(''));
+    }());
+  </script>
+  <script>
+    window.WORD_MEMORY_TTS_ENDPOINT = 'http://127.0.0.1:9885/tts';
+    window.WORD_MEMORY_TTS_VOICE = 'child';
+    window.WORD_MEMORY_TTS_ENGINE = 'auto';
+  </script>
+  <script id="minigames-full-vocab-boot">
+(function () {
+  try {
+    var params = new URLSearchParams(window.location.search || '');
+    if (!params.get('vocab')) {
+      params.set('vocab', 'all');
+      var next = window.location.pathname + '?' + params.toString() + window.location.hash;
+      window.history.replaceState(null, '', next);
+    }
+  } catch (error) {
+    console.warn('[word-memory-map] full vocab boot failed', error);
+  }
+}());
+</script>
+  <script src="./game-data.js?v=word-memory-data-v1"></script>
+  <script src="./game-storage.js?v=word-memory-storage-v1"></script>
+  <script src="./game-utils.js?v=word-memory-utils-v1"></script>
+  <script src="./game.js?v=word-memory-topdown-v4"></script>
+</body>
+</html>

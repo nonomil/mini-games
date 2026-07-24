@@ -1,0 +1,105 @@
+{
+  "levelId": "forest-05",
+  "chapterId": "forest-05",
+  "worldId": "forest",
+  "title": "风铃瀑布：找回风铃",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "falls",
+      "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-05.webp",
+      "lines": [
+        {
+          "type": "narration",
+          "text": "瀑布的风铃还是不响。小芽的“你好”到了这里，却没有铃声把它传给古树图书馆。小鱼说，风铃被吹到了彩虹后面。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“风铃瀑布：找回风铃”。我们要找到失声风铃，让小芽的回应传到古树图书馆，恢复森林的声音。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "瀑布有水声，却没有风铃声。彩虹后面闪着一点金光，失声风铃就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "林间向导说：风铃不是装饰，它是森林的传声筒。找到它时要轻轻来，别让铃声再次躲起来。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "scan",
+          "prompt": "找到藏在彩虹光里的风铃，让森林失去声音的断点显现出来。",
+          "character": "forest_guide",
+          "position": "right",
+          "actions": [
+            {
+              "label": "寻找叮叮声",
+              "feedback": "寻找叮叮声后，风铃在彩虹后轻轻晃动；古树图书馆的方向更清楚了。"
+            },
+            {
+              "label": "跟着水雾走",
+              "feedback": "跟着水雾走后，风铃上的蓝色星尘亮起来；它能把小芽的回应送到古树图书馆。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "失声风铃被找回并挂上瀑布。小芽的“你好”穿过水雾，古树图书馆第一次听见了森林的回应。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“风”会把声音送到很远的地方。我们把风铃声、露珠和朋友信件连成一条回应路。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见古树图书馆传来的翻书声了。森林的声音恢复了一小段，那里一定藏着更大的回应。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "林间向导把第一幕的线索画在树皮上：星港呼唤、蓝色水光、朋友信件、小芽回应，还有风铃。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：让声音回来，要把每一小段回应接在一起。下一站去古树图书馆打开故事门。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "森林的声音恢复了第一条通路，古树图书馆的入口亮起。我们带着“风”和完整的回应线索进入下一幕。",
+          "character": "forest_guide",
+          "position": "right"
+        }
+      ],
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "forest_guide"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/forest/forest-05.webp"
+        ]
+      }
+    }
+  ],
+  "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-05.webp",
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/forest/bird-nest.webp"
+}

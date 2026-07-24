@@ -1,0 +1,9 @@
+Create a square raster UI asset sheet for reusable Minecraft vocabulary card frames.
+
+Scene: a clean 2 by 2 sheet of four large blank voxel-style card frames on a solid warm off-white background. Each frame should have a distinct learning mood: green study, blue listening, amber recall, gold reward. Frames must be complete, separated with generous spacing, and easy to crop visually.
+
+Composition: square image, each frame has an empty center panel for HTML text and images, no frame overlaps, no complex scenery behind the frames.
+
+Style: polished 3D voxel UI components, child-friendly, crisp edges, subtle shadows, not glossy casino style.
+
+Hard constraints: no checkerboard pattern, no transparency simulation, no readable text, no letters, no numbers, no UI button labels, no logo, no watermark, no brand mark, no characters.

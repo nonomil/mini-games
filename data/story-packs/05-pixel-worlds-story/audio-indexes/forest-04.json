@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "pixel-worlds-story-audio-forest-04",
+  "chapterId": "forest-04",
+  "audioFormat": "wav",
+  "audioSubtype": "source",
+  "scenes": [
+    {
+      "sceneId": "mushroom",
+      "lines": [
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-04/lines/mushroom-00.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-04/lines/mushroom-01.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-04/lines/mushroom-02.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-04/lines/mushroom-03.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-04/lines/mushroom-04.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-04/lines/mushroom-05.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-04/lines/mushroom-06.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-04/lines/mushroom-07.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-04/lines/mushroom-08.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-04/lines/mushroom-09.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-04/lines/mushroom-10.wav"
+        }
+      ]
+    }
+  ]
+}

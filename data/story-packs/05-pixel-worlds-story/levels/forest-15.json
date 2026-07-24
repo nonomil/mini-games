@@ -1,0 +1,105 @@
+{
+  "levelId": "forest-15",
+  "chapterId": "forest-15",
+  "worldId": "forest",
+  "title": "萤火剧场",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "forest-15-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-15.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "forest_guide"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/forest/forest-15.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "萤火剧场正在发生变化。现在是“遇到困难”的一步：我们要找到树叶舞台，再把线索送向树冠缆车。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“萤火剧场”。我们的任务是“为萤火剧场搭好树叶舞台”，先看清树叶舞台，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "树叶、溪水和萤火虫的声音告诉我，树叶舞台就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在萤火剧场，遇到困难不能只靠着急。我们要用温柔的动作帮助森林朋友，先处理树叶舞台，也要照顾身边的朋友。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "build",
+          "prompt": "为萤火剧场搭好树叶舞台，让树叶舞台的线索显现出来。",
+          "character": "forest_guide",
+          "position": "right",
+          "actions": [
+            {
+              "label": "铺上大树叶",
+              "feedback": "铺上大树叶后，树叶舞台出现了；树冠缆车的方向更清楚了。"
+            },
+            {
+              "label": "挂上萤火灯",
+              "feedback": "挂上萤火灯让另一个细节亮起来：舞标记指向树冠缆车。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "树叶舞台被找到后，树冠缆车的方向亮了起来。用温柔的动作帮助森林朋友，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“舞”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见树冠缆车传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "树叶舞台让大家知道，树冠缆车不是远处的名字，而是一条可以走到的路。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：树叶舞台不是终点，它会把故事带到树冠缆车。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，树冠缆车的入口已经亮起。我们带着“舞”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/forest/leaf-boat.webp"
+}

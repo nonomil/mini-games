@@ -1,0 +1,105 @@
+{
+  "levelId": "block-02",
+  "chapterId": "block-02",
+  "worldId": "block",
+  "title": "矿洞火把路：寻找亮处",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "mine",
+      "background": "assets/story/pixel-worlds-v1/scenes/block/block-02.webp",
+      "lines": [
+        {
+          "type": "narration",
+          "text": "矿洞里黑黑的，墙上只有一串忽明忽暗的火把。村口路牌指向这里，可没有安全的光，大家还不能走到星门。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“矿洞火把路：寻找亮处”。我们要找出下一盏安全火把，让路牌指向的通道真正可以通过。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块碰撞声在黑暗里回响。远处有水滴声，安全火把就在能看见水路的地方。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "地下城守门人说：火把不是为了把洞照得很亮，而是让大家看见脚下的路和身边的朋友。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "scan",
+          "prompt": "找出矿洞里下一盏安全火把，让通往地下水渠的路显现出来。",
+          "character": "hero",
+          "position": "left",
+          "actions": [
+            {
+              "label": "点亮左边火把",
+              "feedback": "点亮左边火把后，地下水渠的入口被照亮了；水声就在前面。"
+            },
+            {
+              "label": "观察墙上星点",
+              "feedback": "观察墙上星点后，墙上的绿色光标记显现；它提醒我们水渠是星门的下一条件。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "安全火把固定在墙上，矿洞的路可以安全通过了。火光还照出一条缺水的地下水渠。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“明”就是让大家看清下一步。我们把火光接到星门准备图上。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见地下水渠的水滴声了。可是水还没有流到村里的花田，星门也还没有能源。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "守门人把火把旁的水路画出来：下一步要让水回到花田，也让星门得到第一股流动的力量。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：看清路还不够，还要让路上的水重新流动。下一站去地下水渠。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "安全火把照亮地下水渠的入口。我们带着“明”和路牌方向，继续找星门需要的水。",
+          "character": "cave_keeper",
+          "position": "right"
+        }
+      ],
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "cave_keeper",
+          "hero"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/block/block-02.webp"
+        ]
+      }
+    }
+  ],
+  "background": "assets/story/pixel-worlds-v1/scenes/block/block-02.webp",
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/block/wood-plank.webp"
+}

@@ -1,0 +1,97 @@
+{
+  "id": "minecraft-vocab-visual-pack",
+  "schemaVersion": 1,
+  "status": "generated-gpt-image-2",
+  "runtimeRoot": "assets/learn/english-vocab/generated/minecraft-vocab-visual-pack/",
+  "main": {
+    "assetIds": [
+      "study-camp-hero",
+      "warmup-grove",
+      "new-word-mine",
+      "recall-bridge",
+      "scene-village",
+      "reward-word-stars",
+      "card-frame-sheet"
+    ]
+  },
+  "workbench": {
+    "assetIds": [
+      "workbench-bg",
+      "detail-bg"
+    ]
+  },
+  "assets": [
+    {
+      "id": "study-camp-hero",
+      "surface": "main",
+      "purpose": "Minecraft vocabulary expedition entry scene",
+      "path": "assets/learn/english-vocab/generated/minecraft-vocab-visual-pack/study-camp-hero.png",
+      "dimensions": [1536, 864],
+      "runtime": true
+    },
+    {
+      "id": "warmup-grove",
+      "surface": "main",
+      "purpose": "Review warm-up scene",
+      "path": "assets/learn/english-vocab/generated/minecraft-vocab-visual-pack/warmup-grove.png",
+      "dimensions": [1536, 864],
+      "runtime": true
+    },
+    {
+      "id": "new-word-mine",
+      "surface": "main",
+      "purpose": "New-word introduction scene",
+      "path": "assets/learn/english-vocab/generated/minecraft-vocab-visual-pack/new-word-mine.png",
+      "dimensions": [1536, 864],
+      "runtime": true
+    },
+    {
+      "id": "recall-bridge",
+      "surface": "main",
+      "purpose": "Active recall scene",
+      "path": "assets/learn/english-vocab/generated/minecraft-vocab-visual-pack/recall-bridge.png",
+      "dimensions": [1536, 864],
+      "runtime": true
+    },
+    {
+      "id": "scene-village",
+      "surface": "main",
+      "purpose": "Scene sentence practice",
+      "path": "assets/learn/english-vocab/generated/minecraft-vocab-visual-pack/scene-village.png",
+      "dimensions": [1536, 864],
+      "runtime": true
+    },
+    {
+      "id": "reward-word-stars",
+      "surface": "main",
+      "purpose": "Completion and reward feedback scene",
+      "path": "assets/learn/english-vocab/generated/minecraft-vocab-visual-pack/reward-word-stars.png",
+      "dimensions": [1536, 864],
+      "runtime": true
+    },
+    {
+      "id": "card-frame-sheet",
+      "surface": "main",
+      "purpose": "Reusable vocabulary card frame sheet",
+      "path": "assets/learn/english-vocab/generated/minecraft-vocab-visual-pack/card-frame-sheet.png",
+      "dimensions": [1024, 1024],
+      "runtime": true
+    },
+    {
+      "id": "workbench-bg",
+      "surface": "workbench",
+      "purpose": "Low-distraction Anki workbench background",
+      "path": "assets/learn/english-vocab/generated/minecraft-vocab-visual-pack/workbench-bg.png",
+      "dimensions": [1536, 1024],
+      "runtime": true
+    },
+    {
+      "id": "detail-bg",
+      "surface": "workbench",
+      "purpose": "Low-distraction card detail background",
+      "path": "assets/learn/english-vocab/generated/minecraft-vocab-visual-pack/detail-bg.png",
+      "dimensions": [1024, 1024],
+      "runtime": true
+    }
+  ]
+}

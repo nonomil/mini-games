@@ -1,0 +1,105 @@
+{
+  "levelId": "detective-11",
+  "chapterId": "detective-11",
+  "worldId": "detective",
+  "title": "方块村的空箱",
+  "rewards": {
+    "growthPoints": 3
+  },
+  "scenes": [
+    {
+      "sceneId": "detective-11-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-11.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "detective_helper"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/detective/detective-11.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "案件记录来到第11站：“方块村的空箱”出现了新的变化。我们要找到缺失方块，看看它和矿洞回声有什么关系。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“方块村的空箱”。我们的任务是“找出方块村补给箱上缺少的方块”，先看清缺失方块，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "放大镜下闪动的线索光告诉我，缺失方块就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在“方块村的空箱”案件里，遇到困难不能只靠着急。我们要把可靠的证据放回案件记录，先处理缺失方块，也要照顾身边的朋友。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "scan",
+          "prompt": "找出方块村补给箱上缺少的方块，让缺失方块的线索显现出来。",
+          "character": "detective_helper",
+          "position": "right",
+          "actions": [
+            {
+              "label": "找棕色方块",
+              "feedback": "找棕色方块后，缺失方块出现了；矿洞回声的方向更清楚了。"
+            },
+            {
+              "label": "看看箱子底部",
+              "feedback": "看看箱子底部让另一个细节亮起来：方标记指向矿洞回声。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "线索被记录下来：缺失方块和矿洞回声之间出现了联系。案件向前推进了一步。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "我把“方”记在案件本上，这条证据不能漏掉。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我发现这不是一条孤单的线索，它正指向矿洞回声。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "先保留可靠的细节，下一站还会用到“缺失方块”的证据。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：缺失方块不是终点，它会把故事带到矿洞回声。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我们把这条线索交给矿洞回声，下一份答案就在路上。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/detective/clue-lantern.webp"
+}

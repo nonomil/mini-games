@@ -1,0 +1,11 @@
+{
+  "sourceImage": "prj/单词记忆射击场原型/assets/generated/world-bg-tiles/forest-gpt-9grid/forest_tile_r1_c1.png ... forest_tile_r3_c3.png",
+  "manifest": "prj/单词记忆射击场原型/assets/generated/world-bg-tiles/forest-9grid-manifest.json",
+  "tilesDir": "prj/单词记忆射击场原型/assets/generated/world-bg-tiles/forest-gpt-9grid",
+  "workflowScript": "prj/browser-act-imagegen/README.md",
+  "exportScript": "prj/browser-act-imagegen/scripts/download_chatgpt_estuary_current.ps1",
+  "exportedAt": "2026-07-11",
+  "generatedViaBrowserActChatGPT": true,
+  "tileCount": 9,
+  "notes": "Nine native ChatGPT-generated bright forest regions with coordinated open trail and creek exits for 3x3 map travel."
+}

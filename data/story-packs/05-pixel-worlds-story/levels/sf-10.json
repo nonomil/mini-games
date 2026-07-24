@@ -1,0 +1,105 @@
+{
+  "levelId": "sf-10",
+  "chapterId": "sf-10",
+  "worldId": "sci-fi",
+  "title": "月面车站",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "sf-10-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-10.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "star_engineer"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/sci-fi/sf-10.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "月面车站正在发生变化。现在是“收集线索”的一步：我们要找到月面车票，再把线索送向流星厨房。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“月面车站”。我们的任务是“选择驶向下一站的月面车”，先看清月面车票，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "蓝色舱灯和轻轻的电流声告诉我，月面车票就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在月面车站，收集线索不能只靠着急。我们要把光线接回星图，先处理月面车票，也要照顾身边的朋友。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "route",
+          "prompt": "选择驶向下一站的月面车，让月面车票的线索显现出来。",
+          "character": "star_engineer",
+          "position": "right",
+          "actions": [
+            {
+              "label": "登上蓝色月车",
+              "feedback": "登上蓝色月车后，月面车票出现了；流星厨房的方向更清楚了。"
+            },
+            {
+              "label": "挥动星光旗",
+              "feedback": "挥动星光旗让另一个细节亮起来：月标记指向流星厨房。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "月面车票被找到后，流星厨房的方向亮了起来。把光线接回星图，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“月”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见流星厨房传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "月面车票让大家知道，流星厨房不是远处的名字，而是一条可以走到的路。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：月面车票不是终点，它会把故事带到流星厨房。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，流星厨房的入口已经亮起。我们带着“月”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/solar-garden.webp"
+}

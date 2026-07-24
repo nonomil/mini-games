@@ -1,0 +1,93 @@
+{
+  "id": "castle",
+  "name": "云端城堡",
+  "emoji": "🏰",
+  "chapter": 4,
+  "chapter_name": "高地洞窟",
+  "min_level": 4,
+  "danger_level": 4,
+  "chapter_flow": {
+    "mode": "short",
+    "see": [0, 1],
+    "choose": 3,
+    "challenge": { "math": 2, "battle": 4 }
+  },
+  "events": [
+    {
+      "type": "narrate",
+      "text": "你刚踏上通往城堡的桥，阶梯尽头就亮起图鉴馆的馆徽，提醒你这一章要重点登记守护者的责任与岗位。",
+      "shortText": "城堡徽章亮了！",
+      "detailText": "图鉴馆提醒你，这一章要登记守护者的责任与岗位。",
+      "petMood": "surprised",
+      "id": "castle.narrate0"
+    },
+    {
+      "type": "discover",
+      "emoji": "⚔️",
+      "text": "桥头的旧徽章、值勤表和擦亮后发光的小剑，都在提示这里的伙伴并不是高冷，而是真的在守序与值守。",
+      "shortText": "旧徽章里有守护线索！",
+      "detailText": "旧徽章、值勤表和发光小剑说明伙伴们负责守序与值守。",
+      "petMood": "happy",
+      "item": "knight_shield",
+      "chance": 0.4,
+      "id": "castle.discover1"
+    },
+    {
+      "type": "math",
+      "mathType": "arithmetic",
+      "difficulty": "medium",
+      "text": "这里的登记题像一份城堡值班表，只有把塔楼守卫和记录员都算进去，图鉴馆才会认可你的记录……",
+      "shortText": "值班题：一共几名？",
+      "detailText": "把塔楼守卫和记录员人数都算进城堡值班表。",
+      "petMood": "worried",
+      "reward": {
+        "exp": 24,
+        "msg": "锁咔哒打开，大门缓缓开启！+24 经验"
+      },
+      "id": "castle.math2",
+      "question": "城堡有 3 座塔楼，每座安排 2 名守卫，还需要 1 名记录员。一共要安排几名伙伴？",
+      "answer": 7,
+      "options": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "skill": "两步计算",
+      "hint": "先算塔楼守卫一共有多少人，再别忘了加上 1 名记录员。",
+      "explanation": "3 座塔楼每座 2 名守卫，先算 3 × 2 = 6，再加 1 名记录员，一共 7 名伙伴。"
+    },
+    {
+      "type": "choice",
+      "text": "塔楼、回廊和藏书厅都能继续调查，你想先去补完哪一类守护型伙伴的责任档案？",
+      "shortText": "去图书馆，还是武器室？",
+      "detailText": "塔楼、回廊和藏书厅都有守护型伙伴的责任线索。",
+      "petMood": "surprised",
+      "options": [
+        {
+          "text": "📚 去图书馆",
+          "reward": "旧书自己翻开了页，一张魔法卷轴轻轻飘了下来！",
+          "item": "magic_wand",
+          "chance": 0.3
+        },
+        {
+          "text": "🛡️ 去武器室",
+          "reward": "墙上挂着一片幼龙的鳞片，闪闪发光！",
+          "item": "dragon_scale",
+          "chance": 0.4
+        }
+      ],
+      "id": "castle.choice3"
+    },
+    {
+      "type": "encounter",
+      "text": "螺旋楼梯上走下一位披着旧披风的守门者，它像在审阅你的资格，决定要不要把真正的身份说明交给你……",
+      "shortText": "披风守门者出现了！",
+      "detailText": "守门者正在审阅你的资格，决定是否交出真正的身份说明。",
+      "petMood": "proud",
+      "id": "castle.encounter4"
+    }
+  ],
+  "chapter_skill": "mul_div_mech",
+  "ending_text": "云端城堡的责任调查已经补完，图鉴会记下这只伙伴为何选择守护这里，而你也收下了它的收录卡。"
+}

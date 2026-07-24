@@ -1,0 +1,71 @@
+{
+  "model": "agnes-image-2.1-flash",
+  "generatedAt": "2026-07-07T14:33:28.549707+00:00",
+  "assets": [
+    {
+      "id": "easy20",
+      "file": "robot-easy20-v5",
+      "status": "skipped-existing",
+      "png": "assets/arena/math-rivals/robot-easy20-v5.png",
+      "webp": "assets/arena/math-rivals/robot-easy20-v5.webp",
+      "width": 768,
+      "height": 768,
+      "cornerAlphaMax": 0,
+      "opaqueCoverage": 0.34,
+      "pngBytes": 350070,
+      "webpBytes": 53054
+    },
+    {
+      "id": "easy100",
+      "file": "robot-easy100-v5",
+      "status": "skipped-existing",
+      "png": "assets/arena/math-rivals/robot-easy100-v5.png",
+      "webp": "assets/arena/math-rivals/robot-easy100-v5.webp",
+      "width": 768,
+      "height": 768,
+      "cornerAlphaMax": 0,
+      "opaqueCoverage": 0.3437,
+      "pngBytes": 426001,
+      "webpBytes": 86920
+    },
+    {
+      "id": "medium_mul",
+      "file": "robot-mul-v5",
+      "status": "skipped-existing",
+      "png": "assets/arena/math-rivals/robot-mul-v5.png",
+      "webp": "assets/arena/math-rivals/robot-mul-v5.webp",
+      "width": 768,
+      "height": 768,
+      "cornerAlphaMax": 0,
+      "opaqueCoverage": 0.3275,
+      "pngBytes": 470277,
+      "webpBytes": 112490
+    },
+    {
+      "id": "medium_mix",
+      "file": "robot-mix-v5",
+      "status": "skipped-existing",
+      "png": "assets/arena/math-rivals/robot-mix-v5.png",
+      "webp": "assets/arena/math-rivals/robot-mix-v5.webp",
+      "width": 768,
+      "height": 768,
+      "cornerAlphaMax": 0,
+      "opaqueCoverage": 0.3404,
+      "pngBytes": 474125,
+      "webpBytes": 120066
+    },
+    {
+      "id": "hard",
+      "file": "robot-hard-v5",
+      "status": "skipped-existing",
+      "png": "assets/arena/math-rivals/robot-hard-v5.png",
+      "webp": "assets/arena/math-rivals/robot-hard-v5.webp",
+      "width": 768,
+      "height": 768,
+      "cornerAlphaMax": 0,
+      "opaqueCoverage": 0.1934,
+      "pngBytes": 311403,
+      "webpBytes": 80844
+    }
+  ]
+}

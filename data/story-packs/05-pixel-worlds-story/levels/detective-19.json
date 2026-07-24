@@ -1,0 +1,105 @@
+{
+  "levelId": "detective-19",
+  "chapterId": "detective-19",
+  "worldId": "detective",
+  "title": "三界线索墙",
+  "rewards": {
+    "growthPoints": 3
+  },
+  "scenes": [
+    {
+      "sceneId": "detective-19-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-19.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "detective_helper"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/detective/detective-19.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "案件记录来到第19站：“三界线索墙”出现了新的变化。我们要找到三界线索墙，看看它和侦探的回家信有什么关系。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“三界线索墙”。我们的任务是“把光核、叶子和方块线索贴到故事墙”，先看清三界线索墙，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "放大镜下闪动的线索光告诉我，三界线索墙就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在“三界线索墙”案件里，打开新路不能只靠着急。我们要把可靠的证据放回案件记录，先处理三界线索墙，也要照顾身边的朋友。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "build",
+          "prompt": "把光核、叶子和方块线索贴到故事墙，让三界线索墙的线索显现出来。",
+          "character": "detective_helper",
+          "position": "right",
+          "actions": [
+            {
+              "label": "贴上蓝色光核",
+              "feedback": "贴上蓝色光核后，三界线索墙出现了；侦探的回家信的方向更清楚了。"
+            },
+            {
+              "label": "贴上绿色叶子",
+              "feedback": "贴上绿色叶子让另一个细节亮起来：墙标记指向侦探的回家信。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "线索被记录下来：三界线索墙和侦探的回家信之间出现了联系。案件向前推进了一步。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "我把“墙”记在案件本上，这条证据不能漏掉。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我发现这不是一条孤单的线索，它正指向侦探的回家信。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "先保留可靠的细节，下一站还会用到“三界线索墙”的证据。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：三界线索墙不是终点，它会把故事带到侦探的回家信。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我们把这条线索交给侦探的回家信，下一份答案就在路上。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/detective/evidence-box.webp"
+}

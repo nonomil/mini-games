@@ -1,0 +1,20 @@
+{
+  "status": "failed",
+  "prefix": "minecraft-expedition-camp-reference",
+  "model": "gpt-image-2",
+  "apiUrl": "https://beeapi.ai/v1/images/generations",
+  "sizeRequested": "1536x1024",
+  "promptFile": "G:\\StudyCode\\宠物积分系统\\assets\\learn\\english-vocab\\generated\\minecraft-expedition-camp\\reference\\minecraft-expedition-camp-reference.prompt.txt",
+  "attempts": [
+    {
+      "attempt": 1,
+      "startedAt": "2026-07-16T14:46:20",
+      "response": "G:\\StudyCode\\宠物积分系统\\assets\\learn\\english-vocab\\generated\\minecraft-expedition-camp\\reference\\minecraft-expedition-camp-reference.response.attempt1.json",
+      "status": "error",
+      "httpStatus": 404,
+      "body": "{\"code\":404,\"message\":\"no enabled channel for model \\\"gpt-image-2\\\"\",\"request_id\":\"3054b6c6-8fa7-41e2-a4ec-94d56f12e09d\"}"
+    }
+  ],
+  "createdAt": "2026-07-16T14:46:21",
+  "nextAction": "re-run with --resume after the provider enables the model/channel"
+}

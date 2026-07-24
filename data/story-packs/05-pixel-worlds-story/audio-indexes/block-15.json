@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "pixel-worlds-story-audio-block-15",
+  "chapterId": "block-15",
+  "audioFormat": "wav",
+  "audioSubtype": "source",
+  "scenes": [
+    {
+      "sceneId": "block-15-scene-1",
+      "lines": [
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-15/lines/block-15-scene-1-00.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-15/lines/block-15-scene-1-01.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-15/lines/block-15-scene-1-02.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-15/lines/block-15-scene-1-03.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-15/lines/block-15-scene-1-04.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-15/lines/block-15-scene-1-05.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-15/lines/block-15-scene-1-06.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-15/lines/block-15-scene-1-07.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-15/lines/block-15-scene-1-08.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-15/lines/block-15-scene-1-09.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-15/lines/block-15-scene-1-10.wav"
+        }
+      ]
+    }
+  ]
+}

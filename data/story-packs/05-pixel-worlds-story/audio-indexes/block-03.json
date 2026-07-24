@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "pixel-worlds-story-audio-block-03",
+  "chapterId": "block-03",
+  "audioFormat": "wav",
+  "audioSubtype": "source",
+  "scenes": [
+    {
+      "sceneId": "waterway",
+      "lines": [
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-03/lines/waterway-00.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-03/lines/waterway-01.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-03/lines/waterway-02.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-03/lines/waterway-03.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-03/lines/waterway-04.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-03/lines/waterway-05.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-03/lines/waterway-06.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-03/lines/waterway-07.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-03/lines/waterway-08.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-03/lines/waterway-09.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-03/lines/waterway-10.wav"
+        }
+      ]
+    }
+  ]
+}

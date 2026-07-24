@@ -1,0 +1,105 @@
+{
+  "levelId": "sf-13",
+  "chapterId": "sf-13",
+  "worldId": "sci-fi",
+  "title": "机器人码头",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "sf-13-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-13.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "star_engineer"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/sci-fi/sf-13.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "机器人码头正在发生变化。现在是“遇到困难”的一步：我们要找到迷路机器人，再把线索送向彩虹观景台。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“机器人码头”。我们的任务是“帮助迷路的小机器人找到充电位”，先看清迷路机器人，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "蓝色舱灯和轻轻的电流声告诉我，迷路机器人就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在机器人码头，遇到困难不能只靠着急。我们要把光线接回星图，先处理迷路机器人，也要照顾身边的朋友。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "care",
+          "prompt": "帮助迷路的小机器人找到充电位，让迷路机器人的线索显现出来。",
+          "character": "star_engineer",
+          "position": "right",
+          "actions": [
+            {
+              "label": "牵它去充电位",
+              "feedback": "牵它去充电位后，迷路机器人出现了；彩虹观景台的方向更清楚了。"
+            },
+            {
+              "label": "给它一枚光核",
+              "feedback": "给它一枚光核让另一个细节亮起来：机标记指向彩虹观景台。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "迷路机器人被找到后，彩虹观景台的方向亮了起来。把光线接回星图，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“机”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见彩虹观景台传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "迷路机器人让大家知道，彩虹观景台不是远处的名字，而是一条可以走到的路。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：迷路机器人不是终点，它会把故事带到彩虹观景台。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，彩虹观景台的入口已经亮起。我们带着“机”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/space-tunnel.webp"
+}

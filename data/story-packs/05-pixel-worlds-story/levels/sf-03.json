@@ -1,0 +1,105 @@
+{
+  "levelId": "sf-03",
+  "chapterId": "sf-03",
+  "worldId": "sci-fi",
+  "title": "云朵信号带：跟随航线",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "cloud",
+      "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-03.webp",
+      "lines": [
+        {
+          "type": "narration",
+          "text": "云朵信号带里漂着软软的云桥，三条航线在空中交会。光核一靠近，只有一条蓝线没有发出警报。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“云朵信号带：跟随航线”。两条航线已经断了，我们要让飞船沿着没有断开的云灯前进，找到安全航线。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "蓝色云灯一盏接一盏，像在保护光核。可是远处有一段桥被风暴吹断了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "光核能照亮方向，却不能替我们选路。我们要观察云灯的闪烁，别让飞船再撞进风暴。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "route",
+          "prompt": "让飞船沿着没有断开的闪烁云灯前进，让安全航线的线索显现出来。",
+          "character": "pet",
+          "position": "right",
+          "actions": [
+            {
+              "label": "跟着蓝云灯",
+              "feedback": "跟着蓝云灯后，安全航线出现了；它通向星尘维修区。"
+            },
+            {
+              "label": "追着彩虹云",
+              "feedback": "观察彩虹云后，断桥的风向亮起来；星尘维修区是修好推进器的地方。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "安全航线绕开了断桥，光核也没有熄灭。我们终于找到一条能把能源送到维修区的路。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“云”也会记住风的方向。我们把安全航线画回星图，给下一站留下清楚的路。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见星尘维修区的维修铃了。只要推进器修好，我们才有力气继续追蓝光。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "星尘工程师看着安全航线说：这不是随便亮起的入口，是我们避开断桥后找到的可靠路线。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：安全的路要先看清，再继续走。下一站去星尘维修区修好推进器。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "安全航线已经画回星图，星尘维修区的入口亮起。我们带着“云”和光核前进。",
+          "character": "hero",
+          "position": "left"
+        }
+      ],
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/sci-fi/sf-03.webp"
+        ]
+      }
+    }
+  ],
+  "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-03.webp",
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/glowing-star-seed.webp"
+}

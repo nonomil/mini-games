@@ -1,0 +1,105 @@
+{
+  "levelId": "detective-01",
+  "chapterId": "detective-01",
+  "worldId": "detective",
+  "title": "失踪的蓝光",
+  "rewards": {
+    "growthPoints": 3
+  },
+  "scenes": [
+    {
+      "sceneId": "detective-01-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-01.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "detective_helper"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/detective/detective-01.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "案件记录来到第1站：“失踪的蓝光”出现了新的变化。我们要找到蓝光碎片，看看它和移动星图有什么关系。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“失踪的蓝光”。我们的任务是“从三条闪光痕迹里找到蓝光留下的线索”，先看清蓝光碎片，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "放大镜下闪动的线索光告诉我，蓝光碎片就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在“失踪的蓝光”案件里，发现问题不能只靠着急。我们要把可靠的证据放回案件记录，先处理蓝光碎片，也要照顾身边的朋友。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "scan",
+          "prompt": "从三条闪光痕迹里找到蓝光留下的线索，让蓝光碎片的线索显现出来。",
+          "character": "detective_helper",
+          "position": "right",
+          "actions": [
+            {
+              "label": "查看月尘脚印",
+              "feedback": "查看月尘脚印后，蓝光碎片出现了；移动星图的方向更清楚了。"
+            },
+            {
+              "label": "照亮舱门边",
+              "feedback": "照亮舱门边让另一个细节亮起来：光标记指向移动星图。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "线索被记录下来：蓝光碎片和移动星图之间出现了联系。案件向前推进了一步。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "我把“光”记在案件本上，这条证据不能漏掉。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我发现这不是一条孤单的线索，它正指向移动星图。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "先保留可靠的细节，下一站还会用到“蓝光碎片”的证据。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：蓝光碎片不是终点，它会把故事带到移动星图。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我们把这条线索交给移动星图，下一份答案就在路上。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/detective/magnifying-glass.webp"
+}

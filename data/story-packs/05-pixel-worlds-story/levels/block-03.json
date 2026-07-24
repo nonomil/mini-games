@@ -1,0 +1,105 @@
+{
+  "levelId": "block-03",
+  "chapterId": "block-03",
+  "worldId": "block",
+  "title": "地下水渠：引水回家",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "waterway",
+      "background": "assets/story/pixel-worlds-v1/scenes/block/block-03.webp",
+      "lines": [
+        {
+          "type": "narration",
+          "text": "安全火把照出地下水渠的入口，可水流被石门挡住了。森林送来的绿色光已经沿着路牌和火把来到这里，地下城星门还缺少一股稳定的供水。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“地下水渠：引水回家”。星门要先得到供水，才能继续启动。我们要转动水渠方块，让水流向花田，也让水路接近星门。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块碰撞和远处的机关声告诉我，回家的水渠就在附近。只要水流重新走起来，红石工坊就能得到启动机关需要的水力。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "地下城守门人说：水渠的每一块方块都要接好。先把水安全送回花田，再把供水引到星门，红石机关才有机会醒来。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "route",
+          "prompt": "转动水渠方块，让水流向花田和星门，让供水路线的线索显现出来。",
+          "character": "block_builder",
+          "position": "right",
+          "actions": [
+            {
+              "label": "转动蓝色水块",
+              "feedback": "转动蓝色水块后，水流回了花田；旁边的供水管也亮起，红石工坊的方向更清楚了。"
+            },
+            {
+              "label": "打开石门机关",
+              "feedback": "打开石门机关后，水流通过地下通道；星门准备图显示，下一步要用红石机关把水力变成能源。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "水流回到花田，也沿着供水管送向星门。星门收到第一股稳定的力量，红石工坊的入口终于亮了起来。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“水”不只是给花田喝的，它还是星门需要的供水。我们把水渠和地图上的绿色光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见红石工坊传来的声音了。水流到了，红石机关就有能源可以工作了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "回家的水渠让大家知道，红石工坊不是远处的名字，而是把供水变成能源的下一站。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：找到水路还要让水真正流动。供水接通后，故事才能继续走到红石工坊。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "地下水渠已经完成供水，红石工坊的入口亮起。我们带着“水”和绿色光的提示，去修复能源机关。",
+          "character": "block_builder",
+          "position": "right"
+        }
+      ],
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "block_builder"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/block/block-03.webp"
+        ]
+      }
+    }
+  ],
+  "background": "assets/story/pixel-worlds-v1/scenes/block/block-03.webp",
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/block/stone-arch.webp"
+}

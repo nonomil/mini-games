@@ -1,0 +1,409 @@
+{
+  "version": 1,
+  "id": "pixel-worlds-story-audio-index",
+  "storyId": "pixel-worlds-story",
+  "sourceManifest": "data/story-packs/05-pixel-worlds-story/audio-manifest.json",
+  "chapterCount": 80,
+  "entries": {
+    "sf-01": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-01.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "sf-02": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-02.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "sf-03": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-03.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "sf-04": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-04.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "sf-05": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-05.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "sf-06": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-06.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "sf-07": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-07.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "sf-08": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-08.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "sf-09": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-09.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "sf-10": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-10.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "sf-11": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-11.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "sf-12": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-12.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "sf-13": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-13.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "sf-14": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-14.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "sf-15": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-15.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "sf-16": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-16.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "sf-17": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-17.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "sf-18": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-18.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "sf-19": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-19.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "sf-20": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/sf-20.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-01": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-01.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-02": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-02.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-03": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-03.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-04": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-04.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-05": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-05.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-06": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-06.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-07": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-07.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-08": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-08.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-09": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-09.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-10": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-10.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-11": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-11.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-12": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-12.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-13": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-13.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-14": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-14.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-15": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-15.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-16": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-16.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-17": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-17.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-18": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-18.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-19": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-19.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "forest-20": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/forest-20.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-01": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-01.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-02": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-02.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-03": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-03.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-04": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-04.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-05": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-05.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-06": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-06.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-07": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-07.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-08": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-08.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-09": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-09.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-10": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-10.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-11": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-11.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-12": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-12.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-13": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-13.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-14": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-14.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-15": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-15.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-16": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-16.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-17": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-17.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-18": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-18.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-19": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-19.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "block-20": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/block-20.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-01": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-01.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-02": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-02.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-03": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-03.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-04": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-04.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-05": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-05.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-06": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-06.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-07": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-07.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-08": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-08.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-09": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-09.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-10": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-10.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-11": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-11.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-12": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-12.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-13": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-13.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-14": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-14.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-15": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-15.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-16": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-16.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-17": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-17.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-18": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-18.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-19": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-19.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    },
+    "detective-20": {
+      "path": "data/story-packs/05-pixel-worlds-story/audio-indexes/detective-20.json",
+      "sceneCount": 1,
+      "lineCount": 11
+    }
+  }
+}

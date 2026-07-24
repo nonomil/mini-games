@@ -1,0 +1,260 @@
+/* ============================================================
+   css/leaderboard.css
+   排行榜：复用首页地图背景 + 玻璃态卡片 + 深色圆润字
+   与首页 / 游乐场 / 汉字游戏统一视觉语言
+   ============================================================ */
+
+/* 页面背景：复用首页地图底图，不再使用单页生图背景。 */
+#page-leaderboard {
+    position: relative;
+    min-height: 100vh;
+    background: transparent !important;
+    font-family: "Comic Sans MS", "Baloo 2", "Nunito", "Noto Sans SC", "PingFang SC", system-ui, sans-serif;
+    isolation: isolate;
+    padding: 16px 0 24px;
+}
+#page-leaderboard::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: url('../../assets/home-bg.webp') center top / cover no-repeat;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* 自然元素装饰（☁️🌸✨）：HTML 加 <span class="lb-deco cloud">☁️</span> 等，
+   opacity 0.5 左右，与 playground 密度均衡。CSS 预置样式供 HTML 落位。 */
+.lb-deco {
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    z-index: 1;
+    opacity: 0.5;
+}
+.lb-deco.cloud { font-size: 40px; }
+.lb-deco.bloom { font-size: 28px; }
+.lb-deco.spark { font-size: 24px; }
+
+/* 排行榜主容器：偏白白底 + blur（替玻璃态过透） */
+.lb-page.card {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+    margin: 12px auto;
+    padding: 20px;
+    border-radius: 20px;          /* 大卡档（排行榜主卡） */
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(6px) saturate(1.1);
+    -webkit-backdrop-filter: blur(6px) saturate(1.1);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.15), 0 2px 6px rgba(0,0,0,0.08);
+    animation: lb-breath 4.5s ease-in-out infinite;
+    color: #2C3E50;
+}
+
+#page-leaderboard .hz-lb-tabs,
+#leaderboard-container {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes lb-breath {
+    0%, 100% { box-shadow: 0 6px 24px rgba(0,0,0,0.15), 0 2px 6px rgba(0,0,0,0.08); }
+    50%      { box-shadow: 0 10px 30px rgba(0,0,0,0.22), 0 3px 8px rgba(0,0,0,0.10); }
+}
+
+.lb-body {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.lb-cloud-card {
+    padding: 14px 16px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.9);
+    border: 1px solid rgba(229, 214, 175, 0.88);
+    box-shadow: 0 4px 12px rgba(123, 105, 64, 0.08);
+}
+.lb-cloud-head,
+.lb-cloud-subhead,
+.lb-cloud-match-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.lb-cloud-head h3 {
+    margin: 0;
+    font-size: 15px;
+    color: #5a3a08;
+    font-weight: 800;
+}
+.lb-cloud-head span,
+.lb-cloud-subhead span,
+.lb-cloud-match-top span,
+.lb-cloud-match-body,
+.lb-cloud-match-time,
+.lb-cloud-empty {
+    font-size: 12px;
+    color: #8a7349;
+}
+.lb-cloud-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 12px;
+}
+.lb-cloud-metric {
+    padding: 10px 12px;
+    border-radius: 14px;
+    background: #fffaf0;
+    border: 1px solid rgba(229, 214, 175, 0.78);
+}
+.lb-cloud-metric span {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 11px;
+    color: #8a7349;
+}
+.lb-cloud-metric strong {
+    font-size: 22px;
+    color: #7A5A00;
+}
+.lb-cloud-subhead {
+    margin-top: 12px;
+}
+.lb-cloud-list {
+    display: grid;
+    gap: 8px;
+    margin-top: 10px;
+}
+.lb-cloud-match {
+    padding: 10px 12px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.78);
+    border: 1px solid rgba(229, 214, 175, 0.7);
+}
+.lb-cloud-match-top strong {
+    font-size: 13px;
+    color: #2C3E50;
+}
+.lb-cloud-match-body {
+    margin: 6px 0 4px;
+    line-height: 1.5;
+}
+
+/* 最高分卡：偏白白底 + 成就黄实色描边 */
+.lb-best-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px;
+    border-radius: 20px;          /* 大卡档 */
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(6px) saturate(1.1);
+    -webkit-backdrop-filter: blur(6px) saturate(1.1);
+    border: 2.5px solid #FFD700;  /* 成就黄 */
+    box-shadow: 0 4px 12px rgba(218,165,32,0.18);
+    color: #2C3E50;
+}
+.lb-best-label { font-size: 14px; color: #6b4f1a; font-weight: 700; }
+.lb-best-num {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.1;
+    color: #7A5A00;
+    background: linear-gradient(180deg, #FFD700 0%, #DAA520 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 0 rgba(255,255,255,0.35);
+}
+.lb-best-trend { font-size: 13px; margin-top: 4px; }
+.lb-trend.up   { color: #1f7a3a; background: #d9f7e3; padding: 1px 8px; border-radius: 10px; }
+.lb-trend.down { color: #b3402a; background: #ffe0d8; padding: 1px 8px; border-radius: 10px; }
+.lb-trend.flat { color: #6b6b6b; background: #eee;    padding: 1px 8px; border-radius: 10px; }
+
+/* 玩法 tab（mathpk / 汉字）：圆润胶囊。
+   #page-leaderboard 提高特异性以压过后加载的 hanzi-game.css 默认样式。 */
+#page-leaderboard .hz-lb-tab {
+    padding: 8px 20px;
+    border: 2.5px solid #FFD700;          /* 实色主题色描边（替半透明白边） */
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(6px) saturate(1.1);
+    -webkit-backdrop-filter: blur(6px) saturate(1.1);
+    border-radius: 999px;                 /* 胶囊 */
+    font-size: 14px;
+    font-weight: 700;
+    color: #5a3a08;
+    cursor: pointer;
+    transition: all .15s;
+}
+#page-leaderboard .hz-lb-tab:hover { background: rgba(255,255,255,0.92); }
+#page-leaderboard .hz-lb-tab.active {
+    background: linear-gradient(135deg, #FFD700, #DAA520);
+    color: #fff;
+    border-color: #FFD700;
+    box-shadow: 0 3px 8px rgba(218,165,32,0.35);
+    text-shadow: 0 1px 1px rgba(0,0,0,0.15);
+}
+
+/* sparkline 趋势：白底包裹卡（中卡档 14px） */
+.lb-spark-wrap {
+    padding: 12px 16px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(6px) saturate(1.1);
+    -webkit-backdrop-filter: blur(6px) saturate(1.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.lb-spark-label, .lb-list-label { font-size: 13px; color: #6b4f1a; margin-bottom: 6px; font-weight: 700; }
+.lb-spark {
+    font-family: "Noto Sans SC", monospace;
+    font-size: 26px;
+    letter-spacing: 3px;
+    color: #FFA500;              /* 计时/提醒橙 */
+    line-height: 1;
+    overflow-x: auto;
+}
+.lb-spark-bar { display: inline-block; }
+.lb-spark-empty { font-size: 13px; color: #aaa; letter-spacing: 0; }
+
+/* 最近列表：白底卡（中卡档 14px） */
+.lb-list-wrap {
+    padding: 12px 16px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(6px) saturate(1.1);
+    -webkit-backdrop-filter: blur(6px) saturate(1.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.lb-list { list-style: none; margin: 0; padding: 0; }
+.lb-row {
+    display: grid;
+    grid-template-columns: 36px 64px 1fr auto;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 4px;
+    border-bottom: 1px dashed rgba(218,165,32,0.25);
+    font-size: 14px;
+    color: #2C3E50;
+}
+.lb-row:last-child { border-bottom: none; }
+.lb-rank { font-size: 14px; color: #b0841e; font-weight: 800; }
+.lb-score { font-weight: 800; color: #d2691e; text-align: right; font-size: 16px; }
+.lb-meta-wrap { display: flex; gap: 6px; flex-wrap: wrap; }
+.lb-meta {
+    font-size: 11px; color: #5a3a08;
+    background: rgba(255,216,107,0.45); padding: 2px 8px; border-radius: 10px;
+}
+.lb-ts { font-size: 11px; color: #8a7349; }
+.lb-empty { text-align: center; color: #8a7349; padding: 24px 0; list-style: none; }
+
+@media (max-width: 480px) {
+    .lb-cloud-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .lb-best-num { font-size: 38px; }
+    .lb-row { grid-template-columns: 30px 52px 1fr auto; font-size: 13px; }
+}

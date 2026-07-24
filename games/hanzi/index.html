@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>汉字游戏 · 小游戏项目</title>
+  <link rel="stylesheet" href="../../vendor/css/hanzi-game.css">
+  <link rel="stylesheet" href="../../vendor/css/playground.css">
+  <style>body{margin:0;background:#f6f8fa}#hanzi-container{min-height:100vh}.shell-bar{display:flex;gap:12px;align-items:center;padding:12px 16px;background:#fff;border-bottom:1px solid #dbe4eb} .shell-bar a{color:#237f7c;text-decoration:none;font-weight:700}</style>
+</head>
+<body>
+  <div class="shell-bar"><a href="../../index.html#games">← 返回游戏库</a><strong>汉字游戏</strong><span>完整汉字题库，独立运行</span></div>
+  <div id="hanzi-container"></div>
+  <script src="../../host/petbank-host-shim.js"></script>
+  <script src="../../bridge.js"></script>
+  <script src="../../vendor/js/hanzi-progress.js"></script>
+  <script src="../../vendor/js/leaderboard.js"></script>
+  <script src="../../vendor/js/hanzi-game.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.HanziGame && typeof HanziGame.renderUI === 'function') HanziGame.renderUI('hanzi-container');
+      else console.warn('[hanzi] no known boot method', Object.keys(window.HanziGame || {}));
+    });
+  </script>
+</body>
+</html>

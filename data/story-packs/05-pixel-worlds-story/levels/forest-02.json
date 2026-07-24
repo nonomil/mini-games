@@ -1,0 +1,105 @@
+{
+  "levelId": "forest-02",
+  "chapterId": "forest-02",
+  "worldId": "forest",
+  "title": "萤火溪：收集露珠",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "creek",
+      "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-02.webp",
+      "lines": [
+        {
+          "type": "narration",
+          "text": "萤火溪的水声很轻，像卡在石头缝里。叶尖的露珠还在发光，可它们没有把星港的呼唤送出去。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“萤火溪：收集露珠”。我们要收集会发光的露珠，给断掉的传信藤补回水光，让森林重新回应。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "露珠就在叶尖，可溪水没有把它们带走。上游的石缝堵住了水路，回应也被卡住了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "林间向导说：露珠很小，也能走很远。我们要轻轻接住它们，再找到水路里的堵点。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "collect",
+          "prompt": "收集溪边会发光的露珠，让堵住森林回应的水路显现出来。",
+          "character": "forest_guide",
+          "position": "right",
+          "actions": [
+            {
+              "label": "接住叶尖露珠",
+              "feedback": "接住叶尖露珠后，露珠里的蓝光显现出来；它沿着水路指向树屋邮局。"
+            },
+            {
+              "label": "向萤火虫问路",
+              "feedback": "向萤火虫问路后，石缝里的小树枝亮起来；移开它，水路就能继续流向树屋邮局。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "堵住水路的小树枝被发现了。露珠沿着溪水流向传信藤，树屋邮局终于收到第一点蓝光。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“水”不只会流，也会带着问候走路。我们把露珠和蓝光画到森林地图上。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "树屋邮局传来一声很轻的铃。回答还不完整，但森林终于有了第一声回应。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "林间向导把露珠放进小瓶：下一站要把这点回应送到树屋邮局，让更多朋友听见。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：小小的水光也能打开一条消息路。下一站去树屋邮局送出第一封回应。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "溪水重新流过传信藤，树屋邮局的入口亮起。我们带着“水”和第一声回应继续走。",
+          "character": "forest_guide",
+          "position": "right"
+        }
+      ],
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "forest_guide"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/forest/forest-02.webp"
+        ]
+      }
+    }
+  ],
+  "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-02.webp",
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/forest/stream-stone.webp"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "sky-9grid-world",
+  "theme": "sky",
+  "tileWidth": 543,
+  "tileHeight": 298,
+  "rows": 3,
+  "cols": 3,
+  "tiles": [
+    { "id": "tile-1", "label": "云门平台", "row": 0, "col": 0, "src": "./assets/generated/world-bg-tiles/farm-9grid/farm_tile_r1_c1.png" },
+    { "id": "tile-2", "label": "风翼航道", "row": 0, "col": 1, "src": "./assets/generated/world-bg-tiles/farm-9grid/farm_tile_r1_c2.png" },
+    { "id": "tile-3", "label": "晨曦气站", "row": 0, "col": 2, "src": "./assets/generated/world-bg-tiles/farm-9grid/farm_tile_r1_c3.png" },
+    { "id": "tile-4", "label": "浮桥云港", "row": 1, "col": 0, "src": "./assets/generated/world-bg-tiles/farm-9grid/farm_tile_r2_c1.png" },
+    { "id": "tile-5", "label": "彩风中庭", "row": 1, "col": 1, "src": "./assets/generated/world-bg-tiles/farm-9grid/farm_tile_r2_c2.png" },
+    { "id": "tile-6", "label": "白羽弯桥", "row": 1, "col": 2, "src": "./assets/generated/world-bg-tiles/farm-9grid/farm_tile_r2_c3.png" },
+    { "id": "tile-7", "label": "晚霞边界", "row": 2, "col": 0, "src": "./assets/generated/world-bg-tiles/farm-9grid/farm_tile_r3_c1.png" },
+    { "id": "tile-8", "label": "星羽草坡", "row": 2, "col": 1, "src": "./assets/generated/world-bg-tiles/farm-9grid/farm_tile_r3_c2.png" },
+    { "id": "tile-9", "label": "飞虹回旋", "row": 2, "col": 2, "src": "./assets/generated/world-bg-tiles/farm-9grid/farm_tile_r3_c3.png" }
+  ]
+}

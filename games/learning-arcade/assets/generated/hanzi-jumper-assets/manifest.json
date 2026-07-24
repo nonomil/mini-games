@@ -1,0 +1,282 @@
+[
+  {
+    "name": "stage_background",
+    "file": "stage_background.png",
+    "box": [
+      706,
+      190,
+      806,
+      476
+    ],
+    "size": [
+      100,
+      286
+    ],
+    "cornerAlpha": [
+      255,
+      255,
+      255,
+      255
+    ]
+  },
+  {
+    "name": "target_capsule",
+    "file": "target_capsule.png",
+    "box": [
+      1062,
+      259,
+      1120,
+      286
+    ],
+    "size": [
+      58,
+      27
+    ],
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      255
+    ]
+  },
+  {
+    "name": "jumper_idle",
+    "file": "jumper_idle.png",
+    "box": [
+      827,
+      272,
+      885,
+      342
+    ],
+    "size": [
+      58,
+      70
+    ],
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "jumper_jump",
+    "file": "jumper_jump.png",
+    "box": [
+      812,
+      366,
+      910,
+      446
+    ],
+    "size": [
+      66,
+      71
+    ],
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "platform_leaf",
+    "file": "platform_leaf.png",
+    "box": [
+      828,
+      207,
+      897,
+      231
+    ],
+    "size": [
+      69,
+      24
+    ],
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "platform_cloud",
+    "file": "platform_cloud.png",
+    "box": [
+      915,
+      202,
+      1022,
+      251
+    ],
+    "size": [
+      104,
+      49
+    ],
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "platform_coral",
+    "file": "platform_coral.png",
+    "box": [
+      1026,
+      203,
+      1139,
+      260
+    ],
+    "size": [
+      113,
+      57
+    ],
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "platform_wood",
+    "file": "platform_wood.png",
+    "box": [
+      912,
+      285,
+      1048,
+      330
+    ],
+    "size": [
+      126,
+      45
+    ],
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "platform_green",
+    "file": "platform_green.png",
+    "box": [
+      1058,
+      282,
+      1161,
+      328
+    ],
+    "size": [
+      103,
+      46
+    ],
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "platform_glow",
+    "file": "platform_glow.png",
+    "box": [
+      935,
+      350,
+      1055,
+      398
+    ],
+    "size": [
+      114,
+      38
+    ],
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "reward_star",
+    "file": "reward_star.png",
+    "box": [
+      1115,
+      356,
+      1155,
+      397
+    ],
+    "size": [
+      40,
+      38
+    ],
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "cloud_large",
+    "file": "cloud_large.png",
+    "box": [
+      934,
+      402,
+      1016,
+      438
+    ],
+    "size": [
+      82,
+      36
+    ],
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "cloud_small",
+    "file": "cloud_small.png",
+    "box": [
+      901,
+      446,
+      957,
+      473
+    ],
+    "size": [
+      56,
+      27
+    ],
+    "cornerAlpha": [
+      0,
+      0,
+      255,
+      255
+    ]
+  },
+  {
+    "name": "score_badge",
+    "file": "score_badge.png",
+    "box": [
+      1038,
+      414,
+      1148,
+      460
+    ],
+    "size": [
+      110,
+      46
+    ],
+    "cornerAlpha": [
+      0,
+      255,
+      0,
+      255
+    ]
+  }
+]

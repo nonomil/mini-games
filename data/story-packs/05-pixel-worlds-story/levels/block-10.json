@@ -1,0 +1,105 @@
+{
+  "levelId": "block-10",
+  "chapterId": "block-10",
+  "worldId": "block",
+  "title": "水晶矿井",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "block-10-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/block/block-10.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "block_builder"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/block/block-10.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "星星地图把大家带到水晶矿井。轨道车站的灯还没有亮，回家路线需要一块蓝色水晶来供能，才能继续远行。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“水晶矿井”。我们要找到最亮的蓝色水晶，把它放进轨道车站的能源槽，让回家路线继续向前。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块碰撞和远处的机关声告诉我，蓝色水晶就在附近。矿壁上的蓝光一闪一闪，正和轨道车站的空能源槽呼应。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块工匠说：水晶很亮，也要轻轻取下。我们让伙伴站在安全的位置，再把蓝色水晶带给需要供能的轨道车站。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "collect",
+          "prompt": "找到矿井里最亮的一块蓝色水晶，为轨道车站供能，让下一段远行的线索显现出来。",
+          "character": "block_builder",
+          "position": "right",
+          "actions": [
+            {
+              "label": "取下蓝水晶",
+              "feedback": "取下蓝水晶后，能源槽被点亮；轨道车站的方向更清楚了，下一段远行有了力量。"
+            },
+            {
+              "label": "抬高矿灯",
+              "feedback": "抬高矿灯后，晶标记和星星地图连起来；它确认蓝色水晶要送往轨道车站供能。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "蓝色水晶被找到并接入能源槽，轨道车站的灯亮了起来。回家路线获得供能，新的远行道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“晶”不只是漂亮的石头，它能给轨道车站供能。我们把水晶、星星地图和回家门的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见轨道车站启动的声音了。木门通道、农场补给、星星地图都派上了用场，我们真的可以继续远行。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "蓝色水晶让大家知道，轨道车站不是远处的名字，而是得到能源后就能继续前进的下一段路。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：路线、伙伴、物资和能源要一个接一个准备好，回家门的光才走得更远。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "蓝色水晶已经为轨道车站供能，入口亮起。我们带着“晶”和回家准备的完整线索，驶向下一段远行。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/block/power-cube.webp"
+}

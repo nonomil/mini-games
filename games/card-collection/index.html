@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>宠物卡牌图鉴 · 小游戏项目</title>
+  <link rel="stylesheet" href="../../vendor/css/style.css">
+  <link rel="stylesheet" href="../../vendor/css/travel-memory.css">
+  <link rel="stylesheet" href="../../vendor/css/card-collection.css">
+</head>
+<body class="mini-games-card-shell">
+  <div class="shell-bar"><a href="../../index.html#games">← 返回游戏库</a><strong>宠物卡牌图鉴</strong><span>完整 261 种宠物与全部卡册</span></div>
+  <main id="card-collection-container"></main>
+  <script src="../../host/petbank-host-shim.js"></script>
+  <script src="../../vendor/js/asset-loader.js"></script>
+  <script src="../../vendor/js/pet.js"></script>
+  <script src="../../vendor/js/inventory.js"></script>
+  <script src="../../vendor/js/travel-memory.js"></script>
+  <script src="../../vendor/js/card-collection.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async function () {
+      try {
+        if (window.PetSystem && typeof PetSystem.load === 'function') PetSystem.load();
+        if (window.PetSystem && typeof PetSystem.loadPetDB === 'function') await PetSystem.loadPetDB();
+        if (window.InventorySystem && typeof InventorySystem.loadItemsData === 'function') await InventorySystem.loadItemsData();
+        if (window.InventorySystem && typeof InventorySystem.load === 'function') InventorySystem.load();
+        if (window.CardCollection && typeof CardCollection.init === 'function') CardCollection.init();
+        if (window.CardCollection && typeof CardCollection.renderUI === 'function') CardCollection.renderUI('card-collection-container');
+      } catch (error) {
+        console.warn('[card-collection] boot failed', error);
+        document.getElementById('card-collection-container').innerHTML = '<p style="padding:24px">宠物图鉴加载失败：' + (error && error.message ? error.message : error) + '</p>';
+      }
+    });
+  </script>
+</body>
+</html>

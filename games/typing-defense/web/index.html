@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>消灭苦力怕打字游戏原型</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="game-shell" aria-label="消灭苦力怕打字游戏原型">
+    <section class="hud">
+      <div class="brand">消灭苦力怕</div>
+      <div class="meters">
+        <div class="meter" aria-label="生命值">
+          <img class="heart" data-heart src="../assets/generated/typing-defense-assets/heart_full.png" alt="">
+          <img class="heart" data-heart src="../assets/generated/typing-defense-assets/heart_full.png" alt="">
+          <img class="heart" data-heart src="../assets/generated/typing-defense-assets/heart_full.png" alt="">
+        </div>
+        <div class="stars" aria-label="奖励星星">
+          <img class="star" data-star src="../assets/generated/typing-defense-assets/star_empty.png" alt="">
+          <img class="star" data-star src="../assets/generated/typing-defense-assets/star_empty.png" alt="">
+          <img class="star" data-star src="../assets/generated/typing-defense-assets/star_empty.png" alt="">
+          <img class="star" data-star src="../assets/generated/typing-defense-assets/star_empty.png" alt="">
+          <img class="star" data-star src="../assets/generated/typing-defense-assets/star_empty.png" alt="">
+        </div>
+      </div>
+      <div class="scene-chip" id="sceneChip" aria-live="polite">
+        <span class="scene-chip-label">场景</span>
+        <strong id="sceneName">白天草地</strong>
+        <span id="sceneHint">亮亮的草地练打字</span>
+      </div>
+      <div class="progress-pocket">
+        <div class="grade-track is-hidden" id="gradeTrack" aria-label="分级闯关进度"></div>
+        <div class="score">
+          <span id="roundCounter">第 1/12 关</span>
+          <span>连击 <strong id="comboCounter">0</strong></span>
+          <span>金币 <strong id="score">0</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="stage" id="stage">
+      <div class="horizon-layers" aria-hidden="true">
+        <div class="horizon-strip horizon-back"></div>
+        <div class="horizon-strip horizon-mid"></div>
+        <div class="horizon-strip horizon-front"></div>
+      </div>
+      <div class="chase-scenery" aria-hidden="true">
+        <div class="scenery-strip scenery-far"></div>
+        <div class="scenery-strip scenery-near"></div>
+      </div>
+      <div class="cloud cloud-a"></div>
+      <div class="cloud cloud-b"></div>
+      <div class="cloud cloud-c"></div>
+      <div class="ground"></div>
+      <div class="approach-meter" aria-hidden="true"><span id="approachFill"></span></div>
+      <div class="target-bubble" id="targetBubble"></div>
+      <div class="word-card-panel is-hidden" id="wordCardPanel" aria-hidden="true">
+        <div class="word-card-deck" id="wordCardDeck"></div>
+        <div class="word-card-legacy" aria-hidden="true" hidden>
+          <img class="word-card-image" id="wordCardImage" src="" alt="">
+          <div class="word-card-label" id="wordCardLabel"></div>
+          <div class="progress-word" id="progressWord"></div>
+        </div>
+      </div>
+
+      <div class="monster-wrap is-walking" id="monsterWrap">
+        <div class="enemy-task-badge" data-enemy-badge="front"></div>
+        <img id="frontCreeperImage" class="generated-creeper-image" src="../assets/generated/typing-defense-assets/creeper_generated_far.png" alt="接近中的方块怪物">
+        <div class="creeper-rig" id="creeperRig" aria-hidden="true">
+          <span class="creeper-shadow"></span>
+          <span class="creeper-leg creeper-leg-back-left"></span>
+          <span class="creeper-leg creeper-leg-front-left"></span>
+          <span class="creeper-leg creeper-leg-back-right"></span>
+          <span class="creeper-leg creeper-leg-front-right"></span>
+          <span class="creeper-body"></span>
+          <span class="creeper-head">
+            <i class="eye eye-left"></i>
+            <i class="eye eye-right"></i>
+            <i class="mouth mouth-top"></i>
+            <i class="mouth mouth-left"></i>
+            <i class="mouth mouth-right"></i>
+          </span>
+        </div>
+        <img id="monster" class="monster monster-pose" src="../assets/generated/typing-defense-assets/creeper_idle.png" alt="方块怪物">
+      </div>
+
+      <div class="monster-wrap backup-monster-wrap is-walking" id="backupMonsterWrap" aria-hidden="true">
+        <div class="enemy-task-badge" data-enemy-badge="back"></div>
+        <img id="backupCreeperImage" class="generated-creeper-image backup-generated-creeper-image" src="../assets/generated/typing-defense-assets/creeper_generated_far.png" alt="">
+        <div class="creeper-rig backup-creeper-rig" id="backupCreeperRig">
+          <span class="creeper-shadow"></span>
+          <span class="creeper-leg creeper-leg-back-left"></span>
+          <span class="creeper-leg creeper-leg-front-left"></span>
+          <span class="creeper-leg creeper-leg-back-right"></span>
+          <span class="creeper-leg creeper-leg-front-right"></span>
+          <span class="creeper-body"></span>
+          <span class="creeper-head">
+            <i class="eye eye-left"></i>
+            <i class="eye eye-right"></i>
+            <i class="mouth mouth-top"></i>
+            <i class="mouth mouth-left"></i>
+            <i class="mouth mouth-right"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="monster-wrap side-monster-wrap is-walking" id="sideMonsterWrap" aria-hidden="true">
+        <div class="enemy-task-badge" data-enemy-badge="side"></div>
+        <img id="sideCreeperImage" class="generated-creeper-image side-generated-creeper-image" src="../assets/generated/typing-defense-assets/creeper_generated_far.png" alt="">
+        <div class="creeper-rig side-creeper-rig" id="sideCreeperRig">
+          <span class="creeper-shadow"></span>
+          <span class="creeper-leg creeper-leg-back-left"></span>
+          <span class="creeper-leg creeper-leg-front-left"></span>
+          <span class="creeper-leg creeper-leg-back-right"></span>
+          <span class="creeper-leg creeper-leg-front-right"></span>
+          <span class="creeper-body"></span>
+          <span class="creeper-head">
+            <i class="eye eye-left"></i>
+            <i class="eye eye-right"></i>
+            <i class="mouth mouth-top"></i>
+            <i class="mouth mouth-left"></i>
+            <i class="mouth mouth-right"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="arrow-lane" id="arrowLane" aria-hidden="true">
+        <div class="arrow-launcher" id="arrowLauncher">
+          <img class="bow-launcher-image" id="bowLauncherImage" src="../assets/generated/typing-defense-assets/bow_launcher_idle.png" alt="">
+          <span class="bow-arc"></span>
+          <span class="bow-string"></span>
+        </div>
+        <div class="arrow" id="arrow">
+          <span class="arrow-shaft"></span>
+          <span class="arrow-head"></span>
+          <span class="arrow-feather arrow-feather-a"></span>
+          <span class="arrow-feather arrow-feather-b"></span>
+        </div>
+      </div>
+
+      <div class="particle-layer" id="particleLayer"></div>
+      <div class="explosion-layer" id="explosionLayer" aria-hidden="true"></div>
+      <div class="scene-toast" id="sceneToast" aria-live="polite" aria-hidden="true">
+        <span class="scene-toast-kicker">场景切换</span>
+        <strong id="sceneToastName">白天草地</strong>
+        <span id="sceneToastHint">亮亮的草地练打字</span>
+      </div>
+      <div class="combo-ribbon" id="comboRibbon"></div>
+      <div class="float-text" id="floatText"></div>
+    </section>
+
+    <section class="typing-panel">
+      <div class="prompt-row">
+        <span id="modeBadge">拼音</span>
+        <strong id="hintText">看目标，直接键盘输入</strong>
+        <div class="goal-chip" id="goalChip" aria-live="polite">
+          <span class="goal-chip-main" id="goalChipMain">还差 6 只</span>
+          <span class="goal-chip-sub" id="goalChipSub">准备拿第 1 颗星</span>
+        </div>
+        <button class="listen-button" id="listenButton" type="button">听一听</button>
+      </div>
+      <div class="type-box" id="typeBox" tabindex="0" aria-label="当前输入">
+        <div class="type-box-copy">
+          <div class="type-box-track">
+            <span id="typedText"></span>
+            <span id="typedGhost"></span>
+            <i></i>
+          </div>
+          <div class="type-box-helper" id="typeBoxHelper">准备开始</div>
+        </div>
+      </div>
+      <section class="keyboard-panel stage-keyboard" aria-label="小写键盘">
+        <div class="keyboard" id="keyboard"></div>
+      </section>
+      <div class="controls">
+        <button id="startButton" type="button">开始挑战</button>
+        <button id="skipButton" type="button">换一个</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="overlay is-open" id="overlay">
+    <div class="dialog">
+      <img class="dialog-preview" src="../assets/creeper-bow-scene-chatgpt-raw.png" alt="">
+      <h1>消灭苦力怕</h1>
+      <p id="overlayText">选一个训练内容，输入目标字母、拼音或单词，在怪物靠近前把它炸成方块粒子。</p>
+      <label class="vocab-setting" for="vocabSelect">
+        <span id="vocabLabel">词库</span>
+        <select id="vocabSelect" aria-label="选择词库"></select>
+      </label>
+      <div class="grade-track grade-track-dialog is-hidden" id="overlayGradeTrack" aria-label="分级闯关进度"></div>
+      <div class="mode-tabs" id="modeTabs" aria-label="训练内容">
+        <button class="mode-tab is-selected" type="button" data-mode="words">年级单词</button>
+        <button class="mode-tab" type="button" data-mode="pinyin">拼音</button>
+        <button class="mode-tab" type="button" data-mode="letters">字母</button>
+        <button class="mode-tab" type="button" data-mode="mathEasy20">加减起步</button>
+        <button class="mode-tab" type="button" data-mode="mathEasy100">加减进阶</button>
+        <button class="mode-tab" type="button" data-mode="mathMul">乘法启程</button>
+      </div>
+      <div class="pinyin-tier-panel" id="pinyinTierPanel" aria-label="拼音练习档位">
+        <span class="pinyin-tier-label">拼音档位</span>
+        <div class="pinyin-tier-tabs" id="pinyinTierTabs">
+          <button class="pinyin-tier-tab is-selected" type="button" data-pinyin-tier="single">单字</button>
+          <button class="pinyin-tier-tab" type="button" data-pinyin-tier="phrase">词语</button>
+        </div>
+      </div>
+      <div class="math-guide-panel is-hidden" id="mathGuidePanel" aria-label="数学模式说明">
+        <div class="math-guide-head">
+          <strong id="mathGuideTitle">加减起步</strong>
+          <span id="mathGuideFit">适合刚开始口算</span>
+        </div>
+        <div class="math-guide-reason" id="mathGuideReason">先用小数字练键盘和口算节奏。</div>
+        <div class="math-guide-rules" id="mathGuideRules"></div>
+      </div>
+      <div class="math-support-panel is-hidden" id="mathSupportPanel" aria-label="数学辅助卡">
+        <span class="math-support-label">辅助卡</span>
+        <div class="math-support-tabs" id="mathSupportTabs">
+          <button class="math-support-tab is-selected" type="button" data-math-support="none">不用</button>
+          <button class="math-support-tab" type="button" data-math-support="slow_enemy">走慢一点</button>
+          <button class="math-support-tab" type="button" data-math-support="retry_once">保底一次</button>
+          <button class="math-support-tab" type="button" data-math-support="show_array">看阵列</button>
+        </div>
+      </div>
+      <div class="start-summary" id="startSummary" aria-label="开局摘要">
+        <div class="start-summary-head">
+          <strong id="startSummaryTitle">年级单词慢节奏</strong>
+          <span id="startSummarySubtitle">共 6 关</span>
+        </div>
+        <div class="start-summary-metas" id="startSummaryMetas"></div>
+        <div class="start-summary-sample">
+          <span class="start-summary-sample-kicker" id="startSummarySampleKicker">示例</span>
+          <strong class="start-summary-sample-main" id="startSummarySampleMain">big</strong>
+          <span class="start-summary-sample-sub" id="startSummarySampleSub">大的 big</span>
+        </div>
+      </div>
+      <div class="final-stats" id="finalStats" hidden></div>
+      <button id="overlayStart" type="button">开始挑战</button>
+    </div>
+  </div>
+
+  <script src="../assets/generated/minecraft-typing-defense/vocab-banks.js"></script>
+  <script src="../assets/generated/minecraft-typing-defense/tasks.js"></script>
+  <script src="./game.js"></script>
+</body>
+</html>
+

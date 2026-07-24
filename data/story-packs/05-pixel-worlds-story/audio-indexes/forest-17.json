@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "pixel-worlds-story-audio-forest-17",
+  "chapterId": "forest-17",
+  "audioFormat": "wav",
+  "audioSubtype": "source",
+  "scenes": [
+    {
+      "sceneId": "forest-17-scene-1",
+      "lines": [
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-17/lines/forest-17-scene-1-00.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-17/lines/forest-17-scene-1-01.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-17/lines/forest-17-scene-1-02.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-17/lines/forest-17-scene-1-03.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-17/lines/forest-17-scene-1-04.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-17/lines/forest-17-scene-1-05.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-17/lines/forest-17-scene-1-06.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-17/lines/forest-17-scene-1-07.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-17/lines/forest-17-scene-1-08.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-17/lines/forest-17-scene-1-09.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-17/lines/forest-17-scene-1-10.wav"
+        }
+      ]
+    }
+  ]
+}

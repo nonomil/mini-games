@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "pixel-worlds-story-audio-block-02",
+  "chapterId": "block-02",
+  "audioFormat": "wav",
+  "audioSubtype": "source",
+  "scenes": [
+    {
+      "sceneId": "mine",
+      "lines": [
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-02/lines/mine-00.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-02/lines/mine-01.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-02/lines/mine-02.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-02/lines/mine-03.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-02/lines/mine-04.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-02/lines/mine-05.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-02/lines/mine-06.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-02/lines/mine-07.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-02/lines/mine-08.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-02/lines/mine-09.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-02/lines/mine-10.wav"
+        }
+      ]
+    }
+  ]
+}

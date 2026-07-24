@@ -1,0 +1,68 @@
+{
+  "prototypeId": "minecraft-typing-defense",
+  "adapterVersion": "minecraft-typing-defense-v1",
+  "source": {
+    "packId": "english-minecraft",
+    "moduleId": "minecraft-vocab-typing-view",
+    "moduleType": "vocab-view",
+    "viewId": "typing-view",
+    "generatedAt": "2026-07-08T09:32:33.006Z",
+    "file": "data/vocab/english-minecraft/views/typing-view.json",
+    "registryManifest": "data/vocab/english-minecraft/manifest.json"
+  },
+  "filters": {
+    "wordPattern": "^[a-z]{3,5}$",
+    "requireLocalImage": true,
+    "requireLocalAudio": true,
+    "purpose": "蓝牙键盘短词打字练习"
+  },
+  "outputs": [
+    "prj/消灭苦力怕打字游戏/assets/generated/minecraft-typing-defense/tasks.json",
+    "prj/消灭苦力怕打字游戏/assets/generated/minecraft-typing-defense/tasks.js"
+  ],
+  "wordCount": 20,
+  "groupCounts": {
+    "3": 5,
+    "4": 5,
+    "5": 10
+  },
+  "words": [
+    "block",
+    "world",
+    "hello",
+    "look",
+    "stone",
+    "light",
+    "run",
+    "door",
+    "cat",
+    "bag",
+    "sun",
+    "tree",
+    "red",
+    "play",
+    "sword",
+    "craft",
+    "water",
+    "fire",
+    "house",
+    "apple"
+  ],
+  "vocabBanks": {
+    "file": "prj/消灭苦力怕打字游戏/assets/generated/minecraft-typing-defense/vocab-banks.json",
+    "runtime": "prj/消灭苦力怕打字游戏/assets/generated/minecraft-typing-defense/vocab-banks.js",
+    "defaultBankId": "kindergarten",
+    "bankCount": 9,
+    "bankIds": [
+      "core-english",
+      "extension-english",
+      "curriculum-all",
+      "kindergarten",
+      "elementary-lower",
+      "elementary-upper",
+      "junior-high",
+      "minecraft",
+      "bridge-pinyin"
+    ]
+  }
+}

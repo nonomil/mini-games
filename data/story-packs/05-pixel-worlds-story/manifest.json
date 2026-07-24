@@ -1,0 +1,3081 @@
+{
+  "id": "pixel-worlds-story",
+  "title": "像素世界漫游：三张地图的回家任务",
+  "version": "20260714-v1",
+  "status": "active",
+  "active": true,
+  "audience": "亲子共读与自主认字",
+  "ageRange": "5-7",
+  "learningPolicy": "recognition-only",
+  "runtime": "pixel-dialogue-story",
+  "levelCount": 60,
+  "bonusLevelCount": 20,
+  "levelsBase": "data/story-packs/05-pixel-worlds-story/levels",
+  "characters": {
+    "narrator": {
+      "id": "narrator",
+      "name": "故事旁白",
+      "voicePreset": "kind_grandpa",
+      "labelStyle": "narrator",
+      "sprite": null
+    },
+    "hero": {
+      "id": "hero",
+      "name": "小小探险家",
+      "voicePreset": "child",
+      "labelStyle": "hero",
+      "sprite": "assets/story/pixel-worlds-v1/characters/characters-hero-pet/hero-pet-01.webp"
+    },
+    "pet": {
+      "id": "pet",
+      "name": "星尘伙伴",
+      "voicePreset": "lively_teacher",
+      "labelStyle": "friend",
+      "sprite": "assets/story/pixel-worlds-v1/characters/characters-hero-pet/hero-pet-09.webp"
+    },
+    "star_engineer": {
+      "id": "star_engineer",
+      "name": "星尘工程师",
+      "voicePreset": "kind_grandpa",
+      "labelStyle": "npc",
+      "sprite": "assets/story/pixel-worlds-v1/characters/characters-guides/guides-05.webp"
+    },
+    "forest_guide": {
+      "id": "forest_guide",
+      "name": "林间向导",
+      "voicePreset": "gentle_mom",
+      "labelStyle": "npc",
+      "sprite": "assets/story/pixel-worlds-v1/characters/characters-guides/guides-01.webp"
+    },
+    "block_builder": {
+      "id": "block_builder",
+      "name": "方块工匠",
+      "voicePreset": "kind_grandpa",
+      "labelStyle": "npc",
+      "sprite": "assets/story/pixel-worlds-v1/characters/characters-guides/guides-05.webp"
+    },
+    "cave_keeper": {
+      "id": "cave_keeper",
+      "name": "地下城守门人",
+      "voicePreset": "child",
+      "labelStyle": "npc",
+      "sprite": "assets/story/pixel-worlds-v1/characters/characters-guides/guides-09.webp"
+    },
+    "detective_helper": {
+      "id": "detective_helper",
+      "name": "线索小助手",
+      "voicePreset": "lively_teacher",
+      "labelStyle": "friend",
+      "sprite": "assets/story/pixel-worlds-v1/characters/characters-guides/guides-13.webp"
+    }
+  },
+  "worlds": [
+    {
+      "id": "sci-fi",
+      "title": "星港科技区",
+      "subtitle": "跟着光核信号，修好回家的星图",
+      "tone": "sci-fi",
+      "background": "assets/story/pixel-worlds-v1/maps/sci-fi.webp",
+      "nodes": [
+        {
+          "levelId": "sf-01",
+          "order": 1,
+          "label": "星港登船舱",
+          "subtitle": "看见信号",
+          "position": {
+            "x": 12,
+            "y": 56
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/moon-station.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-01.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-01.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "sf-02",
+          "order": 2,
+          "label": "月环补给站",
+          "subtitle": "找到光核",
+          "position": {
+            "x": 24,
+            "y": 34
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/signal-beacon.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-02.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-02.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "sf-03",
+          "order": 3,
+          "label": "云朵信号带",
+          "subtitle": "跟随航线",
+          "position": {
+            "x": 36,
+            "y": 22
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/glowing-star-seed.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-03.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-03.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "sf-04",
+          "order": 4,
+          "label": "星尘维修区",
+          "subtitle": "修好飞船",
+          "position": {
+            "x": 49,
+            "y": 36
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/repair-gear.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-04.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-04.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "sf-05",
+          "order": 5,
+          "label": "漂浮温室",
+          "subtitle": "照看星芽",
+          "position": {
+            "x": 61,
+            "y": 53
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/glass-dome.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-05.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-05.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "sf-06",
+          "order": 6,
+          "label": "轨道电梯",
+          "subtitle": "搭出电梯",
+          "position": {
+            "x": 73,
+            "y": 31
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/orbit-elevator.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-06.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-06.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "sf-07",
+          "order": 7,
+          "label": "双星桥",
+          "subtitle": "连接两颗星",
+          "position": {
+            "x": 84,
+            "y": 48
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/twin-star-bridge.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-07.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-07.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "sf-08",
+          "order": 8,
+          "label": "回家发射台",
+          "subtitle": "点亮星图",
+          "position": {
+            "x": 92,
+            "y": 68
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/hologram-compass.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-08.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-08.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "sf-09",
+          "order": 9,
+          "label": "量子花园",
+          "subtitle": "追踪微光",
+          "position": {
+            "x": 17,
+            "y": 78
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/blue-light-core.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-09.webp",
+          "activityType": "scan",
+          "prompt": "找到量子花园里会移动的微光。",
+          "storyText": "量子花园的花朵像小星球一样旋转，微光在花瓣间躲猫猫。",
+          "actions": [
+            {
+              "label": "追踪蓝色微光",
+              "feedback": "微光留下了一条新的航线。"
+            },
+            {
+              "label": "观察旋转花朵",
+              "feedback": "花朵停下来，露出隐藏信标。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-09.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "sf-10",
+          "order": 10,
+          "label": "月面车站",
+          "subtitle": "换乘月车",
+          "position": {
+            "x": 30,
+            "y": 83
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/solar-garden.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-10.webp",
+          "activityType": "route",
+          "prompt": "选择驶向下一站的月面车。",
+          "storyText": "月面车站的车灯一盏盏亮起，远处的轨道通往云朵信号带。",
+          "actions": [
+            {
+              "label": "登上蓝色月车",
+              "feedback": "月车滑过银色月尘，稳稳抵达下一站。"
+            },
+            {
+              "label": "挥动星光旗",
+              "feedback": "车长看见旗子，打开了隐藏轨道。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-10.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "sf-11",
+          "order": 11,
+          "label": "流星厨房",
+          "subtitle": "装满能量",
+          "position": {
+            "x": 43,
+            "y": 76
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/mini-drone.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-11.webp",
+          "activityType": "collect",
+          "prompt": "收集厨房里的三颗能量果。",
+          "storyText": "流星厨房里飘着香味，能量果在透明轨道里滚来滚去。",
+          "actions": [
+            {
+              "label": "接住发光果",
+              "feedback": "能量果装满了飞船的小篮子。"
+            },
+            {
+              "label": "打开保鲜舱",
+              "feedback": "保鲜舱弹开，里面还有一颗果子。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-11.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "sf-12",
+          "order": 12,
+          "label": "回声电台",
+          "subtitle": "发送问候",
+          "position": {
+            "x": 55,
+            "y": 83
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/crystal-battery.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-12.webp",
+          "activityType": "route",
+          "prompt": "把问候声发送到森林世界。",
+          "storyText": "回声电台能听见很远的朋友，旋钮旁写着‘声’和‘听’。",
+          "actions": [
+            {
+              "label": "转到森林频道",
+              "feedback": "问候声沿着星桥飞向森林。"
+            },
+            {
+              "label": "敲响发送铃",
+              "feedback": "清脆的铃声穿过三个世界。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-12.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "sf-13",
+          "order": 13,
+          "label": "机器人码头",
+          "subtitle": "带它回家",
+          "position": {
+            "x": 67,
+            "y": 75
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/space-tunnel.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-13.webp",
+          "activityType": "care",
+          "prompt": "帮助迷路的小机器人找到充电位。",
+          "storyText": "一个小机器人抱着空空的电池盒，它的眼睛一闪一闪。",
+          "actions": [
+            {
+              "label": "牵它去充电位",
+              "feedback": "机器人恢复精神，发来一张地图。"
+            },
+            {
+              "label": "给它一枚光核",
+              "feedback": "机器人亮起暖光，愿意加入队伍。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-13.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "sf-14",
+          "order": 14,
+          "label": "彩虹观景台",
+          "subtitle": "找出方向",
+          "position": {
+            "x": 79,
+            "y": 82
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/landing-pad.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-14.webp",
+          "activityType": "scan",
+          "prompt": "从彩虹里找出通往森林的箭头。",
+          "storyText": "观景台的彩虹连着三个世界，每种颜色都藏着一个方向。",
+          "actions": [
+            {
+              "label": "看绿色箭头",
+              "feedback": "绿色箭头指向森林的树影。"
+            },
+            {
+              "label": "看蓝色箭头",
+              "feedback": "蓝色箭头指向一条安全航线。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-14.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "sf-15",
+          "order": 15,
+          "label": "星门候车室",
+          "subtitle": "整理行李",
+          "position": {
+            "x": 90,
+            "y": 88
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/constellation-lens.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-15.webp",
+          "activityType": "collect",
+          "prompt": "把地图、光核和伙伴徽章放进旅行箱。",
+          "storyText": "星门候车室里，三张地图等待被放进行李箱。",
+          "actions": [
+            {
+              "label": "放入蓝色地图",
+              "feedback": "星港地图平整地躺进箱子。"
+            },
+            {
+              "label": "别忘了伙伴徽章",
+              "feedback": "徽章闪了一下，提醒大家一起出发。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-15.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "sf-16",
+          "order": 16,
+          "label": "星云滑梯",
+          "subtitle": "滑向森林",
+          "position": {
+            "x": 76,
+            "y": 16
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/floating-greenhouse.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-16.webp",
+          "activityType": "route",
+          "prompt": "让小飞船从星云滑梯安全滑下。",
+          "storyText": "星云滑梯弯弯的，像一条通往森林的彩色丝带。",
+          "actions": [
+            {
+              "label": "沿蓝色轨道滑行",
+              "feedback": "飞船轻轻落在森林上空。"
+            },
+            {
+              "label": "抓住发光扶手",
+              "feedback": "大家稳稳坐好，星云开始下降。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-16.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "sf-17",
+          "order": 17,
+          "label": "记忆舱",
+          "subtitle": "保存朋友",
+          "position": {
+            "x": 61,
+            "y": 13
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/robot-arm.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-17.webp",
+          "activityType": "collect",
+          "prompt": "保存今天认识的朋友图像。",
+          "storyText": "记忆舱把遇见的朋友变成一颗颗温暖的光点。",
+          "actions": [
+            {
+              "label": "保存森林向导",
+              "feedback": "向导的笑容变成一颗绿光。"
+            },
+            {
+              "label": "保存方块工匠",
+              "feedback": "工匠挥挥手，变成一颗橙光。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-17.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "sf-18",
+          "order": 18,
+          "label": "维修月台",
+          "subtitle": "补上星桥",
+          "position": {
+            "x": 48,
+            "y": 10
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/star-map-fragment.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-18.webp",
+          "activityType": "repair",
+          "prompt": "修补连接森林和方块世界的星桥。",
+          "storyText": "星桥中间少了一块桥板，下面是闪闪的星海。",
+          "actions": [
+            {
+              "label": "装上蓝色桥板",
+              "feedback": "星桥变得完整，远处的森林看清了。"
+            },
+            {
+              "label": "拧紧金色螺栓",
+              "feedback": "桥板固定好，可以安全通行。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-18.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "sf-19",
+          "order": 19,
+          "label": "导航塔顶",
+          "subtitle": "读懂星图",
+          "position": {
+            "x": 34,
+            "y": 12
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/docking-ring.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-19.webp",
+          "activityType": "scan",
+          "prompt": "从星图上找到下一颗绿色星标。",
+          "storyText": "导航塔顶的星图展开了，绿色星标正在森林上空闪烁。",
+          "actions": [
+            {
+              "label": "点亮绿色星标",
+              "feedback": "森林地图被放大，入口清楚了。"
+            },
+            {
+              "label": "转动望远镜",
+              "feedback": "望远镜看见了树屋的灯。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-19.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "sf-20",
+          "order": 20,
+          "label": "星港新航线",
+          "subtitle": "向森林出发",
+          "position": {
+            "x": 20,
+            "y": 15
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/home-beacon.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-20.webp",
+          "activityType": "route",
+          "prompt": "确认去森林世界的安全航线。",
+          "storyText": "星港广播响起：森林世界已经准备好迎接远方的朋友。",
+          "actions": [
+            {
+              "label": "确认绿色航线",
+              "feedback": "航线稳定，森林的风吹进了舱门。"
+            },
+            {
+              "label": "和伙伴击掌",
+              "feedback": "大家一起出发，新的故事开始了。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "star_engineer"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/sci-fi/sf-20.webp"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "forest",
+      "title": "森林回声区",
+      "subtitle": "听见树木、溪流和朋友的声音",
+      "tone": "forest",
+      "background": "assets/story/pixel-worlds-v1/maps/forest.webp",
+      "nodes": [
+        {
+          "levelId": "forest-01",
+          "order": 1,
+          "label": "森林入口",
+          "subtitle": "发现脚印",
+          "position": {
+            "x": 14,
+            "y": 62
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/leafy-gate.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-01.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-01.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "forest-02",
+          "order": 2,
+          "label": "萤火溪",
+          "subtitle": "收集露珠",
+          "position": {
+            "x": 29,
+            "y": 40
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/stream-stone.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-02.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-02.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "forest-03",
+          "order": 3,
+          "label": "树屋邮局",
+          "subtitle": "送出信件",
+          "position": {
+            "x": 45,
+            "y": 26
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/acorn-lantern.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-03.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-03.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "forest-04",
+          "order": 4,
+          "label": "蘑菇谷",
+          "subtitle": "照顾小芽",
+          "position": {
+            "x": 58,
+            "y": 52
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/mushroom-circle.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-04.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-04.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "forest-05",
+          "order": 5,
+          "label": "风铃瀑布",
+          "subtitle": "找回风铃",
+          "position": {
+            "x": 74,
+            "y": 35
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/bird-nest.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-05.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-05.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "forest-06",
+          "order": 6,
+          "label": "古树图书馆",
+          "subtitle": "打开故事门",
+          "position": {
+            "x": 88,
+            "y": 61
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/berry-basket.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-06.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-06.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "forest-07",
+          "order": 7,
+          "label": "松果广场",
+          "subtitle": "找到朋友",
+          "position": {
+            "x": 18,
+            "y": 80
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/wooden-bridge.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-07.webp",
+          "activityType": "scan",
+          "prompt": "找出躲在松果旁的小松鼠。",
+          "storyText": "松果广场铺满金色松针，小松鼠把尾巴藏在大松果后面。",
+          "actions": [
+            {
+              "label": "观察松果影子",
+              "feedback": "影子动了一下，小松鼠露出了耳朵。"
+            },
+            {
+              "label": "轻轻敲树干",
+              "feedback": "树叶落下，露出一条小路。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-07.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "forest-08",
+          "order": 8,
+          "label": "雾林小桥",
+          "subtitle": "跨过小桥",
+          "position": {
+            "x": 31,
+            "y": 86
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/rain-puddle.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-08.webp",
+          "activityType": "route",
+          "prompt": "选择不会打扰小鱼的过桥路线。",
+          "storyText": "雾林里的小桥很窄，小鱼在桥下安静地睡觉。",
+          "actions": [
+            {
+              "label": "走木桥中央",
+              "feedback": "小桥轻轻晃动，小鱼没有被吵醒。"
+            },
+            {
+              "label": "踩着圆石过河",
+              "feedback": "圆石排成一条路，大家安全到达对岸。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-08.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "forest-09",
+          "order": 9,
+          "label": "花瓣车站",
+          "subtitle": "乘上花车",
+          "position": {
+            "x": 44,
+            "y": 78
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/tree-hollow.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-09.webp",
+          "activityType": "route",
+          "prompt": "让花瓣车沿着香味轨道前进。",
+          "storyText": "花瓣车站每小时开出一班花车，香味会告诉它方向。",
+          "actions": [
+            {
+              "label": "跟着白花香",
+              "feedback": "花车驶向一片安静草地。"
+            },
+            {
+              "label": "拉响花铃",
+              "feedback": "花车亮灯，轨道显示出来了。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-09.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "forest-10",
+          "order": 10,
+          "label": "树洞诊所",
+          "subtitle": "照顾小鸟",
+          "position": {
+            "x": 56,
+            "y": 88
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/firefly-jar.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-10.webp",
+          "activityType": "care",
+          "prompt": "照顾落下来的小鸟。",
+          "storyText": "树洞诊所里，一只小鸟的翅膀沾了几片叶子。",
+          "actions": [
+            {
+              "label": "用软叶擦干",
+              "feedback": "小鸟舒服地抖了抖翅膀。"
+            },
+            {
+              "label": "递一颗浆果",
+              "feedback": "小鸟吃饱了，精神变好了。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-10.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "forest-11",
+          "order": 11,
+          "label": "风的广场",
+          "subtitle": "听风说话",
+          "position": {
+            "x": 68,
+            "y": 79
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/mossy-stepping-stone.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-11.webp",
+          "activityType": "scan",
+          "prompt": "找出风吹过的那片叶子。",
+          "storyText": "风的广场没有门，只有叶子在空中画出不同的方向。",
+          "actions": [
+            {
+              "label": "追随旋转叶子",
+              "feedback": "叶子落到一块写着‘风’的石头旁。"
+            },
+            {
+              "label": "听树梢声音",
+              "feedback": "风声变成了轻轻的口哨。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-11.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "forest-12",
+          "order": 12,
+          "label": "雨滴工坊",
+          "subtitle": "修好水车",
+          "position": {
+            "x": 80,
+            "y": 90
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/flower-compass.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-12.webp",
+          "activityType": "repair",
+          "prompt": "让雨滴水车重新转动。",
+          "storyText": "雨滴工坊的水车停了，溪水暂时到不了花田。",
+          "actions": [
+            {
+              "label": "装回木齿轮",
+              "feedback": "水车咕噜咕噜转起来。"
+            },
+            {
+              "label": "清理小树枝",
+              "feedback": "水流恢复，花田喝到了水。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-12.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "forest-13",
+          "order": 13,
+          "label": "蘑菇邮路",
+          "subtitle": "送一封信",
+          "position": {
+            "x": 89,
+            "y": 76
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/squirrel-den.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-13.webp",
+          "activityType": "collect",
+          "prompt": "取下蘑菇伞下的绿色信封。",
+          "storyText": "蘑菇邮路连接着森林的每个角落，绿色信封正在等候。",
+          "actions": [
+            {
+              "label": "拿起绿色信封",
+              "feedback": "信封上的‘友’字亮了起来。"
+            },
+            {
+              "label": "摇响邮差铃",
+              "feedback": "邮差小鹿从树后跑了出来。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-13.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "forest-14",
+          "order": 14,
+          "label": "月光草坡",
+          "subtitle": "找月亮花",
+          "position": {
+            "x": 77,
+            "y": 20
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/little-waterfall.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-14.webp",
+          "activityType": "scan",
+          "prompt": "在月光下找到开花的月亮草。",
+          "storyText": "月光草坡上，只有一朵月亮花会在朋友到来时开放。",
+          "actions": [
+            {
+              "label": "看银色花瓣",
+              "feedback": "月亮花打开，露出一颗小光核。"
+            },
+            {
+              "label": "轻声说晚安",
+              "feedback": "花瓣随着声音慢慢亮起来。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-14.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "forest-15",
+          "order": 15,
+          "label": "萤火剧场",
+          "subtitle": "排一场戏",
+          "position": {
+            "x": 62,
+            "y": 18
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/leaf-boat.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-15.webp",
+          "activityType": "build",
+          "prompt": "为萤火剧场搭好树叶舞台。",
+          "storyText": "萤火虫要演一出‘星星回家’的戏，可舞台还没有搭好。",
+          "actions": [
+            {
+              "label": "铺上大树叶",
+              "feedback": "舞台变得平平整整。"
+            },
+            {
+              "label": "挂上萤火灯",
+              "feedback": "观众席亮起来，演出开始了。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-15.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "forest-16",
+          "order": 16,
+          "label": "树冠缆车",
+          "subtitle": "去高处看看",
+          "position": {
+            "x": 47,
+            "y": 18
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/pinecone-workshop.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-16.webp",
+          "activityType": "route",
+          "prompt": "选择通往古树树冠的缆车。",
+          "storyText": "树冠缆车在枝叶间穿梭，最高处能看见三张地图的光。",
+          "actions": [
+            {
+              "label": "拉绿色缆绳",
+              "feedback": "缆车沿着藤蔓慢慢升高。"
+            },
+            {
+              "label": "按下树果按钮",
+              "feedback": "树果按钮弹出一条安全路线。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-16.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "forest-17",
+          "order": 17,
+          "label": "种子仓库",
+          "subtitle": "保存种子",
+          "position": {
+            "x": 33,
+            "y": 21
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/forest-bell.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-17.webp",
+          "activityType": "collect",
+          "prompt": "把会发光的种子放进仓库。",
+          "storyText": "种子仓库保存着春天、夏天和秋天的颜色。",
+          "actions": [
+            {
+              "label": "收好绿色种子",
+              "feedback": "仓库里长出一盏小绿灯。"
+            },
+            {
+              "label": "收好金色种子",
+              "feedback": "金色种子发出温暖的光。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-17.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "forest-18",
+          "order": 18,
+          "label": "守林人小屋",
+          "subtitle": "修补屋顶",
+          "position": {
+            "x": 20,
+            "y": 32
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/rainbow-clearing.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-18.webp",
+          "activityType": "repair",
+          "prompt": "把被风吹走的屋顶木片装回去。",
+          "storyText": "守林人的小屋需要修好，里面藏着森林的旧地图。",
+          "actions": [
+            {
+              "label": "装回棕色木片",
+              "feedback": "屋顶不漏雨了。"
+            },
+            {
+              "label": "绑好藤蔓绳",
+              "feedback": "小屋在风里稳稳地站着。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-18.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "forest-19",
+          "order": 19,
+          "label": "森林望远台",
+          "subtitle": "看见远方",
+          "position": {
+            "x": 29,
+            "y": 14
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/seed-vault.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-19.webp",
+          "activityType": "scan",
+          "prompt": "从树叶缝隙里找到方块世界的光。",
+          "storyText": "森林望远台能看到山外的方块灯，那里也在等待伙伴。",
+          "actions": [
+            {
+              "label": "转向山谷方向",
+              "feedback": "远处亮起一盏方块灯。"
+            },
+            {
+              "label": "擦亮望远镜",
+              "feedback": "方块村的路牌清清楚楚。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-19.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "forest-20",
+          "order": 20,
+          "label": "三界树门",
+          "subtitle": "送出森林光",
+          "position": {
+            "x": 14,
+            "y": 17
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/forest/camp-lantern.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-20.webp",
+          "activityType": "care",
+          "prompt": "把森林收集的绿色光交给三界树门。",
+          "storyText": "三界树门的根须伸向地下城，森林的绿色光要成为新的路标。",
+          "actions": [
+            {
+              "label": "放入绿色光核",
+              "feedback": "树门长出一条通往方块世界的藤桥。"
+            },
+            {
+              "label": "和森林朋友道别",
+              "feedback": "朋友们挥手，祝你在地下城找到星门。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "forest_guide"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/forest/forest-20.webp"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "block",
+      "title": "方块地下城",
+      "subtitle": "在方块世界里寻找最后一枚星门晶石",
+      "tone": "block",
+      "background": "assets/story/pixel-worlds-v1/maps/block.webp",
+      "nodes": [
+        {
+          "levelId": "block-01",
+          "order": 1,
+          "label": "方块村门口",
+          "subtitle": "搭起路牌",
+          "vocabRegionId": "grassland-trail",
+          "requiredAbility": "",
+          "position": {
+            "x": 13,
+            "y": 57
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/village-gate.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-01.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-01.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "block-02",
+          "order": 2,
+          "label": "矿洞火把路",
+          "subtitle": "寻找亮处",
+          "position": {
+            "x": 28,
+            "y": 34
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/wood-plank.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-02.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-02.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "block-03",
+          "order": 3,
+          "label": "地下水渠",
+          "subtitle": "引水回家",
+          "position": {
+            "x": 44,
+            "y": 23
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/stone-arch.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-03.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-03.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "block-04",
+          "order": 4,
+          "label": "红石工坊",
+          "subtitle": "修复机关",
+          "position": {
+            "x": 59,
+            "y": 48
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/glass-window.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-04.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-04.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "block-05",
+          "order": 5,
+          "label": "遗迹图书馆",
+          "subtitle": "找出旧地图",
+          "position": {
+            "x": 75,
+            "y": 32
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/water-channel.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-05.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-05.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "block-06",
+          "order": 6,
+          "label": "地下城星门",
+          "subtitle": "唤醒回家门",
+          "position": {
+            "x": 89,
+            "y": 60
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/amber-lamp.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-06.webp",
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-06.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "block-07",
+          "order": 7,
+          "label": "木门小路",
+          "subtitle": "打开入口",
+          "position": {
+            "x": 18,
+            "y": 78
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/cyan-crystal.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-07.webp",
+          "activityType": "build",
+          "prompt": "把两块木板搭成地下城入口。",
+          "storyText": "木门小路通向地下城的第一层，门牌上写着‘进’。",
+          "actions": [
+            {
+              "label": "放上木板",
+              "feedback": "木门小路连好了。"
+            },
+            {
+              "label": "挂上蓝灯",
+              "feedback": "入口亮起，朋友们可以进来了。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-07.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "block-08",
+          "order": 8,
+          "label": "方块农场",
+          "subtitle": "收好作物",
+          "position": {
+            "x": 31,
+            "y": 86
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/safe-mine-cart.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-08.webp",
+          "activityType": "collect",
+          "prompt": "收集成熟的方块麦穗。",
+          "storyText": "方块农场里的麦穗一格一格长大，村民需要把它们收好。",
+          "actions": [
+            {
+              "label": "收下金色麦穗",
+              "feedback": "麦穗装满了篮子。"
+            },
+            {
+              "label": "给小鸡留一把",
+              "feedback": "小鸡啄着麦粒，农场更热闹了。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-08.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "block-09",
+          "order": 9,
+          "label": "石砖广场",
+          "subtitle": "找到图案",
+          "position": {
+            "x": 45,
+            "y": 79
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/bridge-symbol.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-09.webp",
+          "activityType": "scan",
+          "prompt": "找出石砖上藏着的星星图案。",
+          "storyText": "石砖广场的地面有很多图案，只有星星图案会发出回声。",
+          "actions": [
+            {
+              "label": "观察星星石砖",
+              "feedback": "石砖打开一条秘密通道。"
+            },
+            {
+              "label": "敲一敲圆石",
+              "feedback": "回声告诉你方向在右边。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-09.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "block-10",
+          "order": 10,
+          "label": "水晶矿井",
+          "subtitle": "带回晶石",
+          "position": {
+            "x": 58,
+            "y": 90
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/power-cube.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-10.webp",
+          "activityType": "collect",
+          "prompt": "找到矿井里最亮的一块水晶。",
+          "storyText": "水晶矿井深处藏着一块能照亮星门的晶石。",
+          "actions": [
+            {
+              "label": "取下蓝水晶",
+              "feedback": "水晶照亮了矿井壁画。"
+            },
+            {
+              "label": "抬高矿灯",
+              "feedback": "灯光照见了晶石的影子。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-10.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "block-11",
+          "order": 11,
+          "label": "轨道车站",
+          "subtitle": "选择轨道",
+          "position": {
+            "x": 71,
+            "y": 80
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/garden-plot.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-11.webp",
+          "activityType": "route",
+          "prompt": "让轨道车驶向红石工坊。",
+          "storyText": "轨道车站有三条铁轨，红色标记通往修理机关的地方。",
+          "actions": [
+            {
+              "label": "选择红色轨道",
+              "feedback": "矿车叮叮当当地驶向工坊。"
+            },
+            {
+              "label": "摇响出发铃",
+              "feedback": "站牌翻到下一站，路线出现了。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-11.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "block-12",
+          "order": 12,
+          "label": "村民广场",
+          "subtitle": "帮忙送信",
+          "position": {
+            "x": 84,
+            "y": 88
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/crafting-table.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-12.webp",
+          "activityType": "route",
+          "prompt": "把村民的信送到亮灯的房子。",
+          "storyText": "村民广场的信使迷路了，每封信都在等一个家。",
+          "actions": [
+            {
+              "label": "送到蓝灯房子",
+              "feedback": "房门打开，朋友收到了信。"
+            },
+            {
+              "label": "问问路牌",
+              "feedback": "路牌转向了正确的方向。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-12.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "block-13",
+          "order": 13,
+          "label": "深石瀑布",
+          "subtitle": "穿过水帘",
+          "position": {
+            "x": 92,
+            "y": 72
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/cave-lantern.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-13.webp",
+          "activityType": "scan",
+          "prompt": "找出水帘后面的方块门。",
+          "storyText": "深石瀑布从地下洞顶落下，水帘后藏着一扇旧门。",
+          "actions": [
+            {
+              "label": "观察水帘空隙",
+              "feedback": "门上的星纹被你看见了。"
+            },
+            {
+              "label": "点亮洞壁火把",
+              "feedback": "水帘变透明，门的位置清楚了。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-13.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "block-14",
+          "order": 14,
+          "label": "熔岩安全桥",
+          "subtitle": "搭出通道",
+          "position": {
+            "x": 77,
+            "y": 18
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/block-elevator.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-14.webp",
+          "activityType": "build",
+          "prompt": "在温暖的熔岩旁搭出安全桥。",
+          "storyText": "熔岩河并不可怕，只要把耐热方块搭成一座桥。",
+          "actions": [
+            {
+              "label": "放上黑色方块",
+              "feedback": "方块稳稳地浮在熔岩上。"
+            },
+            {
+              "label": "装上黄色护栏",
+              "feedback": "桥边亮起安全标记。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-14.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "block-15",
+          "order": 15,
+          "label": "地底蘑菇园",
+          "subtitle": "照看发光花",
+          "position": {
+            "x": 62,
+            "y": 16
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/treasure-chest.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-15.webp",
+          "activityType": "care",
+          "prompt": "照看地底蘑菇园里的发光花。",
+          "storyText": "地底蘑菇园没有太阳，但发光花给大家带来柔和的光。",
+          "actions": [
+            {
+              "label": "洒一点清水",
+              "feedback": "发光花张开了花瓣。"
+            },
+            {
+              "label": "清理石块",
+              "feedback": "小花有了更大的生长空间。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-15.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "block-16",
+          "order": 16,
+          "label": "红石钟楼",
+          "subtitle": "修好钟声",
+          "position": {
+            "x": 47,
+            "y": 17
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/tunnel-portal.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-16.webp",
+          "activityType": "repair",
+          "prompt": "修好红石钟楼，让大家知道回家时间。",
+          "storyText": "红石钟楼停在半夜，钟声需要一颗新的能量球。",
+          "actions": [
+            {
+              "label": "接上红石线",
+              "feedback": "钟摆重新摆动起来。"
+            },
+            {
+              "label": "放入能量球",
+              "feedback": "钟声穿过整个地下城。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-16.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "block-17",
+          "order": 17,
+          "label": "旧矿车库",
+          "subtitle": "找回车票",
+          "position": {
+            "x": 33,
+            "y": 20
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/snow-block.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-17.webp",
+          "activityType": "collect",
+          "prompt": "找出通往星门的旧矿车票。",
+          "storyText": "旧矿车库里堆满了车票，只有带星星的那一张能开启远路。",
+          "actions": [
+            {
+              "label": "取下星星车票",
+              "feedback": "车票上的星纹亮了起来。"
+            },
+            {
+              "label": "打开木箱",
+              "feedback": "木箱里藏着一张褪色地图。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-17.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "block-18",
+          "order": 18,
+          "label": "回声石室",
+          "subtitle": "听见伙伴",
+          "position": {
+            "x": 20,
+            "y": 30
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/lava-lamp.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-18.webp",
+          "activityType": "scan",
+          "prompt": "从回声里听出伙伴的方向。",
+          "storyText": "回声石室会把每句话送到很远的地方，伙伴的声音正在回应。",
+          "actions": [
+            {
+              "label": "轻声呼唤朋友",
+              "feedback": "森林伙伴从回声里回应你。"
+            },
+            {
+              "label": "敲响圆石",
+              "feedback": "方块工匠听到了集合信号。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-18.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "block-19",
+          "order": 19,
+          "label": "星门前厅",
+          "subtitle": "放好晶石",
+          "position": {
+            "x": 16,
+            "y": 13
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/builder-badge.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-19.webp",
+          "activityType": "build",
+          "prompt": "把三界收集的光核放进星门凹槽。",
+          "storyText": "星门前厅有三个凹槽，分别等待蓝光、绿光和方块晶石。",
+          "actions": [
+            {
+              "label": "放入蓝色光核",
+              "feedback": "星门左边亮起来了。"
+            },
+            {
+              "label": "放入方块晶石",
+              "feedback": "星门右边出现了一条路。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-19.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "block-20",
+          "order": 20,
+          "label": "地下城新地图",
+          "subtitle": "开启下一季",
+          "position": {
+            "x": 8,
+            "y": 8
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/block/home-beacon.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/block/block-20.webp",
+          "activityType": "route",
+          "prompt": "选择一条通向新地图的彩色航线。",
+          "storyText": "地下城星门打开了新的地图，远处还有海、雪山和更大的森林。",
+          "actions": [
+            {
+              "label": "选择彩色航线",
+              "feedback": "新地图展开，下一季的故事开始闪烁。"
+            },
+            {
+              "label": "和三个世界告别",
+              "feedback": "大家挥手，下一次冒险再见。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "block_builder",
+              "cave_keeper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/block/block-20.webp"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bonusTracks": [
+    {
+      "id": "detective",
+      "title": "像素冒险·侦探小游戏",
+      "subtitle": "每个线索都是一小段剧情",
+      "tone": "detective",
+      "background": "assets/story/pixel-worlds-v1/maps/detective.webp",
+      "nodes": [
+        {
+          "levelId": "detective-01",
+          "order": 1,
+          "label": "失踪的蓝光",
+          "subtitle": "找线索",
+          "position": {
+            "x": 10,
+            "y": 57
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/magnifying-glass.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-01.webp",
+          "activityType": "scan",
+          "prompt": "从三条闪光痕迹里找到蓝光留下的线索。",
+          "storyText": "侦探徽章亮起，第一条线索在月尘里闪了一下。",
+          "actions": [
+            {
+              "label": "查看月尘脚印",
+              "feedback": "脚印指向补给箱。"
+            },
+            {
+              "label": "照亮舱门边",
+              "feedback": "舱门边有一枚蓝色碎片。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-01.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "detective-02",
+          "order": 2,
+          "label": "谁动了星图",
+          "subtitle": "看方向",
+          "position": {
+            "x": 20,
+            "y": 35
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/clue-envelope.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-02.webp",
+          "activityType": "scan",
+          "prompt": "找到星图上刚刚移动过的星点。",
+          "storyText": "星图上有一个星点和其他点不一样，它正在慢慢移动。",
+          "actions": [
+            {
+              "label": "追踪绿色星点",
+              "feedback": "星点停在云桥入口。"
+            },
+            {
+              "label": "放大回家星",
+              "feedback": "回家星旁边出现了新箭头。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-02.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "detective-03",
+          "order": 3,
+          "label": "云桥脚印",
+          "subtitle": "追踪足迹",
+          "position": {
+            "x": 30,
+            "y": 22
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/blue-footprint.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-03.webp",
+          "activityType": "scan",
+          "prompt": "在云桥上找到没有被风吹散的脚印。",
+          "storyText": "云桥上的脚印很轻，只有带着星尘的那一串还留着。",
+          "actions": [
+            {
+              "label": "看星尘脚印",
+              "feedback": "脚印通向一座小云屋。"
+            },
+            {
+              "label": "吹散云雾",
+              "feedback": "云雾散开，露出一枚纽扣。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-03.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "detective-04",
+          "order": 4,
+          "label": "维修区密码",
+          "subtitle": "找符号",
+          "position": {
+            "x": 42,
+            "y": 31
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/star-fragment.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-04.webp",
+          "activityType": "collect",
+          "prompt": "收集维修区里三个相同的星形符号。",
+          "storyText": "维修区的门锁不说话，只收集同样的星形符号。",
+          "actions": [
+            {
+              "label": "取下星形贴片",
+              "feedback": "门锁响了一声。"
+            },
+            {
+              "label": "打开工具盒",
+              "feedback": "工具盒里藏着第二枚符号。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-04.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "detective-05",
+          "order": 5,
+          "label": "谁在温室里",
+          "subtitle": "听声音",
+          "position": {
+            "x": 54,
+            "y": 46
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/evidence-tray.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-05.webp",
+          "activityType": "scan",
+          "prompt": "找出发出沙沙声的星芽。",
+          "storyText": "漂浮温室里一阵沙沙响，侦探要找出声音的来源。",
+          "actions": [
+            {
+              "label": "观察摇动的叶子",
+              "feedback": "小星芽在叶子后面挥手。"
+            },
+            {
+              "label": "打开柔光灯",
+              "feedback": "光照出一串小小脚印。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-05.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "detective-06",
+          "order": 6,
+          "label": "消失的桥片",
+          "subtitle": "拼回桥",
+          "position": {
+            "x": 66,
+            "y": 35
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/safe-lock.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-06.webp",
+          "activityType": "build",
+          "prompt": "把失踪的桥片放回双星桥。",
+          "storyText": "桥片没有走远，它被一阵风带到了桥下。",
+          "actions": [
+            {
+              "label": "拿起弯月桥片",
+              "feedback": "桥片自动飞回缺口。"
+            },
+            {
+              "label": "拉起安全绳",
+              "feedback": "桥下的桥片被拉了上来。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-06.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "detective-07",
+          "order": 7,
+          "label": "森林的蓝羽毛",
+          "subtitle": "辨认物品",
+          "position": {
+            "x": 77,
+            "y": 53
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/red-thread-knot.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-07.webp",
+          "activityType": "collect",
+          "prompt": "找到森林里带着星光的蓝羽毛。",
+          "storyText": "蓝羽毛从森林飞来，可能是某位朋友留下的记号。",
+          "actions": [
+            {
+              "label": "拾起蓝羽毛",
+              "feedback": "羽毛指向树屋邮局。"
+            },
+            {
+              "label": "问问小鸟",
+              "feedback": "小鸟说羽毛来自瀑布边。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-07.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "detective-08",
+          "order": 8,
+          "label": "树屋暗号",
+          "subtitle": "读符号",
+          "position": {
+            "x": 88,
+            "y": 40
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/tiny-camera.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-08.webp",
+          "activityType": "scan",
+          "prompt": "找出树屋门上重复出现的叶子符号。",
+          "storyText": "树屋门上有许多叶子图案，重复的图案就是暗号。",
+          "actions": [
+            {
+              "label": "点亮重复叶子",
+              "feedback": "树屋门打开了一点。"
+            },
+            {
+              "label": "数一数叶子",
+              "feedback": "叶子排成了一个箭头。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-08.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "detective-09",
+          "order": 9,
+          "label": "溪边的空瓶",
+          "subtitle": "还原现场",
+          "position": {
+            "x": 82,
+            "y": 68
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/constellation-card.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-09.webp",
+          "activityType": "collect",
+          "prompt": "在溪边找到和空瓶配对的露珠。",
+          "storyText": "小瓶子还在，里面的露珠却不见了。溪边留下了一点亮光。",
+          "actions": [
+            {
+              "label": "接住叶尖露珠",
+              "feedback": "空瓶重新亮了起来。"
+            },
+            {
+              "label": "跟随水波纹",
+              "feedback": "水波带你找到隐藏的小池。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-09.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "detective-10",
+          "order": 10,
+          "label": "蘑菇谷的影子",
+          "subtitle": "观察变化",
+          "position": {
+            "x": 69,
+            "y": 81
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/glowing-fingerprint.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-10.webp",
+          "activityType": "scan",
+          "prompt": "找到比蘑菇高一点的神秘影子。",
+          "storyText": "蘑菇谷里多了一个影子，它会随着发光花一起移动。",
+          "actions": [
+            {
+              "label": "照亮大蘑菇",
+              "feedback": "原来是小鹿在蘑菇后面。"
+            },
+            {
+              "label": "观察影子方向",
+              "feedback": "影子指向一块星光石。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-10.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "detective-11",
+          "order": 11,
+          "label": "方块村的空箱",
+          "subtitle": "寻找缺口",
+          "position": {
+            "x": 57,
+            "y": 70
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/clue-lantern.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-11.webp",
+          "activityType": "scan",
+          "prompt": "找出方块村补给箱上缺少的方块。",
+          "storyText": "方块村的补给箱少了一块，箱盖因此无法合上。",
+          "actions": [
+            {
+              "label": "找棕色方块",
+              "feedback": "箱盖扣上了，里面的地图安全了。"
+            },
+            {
+              "label": "看看箱子底部",
+              "feedback": "底部压着一块带星纹的方块。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-11.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "detective-12",
+          "order": 12,
+          "label": "矿洞里的回声",
+          "subtitle": "辨认声音",
+          "position": {
+            "x": 45,
+            "y": 58
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/keyhole.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-12.webp",
+          "activityType": "scan",
+          "prompt": "找出会发出三次回声的石壁。",
+          "storyText": "矿洞里有许多石壁，只有一面会把声音传回三次。",
+          "actions": [
+            {
+              "label": "敲蓝色石壁",
+              "feedback": "回声回答：地下城。"
+            },
+            {
+              "label": "点亮火把",
+              "feedback": "火把照出石壁上的箭头。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-12.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "detective-13",
+          "order": 13,
+          "label": "红石断点",
+          "subtitle": "连接线索",
+          "position": {
+            "x": 34,
+            "y": 72
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/map-pin.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-13.webp",
+          "activityType": "repair",
+          "prompt": "把两段发光红石线接起来。",
+          "storyText": "红石线断在一块会发热的方块旁，线索就在断点附近。",
+          "actions": [
+            {
+              "label": "接上红石线",
+              "feedback": "红光沿着线跑向星门。"
+            },
+            {
+              "label": "转动红石开关",
+              "feedback": "开关弹出一张旧地图。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-13.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "detective-14",
+          "order": 14,
+          "label": "地下城旧地图",
+          "subtitle": "找隐藏路",
+          "position": {
+            "x": 24,
+            "y": 84
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/three-color-badge.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-14.webp",
+          "activityType": "scan",
+          "prompt": "从旧地图上找出被星星遮住的路。",
+          "storyText": "旧地图看起来空空的，星星排成一条很细的路。",
+          "actions": [
+            {
+              "label": "点亮星星路线",
+              "feedback": "隐藏的地下通道出现了。"
+            },
+            {
+              "label": "翻到地图背面",
+              "feedback": "背面写着‘向光走’。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-14.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "detective-15",
+          "order": 15,
+          "label": "三界徽章",
+          "subtitle": "配对朋友",
+          "position": {
+            "x": 14,
+            "y": 75
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/robot-witness.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-15.webp",
+          "activityType": "collect",
+          "prompt": "把科幻、森林、方块三枚徽章放在一起。",
+          "storyText": "三个世界的徽章各不相同，但放在一起会形成一扇门。",
+          "actions": [
+            {
+              "label": "放入蓝色徽章",
+              "feedback": "科幻星光加入了徽章。"
+            },
+            {
+              "label": "放入绿色徽章",
+              "feedback": "森林叶片加入了徽章。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-15.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "detective-16",
+          "order": 16,
+          "label": "回家铃声",
+          "subtitle": "记住声音",
+          "position": {
+            "x": 26,
+            "y": 51
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/leaf-clue.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-16.webp",
+          "activityType": "route",
+          "prompt": "把回家铃声送到三个世界。",
+          "storyText": "回家铃声只有在三张地图都听见时，星门才会醒来。",
+          "actions": [
+            {
+              "label": "按下蓝色铃",
+              "feedback": "星港听见了铃声。"
+            },
+            {
+              "label": "敲一下木铃",
+              "feedback": "森林和方块村同时回应。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-16.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "detective-17",
+          "order": 17,
+          "label": "最后一枚光核",
+          "subtitle": "耐心寻找",
+          "position": {
+            "x": 39,
+            "y": 40
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/block-clue.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-17.webp",
+          "activityType": "collect",
+          "prompt": "从维修区找到被灰尘盖住的最后光核。",
+          "storyText": "最后光核没有消失，它只是安静地躺在一层星尘下面。",
+          "actions": [
+            {
+              "label": "吹开金色星尘",
+              "feedback": "光核露出柔和的蓝光。"
+            },
+            {
+              "label": "用小刷子清理",
+              "feedback": "光核滚到你的手心。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-17.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "detective-18",
+          "order": 18,
+          "label": "门后的朋友",
+          "subtitle": "发出邀请",
+          "position": {
+            "x": 52,
+            "y": 25
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/signal-pulse.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-18.webp",
+          "activityType": "care",
+          "prompt": "向门后的朋友发出一声温暖的问候。",
+          "storyText": "门后传来轻轻的脚步声，朋友正在等待有人敲门。",
+          "actions": [
+            {
+              "label": "说你好朋友",
+              "feedback": "门后传来开心的回应。"
+            },
+            {
+              "label": "递出伙伴徽章",
+              "feedback": "徽章亮起，门锁愿意打开。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-18.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "detective-19",
+          "order": 19,
+          "label": "三界线索墙",
+          "subtitle": "整理故事",
+          "position": {
+            "x": 66,
+            "y": 18
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/evidence-box.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-19.webp",
+          "activityType": "build",
+          "prompt": "把光核、叶子和方块线索贴到故事墙。",
+          "storyText": "线索墙上有三条路，所有线索终于连成了完整故事。",
+          "actions": [
+            {
+              "label": "贴上蓝色光核",
+              "feedback": "星港线索亮起来了。"
+            },
+            {
+              "label": "贴上绿色叶子",
+              "feedback": "森林线索指向星门。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-19.webp"
+            ]
+          }
+        },
+        {
+          "levelId": "detective-20",
+          "order": 20,
+          "label": "侦探的回家信",
+          "subtitle": "写下结尾",
+          "position": {
+            "x": 82,
+            "y": 31
+          },
+          "icon": "assets/story/pixel-worlds-v1/icons/detective/mystery-beacon.webp",
+          "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-20.webp",
+          "activityType": "care",
+          "prompt": "给三个世界写下一句回家问候。",
+          "storyText": "侦探徽章完成了最后一个任务：把这段旅程写成一封信。",
+          "actions": [
+            {
+              "label": "写下谢谢朋友",
+              "feedback": "三张地图一起亮起，故事留下了温暖的结尾。"
+            },
+            {
+              "label": "画一颗星星",
+              "feedback": "星星飞进信里，邀请大家下次再见。"
+            }
+          ],
+          "sceneAssets": {
+            "characters": [
+              "hero",
+              "pet",
+              "detective_helper"
+            ],
+            "props": [
+              "assets/story/pixel-worlds-v1/props/detective/detective-20.webp"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "assetPlan": {
+    "version": "20260714-scenes-v1",
+    "scenePolicy": "one-independent-background-per-node",
+    "sceneCount": 80,
+    "index": [
+      {
+        "levelId": "sf-01",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-01.webp"
+      },
+      {
+        "levelId": "sf-02",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-02.webp"
+      },
+      {
+        "levelId": "sf-03",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-03.webp"
+      },
+      {
+        "levelId": "sf-04",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-04.webp"
+      },
+      {
+        "levelId": "sf-05",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-05.webp"
+      },
+      {
+        "levelId": "sf-06",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-06.webp"
+      },
+      {
+        "levelId": "sf-07",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-07.webp"
+      },
+      {
+        "levelId": "sf-08",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-08.webp"
+      },
+      {
+        "levelId": "sf-09",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-09.webp"
+      },
+      {
+        "levelId": "sf-10",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-10.webp"
+      },
+      {
+        "levelId": "sf-11",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-11.webp"
+      },
+      {
+        "levelId": "sf-12",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-12.webp"
+      },
+      {
+        "levelId": "sf-13",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-13.webp"
+      },
+      {
+        "levelId": "sf-14",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-14.webp"
+      },
+      {
+        "levelId": "sf-15",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-15.webp"
+      },
+      {
+        "levelId": "sf-16",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-16.webp"
+      },
+      {
+        "levelId": "sf-17",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-17.webp"
+      },
+      {
+        "levelId": "sf-18",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-18.webp"
+      },
+      {
+        "levelId": "sf-19",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-19.webp"
+      },
+      {
+        "levelId": "sf-20",
+        "trackId": "sci-fi",
+        "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-20.webp"
+      },
+      {
+        "levelId": "forest-01",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-01.webp"
+      },
+      {
+        "levelId": "forest-02",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-02.webp"
+      },
+      {
+        "levelId": "forest-03",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-03.webp"
+      },
+      {
+        "levelId": "forest-04",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-04.webp"
+      },
+      {
+        "levelId": "forest-05",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-05.webp"
+      },
+      {
+        "levelId": "forest-06",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-06.webp"
+      },
+      {
+        "levelId": "forest-07",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-07.webp"
+      },
+      {
+        "levelId": "forest-08",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-08.webp"
+      },
+      {
+        "levelId": "forest-09",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-09.webp"
+      },
+      {
+        "levelId": "forest-10",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-10.webp"
+      },
+      {
+        "levelId": "forest-11",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-11.webp"
+      },
+      {
+        "levelId": "forest-12",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-12.webp"
+      },
+      {
+        "levelId": "forest-13",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-13.webp"
+      },
+      {
+        "levelId": "forest-14",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-14.webp"
+      },
+      {
+        "levelId": "forest-15",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-15.webp"
+      },
+      {
+        "levelId": "forest-16",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-16.webp"
+      },
+      {
+        "levelId": "forest-17",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-17.webp"
+      },
+      {
+        "levelId": "forest-18",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-18.webp"
+      },
+      {
+        "levelId": "forest-19",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-19.webp"
+      },
+      {
+        "levelId": "forest-20",
+        "trackId": "forest",
+        "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-20.webp"
+      },
+      {
+        "levelId": "block-01",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-01.webp"
+      },
+      {
+        "levelId": "block-02",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-02.webp"
+      },
+      {
+        "levelId": "block-03",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-03.webp"
+      },
+      {
+        "levelId": "block-04",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-04.webp"
+      },
+      {
+        "levelId": "block-05",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-05.webp"
+      },
+      {
+        "levelId": "block-06",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-06.webp"
+      },
+      {
+        "levelId": "block-07",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-07.webp"
+      },
+      {
+        "levelId": "block-08",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-08.webp"
+      },
+      {
+        "levelId": "block-09",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-09.webp"
+      },
+      {
+        "levelId": "block-10",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-10.webp"
+      },
+      {
+        "levelId": "block-11",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-11.webp"
+      },
+      {
+        "levelId": "block-12",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-12.webp"
+      },
+      {
+        "levelId": "block-13",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-13.webp"
+      },
+      {
+        "levelId": "block-14",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-14.webp"
+      },
+      {
+        "levelId": "block-15",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-15.webp"
+      },
+      {
+        "levelId": "block-16",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-16.webp"
+      },
+      {
+        "levelId": "block-17",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-17.webp"
+      },
+      {
+        "levelId": "block-18",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-18.webp"
+      },
+      {
+        "levelId": "block-19",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-19.webp"
+      },
+      {
+        "levelId": "block-20",
+        "trackId": "block",
+        "background": "assets/story/pixel-worlds-v1/scenes/block/block-20.webp"
+      },
+      {
+        "levelId": "detective-01",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-01.webp"
+      },
+      {
+        "levelId": "detective-02",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-02.webp"
+      },
+      {
+        "levelId": "detective-03",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-03.webp"
+      },
+      {
+        "levelId": "detective-04",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-04.webp"
+      },
+      {
+        "levelId": "detective-05",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-05.webp"
+      },
+      {
+        "levelId": "detective-06",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-06.webp"
+      },
+      {
+        "levelId": "detective-07",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-07.webp"
+      },
+      {
+        "levelId": "detective-08",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-08.webp"
+      },
+      {
+        "levelId": "detective-09",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-09.webp"
+      },
+      {
+        "levelId": "detective-10",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-10.webp"
+      },
+      {
+        "levelId": "detective-11",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-11.webp"
+      },
+      {
+        "levelId": "detective-12",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-12.webp"
+      },
+      {
+        "levelId": "detective-13",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-13.webp"
+      },
+      {
+        "levelId": "detective-14",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-14.webp"
+      },
+      {
+        "levelId": "detective-15",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-15.webp"
+      },
+      {
+        "levelId": "detective-16",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-16.webp"
+      },
+      {
+        "levelId": "detective-17",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-17.webp"
+      },
+      {
+        "levelId": "detective-18",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-18.webp"
+      },
+      {
+        "levelId": "detective-19",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-19.webp"
+      },
+      {
+        "levelId": "detective-20",
+        "trackId": "detective",
+        "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-20.webp"
+      }
+    ]
+  }
+}

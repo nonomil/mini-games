@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "pixel-worlds-story-audio-block-05",
+  "chapterId": "block-05",
+  "audioFormat": "wav",
+  "audioSubtype": "source",
+  "scenes": [
+    {
+      "sceneId": "ruins",
+      "lines": [
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-05/lines/ruins-00.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-05/lines/ruins-01.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-05/lines/ruins-02.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-05/lines/ruins-03.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-05/lines/ruins-04.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-05/lines/ruins-05.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-05/lines/ruins-06.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-05/lines/ruins-07.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-05/lines/ruins-08.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-05/lines/ruins-09.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/block-05/lines/ruins-10.wav"
+        }
+      ]
+    }
+  ]
+}

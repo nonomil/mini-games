@@ -1,0 +1,105 @@
+{
+  "levelId": "forest-09",
+  "chapterId": "forest-09",
+  "worldId": "forest",
+  "title": "花瓣车站",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "forest-09-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-09.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "forest_guide"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/forest/forest-09.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "花瓣车站正在发生变化。现在是“收集线索”的一步：我们要找到花瓣车，再把线索送向树洞诊所。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“花瓣车站”。我们的任务是“让花瓣车沿着香味轨道前进”，先看清花瓣车，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "树叶、溪水和萤火虫的声音告诉我，花瓣车就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在花瓣车站，收集线索不能只靠着急。我们要用温柔的动作帮助森林朋友，先处理花瓣车，也要照顾身边的朋友。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "route",
+          "prompt": "让花瓣车沿着香味轨道前进，让花瓣车的线索显现出来。",
+          "character": "forest_guide",
+          "position": "right",
+          "actions": [
+            {
+              "label": "跟着白花香",
+              "feedback": "跟着白花香后，花瓣车出现了；树洞诊所的方向更清楚了。"
+            },
+            {
+              "label": "拉响花铃",
+              "feedback": "拉响花铃让另一个细节亮起来：香标记指向树洞诊所。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "花瓣车被找到后，树洞诊所的方向亮了起来。用温柔的动作帮助森林朋友，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“香”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见树洞诊所传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "花瓣车让大家知道，树洞诊所不是远处的名字，而是一条可以走到的路。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：花瓣车不是终点，它会把故事带到树洞诊所。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，树洞诊所的入口已经亮起。我们带着“香”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/forest/tree-hollow.webp"
+}

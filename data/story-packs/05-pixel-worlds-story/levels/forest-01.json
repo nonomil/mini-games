@@ -1,0 +1,105 @@
+{
+  "levelId": "forest-01",
+  "chapterId": "forest-01",
+  "worldId": "forest",
+  "title": "森林入口：发现脚印",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "gate",
+      "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-01.webp",
+      "lines": [
+        {
+          "type": "narration",
+          "text": "星门把小小探险家送到森林入口。星港的蓝色呼唤已经到了，可森林里没有传来回答，只有一串圆圆的脚印通向深处。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“森林入口：发现脚印”。森林的回应系统好像停住了，我们要找出通往深处的圆脚印，看看谁还在传递消息。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "树叶在动，溪水却没有回应。圆脚印旁还有一点蓝色星尘，像是星港的呼唤落在了这里。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "林间向导说：森林没有忘记朋友，只是回应的路断了。先跟着脚印走，别惊扰藏起来的传信朋友。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "scan",
+          "prompt": "找出通往森林深处的脚印，让森林没有回应的原因显现出来。",
+          "character": "forest_guide",
+          "position": "right",
+          "actions": [
+            {
+              "label": "观察圆脚印",
+              "feedback": "观察圆脚印后，脚印旁的蓝色星尘显现出来；它通向萤火溪。"
+            },
+            {
+              "label": "看看树叶路牌",
+              "feedback": "看看树叶路牌后，枯掉的传信藤亮了起来；萤火溪是下一处回应点。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "圆脚印把我们带到一根没有水光的传信藤。它的根扎在萤火溪边，也许溪水能让回应重新流动。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“森”不只是树木，也是会传递消息的朋友。我们把蓝色星尘和“森”记在地图上。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我还没有听见回答，但萤火溪的水光在远处闪了一下。森林好像愿意再试一次。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "林间向导把脚印和断掉的传信藤画在一起：下一步要去萤火溪找水光。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：找到脚印只是开始，回应要沿着水路重新传开。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "萤火溪的入口亮起。我们带着“森”和星港的呼唤，去找让森林重新回应的水光。",
+          "character": "forest_guide",
+          "position": "right"
+        }
+      ],
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "forest_guide"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/forest/forest-01.webp"
+        ]
+      }
+    }
+  ],
+  "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-01.webp",
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/forest/leafy-gate.webp"
+}

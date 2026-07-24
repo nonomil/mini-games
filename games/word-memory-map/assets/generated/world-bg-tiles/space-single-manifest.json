@@ -1,0 +1,19 @@
+{
+  "id": "space-9grid-world-single",
+  "theme": "space",
+  "mode": "single",
+  "image": "./assets/generated/world-bg-single/space-panorama.png",
+  "labels": [
+    "观察教室",
+    "穹顶观测厅",
+    "停靠侧廊",
+    "货运侧厅",
+    "主枢纽",
+    "维护回廊",
+    "生态温室角",
+    "下层观景台",
+    "发射准备区"
+  ],
+  "rows": 3,
+  "cols": 3
+}

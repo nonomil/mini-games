@@ -1,0 +1,105 @@
+{
+  "levelId": "sf-16",
+  "chapterId": "sf-16",
+  "worldId": "sci-fi",
+  "title": "星云滑梯",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "sf-16-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-16.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "star_engineer"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/sci-fi/sf-16.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "星云滑梯正在发生变化。现在是“打开新路”的一步：我们要找到安全滑道，再把线索送向记忆舱。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“星云滑梯”。我们的任务是“让小飞船从星云滑梯安全滑下”，先看清安全滑道，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "蓝色舱灯和轻轻的电流声告诉我，安全滑道就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在星云滑梯，打开新路不能只靠着急。我们要把光线接回星图，先处理安全滑道，也要照顾身边的朋友。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "route",
+          "prompt": "让小飞船从星云滑梯安全滑下，让安全滑道的线索显现出来。",
+          "character": "star_engineer",
+          "position": "right",
+          "actions": [
+            {
+              "label": "沿蓝色轨道滑行",
+              "feedback": "沿蓝色轨道滑行后，安全滑道出现了；记忆舱的方向更清楚了。"
+            },
+            {
+              "label": "抓住发光扶手",
+              "feedback": "抓住发光扶手让另一个细节亮起来：安标记指向记忆舱。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "安全滑道被找到后，记忆舱的方向亮了起来。把光线接回星图，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“安”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见记忆舱传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "安全滑道让大家知道，记忆舱不是远处的名字，而是一条可以走到的路。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：安全滑道不是终点，它会把故事带到记忆舱。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，记忆舱的入口已经亮起。我们带着“安”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/floating-greenhouse.webp"
+}

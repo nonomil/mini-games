@@ -1,0 +1,19 @@
+{
+  "id": "sky-9grid-world-single",
+  "theme": "sky",
+  "mode": "single",
+  "image": "./assets/generated/world-bg-single/farm-panorama.png",
+  "labels": [
+    "云门平台",
+    "风翼航道",
+    "晨曦气站",
+    "浮桥云港",
+    "彩风中庭",
+    "白羽弯桥",
+    "晚霞边界",
+    "星羽草坡",
+    "飞虹回旋"
+  ],
+  "rows": 3,
+  "cols": 3
+}

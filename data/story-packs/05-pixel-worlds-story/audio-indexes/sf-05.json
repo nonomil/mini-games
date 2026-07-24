@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "pixel-worlds-story-audio-sf-05",
+  "chapterId": "sf-05",
+  "audioFormat": "wav",
+  "audioSubtype": "source",
+  "scenes": [
+    {
+      "sceneId": "garden",
+      "lines": [
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-05/lines/garden-00.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-05/lines/garden-01.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-05/lines/garden-02.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-05/lines/garden-03.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-05/lines/garden-04.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-05/lines/garden-05.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-05/lines/garden-06.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-05/lines/garden-07.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-05/lines/garden-08.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-05/lines/garden-09.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-05/lines/garden-10.wav"
+        }
+      ]
+    }
+  ]
+}

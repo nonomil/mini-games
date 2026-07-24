@@ -1,0 +1,9 @@
+Create a bright child-friendly voxel block-world illustration for the completion and reward screen of a Minecraft vocabulary learning session.
+
+Scene: a celebratory grassy hill with a small treasure chest open, safe glowing word-star collectibles rising into the sky, confetti-like square particles, and a warm sunrise.
+
+Composition: wide landscape, centered celebration focal point with enough clean surrounding space for HTML completion text and reward buttons.
+
+Style: polished 3D voxel game art, joyful but not chaotic, green field, sky blue, golden stars, soft light, friendly educational reward mood.
+
+Hard constraints: no readable text, no letters, no numbers, no UI buttons, no logo, no watermark, no brand mark, no scary subjects, no purple dark fantasy lighting.

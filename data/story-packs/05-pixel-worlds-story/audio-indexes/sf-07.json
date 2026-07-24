@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "pixel-worlds-story-audio-sf-07",
+  "chapterId": "sf-07",
+  "audioFormat": "wav",
+  "audioSubtype": "source",
+  "scenes": [
+    {
+      "sceneId": "bridge",
+      "lines": [
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-07/lines/bridge-00.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-07/lines/bridge-01.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-07/lines/bridge-02.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-07/lines/bridge-03.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-07/lines/bridge-04.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-07/lines/bridge-05.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-07/lines/bridge-06.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-07/lines/bridge-07.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-07/lines/bridge-08.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-07/lines/bridge-09.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-07/lines/bridge-10.wav"
+        }
+      ]
+    }
+  ]
+}

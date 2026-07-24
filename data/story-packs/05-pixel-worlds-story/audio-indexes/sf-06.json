@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "pixel-worlds-story-audio-sf-06",
+  "chapterId": "sf-06",
+  "audioFormat": "wav",
+  "audioSubtype": "source",
+  "scenes": [
+    {
+      "sceneId": "elevator",
+      "lines": [
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-06/lines/elevator-00.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-06/lines/elevator-01.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-06/lines/elevator-02.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-06/lines/elevator-03.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-06/lines/elevator-04.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-06/lines/elevator-05.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-06/lines/elevator-06.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-06/lines/elevator-07.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-06/lines/elevator-08.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-06/lines/elevator-09.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/sf-06/lines/elevator-10.wav"
+        }
+      ]
+    }
+  ]
+}

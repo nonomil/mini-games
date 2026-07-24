@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>森林冒险地图 · 小游戏项目</title>
+  <link rel="stylesheet" href="../../vendor/css/playground.css">
+  <link rel="stylesheet" href="../../vendor/css/style.css">
+  <style>
+    body{margin:0;background:#f4f7f2;font-family:Microsoft YaHei,sans-serif;color:#20354b}
+    .shell-bar{display:flex;gap:12px;align-items:center;padding:12px 16px;background:#fff;border-bottom:1px solid #dbe4eb}
+    .shell-bar a{color:#237f7c;text-decoration:none;font-weight:700}
+    .forest-map-page{padding:20px}
+    .forest-map-page-header{display:flex;justify-content:space-between;gap:16px;align-items:end;margin-bottom:18px}
+    .forest-map-page-kicker{margin:0 0 6px;color:#6e7d8d;font-size:12px;font-weight:700;letter-spacing:1px}
+    .map-board-shell{background:#fff;border:1px solid #dbe4eb;border-radius:24px;padding:16px;box-shadow:0 18px 42px rgba(44,70,90,.08)}
+    .map-board{position:relative;min-height:640px}
+  </style>
+</head>
+<body>
+  <div class="shell-bar"><a href="../../index.html#games">← 返回游戏库</a><strong>森林冒险</strong><span>完整 12 场景螺旋地图</span></div>
+  <section class="forest-map-page" aria-labelledby="forestMapPageTitle">
+    <header class="forest-map-page-header">
+      <div>
+        <p class="forest-map-page-kicker">经典探索路线 · 非像素地图</p>
+        <h1 id="forestMapPageTitle">森林冒险</h1>
+        <p>完整 12 个自然场景路线。进度保存在本项目本地。</p>
+      </div>
+    </header>
+    <div class="map-board-shell forest-map-page-shell">
+      <div class="map-board-surface">
+        <div class="map-board" id="forestMapSceneGrid" aria-label="经典森林冒险场景路线"></div>
+      </div>
+    </div>
+  </section>
+  <div id="explorationStageRoot" hidden></div>
+  <script src="../../host/petbank-host-shim.js"></script>
+  <script src="../../bridge.js"></script>
+  <script src="../../vendor/js/battle-engine.js"></script>
+  <script src="../../vendor/js/battle-fx.js"></script>
+  <script src="../../vendor/js/exploration-copy.js"></script>
+  <script src="../../vendor/js/exploration-progress.js"></script>
+  <script src="../../vendor/js/exploration-detail.js"></script>
+  <script src="../../vendor/js/exploration.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async function () {
+      try {
+        if (window.ExplorationSystem && typeof ExplorationSystem.loadScenes === 'function') {
+          await ExplorationSystem.loadScenes();
+        }
+        if (window.ExplorationSystem && typeof ExplorationSystem.renderSceneGridMap === 'function') {
+          ExplorationSystem.renderSceneGridMap('forestMapSceneGrid');
+        } else if (window.ExplorationSystem && typeof ExplorationSystem.renderExplorePage === 'function') {
+          ExplorationSystem.renderExplorePage();
+        } else {
+          document.getElementById('forestMapSceneGrid').innerHTML = '<p style="padding:24px">森林地图模块未就绪</p>';
+        }
+      } catch (error) {
+        console.warn('[forest-map] boot failed', error);
+        document.getElementById('forestMapSceneGrid').innerHTML = '<p style="padding:24px">森林地图加载失败：' + (error && error.message ? error.message : error) + '</p>';
+      }
+    });
+  </script>
+</body>
+</html>

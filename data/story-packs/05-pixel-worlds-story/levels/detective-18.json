@@ -1,0 +1,105 @@
+{
+  "levelId": "detective-18",
+  "chapterId": "detective-18",
+  "worldId": "detective",
+  "title": "门后的朋友",
+  "rewards": {
+    "growthPoints": 3
+  },
+  "scenes": [
+    {
+      "sceneId": "detective-18-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-18.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "detective_helper"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/detective/detective-18.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "案件记录来到第18站：“门后的朋友”出现了新的变化。我们要找到门后朋友，看看它和三界线索墙有什么关系。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“门后的朋友”。我们的任务是“向门后的朋友发出一声温暖的问候”，先看清门后朋友，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "放大镜下闪动的线索光告诉我，门后朋友就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在“门后的朋友”案件里，打开新路不能只靠着急。我们要把可靠的证据放回案件记录，先处理门后朋友，也要照顾身边的朋友。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "care",
+          "prompt": "向门后的朋友发出一声温暖的问候，让门后朋友的线索显现出来。",
+          "character": "detective_helper",
+          "position": "right",
+          "actions": [
+            {
+              "label": "说你好朋友",
+              "feedback": "说你好朋友后，门后朋友出现了；三界线索墙的方向更清楚了。"
+            },
+            {
+              "label": "递出伙伴徽章",
+              "feedback": "递出伙伴徽章让另一个细节亮起来：友标记指向三界线索墙。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "线索被记录下来：门后朋友和三界线索墙之间出现了联系。案件向前推进了一步。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "我把“友”记在案件本上，这条证据不能漏掉。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我发现这不是一条孤单的线索，它正指向三界线索墙。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "先保留可靠的细节，下一站还会用到“门后朋友”的证据。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：门后朋友不是终点，它会把故事带到三界线索墙。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我们把这条线索交给三界线索墙，下一份答案就在路上。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/detective/signal-pulse.webp"
+}

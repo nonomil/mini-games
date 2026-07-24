@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>学习机玩法原型 · 三个小游戏</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f8f69'/%3E%3Cpath d='M18 38h28v8H18zM22 18h20v16H22z' fill='%23fff4b9'/%3E%3Cpath d='M25 23h14M25 29h9' stroke='%23172033' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css?v=learning-arcade-fullscreen-20260711n">
+</head>
+<body>
+  <main class="arcade" data-prototype="learning-arcade-game">
+    <section class="game-home" id="gameHome" aria-label="小游戏首页">
+      <header class="home-hero">
+        <div>
+          <span class="home-kicker">键盘小游戏</span>
+          <h1>今天玩哪一个？</h1>
+          <p>敲字母、打拼音、按方向键，三种小游戏随便选。</p>
+        </div>
+        <button class="sound-toggle" type="button" id="soundToggle" aria-label="关闭游戏音效" aria-pressed="true" title="关闭游戏音效">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M11 5 6 9H3v6h3l5 4V5z"></path>
+            <path d="M16 9a5 5 0 0 1 0 6"></path>
+            <path d="M19 6a9 9 0 0 1 0 12"></path>
+          </svg>
+        </button>
+      </header>
+
+      <section class="game-card-grid learn-portal-grid" id="gameCards" aria-label="三个学习游戏">
+        <button class="game-card learn-portal-card learn-portal-card-english" type="button" data-game="word-shooter">
+          <img src="./assets/generated/home-card-word-shooter.webp" alt="" loading="lazy">
+          <span>英文单词</span>
+          <strong>飞机大战</strong>
+          <p>看敌机上的英文单词，按字母发射光束。</p>
+          <em>先熟悉字母键</em>
+        </button>
+        <button class="game-card learn-portal-card learn-portal-card-cannon" type="button" data-game="word-cannon">
+          <img src="./assets/generated/home-card-word-cannon.webp" alt="" loading="lazy">
+          <span>汉字拼音</span>
+          <strong>拼音赛车</strong>
+          <p>看汉字，上下左右开车，接住正确拼音卡。</p>
+          <em>第一次玩先选认汉字</em>
+        </button>
+        <button class="game-card learn-portal-card learn-portal-card-chinese" type="button" data-game="pinyin-snake">
+          <img src="./assets/generated/home-card-pinyin-snake.webp" alt="" loading="lazy">
+          <span>方向键</span>
+          <strong>贪吃蛇</strong>
+          <p>按方向键吃对拼音块，慢慢点亮星星。</p>
+          <em>方向键热身</em>
+        </button>
+      </section>
+
+      <section class="vibe-tips" aria-label="小游戏提示">
+        <strong id="homeTipsTitle">轻松玩一局</strong>
+        <div class="vibe-tips-copy" id="homeNotes">
+          <p>英文、拼音、方向键分开练。先玩得住，再慢慢熟悉键盘。</p>
+        </div>
+      </section>
+    </section>
+
+    <section class="game-screen fullscreen-game game-window" id="gameScreen" hidden role="dialog" aria-modal="true" aria-label="学习小游戏窗口" aria-live="polite" tabindex="-1">
+      <button class="back-home" type="button" id="backHomeButton" aria-label="返回主页">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M19 12H5"></path>
+          <path d="m12 19-7-7 7-7"></path>
+        </svg>
+        主页
+      </button>
+
+      <section class="game-panel word-shooter" id="wordShooter" data-game-panel="word-shooter" hidden>
+        <div class="game-hud">
+          <span id="typingProgress">0 / 0</span>
+          <strong id="wordChinese">中文</strong>
+          <span id="typingStreak">ready</span>
+          <span id="typingShield">shield 3/3</span>
+        </div>
+        <details class="game-settings word-shooter-settings" id="wordShooterSettings">
+          <summary class="game-settings-toggle" aria-label="飞机大战设置">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 15.5A3.5 3.5 0 1 0 12 8a3.5 3.5 0 0 0 0 7.5Z"></path>
+              <path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6V20a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-.6 1.7 1.7 0 0 0-1.88.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1H4a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 .6-1 1.7 1.7 0 0 0-.34-1.88l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6V4a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 .6 1.7 1.7 0 0 0 1.88-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9c.2.36.4.68.6 1H20a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-.5 1Z"></path>
+            </svg>
+            <span>设置</span>
+          </summary>
+          <div class="game-settings-panel">
+            <div class="difficulty-switch vocab-pack-switch" id="wordPackSwitch" aria-label="英文词库"></div>
+            <div class="difficulty-switch" id="wordDifficultySwitch" aria-label="单词难度"></div>
+            <button class="settings-reset-button" type="button" id="wordSettingsReset" title="恢复 Minecraft 基础训练">恢复默认</button>
+            <section class="word-shooter-hangar" id="wordShooterHangar" aria-label="飞机大战机库">
+              <div class="hangar-heading">
+                <div>
+                  <span class="hangar-kicker">HANGAR</span>
+                  <strong>选择你的战机</strong>
+                </div>
+                <span class="hangar-currency" id="wordShooterStarDust" aria-live="polite">星尘 0</span>
+              </div>
+              <p class="hangar-summary" id="wordShooterLoadoutSummary">侦察翼 · 脉冲激光</p>
+              <div class="hangar-section">
+                <span class="hangar-section-title">机体</span>
+                <div class="hangar-options hangar-ship-options" id="wordShooterShipOptions">
+                  <button class="hangar-option hangar-ship-option is-active" type="button" data-hangar-ship="scout"><span>侦察翼</span></button>
+                  <button class="hangar-option hangar-ship-option" type="button" data-hangar-ship="guardian"><span>守护舰</span></button>
+                  <button class="hangar-option hangar-ship-option" type="button" data-hangar-ship="nova"><span>新星号</span></button>
+                </div>
+              </div>
+              <div class="hangar-section">
+                <span class="hangar-section-title">基础武器</span>
+                <div class="hangar-options hangar-weapon-options" id="wordShooterWeaponOptions">
+                  <button class="hangar-option hangar-weapon-option is-active" type="button" data-hangar-weapon="basic"><span>脉冲激光</span></button>
+                  <button class="hangar-option hangar-weapon-option" type="button" data-hangar-weapon="triple-beam"><span>三重光束</span></button>
+                  <button class="hangar-option hangar-weapon-option" type="button" data-hangar-weapon="homing-missile"><span>追踪导弹</span></button>
+                  <button class="hangar-option hangar-weapon-option" type="button" data-hangar-weapon="pierce-laser"><span>穿透激光</span></button>
+                </div>
+              </div>
+              <div class="hangar-section hangar-upgrades">
+                <span class="hangar-section-title">升级当前机体</span>
+                <div class="hangar-upgrade-options" id="wordShooterUpgradeOptions"></div>
+              </div>
+            </section>
+          </div>
+        </details>
+        <div class="difficulty-badge" id="wordDifficultyBadge" aria-live="polite"></div>
+        <section class="typing-arena machine-gun-stage splinter-stage" id="typingArena" aria-label="单词射击游戏">
+          <img class="typing-stage-backdrop" id="typingStageBackdropImage" alt="" aria-hidden="true">
+          <div class="typing-stage-theme" id="typingStageTheme" aria-live="polite"></div>
+          <div class="typing-weapon-status" id="typingWeaponStatus" aria-label="当前武器状态"></div>
+          <div class="word-queue typing-target-rail target-word-row" id="wordQueue"></div>
+          <div class="typing-drop-layer" id="typingDropLayer" aria-hidden="true"></div>
+          <div class="typing-enemy-layer" id="typingEnemyLayer" aria-hidden="true"></div>
+          <div class="typing-enemy-bullet-layer" id="typingEnemyBulletLayer" aria-hidden="true"></div>
+          <div class="typing-hazard-layer" id="typingHazardLayer" aria-hidden="true"></div>
+          <section class="typing-boss" id="typingBoss" aria-label="关卡 Boss" hidden>
+            <span class="typing-boss-kicker">THE CONDUCTOR</span>
+            <strong class="typing-boss-name">熔核指挥官</strong>
+            <div class="typing-boss-health" role="progressbar" aria-label="Boss 生命值" aria-valuemin="0" aria-valuemax="4" aria-valuenow="0">
+              <span id="typingBossHealthFill"></span>
+            </div>
+            <small id="typingBossPhase">护盾阶段</small>
+          </section>
+          <div class="typing-projectile-layer" id="typingProjectileLayer" aria-hidden="true"></div>
+          <div class="typing-shard-layer" id="typingShardLayer" aria-hidden="true"></div>
+          <div class="typing-target-rail" id="typingTargetRail" aria-hidden="true">
+            <span class="typing-danger-line"></span>
+          </div>
+          <div class="typing-lane" id="typingLane">
+            <div class="typing-target-card typing-word-art-card current-word-art" aria-hidden="true">
+              <img id="typingTargetImage" alt="" src="./assets/generated/word-shooter-scifi-assets/target_shield_pod.png">
+            </div>
+            <div class="typing-gun" id="typingGun" aria-hidden="true">
+              <img class="typing-player-shield" id="typingPlayerShield" src="./assets/generated/word-shooter-agnes-assets/player-shield.png" alt="">
+              <img class="typing-gun-ship" id="typingGunShip" src="./assets/generated/word-shooter-scifi-assets/interceptor_idle.png" alt="">
+            </div>
+          </div>
+        </section>
+        <section class="keyboard-panel stage-keyboard" aria-label="小写键盘">
+          <div class="keyboard" id="keyboard"></div>
+        </section>
+        <p class="game-feedback" id="wordFeedback">输入任意敌机上的单词，随时切换目标。</p>
+      </section>
+
+      <section class="game-panel word-cannon pinyin-racer" id="wordCannon" data-game-panel="word-cannon" hidden>
+        <div class="game-hud">
+          <span id="cannonProgress">0 / 0</span>
+          <strong id="cannonPromptChinese">中文</strong>
+          <span id="cannonCombo">ready</span>
+        </div>
+        <details class="game-settings cannon-settings" id="wordCannonSettings">
+          <summary class="game-settings-toggle" aria-label="拼音赛车设置">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 15.5A3.5 3.5 0 1 0 12 8a3.5 3.5 0 0 0 0 7.5Z"></path>
+              <path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6V20a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-.6 1.7 1.7 0 0 0-1.88.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1H4a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 .6-1 1.7 1.7 0 0 0-.34-1.88l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6V4a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 .6 1.7 1.7 0 0 0 1.88-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9c.2.36.4.68.6 1H20a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-.5 1Z"></path>
+            </svg>
+            <span>设置</span>
+          </summary>
+          <div class="game-settings-panel">
+            <div class="difficulty-switch vocab-pack-switch" id="cannonPackSwitch" aria-label="拼音词库"></div>
+            <p class="cannon-pack-hint" id="cannonPackHint" aria-live="polite"></p>
+            <div class="difficulty-switch cannon-map-switch" id="cannonMapSwitch" aria-label="赛车地图"></div>
+            <div class="difficulty-switch" id="cannonDifficultySwitch" aria-label="拼音难度"></div>
+            <button class="settings-reset-button" type="button" id="cannonSettingsReset" title="恢复认汉字基础训练">恢复推荐</button>
+          </div>
+        </details>
+        <div class="difficulty-badge" id="cannonDifficultyBadge" aria-live="polite"></div>
+        <section class="cannon-stage pinyin-race-stage" id="cannonStage" aria-label="拼音赛车游戏">
+          <div class="cannon-lane" aria-hidden="true">
+            <span class="cannon-lane-edge is-left"></span>
+            <span class="cannon-lane-edge is-right"></span>
+            <span class="cannon-lane-grid"></span>
+          </div>
+          <div class="cannon-route-layer" id="cannonRouteLayer" aria-hidden="true"></div>
+          <svg class="cannon-radar" id="cannonRadar" viewBox="0 0 100 100" aria-hidden="true">
+            <circle class="cannon-radar-ring" cx="50" cy="78" r="18"></circle>
+            <circle class="cannon-radar-ring is-wide" cx="50" cy="78" r="31"></circle>
+            <path class="cannon-radar-arc" d="M23 68 C34 42 66 42 77 68"></path>
+            <path class="cannon-radar-arc is-inner" d="M32 72 C40 55 60 55 68 72"></path>
+            <path class="cannon-radar-line" d="M50 78 L23 26"></path>
+            <path class="cannon-radar-line is-center" d="M50 78 L50 18"></path>
+            <path class="cannon-radar-line" d="M50 78 L77 26"></path>
+          </svg>
+          <div class="cannon-target-layer" id="cannonTargetLayer" aria-hidden="true"></div>
+          <div class="cannon-fx-layer" id="cannonFxLayer" aria-hidden="true"></div>
+          <div class="cannon-current-word" id="cannonCurrentWord" aria-live="polite"></div>
+          <div class="cannon-aim-ring" id="cannonAimRing" aria-hidden="true">
+            <span class="cannon-aim-sweep"></span>
+            <span class="cannon-aim-dot"></span>
+          </div>
+          <div class="cannon-base" id="cannonBase" aria-hidden="true"></div>
+          <div class="pinyin-stage-controls pinyin-racer-controls" aria-label="赛车移动">
+            <button class="key-button racer-up" type="button" data-key="up" aria-label="向上移动">↑</button>
+            <button class="key-button racer-left" type="button" data-key="left" aria-label="向左移动">←</button>
+            <button class="key-button racer-down" type="button" data-key="down" aria-label="向下移动">↓</button>
+            <button class="key-button racer-right" type="button" data-key="right" aria-label="向右移动">→</button>
+          </div>
+        </section>
+        <p class="game-feedback" id="cannonFeedback">看汉字，上下左右移动车子，接住正确拼音卡。</p>
+        <section class="keyboard-panel stage-keyboard cannon-keyboard" aria-label="拼音赛车小写键盘">
+          <div class="keyboard" id="cannonKeyboard"></div>
+        </section>
+      </section>
+
+      <section class="game-panel pinyin-snake" id="pinyinSnake" data-game-panel="pinyin-snake" hidden>
+        <div class="game-hud">
+          <span class="snake-hud-title">拼音方向挑战</span>
+          <strong id="snakePrompt">shan</strong>
+          <span class="snake-hud-score"><b id="snakeScore">0</b> 星</span>
+          <button class="snake-pause-button" id="snakePauseButton" type="button" data-snake-action="pause" aria-pressed="false">暂停</button>
+        </div>
+        <div class="snake-main-layout">
+          <section class="snake-task-card" aria-label="当前拼音任务">
+            <span class="snake-task-kicker">现在要吃</span>
+            <div class="snake-task-word-row">
+              <strong id="snakeTaskWord">山</strong>
+              <div class="snake-task-meaning" aria-live="polite">
+                <span class="snake-task-emoji" id="snakeTaskEmoji" role="img" aria-label="语义提示">⛰️</span>
+                <span class="snake-task-example" id="snakeTaskExample">我们一起去爬山。</span>
+              </div>
+            </div>
+            <div class="snake-piece-row" id="snakePieces"></div>
+            <small id="snakeTaskHint">拼成 shan，点亮星星。</small>
+            <div class="snake-status-badge" id="snakeStatusBadge" aria-live="polite"></div>
+            <button class="snake-hint-button" id="snakeHintButton" type="button" data-snake-action="hint" aria-label="显示拼音提示">提示 <b id="snakeHintUses">2</b></button>
+          </section>
+          <section class="snake-reference-stage" id="snakeReferenceStage" aria-label="拼音贪吃蛇舞台">
+            <div class="snake-ref-hud" aria-hidden="true">
+              <span class="snake-ref-stat">长度 <b id="snakeLengthStat">3</b></span>
+              <span class="snake-ref-stat">星星 <b id="snakeStarStat">0</b></span>
+            </div>
+            <div class="snake-board" id="snakeBoard" aria-label="拼音贪吃蛇棋盘"></div>
+            <span class="snake-board-caption">吃亮色拼音块，拼出完整读音</span>
+          </section>
+          <aside class="snake-control-card" aria-label="方向键控制">
+            <span class="snake-control-kicker">方向键</span>
+            <strong>控制小蛇</strong>
+            <div class="snake-control-pad" aria-label="屏幕方向键">
+              <button type="button" data-snake-control="up" aria-label="向上移动">↑</button>
+              <button type="button" data-snake-control="left" aria-label="向左移动">←</button>
+              <button type="button" data-snake-control="down" aria-label="向下移动">↓</button>
+              <button type="button" data-snake-control="right" aria-label="向右移动">→</button>
+            </div>
+            <p>也可以使用蓝牙键盘方向键</p>
+            <div class="snake-speed-switch" id="snakeSpeedSwitch" aria-label="贪吃蛇节奏">
+              <button type="button" data-snake-speed="slow" aria-pressed="true">慢速</button>
+              <button type="button" data-snake-speed="standard" aria-pressed="false">标准</button>
+            </div>
+          </aside>
+        </div>
+        <p class="game-feedback" id="snakeFeedback">方向键移动，先吃高亮拼音块。</p>
+      </section>
+
+      <section class="round-summary" id="roundSummary" hidden aria-live="polite" aria-label="本局总结">
+        <div class="round-summary-card" id="roundSummaryCard">
+          <span class="round-summary-kicker" id="roundSummaryKicker">小游戏</span>
+          <h2 class="round-summary-title" id="roundSummaryTitle">任务完成</h2>
+          <p class="round-summary-copy" id="roundSummaryCopy">这一局的结果会显示在这里。</p>
+          <div class="round-summary-stats" id="roundSummaryStats"></div>
+          <div class="round-summary-actions">
+            <button class="round-summary-button is-primary" type="button" id="replayRoundButton" data-round-action="replay">再来一局</button>
+            <button class="round-summary-button" type="button" id="roundSummaryHomeButton" data-round-action="home">返回主页</button>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="./game.js?v=pinyin-racer-v2"></script>
+</body>
+</html>

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "projectId": "mini-games",
   "title": "小游戏项目",
-  "subtitle": "轻量挑战，独立运行",
+  "subtitle": "完整地图、全量词库、全部玩法",
   "devProjectUrl": "http://127.0.0.1:7003/",
   "projectUrl": "https://nonomil.github.io/mini-games/",
   "games": [
@@ -23,6 +23,87 @@
       "path": "games/pinyin-star-scout/",
       "tags": ["拼音", "语音", "探索"],
       "accent": "#3caa9c"
+    },
+    {
+      "id": "learning-arcade",
+      "title": "学习机游乐场",
+      "kicker": "全部游乐场玩法",
+      "description": "一次打开飞机大战、拼音赛车、拼音贪吃蛇、汉字跳跃和完整单词炮台玩法。",
+      "path": "games/learning-arcade/",
+      "tags": ["飞机大战", "拼音赛车", "贪吃蛇", "单词炮台"],
+      "accent": "#d99058"
+    },
+    {
+      "id": "typing-defense",
+      "title": "消灭苦力怕",
+      "kicker": "打字防线",
+      "description": "完整年级单词、拼音、字母和数学训练模式，守住全部分级关卡。",
+      "path": "games/typing-defense/web/",
+      "tags": ["英语", "拼音", "数学", "分级"],
+      "accent": "#6a9b73"
+    },
+    {
+      "id": "word-memory-map",
+      "title": "单词像素探险",
+      "kicker": "全量词库地图",
+      "description": "完整农场、森林、海洋、太空等地图，默认开放 3322 张单词卡。",
+      "path": "games/word-memory-map/",
+      "tags": ["3322 词卡", "全地图", "单词射击"],
+      "accent": "#4d91a0"
+    },
+    {
+      "id": "forest-map",
+      "title": "森林冒险地图",
+      "kicker": "经典 12 场景",
+      "description": "完整森林、海滩、糖果、瀑布、沙漠、城堡、火山和星光花园探险路线。",
+      "path": "games/forest-map/",
+      "tags": ["12 场景", "故事事件", "探索战斗"],
+      "accent": "#6f9f75"
+    },
+    {
+      "id": "explore-map",
+      "title": "三世界故事地图",
+      "kicker": "完整故事远征",
+      "description": "完整森林世界、方块世界和科幻世界故事章节，按地图自由选择已开放节点。",
+      "path": "games/explore-map/",
+      "tags": ["三世界", "完整章节", "像素地图"],
+      "accent": "#7866a5"
+    },
+    {
+      "id": "math-pk",
+      "title": "数学 PK",
+      "kicker": "数学对战",
+      "description": "完整加减、混合和乘法训练，保留全部难度、支援卡和成长进度。",
+      "path": "games/math-pk/",
+      "tags": ["口算", "乘法", "PK"],
+      "accent": "#bb815d"
+    },
+    {
+      "id": "hanzi",
+      "title": "汉字认读挑战",
+      "kicker": "完整汉字题库",
+      "description": "独立运行完整汉字等级题库，支持认读、听音、连击和排行榜。",
+      "path": "games/hanzi/",
+      "tags": ["识字", "听音", "排行榜"],
+      "accent": "#cf725d"
+    },
+    {
+      "id": "card-collection",
+      "title": "宠物卡牌图鉴",
+      "kicker": "完整宠物数据库",
+      "description": "收录 261 种宠物、全部成长形态、四大图鉴馆和完整卡牌图片。",
+      "path": "games/card-collection/",
+      "tags": ["261 宠物", "四大图鉴馆", "成长形态"],
+      "accent": "#d46f88"
+    },
+    {
+      "id": "card-arena",
+      "title": "卡牌训练营",
+      "kicker": "完整卡牌对战",
+      "description": "五大区域、全部训练关卡、自由练习和本地双人热座对战。",
+      "path": "games/card-arena/",
+      "tags": ["10 关", "2v2", "训练地图"],
+      "accent": "#8b72a7"
     }
   ],
   "links": {

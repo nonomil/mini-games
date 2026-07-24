@@ -1,0 +1,9 @@
+Create a square low-distraction voxel block-world background for an Anki vocabulary card detail panel.
+
+Scene: a close-up of a clean blocky study desk with one large blank card area, small cube props, a tiny plant, and soft window light.
+
+Composition: square image, center must be calm and readable for an HTML card face overlay, decorative objects only near corners and edges.
+
+Style: polished 3D voxel game art, gentle educational mood, light greens, warm off-white, sky blue, small amber highlights, soft shadows.
+
+Hard constraints: no readable text, no letters, no numbers, no UI buttons, no logo, no watermark, no brand mark, no characters, no dark purple palette.

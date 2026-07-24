@@ -1,0 +1,93 @@
+{
+  "id": "candy",
+  "name": "糖果王国",
+  "emoji": "🍭",
+  "chapter": 2,
+  "chapter_name": "森林边界",
+  "min_level": 2,
+  "danger_level": 2,
+  "chapter_flow": {
+    "mode": "short",
+    "see": [0, 1],
+    "choose": 3,
+    "challenge": { "math": 2, "battle": 4 }
+  },
+  "events": [
+    {
+      "type": "narrate",
+      "text": "甜雾里漂着会发光的便签纸，上面写着图鉴馆的新委托：先看清这些幻想伙伴喜欢做什么，再判断它们会不会战斗。",
+      "shortText": "甜雾里有发光便签！",
+      "detailText": "甜雾里的便签带来新委托：先看清幻想伙伴喜欢做什么。",
+      "petMood": "surprised",
+      "id": "candy.narrate0"
+    },
+    {
+      "type": "discover",
+      "emoji": "🍬",
+      "text": "你在棒棒糖树下发现一张糖纸小地图和一颗彩虹糖，它们像在提示某只伙伴最在意的爱好与专长。",
+      "shortText": "糖纸地图出现了！",
+      "detailText": "糖纸小地图和彩虹糖提示着伙伴最在意的爱好与专长。",
+      "petMood": "happy",
+      "item": "candy",
+      "chance": 0.7,
+      "id": "candy.discover1"
+    },
+    {
+      "type": "math",
+      "mathType": "word",
+      "difficulty": "medium",
+      "text": "这里的数学题像梦境配方登记表，只有算清每份糖果要用多少，图鉴馆才会承认你没有被可爱的外表骗过去……",
+      "shortText": "配方题：每份要几颗？",
+      "detailText": "算清每份糖果要用多少，完成梦境配方登记。",
+      "petMood": "worried",
+      "reward": {
+        "exp": 22,
+        "msg": "配方登记完成，最甜的糖果掉下来！+22 经验"
+      },
+      "id": "candy.math2",
+      "question": "梦境配方每份需要 2 颗星星糖，糖罐里有 10 颗星星糖。最多能配几份？",
+      "answer": 5,
+      "options": [
+        4,
+        5,
+        6,
+        8
+      ],
+      "skill": "平均分组",
+      "hint": "先看每份需要几颗，再想 10 颗里能分出几个 2 颗。",
+      "explanation": "每份用 2 颗星星糖，10 颗里面有 5 个 2，10 ÷ 2 = 5，所以最多配 5 份。"
+    },
+    {
+      "type": "choice",
+      "text": "前面分出巧克力河和棉花糖山两条路线，你想先去补完哪一类幻想型伙伴的观察笔记？",
+      "shortText": "走巧克力河，还是棉花糖山？",
+      "detailText": "两条路线会遇到不同的幻想型伙伴，选择一条继续调查。",
+      "petMood": "surprised",
+      "options": [
+        {
+          "text": "🍫 走巧克力河边",
+          "reward": "河水里漂着一块巧克力金币！",
+          "item": "lollipop",
+          "chance": 0.5
+        },
+        {
+          "text": "☁️ 爬棉花糖山",
+          "reward": "山顶有一块巨大的蛋糕碎片，散发着奶油香气！",
+          "item": "cake_slice",
+          "chance": 0.4
+        }
+      ],
+      "id": "candy.choice3"
+    },
+    {
+      "type": "encounter",
+      "text": "棉花糖云后跳出一位会制造错觉的甜点伙伴，它更像在考你有没有真正认识它，而不只是记住一张立绘……",
+      "shortText": "甜点伙伴来考考你！",
+      "detailText": "甜点伙伴想确认你是否真的认识它，而不只是记住外表。",
+      "petMood": "proud",
+      "id": "candy.encounter4"
+    }
+  ],
+  "chapter_skill": "add_sub_apply",
+  "ending_text": "糖果乐园的调查完成后，图鉴馆为这只伙伴补上了情绪表达档案，你也解锁了它的专属收录卡。"
+}

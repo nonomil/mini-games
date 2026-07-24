@@ -1,0 +1,105 @@
+{
+  "levelId": "detective-13",
+  "chapterId": "detective-13",
+  "worldId": "detective",
+  "title": "红石断点",
+  "rewards": {
+    "growthPoints": 3
+  },
+  "scenes": [
+    {
+      "sceneId": "detective-13-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-13.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "detective_helper"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/detective/detective-13.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "案件记录来到第13站：“红石断点”出现了新的变化。我们要找到红石连接，看看它和地下城旧地图有什么关系。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“红石断点”。我们的任务是“把两段发光红石线接起来”，先看清红石连接，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "放大镜下闪动的线索光告诉我，红石连接就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在“红石断点”案件里，遇到困难不能只靠着急。我们要把可靠的证据放回案件记录，先处理红石连接，也要照顾身边的朋友。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "repair",
+          "prompt": "把两段发光红石线接起来，让红石连接的线索显现出来。",
+          "character": "detective_helper",
+          "position": "right",
+          "actions": [
+            {
+              "label": "接上红石线",
+              "feedback": "接上红石线后，红石连接出现了；地下城旧地图的方向更清楚了。"
+            },
+            {
+              "label": "转动红石开关",
+              "feedback": "转动红石开关让另一个细节亮起来：断标记指向地下城旧地图。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "线索被记录下来：红石连接和地下城旧地图之间出现了联系。案件向前推进了一步。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "我把“断”记在案件本上，这条证据不能漏掉。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我发现这不是一条孤单的线索，它正指向地下城旧地图。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "先保留可靠的细节，下一站还会用到“红石连接”的证据。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：红石连接不是终点，它会把故事带到地下城旧地图。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我们把这条线索交给地下城旧地图，下一份答案就在路上。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/detective/map-pin.webp"
+}

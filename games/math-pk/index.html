@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>数学 PK · 小游戏项目</title>
+  <link rel="stylesheet" href="../../vendor/css/playground.css">
+  <link rel="stylesheet" href="../../vendor/css/leaderboard.css">
+  <style>body{margin:0;background:#f6f8fa}#math-pk-container{min-height:100vh}.shell-bar{display:flex;gap:12px;align-items:center;padding:12px 16px;background:#fff;border-bottom:1px solid #dbe4eb} .shell-bar a{color:#237f7c;text-decoration:none;font-weight:700}</style>
+</head>
+<body>
+  <div class="shell-bar"><a href="../../index.html#games">← 返回游戏库</a><strong>数学 PK</strong><span>完整关卡与题库，独立运行</span></div>
+  <div id="math-pk-container"></div>
+  <script src="../../host/petbank-host-shim.js"></script>
+  <script src="../../bridge.js"></script>
+  <script src="../../vendor/js/leaderboard.js"></script>
+  <script src="../../vendor/js/math-pk.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async function () {
+      if (window.MathPKGame && typeof MathPKGame.renderUI === 'function') MathPKGame.renderUI('math-pk-container');
+      else console.warn('[math-pk] no known boot method', Object.keys(window.MathPKGame || {}));
+    });
+  </script>
+</body>
+</html>

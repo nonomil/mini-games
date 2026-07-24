@@ -1,0 +1,9 @@
+Create a bright child-friendly voxel block-world illustration for the active recall stage of a Minecraft vocabulary lesson.
+
+Scene: a small block bridge crossing a clear stream, four blank answer platforms along the bridge, glowing safe checkpoints, grass, flowers, and distant hills.
+
+Composition: wide landscape, answer-platform shapes should feel like option cards but contain no text, leave clean open sky and water areas for HTML overlays.
+
+Style: polished 3D voxel game art, high contrast between platforms and background, cheerful afternoon light, green, blue, and warm yellow accents.
+
+Hard constraints: no readable text, no letters, no numbers, no UI buttons, no logo, no watermark, no brand mark, no scary subjects, no dark purple palette.

@@ -1,0 +1,93 @@
+{
+  "id": "mountain",
+  "name": "雪山之巅",
+  "emoji": "🏔️",
+  "chapter": 4,
+  "chapter_name": "高地洞窟",
+  "min_level": 3,
+  "danger_level": 3,
+  "chapter_flow": {
+    "mode": "short",
+    "see": [0, 1],
+    "choose": 3,
+    "challenge": { "math": 2, "battle": 4 }
+  },
+  "events": [
+    {
+      "type": "narrate",
+      "text": "第一阵山风吹开图鉴页，露出童年经历尚未登记的空栏，图鉴馆要你在雪山之巅查清灵兽伙伴是怎样长大的。",
+      "shortText": "山风吹开了成长档案！",
+      "detailText": "图鉴馆要你查清灵兽伙伴在雪山上是怎样长大的。",
+      "petMood": "surprised",
+      "id": "mountain.narrate0"
+    },
+    {
+      "type": "discover",
+      "emoji": "❄️",
+      "text": "冰面抓痕、风铃石和旧巡山旗一起出现，像在悄悄说明某只高地伙伴小时候住在哪里、受过谁的照顾。",
+      "shortText": "冰面抓痕留下线索！",
+      "detailText": "抓痕、风铃石和巡山旗说明伙伴小时候住在哪里。",
+      "petMood": "happy",
+      "item": "ice_crystal",
+      "chance": 0.4,
+      "id": "mountain.discover1"
+    },
+    {
+      "type": "math",
+      "text": "这里的题目像巡山训练记录，只有把安全绳长度算对，图鉴馆才会相信你真的看懂了它们的成长过程……",
+      "shortText": "安全绳题：一共多长？",
+      "detailText": "算对安全绳长度，完成巡山训练记录。",
+      "petMood": "worried",
+      "difficulty": "medium",
+      "reward": {
+        "exp": 20,
+        "msg": "训练记录通过，冰壁露出了安全通道！+20 经验"
+      },
+      "id": "mountain.math2",
+      "mathType": "word",
+      "question": "每段安全绳长 5 米，巡山员把 3 段接在一起。从营地到冰壁共有几米？",
+      "answer": 15,
+      "options": [
+        10,
+        12,
+        15,
+        20
+      ],
+      "skill": "等长累加",
+      "hint": "3 段安全绳一样长，可以把 5 米连续加 3 次。",
+      "explanation": "每段 5 米，3 段就是 5 + 5 + 5，也可以写成 5 × 3 = 15，所以共有 15 米。"
+    },
+    {
+      "type": "choice",
+      "text": "你可以先走冰洞、山脊或守望坡，不同路线会更早接触灵兽族、瑞兽族，或偏守护型的高地伙伴。",
+      "shortText": "走冰洞，还是上山脊？",
+      "detailText": "不同路线会先遇到灵兽、瑞兽或守护型伙伴。",
+      "petMood": "surprised",
+      "options": [
+        {
+          "text": "🔦 鼓起勇气走进去",
+          "reward": "冰壁映出你的影子，深处亮起一块钻石般的冰晶！",
+          "item": "ice_crystal",
+          "chance": 0.6
+        },
+        {
+          "text": "🏔️ 绕过冰洞爬上去",
+          "reward": "山顶上有一块柔软的雪狼毛！",
+          "item": "fur",
+          "chance": 0.4
+        }
+      ],
+      "id": "mountain.choice3"
+    },
+    {
+      "type": "encounter",
+      "text": "冰窟深处走出一位雪山守卫，它把这场遭遇当成资格审查，想确认你是否真的理解它的生活方式……",
+      "shortText": "雪山守卫来审查啦！",
+      "detailText": "雪山守卫想确认你是否理解高地伙伴的生活方式。",
+      "petMood": "proud",
+      "id": "mountain.encounter4"
+    }
+  ],
+  "chapter_skill": "mul_div_mech",
+  "ending_text": "雪山之巅的成长调查完成后，图鉴页额外浮现出这只伙伴受谁影响长大的档案，你也正式完成收录。"
+}

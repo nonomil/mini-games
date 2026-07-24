@@ -1,0 +1,105 @@
+{
+  "levelId": "detective-07",
+  "chapterId": "detective-07",
+  "worldId": "detective",
+  "title": "森林的蓝羽毛",
+  "rewards": {
+    "growthPoints": 3
+  },
+  "scenes": [
+    {
+      "sceneId": "detective-07-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-07.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "detective_helper"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/detective/detective-07.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "案件记录来到第7站：“森林的蓝羽毛”出现了新的变化。我们要找到星光蓝羽，看看它和树屋暗号有什么关系。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“森林的蓝羽毛”。我们的任务是“找到森林里带着星光的蓝羽毛”，先看清星光蓝羽，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "放大镜下闪动的线索光告诉我，星光蓝羽就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在“森林的蓝羽毛”案件里，收集线索不能只靠着急。我们要把可靠的证据放回案件记录，先处理星光蓝羽，也要照顾身边的朋友。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "collect",
+          "prompt": "找到森林里带着星光的蓝羽毛，让星光蓝羽的线索显现出来。",
+          "character": "detective_helper",
+          "position": "right",
+          "actions": [
+            {
+              "label": "拾起蓝羽毛",
+              "feedback": "拾起蓝羽毛后，星光蓝羽出现了；树屋暗号的方向更清楚了。"
+            },
+            {
+              "label": "问问小鸟",
+              "feedback": "问问小鸟让另一个细节亮起来：羽标记指向树屋暗号。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "线索被记录下来：星光蓝羽和树屋暗号之间出现了联系。案件向前推进了一步。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "我把“羽”记在案件本上，这条证据不能漏掉。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我发现这不是一条孤单的线索，它正指向树屋暗号。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "先保留可靠的细节，下一站还会用到“星光蓝羽”的证据。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：星光蓝羽不是终点，它会把故事带到树屋暗号。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我们把这条线索交给树屋暗号，下一份答案就在路上。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/detective/red-thread-knot.webp"
+}

@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "pixel-worlds-story-audio-forest-05",
+  "chapterId": "forest-05",
+  "audioFormat": "wav",
+  "audioSubtype": "source",
+  "scenes": [
+    {
+      "sceneId": "falls",
+      "lines": [
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-05/lines/falls-00.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-05/lines/falls-01.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-05/lines/falls-02.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-05/lines/falls-03.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-05/lines/falls-04.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-05/lines/falls-05.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-05/lines/falls-06.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-05/lines/falls-07.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-05/lines/falls-08.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-05/lines/falls-09.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-05/lines/falls-10.wav"
+        }
+      ]
+    }
+  ]
+}

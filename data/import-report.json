@@ -1,0 +1,46 @@
+{
+  "petRoot": "G:\\StudyCode\\宠物积分系统",
+  "miniRoot": "G:\\StudyCode\\小游戏项目",
+  "results": [
+    {
+      "id": "learning-arcade",
+      "fileCount": 187,
+      "bytes": 21814366,
+      "dest": "games\\learning-arcade"
+    },
+    {
+      "id": "typing-defense",
+      "fileCount": 139,
+      "bytes": 25371366,
+      "dest": "games\\typing-defense"
+    },
+    {
+      "id": "word-memory-map",
+      "fileCount": 562,
+      "bytes": 281700279,
+      "dest": "games\\word-memory-map"
+    },
+    {
+      "id": "shared-modules",
+      "fileCount": 22,
+      "bytes": 635581
+    },
+    {
+      "id": "complete-adventure-runtime",
+      "fileCount": 29770,
+      "bytes": 1035896497
+    },
+    {
+      "id": "pixel-story-runtime",
+      "fileCount": 1331,
+      "bytes": 119243024
+    },
+    {
+      "id": "shells",
+      "fileCount": 9,
+      "bytes": 0
+    }
+  ],
+  "totalFiles": 32020,
+  "totalBytes": 1484661113
+}

@@ -1,0 +1,105 @@
+{
+  "levelId": "detective-17",
+  "chapterId": "detective-17",
+  "worldId": "detective",
+  "title": "最后一枚光核",
+  "rewards": {
+    "growthPoints": 3
+  },
+  "scenes": [
+    {
+      "sceneId": "detective-17-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-17.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "detective_helper"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/detective/detective-17.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "案件记录来到第17站：“最后一枚光核”出现了新的变化。我们要找到最后光核，看看它和门后的朋友有什么关系。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“最后一枚光核”。我们的任务是“从维修区找到被灰尘盖住的最后光核”，先看清最后光核，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "放大镜下闪动的线索光告诉我，最后光核就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在“最后一枚光核”案件里，打开新路不能只靠着急。我们要把可靠的证据放回案件记录，先处理最后光核，也要照顾身边的朋友。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "collect",
+          "prompt": "从维修区找到被灰尘盖住的最后光核，让最后光核的线索显现出来。",
+          "character": "detective_helper",
+          "position": "right",
+          "actions": [
+            {
+              "label": "吹开金色星尘",
+              "feedback": "吹开金色星尘后，最后光核出现了；门后的朋友的方向更清楚了。"
+            },
+            {
+              "label": "用小刷子清理",
+              "feedback": "用小刷子清理让另一个细节亮起来：核标记指向门后的朋友。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "线索被记录下来：最后光核和门后的朋友之间出现了联系。案件向前推进了一步。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "我把“核”记在案件本上，这条证据不能漏掉。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我发现这不是一条孤单的线索，它正指向门后的朋友。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "先保留可靠的细节，下一站还会用到“最后光核”的证据。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：最后光核不是终点，它会把故事带到门后的朋友。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我们把这条线索交给门后的朋友，下一份答案就在路上。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/detective/block-clue.webp"
+}

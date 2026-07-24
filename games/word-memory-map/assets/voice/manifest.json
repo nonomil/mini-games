@@ -1,0 +1,15 @@
+{
+  "prototypeId": "word-memory-topdown",
+  "source": {
+    "id": "word-memory-topdown",
+    "kind": "word-memory-cards",
+    "dataFile": "G:/StudyCode/宠物积分系统/prj/单词记忆射击场原型/assets/word-memory-cards.json"
+  },
+  "title": "单词记忆射击场原型",
+  "fields": [
+    "word",
+    "translation"
+  ],
+  "limit": 0,
+  "generatedCount": 191
+}

@@ -1,0 +1,93 @@
+{
+  "id": "desert",
+  "name": "沙漠绿洲",
+  "emoji": "🏜️",
+  "chapter": 3,
+  "chapter_name": "海边集市",
+  "min_level": 3,
+  "danger_level": 3,
+  "chapter_flow": {
+    "mode": "short",
+    "see": [0, 1],
+    "choose": 3,
+    "challenge": { "math": 2, "battle": 4 }
+  },
+  "events": [
+    {
+      "type": "narrate",
+      "text": "风里夹着半张旧地图，图鉴馆委托你穿过沙漠古道，去记录那些擅长背负、引路与守望的远行伙伴。",
+      "shortText": "旧地图被风吹来了！",
+      "detailText": "图鉴馆委托你记录擅长背负、引路和守望的远行伙伴。",
+      "petMood": "surprised",
+      "id": "desert.narrate0"
+    },
+    {
+      "type": "discover",
+      "emoji": "🦂",
+      "text": "沙子里露出一枚古老铜币和半截商队记号，它们像是在告诉你某只伙伴曾经走过怎样漫长的路。",
+      "shortText": "铜币和商队记号出现！",
+      "detailText": "铜币和商队记号讲述着伙伴走过的漫长旅路。",
+      "petMood": "happy",
+      "item": "sand_shell",
+      "chance": 0.5,
+      "id": "desert.discover1"
+    },
+    {
+      "type": "math",
+      "mathType": "word",
+      "difficulty": "medium",
+      "text": "这道题像一次远行补给登记，只有把水瓶能支持几位伙伴算清楚，图鉴馆才会认可你的耐心观察……",
+      "shortText": "补给题：水够几位？",
+      "detailText": "算清水瓶能支持几位伙伴，完成远行补给登记。",
+      "petMood": "worried",
+      "reward": {
+        "exp": 22,
+        "msg": "补给登记通过，绿洲大门为你打开！+22 经验"
+      },
+      "id": "desert.math2",
+      "question": "商队有 12 瓶水，每只远行伙伴一天需要 3 瓶。能支持几只伙伴一天？",
+      "answer": 4,
+      "options": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "skill": "补给分配",
+      "hint": "把 12 瓶水按每 3 瓶一份来分，看看能分成几份。",
+      "explanation": "每只伙伴一天要 3 瓶水，12 瓶可以分成 4 份，12 ÷ 3 = 4，所以能支持 4 只伙伴。"
+    },
+    {
+      "type": "choice",
+      "text": "你可以跟着商队脚印、走进壁画洞，或追踪风铃声，不同选择会提前暴露不同族群的故事线索。",
+      "shortText": "跟脚印，进壁画洞，还是追风铃？",
+      "detailText": "三条路线会提前揭开不同远行族群的故事线索。",
+      "petMood": "surprised",
+      "options": [
+        {
+          "text": "🎨 研究壁画再走",
+          "reward": "壁画后面藏着一颗沙漠珍珠！",
+          "item": "desert_pearl",
+          "chance": 0.2
+        },
+        {
+          "text": "🏜️ 直接去绿洲",
+          "reward": "绿洲的泉水边有一颗闪亮的甲虫壳！",
+          "item": "ancient_bandage",
+          "chance": 0.5
+        }
+      ],
+      "id": "desert.choice3"
+    },
+    {
+      "type": "encounter",
+      "text": "沙丘下钻出一位像守路人一样的伙伴，它想知道你是来掠过风景，还是认真补完它的背景档案……",
+      "shortText": "沙丘守路人出现了！",
+      "detailText": "守路人想知道你是否认真补完远行伙伴的背景档案。",
+      "petMood": "proud",
+      "id": "desert.encounter4"
+    }
+  ],
+  "chapter_skill": "life_apply",
+  "ending_text": "你替沙漠古道补上了这只伙伴的远行档案，图鉴页里多出一条它独自走过的路，也完成了收录登记。"
+}

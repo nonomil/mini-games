@@ -1,0 +1,105 @@
+{
+  "levelId": "block-18",
+  "chapterId": "block-18",
+  "worldId": "block",
+  "title": "回声石室",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "block-18-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/block/block-18.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "block_builder"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/block/block-18.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "回声石室正在发生变化。现在是“打开新路”的一步：我们要找到伙伴回声，再把线索送向星门前厅。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“回声石室”。我们的任务是“从回声里听出伙伴的方向”，先看清伙伴回声，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "方块碰撞和远处的机关声告诉我，伙伴回声就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在回声石室，打开新路不能只靠着急。我们要一步一步搭出安全的路线，先处理伙伴回声，也要照顾身边的朋友。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "scan",
+          "prompt": "从回声里听出伙伴的方向，让伙伴回声的线索显现出来。",
+          "character": "block_builder",
+          "position": "right",
+          "actions": [
+            {
+              "label": "轻声呼唤朋友",
+              "feedback": "轻声呼唤朋友后，伙伴回声出现了；星门前厅的方向更清楚了。"
+            },
+            {
+              "label": "敲响圆石",
+              "feedback": "敲响圆石让另一个细节亮起来：声标记指向星门前厅。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "伙伴回声被找到后，星门前厅的方向亮了起来。一步一步搭出安全的路线，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“声”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见星门前厅传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "伙伴回声让大家知道，星门前厅不是远处的名字，而是一条可以走到的路。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：伙伴回声不是终点，它会把故事带到星门前厅。",
+          "character": "block_builder",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，星门前厅的入口已经亮起。我们带着“声”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/block/lava-lamp.webp"
+}

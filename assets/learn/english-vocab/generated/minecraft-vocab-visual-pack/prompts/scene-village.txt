@@ -1,0 +1,9 @@
+Create a bright child-friendly voxel block-world illustration for scene sentence practice in a Minecraft vocabulary lesson.
+
+Scene: a cozy block village square with a garden, crafting table-like study desk, blank signboards with no markings, friendly villager-like silhouettes in the distance, and a clear path.
+
+Composition: wide landscape, leave the foreground and upper-left calm for HTML sentence text; keep the village readable but not busy.
+
+Style: polished 3D voxel game art, sunny learning village, greens, wood tones, sky blue, small amber highlights, warm and safe.
+
+Hard constraints: no readable text, no letters, no numbers, no UI buttons, no logo, no watermark, no brand mark, no scary subjects, no dark purple palette.

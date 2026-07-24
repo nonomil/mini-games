@@ -1,0 +1,93 @@
+{
+  "id": "forest",
+  "name": "神秘森林",
+  "emoji": "🌲",
+  "chapter": 1,
+  "chapter_name": "起点花园",
+  "min_level": 1,
+  "danger_level": 1,
+  "chapter_flow": {
+    "mode": "short",
+    "see": [0, 1],
+    "choose": 3,
+    "challenge": { "math": 2, "battle": 4 }
+  },
+  "events": [
+    {
+      "type": "narrate",
+      "text": "你背着图鉴馆发下来的空白调查册走进神秘森林，树影间传来温室铃声，像在提醒你第一份登记就要开始了。",
+      "shortText": "森林里有铃声！第一条线索出现了。",
+      "detailText": "你背着图鉴馆发下来的空白调查册走进神秘森林，树影间传来温室铃声，第一份登记开始了。",
+      "petMood": "surprised",
+      "id": "forest.narrate0"
+    },
+    {
+      "type": "discover",
+      "emoji": "🍄",
+      "text": "潮湿的树根边压着一张叶片标签，旁边还有发光蘑菇喷出的彩色孢子，像是在提示这片林地常住伙伴的生活习惯。",
+      "shortText": "蘑菇在发光！找到森林线索。",
+      "detailText": "潮湿的树根边压着叶片标签，发光蘑菇的孢子提示着森林伙伴的生活习惯。",
+      "petMood": "happy",
+      "item": "mushroom",
+      "chance": 0.5,
+      "id": "forest.discover1"
+    },
+    {
+      "type": "math",
+      "text": "森林里的登记测试变成脚印比对，只有看清水边和花圃两处线索，图鉴馆才会认可你的观察记录……",
+      "shortText": "脚印题：花圃多几个？",
+      "detailText": "森林里的登记测试变成脚印比对，先看清水边和花圃两处线索。",
+      "petMood": "worried",
+      "difficulty": "easy",
+      "reward": {
+        "exp": 15,
+        "msg": "脚印记录补齐，树根小路亮起来了！+15 经验"
+      },
+      "id": "forest.math2",
+      "mathType": "word",
+      "question": "调查册写着：水边有 3 个脚印，花圃有 5 个脚印。花圃比水边多几个脚印？",
+      "answer": 2,
+      "options": [
+        1,
+        2,
+        3,
+        8
+      ],
+      "skill": "数量比较",
+      "hint": "先找出两处脚印数量，再用多的减去少的。",
+      "explanation": "花圃有 5 个脚印，水边有 3 个脚印，5 - 3 = 2，所以花圃多 2 个脚印。"
+    },
+    {
+      "type": "choice",
+      "text": "前方分出水边和花圃两条调查路线，你决定先去哪里收集基础伙伴的线索？",
+      "shortText": "走水边，还是走花圃？",
+      "detailText": "前方分出水边和花圃两条调查路线，选择一条收集基础伙伴的线索。",
+      "petMood": "surprised",
+      "options": [
+        {
+          "text": "🌿 走流水小路",
+          "reward": "溪水叮咚为你让路，一片闪亮的树叶顺着水流飘过来！",
+          "item": "leaf",
+          "chance": 0.4
+        },
+        {
+          "text": "🌸 走花香小路",
+          "reward": "花瓣间藏着一块小石头，上面刻着星星图案！",
+          "item": "stone",
+          "chance": 0.3
+        }
+      ],
+      "id": "forest.choice3"
+    },
+    {
+      "type": "encounter",
+      "text": "树洞里亮起一双圆溜溜的眼睛，这只森林伙伴像在等你通过最后的登记考核……",
+      "shortText": "树洞里有双眼睛！",
+      "detailText": "树洞里亮起一双圆溜溜的眼睛，森林伙伴正在等你通过最后的登记考核。",
+      "petMood": "proud",
+      "id": "forest.encounter4"
+    }
+  ],
+  "chapter_skill": "number_sense",
+  "ending_text": "你完成了神秘森林的第一次调查，图鉴册自动浮现这只伙伴的第一页档案，你也拿到了它的收录卡。"
+}

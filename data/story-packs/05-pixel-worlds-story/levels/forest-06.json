@@ -1,0 +1,105 @@
+{
+  "levelId": "forest-06",
+  "chapterId": "forest-06",
+  "worldId": "forest",
+  "title": "古树图书馆：打开故事门",
+  "rewards": {
+    "growthPoints": 8
+  },
+  "scenes": [
+    {
+      "sceneId": "library",
+      "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-06.webp",
+      "lines": [
+        {
+          "type": "narration",
+          "text": "古树图书馆的门上有一个大大的‘书’字。森林朋友们把找到的故事都藏在里面。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“古树图书馆：打开故事门”。我们的任务是“把三枚发光书签放进古树门上的凹槽”，先看清故事书签，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "树叶、溪水和萤火虫的声音告诉我，故事书签就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在古树图书馆：打开故事门，收集线索不能只靠着急。我们要用温柔的动作帮助森林朋友，先处理故事书签，也要照顾身边的朋友。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "build",
+          "prompt": "把三枚发光书签放进古树门上的凹槽，让故事书签的线索显现出来。",
+          "character": "forest_guide",
+          "position": "right",
+          "actions": [
+            {
+              "label": "放入蓝色书签",
+              "feedback": "放入蓝色书签后，故事书签出现了；松果广场的方向更清楚了。"
+            },
+            {
+              "label": "放入绿色书签",
+              "feedback": "放入绿色书签让另一个细节亮起来：书标记指向松果广场。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "故事书签被找到后，松果广场的方向亮了起来。用温柔的动作帮助森林朋友，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“书”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见松果广场传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "故事书签让大家知道，松果广场不是远处的名字，而是一条可以走到的路。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：故事书签不是终点，它会把故事带到松果广场。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，松果广场的入口已经亮起。我们带着“书”继续走。",
+          "character": "narrator",
+          "position": "center"
+        }
+      ],
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "forest_guide"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/forest/forest-06.webp"
+        ]
+      }
+    }
+  ],
+  "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-06.webp",
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/forest/berry-basket.webp"
+}

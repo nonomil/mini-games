@@ -1,0 +1,9 @@
+Create a bright child-friendly voxel block-world illustration for a Minecraft vocabulary learning expedition home screen.
+
+Scene: a sunny study camp at the edge of a grassy block forest, with a small wooden table, open blank cards, a backpack, safe glowing word-star collectibles, and a friendly blocky learner silhouette seen from behind.
+
+Composition: wide landscape, strong first-viewport hero image, keep the left-center area calm and readable for HTML text overlay, more detail on the right and far background.
+
+Style: polished 3D voxel game art, warm daylight, clean shapes, high clarity, playful educational mood, varied greens, sky blue, small amber accents.
+
+Hard constraints: no readable text, no letters, no numbers, no UI buttons, no logo, no watermark, no brand mark, no scary subjects, no purple dark fantasy lighting.

@@ -1,0 +1,19 @@
+{
+  "id": "alien-9grid-world-single",
+  "theme": "alien",
+  "mode": "single",
+  "image": "./assets/generated/world-bg-single/farm-panorama.png",
+  "labels": [
+    "孢子入口",
+    "晶脉路口",
+    "薄雾温舱",
+    "酸湖栈桥",
+    "中央菌坪",
+    "荧石弯谷",
+    "双月浅岸",
+    "脉冲草坡",
+    "异光环口"
+  ],
+  "rows": 3,
+  "cols": 3
+}

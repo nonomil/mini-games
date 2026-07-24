@@ -1,0 +1,9 @@
+Create a bright child-friendly voxel block-world illustration for the review warm-up stage of a vocabulary learning session.
+
+Scene: a peaceful grove with blocky trees, stepping stones, small blank flashcards placed like trail markers, gentle sunlight, and two safe glowing checkpoints.
+
+Composition: wide landscape, calm central path, leave soft empty space in the upper-left and middle for HTML labels; keep visual noise low.
+
+Style: polished 3D voxel game art, clear silhouettes, fresh green and sky blue palette, soft shadows, cheerful morning mood.
+
+Hard constraints: no readable text, no letters, no numbers, no UI buttons, no logo, no watermark, no brand mark, no scary subjects, no dark purple palette.

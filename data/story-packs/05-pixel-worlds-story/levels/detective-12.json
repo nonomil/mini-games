@@ -1,0 +1,105 @@
+{
+  "levelId": "detective-12",
+  "chapterId": "detective-12",
+  "worldId": "detective",
+  "title": "矿洞里的回声",
+  "rewards": {
+    "growthPoints": 3
+  },
+  "scenes": [
+    {
+      "sceneId": "detective-12-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/detective/detective-12.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "detective_helper"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/detective/detective-12.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "案件记录来到第12站：“矿洞里的回声”出现了新的变化。我们要找到三次回声，看看它和红石断点有什么关系。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“矿洞里的回声”。我们的任务是“找出会发出三次回声的石壁”，先看清三次回声，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "放大镜下闪动的线索光告诉我，三次回声就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在“矿洞里的回声”案件里，遇到困难不能只靠着急。我们要把可靠的证据放回案件记录，先处理三次回声，也要照顾身边的朋友。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "scan",
+          "prompt": "找出会发出三次回声的石壁，让三次回声的线索显现出来。",
+          "character": "detective_helper",
+          "position": "right",
+          "actions": [
+            {
+              "label": "敲蓝色石壁",
+              "feedback": "敲蓝色石壁后，三次回声出现了；红石断点的方向更清楚了。"
+            },
+            {
+              "label": "点亮火把",
+              "feedback": "点亮火把让另一个细节亮起来：回标记指向红石断点。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "线索被记录下来：三次回声和红石断点之间出现了联系。案件向前推进了一步。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "我把“回”记在案件本上，这条证据不能漏掉。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我发现这不是一条孤单的线索，它正指向红石断点。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "先保留可靠的细节，下一站还会用到“三次回声”的证据。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：三次回声不是终点，它会把故事带到红石断点。",
+          "character": "detective_helper",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我们把这条线索交给红石断点，下一份答案就在路上。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/detective/keyhole.webp"
+}

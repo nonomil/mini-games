@@ -1,0 +1,105 @@
+{
+  "levelId": "forest-07",
+  "chapterId": "forest-07",
+  "worldId": "forest",
+  "title": "松果广场",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "forest-07-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/forest/forest-07.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "forest_guide"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/forest/forest-07.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "松果广场正在发生变化。现在是“收集线索”的一步：我们要找到小松鼠，再把线索送向雾林小桥。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“松果广场”。我们的任务是“找出躲在松果旁的小松鼠”，先看清小松鼠，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "树叶、溪水和萤火虫的声音告诉我，小松鼠就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在松果广场，收集线索不能只靠着急。我们要用温柔的动作帮助森林朋友，先处理小松鼠，也要照顾身边的朋友。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "scan",
+          "prompt": "找出躲在松果旁的小松鼠，让小松鼠的线索显现出来。",
+          "character": "forest_guide",
+          "position": "right",
+          "actions": [
+            {
+              "label": "观察松果影子",
+              "feedback": "观察松果影子后，小松鼠出现了；雾林小桥的方向更清楚了。"
+            },
+            {
+              "label": "轻轻敲树干",
+              "feedback": "轻轻敲树干让另一个细节亮起来：友标记指向雾林小桥。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "小松鼠被找到后，雾林小桥的方向亮了起来。用温柔的动作帮助森林朋友，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“友”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见雾林小桥传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "小松鼠让大家知道，雾林小桥不是远处的名字，而是一条可以走到的路。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：小松鼠不是终点，它会把故事带到雾林小桥。",
+          "character": "forest_guide",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，雾林小桥的入口已经亮起。我们带着“友”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/forest/wooden-bridge.webp"
+}

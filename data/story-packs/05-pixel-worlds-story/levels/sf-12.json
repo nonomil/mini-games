@@ -1,0 +1,105 @@
+{
+  "levelId": "sf-12",
+  "chapterId": "sf-12",
+  "worldId": "sci-fi",
+  "title": "回声电台",
+  "rewards": {
+    "growthPoints": 5
+  },
+  "scenes": [
+    {
+      "sceneId": "sf-12-scene-1",
+      "background": "assets/story/pixel-worlds-v1/scenes/sci-fi/sf-12.webp",
+      "sceneAssets": {
+        "characters": [
+          "narrator",
+          "hero",
+          "pet",
+          "star_engineer"
+        ],
+        "props": [
+          "assets/story/pixel-worlds-v1/props/sci-fi/sf-12.webp"
+        ]
+      },
+      "lines": [
+        {
+          "type": "narration",
+          "text": "回声电台正在发生变化。现在是“遇到困难”的一步：我们要找到问候声音，再把线索送向机器人码头。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "这里是“回声电台”。我们的任务是“把问候声发送到森林世界”，先看清问候声音，再决定下一步。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "蓝色舱灯和轻轻的电流声告诉我，问候声音就在附近。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "在回声电台，遇到困难不能只靠着急。我们要把光线接回星图，先处理问候声音，也要照顾身边的朋友。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "activity",
+          "activityType": "route",
+          "prompt": "把问候声发送到森林世界，让问候声音的线索显现出来。",
+          "character": "star_engineer",
+          "position": "right",
+          "actions": [
+            {
+              "label": "转到森林频道",
+              "feedback": "转到森林频道后，问候声音出现了；机器人码头的方向更清楚了。"
+            },
+            {
+              "label": "敲响发送铃",
+              "feedback": "敲响发送铃让另一个细节亮起来：声标记指向机器人码头。"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "text": "问候声音被找到后，机器人码头的方向亮了起来。把光线接回星图，新的道路出现了。",
+          "character": "narrator"
+        },
+        {
+          "type": "dialogue",
+          "text": "原来“声”也藏在这里。我们把它和地图上的光点连起来。",
+          "character": "hero",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "我听见机器人码头传来的声音了，刚才的努力真的让它更近了。",
+          "character": "pet",
+          "position": "right"
+        },
+        {
+          "type": "dialogue",
+          "text": "问候声音让大家知道，机器人码头不是远处的名字，而是一条可以走到的路。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "这件事提醒我们：问候声音不是终点，它会把故事带到机器人码头。",
+          "character": "star_engineer",
+          "position": "left"
+        },
+        {
+          "type": "dialogue",
+          "text": "完成这一站后，机器人码头的入口已经亮起。我们带着“声”继续走。",
+          "character": "pet",
+          "position": "right"
+        }
+      ]
+    }
+  ],
+  "storyVersion": 2,
+  "icon": "assets/story/pixel-worlds-v1/icons/sci-fi/crystal-battery.webp"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "ocean-9grid-world-single",
+  "theme": "ocean",
+  "mode": "single",
+  "image": "./assets/generated/world-bg-single/farm-panorama.png",
+  "labels": [
+    "珊瑚码头",
+    "潮汐交汇",
+    "海玻璃站",
+    "蓝湾甲板",
+    "中央泻湖",
+    "海草水路",
+    "鲸歌岸线",
+    "浪花礁石",
+    "深蓝回环"
+  ],
+  "rows": 3,
+  "cols": 3
+}

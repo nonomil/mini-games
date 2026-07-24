@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "id": "pixel-worlds-story-audio-forest-01",
+  "chapterId": "forest-01",
+  "audioFormat": "wav",
+  "audioSubtype": "source",
+  "scenes": [
+    {
+      "sceneId": "gate",
+      "lines": [
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-01/lines/gate-00.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-01/lines/gate-01.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-01/lines/gate-02.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-01/lines/gate-03.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-01/lines/gate-04.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-01/lines/gate-05.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-01/lines/gate-06.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-01/lines/gate-07.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-01/lines/gate-08.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-01/lines/gate-09.wav"
+        },
+        {
+          "file": "assets/story/pixel-worlds-v1/audio/forest-01/lines/gate-10.wav"
+        }
+      ]
+    }
+  ]
+}

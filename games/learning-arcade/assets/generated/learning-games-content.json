@@ -1,0 +1,41 @@
+{
+  "games": [
+    {
+      "id": "word-shooter",
+      "title": "飞机大战",
+      "kicker": "英文单词",
+      "description": "看敌机上的英文单词，按字母发射光束。",
+      "image": "./assets/generated/home-card-word-shooter.webp",
+      "input": "先熟悉字母键"
+    },
+    {
+      "id": "word-cannon",
+      "title": "拼音赛车",
+      "kicker": "汉字拼音",
+      "description": "看汉字，左右换道，接住正确拼音卡。",
+      "image": "./assets/generated/home-card-word-cannon.webp",
+      "input": "第一次玩先选认汉字"
+    },
+    {
+      "id": "pinyin-snake",
+      "title": "贪吃蛇",
+      "kicker": "方向键",
+      "description": "按方向键吃对拼音块，慢慢点亮星星。",
+      "image": "./assets/generated/home-card-pinyin-snake.webp",
+      "input": "方向键热身"
+    }
+  ],
+  "homeNotes": [
+    "英文、拼音、方向键三种小游戏分开玩，不把单词和拼音混在一起。",
+    "每局都做短一点、慢一点，先让孩子愿意多玩几分钟。"
+  ],
+  "references": [
+    "拼音赛车：参考横向/纵深赛道、汉字路牌、输入拼音后小车加速冲刺",
+    "Typing Attack：首字母锁定、多目标推进、每个字母发射一次",
+    "Spelling Snake：按顺序吃字母拼单词",
+    "Google Snake：多模式和短局关卡变化",
+    "TypingGames：小游戏式打字入口",
+    "edclub：课程卡片和低门槛练习",
+    "打字鸭：中文打字课程入口"
+  ]
+}
