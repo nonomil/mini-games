@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>像素探险 | Pixel Adventure</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="./styles.css?v=word-memory-topdown-v4">
+  <link rel="stylesheet" href="./styles.css?v=word-memory-topdown-v5">
 </head>
 <body data-minigames-full-content="true">
   <main class="topdown-memory" data-prototype="word-memory-topdown">
@@ -192,9 +192,9 @@
       const cardScript = vocabMode === 'extension'
         ? './assets/word-memory-extension-cards.js?v=extension-english-memory-v1'
         : (vocabMode === 'all'
-          ? './assets/word-memory-cards.js?v=word-memory-topdown-v4'
+          ? './assets/word-memory-cards.js?v=word-memory-topdown-v5'
           : './assets/word-memory-core-cards.js?v=core-english-memory-v1');
-      document.write([cardScript, './assets/voice/map.js?v=word-memory-topdown-v4'].map(function (src) {
+      document.write([cardScript, './assets/voice/map.js?v=word-memory-topdown-v5'].map(function (src) {
         return '<script src="' + src + '"><\/script>';
       }).join(''));
     }());
@@ -221,6 +221,6 @@
   <script src="./game-data.js?v=word-memory-data-v1"></script>
   <script src="./game-storage.js?v=word-memory-storage-v1"></script>
   <script src="./game-utils.js?v=word-memory-utils-v1"></script>
-  <script src="./game.js?v=word-memory-topdown-v4"></script>
+  <script src="./game.js?v=word-memory-topdown-v5"></script>
 </body>
 </html>
