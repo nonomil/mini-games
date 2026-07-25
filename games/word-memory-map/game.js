@@ -568,6 +568,7 @@
     }
     state.selectedWorldPack = worldPackId;
     state.selectedCategory = WORLD_PACK_REGISTRY[worldPackId].category || 'all';
+    els.categorySelect.value = state.selectedCategory;
     renderOnboarding();
   }
 
@@ -3369,6 +3370,5 @@
 
   init();
 })();
-
 
 
