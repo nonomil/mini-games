@@ -1,0 +1,2336 @@
+{
+  "schemaVersion": 1,
+  "vocabId": "minecraft-vocab",
+  "engine": "edge-tts",
+  "voice": "en-US-AnaNeural",
+  "status": "complete",
+  "generatedCount": 258,
+  "targetMissingCount": 258,
+  "totalCards": 2168,
+  "generatedAt": "2026-07-15T16:55:59.066927+00:00",
+  "failures": [],
+  "entries": [
+    {
+      "cardId": "card-0025",
+      "word": "Cow",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0025-cow.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Cow",
+      "bytes": 8928
+    },
+    {
+      "cardId": "card-0028",
+      "word": "Pig",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0028-pig.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Pig",
+      "bytes": 9216
+    },
+    {
+      "cardId": "card-0030",
+      "word": "Boat",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0030-boat.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Boat",
+      "bytes": 9216
+    },
+    {
+      "cardId": "card-0037",
+      "word": "Wool",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0037-wool.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Wool",
+      "bytes": 9360
+    },
+    {
+      "cardId": "card-0049",
+      "word": "Sheep",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0049-sheep.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Sheep",
+      "bytes": 9360
+    },
+    {
+      "cardId": "card-0060",
+      "word": "Leaves",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0060-leaves.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Leaves",
+      "bytes": 10368
+    },
+    {
+      "cardId": "card-0068",
+      "word": "Chicken",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0068-chicken.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Chicken",
+      "bytes": 9936
+    },
+    {
+      "cardId": "card-0069",
+      "word": "Compass",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0069-compass.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Compass",
+      "bytes": 10944
+    },
+    {
+      "cardId": "card-0074",
+      "word": "Sapling",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0074-sapling.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Sapling",
+      "bytes": 11232
+    },
+    {
+      "cardId": "card-0083",
+      "word": "Bell",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0083-bell.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Bell",
+      "bytes": 9072
+    },
+    {
+      "cardId": "card-0088",
+      "word": "Rail",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0088-rail.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Rail",
+      "bytes": 9360
+    },
+    {
+      "cardId": "card-0093",
+      "word": "Ore",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0093-ore.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Ore",
+      "bytes": 8928
+    },
+    {
+      "cardId": "card-0094",
+      "word": "Cave",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0094-cave.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Cave",
+      "bytes": 9504
+    },
+    {
+      "cardId": "card-0098",
+      "word": "Survival Mode",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0098-survival-mode.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Survival Mode",
+      "bytes": 13536
+    },
+    {
+      "cardId": "card-0099",
+      "word": "Creative Mode",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0099-creative-mode.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Creative Mode",
+      "bytes": 12960
+    },
+    {
+      "cardId": "card-0100",
+      "word": "Adventure Mode",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0100-adventure-mode.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Adventure Mode",
+      "bytes": 13104
+    },
+    {
+      "cardId": "card-0101",
+      "word": "Spectator Mode",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0101-spectator-mode.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Spectator Mode",
+      "bytes": 14112
+    },
+    {
+      "cardId": "card-0102",
+      "word": "Hardcore Mode",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0102-hardcore-mode.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Hardcore Mode",
+      "bytes": 13392
+    },
+    {
+      "cardId": "card-0103",
+      "word": "Inventory",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0103-inventory.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Inventory",
+      "bytes": 11952
+    },
+    {
+      "cardId": "card-0104",
+      "word": "Crafting",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0104-crafting.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Crafting",
+      "bytes": 11232
+    },
+    {
+      "cardId": "card-0105",
+      "word": "Smelting",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0105-smelting.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Smelting",
+      "bytes": 11520
+    },
+    {
+      "cardId": "card-0106",
+      "word": "Enchanting",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0106-enchanting.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Enchanting",
+      "bytes": 11808
+    },
+    {
+      "cardId": "card-0107",
+      "word": "Brewing",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0107-brewing.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Brewing",
+      "bytes": 10080
+    },
+    {
+      "cardId": "card-0108",
+      "word": "Respawn",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0108-respawn.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Respawn",
+      "bytes": 11232
+    },
+    {
+      "cardId": "card-0109",
+      "word": "Spawn",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0109-spawn.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Spawn",
+      "bytes": 10224
+    },
+    {
+      "cardId": "card-0111",
+      "word": "Hostile",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0111-hostile.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Hostile",
+      "bytes": 10800
+    },
+    {
+      "cardId": "card-0112",
+      "word": "Passive",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0112-passive.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Passive",
+      "bytes": 10512
+    },
+    {
+      "cardId": "card-0113",
+      "word": "Neutral",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0113-neutral.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Neutral",
+      "bytes": 10800
+    },
+    {
+      "cardId": "card-0114",
+      "word": "Health",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0114-health.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Health",
+      "bytes": 9504
+    },
+    {
+      "cardId": "card-0116",
+      "word": "Damage",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0116-damage.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Damage",
+      "bytes": 10512
+    },
+    {
+      "cardId": "card-0117",
+      "word": "Seed",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0117-seed.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Seed",
+      "bytes": 9648
+    },
+    {
+      "cardId": "card-0119",
+      "word": "Drops",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0119-drops.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Drops",
+      "bytes": 10656
+    },
+    {
+      "cardId": "card-0120",
+      "word": "Loot",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0120-loot.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Loot",
+      "bytes": 9216
+    },
+    {
+      "cardId": "card-0121",
+      "word": "Trade",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0121-trade.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Trade",
+      "bytes": 9648
+    },
+    {
+      "cardId": "card-0122",
+      "word": "Tame",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0122-tame.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Tame",
+      "bytes": 9504
+    },
+    {
+      "cardId": "card-0123",
+      "word": "Breed",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0123-breed.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Breed",
+      "bytes": 9504
+    },
+    {
+      "cardId": "card-0124",
+      "word": "Potion",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0124-potion.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Potion",
+      "bytes": 10368
+    },
+    {
+      "cardId": "card-0125",
+      "word": "Status Effect",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0125-status-effect.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Status Effect",
+      "bytes": 14400
+    },
+    {
+      "cardId": "card-0126",
+      "word": "Recipe",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0126-recipe.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Recipe",
+      "bytes": 10656
+    },
+    {
+      "cardId": "card-0127",
+      "word": "Villager",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0127-villager.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Villager",
+      "bytes": 10656
+    },
+    {
+      "cardId": "card-0131",
+      "word": "Plank",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0131-plank.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Plank",
+      "bytes": 9936
+    },
+    {
+      "cardId": "card-0134",
+      "word": "Slab",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0134-slab.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Slab",
+      "bytes": 10080
+    },
+    {
+      "cardId": "card-0135",
+      "word": "Stair",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0135-stair.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Stair",
+      "bytes": 10224
+    },
+    {
+      "cardId": "card-0136",
+      "word": "Fence",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0136-fence.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Fence",
+      "bytes": 10368
+    },
+    {
+      "cardId": "card-0137",
+      "word": "Trapdoor",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0137-trapdoor.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Trapdoor",
+      "bytes": 11376
+    },
+    {
+      "cardId": "card-0143",
+      "word": "Bed",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0143-bed.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Bed",
+      "bytes": 8784
+    },
+    {
+      "cardId": "card-0147",
+      "word": "Hopper",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0147-hopper.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Hopper",
+      "bytes": 10080
+    },
+    {
+      "cardId": "card-0149",
+      "word": "Ladder",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0149-ladder.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Ladder",
+      "bytes": 9936
+    },
+    {
+      "cardId": "card-0160",
+      "word": "Concrete",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0160-concrete.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Concrete",
+      "bytes": 11232
+    },
+    {
+      "cardId": "card-0161",
+      "word": "Bamboo",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0161-bamboo.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Bamboo",
+      "bytes": 10368
+    },
+    {
+      "cardId": "card-0171",
+      "word": "Netherite",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0171-netherite.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Netherite",
+      "bytes": 11088
+    },
+    {
+      "cardId": "card-0172",
+      "word": "Quartz",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0172-quartz.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Quartz",
+      "bytes": 10656
+    },
+    {
+      "cardId": "card-0173",
+      "word": "Amethyst",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0173-amethyst.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Amethyst",
+      "bytes": 11376
+    },
+    {
+      "cardId": "card-0174",
+      "word": "Ingot",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0174-ingot.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Ingot",
+      "bytes": 10368
+    },
+    {
+      "cardId": "card-0175",
+      "word": "Nugget",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0175-nugget.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Nugget",
+      "bytes": 9936
+    },
+    {
+      "cardId": "card-0176",
+      "word": "Dust",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0176-dust.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Dust",
+      "bytes": 9936
+    },
+    {
+      "cardId": "card-0183",
+      "word": "Dragon Egg",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0183-dragon-egg.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Dragon Egg",
+      "bytes": 11952
+    },
+    {
+      "cardId": "card-0186",
+      "word": "Eye of Ender",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0186-eye-of-ender.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Eye of Ender",
+      "bytes": 12528
+    },
+    {
+      "cardId": "card-0193",
+      "word": "Rabbit's Foot",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0193-rabbit-s-foot.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Rabbit's Foot",
+      "bytes": 12528
+    },
+    {
+      "cardId": "card-0195",
+      "word": "Shovel",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0195-shovel.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Shovel",
+      "bytes": 10368
+    },
+    {
+      "cardId": "card-0217",
+      "word": "Spawn Egg",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0217-spawn-egg.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Spawn Egg",
+      "bytes": 11952
+    },
+    {
+      "cardId": "card-0220",
+      "word": "Leggings",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0220-leggings.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Leggings",
+      "bytes": 11088
+    },
+    {
+      "cardId": "card-0235",
+      "word": "Honey Bottle",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0235-honey-bottle.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Honey Bottle",
+      "bytes": 12240
+    },
+    {
+      "cardId": "card-0238",
+      "word": "Sweet Berries",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0238-sweet-berries.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Sweet Berries",
+      "bytes": 13392
+    },
+    {
+      "cardId": "card-0240",
+      "word": "Horse",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0240-horse.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Horse",
+      "bytes": 10080
+    },
+    {
+      "cardId": "card-0241",
+      "word": "Donkey",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0241-donkey.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Donkey",
+      "bytes": 10080
+    },
+    {
+      "cardId": "card-0242",
+      "word": "Mule",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0242-mule.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Mule",
+      "bytes": 9936
+    },
+    {
+      "cardId": "card-0244",
+      "word": "Bat",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0244-bat.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Bat",
+      "bytes": 9072
+    },
+    {
+      "cardId": "card-0245",
+      "word": "Squid",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0245-squid.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Squid",
+      "bytes": 10080
+    },
+    {
+      "cardId": "card-0246",
+      "word": "Glow Squid",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0246-glow-squid.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Glow Squid",
+      "bytes": 12240
+    },
+    {
+      "cardId": "card-0247",
+      "word": "Axolotl",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0247-axolotl.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Axolotl",
+      "bytes": 12096
+    },
+    {
+      "cardId": "card-0248",
+      "word": "Turtle",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0248-turtle.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Turtle",
+      "bytes": 10080
+    },
+    {
+      "cardId": "card-0249",
+      "word": "Bee",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0249-bee.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Bee",
+      "bytes": 8784
+    },
+    {
+      "cardId": "card-0250",
+      "word": "Fox",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0250-fox.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Fox",
+      "bytes": 10512
+    },
+    {
+      "cardId": "card-0251",
+      "word": "Panda",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0251-panda.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Panda",
+      "bytes": 10368
+    },
+    {
+      "cardId": "card-0252",
+      "word": "Parrot",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0252-parrot.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Parrot",
+      "bytes": 10080
+    },
+    {
+      "cardId": "card-0253",
+      "word": "Frog",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0253-frog.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Frog",
+      "bytes": 9792
+    },
+    {
+      "cardId": "card-0254",
+      "word": "Tadpole",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0254-tadpole.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Tadpole",
+      "bytes": 11088
+    },
+    {
+      "cardId": "card-0255",
+      "word": "Sniffer",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0255-sniffer.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Sniffer",
+      "bytes": 10512
+    },
+    {
+      "cardId": "card-0256",
+      "word": "Allay",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0256-allay.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Allay",
+      "bytes": 9216
+    },
+    {
+      "cardId": "card-0257",
+      "word": "Camel",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0257-camel.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Camel",
+      "bytes": 10080
+    },
+    {
+      "cardId": "card-0258",
+      "word": "Armadillo",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0258-armadillo.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Armadillo",
+      "bytes": 11808
+    },
+    {
+      "cardId": "card-0259",
+      "word": "Ocelot",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0259-ocelot.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Ocelot",
+      "bytes": 11088
+    },
+    {
+      "cardId": "card-0260",
+      "word": "Mooshroom",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0260-mooshroom.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Mooshroom",
+      "bytes": 10656
+    },
+    {
+      "cardId": "card-0261",
+      "word": "Wolf",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0261-wolf.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Wolf",
+      "bytes": 9936
+    },
+    {
+      "cardId": "card-0262",
+      "word": "Enderman",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0262-enderman.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Enderman",
+      "bytes": 11088
+    },
+    {
+      "cardId": "card-0264",
+      "word": "Iron Golem",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0264-iron-golem.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Iron Golem",
+      "bytes": 13104
+    },
+    {
+      "cardId": "card-0265",
+      "word": "Zombie",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0265-zombie.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Zombie",
+      "bytes": 10656
+    },
+    {
+      "cardId": "card-0267",
+      "word": "Spider",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0267-spider.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Spider",
+      "bytes": 10656
+    },
+    {
+      "cardId": "card-0268",
+      "word": "Cave Spider",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0268-cave-spider.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Cave Spider",
+      "bytes": 12816
+    },
+    {
+      "cardId": "card-0269",
+      "word": "Witch",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0269-witch.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Witch",
+      "bytes": 9504
+    },
+    {
+      "cardId": "card-0270",
+      "word": "Slime",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0270-slime.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Slime",
+      "bytes": 10368
+    },
+    {
+      "cardId": "card-0271",
+      "word": "Phantom",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0271-phantom.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Phantom",
+      "bytes": 11088
+    },
+    {
+      "cardId": "card-0272",
+      "word": "Drowned",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0272-drowned.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Drowned",
+      "bytes": 10368
+    },
+    {
+      "cardId": "card-0273",
+      "word": "Husk",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0273-husk.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Husk",
+      "bytes": 9648
+    },
+    {
+      "cardId": "card-0274",
+      "word": "Stray",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0274-stray.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Stray",
+      "bytes": 10080
+    },
+    {
+      "cardId": "card-0275",
+      "word": "Wither Skeleton",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0275-wither-skeleton.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Wither Skeleton",
+      "bytes": 13824
+    },
+    {
+      "cardId": "card-0276",
+      "word": "Blaze",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0276-blaze.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Blaze",
+      "bytes": 10224
+    },
+    {
+      "cardId": "card-0277",
+      "word": "Ghast",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0277-ghast.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Ghast",
+      "bytes": 10080
+    },
+    {
+      "cardId": "card-0278",
+      "word": "Magma Cube",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0278-magma-cube.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Magma Cube",
+      "bytes": 12384
+    },
+    {
+      "cardId": "card-0279",
+      "word": "Hoglin",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0279-hoglin.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Hoglin",
+      "bytes": 10944
+    },
+    {
+      "cardId": "card-0280",
+      "word": "Piglin",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0280-piglin.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Piglin",
+      "bytes": 10656
+    },
+    {
+      "cardId": "card-0281",
+      "word": "Shulker",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0281-shulker.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Shulker",
+      "bytes": 10224
+    },
+    {
+      "cardId": "card-0282",
+      "word": "Guardian",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0282-guardian.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Guardian",
+      "bytes": 10656
+    },
+    {
+      "cardId": "card-0283",
+      "word": "Elder Guardian",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0283-elder-guardian.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Elder Guardian",
+      "bytes": 13680
+    },
+    {
+      "cardId": "card-0284",
+      "word": "Silverfish",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0284-silverfish.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Silverfish",
+      "bytes": 12816
+    },
+    {
+      "cardId": "card-0285",
+      "word": "Ravager",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0285-ravager.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Ravager",
+      "bytes": 10944
+    },
+    {
+      "cardId": "card-0286",
+      "word": "Pillager",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0286-pillager.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Pillager",
+      "bytes": 10656
+    },
+    {
+      "cardId": "card-0287",
+      "word": "Vindicator",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0287-vindicator.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Vindicator",
+      "bytes": 12240
+    },
+    {
+      "cardId": "card-0289",
+      "word": "Vex",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0289-vex.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Vex",
+      "bytes": 10080
+    },
+    {
+      "cardId": "card-0291",
+      "word": "Breeze",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0291-breeze.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Breeze",
+      "bytes": 10224
+    },
+    {
+      "cardId": "card-0297",
+      "word": "Tundra",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0297-tundra.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Tundra",
+      "bytes": 10512
+    },
+    {
+      "cardId": "card-0308",
+      "word": "Sharpness",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0308-sharpness.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Sharpness",
+      "bytes": 11952
+    },
+    {
+      "cardId": "card-0309",
+      "word": "Smite",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0309-smite.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Smite",
+      "bytes": 10368
+    },
+    {
+      "cardId": "card-0310",
+      "word": "Bane of Arthropods",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0310-bane-of-arthropods.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Bane of Arthropods",
+      "bytes": 15984
+    },
+    {
+      "cardId": "card-0311",
+      "word": "Knockback",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0311-knockback.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Knockback",
+      "bytes": 11520
+    },
+    {
+      "cardId": "card-0312",
+      "word": "Fire Aspect",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0312-fire-aspect.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Fire Aspect",
+      "bytes": 14400
+    },
+    {
+      "cardId": "card-0313",
+      "word": "Looting",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0313-looting.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Looting",
+      "bytes": 9936
+    },
+    {
+      "cardId": "card-0314",
+      "word": "Efficiency",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0314-efficiency.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Efficiency",
+      "bytes": 12240
+    },
+    {
+      "cardId": "card-0315",
+      "word": "Silk Touch",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0315-silk-touch.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Silk Touch",
+      "bytes": 12960
+    },
+    {
+      "cardId": "card-0316",
+      "word": "Fortune",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0316-fortune.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Fortune",
+      "bytes": 10944
+    },
+    {
+      "cardId": "card-0317",
+      "word": "Protection",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0317-protection.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Protection",
+      "bytes": 11664
+    },
+    {
+      "cardId": "card-0318",
+      "word": "Thorns",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0318-thorns.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Thorns",
+      "bytes": 11088
+    },
+    {
+      "cardId": "card-0319",
+      "word": "Mending",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0319-mending.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Mending",
+      "bytes": 10512
+    },
+    {
+      "cardId": "card-0320",
+      "word": "Infinity",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0320-infinity.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Infinity",
+      "bytes": 11376
+    },
+    {
+      "cardId": "card-0321",
+      "word": "Power",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0321-power.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Power",
+      "bytes": 9792
+    },
+    {
+      "cardId": "card-0322",
+      "word": "Punch",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0322-punch.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Punch",
+      "bytes": 9936
+    },
+    {
+      "cardId": "card-0323",
+      "word": "Flame",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0323-flame.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Flame",
+      "bytes": 10080
+    },
+    {
+      "cardId": "card-0324",
+      "word": "Feather Falling",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0324-feather-falling.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Feather Falling",
+      "bytes": 13104
+    },
+    {
+      "cardId": "card-0325",
+      "word": "Depth Strider",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0325-depth-strider.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Depth Strider",
+      "bytes": 13104
+    },
+    {
+      "cardId": "card-0326",
+      "word": "Frost Walker",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0326-frost-walker.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Frost Walker",
+      "bytes": 13104
+    },
+    {
+      "cardId": "card-0327",
+      "word": "Aqua Affinity",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0327-aqua-affinity.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Aqua Affinity",
+      "bytes": 13680
+    },
+    {
+      "cardId": "card-0328",
+      "word": "Respiration",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0328-respiration.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Respiration",
+      "bytes": 12816
+    },
+    {
+      "cardId": "card-0329",
+      "word": "Channeling",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0329-channeling.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Channeling",
+      "bytes": 11232
+    },
+    {
+      "cardId": "card-0330",
+      "word": "Riptide",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0330-riptide.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Riptide",
+      "bytes": 10944
+    },
+    {
+      "cardId": "card-0331",
+      "word": "Loyalty",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0331-loyalty.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Loyalty",
+      "bytes": 11376
+    },
+    {
+      "cardId": "card-0332",
+      "word": "Impaling",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0332-impaling.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Impaling",
+      "bytes": 11808
+    },
+    {
+      "cardId": "card-0333",
+      "word": "Unbreaking",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0333-unbreaking.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Unbreaking",
+      "bytes": 11664
+    },
+    {
+      "cardId": "card-0334",
+      "word": "Multishot",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0334-multishot.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Multishot",
+      "bytes": 11952
+    },
+    {
+      "cardId": "card-0335",
+      "word": "Piercing",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0335-piercing.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Piercing",
+      "bytes": 10656
+    },
+    {
+      "cardId": "card-0336",
+      "word": "Quick Charge",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0336-quick-charge.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Quick Charge",
+      "bytes": 12672
+    },
+    {
+      "cardId": "card-0337",
+      "word": "Soul Speed",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0337-soul-speed.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Soul Speed",
+      "bytes": 12528
+    },
+    {
+      "cardId": "card-0338",
+      "word": "Curse of Vanishing",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0338-curse-of-vanishing.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Curse of Vanishing",
+      "bytes": 14832
+    },
+    {
+      "cardId": "card-0339",
+      "word": "Curse of Binding",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0339-curse-of-binding.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Curse of Binding",
+      "bytes": 14112
+    },
+    {
+      "cardId": "card-0345",
+      "word": "Stronghold",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0345-stronghold.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Stronghold",
+      "bytes": 12672
+    },
+    {
+      "cardId": "card-0346",
+      "word": "Village",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0346-village.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Village",
+      "bytes": 10368
+    },
+    {
+      "cardId": "card-0347",
+      "word": "Dungeon",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0347-dungeon.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Dungeon",
+      "bytes": 10656
+    },
+    {
+      "cardId": "card-0348",
+      "word": "Mineshaft",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0348-mineshaft.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Mineshaft",
+      "bytes": 11952
+    },
+    {
+      "cardId": "card-0349",
+      "word": "Temple",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0349-temple.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Temple",
+      "bytes": 10080
+    },
+    {
+      "cardId": "card-0350",
+      "word": "Pyramid",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0350-pyramid.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Pyramid",
+      "bytes": 10656
+    },
+    {
+      "cardId": "card-0351",
+      "word": "Nether Fortress",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0351-nether-fortress.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Nether Fortress",
+      "bytes": 14256
+    },
+    {
+      "cardId": "card-0352",
+      "word": "Bastion Remnant",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0352-bastion-remnant.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Bastion Remnant",
+      "bytes": 14256
+    },
+    {
+      "cardId": "card-0353",
+      "word": "End City",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0353-end-city.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "End City",
+      "bytes": 11376
+    },
+    {
+      "cardId": "card-0354",
+      "word": "Ocean Monument",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0354-ocean-monument.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Ocean Monument",
+      "bytes": 14112
+    },
+    {
+      "cardId": "card-0355",
+      "word": "Woodland Mansion",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0355-woodland-mansion.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Woodland Mansion",
+      "bytes": 14400
+    },
+    {
+      "cardId": "card-0356",
+      "word": "Ancient City",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0356-ancient-city.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Ancient City",
+      "bytes": 12672
+    },
+    {
+      "cardId": "card-0357",
+      "word": "Trial Chamber",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0357-trial-chamber.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Trial Chamber",
+      "bytes": 13536
+    },
+    {
+      "cardId": "card-0359",
+      "word": "Wither",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0359-wither.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Wither",
+      "bytes": 9504
+    },
+    {
+      "cardId": "card-0360",
+      "word": "Difficulty",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0360-difficulty.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Difficulty",
+      "bytes": 11808
+    },
+    {
+      "cardId": "card-0361",
+      "word": "Peaceful",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0361-peaceful.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Peaceful",
+      "bytes": 10800
+    },
+    {
+      "cardId": "card-0362",
+      "word": "Coordinates",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0362-coordinates.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Coordinates",
+      "bytes": 12384
+    },
+    {
+      "cardId": "card-0364",
+      "word": "Realm",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0364-realm.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Realm",
+      "bytes": 9792
+    },
+    {
+      "cardId": "card-0365",
+      "word": "Advancement",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0365-advancement.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Advancement",
+      "bytes": 12672
+    },
+    {
+      "cardId": "card-0366",
+      "word": "Raid",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0366-raid.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Raid",
+      "bytes": 9216
+    },
+    {
+      "cardId": "card-0367",
+      "word": "Tick",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0367-tick.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Tick",
+      "bytes": 9216
+    },
+    {
+      "cardId": "card-0368",
+      "word": "Spawn Point",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0368-spawn-point.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Spawn Point",
+      "bytes": 12816
+    },
+    {
+      "cardId": "card-0369",
+      "word": "Command",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0369-command.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Command",
+      "bytes": 10656
+    },
+    {
+      "cardId": "card-0370",
+      "word": "Redstone Circuit",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0370-redstone-circuit.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Redstone Circuit",
+      "bytes": 14544
+    },
+    {
+      "cardId": "card-0371",
+      "word": "Mob Farm",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0371-mob-farm.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Mob Farm",
+      "bytes": 12384
+    },
+    {
+      "cardId": "card-0372",
+      "word": "Speedrun",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0372-speedrun.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Speedrun",
+      "bytes": 11808
+    },
+    {
+      "cardId": "card-0373",
+      "word": "Resource Pack",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0373-resource-pack.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Resource Pack",
+      "bytes": 13392
+    },
+    {
+      "cardId": "card-0374",
+      "word": "Wandering Trader",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0374-wandering-trader.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Wandering Trader",
+      "bytes": 14688
+    },
+    {
+      "cardId": "card-0375",
+      "word": "Illager",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0375-illager.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Illager",
+      "bytes": 10368
+    },
+    {
+      "cardId": "card-0376",
+      "word": "Dimension",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0376-dimension.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Dimension",
+      "bytes": 11232
+    },
+    {
+      "cardId": "card-0377",
+      "word": "Operator",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0377-operator.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Operator",
+      "bytes": 11520
+    },
+    {
+      "cardId": "card-0379",
+      "word": "LAN World",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0379-lan-world.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "LAN World",
+      "bytes": 12528
+    },
+    {
+      "cardId": "card-0380",
+      "word": "Datapack",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0380-datapack.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Datapack",
+      "bytes": 11520
+    },
+    {
+      "cardId": "card-0381",
+      "word": "Boss Bar",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0381-boss-bar.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Boss Bar",
+      "bytes": 11664
+    },
+    {
+      "cardId": "card-0382",
+      "word": "Structure",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0382-structure.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Structure",
+      "bytes": 11376
+    },
+    {
+      "cardId": "card-0383",
+      "word": "Loot Table",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0383-loot-table.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Loot Table",
+      "bytes": 12096
+    },
+    {
+      "cardId": "card-0387",
+      "word": "Pointed Dripstone",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0387-pointed-dripstone.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Pointed Dripstone",
+      "bytes": 14688
+    },
+    {
+      "cardId": "card-0390",
+      "word": "Packed Mud",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0390-packed-mud.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Packed Mud",
+      "bytes": 11664
+    },
+    {
+      "cardId": "card-0391",
+      "word": "Mud Bricks",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0391-mud-bricks.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Mud Bricks",
+      "bytes": 12528
+    },
+    {
+      "cardId": "card-0394",
+      "word": "Sculk Catalyst",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0394-sculk-catalyst.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Sculk Catalyst",
+      "bytes": 15264
+    },
+    {
+      "cardId": "card-0396",
+      "word": "Candle",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0396-candle.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Candle",
+      "bytes": 10368
+    },
+    {
+      "cardId": "card-0398",
+      "word": "Composter",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0398-composter.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Composter",
+      "bytes": 11232
+    },
+    {
+      "cardId": "card-0404",
+      "word": "Barrel",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0404-barrel.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Barrel",
+      "bytes": 9792
+    },
+    {
+      "cardId": "card-0408",
+      "word": "Soul Campfire",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0408-soul-campfire.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Soul Campfire",
+      "bytes": 14688
+    },
+    {
+      "cardId": "card-0412",
+      "word": "Comparator",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0412-comparator.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Comparator",
+      "bytes": 12528
+    },
+    {
+      "cardId": "card-0413",
+      "word": "Repeater",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0413-repeater.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Repeater",
+      "bytes": 10800
+    },
+    {
+      "cardId": "card-0414",
+      "word": "Lever",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0414-lever.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Lever",
+      "bytes": 9792
+    },
+    {
+      "cardId": "card-0415",
+      "word": "Pressure Plate",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0415-pressure-plate.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Pressure Plate",
+      "bytes": 11952
+    },
+    {
+      "cardId": "card-0416",
+      "word": "Target Block",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0416-target-block.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Target Block",
+      "bytes": 12960
+    },
+    {
+      "cardId": "card-0418",
+      "word": "Copper Block",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0418-copper-block.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Copper Block",
+      "bytes": 12528
+    },
+    {
+      "cardId": "card-0419",
+      "word": "Froglight",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0419-froglight.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Froglight",
+      "bytes": 11664
+    },
+    {
+      "cardId": "card-0436",
+      "word": "Dye",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0436-dye.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Dye",
+      "bytes": 8928
+    },
+    {
+      "cardId": "card-0439",
+      "word": "Pottery Sherd",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0439-pottery-sherd.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Pottery Sherd",
+      "bytes": 12960
+    },
+    {
+      "cardId": "card-0440",
+      "word": "Chorus Fruit",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0440-chorus-fruit.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Chorus Fruit",
+      "bytes": 12528
+    },
+    {
+      "cardId": "card-0446",
+      "word": "Banner",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0446-banner.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Banner",
+      "bytes": 9936
+    },
+    {
+      "cardId": "card-0448",
+      "word": "Smithing Template",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0448-smithing-template.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Smithing Template",
+      "bytes": 14256
+    },
+    {
+      "cardId": "card-0458",
+      "word": "Tipped Arrow",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0458-tipped-arrow.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Tipped Arrow",
+      "bytes": 11808
+    },
+    {
+      "cardId": "card-0464",
+      "word": "Bottle o' Enchanting",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0464-bottle-o-enchanting.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Bottle o' Enchanting",
+      "bytes": 17136
+    },
+    {
+      "cardId": "card-0471",
+      "word": "Tropical Fish",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0471-tropical-fish.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Tropical Fish",
+      "bytes": 13536
+    },
+    {
+      "cardId": "card-0476",
+      "word": "Melon Slice",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0476-melon-slice.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Melon Slice",
+      "bytes": 13536
+    },
+    {
+      "cardId": "card-0478",
+      "word": "Goat",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0478-goat.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Goat",
+      "bytes": 9216
+    },
+    {
+      "cardId": "card-0479",
+      "word": "Llama",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0479-llama.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Llama",
+      "bytes": 9792
+    },
+    {
+      "cardId": "card-0480",
+      "word": "Trader Llama",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0480-trader-llama.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Trader Llama",
+      "bytes": 12816
+    },
+    {
+      "cardId": "card-0481",
+      "word": "Polar Bear",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0481-polar-bear.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Polar Bear",
+      "bytes": 11808
+    },
+    {
+      "cardId": "card-0482",
+      "word": "Snow Golem",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0482-snow-golem.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Snow Golem",
+      "bytes": 12960
+    },
+    {
+      "cardId": "card-0483",
+      "word": "Zombified Piglin",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0483-zombified-piglin.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Zombified Piglin",
+      "bytes": 15552
+    },
+    {
+      "cardId": "card-0484",
+      "word": "Piglin Brute",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0484-piglin-brute.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Piglin Brute",
+      "bytes": 12960
+    },
+    {
+      "cardId": "card-0485",
+      "word": "Zoglin",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0485-zoglin.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Zoglin",
+      "bytes": 10656
+    },
+    {
+      "cardId": "card-0486",
+      "word": "Strider",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0486-strider.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Strider",
+      "bytes": 10944
+    },
+    {
+      "cardId": "card-0488",
+      "word": "Bogged",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0488-bogged.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Bogged",
+      "bytes": 9504
+    },
+    {
+      "cardId": "card-0489",
+      "word": "Creaking",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0489-creaking.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Creaking",
+      "bytes": 10512
+    },
+    {
+      "cardId": "card-0490",
+      "word": "Zombie Villager",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0490-zombie-villager.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Zombie Villager",
+      "bytes": 14256
+    },
+    {
+      "cardId": "card-0493",
+      "word": "Illusioner",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0493-illusioner.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Illusioner",
+      "bytes": 10800
+    },
+    {
+      "cardId": "card-0513",
+      "word": "Sweeping Edge",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0513-sweeping-edge.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Sweeping Edge",
+      "bytes": 13104
+    },
+    {
+      "cardId": "card-0514",
+      "word": "Fire Protection",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0514-fire-protection.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Fire Protection",
+      "bytes": 14400
+    },
+    {
+      "cardId": "card-0515",
+      "word": "Blast Protection",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0515-blast-protection.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Blast Protection",
+      "bytes": 14400
+    },
+    {
+      "cardId": "card-0516",
+      "word": "Projectile Protection",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0516-projectile-protection.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Projectile Protection",
+      "bytes": 15696
+    },
+    {
+      "cardId": "card-0517",
+      "word": "Lure",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0517-lure.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Lure",
+      "bytes": 9360
+    },
+    {
+      "cardId": "card-0518",
+      "word": "Luck of the Sea",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0518-luck-of-the-sea.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Luck of the Sea",
+      "bytes": 12960
+    },
+    {
+      "cardId": "card-0519",
+      "word": "Swift Sneak",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0519-swift-sneak.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Swift Sneak",
+      "bytes": 13536
+    },
+    {
+      "cardId": "card-0520",
+      "word": "Density",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0520-density.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Density",
+      "bytes": 10656
+    },
+    {
+      "cardId": "card-0521",
+      "word": "Breach",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0521-breach.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Breach",
+      "bytes": 10080
+    },
+    {
+      "cardId": "card-0522",
+      "word": "Wind Burst",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0522-wind-burst.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Wind Burst",
+      "bytes": 12960
+    },
+    {
+      "cardId": "card-0523",
+      "word": "Ruined Portal",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0523-ruined-portal.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Ruined Portal",
+      "bytes": 13392
+    },
+    {
+      "cardId": "card-0524",
+      "word": "Pillager Outpost",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0524-pillager-outpost.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Pillager Outpost",
+      "bytes": 15120
+    },
+    {
+      "cardId": "card-0525",
+      "word": "Igloo",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0525-igloo.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Igloo",
+      "bytes": 9648
+    },
+    {
+      "cardId": "card-0526",
+      "word": "Shipwreck",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0526-shipwreck.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Shipwreck",
+      "bytes": 11232
+    },
+    {
+      "cardId": "card-0527",
+      "word": "Buried Treasure",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0527-buried-treasure.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Buried Treasure",
+      "bytes": 13392
+    },
+    {
+      "cardId": "card-0528",
+      "word": "Amethyst Geode",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0528-amethyst-geode.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Amethyst Geode",
+      "bytes": 14256
+    },
+    {
+      "cardId": "card-0529",
+      "word": "Nether Wastes",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0529-nether-wastes.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Nether Wastes",
+      "bytes": 13536
+    },
+    {
+      "cardId": "card-0534",
+      "word": "Fossil",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0534-fossil.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Fossil",
+      "bytes": 10656
+    },
+    {
+      "cardId": "card-0535",
+      "word": "Swamp Hut",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0535-swamp-hut.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Swamp Hut",
+      "bytes": 12528
+    },
+    {
+      "cardId": "card-0536",
+      "word": "Desert Well",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0536-desert-well.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Desert Well",
+      "bytes": 11808
+    },
+    {
+      "cardId": "card-0537",
+      "word": "Trial Spawner",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0537-trial-spawner.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Trial Spawner",
+      "bytes": 13536
+    },
+    {
+      "cardId": "card-0538",
+      "word": "Vault",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0538-vault.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "Vault",
+      "bytes": 9792
+    },
+    {
+      "cardId": "mc-core-003-oak",
+      "word": "oak",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0027-oak.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "oak",
+      "bytes": 9072
+    },
+    {
+      "cardId": "mc-core-005-blue",
+      "word": "blue",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0029-blue.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "blue",
+      "bytes": 9216
+    },
+    {
+      "cardId": "mc-core-012-wood",
+      "word": "wood",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0036-wood.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "wood",
+      "bytes": 8928
+    },
+    {
+      "cardId": "mc-core-014-birch",
+      "word": "birch",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0038-birch.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "birch",
+      "bytes": 9936
+    },
+    {
+      "cardId": "mc-core-015-black",
+      "word": "black",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0039-black.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "black",
+      "bytes": 9936
+    },
+    {
+      "cardId": "mc-core-018-daisy",
+      "word": "daisy",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0042-daisy.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "daisy",
+      "bytes": 9936
+    },
+    {
+      "cardId": "mc-core-021-green",
+      "word": "green",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0045-green.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "green",
+      "bytes": 9792
+    },
+    {
+      "cardId": "mc-core-028-tulip",
+      "word": "tulip",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0052-tulip.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "tulip",
+      "bytes": 10080
+    },
+    {
+      "cardId": "mc-core-030-white",
+      "word": "white",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0054-white.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "white",
+      "bytes": 9360
+    },
+    {
+      "cardId": "mc-core-031-acacia",
+      "word": "acacia",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0055-acacia.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "acacia",
+      "bytes": 10944
+    },
+    {
+      "cardId": "mc-core-033-flower",
+      "word": "flower",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0057-flower.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "flower",
+      "bytes": 10368
+    },
+    {
+      "cardId": "mc-core-037-orchid",
+      "word": "orchid",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0061-orchid.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "orchid",
+      "bytes": 9936
+    },
+    {
+      "cardId": "mc-core-040-spruce",
+      "word": "spruce",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0064-spruce.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "spruce",
+      "bytes": 10944
+    },
+    {
+      "cardId": "mc-core-042-yellow",
+      "word": "yellow",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0066-yellow.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "yellow",
+      "bytes": 10080
+    },
+    {
+      "cardId": "mc-core-053-mushroom",
+      "word": "mushroom",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0077-mushroom.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "mushroom",
+      "bytes": 11088
+    },
+    {
+      "cardId": "mc-core-055-air",
+      "word": "air",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0079-air.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "air",
+      "bytes": 9072
+    },
+    {
+      "cardId": "mc-core-067-chain",
+      "word": "chain",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0091-chain.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "chain",
+      "bytes": 9792
+    },
+    {
+      "cardId": "mc-core-071-disk",
+      "word": "disk",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0095-disk.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "disk",
+      "bytes": 9504
+    },
+    {
+      "cardId": "mc-core-072-hill",
+      "word": "hill",
+      "file": "assets/learn/english-vocab/minecraft-audio/card-0096-hill.mp3",
+      "engine": "edge-tts",
+      "voice": "en-US-AnaNeural",
+      "text": "hill",
+      "bytes": 8928
+    }
+  ]
+}

@@ -95,6 +95,10 @@ const ExplorationSystem = (function () {
     let currentBattle = null;
     let unlockedScenes = {};
 
+    function isFullContentMode() {
+        return document.body?.dataset?.minigamesFullContent === 'true';
+    }
+
     async function loadScenes() {
         if (scenes) return scenes;
         try {
@@ -137,6 +141,7 @@ const ExplorationSystem = (function () {
     }
 
     function isSceneUnlocked(scene) {
+        if (isFullContentMode()) return true;
         const pet = PetSystem.getState();
         if (pet.level < (scene.min_level || 1)) return false;
         if ((scene.unlock_cost || 0) > 0 && !unlockedScenes[scene.id]) return false;

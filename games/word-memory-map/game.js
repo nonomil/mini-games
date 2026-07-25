@@ -16,6 +16,7 @@
     DEBUG_WORLD_CONTROLS,
     AUTO_START_PLAY_SESSION,
     ENABLE_AUTOMATION_WORLD_CONTROLS,
+    FULL_CONTENT_MODE,
     TTS_REQUEST_TIMEOUT_MS,
     LOOPBACK_TTS_ENDPOINT,
     ASSET_BASE,
@@ -350,7 +351,7 @@
   }
 
   function isLevelUnlocked(level) {
-    return level.order <= state.highestUnlockedLevel;
+    return FULL_CONTENT_MODE || level.order <= state.highestUnlockedLevel;
   }
 
   function debugLevelOverride() {

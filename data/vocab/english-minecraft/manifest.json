@@ -1,0 +1,62 @@
+{
+  "id": "english-minecraft",
+  "title": "Minecraft 英语小游戏词库",
+  "type": "game-vocab-pack",
+  "version": "2026-07-08",
+  "sourcePackId": "english-mc-hybrid-2026",
+  "sourceModuleId": "minecraft-vocab",
+  "description": "从正式学习中心 Minecraft 英语资料包同步出来的小游戏题库副本。小游戏默认引用这里，不直接读取 data/learn 下的正式资料包。",
+  "updatedAt": "2026-07-15T08:17:24.170Z",
+  "views": [
+    {
+      "id": "all",
+      "purpose": "全量 Minecraft 英语词库，供综合游戏和自由练习使用",
+      "file": "data/vocab/english-minecraft/views/all.json",
+      "upstreamFile": "data/learn/packs/english-mc-hybrid-2026/modules/minecraft-vocab.json",
+      "sourceModuleId": "minecraft-vocab",
+      "viewId": "all",
+      "cardCount": 2168,
+      "generatedAt": "2026-07-15T08:17:23.896Z"
+    },
+    {
+      "id": "starter",
+      "purpose": "低门槛起步词，适合首次接触和热身",
+      "file": "data/vocab/english-minecraft/views/starter.json",
+      "upstreamFile": "data/learn/packs/english-mc-hybrid-2026/modules/minecraft-vocab-starter.json",
+      "sourceModuleId": "minecraft-vocab",
+      "viewId": "starter",
+      "cardCount": 24,
+      "generatedAt": "2026-07-08T09:32:33.006Z"
+    },
+    {
+      "id": "core",
+      "purpose": "核心 Minecraft 主题词，用于复习和扩展",
+      "file": "data/vocab/english-minecraft/views/core.json",
+      "upstreamFile": "data/learn/packs/english-mc-hybrid-2026/modules/minecraft-vocab-core.json",
+      "sourceModuleId": "minecraft-vocab",
+      "viewId": "core",
+      "cardCount": 72,
+      "generatedAt": "2026-07-08T09:32:33.006Z"
+    },
+    {
+      "id": "typing-view",
+      "purpose": "短词键盘训练视图",
+      "file": "data/vocab/english-minecraft/views/typing-view.json",
+      "upstreamFile": "data/learn/packs/english-mc-hybrid-2026/modules/minecraft-vocab-typing-view.json",
+      "sourceModuleId": "minecraft-vocab",
+      "viewId": "typing-view",
+      "cardCount": 92,
+      "generatedAt": "2026-07-08T09:32:33.006Z"
+    },
+    {
+      "id": "memory-view",
+      "purpose": "看图认义、地图找词和记忆配对视图",
+      "file": "data/vocab/english-minecraft/views/memory-view.json",
+      "upstreamFile": "data/learn/packs/english-mc-hybrid-2026/modules/minecraft-vocab-memory-view.json",
+      "sourceModuleId": "minecraft-vocab",
+      "viewId": "memory-view",
+      "cardCount": 24,
+      "generatedAt": "2026-07-08T09:32:33.006Z"
+    }
+  ]
+}

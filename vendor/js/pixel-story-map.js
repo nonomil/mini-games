@@ -37,6 +37,10 @@
         return [];
     }
 
+    function isFullContentMode() {
+        return root.document && root.document.body && root.document.body.dataset.minigamesFullContent === 'true';
+    }
+
     function getTracks(manifest) {
         return (manifest.worlds || []).concat(manifest.bonusTracks || []);
     }
@@ -102,9 +106,11 @@
         container.dataset.preferredTrack = track.id;
         var pageStart = page * PAGE_SIZE;
         var pageNodes = nodes.slice(pageStart, pageStart + PAGE_SIZE);
-        var visibleNodes = pageNodes.filter(function (node) {
-            return isNodeUnlocked(nodes, nodes.indexOf(node), completed);
-        });
+        var visibleNodes = isFullContentMode()
+            ? pageNodes
+            : pageNodes.filter(function (node) {
+                return isNodeUnlocked(nodes, nodes.indexOf(node), completed);
+            });
         var background = track.background ? assetUrl(track.background) : '';
         var pageTitle = pageNodes.length
             ? '第 ' + (page + 1) + ' 站 · ' + (pageNodes[0].label || '新的航线')
@@ -157,9 +163,9 @@
             else html += '<span class="pixel-story-node-icon pixel-story-node-symbol" aria-hidden="true">✦</span>';
             html += '<span class="pixel-story-node-index">' + String(node.order || globalIndex + 1).padStart(2, '0') + '</span>';
             html += '<span class="pixel-story-node-label"><strong>' + escapeHtml(node.label || node.levelId) + '</strong><small>' + escapeHtml(node.subtitle || '') + '</small></span>';
-            html += '<span class="pixel-story-node-state">' + (isCompleted ? '已完成' : '现在出发') + '</span></button>';
+            html += '<span class="pixel-story-node-state">' + (isCompleted ? '已完成' : (isFullContentMode() ? '自由出发' : '现在出发')) + '</span></button>';
         });
-        html += '<div class="pixel-story-map-legend"><span><i></i>本页航线</span><small>完成当前节点后，下一站才会出现</small></div>';
+        html += '<div class="pixel-story-map-legend"><span><i></i>本页航线</span><small>' + (isFullContentMode() ? '完整内容已开放，可自由选择节点' : '完成当前节点后，下一站才会出现') + '</small></div>';
         if (bonusTracks.length && track.id !== 'detective') {
             var bonus = bonusTracks[0];
             html += '<button type="button" class="pixel-story-detective-bonus" data-detective-bonus aria-label="进入' + escapeHtml(bonus.title) + '"><span class="pixel-story-detective-bonus-icon"><i data-lucide="search" aria-hidden="true"></i></span><span><strong>' + escapeHtml(bonus.title) + '</strong><small>' + escapeHtml(bonus.subtitle || '') + ' · 20 个额外环节</small></span><span aria-hidden="true">进入 →</span></button>';

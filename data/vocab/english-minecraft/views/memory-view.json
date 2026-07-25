@@ -1,0 +1,751 @@
+{
+  "id": "minecraft-vocab-memory-view",
+  "type": "vocab-view",
+  "title": "Minecraft 词义记忆视图",
+  "sourceModuleId": "minecraft-vocab",
+  "sourceProvider": "mixed",
+  "sourceProviders": [
+    "mayihaoke",
+    "minecraft_words_apk-main"
+  ],
+  "viewId": "memory-view",
+  "generatedAt": "2026-07-08T09:32:33.006Z",
+  "description": "为看图认义、地图找词等低压力记忆玩法准备的精选词集，优先保留具体、可配图、低龄友好的目标词。",
+  "cards": [
+    {
+      "id": "mc-word-creeper",
+      "word": "creeper",
+      "translation": "苦力怕",
+      "level": "ket-1",
+      "difficulty": 2,
+      "sourceProvider": "mayihaoke",
+      "sourceRoute": "/minewords",
+      "sourceChunk": "/assets/index-DNCvm57S.js",
+      "sourceCandidateId": "mayihaoke-candidate-19",
+      "sourceModuleId": "minecraft-vocab",
+      "sourceLessonId": "minewords-seed",
+      "example": "The creeper is near.",
+      "exampleZh": "苦力怕在附近。",
+      "image": "assets/learn/english-vocab/world.webp",
+      "tags": [
+        "minecraft",
+        "mob",
+        "ket-1"
+      ],
+      "distractors": [
+        "friend",
+        "cat",
+        "world"
+      ],
+      "imageSource": "mayihaoke-reference-crop",
+      "audio": "assets/learn/english-vocab/audio/creeper.mp3",
+      "audioVoice": "en-US-AnaNeural",
+      "viewCategory": "mob"
+    },
+    {
+      "id": "mc-word-diamond",
+      "word": "diamond",
+      "translation": "钻石",
+      "level": "ket-1",
+      "difficulty": 2,
+      "sourceProvider": "mayihaoke",
+      "sourceRoute": "/minewords",
+      "sourceChunk": "/assets/index-DNCvm57S.js",
+      "sourceCandidateId": "mayihaoke-candidate-18",
+      "sourceModuleId": "minecraft-vocab",
+      "sourceLessonId": "minewords-seed",
+      "example": "The diamond is blue.",
+      "exampleZh": "钻石是蓝色的。",
+      "image": "assets/learn/english-vocab/block.webp",
+      "tags": [
+        "minecraft",
+        "object",
+        "ket-1"
+      ],
+      "distractors": [
+        "stone",
+        "water",
+        "bag"
+      ],
+      "imageSource": "mayihaoke-reference-crop",
+      "audio": "assets/learn/english-vocab/audio/diamond.mp3",
+      "audioVoice": "en-US-AnaNeural",
+      "viewCategory": "object"
+    },
+    {
+      "id": "mc-word-pickaxe",
+      "word": "pickaxe",
+      "translation": "镐",
+      "level": "ket-1",
+      "difficulty": 2,
+      "sourceProvider": "mayihaoke",
+      "sourceRoute": "/minewords",
+      "sourceChunk": "/assets/index-DNCvm57S.js",
+      "sourceCandidateId": "mayihaoke-candidate-17",
+      "sourceModuleId": "minecraft-vocab",
+      "sourceLessonId": "minewords-seed",
+      "example": "Use the pickaxe.",
+      "exampleZh": "使用镐。",
+      "image": "assets/learn/english-vocab/look.webp",
+      "tags": [
+        "minecraft",
+        "tool",
+        "ket-1"
+      ],
+      "distractors": [
+        "sword",
+        "diamond",
+        "apple"
+      ],
+      "imageSource": "mayihaoke-reference-crop",
+      "audio": "assets/learn/english-vocab/audio/pickaxe.mp3",
+      "audioVoice": "en-US-AnaNeural",
+      "viewCategory": "tool"
+    },
+    {
+      "id": "mc-word-sword",
+      "word": "sword",
+      "translation": "剑",
+      "level": "ket-1",
+      "difficulty": 2,
+      "sourceProvider": "mayihaoke",
+      "sourceRoute": "/minewords",
+      "sourceChunk": "/assets/index-DNCvm57S.js",
+      "sourceCandidateId": "mayihaoke-candidate-16",
+      "sourceModuleId": "minecraft-vocab",
+      "sourceLessonId": "minewords-seed",
+      "example": "I have a sword.",
+      "exampleZh": "我有一把剑。",
+      "image": "assets/learn/english-vocab/world.webp",
+      "tags": [
+        "minecraft",
+        "tool",
+        "ket-1"
+      ],
+      "distractors": [
+        "pickaxe",
+        "door",
+        "block"
+      ],
+      "imageSource": "mayihaoke-reference-crop",
+      "audio": "assets/learn/english-vocab/audio/sword.mp3",
+      "audioVoice": "en-US-AnaNeural",
+      "viewCategory": "tool"
+    },
+    {
+      "id": "mc-word-block",
+      "word": "block",
+      "translation": "方块",
+      "level": "starter",
+      "difficulty": 1,
+      "sourceProvider": "mayihaoke",
+      "sourceRoute": "/mcbook56/read/:chapter?",
+      "sourceChunk": "/assets/Chapter1-DMT6Pbgw.js",
+      "sourceCandidateId": "mayihaoke-candidate-01",
+      "sourceModuleId": "mcbook56-story",
+      "sourceLessonId": "chapter-01",
+      "example": "I see a block.",
+      "exampleZh": "我看见一个方块。",
+      "image": "assets/learn/english-vocab/block.webp",
+      "tags": [
+        "minecraft",
+        "object",
+        "starter"
+      ],
+      "distractors": [
+        "door",
+        "stone",
+        "sword"
+      ],
+      "imageSource": "mayihaoke-reference-crop",
+      "audio": "assets/learn/english-vocab/audio/block.mp3",
+      "audioVoice": "en-US-AnaNeural",
+      "viewCategory": "object"
+    },
+    {
+      "id": "mc-word-stone",
+      "word": "stone",
+      "translation": "石头",
+      "level": "starter",
+      "difficulty": 1,
+      "sourceProvider": "mayihaoke",
+      "sourceRoute": "/mcbook56/read/:chapter?",
+      "sourceChunk": "/assets/Chapter1-DMT6Pbgw.js",
+      "sourceCandidateId": "mayihaoke-candidate-05",
+      "sourceModuleId": "mcbook56-story",
+      "sourceLessonId": "chapter-02",
+      "example": "The stone is gray.",
+      "exampleZh": "石头是灰色的。",
+      "image": "assets/learn/english-vocab/stone.webp",
+      "tags": [
+        "minecraft",
+        "object",
+        "starter"
+      ],
+      "distractors": [
+        "block",
+        "tree",
+        "apple"
+      ],
+      "imageSource": "mayihaoke-reference-crop",
+      "audio": "assets/learn/english-vocab/audio/stone.mp3",
+      "audioVoice": "en-US-AnaNeural",
+      "viewCategory": "object"
+    },
+    {
+      "id": "mc-word-cat",
+      "word": "cat",
+      "translation": "猫",
+      "level": "starter",
+      "difficulty": 1,
+      "sourceProvider": "mayihaoke",
+      "sourceRoute": "/mcbookstarters/read/:chapter?",
+      "sourceChunk": "/assets/Chapter1-DMT6Pbgw.js",
+      "sourceCandidateId": "mayihaoke-candidate-10",
+      "sourceModuleId": "mcbookstarters-reader",
+      "sourceLessonId": "chapter-01",
+      "example": "The cat is cute.",
+      "exampleZh": "这只猫很可爱。",
+      "image": "assets/learn/english-vocab/minecraft-card.webp",
+      "tags": [
+        "animal",
+        "starter"
+      ],
+      "distractors": [
+        "bag",
+        "sun",
+        "tree"
+      ],
+      "imageSource": "mayihaoke-reference-crop",
+      "audio": "assets/learn/english-vocab/audio/cat.mp3",
+      "audioVoice": "en-US-AnaNeural",
+      "viewCategory": "animal"
+    },
+    {
+      "id": "mc-word-apple",
+      "word": "apple",
+      "translation": "苹果",
+      "level": "starter",
+      "difficulty": 1,
+      "sourceProvider": "mayihaoke",
+      "sourceRoute": "/minewords",
+      "sourceChunk": "/assets/index-DNCvm57S.js",
+      "sourceCandidateId": "mayihaoke-candidate-24",
+      "sourceModuleId": "minecraft-vocab",
+      "sourceLessonId": "minewords-seed",
+      "example": "I eat an apple.",
+      "exampleZh": "我吃一个苹果。",
+      "image": "assets/learn/english-vocab/minecraft-card.webp",
+      "tags": [
+        "food",
+        "starter"
+      ],
+      "distractors": [
+        "red",
+        "bag",
+        "diamond"
+      ],
+      "imageSource": "mayihaoke-reference-crop",
+      "audio": "assets/learn/english-vocab/audio/apple.mp3",
+      "audioVoice": "en-US-AnaNeural",
+      "viewCategory": "food"
+    },
+    {
+      "id": "mc-word-red",
+      "word": "red",
+      "translation": "红色",
+      "level": "starter",
+      "difficulty": 1,
+      "sourceProvider": "mayihaoke",
+      "sourceRoute": "/mcbookstarters/read/:chapter?",
+      "sourceChunk": "/assets/Chapter1-DMT6Pbgw.js",
+      "sourceCandidateId": "mayihaoke-candidate-14",
+      "sourceModuleId": "mcbookstarters-reader",
+      "sourceLessonId": "chapter-02",
+      "example": "The apple is red.",
+      "exampleZh": "苹果是红色的。",
+      "image": "assets/learn/english-vocab/block.webp",
+      "tags": [
+        "color",
+        "starter"
+      ],
+      "distractors": [
+        "sun",
+        "tree",
+        "bag"
+      ],
+      "imageSource": "mayihaoke-reference-crop",
+      "audio": "assets/learn/english-vocab/audio/red.mp3",
+      "audioVoice": "en-US-AnaNeural",
+      "viewCategory": "color"
+    },
+    {
+      "id": "mc-word-sun",
+      "word": "sun",
+      "translation": "太阳",
+      "level": "starter",
+      "difficulty": 1,
+      "sourceProvider": "mayihaoke",
+      "sourceRoute": "/mcbookstarters/read/:chapter?",
+      "sourceChunk": "/assets/Chapter1-DMT6Pbgw.js",
+      "sourceCandidateId": "mayihaoke-candidate-12",
+      "sourceModuleId": "mcbookstarters-reader",
+      "sourceLessonId": "chapter-01",
+      "example": "The sun is bright.",
+      "exampleZh": "太阳很明亮。",
+      "image": "assets/learn/english-vocab/light.webp",
+      "tags": [
+        "nature",
+        "starter"
+      ],
+      "distractors": [
+        "light",
+        "fire",
+        "water"
+      ],
+      "imageSource": "mayihaoke-reference-crop",
+      "audio": "assets/learn/english-vocab/audio/sun.mp3",
+      "audioVoice": "en-US-AnaNeural",
+      "viewCategory": "nature"
+    },
+    {
+      "id": "mc-word-fire",
+      "word": "fire",
+      "translation": "火",
+      "level": "starter",
+      "difficulty": 1,
+      "sourceProvider": "mayihaoke",
+      "sourceRoute": "/mcbook56/read/:chapter?",
+      "sourceChunk": "/assets/Chapter1-DMT6Pbgw.js",
+      "sourceCandidateId": "mayihaoke-candidate-22",
+      "sourceModuleId": "mcbook56-story",
+      "sourceLessonId": "chapter-02",
+      "example": "Do not touch the fire.",
+      "exampleZh": "不要碰火。",
+      "image": "assets/learn/english-vocab/light.webp",
+      "tags": [
+        "nature",
+        "starter"
+      ],
+      "distractors": [
+        "water",
+        "sun",
+        "light"
+      ],
+      "imageSource": "mayihaoke-reference-crop",
+      "audio": "assets/learn/english-vocab/audio/fire.mp3",
+      "audioVoice": "en-US-AnaNeural",
+      "viewCategory": "nature"
+    },
+    {
+      "id": "mc-word-tree",
+      "word": "tree",
+      "translation": "树",
+      "level": "starter",
+      "difficulty": 1,
+      "sourceProvider": "mayihaoke",
+      "sourceRoute": "/mcbookstarters/read/:chapter?",
+      "sourceChunk": "/assets/Chapter1-DMT6Pbgw.js",
+      "sourceCandidateId": "mayihaoke-candidate-13",
+      "sourceModuleId": "mcbookstarters-reader",
+      "sourceLessonId": "chapter-02",
+      "example": "I see a tree.",
+      "exampleZh": "我看见一棵树。",
+      "image": "assets/learn/english-vocab/world.webp",
+      "tags": [
+        "nature",
+        "starter"
+      ],
+      "distractors": [
+        "stone",
+        "door",
+        "sword"
+      ],
+      "imageSource": "mayihaoke-reference-crop",
+      "audio": "assets/learn/english-vocab/audio/tree.mp3",
+      "audioVoice": "en-US-AnaNeural",
+      "viewCategory": "nature"
+    },
+    {
+      "id": "mc-word-house",
+      "word": "house",
+      "translation": "房子",
+      "level": "starter",
+      "difficulty": 1,
+      "sourceProvider": "mayihaoke",
+      "sourceRoute": "/minewords",
+      "sourceChunk": "/assets/index-DNCvm57S.js",
+      "sourceCandidateId": "mayihaoke-candidate-23",
+      "sourceModuleId": "minecraft-vocab",
+      "sourceLessonId": "minewords-seed",
+      "example": "This is my house.",
+      "exampleZh": "这是我的房子。",
+      "image": "assets/learn/english-vocab/world.webp",
+      "tags": [
+        "place",
+        "starter"
+      ],
+      "distractors": [
+        "world",
+        "door",
+        "tree"
+      ],
+      "imageSource": "mayihaoke-reference-crop",
+      "audio": "assets/learn/english-vocab/audio/house.mp3",
+      "audioVoice": "en-US-AnaNeural",
+      "viewCategory": "place"
+    },
+    {
+      "id": "mc-core-001-cow",
+      "word": "cow",
+      "translation": "牛",
+      "level": "core",
+      "difficulty": 1,
+      "category": "animal",
+      "tags": [
+        "minecraft",
+        "animal",
+        "core"
+      ],
+      "example": "I see a cow.",
+      "exampleZh": "我看见牛。",
+      "phrase": "milk cow",
+      "phraseTranslation": "挤牛奶",
+      "image": "https://minecraft.wiki/w/Special:Redirect/file/Cow.png",
+      "imagePage": "https://minecraft.wiki/w/File:Cow.png",
+      "imageFile": "Cow.png",
+      "imageType": "Default",
+      "imageSource": "minecraft_words_apk-main",
+      "sourceProvider": "minecraft_words_apk-main",
+      "sourceFile": "minecraft/minecraft_basic.js",
+      "audio": "",
+      "audioVoice": "web-speech-fallback",
+      "distractors": [
+        "pig",
+        "sheep",
+        "chicken"
+      ],
+      "viewCategory": "animal"
+    },
+    {
+      "id": "mc-core-004-pig",
+      "word": "pig",
+      "translation": "猪",
+      "level": "core",
+      "difficulty": 1,
+      "category": "animal",
+      "tags": [
+        "minecraft",
+        "animal",
+        "core"
+      ],
+      "example": "I see a pig.",
+      "exampleZh": "我看见猪。",
+      "phrase": "pig farm",
+      "phraseTranslation": "猪农场",
+      "image": "https://minecraft.wiki/w/Special:Redirect/file/Pig.png",
+      "imagePage": "https://minecraft.wiki/w/File:Pig.png",
+      "imageFile": "Pig.png",
+      "imageType": "Default",
+      "imageSource": "minecraft_words_apk-main",
+      "sourceProvider": "minecraft_words_apk-main",
+      "sourceFile": "minecraft/minecraft_basic.js",
+      "audio": "",
+      "audioVoice": "web-speech-fallback",
+      "distractors": [
+        "cow",
+        "sheep",
+        "chicken"
+      ],
+      "viewCategory": "animal"
+    },
+    {
+      "id": "mc-core-025-sheep",
+      "word": "sheep",
+      "translation": "绵羊",
+      "level": "core",
+      "difficulty": 1,
+      "category": "animal",
+      "tags": [
+        "minecraft",
+        "animal",
+        "core"
+      ],
+      "example": "I see a sheep.",
+      "exampleZh": "我看见绵羊。",
+      "phrase": "sheep wool",
+      "phraseTranslation": "羊毛",
+      "image": "https://minecraft.wiki/w/Special:Redirect/file/Sheep.png",
+      "imagePage": "https://minecraft.wiki/w/File:Sheep.png",
+      "imageFile": "Sheep.png",
+      "imageType": "Default",
+      "imageSource": "minecraft_words_apk-main",
+      "sourceProvider": "minecraft_words_apk-main",
+      "sourceFile": "minecraft/minecraft_basic.js",
+      "audio": "",
+      "audioVoice": "web-speech-fallback",
+      "distractors": [
+        "cow",
+        "pig",
+        "chicken"
+      ],
+      "viewCategory": "animal"
+    },
+    {
+      "id": "mc-core-044-chicken",
+      "word": "chicken",
+      "translation": "鸡",
+      "level": "core",
+      "difficulty": 1,
+      "category": "animal",
+      "tags": [
+        "minecraft",
+        "animal",
+        "core"
+      ],
+      "example": "I see a chicken.",
+      "exampleZh": "我看见鸡。",
+      "phrase": "chicken egg",
+      "phraseTranslation": "鸡蛋",
+      "image": "https://minecraft.wiki/w/Special:Redirect/file/Chicken.png",
+      "imagePage": "https://minecraft.wiki/w/File:Chicken.png",
+      "imageFile": "Chicken.png",
+      "imageType": "Default",
+      "imageSource": "minecraft_words_apk-main",
+      "sourceProvider": "minecraft_words_apk-main",
+      "sourceFile": "minecraft/minecraft_basic.js",
+      "audio": "",
+      "audioVoice": "web-speech-fallback",
+      "distractors": [
+        "cow",
+        "pig",
+        "sheep"
+      ],
+      "viewCategory": "animal"
+    },
+    {
+      "id": "mc-core-068-axe",
+      "word": "axe",
+      "translation": "斧",
+      "level": "core",
+      "difficulty": 1,
+      "category": "item",
+      "tags": [
+        "minecraft",
+        "item",
+        "core"
+      ],
+      "example": "I see an axe.",
+      "exampleZh": "我看见斧。",
+      "phrase": "diamond axe",
+      "phraseTranslation": "钻石斧",
+      "image": "https://minecraft.wiki/w/Special:Redirect/file/Diamond_Axe.png",
+      "imagePage": "https://minecraft.wiki/w/File:Diamond_Axe.png",
+      "imageFile": "Diamond_Axe.png",
+      "imageType": "Default",
+      "imageSource": "minecraft_words_apk-main",
+      "sourceProvider": "minecraft_words_apk-main",
+      "sourceFile": "minecraft/minecraft_items.js",
+      "audio": "",
+      "audioVoice": "web-speech-fallback",
+      "distractors": [
+        "egg",
+        "boat",
+        "book"
+      ],
+      "viewCategory": "item"
+    },
+    {
+      "id": "mc-core-002-egg",
+      "word": "egg",
+      "translation": "鸡蛋",
+      "level": "core",
+      "difficulty": 1,
+      "category": "item",
+      "tags": [
+        "minecraft",
+        "item",
+        "core"
+      ],
+      "example": "I see an egg.",
+      "exampleZh": "我看见鸡蛋。",
+      "phrase": "",
+      "phraseTranslation": "",
+      "image": "https://minecraft.wiki/w/Special:Redirect/file/Egg.png",
+      "imagePage": "https://minecraft.wiki/w/File:Egg.png",
+      "imageFile": "Egg.png",
+      "imageType": "Default",
+      "imageSource": "minecraft_words_apk-main",
+      "sourceProvider": "minecraft_words_apk-main",
+      "sourceFile": "minecraft/minecraft_basic.js",
+      "audio": "",
+      "audioVoice": "web-speech-fallback",
+      "distractors": [
+        "boat",
+        "book",
+        "bowl"
+      ],
+      "viewCategory": "item"
+    },
+    {
+      "id": "mc-core-006-boat",
+      "word": "boat",
+      "translation": "船",
+      "level": "core",
+      "difficulty": 1,
+      "category": "item",
+      "tags": [
+        "minecraft",
+        "item",
+        "core"
+      ],
+      "example": "I see a boat.",
+      "exampleZh": "我看见船。",
+      "phrase": "",
+      "phraseTranslation": "",
+      "image": "https://minecraft.wiki/w/Special:Redirect/file/Oak_Boat.png",
+      "imagePage": "https://minecraft.wiki/w/File:Oak_Boat.png",
+      "imageFile": "Oak_Boat.png",
+      "imageType": "Default",
+      "imageSource": "minecraft_words_apk-main",
+      "sourceProvider": "minecraft_words_apk-main",
+      "sourceFile": "minecraft/minecraft_basic.js",
+      "audio": "",
+      "audioVoice": "web-speech-fallback",
+      "distractors": [
+        "egg",
+        "book",
+        "bowl"
+      ],
+      "viewCategory": "item"
+    },
+    {
+      "id": "mc-core-007-book",
+      "word": "book",
+      "translation": "书",
+      "level": "core",
+      "difficulty": 1,
+      "category": "item",
+      "tags": [
+        "minecraft",
+        "item",
+        "core"
+      ],
+      "example": "I see a book.",
+      "exampleZh": "我看见书。",
+      "phrase": "read book",
+      "phraseTranslation": "读书",
+      "image": "https://minecraft.wiki/w/Special:Redirect/file/Book.png",
+      "imagePage": "https://minecraft.wiki/w/File:Book.png",
+      "imageFile": "Book.png",
+      "imageType": "Default",
+      "imageSource": "minecraft_words_apk-main",
+      "sourceProvider": "minecraft_words_apk-main",
+      "sourceFile": "minecraft/minecraft_basic.js",
+      "audio": "",
+      "audioVoice": "web-speech-fallback",
+      "distractors": [
+        "egg",
+        "boat",
+        "bowl"
+      ],
+      "viewCategory": "item"
+    },
+    {
+      "id": "mc-core-008-bowl",
+      "word": "bowl",
+      "translation": "碗",
+      "level": "core",
+      "difficulty": 1,
+      "category": "item",
+      "tags": [
+        "minecraft",
+        "item",
+        "core"
+      ],
+      "example": "I see a bowl.",
+      "exampleZh": "我看见碗。",
+      "phrase": "",
+      "phraseTranslation": "",
+      "image": "https://minecraft.wiki/w/Special:Redirect/file/Bowl.png",
+      "imagePage": "https://minecraft.wiki/w/File:Bowl.png",
+      "imageFile": "Bowl.png",
+      "imageType": "Default",
+      "imageSource": "minecraft_words_apk-main",
+      "sourceProvider": "minecraft_words_apk-main",
+      "sourceFile": "minecraft/minecraft_basic.js",
+      "audio": "",
+      "audioVoice": "web-speech-fallback",
+      "distractors": [
+        "egg",
+        "boat",
+        "book"
+      ],
+      "viewCategory": "item"
+    },
+    {
+      "id": "mc-core-016-bread",
+      "word": "bread",
+      "translation": "面包",
+      "level": "core",
+      "difficulty": 1,
+      "category": "food",
+      "tags": [
+        "minecraft",
+        "food",
+        "core"
+      ],
+      "example": "I see a bread.",
+      "exampleZh": "我看见面包。",
+      "phrase": "eat bread",
+      "phraseTranslation": "吃面包",
+      "image": "https://minecraft.wiki/w/Special:Redirect/file/Bread.png",
+      "imagePage": "https://minecraft.wiki/w/File:Bread.png",
+      "imageFile": "Bread.png",
+      "imageType": "Default",
+      "imageSource": "minecraft_words_apk-main",
+      "sourceProvider": "minecraft_words_apk-main",
+      "sourceFile": "minecraft/minecraft_basic.js",
+      "audio": "",
+      "audioVoice": "web-speech-fallback",
+      "distractors": [
+        "cow",
+        "egg",
+        "oak"
+      ],
+      "viewCategory": "food"
+    },
+    {
+      "id": "mc-core-018-daisy",
+      "word": "daisy",
+      "translation": "雏菊",
+      "level": "core",
+      "difficulty": 1,
+      "category": "plant",
+      "tags": [
+        "minecraft",
+        "plant",
+        "core"
+      ],
+      "example": "I see a daisy.",
+      "exampleZh": "我看见雏菊。",
+      "phrase": "",
+      "phraseTranslation": "",
+      "image": "https://minecraft.wiki/w/Special:Redirect/file/Oxeye_Daisy.png",
+      "imagePage": "https://minecraft.wiki/w/File:Oxeye_Daisy.png",
+      "imageFile": "Oxeye_Daisy.png",
+      "imageType": "Default",
+      "imageSource": "minecraft_words_apk-main",
+      "sourceProvider": "minecraft_words_apk-main",
+      "sourceFile": "minecraft/minecraft_basic.js",
+      "audio": "",
+      "audioVoice": "web-speech-fallback",
+      "distractors": [
+        "poppy",
+        "tulip",
+        "orchid"
+      ],
+      "viewCategory": "plant"
+    }
+  ]
+}

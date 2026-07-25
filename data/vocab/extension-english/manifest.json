@@ -1,0 +1,21 @@
+{
+  "id": "extension-english",
+  "version": "2026-07-11",
+  "type": "game-vocab-pack",
+  "title": "第二组英语拓展路径",
+  "generatedAt": "2026-07-11T13:09:58.990319+00:00",
+  "cardCount": 512,
+  "sourceCandidates": "prj\\vocab-governance\\reports\\extension-verified-candidates.json",
+  "database": "data\\vocab\\extension-english\\extension-english.db",
+  "views": [
+    {
+      "id": "extension",
+      "file": "data\\vocab\\extension-english\\views\\extension.json",
+      "cardCount": 512
+    }
+  ],
+  "imageCoverage": {
+    "source": 229,
+    "fallback": 283
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "mode": "complete",
+  "classicScenes": [
+    {
+      "id": "forest",
+      "title": "神秘森林",
+      "data": "data/scenes.json",
+      "image": "assets/scenes/forest.webp",
+      "monsterCount": 3
+    },
+    {
+      "id": "beach",
+      "title": "蔚蓝海滩",
+      "data": "data/scenes.json",
+      "image": "assets/scenes/beach.webp",
+      "monsterCount": 3
+    },
+    {
+      "id": "mountain",
+      "title": "雪山之巅",
+      "data": "data/scenes.json",
+      "image": "assets/scenes/mountain.webp",
+      "monsterCount": 3
+    },
+    {
+      "id": "space",
+      "title": "太空站",
+      "data": "data/scenes.json",
+      "image": "assets/scenes/space.webp",
+      "monsterCount": 3
+    },
+    {
+      "id": "candy",
+      "title": "糖果王国",
+      "data": "data/scenes.json",
+      "image": "assets/scenes/candy.webp",
+      "monsterCount": 3
+    },
+    {
+      "id": "cave",
+      "title": "水晶洞窟",
+      "data": "data/scenes.json",
+      "image": "assets/scenes/cave.webp",
+      "monsterCount": 3
+    },
+    {
+      "id": "waterfall",
+      "title": "彩虹瀑布",
+      "data": "data/scenes.json",
+      "image": "assets/scenes/waterfall.webp",
+      "monsterCount": 3
+    },
+    {
+      "id": "desert",
+      "title": "沙漠绿洲",
+      "data": "data/scenes.json",
+      "image": "assets/scenes/desert.webp",
+      "monsterCount": 3
+    },
+    {
+      "id": "underwater",
+      "title": "珊瑚王国",
+      "data": "data/scenes.json",
+      "image": "assets/scenes/underwater.webp",
+      "monsterCount": 3
+    },
+    {
+      "id": "castle",
+      "title": "云端城堡",
+      "data": "data/scenes.json",
+      "image": "assets/scenes/castle.webp",
+      "monsterCount": 3
+    },
+    {
+      "id": "volcano",
+      "title": "温暖火山",
+      "data": "data/scenes.json",
+      "image": "assets/scenes/volcano.webp",
+      "monsterCount": 3
+    },
+    {
+      "id": "stargarden",
+      "title": "星光花园",
+      "data": "data/scenes.json",
+      "image": "assets/scenes/stargarden.webp",
+      "monsterCount": 3
+    }
+  ],
+  "storyTracks": [
+    {
+      "id": "sci-fi",
+      "title": "星港科技区",
+      "subtitle": "跟着光核信号，修好回家的星图",
+      "nodeCount": 20,
+      "dataRoot": "data/story-packs/05-pixel-worlds-story/levels"
+    },
+    {
+      "id": "forest",
+      "title": "森林回声区",
+      "subtitle": "听见树木、溪流和朋友的声音",
+      "nodeCount": 20,
+      "dataRoot": "data/story-packs/05-pixel-worlds-story/levels"
+    },
+    {
+      "id": "block",
+      "title": "方块地下城",
+      "subtitle": "在方块世界里寻找最后一枚星门晶石",
+      "nodeCount": 20,
+      "dataRoot": "data/story-packs/05-pixel-worlds-story/levels"
+    },
+    {
+      "id": "detective",
+      "title": "像素冒险·侦探小游戏",
+      "subtitle": "每个线索都是一小段剧情",
+      "nodeCount": 20,
+      "dataRoot": "data/story-packs/05-pixel-worlds-story/levels"
+    }
+  ],
+  "totals": {
+    "classicScenes": 12,
+    "storyNodes": 80
+  }
+}

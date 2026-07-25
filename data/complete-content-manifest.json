@@ -1,10 +1,7 @@
 {
   "schemaVersion": 1,
-  "projectId": "mini-games",
-  "title": "小游戏项目",
-  "subtitle": "完整地图、全量词库、全部玩法",
-  "devProjectUrl": "http://127.0.0.1:7003/",
-  "projectUrl": "https://nonomil.github.io/mini-games/",
+  "mode": "complete",
+  "sourceProject": "宠物积分系统",
   "games": [
     {
       "id": "hanzi-bubble-runner",
@@ -96,7 +93,7 @@
       "id": "explore-map",
       "title": "三世界故事地图",
       "kicker": "完整故事远征",
-      "description": "完整森林世界、方块世界和科幻世界故事章节，全部节点可自由选择。",
+      "description": "完整森林世界、方块世界和科幻世界故事章节，按地图自由选择已开放节点。",
       "path": "games/explore-map/",
       "tags": [
         "三世界",
@@ -163,64 +160,38 @@
       "mode": "complete"
     }
   ],
-  "links": {
-    "petbank": {
-      "title": "宠物积分总站",
-      "url": "https://nonomil.github.io/pet-bank/",
-      "devUrl": "http://127.0.0.1:7000/"
-    },
-    "learningCenter": {
-      "title": "学习中心",
-      "url": "https://nonomil.github.io/learning-center/",
-      "devUrl": "http://127.0.0.1:7001/"
-    },
-    "picturebooks": {
-      "title": "独立绘本馆",
-      "url": "https://nonomil.github.io/picturebook-library/",
-      "devUrl": "http://127.0.0.1:5174/picturebook-library/"
-    },
-    "wordQuest": {
-      "title": "单词远征",
-      "url": "https://nonomil.github.io/word-quest-learning-game/",
-      "devUrl": "http://127.0.0.1:7002/"
-    }
+  "maps": {
+    "manifest": "data/maps-manifest.json",
+    "classicScenes": 12,
+    "storyTracks": 4,
+    "storyNodes": 80
   },
-  "contentMode": "complete",
-  "content": {
-    "maps": [
-      {
-        "id": "classic-adventure",
-        "title": "经典探险地图",
-        "mode": "complete",
-        "count": 12
-      },
-      {
-        "id": "pixel-worlds-story",
-        "title": "三世界故事地图",
-        "mode": "complete",
-        "count": 80
-      }
-    ],
-    "vocab": [
+  "vocab": {
+    "totalCards": 6324,
+    "packs": [
       {
         "id": "word-memory-all",
-        "mode": "complete",
-        "cardCount": 3322
+        "path": "data/vocab/word-memory-combined/views/all.json",
+        "cardCount": 3322,
+        "mode": "complete"
       },
       {
         "id": "core-english",
-        "mode": "complete",
-        "cardCount": 322
+        "path": "data/vocab/core-english/views/core.json",
+        "cardCount": 322,
+        "mode": "complete"
       },
       {
         "id": "extension-english",
-        "mode": "complete",
-        "cardCount": 512
+        "path": "data/vocab/extension-english/views/extension.json",
+        "cardCount": 512,
+        "mode": "complete"
       },
       {
         "id": "minecraft-english-all",
-        "mode": "complete",
-        "cardCount": 2168
+        "path": "data/vocab/english-minecraft/views/all.json",
+        "cardCount": 2168,
+        "mode": "complete"
       }
     ]
   }

@@ -1,0 +1,118 @@
+{
+  "generatedAt": "2026-07-08T14:37:47.583Z",
+  "officialCount": 96,
+  "externalPackCount": 10,
+  "sourceStats": [
+    {
+      "id": "vocab.kindergarten.full",
+      "title": "幼儿园",
+      "mode": "english",
+      "stage": "kindergarten",
+      "difficulty": "full",
+      "file": "data/vocab/external/mario-minecraft-words-0315/vocabs/01_幼儿园/幼儿园完整词库.js",
+      "rawCount": 845,
+      "added": 660,
+      "duplicate": 185
+    },
+    {
+      "id": "vocab.elementary.basic",
+      "title": "小学-初级",
+      "mode": "english",
+      "stage": "elementary",
+      "difficulty": "basic",
+      "file": "data/vocab/external/mario-minecraft-words-0315/vocabs/03_小学_高年级/小学低年级基础.js",
+      "rawCount": 308,
+      "added": 77,
+      "duplicate": 231
+    },
+    {
+      "id": "vocab.elementary.intermediate",
+      "title": "小学-中级",
+      "mode": "english",
+      "stage": "elementary",
+      "difficulty": "intermediate",
+      "file": "data/vocab/external/mario-minecraft-words-0315/vocabs/03_小学_高年级/小学高年级基础.js",
+      "rawCount": 93,
+      "added": 43,
+      "duplicate": 50
+    },
+    {
+      "id": "vocab.elementary.full",
+      "title": "小学-完整",
+      "mode": "english",
+      "stage": "elementary",
+      "difficulty": "full",
+      "file": "data/vocab/external/mario-minecraft-words-0315/vocabs/03_小学_高年级/小学全阶段合并词库.js",
+      "rawCount": 751,
+      "added": 68,
+      "duplicate": 683
+    },
+    {
+      "id": "vocab.junior_high.basic",
+      "title": "初中-初级",
+      "mode": "english",
+      "stage": "junior_high",
+      "difficulty": "basic",
+      "file": "data/vocab/external/mario-minecraft-words-0315/vocabs/05_初中/junior_high_basic.js",
+      "rawCount": 661,
+      "added": 480,
+      "duplicate": 181
+    },
+    {
+      "id": "vocab.junior_high.intermediate",
+      "title": "初中-中级",
+      "mode": "english",
+      "stage": "junior_high",
+      "difficulty": "intermediate",
+      "file": "data/vocab/external/mario-minecraft-words-0315/vocabs/05_初中/junior_high_intermediate.js",
+      "rawCount": 661,
+      "added": 497,
+      "duplicate": 164
+    },
+    {
+      "id": "vocab.junior_high.full",
+      "title": "初中-完整",
+      "mode": "english",
+      "stage": "junior_high",
+      "difficulty": "full",
+      "file": "data/vocab/external/mario-minecraft-words-0315/vocabs/05_初中/junior_high_full.js",
+      "rawCount": 1983,
+      "added": 460,
+      "duplicate": 1523
+    },
+    {
+      "id": "vocab.minecraft.basic",
+      "title": "Minecraft-初级",
+      "mode": "english",
+      "stage": "minecraft",
+      "difficulty": "basic",
+      "file": "data/vocab/external/mario-minecraft-words-0315/vocabs/04_我的世界/minecraft_basic.js",
+      "rawCount": 63,
+      "added": 2,
+      "duplicate": 61
+    },
+    {
+      "id": "vocab.minecraft.intermediate",
+      "title": "Minecraft-中级",
+      "mode": "english",
+      "stage": "minecraft",
+      "difficulty": "intermediate",
+      "file": "data/vocab/external/mario-minecraft-words-0315/vocabs/04_我的世界/minecraft_intermediate.js",
+      "rawCount": 60,
+      "added": 42,
+      "duplicate": 18
+    },
+    {
+      "id": "vocab.minecraft.full",
+      "title": "Minecraft-完整",
+      "mode": "english",
+      "stage": "minecraft",
+      "difficulty": "full",
+      "file": "data/vocab/external/mario-minecraft-words-0315/vocabs/04_我的世界/minecraft_words_full.js",
+      "rawCount": 1174,
+      "added": 897,
+      "duplicate": 277
+    }
+  ],
+  "finalCount": 3322
+}

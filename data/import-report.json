@@ -26,6 +26,12 @@
       "bytes": 635581
     },
     {
+      "id": "vocab-runtime",
+      "fileCount": 37,
+      "bytes": 15052861,
+      "dest": "data\\vocab"
+    },
+    {
       "id": "complete-adventure-runtime",
       "fileCount": 29770,
       "bytes": 1035896497
@@ -39,8 +45,13 @@
       "id": "shells",
       "fileCount": 9,
       "bytes": 0
+    },
+    {
+      "id": "complete-content-manifests",
+      "fileCount": 3,
+      "bytes": 14740
     }
   ],
-  "totalFiles": 32020,
-  "totalBytes": 1484661113
+  "totalFiles": 32060,
+  "totalBytes": 1499728714
 }

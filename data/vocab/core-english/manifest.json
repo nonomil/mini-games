@@ -1,0 +1,21 @@
+{
+  "id": "core-english",
+  "version": "2026-07-11",
+  "type": "game-vocab-pack",
+  "title": "核心英语学习路径",
+  "generatedAt": "2026-07-11T10:16:37.758698+00:00",
+  "cardCount": 322,
+  "sourceCandidates": "prj/vocab-governance/reports/core-800-candidates.json",
+  "database": "data/vocab/core-english/core-english.db",
+  "views": [
+    {
+      "id": "core",
+      "file": "data/vocab/core-english/views/core.json",
+      "cardCount": 322
+    }
+  ],
+  "imageCoverage": {
+    "source": 142,
+    "fallback": 180
+  }
+}
