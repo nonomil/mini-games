@@ -93,7 +93,7 @@
       "id": "explore-map",
       "title": "三世界故事地图",
       "kicker": "完整故事远征",
-      "description": "完整森林世界、方块世界和科幻世界故事章节，按地图自由选择已开放节点。",
+      "description": "完整森林世界、方块世界和科幻世界故事章节，全部节点可自由选择。",
       "path": "games/explore-map/",
       "tags": [
         "三世界",

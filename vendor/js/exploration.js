@@ -95,10 +95,6 @@ const ExplorationSystem = (function () {
     let currentBattle = null;
     let unlockedScenes = {};
 
-    function isFullContentMode() {
-        return document.body?.dataset?.minigamesFullContent === 'true';
-    }
-
     async function loadScenes() {
         if (scenes) return scenes;
         try {
@@ -138,6 +134,10 @@ const ExplorationSystem = (function () {
 
     function getMapLayout() {
         return MAP_LAYOUT.map((item) => ({ ...item }));
+    }
+
+    function isFullContentMode() {
+        return Boolean(window.MINIGAMES_COMPLETE_CONTENT) || Boolean(document && document.body && document.body.dataset.minigamesFullContent === 'true');
     }
 
     function isSceneUnlocked(scene) {

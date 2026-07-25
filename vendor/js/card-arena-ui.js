@@ -54,6 +54,7 @@ const CardArenaUI = (function () {
 
     // 读进度（带兜底：默认解锁第 1 关）
     function getProgress() {
+        if (window.MINIGAMES_COMPLETE_CONTENT) return { cleared: [], current: 999 };
         try {
             const raw = localStorage.getItem(PROGRESS_KEY);
             if (raw) {
@@ -72,6 +73,7 @@ const CardArenaUI = (function () {
 
     // 关卡是否解锁：id <= current
     function isUnlocked(id) {
+        if (window.MINIGAMES_COMPLETE_CONTENT) return true;
         const p = getProgress();
         return id <= p.current;
     }
@@ -198,12 +200,13 @@ const CardArenaUI = (function () {
         _claimDailyTickets();  // 空操作（积分兑换制不再每日发券），保留调用兼容
         const ticketCount = (typeof InventorySystem !== 'undefined' && InventorySystem.getCount)
             ? InventorySystem.getCount('arena_ticket') : 0;
+        const completeMode = Boolean(window.MINIGAMES_COMPLETE_CONTENT);
         const usedToday = _arenaBattleUsedToday();
         const remainToday = Math.max(0, 3 - usedToday);
         const ticketBar = `
             <div style="grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:4px;padding:6px 12px;margin-bottom:6px;background:linear-gradient(90deg,#FFF8DC80,#FAF8F2);border:1px dashed #D4B96A;border-radius:8px;">
-                <span style="font-size:12px;color:#8A7240;font-weight:bold;">🏕️ 每日 3 场免费 · 🎫额外券可续战</span>
-                <span style="font-size:12px;color:#8A7240;font-weight:bold;">今日剩余 ${remainToday}/3 · 持有额外券 ${ticketCount}</span>
+                <span style="font-size:12px;color:#8A7240;font-weight:bold;">${completeMode ? '🎮 完整模式不限次数 · 🎫额外券可用于其他玩法' : '🏕️ 每日 3 场免费 · 🎫额外券可续战'}</span>
+                <span style="font-size:12px;color:#8A7240;font-weight:bold;">${completeMode ? '可自由挑战全部关卡' : `今日剩余 ${remainToday}/3`} · 持有额外券 ${ticketCount}</span>
             </div>
         `;
         const flowSteps = `
@@ -271,7 +274,7 @@ const CardArenaUI = (function () {
                     <div class="stage-chapter">轻章节 · ${stars}</div>
                     <div class="stage-desc">${st.desc || ''}</div>
                     <div class="stage-enemies">敌方：${enemyNames}</div>
-                    <div class="stage-reward">🃏 首通新卡：${(st.reward&&st.reward.dropCard)?_speciesName(st.reward.dropCard):'—'} · 🎫 每日3场免费</div>
+                    <div class="stage-reward">🃏 首通新卡：${(st.reward&&st.reward.dropCard)?_speciesName(st.reward.dropCard):'—'} · ${completeMode ? '完整模式不限次数' : '🎫 每日3场免费'}</div>
                 </div>
             `;
         }).join('');
@@ -301,6 +304,7 @@ const CardArenaUI = (function () {
     // 入场校验：每日 3 场免费 / profile；3 场用完后每张 arena_ticket（额外券）续战 1 场
     // 日限 key petbank_arena_battle_day_${activeId} = JSON {date:'YYYY-MM-DD', count:N}，跨日重置
     function _payArenaEntry() {
+        if (window.MINIGAMES_COMPLETE_CONTENT) return true;
         const DAILY_LIMIT = 3;
         const pid = (window.ProfileManager && typeof window.ProfileManager.getActiveId === 'function')
             ? (window.ProfileManager.getActiveId() || 'default') : 'default';

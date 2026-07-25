@@ -7,6 +7,9 @@
 
   const PROJECT_STORAGE_PREFIX = 'minigames_';
   const PORTED_STORAGE_PREFIX = 'minigames_ported_';
+  // Standalone mini-games expose the complete catalog without the main site's
+  // staged progression or daily battle quota.
+  global.MINIGAMES_COMPLETE_CONTENT = true;
 
   function createScopedStorage(storage) {
     if (!storage || typeof storage.getItem !== 'function' || typeof Proxy !== 'function') return storage;

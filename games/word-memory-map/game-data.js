@@ -73,7 +73,7 @@
   const DEBUG_AUTO_START = DEBUG_QUERY.get('autostart') === '1';
   const DEBUG_WORLD_CONTROLS = false;
   const AUTO_START_PLAY_SESSION = !!window.navigator?.webdriver;
-  const FULL_CONTENT_MODE = document.body?.dataset?.minigamesFullContent === 'true';
+  const FULL_CONTENT_MODE = Boolean(window.MINIGAMES_COMPLETE_CONTENT) || Boolean(document && document.body && document.body.dataset.minigamesFullContent === 'true');
   const ENABLE_AUTOMATION_WORLD_CONTROLS = DEBUG_WORLD_CONTROLS || AUTO_START_PLAY_SESSION || DEBUG_AUTO_START || FULL_CONTENT_MODE;
   window.__wordMemoryReady = false;
   const TTS_REQUEST_TIMEOUT_MS = typeof window.WORD_MEMORY_TTS_TIMEOUT_MS === 'number'
@@ -528,8 +528,8 @@
     DEBUG_AUTO_START,
     DEBUG_WORLD_CONTROLS,
     AUTO_START_PLAY_SESSION,
-    ENABLE_AUTOMATION_WORLD_CONTROLS,
     FULL_CONTENT_MODE,
+    ENABLE_AUTOMATION_WORLD_CONTROLS,
     TTS_REQUEST_TIMEOUT_MS,
     LOOPBACK_TTS_ENDPOINT,
     ASSET_BASE,
