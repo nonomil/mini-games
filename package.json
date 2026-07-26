@@ -1,0 +1,13 @@
+{
+  "name": "petbank-mini-games",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:static": "node scripts/assemble-pages-artifact.mjs",
+    "serve": "node local-server.mjs",
+    "test": "node tests/contract.mjs && node tests/test-complete-content-contract.mjs && node tests/test-complete-mode-runtime.mjs",
+    "test:contract": "node tests/contract.mjs",
+    "test:complete": "node tests/test-complete-content-contract.mjs && node tests/test-complete-mode-runtime.mjs"
+  }
+}

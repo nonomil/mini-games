@@ -33,13 +33,18 @@
     },
     {
       "id": "complete-adventure-runtime",
-      "fileCount": 29770,
-      "bytes": 1035896497
+      "fileCount": 2700,
+      "bytes": 523958263
     },
     {
       "id": "pixel-story-runtime",
       "fileCount": 1331,
       "bytes": 119243024
+    },
+    {
+      "id": "standalone-complete-mode",
+      "fileCount": 6,
+      "bytes": 205318
     },
     {
       "id": "shells",
@@ -49,9 +54,9 @@
     {
       "id": "complete-content-manifests",
       "fileCount": 3,
-      "bytes": 14740
+      "bytes": 14723
     }
   ],
-  "totalFiles": 32060,
-  "totalBytes": 1499728714
+  "totalFiles": 4996,
+  "totalBytes": 987995781
 }

@@ -48,6 +48,7 @@
     THROW_HIT_RADIUS,
     THROW_ARM_MS,
     HERO_WALK_FRAME_MS,
+    HERO_VERTICAL_WALK_FRAME_MS,
     HERO_WALK_FRAME_COUNT,
     HERO_ATTACK_POSE_MS,
     HERO_START_DUST_MS,
@@ -1481,8 +1482,14 @@
     return state.heroDirection;
   }
 
-  function heroFrameIndex() {
-    return Math.floor(state.heroAnimTime / HERO_WALK_FRAME_MS) % HERO_WALK_FRAME_COUNT;
+  function heroWalkFrameMs() {
+    return state.heroDirection === 'up' || state.heroDirection === 'down'
+      ? HERO_VERTICAL_WALK_FRAME_MS
+      : HERO_WALK_FRAME_MS;
+  }
+
+  function heroFrameIndex(frameCount = HERO_WALK_FRAME_COUNT) {
+    return Math.floor(state.heroAnimTime / heroWalkFrameMs()) % frameCount;
   }
 
   function heroSpriteState() {
@@ -1504,12 +1511,8 @@
     }
 
     if (state.heroMoving) {
-      const frameIndex = heroFrameIndex();
-      const frameSources = [
-        heroSprites[family].walk[0],
-        heroSprites[family].idle,
-        heroSprites[family].walk[1]
-      ];
+      const frameSources = heroSprites[family].walk;
+      const frameIndex = heroFrameIndex(frameSources.length);
       return {
         key: `${family}-walk-${frameIndex}`,
         src: frameSources[frameIndex]
@@ -3087,7 +3090,7 @@
     state.heroMoveDustCooldown = Math.max(0, state.heroMoveDustCooldown - deltaMs);
     state.heroMoving = magnitude > 0 && state.heroPose === 'idle';
     if (state.heroMoving) {
-      state.heroAnimTime = (state.heroAnimTime + deltaMs) % (HERO_WALK_FRAME_MS * HERO_WALK_FRAME_COUNT);
+      state.heroAnimTime = (state.heroAnimTime + deltaMs) % (heroWalkFrameMs() * HERO_WALK_FRAME_COUNT);
       if (!wasMoving || state.heroMoveDustCooldown <= 0) {
         spawnMovementDust(!wasMoving);
         state.heroMoveDustCooldown = !wasMoving ? HERO_START_DUST_MS : HERO_STEP_DUST_MS;
@@ -3370,5 +3373,3 @@
 
   init();
 })();
-
-

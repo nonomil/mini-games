@@ -17,10 +17,10 @@
       "name": "boy_down_walk_a",
       "file": "assets/generated/hero-boy-assets/boy_down_walk_a.png",
       "row": 0,
-      "col": 2,
+      "col": 1,
       "size": [
-        131,
-        211
+        130,
+        210
       ]
     },
     {
@@ -37,9 +37,9 @@
       "name": "boy_up_walk_a",
       "file": "assets/generated/hero-boy-assets/boy_up_walk_a.png",
       "row": 1,
-      "col": 2,
+      "col": 1,
       "size": [
-        130,
+        127,
         205
       ]
     },
@@ -86,18 +86,48 @@
     {
       "name": "boy_down_walk_b",
       "file": "assets/generated/hero-boy-assets/boy_down_walk_b.png",
-      "aliasOf": "boy_down_walk_a",
+      "derivedFrom": "boy_down_walk_a",
+      "transform": "mirror-lower-body",
+      "splitY": 156,
       "size": [
-        131,
-        211
+        130,
+        210
       ]
     },
     {
       "name": "boy_up_walk_b",
       "file": "assets/generated/hero-boy-assets/boy_up_walk_b.png",
-      "aliasOf": "boy_up_walk_a",
+      "derivedFrom": "boy_up_walk_a",
+      "transform": "mirror-lower-body",
+      "splitY": 154,
+      "size": [
+        127,
+        205
+      ]
+    },
+    {
+      "name": "boy_down_walk_contact",
+      "file": "assets/generated/hero-boy-assets/boy_down_walk_contact.png",
+      "composedFrom": [
+        "boy_down_walk_a",
+        "boy_down_idle"
+      ],
+      "splitY": 156,
       "size": [
         130,
+        210
+      ]
+    },
+    {
+      "name": "boy_up_walk_contact",
+      "file": "assets/generated/hero-boy-assets/boy_up_walk_contact.png",
+      "composedFrom": [
+        "boy_up_walk_a",
+        "boy_up_idle"
+      ],
+      "splitY": 154,
+      "size": [
+        127,
         205
       ]
     },

@@ -1,0 +1,19 @@
+# Dependencies and local runtime output
+node_modules/
+.npm/
+
+# Generated publish and verification artifacts
+/dist/
+/dist_verify*/
+/tmp/
+/tmp-*.png
+/tmp-*.jpg
+/tmp-*.webp
+/tmp-*.json
+
+# Local logs and editor files
+*.log
+.DS_Store
+.idea/
+.vscode/
+

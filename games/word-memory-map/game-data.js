@@ -126,14 +126,14 @@
     ]
   };
   const WORLD_PREVIEW_IMAGES = {
-    farm: './assets/generated/world-bg-tiles/farm-9grid/farm_tile_r2_c2.png',
+    farm: './assets/generated/world-bg-single/farm-panorama.png',
     farm_gpt: './assets/generated/world-bg-tiles/farm-gpt-9grid/farm_tile_r2_c2.png',
     forest: './assets/generated/world-bg-tiles/forest-gpt-9grid/forest_tile_r2_c2.png',
-    grassland: './assets/generated/world-bg-tiles/farm-gpt-9grid/farm_tile_r2_c2.png',
+    grassland: './assets/generated/world-bg-single/farm-panorama.png',
     ocean: './assets/generated/world-bg-tiles/ocean-gpt-9grid/ocean_tile_r2_c2.png',
-    sky: './assets/generated/world-bg-tiles/farm-gpt-9grid/farm_tile_r2_c2.png',
+    sky: './assets/generated/world-bg-single/farm-panorama.png',
     space: './assets/generated/world-bg-tiles/space-gpt-9grid/space_tile_r2_c2.png',
-    alien: './assets/generated/world-bg-tiles/space-gpt-9grid/space_tile_r2_c2.png'
+    alien: './assets/generated/world-bg-single/space-panorama.png'
   };
   const ROUND_SIZE = 3;
   const SESSION_WORD_TARGET = 50;
@@ -162,7 +162,8 @@
   const THROW_HIT_RADIUS = scaleDistance(7.4);
   const THROW_ARM_MS = 150;
   const HERO_WALK_FRAME_MS = 180;
-  const HERO_WALK_FRAME_COUNT = 3;
+  const HERO_VERTICAL_WALK_FRAME_MS = 300;
+  const HERO_WALK_FRAME_COUNT = 4;
   const HERO_ATTACK_POSE_MS = 420;
   const HERO_START_DUST_MS = 96;
   const HERO_STEP_DUST_MS = HERO_WALK_FRAME_MS * 2;
@@ -217,28 +218,36 @@
         idle: `${ASSET_BASE}/guardian_down_idle.png`,
         walk: [
           `${ASSET_BASE}/guardian_down_walk_a.png`,
-          `${ASSET_BASE}/guardian_down_walk_b.png`
+          `${ASSET_BASE}/guardian_down_idle.png`,
+          `${ASSET_BASE}/guardian_down_walk_b.png`,
+          `${ASSET_BASE}/guardian_down_idle.png`
         ]
       },
       up: {
         idle: `${ASSET_BASE}/guardian_up_idle.png`,
         walk: [
           `${ASSET_BASE}/guardian_up_walk_a.png`,
-          `${ASSET_BASE}/guardian_up_walk_b.png`
+          `${ASSET_BASE}/guardian_up_idle.png`,
+          `${ASSET_BASE}/guardian_up_walk_b.png`,
+          `${ASSET_BASE}/guardian_up_idle.png`
         ]
       },
       side: {
         idle: `${ASSET_BASE}/guardian_side_idle.png`,
         walk: [
           `${ASSET_BASE}/guardian_side_walk_a.png`,
-          `${ASSET_BASE}/guardian_side_walk_b.png`
+          `${ASSET_BASE}/guardian_side_idle.png`,
+          `${ASSET_BASE}/guardian_side_walk_b.png`,
+          `${ASSET_BASE}/guardian_side_idle.png`
         ]
       },
       right: {
         idle: `${ASSET_BASE}/guardian_right_idle.png`,
         walk: [
           `${ASSET_BASE}/guardian_right_walk_a.png`,
-          `${ASSET_BASE}/guardian_right_walk_b.png`
+          `${ASSET_BASE}/guardian_right_idle.png`,
+          `${ASSET_BASE}/guardian_right_walk_b.png`,
+          `${ASSET_BASE}/guardian_right_idle.png`
         ]
       },
       cast: {
@@ -286,31 +295,39 @@
       preview: `${BOY_ASSET_BASE}/boy_down_idle.png`,
       sprites: {
         down: {
-          idle: `${BOY_ASSET_BASE}/boy_down_idle.png`,
-          walk: [
-            `${BOY_ASSET_BASE}/boy_down_walk_a.png`,
-            `${BOY_ASSET_BASE}/boy_down_walk_b.png`
+        idle: `${BOY_ASSET_BASE}/boy_down_idle.png`,
+        walk: [
+            `${BOY_ASSET_BASE}/boy_down_walk_a.png?v=4`,
+            `${BOY_ASSET_BASE}/boy_down_walk_contact.png?v=4`,
+            `${BOY_ASSET_BASE}/boy_down_walk_b.png?v=4`,
+            `${BOY_ASSET_BASE}/boy_down_walk_contact.png?v=4`
           ]
         },
         up: {
-          idle: `${BOY_ASSET_BASE}/boy_up_idle.png`,
-          walk: [
-            `${BOY_ASSET_BASE}/boy_up_walk_a.png`,
-            `${BOY_ASSET_BASE}/boy_up_walk_b.png`
+        idle: `${BOY_ASSET_BASE}/boy_up_idle.png`,
+        walk: [
+            `${BOY_ASSET_BASE}/boy_up_walk_a.png?v=4`,
+            `${BOY_ASSET_BASE}/boy_up_walk_contact.png?v=4`,
+            `${BOY_ASSET_BASE}/boy_up_walk_b.png?v=4`,
+            `${BOY_ASSET_BASE}/boy_up_walk_contact.png?v=4`
           ]
         },
         side: {
-          idle: `${BOY_ASSET_BASE}/boy_side_idle.png`,
-          walk: [
-            `${BOY_ASSET_BASE}/boy_side_walk_a.png`,
-            `${BOY_ASSET_BASE}/boy_side_walk_b.png`
+        idle: `${BOY_ASSET_BASE}/boy_side_idle.png`,
+        walk: [
+          `${BOY_ASSET_BASE}/boy_side_walk_a.png`,
+          `${BOY_ASSET_BASE}/boy_side_idle.png`,
+          `${BOY_ASSET_BASE}/boy_side_walk_b.png`,
+          `${BOY_ASSET_BASE}/boy_side_idle.png`
           ]
         },
         right: {
-          idle: `${BOY_ASSET_BASE}/boy_right_idle.png`,
-          walk: [
-            `${BOY_ASSET_BASE}/boy_right_walk_a.png`,
-            `${BOY_ASSET_BASE}/boy_right_walk_b.png`
+        idle: `${BOY_ASSET_BASE}/boy_right_idle.png`,
+        walk: [
+          `${BOY_ASSET_BASE}/boy_right_walk_a.png`,
+          `${BOY_ASSET_BASE}/boy_right_idle.png`,
+          `${BOY_ASSET_BASE}/boy_right_walk_b.png`,
+          `${BOY_ASSET_BASE}/boy_right_idle.png`
           ]
         },
         cast: {
@@ -561,6 +578,7 @@
     THROW_HIT_RADIUS,
     THROW_ARM_MS,
     HERO_WALK_FRAME_MS,
+    HERO_VERTICAL_WALK_FRAME_MS,
     HERO_WALK_FRAME_COUNT,
     HERO_ATTACK_POSE_MS,
     HERO_START_DUST_MS,
