@@ -2024,7 +2024,7 @@ button {
 }
 
 .hero-unit.is-moving .hero-sprite {
-  animation: none;
+  animation: hero-walk-step 180ms linear infinite;
 }
 
 .hero-unit.is-moving .hero-shadow-image {
@@ -2443,8 +2443,7 @@ button {
 }
 
 @keyframes hero-walk-step {
-  0%, 100% { transform: translate(-50%, 1px) scale(1.004, 0.998); }
-  50% { transform: translate(-50%, 1px) scale(0.998, 1.004); }
+  0%, 50%, 100% { transform: translate(-50%, 1px); }
 }
 
 @keyframes hero-cast-pop {
