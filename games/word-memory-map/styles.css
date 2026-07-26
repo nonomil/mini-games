@@ -2028,7 +2028,7 @@ button {
 }
 
 .hero-unit.is-moving .hero-shadow-image {
-  animation: hero-shadow-step 280ms ease-in-out infinite alternate;
+  animation: none;
 }
 
 .hero-unit.is-pose-attack .hero-sprite {
