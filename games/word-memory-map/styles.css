@@ -2024,8 +2024,7 @@ button {
 }
 
 .hero-unit.is-moving .hero-sprite {
-  animation-name: hero-walk-step;
-  animation-duration: 280ms;
+  animation: none;
 }
 
 .hero-unit.is-moving .hero-shadow-image {
@@ -2097,12 +2096,11 @@ button {
   display: grid;
   place-items: center;
   transform: translate(calc(-50% + var(--carry-x)), calc(-50% + var(--carry-y)));
-  animation: carry-orb-bob 680ms ease-in-out infinite alternate;
+  animation: none;
 }
 
 .hero-unit.is-moving .hero-carry-orb {
-  animation-name: carry-orb-walk;
-  animation-duration: 320ms;
+  animation: none;
 }
 
 .hero-carry-orb-shadow {
@@ -2891,4 +2889,3 @@ button {
     transition-duration: 1ms !important;
   }
 }
-
