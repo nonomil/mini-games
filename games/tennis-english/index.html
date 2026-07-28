@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>网球学英语</title>
+    <meta name="description" content="根据英文释义和语境选择表达，用回球完成一局短网球练习。">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="game-shell" aria-live="polite">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">ENGLISH EXPRESSION · TENNIS COURT</p>
+          <h1>网球学英语</h1>
+        </div>
+        <div class="scoreboard" aria-label="本局比分">
+          <span class="score-label">YOU</span>
+          <strong id="player-score">0</strong>
+          <span class="score-divider">:</span>
+          <strong id="opponent-score">0</strong>
+          <span class="score-label">RIVAL</span>
+        </div>
+      </header>
+
+      <section class="court-panel" id="court-panel" data-phase="ready" aria-label="网球场">
+        <div class="court-lane court-lane-left"></div>
+        <div class="court-lane court-lane-right"></div>
+        <div class="net"></div>
+        <div class="court-player court-player-you" aria-hidden="true">YOU</div>
+        <div class="court-player court-player-rival" aria-hidden="true">RIVAL</div>
+        <div class="tennis-ball" id="tennis-ball" aria-hidden="true"></div>
+      </section>
+
+      <section class="round-panel">
+        <div class="round-meta">
+          <span id="round-label">准备开始</span>
+          <span id="phase-label">READY</span>
+        </div>
+        <p class="prompt-kicker" id="prompt-kicker">先读提示，再把球打向正确表达</p>
+        <p class="prompt-text" id="prompt-text">每一局 7 球，慢慢读完再发球。</p>
+        <p class="prompt-zh" id="prompt-zh">根据英文释义或例句判断自然表达。</p>
+
+        <div class="choice-grid" id="choice-grid" aria-label="表达选项" hidden></div>
+        <p class="keyboard-hint" id="keyboard-hint">键盘：1-3 选择，方向键移动，Space 回球</p>
+
+        <section class="feedback-panel" id="feedback-panel" hidden>
+          <div class="feedback-heading">
+            <span class="feedback-mark" id="feedback-mark">!</span>
+            <div>
+              <p class="feedback-kicker" id="feedback-kicker">回球反馈</p>
+              <h2 id="feedback-title">再读一次</h2>
+            </div>
+          </div>
+          <p id="feedback-reason"></p>
+          <p class="feedback-example" id="feedback-example"></p>
+        </section>
+
+        <section class="result-panel" id="result-panel" hidden>
+          <p class="feedback-kicker">MATCH COMPLETE</p>
+          <h2>这一局打完了</h2>
+          <p id="result-summary"></p>
+          <ul id="result-list" class="result-list"></ul>
+        </section>
+
+        <div class="actions">
+          <button class="primary-button" id="action-button" type="button">开始比赛</button>
+          <button class="secondary-button" id="review-button" type="button" hidden>复习错题</button>
+          <button class="secondary-button" id="audio-button" type="button" hidden>听一次表达</button>
+        </div>
+        <p class="status-message" id="status-message" role="status"></p>
+      </section>
+    </main>
+    <script type="module" src="./game.js"></script>
+  </body>
+</html>

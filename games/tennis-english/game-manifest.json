@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": 1,
+  "gameId": "tennis-english",
+  "title": "网球学英语",
+  "entry": "index.html",
+  "runtime": {
+    "hostId": "tennis-english",
+    "mode": "standalone"
+  },
+  "standalone": true,
+  "domain": "english-expression",
+  "domains": ["english-expression"],
+  "contentTypes": ["expression"],
+  "responseMode": "choice-return",
+  "lifecycle": ["ready", "init", "card-result", "complete", "stop", "error"],
+  "capabilities": [
+    "standalone",
+    "host",
+    "ready",
+    "init",
+    "card-result",
+    "complete",
+    "stop",
+    "error",
+    "idempotent-result"
+  ],
+  "cardSchema": {
+    "required": ["cardId"],
+    "optional": ["word", "translation", "image", "audio", "example", "domain", "contentType"],
+    "unknownFields": "ignore",
+    "missingOptional": "null",
+    "preserveCardId": true,
+    "requiredFields": [
+      "cardId",
+      "expression",
+      "definitionEn",
+      "definitionZh",
+      "example",
+      "audio",
+      "level",
+      "confusionSet"
+    ]
+  },
+  "round": {
+    "minExpressions": 6,
+    "maxExpressions": 8,
+    "defaultExpressions": 7,
+    "selectionCount": 3
+  },
+  "inputs": ["pointer", "touch", "keyboard"]
+}
