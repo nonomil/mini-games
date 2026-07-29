@@ -301,7 +301,7 @@ h1 {
   flex: 1 1 auto;
   max-width: 460px;
   display: grid;
-  grid-template-columns: 60px minmax(0, 1fr);
+  grid-template-columns: 60px minmax(0, 1fr) auto;
   grid-template-rows: minmax(0, 1fr) 16px;
   gap: 4px 10px;
   align-items: center;
@@ -323,9 +323,78 @@ h1 {
 
 .char-frame,
 .task-copy,
-.progress-meter {
+.progress-meter,
+.hint-control {
   position: relative;
   z-index: 1;
+}
+
+.task-copy {
+  min-width: 0;
+}
+
+.hint-control {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 3px;
+  min-width: 68px;
+}
+
+.hint-button {
+  min-width: 62px;
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 5px 9px;
+  border: 1px solid rgba(255, 255, 255, 0.88);
+  border-radius: 12px;
+  color: #754a1a;
+  background: linear-gradient(180deg, #fff1ad, #ffd36b);
+  box-shadow: 0 7px 12px rgba(205, 156, 42, 0.16), inset 0 -2px 0 rgba(187, 124, 27, 0.14);
+  font-size: 12px;
+  font-weight: 950;
+  cursor: pointer;
+}
+
+.hint-button span:first-child {
+  width: 16px;
+  height: 16px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #fffdf3;
+  background: #f08d59;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.hint-button:hover:not(:disabled) {
+  filter: brightness(1.03);
+}
+
+.hint-button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.hint-button:disabled {
+  color: #75816f;
+  background: linear-gradient(180deg, #e7f1df, #cddfc8);
+  cursor: default;
+  box-shadow: inset 0 -2px 0 rgba(73, 110, 79, 0.12);
+}
+
+.hint-status {
+  max-width: 78px;
+  color: #6f7890;
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1.1;
+  text-align: center;
 }
 
 .char-frame {
@@ -353,6 +422,11 @@ h1 {
   color: #4d6f91;
   font-size: 16px;
   font-weight: 950;
+}
+
+.target-pinyin:not(.is-revealed) {
+  color: #7c8497;
+  letter-spacing: 0;
 }
 
 .piece-row {
@@ -528,6 +602,108 @@ h1 {
   border-radius: 999px;
   transform: translateX(-50%);
   background: linear-gradient(180deg, rgba(56, 162, 152, 0.3), rgba(56, 162, 152, 0.08));
+}
+
+.route-panel {
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+  top: 50%;
+  width: min(92%, 420px);
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.88);
+  border-radius: 18px;
+  transform: translate(-50%, -50%);
+  color: #243149;
+  background: linear-gradient(180deg, rgba(255, 252, 241, 0.98), rgba(235, 246, 239, 0.98));
+  box-shadow: 0 22px 42px rgba(40, 57, 78, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.74);
+}
+
+.route-panel[hidden],
+.route-options[hidden],
+.route-branches[hidden] {
+  display: none;
+}
+
+.route-panel__eyebrow {
+  color: #4d7c87;
+  font-size: 11px;
+  font-weight: 950;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.route-panel__title {
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+.route-options,
+.route-branches {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.route-choice-button,
+.route-branch-button {
+  min-height: 62px;
+  display: grid;
+  align-content: center;
+  gap: 4px;
+  padding: 8px 10px;
+  border: 2px solid rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  color: #23445c;
+  background: linear-gradient(180deg, #e7fbf4, #cbeadf);
+  box-shadow: 0 8px 14px rgba(46, 131, 111, 0.12), inset 0 -2px 0 rgba(43, 115, 103, 0.12);
+  cursor: pointer;
+  text-align: left;
+}
+
+.route-choice-button:hover,
+.route-branch-button:hover {
+  filter: brightness(1.03);
+}
+
+.route-choice-button:active,
+.route-branch-button:active {
+  transform: translateY(1px);
+}
+
+.route-choice-button strong,
+.route-branch-button strong {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.route-choice-button span,
+.route-branch-button span {
+  color: #657b84;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.route-branch-button--shortcut {
+  color: #6b4418;
+  background: linear-gradient(180deg, #fff0a8, #ffd064);
+  box-shadow: 0 8px 14px rgba(205, 156, 42, 0.14), inset 0 -2px 0 rgba(187, 124, 27, 0.14);
+}
+
+.route-branch-button--recovery {
+  color: #26566a;
+  background: linear-gradient(180deg, #e4f4ff, #c4e0ee);
+}
+
+.route-status {
+  min-height: 16px;
+  margin: 0;
+  color: #6c7890;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.25;
 }
 
 .board {
@@ -811,7 +987,7 @@ h1 {
 
   .task-panel {
     min-height: 86px;
-    grid-template-columns: 64px minmax(0, 1fr);
+    grid-template-columns: 64px minmax(0, 1fr) auto;
     gap: 6px 10px;
     padding: 10px 12px 12px;
   }
@@ -829,6 +1005,15 @@ h1 {
   .target-pinyin {
     margin-bottom: 6px;
     font-size: 18px;
+  }
+
+  .hint-control {
+    min-width: 62px;
+  }
+
+  .hint-button {
+    min-width: 58px;
+    padding-inline: 7px;
   }
 
   .piece-row {
@@ -893,7 +1078,7 @@ h1 {
   }
 
   .board {
-    width: min(96vw, 72vh);
+    width: min(calc(100vw - 52px), 72vh);
     min-width: 0;
     max-width: none;
     padding: 22px;
@@ -916,8 +1101,21 @@ h1 {
   }
 
   .task-panel {
-    grid-template-columns: 58px minmax(0, 1fr);
+    grid-template-columns: 58px minmax(0, 1fr) auto;
     padding-inline: 12px;
+  }
+
+  .hint-control {
+    min-width: 58px;
+  }
+
+  .hint-button {
+    min-width: 54px;
+    padding-inline: 5px;
+  }
+
+  .hint-button span:last-child {
+    display: none;
   }
 
   .char-frame {
@@ -940,7 +1138,7 @@ h1 {
   }
 
   .board {
-    width: min(96vw, 62vh);
+    width: min(calc(100vw - 52px), 62vh);
     padding: 18px;
     --board-pad: 24px;
   }
@@ -962,7 +1160,7 @@ h1 {
 
   .task-panel {
     min-height: 78px;
-    grid-template-columns: 52px minmax(0, 1fr);
+    grid-template-columns: 52px minmax(0, 1fr) auto;
     padding: 8px 10px 10px;
   }
 
@@ -977,6 +1175,10 @@ h1 {
 
   .target-pinyin {
     font-size: 16px;
+  }
+
+  .hint-control {
+    min-width: 54px;
   }
 
   .bottom-hud {
@@ -1001,5 +1203,133 @@ h1 {
   *::after {
     animation-duration: 1ms !important;
     transition-duration: 1ms !important;
+  }
+}
+
+/* The racing canvas is the primary play surface; the legacy grid remains a hidden state sink. */
+.board[aria-hidden="true"] {
+  display: none !important;
+}
+
+.board-stage {
+  width: min(94vw, 1040px);
+  max-width: 100%;
+  padding: 10px 10px 18px;
+  border-radius: 26px;
+  background:
+    linear-gradient(180deg, rgba(30, 65, 77, 0.32), rgba(255, 255, 255, 0.12));
+  border-color: rgba(68, 83, 97, 0.34);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.26),
+    0 24px 44px rgba(28, 48, 58, 0.22);
+}
+
+.race-canvas {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 20px;
+  background: #5c9eaa;
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 255, 255, 0.14),
+    0 18px 30px rgba(20, 42, 52, 0.28);
+  image-rendering: auto;
+}
+
+.board-stage__halo {
+  z-index: 0;
+  background: linear-gradient(180deg, rgba(255, 215, 112, 0.12), rgba(75, 196, 180, 0.15));
+}
+
+.board-stage__shadow {
+  z-index: 1;
+  bottom: 9px;
+  background: linear-gradient(180deg, rgba(28, 73, 72, 0.48), rgba(28, 73, 72, 0.1));
+}
+
+.route-panel {
+  z-index: 5;
+}
+
+.control-band {
+  grid-template-columns: 44px minmax(0, 1fr) auto;
+}
+
+.lane-controls {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.lane-controls button {
+  width: 34px;
+  height: 34px;
+  display: inline-grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  color: #214956;
+  background: linear-gradient(180deg, #f8fff3, #cde9df);
+  box-shadow: inset 0 -2px 0 rgba(34, 102, 102, 0.14), 0 5px 10px rgba(31, 85, 91, 0.12);
+  font-size: 22px;
+  font-weight: 950;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lane-controls button:hover {
+  filter: brightness(1.04);
+}
+
+.lane-controls button:active {
+  transform: translateY(1px);
+}
+
+.lane-controls button:focus-visible,
+.topbar-icon-button:focus-visible,
+.hint-button:focus-visible {
+  outline: 3px solid rgba(246, 184, 75, 0.76);
+  outline-offset: 2px;
+}
+
+@media (max-width: 720px) {
+  .board-shell {
+    align-content: start;
+    padding-top: 6px;
+  }
+
+  .board-stage {
+    width: min(calc(100vw - 28px), 720px);
+    padding: 7px 7px 13px;
+    border-radius: 22px;
+  }
+
+  .race-canvas {
+    border-radius: 17px;
+  }
+
+  .control-band {
+    grid-template-columns: 40px minmax(0, 1fr) auto;
+  }
+
+  .lane-controls button {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 420px) {
+  .lane-controls {
+    gap: 4px;
+  }
+
+  .lane-controls button {
+    width: 32px;
+    height: 32px;
+    font-size: 19px;
   }
 }

@@ -1,3 +1,10 @@
+import { PINYIN_QUESTION_TYPES } from './pinyin-domain.js';
+import { PINYIN_LEARNING_REASONS } from './pinyin-learning.js?v=pinyin-learning-1';
+import { PINYIN_CARD_DATA } from './pinyin-data.js';
+import { createPinyinScoutSession } from './pinyin-scout-session.js?v=pinyin-session-2';
+import { createConfiguredPinyinTrack } from './pinyin-track-config.js';
+import { normalizePinyinHostCards } from './pinyin-host-adapter.js';
+
 (function () {
   'use strict';
 
@@ -77,10 +84,17 @@
     portal: null,
     shards: [],
     awaitingPortal: false,
+    awaitingRoute: false,
     body: [],
     dir: { x: 1, y: 0 },
     score: 0,
     roundStars: 3,
+    pinyinRevealed: false,
+    hintUsed: false,
+    hintPenalty: 0,
+    learningSession: null,
+    routePhase: null,
+    routeResponse: null,
     moves: 0,
     timer: null,
     stepMs: 540,
@@ -88,7 +102,8 @@
     taskMessage: '按顺序收集拼音块，完成后点亮星星。',
     voiceMap: {},
     voiceAudio: null,
-    voiceToken: 0
+    voiceToken: 0,
+    voiceLearningSlowed: false
   };
 
   const els = {
@@ -99,6 +114,14 @@
     pieceRow: document.getElementById('pieceRow'),
     score: document.getElementById('score'),
     starRow: document.getElementById('starRow'),
+    hintButton: document.getElementById('hintButton'),
+    hintStatus: document.getElementById('hintStatus'),
+    routePanel: document.getElementById('routePanel'),
+    routeStage: document.getElementById('routeStage'),
+    routePrompt: document.getElementById('routePrompt'),
+    routeOptions: document.getElementById('routeOptions'),
+    routeBranches: document.getElementById('routeBranches'),
+    routeStatus: document.getElementById('routeStatus'),
     progressFill: document.getElementById('progressFill'),
     feedback: document.getElementById('feedback'),
     taskHint: document.getElementById('taskHint'),
@@ -142,6 +165,52 @@
     }
   }
 
+  function createLearningCards() {
+    return state.hanzi.map((item, index) => {
+      const reference = PINYIN_CARD_DATA.find((card) => {
+        return card.char === item.char && normalizePinyin(card.pinyinDisplay) === normalizePinyin(item.pinyin);
+      });
+      return {
+      cardId: item.cardId || reference?.cardId || `pinyin:star-scout:${index + 1}`,
+      domain: 'pinyin',
+      char: item.char,
+      pinyinDisplay: item.pinyin,
+      audio: item.audio || reference?.audio || 'speech-synthesis',
+      example: item.example || reference?.example || `${item.char}的拼音练习。`
+      };
+    });
+  }
+
+  function mountLearningSession() {
+    state.learningSession = createPinyinScoutSession({
+      sessionId: launchId || 'pinyin-star-scout-local',
+      cards: createLearningCards(),
+      track: createConfiguredPinyinTrack(),
+      questionType: PINYIN_QUESTION_TYPES.FINAL_CHOICE,
+      speed: 0
+    });
+    state.learningSession.mount();
+  }
+
+  function applyHostHanzi(cards) {
+    const normalized = normalizePinyinHostCards(cards, {
+      allowGeneratedId: true,
+      assumePinyin: true
+    });
+    if (!normalized.length) return false;
+    state.hanzi = normalized.map((card) => ({
+      cardId: card.cardId,
+      char: card.char,
+      pinyin: card.pinyinDisplay,
+      pinyinDisplay: card.pinyinDisplay,
+      audio: card.audio,
+      example: card.example
+    }));
+    state.targetIndex = 0;
+    state.score = 0;
+    return true;
+  }
+
   async function loadVoiceMap() {
     try {
       const response = await fetch(VOICE_MAP_URL, { cache: 'no-store' });
@@ -171,6 +240,10 @@
 
   function stopVoicePlayback() {
     state.voiceToken += 1;
+    if (state.voiceLearningSlowed) {
+      state.learningSession?.resume();
+      state.voiceLearningSlowed = false;
+    }
     if (state.voiceAudio) {
       try {
         state.voiceAudio.pause();
@@ -239,15 +312,28 @@
     }
     stopVoicePlayback();
     const token = state.voiceToken;
-    for (const line of filtered) {
-      if (token !== state.voiceToken) {
-        return;
+    const learningSnapshot = state.learningSession?.getSnapshot?.();
+    const shouldSlowLearning = !state.awaitingRoute && learningSnapshot?.status === 'running';
+    if (shouldSlowLearning) {
+      state.learningSession?.slow(PINYIN_LEARNING_REASONS.PLAYBACK, 0.5);
+      state.voiceLearningSlowed = true;
+    }
+    try {
+      for (const line of filtered) {
+        if (token !== state.voiceToken) {
+          return;
+        }
+        const url = localVoiceUrl(line.text);
+        if (url) {
+          await playLocalVoice(url, token);
+        } else {
+          await playSpeechFallback(line.text, line.lang || 'zh-CN', token);
+        }
       }
-      const url = localVoiceUrl(line.text);
-      if (url) {
-        await playLocalVoice(url, token);
-      } else {
-        await playSpeechFallback(line.text, line.lang || 'zh-CN', token);
+    } finally {
+      if (token === state.voiceToken && state.voiceLearningSlowed) {
+        state.learningSession?.resume();
+        state.voiceLearningSlowed = false;
       }
     }
   }
@@ -360,10 +446,16 @@
     refreshPieces();
     resetSnakeBody();
     state.roundStars = 3;
+    state.pinyinRevealed = false;
+    state.hintUsed = false;
+    state.hintPenalty = 0;
     state.awaitingPortal = false;
+    state.awaitingRoute = false;
+    state.routePhase = null;
+    state.routeResponse = null;
     makeFoods();
-    state.taskMessage = message || `按顺序收集 ${state.pieces.join(' -> ')}。`;
-    els.feedback.textContent = expectedPiece();
+    state.taskMessage = message || '按顺序收集拼音积木，完成后点亮星星。';
+    state.feedback = '?';
   }
 
   function renderStars() {
@@ -379,8 +471,53 @@
         : index === state.pieceIndex
           ? 'piece-chip is-current'
           : 'piece-chip';
-      return `<span class="${className}">${piece}</span>`;
+      const label = state.pinyinRevealed || index < state.pieceIndex
+        ? piece
+        : '?';
+      return `<span class="${className}" aria-label="${index < state.pieceIndex ? `已完成 ${piece}` : '待探索拼读片段'}">${label}</span>`;
     }).join('');
+  }
+
+  function renderRouteOptions(options) {
+    return options.map((option) => {
+      return `<button type="button" class="route-choice-button" data-route-response="${option.response}">
+        <strong>${option.label}</strong>
+        <span>${option.correct ? '正确拼读' : '再想一想'}</span>
+      </button>`;
+    }).join('');
+  }
+
+  function renderRoutePanel() {
+    const visible = Boolean(state.awaitingRoute && state.learningSession);
+    if (!els.routePanel) return;
+    els.routePanel.hidden = !visible;
+    if (!visible) return;
+
+    const options = state.learningSession.getAnswerOptions();
+    const isReview = state.routePhase === 'review';
+    const isBranch = state.routePhase === 'branch';
+    els.routeStage.textContent = isReview ? '错题复习' : isBranch ? '路线选择' : '拼读分叉';
+    els.routePrompt.textContent = isReview
+      ? '再试一次：这个汉字的韵母是什么？'
+      : isBranch
+        ? `韵母 ${state.routeResponse}，选择下一段路线。`
+        : '你找到的韵母是什么？';
+    els.routeOptions.hidden = isBranch;
+    els.routeBranches.hidden = !isBranch;
+    els.routeOptions.innerHTML = isBranch ? '' : renderRouteOptions(options);
+    els.routeBranches.innerHTML = isBranch
+      ? `<button type="button" class="route-branch-button route-branch-button--shortcut" data-route-branch="inner">
+          <strong>内圈捷径</strong><span>短路线 · 少走一段</span>
+        </button>
+        <button type="button" class="route-branch-button route-branch-button--recovery" data-route-branch="wide">
+          <strong>宽道恢复</strong><span>长路线 · 留出恢复空间</span>
+        </button>`
+      : '';
+    els.routeStatus.textContent = isReview
+      ? '赛道已暂停，复习答对后继续。'
+      : isBranch
+        ? '路线会改变本局赛道后果。'
+        : '先判断韵母，再决定走哪条路。';
   }
 
   function renderBoard() {
@@ -426,18 +563,34 @@
       : state.pieces.length ? (state.pieceIndex / state.pieces.length) * 100 : 0;
     els.levelText.textContent = `第 ${state.targetIndex + 1} 关`;
     els.targetChar.textContent = target.char;
-    els.targetPinyin.textContent = normalizePinyin(target.pinyin);
+    els.targetPinyin.textContent = state.pinyinRevealed ? normalizePinyin(target.pinyin) : '拼音待探索';
+    els.targetPinyin.classList.toggle('is-revealed', state.pinyinRevealed);
+    els.targetPinyin.setAttribute('aria-label', state.pinyinRevealed ? `拼音 ${normalizePinyin(target.pinyin)}` : '拼音尚未显示');
     els.score.textContent = state.score;
     els.lengthValue.textContent = state.body.length;
+    els.feedback.textContent = state.feedback || '?';
+    if (els.hintButton) els.hintButton.disabled = state.hintUsed || state.awaitingRoute;
+    if (els.hintStatus) {
+      els.hintStatus.textContent = state.hintUsed ? `已用 · -${state.hintPenalty}星` : '未用';
+    }
     if (els.taskHint) els.taskHint.textContent = state.taskMessage;
     els.progressFill.style.setProperty('--progress', `${progress}%`);
     renderStars();
     renderPieces();
     renderBoard();
+    renderRoutePanel();
   }
 
   function boardPointForCell(x, y) {
-    const rect = els.board.getBoundingClientRect();
+    const raceCanvas = document.getElementById('raceCanvas');
+    const visualBoard = raceCanvas || els.board;
+    const rect = visualBoard.getBoundingClientRect();
+    if (raceCanvas) {
+      return {
+        x: rect.left + ((Number(x) + 0.5) / state.size) * rect.width,
+        y: rect.top + ((Number(y) + 0.5) / state.size) * rect.height
+      };
+    }
     const style = getComputedStyle(els.board);
     const pad = parseFloat(style.getPropertyValue('--board-pad')) || 26;
     const cell = (rect.width - pad * 2) / state.size;
@@ -464,36 +617,63 @@
     if (state.body.length > 3) state.body.pop();
   }
 
+  function continueAfterRoute(result) {
+    state.awaitingRoute = false;
+    state.routePhase = null;
+    state.routeResponse = null;
+    state.awaitingPortal = true;
+    const consequence = result?.routeDecision?.consequence;
+    state.taskMessage = consequence === 'shortcut'
+      ? '内圈捷径已打开，进入星门。'
+      : '宽道恢复已打开，进入星门。';
+    makeFoods();
+    startSnake();
+  }
+
+  function failRouteToReview(result) {
+    state.routePhase = 'review';
+    state.routeResponse = null;
+    state.taskMessage = result?.errorTag
+      ? '路线判断需要复习，赛道已暂停。'
+      : '先复习这张拼音卡，再继续巡航。';
+    stopSnake();
+  }
+
   function rewardTarget(nextFood) {
     showFx('ok', nextFood.x, nextFood.y);
-    state.awaitingPortal = true;
-    state.taskMessage = `拼好了，开门去领取 ${state.roundStars} 颗星。`;
-    els.feedback.textContent = 'GO';
-    makeFoods();
+    state.awaitingPortal = false;
+    state.awaitingRoute = true;
+    state.routePhase = 'answer';
+    state.routeResponse = null;
+    state.taskMessage = '拼好了，先判断韵母并选择路线。';
+    state.feedback = 'ROUTE';
+    state.foods = [];
+    state.portal = null;
+    state.shards = [];
+    stopSnake();
   }
 
   function rewardPiece(nextFood) {
     state.pieceIndex += 1;
     showFx('ok', nextFood.x, nextFood.y);
-    state.taskMessage = `很好，继续收集 ${expectedPiece()}。`;
-    els.feedback.textContent = expectedPiece();
+    state.taskMessage = '很好，继续寻找下一块拼音积木。';
+    state.feedback = state.pinyinRevealed ? expectedPiece() : '?';
     makeFoods();
   }
 
   function completePortalRun(cell) {
-    const finished = currentTarget();
     state.score += state.roundStars;
     state.targetIndex += 1;
     showFx('ok', cell.x, cell.y);
     sendCompletion(state.score, state.roundStars);
-    startTargetRound(`拼出 ${normalizePinyin(finished.pinyin)}，巡航到下一关。`);
+    startTargetRound(`完成第 ${state.targetIndex} 关，巡航到下一关。`);
   }
 
   function penalize(message, cell) {
     state.roundStars = Math.max(0, state.roundStars - 1);
     shrinkSnake();
     state.taskMessage = message;
-    els.feedback.textContent = expectedPiece();
+    state.feedback = normalizePinyin(currentTarget().pinyin);
     if (cell) showFx('warn', cell.x, cell.y);
   }
 
@@ -588,6 +768,13 @@
       dir: { ...state.dir },
       score: state.score,
       roundStars: state.roundStars,
+      pinyinRevealed: state.pinyinRevealed,
+      hintUsed: state.hintUsed,
+      hintPenalty: state.hintPenalty,
+      awaitingRoute: state.awaitingRoute,
+      routePhase: state.routePhase,
+      routeResponse: state.routeResponse,
+      learning: state.learningSession?.getSessionSnapshot() || null,
       moves: state.moves
     };
   }
@@ -631,6 +818,7 @@
       return snapshot();
     },
     getState: snapshot,
+    getLearningState: () => state.learningSession?.getSessionSnapshot() || null,
     speakCurrentTarget
   };
 
@@ -643,11 +831,32 @@
     els.feedback.textContent = data.status === 'accepted' ? '主站奖励已到账。' : data.status === 'duplicate' ? '本局奖励已处理。' : '主站暂未接受奖励。';
   });
 
+  function stopHostRuntime() {
+    state.hostStopped = true;
+    stopSnake();
+    stopVoicePlayback();
+    state.learningSession?.stop();
+  }
+
+  window.addEventListener('wordquest-host-init', event => {
+    if (!applyHostHanzi(event.detail?.payload?.cards || event.detail?.cards || [])) return;
+    if (state.learningSession) {
+      state.learningSession.stop();
+      mountLearningSession();
+      startTargetRound();
+      render();
+      startSnake();
+    }
+  });
+  window.addEventListener('wordquest-host-stop', stopHostRuntime, { once: true });
+  window.WordQuestGameBridge?.registerCleanup(stopHostRuntime);
+
   async function init() {
     await Promise.all([
       readHanzi(),
       loadVoiceMap()
     ]);
+    mountLearningSession();
     startTargetRound();
     render();
     startSnake();
@@ -657,6 +866,57 @@
     speakCurrentTarget();
   });
 
-  window.addEventListener('beforeunload', stopSnake);
+  els.routePanel?.addEventListener('click', (event) => {
+    const target = event.target;
+    const answerButton = target instanceof Element ? target.closest('[data-route-response]') : null;
+    const branchButton = target instanceof Element ? target.closest('[data-route-branch]') : null;
+    if (answerButton) {
+      const response = answerButton.getAttribute('data-route-response');
+      if (state.routePhase === 'review') {
+        const result = state.learningSession?.submitReviewAnswer(response);
+        if (result?.correct) {
+          continueAfterRoute(result);
+        } else {
+          state.taskMessage = '还需要再复习一次，赛道保持暂停。';
+        }
+      } else if (state.routePhase === 'answer') {
+        const selected = state.learningSession?.chooseAnswer(response);
+        if (selected?.accepted) {
+          state.routeResponse = selected.response;
+          state.routePhase = 'branch';
+        }
+      }
+      render();
+      return;
+    }
+    if (branchButton && state.routePhase === 'branch') {
+      const result = state.learningSession?.chooseRoute({
+        branchId: branchButton.getAttribute('data-route-branch')
+      });
+      if (result?.correct) {
+        continueAfterRoute(result);
+      } else {
+        failRouteToReview(result);
+      }
+      render();
+    }
+  });
+
+  els.hintButton?.addEventListener('click', () => {
+    if (state.hintUsed) return;
+    state.hintUsed = true;
+    state.pinyinRevealed = true;
+    state.hintPenalty = 1;
+    state.roundStars = Math.max(0, state.roundStars - state.hintPenalty);
+    state.taskMessage = `提示已打开：${normalizePinyin(currentTarget().pinyin)}。继续自行收集拼音块。`;
+    state.learningSession?.useHint({ mode: 'paused' });
+    state.learningSession?.resume();
+    render();
+  });
+
+  window.addEventListener('beforeunload', () => {
+    stopSnake();
+    state.learningSession?.stop();
+  });
   init();
 })();

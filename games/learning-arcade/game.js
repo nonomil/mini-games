@@ -312,15 +312,15 @@
   ];
   const WORD_DIFFICULTY_TUNING = {
     basic: {
-      shooter: { roundGoal: 8, maxEnemies: 2, speedMultiplier: 0.36, crashOnly: true },
+      shooter: { roundGoal: 6, maxEnemies: 2, speedMultiplier: 0.36, operationWindowMs: 11000, crashOnly: true },
       cannon: { roundGoal: 8, stageGoal: 20, maxTargets: 3, speedMultiplier: 0.68, missLimit: 99 }
     },
     intermediate: {
-      shooter: { roundGoal: 10, maxEnemies: 3, speedMultiplier: 0.55, crashOnly: true },
+      shooter: { roundGoal: 7, maxEnemies: 3, speedMultiplier: 0.55, operationWindowMs: 9000, crashOnly: true },
       cannon: { roundGoal: 16, stageGoal: 20, maxTargets: 3, speedMultiplier: 0.88, missLimit: 5 }
     },
     full: {
-      shooter: { roundGoal: 12, maxEnemies: 4, speedMultiplier: 0.72, crashOnly: true },
+      shooter: { roundGoal: 8, maxEnemies: 4, speedMultiplier: 0.72, operationWindowMs: 7000, crashOnly: true },
       cannon: { roundGoal: 24, stageGoal: 20, maxTargets: 3, speedMultiplier: 1.06, missLimit: 3 }
     }
   };
@@ -432,7 +432,16 @@
         correctLetters: 0,
         wrongLetters: 0,
         targetSwitches: 0,
-        voiceAnnounced: 0
+        voiceAnnounced: 0,
+        missedTargets: 0,
+        slowCompletions: 0,
+        firstCharacterErrors: 0,
+        spellingErrors: 0,
+        consecutiveErrors: 0,
+        difficultyAssistLevel: 0,
+        reducedDifficultyEvents: 0,
+        retryCount: 0,
+        skippedTargets: 0
       },
       boss: {
         active: false,
@@ -446,6 +455,20 @@
       enemyFireEnabled: true,
       roundGoal: WORD_SHOOTER_ROUND_GOAL,
       roundComplete: false,
+      roundStatus: 'idle',
+      paused: false,
+      retryState: {
+        active: false,
+        status: 'idle',
+        reason: '',
+        target: null,
+        targetId: '',
+        retryCount: 0
+      },
+      targetResults: [],
+      pendingErrorTags: [],
+      lastErrorTag: '',
+      lastErrorMessage: '',
       rewardClaimed: false,
       phase: 'warmup'
     },
@@ -1299,6 +1322,7 @@
     const learning = state.wordShooter.learning;
     const resolved = Math.max(0, learning.wordsCompleted);
     const attempts = learning.correctLetters + learning.wrongLetters;
+    const errorTags = [...new Set(state.wordShooter.targetResults.flatMap(result => result.errorTags || []))];
     return {
       tasksPresented: learning.tasksPresented,
       wordsCompleted: resolved,
@@ -1310,6 +1334,17 @@
       letterAccuracy: attempts ? Number((learning.correctLetters / attempts).toFixed(2)) : 0,
       targetSwitches: learning.targetSwitches,
       voiceAnnounced: learning.voiceAnnounced,
+      missedTargets: learning.missedTargets,
+      slowCompletions: learning.slowCompletions,
+      firstCharacterErrors: learning.firstCharacterErrors,
+      spellingErrors: learning.spellingErrors,
+      consecutiveErrors: learning.consecutiveErrors,
+      difficultyAssistLevel: learning.difficultyAssistLevel,
+      reducedDifficultyEvents: learning.reducedDifficultyEvents,
+      retryCount: learning.retryCount,
+      skippedTargets: learning.skippedTargets,
+      errorTags,
+      targetCount: state.wordShooter.targetResults.length,
       voiceEnabled: Boolean(state.soundEnabled)
     };
   }
@@ -2082,8 +2117,83 @@
         <strong>${item.value}</strong>
       </article>
     `).join('');
+    const reviewPanel = els.roundSummaryCard?.querySelector('[data-shooter-review]');
+    if (reviewPanel) reviewPanel.hidden = true;
     els.roundSummary.hidden = !summary.visible;
     els.gameScreen.dataset.roundSummary = summary.visible ? 'true' : 'false';
+    renderWordShooterReviewControl();
+  }
+
+  function renderWordShooterReviewControl() {
+    const actions = els.roundSummaryCard?.querySelector('.round-summary-actions');
+    if (!actions) return;
+    let button = actions.querySelector('[data-round-action="review"]');
+    if (state.roundSummary.gameId !== 'word-shooter') {
+      button?.remove();
+      return;
+    }
+    if (!button) {
+      button = document.createElement('button');
+      button.className = 'round-summary-button';
+      button.type = 'button';
+      button.dataset.roundAction = 'review';
+      actions.insertBefore(button, actions.firstChild);
+    }
+    button.textContent = '复习错题';
+  }
+
+  function renderWordShooterReviewPanel() {
+    const card = els.roundSummaryCard;
+    if (!card) return null;
+    let panel = card.querySelector('[data-shooter-review]');
+    if (!panel) {
+      panel = document.createElement('section');
+      panel.className = 'round-summary-review';
+      panel.dataset.shooterReview = 'true';
+      card.insertBefore(panel, card.querySelector('.round-summary-actions'));
+    }
+    panel.replaceChildren();
+    const reviewTargets = state.wordShooter.targetResults.filter(result => (
+      result.outcome === 'missed'
+      || (result.errorTags || []).some(tag => ['slow-completion', 'first-character-error', 'spelling-error'].includes(tag))
+    ));
+    const title = document.createElement('strong');
+    title.textContent = '本局复习';
+    panel.appendChild(title);
+    if (!reviewTargets.length) {
+      const empty = document.createElement('p');
+      empty.textContent = '本局没有需要复习的目标。';
+      panel.appendChild(empty);
+      panel.hidden = false;
+      return panel;
+    }
+    reviewTargets.forEach(result => {
+      const item = document.createElement('article');
+      item.className = 'round-summary-review-item';
+      item.dataset.reviewTargetId = result.targetId;
+      const text = document.createElement('span');
+      text.textContent = `${result.translation || '图片提示'} · ${result.word} · ${(result.errorTags || []).join('、')}`;
+      item.appendChild(text);
+      const listen = document.createElement('button');
+      listen.className = 'round-summary-button';
+      listen.type = 'button';
+      listen.dataset.shooterReviewTarget = result.targetId;
+      listen.textContent = '听一遍';
+      item.appendChild(listen);
+      panel.appendChild(item);
+    });
+    panel.hidden = false;
+    return panel;
+  }
+
+  function toggleWordShooterReview() {
+    if (state.roundSummary.gameId !== 'word-shooter') return;
+    const existing = els.roundSummaryCard?.querySelector('[data-shooter-review]');
+    if (existing?.hidden === false) {
+      existing.hidden = true;
+      return;
+    }
+    renderWordShooterReviewPanel();
   }
 
   function roundRewardFor(gameId, completedCount) {
@@ -2322,13 +2432,25 @@
     }
   }
 
+  function wordShooterTouchControlsMarkup() {
+    const controls = [
+      ['up', '↑', '向上移动'],
+      ['left', '←', '向左移动'],
+      ['down', '↓', '向下移动'],
+      ['right', '→', '向右移动']
+    ];
+    return `<div class="word-shooter-touch-controls" aria-label="飞机方向控制" style="display:flex;justify-content:center;gap:6px;margin-bottom:6px;touch-action:none">${controls.map(([direction, icon, label]) => (
+      `<button class="key-button shooter-direction-button" type="button" data-shooter-direction="${direction}" aria-label="${label}" style="min-width:44px;min-height:44px;touch-action:none">${icon}</button>`
+    )).join('')}</div>`;
+  }
+
   function keyboardMarkup(expectedLetters) {
     const rows = ['qwertyuiop', 'asdfghjkl', 'zxcvbnm'];
-    return rows.map(row => (
+    return `${wordShooterTouchControlsMarkup()}${rows.map(row => (
       `<div class="keyboard-row">${row.split('').map(key => (
         `<button class="key-button${expectedLetters.has(key) ? ' is-target' : ''}" type="button" data-key="${key}">${key}</button>`
       )).join('')}</div>`
-    )).join('');
+    )).join('')}`;
   }
 
   function renderKeyboard() {
@@ -2443,6 +2565,243 @@
     return new Set(wordShooterEnemiesSorted().map(enemy => enemy.wordData.word[0]).filter(Boolean));
   }
 
+  function wordShooterSetFeedback(tag, message) {
+    const ws = state.wordShooter;
+    ws.lastErrorTag = tag;
+    ws.lastErrorMessage = message;
+    ws.lastErrorAt = ws.elapsedMs;
+  }
+
+  function wordShooterDifficultyAdjustment() {
+    const assistLevel = clampNumber(
+      Math.floor(Number(state.wordShooter.learning.difficultyAssistLevel) || 0),
+      0,
+      2
+    );
+    return {
+      level: assistLevel,
+      speedMultiplier: Math.max(0.64, 1 - assistLevel * 0.16),
+      operationWindowMultiplier: 1 + assistLevel * 0.25
+    };
+  }
+
+  function wordShooterOperationWindowMs() {
+    const tuning = wordDifficultyTuning().shooter;
+    return Math.round(tuning.operationWindowMs * wordShooterDifficultyAdjustment().operationWindowMultiplier);
+  }
+
+  function wordShooterMarkInputError(enemy, tag) {
+    const ws = state.wordShooter;
+    let message = tag === 'first-character-error'
+      ? '首字母不对，看看中文或图片提示，再试第一个字母。'
+      : '拼写中有一个字母不对，按正确顺序继续。';
+    if (tag === 'first-character-error') ws.learning.firstCharacterErrors += 1;
+    if (tag === 'spelling-error') ws.learning.spellingErrors += 1;
+    if (enemy) {
+      if (!enemy.learning.errorTags.includes(tag)) enemy.learning.errorTags.push(tag);
+      enemy.learning.mistakes += 1;
+      enemy.learning.totalAttempts += 1;
+    } else {
+      if (!ws.pendingErrorTags.includes(tag)) ws.pendingErrorTags.push(tag);
+      ws.pendingMistakes += 1;
+    }
+    ws.combo = 0;
+    ws.learning.consecutiveErrors = Math.min(2, ws.learning.consecutiveErrors + 1);
+    if (ws.learning.consecutiveErrors >= 2 && ws.learning.difficultyAssistLevel < 2) {
+      ws.learning.difficultyAssistLevel += 1;
+      ws.learning.reducedDifficultyEvents += 1;
+      ws.learning.consecutiveErrors = 0;
+      message += ' 连续错误，后续目标会放慢并延长操作窗口。';
+    }
+    wordShooterSetFeedback(tag, message);
+    sfx.wrong();
+  }
+
+  function wordShooterApplyPendingErrors(enemy) {
+    const ws = state.wordShooter;
+    if (!enemy) return;
+    enemy.learning.errorTags = [...new Set([
+      ...enemy.learning.errorTags,
+      ...ws.pendingErrorTags
+    ])];
+    enemy.learning.mistakes += ws.pendingMistakes;
+    enemy.learning.totalAttempts += ws.pendingMistakes;
+    ws.pendingErrorTags = [];
+    ws.pendingMistakes = 0;
+  }
+
+  function recordWordShooterTargetResult(enemy, outcome, extraTags = []) {
+    const ws = state.wordShooter;
+    if (!enemy?.wordData?.word) return null;
+    const alreadyRecorded = ws.targetResults.some(result => (
+      result.targetId === enemy.id || result.word === enemy.wordData.word
+    ));
+    if (alreadyRecorded) return ws.targetResults.find(result => (
+      result.targetId === enemy.id || result.word === enemy.wordData.word
+    )) || null;
+    const tags = new Set([
+      ...(enemy.learning.errorTags || []),
+      ...extraTags
+    ]);
+    const completionMs = outcome === 'completed'
+      ? Math.max(0, ws.elapsedMs - enemy.presentedAtMs)
+      : null;
+    if (outcome === 'completed' && ws.elapsedMs > enemy.deadlineAt) {
+      tags.add('slow-completion');
+    }
+    const result = {
+      targetId: enemy.id,
+      word: enemy.wordData.word,
+      translation: enemy.wordData.translation || '',
+      image: enemy.wordData.image || '',
+      audio: enemy.wordData.audio || '',
+      outcome,
+      errorTags: [...tags],
+      completionMs,
+      operationWindowMs: enemy.operationWindowMs,
+      presentedAtMs: enemy.presentedAtMs,
+      resolvedAtMs: ws.elapsedMs
+    };
+    ws.targetResults.push(result);
+    if (outcome === 'missed') {
+      ws.learning.missedTargets += 1;
+      wordShooterSetFeedback('missed-target', `漏目标：${result.word}（${result.translation}），这一题会进入复习。`);
+    } else {
+      ws.learning.wordsCompleted += 1;
+      const hasInputError = result.errorTags.some(tag => ['first-character-error', 'spelling-error'].includes(tag));
+      if (hasInputError) ws.learning.retryWords += 1;
+      else ws.learning.firstTryWords += 1;
+      if (result.errorTags.includes('slow-completion')) {
+        ws.learning.slowCompletions += 1;
+        wordShooterSetFeedback('slow-completion', `完成得有点慢：${result.word}（${result.translation}），建议复习一次。`);
+      }
+    }
+    return result;
+  }
+
+  function wordShooterResolvedTargetCount() {
+    return state.wordShooter.targetResults.length;
+  }
+
+  function emptyWordShooterRetryState() {
+    return {
+      active: false,
+      status: 'idle',
+      reason: '',
+      target: null,
+      targetId: '',
+      retryCount: 0
+    };
+  }
+
+  function enterWordShooterRetryState(enemy, reason = 'missed-target') {
+    const ws = state.wordShooter;
+    if (!enemy?.wordData?.word || ws.retryState.active) return false;
+    const errorTags = ['missed-target'];
+    if (reason === 'operation-window') errorTags.push('slow-completion');
+    enemy.learning.errorTags = [...new Set([
+      ...(enemy.learning.errorTags || []),
+      ...errorTags
+    ])];
+    wordShooterApplyPendingErrors(enemy);
+    enemy.learning.mistakes += 1;
+    enemy.learning.totalAttempts += 1;
+    ws.enemies = ws.enemies.filter(item => item.id !== enemy.id);
+    if (ws.activeEnemyId === enemy.id) {
+      ws.activeEnemyId = null;
+      ws.currentTyped = '';
+    }
+    ws.retryState = {
+      active: true,
+      status: 'retryable',
+      reason,
+      target: enemy,
+      targetId: enemy.id,
+      retryCount: 0
+    };
+    ws.misses += 1;
+    ws.combo = 0;
+    ws.paused = true;
+    ws.moveInput = { up: false, down: false, left: false, right: false };
+    ws.roundStatus = 'retry';
+    wordShooterSetFeedback(
+      'retry-target',
+      `${reason === 'operation-window' ? '操作窗口结束' : '目标漏掉'}：${enemy.wordData.word}（${enemy.wordData.translation || '图片提示'}），可重试或跳过。`
+    );
+    return true;
+  }
+
+  function retryWordShooterTarget() {
+    const ws = state.wordShooter;
+    const retry = ws.retryState;
+    const enemy = retry.target;
+    if (state.activeGame !== 'word-shooter' || !retry.active || !enemy?.wordData?.word) return false;
+    const phase = wordShooterPhaseForCompletedWords();
+    const adjustment = wordShooterDifficultyAdjustment();
+    enemy.x = 82;
+    enemy.speed = (3.2 + enemy.wordData.word.length * 0.2 + enemy.laneIndex * 0.08)
+      * phase.speedMultiplier
+      * adjustment.speedMultiplier;
+    enemy.presentedAtMs = ws.elapsedMs;
+    enemy.operationWindowMs = wordShooterOperationWindowMs();
+    enemy.deadlineAt = ws.elapsedMs + enemy.operationWindowMs;
+    enemy.destroying = false;
+    enemy.destroyAt = 0;
+    enemy.nextShotAt = ws.elapsedMs + WORD_SHOOTER_ENEMY_FIRE_INTERVAL;
+    ws.enemies.push(enemy);
+    ws.enemies.forEach(other => {
+      if (other.id === enemy.id || other.deadlineAt > ws.elapsedMs) return;
+      other.presentedAtMs = ws.elapsedMs;
+      other.operationWindowMs = wordShooterOperationWindowMs();
+      other.deadlineAt = ws.elapsedMs + other.operationWindowMs;
+    });
+    ws.learning.retryCount += 1;
+    const attempt = retry.retryCount + 1;
+    ws.retryState = emptyWordShooterRetryState();
+    ws.paused = false;
+    ws.roundStatus = 'playing';
+    ws.moveInput = { up: false, down: false, left: false, right: false };
+    ws.activeEnemyId = null;
+    ws.currentTyped = '';
+    wordShooterSetFeedback('retry-target', `重新出现 ${enemy.wordData.word}，可再次输入；这张卡只记录一个最终结果。`);
+    ensureWordShooterEnemies();
+    renderTypingArena();
+    speakCurrentWord(true);
+    return attempt > 0;
+  }
+
+  function skipWordShooterTarget() {
+    const ws = state.wordShooter;
+    const retry = ws.retryState;
+    const enemy = retry.target;
+    if (state.activeGame !== 'word-shooter' || !retry.active || !enemy?.wordData?.word) return false;
+    const result = recordWordShooterTargetResult(enemy, 'missed', ['missed-target']);
+    ws.learning.skippedTargets += result ? 1 : 0;
+    ws.retryState = emptyWordShooterRetryState();
+    ws.paused = false;
+    ws.roundStatus = 'playing';
+    ws.moveInput = { up: false, down: false, left: false, right: false };
+    ws.activeEnemyId = null;
+    ws.currentTyped = '';
+    ws.enemies.forEach(other => {
+      if (other.deadlineAt > ws.elapsedMs) return;
+      other.presentedAtMs = ws.elapsedMs;
+      other.operationWindowMs = wordShooterOperationWindowMs();
+      other.deadlineAt = ws.elapsedMs + other.operationWindowMs;
+    });
+    if (wordShooterResolvedTargetCount() >= ws.roundGoal) {
+      ws.roundComplete = true;
+      ws.roundStatus = 'completed';
+      finishRound('word-shooter', wordShooterRoundSummaryPayload());
+      return Boolean(result);
+    }
+    wordShooterSetFeedback('skip-target', `已跳过 ${enemy.wordData.word}，答案会进入复习。`);
+    ensureWordShooterEnemies();
+    renderTypingArena();
+    speakCurrentWord(true);
+    return Boolean(result);
+  }
+
   function wordShooterEnemiesForPrefix(prefix, excludedEnemyId = '') {
     const normalizedPrefix = String(prefix || '').toLowerCase();
     if (!normalizedPrefix) return [];
@@ -2468,6 +2827,19 @@
     return state.wordShooter.enemyId % WORD_SHOOTER_LANES.length;
   }
 
+  function uniqueWordShooterRoundWords(words, goal) {
+    const unique = [];
+    const seen = new Set();
+    for (const word of words.length ? words : FALLBACK_VOCAB) {
+      const key = String(word?.word || '').toLowerCase();
+      if (!key || seen.has(key)) continue;
+      seen.add(key);
+      unique.push(word);
+      if (unique.length >= goal) break;
+    }
+    return unique;
+  }
+
   function nextWordShooterWord() {
     const ws = state.wordShooter;
     const list = ws.roundWords.length
@@ -2480,25 +2852,27 @@
         .map(enemy => String(enemy.wordData?.word || '').charAt(0))
         .filter(Boolean)
     );
+    const occupiedWords = new Set(wordShooterEnemiesSorted().map(enemy => enemy.wordData.word));
+    const resolvedWords = new Set(ws.targetResults.map(result => result.word));
     const start = ((ws.spawnCursor % list.length) + list.length) % list.length;
     for (let offset = 0; offset < list.length; offset += 1) {
       const index = (start + offset) % list.length;
       const candidate = list[index];
       const initial = String(candidate?.word || '').charAt(0);
-      if (initial && !occupiedStarts.has(initial)) {
+      if (initial && !occupiedStarts.has(initial) && !occupiedWords.has(candidate.word) && !resolvedWords.has(candidate.word)) {
         ws.spawnCursor = (index + 1) % list.length;
         return candidate;
       }
     }
-
-    ws.spawnCursor = (start + 1) % list.length;
-    return list[start];
+    return null;
   }
 
   function createWordShooterEnemy(laneIndex = 0) {
     const ws = state.wordShooter;
     const phase = wordShooterPhaseForCompletedWords();
+    const adjustment = wordShooterDifficultyAdjustment();
     const wordData = nextWordShooterWord();
+    if (!wordData) return null;
     const enemyId = ws.enemyId + 1;
     const fighter = WORD_SHOOTER_ASSETS.enemyFighters[(enemyId - 1) % WORD_SHOOTER_ASSETS.enemyFighters.length];
     ws.enemyId = enemyId;
@@ -2510,16 +2884,29 @@
       x: 88 + ((enemyId + laneIndex) % 3) * 4,
       y: WORD_SHOOTER_LANES[laneIndex],
       bobPhase: enemyId * 0.73,
-      speed: (3.2 + wordData.word.length * 0.2 + laneIndex * 0.08) * phase.speedMultiplier,
+      speed: (3.2 + wordData.word.length * 0.2 + laneIndex * 0.08)
+        * phase.speedMultiplier
+        * adjustment.speedMultiplier,
       asset: fighter.asset,
       hueRotate: fighter.hueRotate,
       artScale: fighter.scale,
       labelTop: fighter.labelTop,
       wordData,
+      prompt: {
+        translation: wordData.translation || '',
+        image: wordData.image || '',
+        audio: wordData.audio || ''
+      },
+      presentedAtMs: ws.elapsedMs,
+      operationWindowMs: wordShooterOperationWindowMs(),
+      deadlineAt: ws.elapsedMs + wordShooterOperationWindowMs(),
       learning: {
         mistakes: 0,
         correctLetters: 0,
-        totalAttempts: 0
+        totalAttempts: 0,
+        errorTags: [],
+        firstCharacterErrors: 0,
+        spellingErrors: 0
       },
       destroying: false,
       destroyAt: 0,
@@ -2529,13 +2916,17 @@
 
   function ensureWordShooterEnemies() {
     const ws = state.wordShooter;
+    if (ws.roundComplete || wordShooterResolvedTargetCount() >= ws.roundGoal) return;
     const phase = wordShooterPhaseForCompletedWords();
     const baseCount = phase.maxEnemies;
     while (wordShooterEnemiesSorted().length < baseCount) {
-      ws.enemies.push(createWordShooterEnemy(pickWordShooterLane()));
+      const enemy = createWordShooterEnemy(pickWordShooterLane());
+      if (!enemy) break;
+      ws.enemies.push(enemy);
     }
     if (wordShooterEnemiesSorted().length < phase.maxEnemies && ws.enemies.every(enemy => enemy.x <= 76)) {
-      ws.enemies.push(createWordShooterEnemy(pickWordShooterLane()));
+      const enemy = createWordShooterEnemy(pickWordShooterLane());
+      if (enemy) ws.enemies.push(enemy);
     }
   }
 
@@ -2571,10 +2962,22 @@
   }
 
   function renderWordShooterPreviewCard(focusEnemy) {
-    const previewSrc = focusEnemy?.asset || FALLBACK_MINECRAFT_IMAGE;
+    const previewSrc = focusEnemy?.wordData?.image || focusEnemy?.asset || FALLBACK_MINECRAFT_IMAGE;
     if (els.typingTargetImage.dataset.imageSrc !== previewSrc) {
       els.typingTargetImage.dataset.imageSrc = previewSrc;
       els.typingTargetImage.src = previewSrc;
+    }
+    els.typingTargetImage.alt = focusEnemy?.wordData?.translation
+      ? `${focusEnemy.wordData.translation} 图片提示`
+      : '英文目标图片提示';
+    const promptCard = els.typingTargetImage.closest('.typing-target-card');
+    if (promptCard) {
+      promptCard.removeAttribute('aria-hidden');
+      promptCard.setAttribute('aria-label', focusEnemy?.wordData?.translation
+        ? `${focusEnemy.wordData.translation} 图片提示`
+        : '英文目标图片提示');
+      promptCard.dataset.promptImage = previewSrc;
+      promptCard.dataset.promptAudio = focusEnemy?.wordData?.audio || '';
     }
   }
 
@@ -2603,6 +3006,7 @@
 
   function wordShooterFeedbackText() {
     const ws = state.wordShooter;
+    if (ws.lastErrorMessage) return ws.lastErrorMessage;
     const focusEnemy = focusWordShooterEnemy();
     if (!focusEnemy) return '输入任意敌机上的单词，随时切换目标。';
     if (ws.activeEnemyId === focusEnemy.id && ws.currentTyped.length) {
@@ -2614,6 +3018,45 @@
       return `连击 ${ws.combo}，输入任意敌机单词继续击破。`;
     }
     return `输入任意敌机单词，可随时切换目标；例如按 ${displayTypingLetter(focusEnemy.wordData.word[0])} 开始。`;
+  }
+
+  function renderWordShooterPauseControl() {
+    if (!els.wordShooter) return;
+    const retryActive = state.wordShooter.retryState.active;
+    let button = els.wordShooter.querySelector('[data-shooter-action="pause"]');
+    if (!button) {
+      button = document.createElement('button');
+      button.className = 'round-summary-button shooter-pause-button';
+      button.type = 'button';
+      button.dataset.shooterAction = 'pause';
+      els.wordShooter.insertBefore(button, els.typingArena);
+    }
+    button.textContent = retryActive ? '等待选择' : state.wordShooter.paused ? '继续训练' : '暂停训练';
+    button.setAttribute('aria-pressed', String(state.wordShooter.paused));
+    button.disabled = retryActive;
+  }
+
+  function renderWordShooterRetryControl() {
+    if (!els.wordShooter) return;
+    const retry = state.wordShooter.retryState;
+    let panel = els.wordShooter.querySelector('[data-shooter-retry]');
+    if (!retry.active) {
+      panel?.remove();
+      return;
+    }
+    if (!panel) {
+      panel = document.createElement('section');
+      panel.className = 'shooter-retry-panel';
+      panel.dataset.shooterRetry = 'true';
+      els.wordShooter.insertBefore(panel, els.typingArena);
+    }
+    const enemy = retry.target;
+    panel.innerHTML = `
+      <strong>${retry.reason === 'operation-window' ? '操作窗口结束' : '目标漏掉'}</strong>
+      <span>答案：${enemy?.wordData?.word || ''} · ${enemy?.wordData?.translation || '图片提示'}</span>
+      <button class="round-summary-button" type="button" data-shooter-action="retry">重试这一卡</button>
+      <button class="round-summary-button" type="button" data-shooter-action="skip">跳过并复习</button>
+    `;
   }
 
   function renderEnemyWordMarkup(enemy, isLocked) {
@@ -2761,9 +3204,13 @@
     const focusEnemy = focusWordShooterEnemy();
     const letters = focusEnemy?.wordData.word?.split('') || [];
     const doneCount = ws.activeEnemyId === focusEnemy?.id ? ws.currentTyped.length : 0;
-    els.typingProgress.textContent = `${ws.completedWords.length} / ${ws.roundGoal}`;
+    els.typingProgress.textContent = `${wordShooterResolvedTargetCount()} / ${ws.roundGoal}`;
     els.typingStreak.textContent = ws.combo > 1 ? `combo ${ws.combo}` : `miss ${ws.misses}`;
     els.wordChinese.textContent = focusEnemy?.wordData.translation || '锁定目标后开始击破';
+    els.typingArena.dataset.roundStatus = ws.roundStatus;
+    els.typingArena.dataset.paused = String(ws.paused);
+    els.typingArena.dataset.targetCount = String(wordShooterResolvedTargetCount());
+    els.typingArena.dataset.errorTags = wordShooterLearningSnapshot().errorTags.join(',');
     els.typingArena.dataset.weapon = getWordShooterWeapon().id;
     els.typingArena.dataset.ship = getWordShooterLoadout().shipId;
     els.typingArena.dataset.mechanic = wordShooterMechanic().id;
@@ -2786,6 +3233,8 @@
     els.typingArena.style.setProperty('--arena-shake-x', ws.arenaShakeUntil > ws.elapsedMs ? `${ws.arenaShakeLevel.toFixed(1)}px` : '0px');
     els.typingArena.style.setProperty('--arena-shake-y', ws.arenaShakeUntil > ws.elapsedMs ? `${(ws.arenaShakeLevel * 0.42).toFixed(1)}px` : '0px');
     if (els.wordFeedback) els.wordFeedback.textContent = wordShooterFeedbackText();
+    renderWordShooterPauseControl();
+    renderWordShooterRetryControl();
     renderWordQueue();
     renderWordShooterWeaponStatus();
     renderWordShooterEnemies();
@@ -3503,6 +3952,30 @@
     });
   }
 
+  function wordShooterRoundSummaryPayload() {
+    const ws = state.wordShooter;
+    const learning = wordShooterLearningSnapshot();
+    return {
+      kicker: 'English',
+      title: '任务完成',
+      copy: learning.missedTargets
+        ? `本轮完成 ${learning.targetCount} 个学习目标，其中 ${learning.missedTargets} 个进入复习。`
+        : '这一轮单词战机已经完成，做得漂亮。',
+      stats: [
+        { label: '学习目标', value: `${learning.targetCount}/${ws.roundGoal}` },
+        { label: '击破单词', value: `${ws.completedWords.length}/${ws.roundGoal}` },
+        { label: '漏目标', value: String(learning.missedTargets) },
+        { label: '慢完成', value: String(learning.slowCompletions) },
+        { label: '首字符错', value: String(learning.firstCharacterErrors) },
+        { label: '拼写错', value: String(learning.spellingErrors) },
+        { label: '重试次数', value: String(learning.retryCount) },
+        { label: '跳过目标', value: String(learning.skippedTargets) },
+        { label: '辅助降难度', value: String(learning.difficultyAssistLevel) },
+        { label: '总得分', value: String(ws.score) }
+      ]
+    };
+  }
+
   function resolveWordShooterPlayerHit(reason = 'energy') {
     const ws = state.wordShooter;
     if (ws.invulnerableUntil > ws.elapsedMs || ws.roundComplete) return false;
@@ -3514,12 +3987,18 @@
     sfx.impact('homing-missile');
     if (ws.shield <= 0) {
       ws.roundComplete = true;
+      ws.roundStatus = 'completed';
+      const learning = wordShooterLearningSnapshot();
       finishRound('word-shooter', {
         kicker: 'English',
         title: '护盾耗尽',
         copy: '躲开能量弹，再用字母锁定敌机。',
         stats: [
+          { label: '学习目标', value: `${learning.targetCount}/${ws.roundGoal}` },
           { label: '击破单词', value: `${ws.completedWords.length}/${ws.roundGoal}` },
+          { label: '重试次数', value: String(learning.retryCount) },
+          { label: '跳过目标', value: String(learning.skippedTargets) },
+          { label: '辅助降难度', value: String(learning.difficultyAssistLevel) },
           { label: '总得分', value: String(ws.score) },
           { label: '护盾', value: `0/${getWordShooterLoadout().shield}` }
         ]
@@ -3552,38 +4031,26 @@
 
   function updateWordShooter(deltaMs = WORD_SHOOTER_TICK_MS) {
     const ws = state.wordShooter;
-    if (ws.roundComplete) return;
+    if (ws.roundComplete || ws.paused) return;
     ws.elapsedMs += deltaMs;
     getWordShooterWeapon();
     moveWordShooterPlayer(deltaMs);
     ws.enemies.forEach(enemy => {
       enemy.x -= enemy.speed * (deltaMs / 1000);
     });
+    const expired = wordShooterEnemiesSorted().find(enemy => ws.elapsedMs >= enemy.deadlineAt);
+    if (expired) {
+      enterWordShooterRetryState(expired, 'operation-window');
+      return;
+    }
     const crashed = ws.enemies.filter(enemy => enemy.x <= WORD_SHOOTER_COLLISION_X);
     if (crashed.length) {
-      crashed.forEach(enemy => {
-        if (ws.activeEnemyId === enemy.id) {
-          ws.activeEnemyId = null;
-          ws.currentTyped = '';
-        }
-        ws.combo = 0;
-        ws.misses += 1;
-        const impactPoint = wordShooterArenaPointFromPercent(WORD_SHOOTER_PLAYER_X, enemy.y);
-        spawnWordShooterImpact(impactPoint.x, impactPoint.y, 'homing-missile');
-        spawnImpactSparks(impactPoint.x, impactPoint.y, 'homing-missile');
-      });
-      ws.enemies = ws.enemies.filter(enemy => enemy.x > WORD_SHOOTER_COLLISION_X);
-      ws.roundComplete = true;
-      finishRound('word-shooter', {
-        kicker: 'English',
-        title: '战机爆炸',
-        copy: '敌机撞到我方战机了，换一局继续锁定单词。',
-        stats: [
-          { label: '击破单词', value: `${ws.completedWords.length}/${ws.roundGoal}` },
-          { label: '总得分', value: String(ws.score) },
-          { label: '碰撞', value: String(ws.misses) }
-        ]
-      });
+      const enemy = crashed[0];
+      ws.enemies = ws.enemies.filter(item => item.id !== enemy.id);
+      enterWordShooterRetryState(enemy, 'missed-target');
+      const impactPoint = wordShooterArenaPointFromPercent(WORD_SHOOTER_PLAYER_X, enemy.y);
+      spawnWordShooterImpact(impactPoint.x, impactPoint.y, 'homing-missile');
+      spawnImpactSparks(impactPoint.x, impactPoint.y, 'homing-missile');
       return;
     }
     updateWordShooterEnemyBullets(deltaMs);
@@ -3616,6 +4083,9 @@
         word: enemy.wordData.word,
         level: enemy.wordData.level,
         sourcePackGroup: enemy.wordData.sourcePackGroup,
+        prompt: { ...enemy.prompt },
+        operationWindowMs: enemy.operationWindowMs,
+        deadlineAt: enemy.deadlineAt,
         x: Number(enemy.x.toFixed(2)),
         y: Number(enemy.y.toFixed(2))
       })),
@@ -3626,6 +4096,23 @@
       completedWords: state.wordShooter.completedWords.slice(),
       roundGoal: state.wordShooter.roundGoal,
       roundComplete: state.wordShooter.roundComplete,
+      roundStatus: state.wordShooter.roundStatus,
+      paused: state.wordShooter.paused,
+      retryState: {
+        active: state.wordShooter.retryState.active,
+        status: state.wordShooter.retryState.status,
+        reason: state.wordShooter.retryState.reason,
+        targetId: state.wordShooter.retryState.targetId,
+        word: state.wordShooter.retryState.target?.wordData?.word || '',
+        translation: state.wordShooter.retryState.target?.wordData?.translation || '',
+        retryCount: state.wordShooter.retryState.retryCount
+      },
+      difficultyAssistLevel: wordShooterDifficultyAdjustment().level,
+      targetResults: state.wordShooter.targetResults.map(result => ({
+        ...result,
+        errorTags: [...result.errorTags]
+      })),
+      errorTags: wordShooterLearningSnapshot().errorTags,
       phase: phase.id,
       phaseLabel: phase.label,
       spawnCount: state.wordShooter.enemyId,
@@ -3662,17 +4149,37 @@
   }
 
   function stopWordShooter() {
-    if (state.wordShooter.timer) window.clearInterval(state.wordShooter.timer);
-    state.wordShooter.timer = null;
+    const ws = state.wordShooter;
+    if (ws.timer) window.clearInterval(ws.timer);
+    ws.timer = null;
+    ws.moveInput = { up: false, down: false, left: false, right: false };
+    ws.paused = false;
+    if (ws.roundStatus === 'playing' || ws.roundStatus === 'paused' || ws.roundStatus === 'retry') {
+      ws.roundStatus = ws.roundComplete ? 'completed' : 'stopped';
+    }
+    ws.retryState = emptyWordShooterRetryState();
     clearTypingFx();
+  }
+
+  function toggleWordShooterPause() {
+    const ws = state.wordShooter;
+    if (state.activeGame !== 'word-shooter' || ws.roundComplete || ws.retryState.active) return ws.paused;
+    ws.paused = !ws.paused;
+    ws.roundStatus = ws.paused ? 'paused' : 'playing';
+    ws.moveInput = { up: false, down: false, left: false, right: false };
+    wordShooterSetFeedback('', ws.paused ? '已暂停训练，准备好后继续输入。' : '训练继续，先看提示再输入英文。');
+    renderTypingArena();
+    return ws.paused;
   }
 
   function startWordShooter() {
     const ws = state.wordShooter;
     const loadout = getWordShooterLoadout();
+    const tuning = wordDifficultyTuning().shooter;
     stopWordShooter();
     state.words = wordsForDifficulty();
-    ws.roundWords = shuffleWordsForRound(state.words);
+    ws.roundGoal = tuning.roundGoal;
+    ws.roundWords = uniqueWordShooterRoundWords(shuffleWordsForRound(state.words), ws.roundGoal);
     ws.enemies = [];
     ws.completedWords = [];
     ws.activeEnemyId = null;
@@ -3696,6 +4203,14 @@
     ws.announcedKey = '';
     ws.resolvingHit = false;
     ws.pendingMistakes = 0;
+    ws.pendingErrorTags = [];
+    ws.lastErrorTag = '';
+    ws.lastErrorMessage = '';
+    ws.lastErrorAt = 0;
+    ws.targetResults = [];
+    ws.retryState = emptyWordShooterRetryState();
+    ws.roundStatus = 'playing';
+    ws.paused = false;
     ws.player = { x: WORD_SHOOTER_PLAYER_X, y: WORD_SHOOTER_PLAYER_START_Y };
     ws.moveInput = { up: false, down: false, left: false, right: false };
     ws.shield = loadout.shield;
@@ -3715,7 +4230,16 @@
       correctLetters: 0,
       wrongLetters: 0,
       targetSwitches: 0,
-      voiceAnnounced: 0
+      voiceAnnounced: 0,
+      missedTargets: 0,
+      slowCompletions: 0,
+      firstCharacterErrors: 0,
+      spellingErrors: 0,
+      consecutiveErrors: 0,
+      difficultyAssistLevel: 0,
+      reducedDifficultyEvents: 0,
+      retryCount: 0,
+      skippedTargets: 0
     };
     ws.boss = {
       active: false,
@@ -3727,7 +4251,6 @@
       attackCount: 0
     };
     ws.enemyFireEnabled = true;
-    ws.roundGoal = wordDifficultyTuning().shooter.roundGoal;
     ws.roundComplete = false;
     ws.rewardClaimed = false;
     ws.spawnCursor = startWordCursor(ws.roundWords);
@@ -3755,21 +4278,22 @@
 
   function inputWordLetter(letter) {
     const ws = state.wordShooter;
-    if (state.activeGame !== 'word-shooter' || ws.roundComplete || ws.resolvingHit || !/^[a-z]$/.test(letter)) return;
+    if (state.activeGame !== 'word-shooter' || ws.roundComplete || ws.paused || ws.resolvingHit || !/^[a-z]$/.test(letter)) return;
     let targetEnemy = getWordShooterEnemy(ws.activeEnemyId);
     if (!targetEnemy) {
       targetEnemy = wordShooterEnemiesForPrefix(letter)[0] || null;
       if (targetEnemy) {
         ws.activeEnemyId = targetEnemy.id;
         ws.currentTyped = '';
-        targetEnemy.learning.mistakes += ws.pendingMistakes;
-        ws.pendingMistakes = 0;
+        wordShooterApplyPendingErrors(targetEnemy);
         sfx.lock();
       }
     }
     const expected = targetEnemy?.wordData.word?.[ws.currentTyped.length];
     if (!targetEnemy || letter !== expected) {
-      const switchTarget = wordShooterEnemiesForPrefix(letter, targetEnemy?.id)[0] || null;
+      const switchTarget = !ws.currentTyped.length
+        ? wordShooterEnemiesForPrefix(letter, targetEnemy?.id)[0] || null
+        : null;
       if (switchTarget) {
         targetEnemy = switchTarget;
         ws.activeEnemyId = switchTarget.id;
@@ -3778,14 +4302,7 @@
         sfx.lock();
       } else {
         ws.learning.wrongLetters += 1;
-        if (targetEnemy?.learning) {
-          targetEnemy.learning.mistakes += 1;
-          targetEnemy.learning.totalAttempts += 1;
-        } else {
-          ws.pendingMistakes += 1;
-        }
-        sfx.wrong();
-        ws.combo = 0;
+        wordShooterMarkInputError(targetEnemy, ws.currentTyped.length ? 'spelling-error' : 'first-character-error');
         renderTypingArena();
         return;
       }
@@ -3793,18 +4310,18 @@
     const nextExpected = targetEnemy.wordData.word[ws.currentTyped.length];
     if (letter !== nextExpected) {
       ws.learning.wrongLetters += 1;
-      targetEnemy.learning.mistakes += 1;
-      targetEnemy.learning.totalAttempts += 1;
-      sfx.wrong();
-      ws.combo = 0;
+      wordShooterMarkInputError(targetEnemy, ws.currentTyped.length ? 'spelling-error' : 'first-character-error');
       renderTypingArena();
       return;
     }
     ws.currentTyped += letter;
+    ws.learning.consecutiveErrors = 0;
     ws.learning.correctLetters += 1;
     targetEnemy.learning.correctLetters += 1;
     targetEnemy.learning.totalAttempts += 1;
     state.input = ws.currentTyped;
+    ws.lastErrorTag = '';
+    ws.lastErrorMessage = '';
     sfx.tick();
     pulseWordShooterHud('hit');
     renderTypingArena();
@@ -3819,9 +4336,7 @@
       const finisherNode = targetEnemyHitNode(targetEnemy.id);
       const finisherPoint = getArenaPoint(finisherNode, 0.5, 0.5);
       ws.completedWords.push(targetEnemy.wordData.word);
-      ws.learning.wordsCompleted += 1;
-      if (targetEnemy.learning.mistakes) ws.learning.retryWords += 1;
-      else ws.learning.firstTryWords += 1;
+      recordWordShooterTargetResult(targetEnemy, 'completed');
       if (ws.boss.active && !ws.boss.defeated) {
         damageWordShooterBoss(Math.max(1, Math.ceil(targetEnemy.wordData.word.length / 5)));
       }
@@ -3833,8 +4348,9 @@
       ws.resolvingHit = false;
       state.wordIndex = (state.wordIndex + 1) % Math.max(1, state.words.length);
       state.input = '';
-      if (ws.completedWords.length >= ws.roundGoal) {
+      if (wordShooterResolvedTargetCount() >= ws.roundGoal) {
         ws.roundComplete = true;
+        ws.roundStatus = 'completed';
       }
       ensureWordShooterEnemies();
       renderTypingArena();
@@ -3847,16 +4363,7 @@
         }
         pulseWordShooterHud('combo');
         if (ws.roundComplete) {
-          finishRound('word-shooter', {
-            kicker: 'English',
-            title: '任务完成',
-            copy: '这一轮单词战机已经全部击破，做得漂亮。',
-            stats: [
-              { label: '击破单词', value: `${ws.completedWords.length}/${ws.roundGoal}` },
-              { label: '总得分', value: String(ws.score) },
-              { label: '漏怪', value: String(ws.misses) }
-            ]
-          });
+          finishRound('word-shooter', wordShooterRoundSummaryPayload());
         }
       }, 120);
     }
@@ -5171,6 +5678,21 @@
       } else {
         inputWordLetter(keyButton.dataset.key);
       }
+      restoreActiveGameInputFocus();
+      return;
+    }
+    const shooterAction = event.target.closest('[data-shooter-action]');
+    if (shooterAction && state.activeGame === 'word-shooter') {
+      if (shooterAction.dataset.shooterAction === 'pause') toggleWordShooterPause();
+      else if (shooterAction.dataset.shooterAction === 'retry') retryWordShooterTarget();
+      else if (shooterAction.dataset.shooterAction === 'skip') skipWordShooterTarget();
+      restoreActiveGameInputFocus();
+      return;
+    }
+    const shooterReviewTarget = event.target.closest('[data-shooter-review-target]');
+    if (shooterReviewTarget && state.roundSummary.gameId === 'word-shooter') {
+      const result = state.wordShooter.targetResults.find(item => item.targetId === shooterReviewTarget.dataset.shooterReviewTarget);
+      if (result) speakSequence(result);
       return;
     }
     const snakeAction = event.target.closest('[data-snake-action]');
@@ -5198,6 +5720,10 @@
       return;
     }
     const roundAction = event.target.closest('[data-round-action]');
+    if (roundAction?.dataset.roundAction === 'review') {
+      toggleWordShooterReview();
+      return;
+    }
     if (roundAction?.dataset.roundAction === 'replay') {
       replayActiveRound();
       return;
@@ -5271,25 +5797,44 @@
   function wordShooterMovementDirection(key) {
     return {
       arrowup: 'up',
-      w: 'up',
       arrowdown: 'down',
-      s: 'down',
       arrowleft: 'left',
-      a: 'left',
-      arrowright: 'right',
-      d: 'right'
+      arrowright: 'right'
     }[key] || '';
   }
 
-  function shouldTreatWordShooterLetterAsTyping(key) {
-    return Boolean(key && /^[wasd]$/.test(key) && canWordShooterTypeLetter(key));
+  function setWordShooterTouchDirection(event, pressed) {
+    if (state.activeGame !== 'word-shooter') return;
+    const button = event.target?.closest?.('[data-shooter-direction]');
+    const direction = String(button?.dataset?.shooterDirection || '').toLowerCase();
+    if (!button || !['up', 'down', 'left', 'right'].includes(direction)) return;
+    event.preventDefault();
+    state.wordShooter.moveInput[direction] = pressed;
+    if (pressed) {
+      button.setPointerCapture?.(event.pointerId);
+    } else if (button.hasPointerCapture?.(event.pointerId)) {
+      button.releasePointerCapture?.(event.pointerId);
+    }
+    restoreActiveGameInputFocus();
   }
+
+  document.addEventListener('pointerdown', event => {
+    setWordShooterTouchDirection(event, true);
+  });
+
+  document.addEventListener('pointerup', event => {
+    setWordShooterTouchDirection(event, false);
+  });
+
+  document.addEventListener('pointercancel', event => {
+    setWordShooterTouchDirection(event, false);
+  });
 
   document.addEventListener('keydown', event => {
     const key = String(event.key || '').toLowerCase();
     const letterKey = letterFromKeyboardEvent(event);
     const movementDirection = wordShooterMovementDirection(key);
-    if (state.activeGame === 'word-shooter' && movementDirection && !(letterKey && shouldTreatWordShooterLetterAsTyping(key))) {
+    if (state.activeGame === 'word-shooter' && movementDirection) {
       event.preventDefault();
       state.wordShooter.moveInput[movementDirection] = true;
     } else if (state.activeGame === 'word-cannon' && ['arrowleft', 'arrowright', 'arrowup', 'arrowdown', 'a', 'd', 'w', 's'].includes(key)) {
@@ -5297,6 +5842,7 @@
       inputWordCannonLetter(key);
     } else if (state.activeGame === 'word-shooter' && letterKey) {
       event.preventDefault();
+      if (event.repeat) return;
       inputWordLetter(letterKey);
     } else if (state.activeGame === 'word-cannon' && letterKey) {
       event.preventDefault();
@@ -5408,6 +5954,7 @@
       return wordShooterSnapshot();
     },
     tickWordShooterFrame,
+    toggleWordShooterPause,
     setWordShooterMoveInput,
     setWordShooterEnemyFireEnabled: enabled => {
       state.wordShooter.enemyFireEnabled = Boolean(enabled);

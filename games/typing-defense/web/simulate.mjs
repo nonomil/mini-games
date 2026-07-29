@@ -75,9 +75,58 @@ try {
   assert(/开始幼儿园 年级单词|开始年级单词|开始幼儿园/.test(menuState.startAction), `start action should describe grade word mode, got ${JSON.stringify(menuState)}`);
   assert(/幼儿园词库/.test(menuState.overlayText), `overlay copy should mention the current vocab bank, got ${JSON.stringify(menuState)}`);
   assert(menuState.selectedTab === "年级单词", `default selected tab should be grade word mode, got ${JSON.stringify(menuState)}`);
+  assert(initial.runtimeMode === "standalone", `no init payload should keep standalone mode, got ${JSON.stringify(initial)}`);
+  assert(initial.hostCardCount === 0, `standalone mode should not expose host cards, got ${JSON.stringify(initial)}`);
+  assert(initial.cardSource === "local", `standalone mode should use local cards, got ${JSON.stringify(initial)}`);
+  assert(initial.currentCardId && initial.currentCardDomain === "english" && initial.currentCardContentType === "word", `local cards should expose stable standard fields, got ${JSON.stringify(initial)}`);
+
+  const hostPage = await openFreshPage(browser);
+  const hostInit = {
+    type: "init",
+    protocolVersion: 1,
+    sessionId: "simulate-host-session",
+    gameId: "typing-defense",
+    cardId: null,
+    payload: {
+      cards: [{
+        cardId: "fixture-attack",
+        word: "attack",
+        translation: "攻击",
+        image: null,
+        audio: null,
+        example: "Attack the target.",
+        domain: "english",
+        contentType: "word"
+      }]
+    }
+  };
+  const hostAccepted = await hostPage.evaluate((message) => window.__typingDefenseTest.applyHostInit(message), hostInit);
+  assert(hostAccepted === true, "host init fixture should be accepted");
+  const hostSnapshot = await snapshot(hostPage);
+  assert(hostSnapshot.runtimeMode === "host", `host init should switch runtime mode, got ${JSON.stringify(hostSnapshot)}`);
+  assert(hostSnapshot.cardSource === "host" && hostSnapshot.hostCardCount === 1, `host cards should win over local vocab, got ${JSON.stringify(hostSnapshot)}`);
+  assert(hostSnapshot.currentCardId === "fixture-attack" && hostSnapshot.target === "attack", `host card fields should reach the active task, got ${JSON.stringify(hostSnapshot)}`);
+  await hostPage.close();
 
   await page.locator("#overlayStart").click();
   const letterBefore = await snapshot(page);
+  const wrongKey = letterBefore.target[0] === "a" ? "z" : "a";
+  await page.keyboard.press(wrongKey);
+  await page.waitForFunction(() => window.__typingDefenseTest.snapshot().feedbackKind === "error");
+  const errorFeedback = await snapshot(page);
+  assert(errorFeedback.feedbackErrorTag.startsWith("wrong-"), `wrong input should expose an error tag, got ${JSON.stringify(errorFeedback)}`);
+  assert(errorFeedback.feedbackAnswer === errorFeedback.target, `wrong input should expose the answer, got ${JSON.stringify(errorFeedback)}`);
+  assert(errorFeedback.feedbackRetryVisible === true, `wrong input should expose retry action, got ${JSON.stringify(errorFeedback)}`);
+  await page.locator("#hintButton").click();
+  await page.waitForFunction(() => window.__typingDefenseTest.snapshot().feedbackKind === "hint");
+  const hintFeedback = await snapshot(page);
+  assert(hintFeedback.currentHintUsed === 1, `hint should increment current card hint count, got ${JSON.stringify(hintFeedback)}`);
+  assert(/下一位/.test(hintFeedback.feedbackMessage), `hint should explain the next input, got ${JSON.stringify(hintFeedback)}`);
+  await page.locator("#retryButton").click();
+  await page.waitForFunction(() => window.__typingDefenseTest.snapshot().feedbackKind === "retry");
+  const retryFeedback = await snapshot(page);
+  assert(retryFeedback.typed === "", `retry should clear current input, got ${JSON.stringify(retryFeedback)}`);
+  assert(retryFeedback.feedbackRetryVisible === true, `retry state should keep the retry action available, got ${JSON.stringify(retryFeedback)}`);
   await page.keyboard.press(letterBefore.target[0]);
   await page.waitForFunction((before) => window.__typingDefenseTest.snapshot().lastMiniArrowCount > before, letterBefore.lastMiniArrowCount);
   const letterAfter = await snapshot(page);
@@ -91,6 +140,7 @@ try {
   assert(autoRound3.roundIndex === 3, `expected round 3 after two clears, got ${JSON.stringify(autoRound3)}`);
   assert(autoRound3.activeVocabId === "elementary-lower", `round 3 should promote to elementary-lower, got ${JSON.stringify(autoRound3)}`);
   assert(autoRound3.vocabTitle.includes("小学低年级"), `round 3 should expose elementary-lower vocab, got ${JSON.stringify(autoRound3)}`);
+  assert(autoRound3.learningGuidedCorrect >= 1, `hinted retry should be recorded as guided-correct, got ${JSON.stringify(autoRound3)}`);
   const autoSounds = await page.evaluate(() => window.__typingDefenseTest.soundEvents());
   assert(autoSounds.includes("sfx:gradeup"), `grade promotion should emit gradeup sound, got ${JSON.stringify(autoSounds)}`);
   await page.close();
@@ -103,6 +153,10 @@ try {
   assert(manualMenu.vocabWordCount >= 50, `elementary-upper bank should expose its full grade pool, got ${JSON.stringify(manualMenu)}`);
 
   await manualPage.locator("#overlayStart").click();
+  await manualPage.locator("#skipButton").click();
+  const skippedState = await snapshot(manualPage);
+  assert(skippedState.feedbackKind === "gave-up" && skippedState.feedbackErrorTag === "gave-up", `换一个 should show gave-up feedback, got ${JSON.stringify(skippedState)}`);
+  assert(/已换题/.test(skippedState.feedbackMessage), `gave-up feedback should explain the new task, got ${JSON.stringify(skippedState)}`);
   const collectedTargets = new Set();
   for (let i = 0; i < 8; i += 1) {
     const current = await snapshot(manualPage);
@@ -133,6 +187,15 @@ try {
   assert(nextGradeState.selectedVocabId === "elementary-lower", `next-grade action should switch selected vocab, got ${JSON.stringify(nextGradeState)}`);
   assert(nextGradeState.vocabTitle.includes("小学低年级"), `next-grade action should start elementary-lower run, got ${JSON.stringify(nextGradeState)}`);
   await rewardPage.close();
+
+  const timeoutPage = await openFreshPage(browser);
+  await timeoutPage.locator("#overlayStart").click();
+  await timeoutPage.evaluate(() => window.__typingDefenseTest.forceDamage());
+  const timeoutState = await snapshot(timeoutPage);
+  assert(timeoutState.feedbackKind === "timeout", `timeout should expose timeout feedback, got ${JSON.stringify(timeoutState)}`);
+  assert(timeoutState.feedbackErrorTag === "slow-completion", `timeout should use slow-completion tag, got ${JSON.stringify(timeoutState)}`);
+  assert(/时间到/.test(timeoutState.feedbackMessage), `timeout feedback should explain the result, got ${JSON.stringify(timeoutState)}`);
+  await timeoutPage.close();
 
   const pinyinPage = await openFreshPage(browser);
   await pinyinPage.locator("#vocabSelect").selectOption("bridge-pinyin");

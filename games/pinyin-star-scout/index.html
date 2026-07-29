@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>拼音巡航 | Star Scout</title>
+  <title>拼音赛车 | Pinyin Grand Prix</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="./styles.css?v=star-scout-4">
+  <link rel="stylesheet" href="./styles.css?v=pinyin-race-1">
 </head>
 <body>
   <main class="runner-app" data-prototype="pinyin-star-scout">
-    <section class="game-surface" aria-label="拼音星际巡航">
+    <section class="game-surface" aria-label="拼音赛车">
       <div class="surface-spark surface-spark-a" aria-hidden="true"></div>
       <div class="surface-spark surface-spark-b" aria-hidden="true"></div>
 
@@ -17,8 +17,8 @@
         <div class="title-cluster">
           <span class="level-pill" id="levelText">第 1 关</span>
           <div class="title-stack">
-            <p class="eyebrow">Star Scout</p>
-            <h1>拼音巡航</h1>
+            <p class="eyebrow">Pinyin Grand Prix</p>
+            <h1>拼音赛车</h1>
           </div>
         </div>
 
@@ -28,8 +28,15 @@
             <strong id="targetChar">山</strong>
           </div>
           <div class="task-copy">
-            <span id="targetPinyin" class="target-pinyin">shan</span>
-            <div id="pieceRow" class="piece-row"></div>
+            <span id="targetPinyin" class="target-pinyin" aria-live="polite">拼音待探索</span>
+            <div id="pieceRow" class="piece-row" aria-label="拼读进度"></div>
+          </div>
+          <div class="hint-control">
+            <button type="button" class="hint-button" id="hintButton" aria-label="显示拼音提示" title="显示拼音提示">
+              <span aria-hidden="true">?</span>
+              <span>提示</span>
+            </button>
+            <span class="hint-status" id="hintStatus" aria-live="polite">未用</span>
           </div>
           <div class="progress-meter" aria-hidden="true">
             <img class="progress-bg" src="./assets/generated/block-runner-assets/progress_strip.png" alt="">
@@ -53,14 +60,22 @@
         </div>
       </header>
 
-      <section class="board-shell" aria-label="巡航棋盘">
+      <section class="board-shell" aria-label="拼音赛车赛道">
         <div class="board-stage">
           <div class="board-stage__halo" aria-hidden="true"></div>
           <div class="board-stage__shadow" aria-hidden="true"></div>
-          <div class="board" id="board"></div>
+          <canvas class="race-canvas" id="raceCanvas" width="960" height="540" aria-label="拼音赛车赛道动画"></canvas>
+          <div class="board" id="board" aria-hidden="true"></div>
         </div>
         <img class="sparkle" id="sparkle" src="./assets/generated/block-runner-assets/sparkle_burst.png" alt="" hidden>
         <img class="warning" id="warning" src="./assets/generated/block-runner-assets/warning_puff.png" alt="" hidden>
+        <aside class="route-panel" id="routePanel" aria-label="学习路线选择" hidden>
+          <div class="route-panel__eyebrow" id="routeStage">拼读分叉</div>
+          <strong class="route-panel__title" id="routePrompt">你找到的韵母是什么？</strong>
+          <div class="route-options" id="routeOptions"></div>
+          <div class="route-branches" id="routeBranches" hidden></div>
+          <p class="route-status" id="routeStatus" aria-live="polite"></p>
+        </aside>
       </section>
 
       <aside class="bottom-hud" aria-label="即时反馈">
@@ -79,10 +94,15 @@
           <div class="control-copy">
             <p>方向 / WASD / IJKL</p>
           </div>
+          <div class="lane-controls" aria-label="变道控制">
+            <button type="button" id="laneLeftButton" aria-label="向左变道" title="向左变道">←</button>
+            <button type="button" id="laneRightButton" aria-label="向右变道" title="向右变道">→</button>
+          </div>
         </div>
       </aside>
     </section>
   </main>
-  <script src="./game.js?v=star-scout-4"></script>
+  <script type="module" src="./game.js?v=star-scout-7"></script>
+  <script type="module" src="./pinyin-race-ui.js?v=pinyin-race-2"></script>
 </body>
 </html>

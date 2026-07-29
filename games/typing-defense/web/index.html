@@ -159,6 +159,7 @@
           <span class="goal-chip-sub" id="goalChipSub">准备拿第 1 颗星</span>
         </div>
         <button class="listen-button" id="listenButton" type="button">听一听</button>
+        <button class="hint-button" id="hintButton" type="button">给提示</button>
       </div>
       <div class="type-box" id="typeBox" tabindex="0" aria-label="当前输入">
         <div class="type-box-copy">
@@ -168,6 +169,11 @@
             <i></i>
           </div>
           <div class="type-box-helper" id="typeBoxHelper">准备开始</div>
+          <div class="typing-feedback is-hidden" id="typingFeedback" data-kind="none" aria-live="polite" aria-atomic="true">
+            <strong id="feedbackTitle"></strong>
+            <span id="feedbackMessage"></span>
+            <span id="feedbackAnswer" hidden></span>
+          </div>
         </div>
       </div>
       <section class="keyboard-panel stage-keyboard" aria-label="小写键盘">
@@ -175,6 +181,7 @@
       </section>
       <div class="controls">
         <button id="startButton" type="button">开始挑战</button>
+        <button id="retryButton" type="button" hidden>重试本题</button>
         <button id="skipButton" type="button">换一个</button>
       </div>
     </section>
@@ -241,7 +248,7 @@
 
   <script src="../assets/generated/minecraft-typing-defense/vocab-banks.js"></script>
   <script src="../assets/generated/minecraft-typing-defense/tasks.js"></script>
-  <script src="./game.js"></script>
+  <script type="module" src="./game.js"></script>
 </body>
 </html>
 

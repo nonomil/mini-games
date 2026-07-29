@@ -1718,6 +1718,24 @@ body[data-ui-state="playing"] .grade-track:not(.grade-track-dialog) .grade-track
   filter: saturate(0.7);
 }
 
+.hint-button {
+  min-width: 104px;
+  min-height: 44px;
+  padding: 0 14px;
+  border-width: 2px;
+  border-color: rgba(255, 224, 118, 0.9);
+  color: #fff7ce;
+  background: linear-gradient(180deg, #9a772b, #5d471b);
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.16), 0 3px 0 rgba(0, 0, 0, 0.26);
+  font-size: 16px;
+}
+
+.hint-button[disabled] {
+  opacity: 0.58;
+  cursor: default;
+  filter: saturate(0.7);
+}
+
 .type-box {
   min-height: 138px;
   display: block;
@@ -1768,6 +1786,79 @@ body[data-ui-state="playing"] .grade-track:not(.grade-track-dialog) .grade-track
   font-weight: 800;
   line-height: 1.2;
   color: rgba(223, 245, 217, 0.76);
+}
+
+.typing-feedback {
+  min-height: 40px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 2px 8px;
+  padding: 7px 10px;
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  color: #f5fff1;
+  background: rgba(15, 32, 18, 0.68);
+  text-align: left;
+  line-height: 1.2;
+}
+
+.typing-feedback.is-hidden {
+  display: none;
+}
+
+.typing-feedback strong {
+  grid-row: span 2;
+  min-width: 86px;
+  color: #fff2ad;
+  font-size: 14px;
+}
+
+.typing-feedback span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.typing-feedback #feedbackAnswer {
+  color: #fff0a5;
+}
+
+.typing-feedback[data-kind="error"] {
+  border-color: rgba(255, 125, 101, 0.78);
+  background: rgba(82, 28, 23, 0.78);
+}
+
+.typing-feedback[data-kind="error"] strong,
+.typing-feedback[data-kind="timeout"] strong,
+.typing-feedback[data-kind="gave-up"] strong {
+  color: #ffd0b9;
+}
+
+.typing-feedback[data-kind="hint"] {
+  border-color: rgba(255, 221, 105, 0.72);
+  background: rgba(79, 57, 17, 0.78);
+}
+
+.typing-feedback[data-kind="correct"],
+.typing-feedback[data-kind="guided-correct"] {
+  border-color: rgba(148, 226, 121, 0.72);
+  background: rgba(27, 75, 37, 0.78);
+}
+
+.typing-feedback[data-kind="gave-up"],
+.typing-feedback[data-kind="timeout"] {
+  border-color: rgba(255, 184, 91, 0.78);
+  background: rgba(76, 52, 21, 0.78);
+}
+
+#retryButton {
+  border-color: rgba(255, 219, 126, 0.84);
+  color: #fff4c4;
+  background: linear-gradient(180deg, #8b6d2a, #574214);
 }
 
 .type-box.is-wrong {
@@ -2417,6 +2508,47 @@ button:active {
   line-height: 1.05;
 }
 
+.learning-evidence {
+  display: grid;
+  gap: 6px;
+  padding: 8px 10px;
+  border: 2px solid rgba(137, 220, 164, 0.34);
+  border-radius: 8px;
+  background: rgba(11, 35, 25, 0.36);
+  color: #e4f8dc;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.learning-evidence-title {
+  color: #fff2a9;
+  font-weight: 900;
+}
+
+.learning-evidence-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.learning-evidence-metrics span {
+  min-width: 0;
+  text-align: center;
+}
+
+.learning-evidence-metrics b {
+  display: block;
+  color: #ffd24a;
+  font-size: 16px;
+}
+
+.learning-evidence-mistakes {
+  overflow: hidden;
+  color: rgba(244, 255, 236, 0.9);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .reward-nextline {
   padding: 8px 10px;
   border: 2px dashed rgba(255, 240, 182, 0.28);
@@ -3025,6 +3157,17 @@ button:active {
   .listen-button {
     min-width: 0;
     width: 100%;
+  }
+
+  .hint-button {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .controls button {
+    min-width: 0;
+    padding: 0 8px;
+    font-size: 14px;
   }
 
   button {

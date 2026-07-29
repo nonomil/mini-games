@@ -1,3 +1,27 @@
+import {
+  EVENT_TYPES as LEARNING_EVENT_TYPES,
+  classifyTypingError,
+  createLearningStore
+} from "./learning-loop.js";
+import {
+  normalizeHostInit,
+  normalizeLocalTask,
+  selectRuntimeCards,
+  toTypingTask
+} from "./card-runtime.js";
+import {
+  buildCorrectFeedback,
+  buildErrorFeedback,
+  buildGiveUpFeedback,
+  buildHintFeedback,
+  buildRetryFeedback,
+  speakTextSafely
+} from "./feedback-runtime.js";
+import {
+  buildIndependentReviewQueue,
+  summarizeIndependentSession
+} from "./independent-loop.js";
+
 const ASSETS = {
   creeper: {
     idle: "../assets/generated/typing-defense-assets/creeper_gpt_idle.png",
@@ -113,6 +137,11 @@ let activeVocabId = AUTO_GRADED_DEFAULT_ENABLED
   ? (AUTO_GRADED_BANK_IDS[0] || FALLBACK_VOCAB_ID)
   : FALLBACK_VOCAB_ID;
 let activePinyinTier = "single";
+const HOST_VOCAB_ID = "host";
+let runtimeMode = "standalone";
+let hostSessionId = "";
+let hostCards = [];
+let hostTasks = [];
 
 const FALLBACK_WORD_TASKS = [
   { mode: "单词", target: "cat", hint: "小猫 cat" },
@@ -171,11 +200,24 @@ const GAME_MODES = {
   numbers: { label: "数字", banks: ["numbers"], speed: 13200 }
 };
 
-const BASE_WORD_TASKS = TASK_BANKS.words.map((task) => ({
-  ...task,
-  image: normalizeWordCardImage(task.image)
-}));
-const BASE_PINYIN_TASKS = [...TASK_BANKS.pinyin];
+const BASE_WORD_TASKS = TASK_BANKS.words
+  .map((task) => normalizeLocalTask(task, {
+    vocabId: "local-fallback",
+    defaultDomain: "english",
+    defaultContentType: "word"
+  }))
+  .filter(Boolean)
+  .map((task) => ({
+    ...task,
+    image: normalizeWordCardImage(task.image)
+  }));
+const BASE_PINYIN_TASKS = TASK_BANKS.pinyin
+  .map((task) => normalizeLocalTask(task, {
+    vocabId: "local-fallback",
+    defaultDomain: "pinyin",
+    defaultContentType: "pinyin"
+  }))
+  .filter(Boolean);
 installVocabBankTasks(getVocabBank(activeVocabId));
 
 const LOCAL_WORD_CARD_ASSETS = {
@@ -241,6 +283,10 @@ const floatText = document.querySelector("#floatText");
 const typedText = document.querySelector("#typedText");
 const typedGhost = document.querySelector("#typedGhost");
 const typeBoxHelper = document.querySelector("#typeBoxHelper");
+const typingFeedback = document.querySelector("#typingFeedback");
+const feedbackTitle = document.querySelector("#feedbackTitle");
+const feedbackMessage = document.querySelector("#feedbackMessage");
+const feedbackAnswer = document.querySelector("#feedbackAnswer");
 const typeBox = document.querySelector("#typeBox");
 const keyboard = document.querySelector("#keyboard");
 const modeBadge = document.querySelector("#modeBadge");
@@ -285,6 +331,8 @@ const startSummarySampleMain = document.querySelector("#startSummarySampleMain")
 const startSummarySampleSub = document.querySelector("#startSummarySampleSub");
 const startButton = document.querySelector("#startButton");
 const overlayStart = document.querySelector("#overlayStart");
+const hintButton = document.querySelector("#hintButton");
+const retryButton = document.querySelector("#retryButton");
 const skipButton = document.querySelector("#skipButton");
 const listenButton = document.querySelector("#listenButton");
 const sceneToast = document.querySelector("#sceneToast");
@@ -297,12 +345,36 @@ const HAPPY_DELAY = TEST_MODE ? 40 : 320;
 const HIT_DELAY = TEST_MODE ? 140 : 1900;
 const HIT_REACTION_DELAY = TEST_MODE ? 45 : 180;
 const DAMAGE_DELAY = TEST_MODE ? 360 : 980;
+const testDiagnostics = TEST_MODE ? {
+  phase: "test-mode",
+  errors: [],
+  unhandledRejections: []
+} : null;
+
+if (testDiagnostics) {
+  window.__typingDefenseDiagnostics = testDiagnostics;
+  window.addEventListener("error", (event) => {
+    testDiagnostics.errors.push({
+      message: String(event.message || "resource error"),
+      source: String(event.filename || ""),
+      line: Number(event.lineno || 0),
+      column: Number(event.colno || 0)
+    });
+  });
+  window.addEventListener("unhandledrejection", (event) => {
+    const reason = event.reason;
+    testDiagnostics.unhandledRejections.push({
+      message: String(reason?.message || reason || "unhandled rejection")
+    });
+  });
+}
 
 if (TEST_MODE) {
   document.body.dataset.testMode = "1";
 }
 
 setUiState("menu");
+if (testDiagnostics) testDiagnostics.phase = "menu-state";
 
 let state = "menu";
 let activeMode = audioManifest.defaultMode;
@@ -351,6 +423,23 @@ let rewardMeterTimer = 0;
 const HOST_BRIDGE_SOURCE = "petbank-typing-defense";
 const hostBridgeSessionId = `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
 let hostBridgeSeq = 0;
+let reviewMode = false;
+let reviewCardIds = [];
+
+function getLearningStorage() {
+  try {
+    return window.localStorage;
+  } catch {
+    return null;
+  }
+}
+
+const learningStore = createLearningStore(getLearningStorage());
+let learningSession = null;
+let learningPresentationIds = new Map();
+let learningTaskStartedAt = 0;
+let taskAttemptStates = new Map();
+let feedbackState = null;
 
 function postHostEvent(kind, payload = {}) {
   if (!window.parent || window.parent === window) return;
@@ -474,6 +563,35 @@ const ENVIRONMENT_PACKS = [
 
 function isMathMode(modeKey = activeMode) {
   return /^math/i.test(String(modeKey || ""));
+}
+
+function isHostMode() {
+  return runtimeMode === "host" && hostTasks.length > 0;
+}
+
+function runtimeCardDefaults(modeKey = activeMode, bankKey = "words") {
+  if (isMathMode(modeKey) || bankKey === "math") {
+    return { defaultDomain: "math", defaultContentType: "arithmetic" };
+  }
+  if (modeKey === "pinyin" || bankKey === "pinyin") {
+    return { defaultDomain: "pinyin", defaultContentType: "pinyin" };
+  }
+  return { defaultDomain: "english", defaultContentType: "word" };
+}
+
+function normalizeRuntimeTask(task, modeKey = activeMode, bankKey = "words", vocabId = activeVocabId) {
+  const defaults = runtimeCardDefaults(modeKey, bankKey);
+  const normalized = normalizeLocalTask(task, {
+    vocabId,
+    ...defaults
+  });
+  if (!normalized) return null;
+  return {
+    ...normalized,
+    bankKey,
+    taskType: normalized.taskType || bankKey,
+    image: bankKey === "words" ? normalizeWordCardImage(normalized.image) : normalized.image
+  };
 }
 
 function getEnvironmentPack(themeIndex = 0) {
@@ -708,6 +826,7 @@ function menuPaceLabel(modeKey = activeMode) {
 
 function currentWordBankShortLabel() {
   if (!isWordMode(activeMode)) return "";
+  if (isHostMode()) return "宿主卡片";
   const bank = getVocabBank(activeVocabId);
   return bank?.shortTitle || bank?.title || "单词";
 }
@@ -871,6 +990,7 @@ function renderTypeBoxDisplay() {
   typeBox.dataset.empty = done ? "false" : "true";
   typeBox.dataset.inputMode = String(currentTask?.bankKey || currentTask?.taskType || activeMode || "words");
   typeBox.setAttribute("aria-label", answer ? `当前输入 ${done || "空"}，目标 ${answer}` : `当前输入 ${done || "空"}`);
+  updateFeedbackControls();
 }
 
 function taskBadgeMarkup(task) {
@@ -916,7 +1036,7 @@ function pickEnemyTasks() {
   }
 
   const pool = filterRecentTasks(
-    getTasksForMode(activeMode).filter((task) => /^[a-z0-9]+$/.test(taskAnswer(task)))
+    availableTasks.filter((task) => /^[a-z0-9]+$/.test(taskAnswer(task)))
   );
   if (!pool.length) return [currentTask || FALLBACK_WORD_TASKS[0]];
 
@@ -1021,6 +1141,129 @@ function findMatchingEnemies(prefix) {
   return activeEnemies.filter((enemy) => enemy.state !== "exploding" && enemy.answer.startsWith(value));
 }
 
+function learningPresentationIdFor(enemy = getActiveEnemy()) {
+  return enemy ? learningPresentationIds.get(enemy.id) || "" : "";
+}
+
+function presentLearningCard(enemy) {
+  if (!learningStore || state !== "playing" || !enemy || !learningSession) return;
+  if (learningPresentationIds.has(enemy.id)) return;
+  const presentationId = `${learningSession.sessionId}:${roundIndex}:${enemy.id}`;
+  learningStore.present(enemy.task, {
+    sessionId: learningSession.sessionId,
+    presentationId,
+    mode: activeMode,
+    vocabId: activeVocabId,
+    promptMode: isWordMode(activeMode) ? "direct-word-input" : activeMode
+  });
+  learningPresentationIds.set(enemy.id, presentationId);
+  learningTaskStartedAt = Date.now();
+}
+
+function recordLearningWrong(nextTyped) {
+  const presentationId = learningPresentationIdFor();
+  if (!presentationId || !currentTask) return;
+  return learningStore.recordWrong(
+    presentationId,
+    classifyTypingError(taskAnswer(currentTask), nextTyped)
+  );
+}
+
+function recordLearningHint(meta = {}) {
+  const presentationId = learningPresentationIdFor();
+  if (!presentationId) return null;
+  return learningStore.recordHint(presentationId, meta);
+}
+
+function recordLearningResult(enemy, resultType, meta = {}) {
+  const presentationId = learningPresentationIdFor(enemy);
+  if (!presentationId) return null;
+  if (resultType === "correct") {
+    return learningStore.recordCorrect(presentationId, {
+      ...meta,
+      elapsedMs: Math.max(0, Date.now() - learningTaskStartedAt)
+    });
+  }
+  return learningStore.recordResult(presentationId, resultType, meta);
+}
+
+function learningSessionSummary() {
+  const snapshot = learningStore?.snapshot();
+  const summary = summarizeIndependentSession(snapshot);
+  const mistakeCards = summary.mistakeCardIds
+    .map((cardId) => snapshot.cards?.[cardId])
+    .filter(Boolean);
+  return {
+    ...summary,
+    mistakeCards,
+    mistakeCardIds: summary.mistakeCardIds
+  };
+}
+
+function getTaskAttemptState(enemy = getActiveEnemy()) {
+  if (!enemy) return { wrongCount: 0, hintUsed: 0, feedback: null };
+  if (!taskAttemptStates.has(enemy.id)) {
+    taskAttemptStates.set(enemy.id, { wrongCount: 0, hintUsed: 0, feedback: null });
+  }
+  return taskAttemptStates.get(enemy.id);
+}
+
+function updateFeedbackControls() {
+  const attempt = getTaskAttemptState();
+  const answer = taskAnswer(currentTask);
+  const canPlay = state === "playing" && !hitLock && Boolean(currentTask);
+  if (hintButton) {
+    hintButton.disabled = !canPlay || typed.length >= answer.length;
+    hintButton.textContent = attempt.hintUsed > 0 ? `再提示 ${attempt.hintUsed}` : "给提示";
+  }
+  if (retryButton) {
+    retryButton.hidden = !(canPlay && feedbackState?.action === "retry");
+  }
+}
+
+function renderTaskFeedback(feedback) {
+  feedbackState = feedback || null;
+  if (!typingFeedback) {
+    updateFeedbackControls();
+    return;
+  }
+  typingFeedback.classList.toggle("is-hidden", !feedback);
+  typingFeedback.dataset.kind = feedback?.kind || "none";
+  typingFeedback.dataset.errorTag = feedback?.errorTag || "";
+  if (feedbackTitle) feedbackTitle.textContent = feedback?.title || "";
+  if (feedbackMessage) feedbackMessage.textContent = feedback?.message || "";
+  if (feedbackAnswer) {
+    const shouldShowAnswer = Boolean(feedback?.answer) && feedback?.showAnswer !== false;
+    feedbackAnswer.textContent = shouldShowAnswer ? `答案：${feedback.answer}` : "";
+    feedbackAnswer.hidden = !shouldShowAnswer;
+  }
+  updateFeedbackControls();
+}
+
+function showTaskFeedback(feedback, options = {}) {
+  const enemy = options.enemy === undefined ? getActiveEnemy() : options.enemy;
+  if (enemy && options.store !== false) getTaskAttemptState(enemy).feedback = feedback || null;
+  renderTaskFeedback(feedback);
+  if (feedback?.speakText && options.speak !== false) {
+    playFeedbackVoice(feedback, options.eventName || `feedback:${feedback.kind}`);
+  }
+}
+
+function playFeedbackVoice(feedback, eventName) {
+  if (!feedback?.speakText) return;
+  if (TEST_MODE) {
+    rememberSoundEvent(`${eventName}:test-skip`);
+    return;
+  }
+  const result = speakTextSafely(feedback.speakText, {
+    speechSynthesis: window.speechSynthesis,
+    SpeechSynthesisUtterance: window.SpeechSynthesisUtterance,
+    lang: "en-US",
+    rate: 0.86
+  });
+  rememberSoundEvent(result.spoken ? `${eventName}:speech` : `${eventName}:fallback`);
+}
+
 function setActiveEnemy(enemyOrId) {
   const enemyId = typeof enemyOrId === "string" ? enemyOrId : enemyOrId?.id;
   const next = activeEnemies.find((enemy) => enemy.id === enemyId) || activeEnemies[0] || null;
@@ -1036,6 +1279,8 @@ function setActiveEnemy(enemyOrId) {
   renderProgressWord();
   renderKeyboard();
   updateAimForEnemy(next);
+  presentLearningCard(next);
+  renderTaskFeedback(getTaskAttemptState(next).feedback);
   return next;
 }
 
@@ -1092,12 +1337,14 @@ function resolveSelectedVocabId(vocabId = selectedVocabId, round = roundIndex, m
 
 function vocabOptionLabel(vocabId) {
   if (vocabId === AUTO_GRADED_VOCAB_ID) return "分级闯关（自动）";
+  if (vocabId === HOST_VOCAB_ID) return "宿主卡片";
   if (FRIENDLY_VOCAB_LABELS[vocabId]) return FRIENDLY_VOCAB_LABELS[vocabId];
   const bank = getVocabBank(vocabId);
   return bank?.shortTitle || bank?.title || vocabId;
 }
 
 function currentVocabLabel() {
+  if (isHostMode()) return `宿主卡片（${hostTasks.length}张）`;
   const currentBank = getVocabBank(activeVocabId);
   if (!currentBank) return "";
   if (isAutoVocabEnabled()) {
@@ -1109,7 +1356,45 @@ function currentVocabLabel() {
   return vocabOptionLabel(currentBank.id);
 }
 
+function applyHostInit(message) {
+  const normalized = normalizeHostInit(message, {
+    defaultDomain: "english",
+    defaultContentType: "word"
+  });
+  if (!normalized.accepted) return false;
+  const hostTaskCards = normalized.cards
+    .map((card) => {
+      const bankKey = card.contentType === "pinyin" || card.domain === "pinyin" ? "pinyin" : "words";
+      return toTypingTask(card, { bankKey, taskType: bankKey });
+    })
+    .filter(Boolean);
+  if (!hostTaskCards.length) return false;
+
+  const runtime = selectRuntimeCards({ hostCards: normalized.cards, localCards: [] });
+  hostCards = runtime.cards;
+  hostTasks = hostTaskCards;
+  runtimeMode = runtime.mode;
+  hostSessionId = normalized.sessionId;
+  activeVocabId = HOST_VOCAB_ID;
+  selectedVocabId = HOST_VOCAB_ID;
+  const hostBankKey = hostTasks[0].bankKey || "words";
+  activeMode = hostBankKey === "pinyin" ? "pinyin" : "words";
+  availableTasks = getTasksForMode(activeMode);
+  updateVocabSelect();
+  if (state !== "playing") renderMenu();
+  return true;
+}
+
+function handleHostMessage(event) {
+  if (event?.source && window.parent !== window && event.source !== window.parent) return false;
+  return applyHostInit(event?.data);
+}
+
 function syncActiveVocabBank(round = roundIndex) {
+  if (isHostMode()) {
+    activeVocabId = HOST_VOCAB_ID;
+    return null;
+  }
   const bank = getVocabBank(resolveSelectedVocabId(selectedVocabId, round, activeMode));
   if (!bank) return null;
   activeVocabId = bank.id;
@@ -1140,7 +1425,7 @@ function getGradeTrackState(round = roundIndex, modeKey = activeMode) {
   const resolvedBankId = resolveSelectedVocabId(selectedVocabId, round, modeKey);
   const currentIndex = steps.findIndex((step) => step.bankId === resolvedBankId);
   const mode = isAutoVocabEnabled() ? "auto" : "manual";
-  const visible = isWordMode(modeKey) && steps.length >= 2 && currentIndex >= 0;
+  const visible = !isHostMode() && isWordMode(modeKey) && steps.length >= 2 && currentIndex >= 0;
   return {
     visible,
     mode,
@@ -1200,6 +1485,7 @@ function updatePinyinTierControls() {
   pinyinTierPanel?.setAttribute("aria-hidden", isVisible ? "false" : "true");
   Array.from(pinyinTierTabs?.querySelectorAll("[data-pinyin-tier]") || []).forEach((button) => {
     button.classList.toggle("is-selected", button.dataset.pinyinTier === activePinyinTier);
+    button.disabled = isHostMode();
   });
 }
 
@@ -1254,22 +1540,24 @@ function normalizeVocabBankTasks(bank) {
   const fallbackBankKey = bank.kind === "pinyin" ? "pinyin" : "words";
   const fallbackImage = "../../../../assets/learn/english-vocab/minecraft-card.webp";
   return bank.words
-    .map((task) => ({
+    .map((task) => normalizeRuntimeTask(
+      task,
+      fallbackBankKey === "pinyin" ? "pinyin" : "words",
+      task.bankKey || fallbackBankKey,
+      bank.id
+    ))
+    .map((task) => task ? {
       ...task,
-      target: String(task.target || "").trim().toLowerCase(),
-      image: !String(task.image || "").trim()
-        ? fallbackImage
-        : normalizeWordCardImage(task.image),
-      bankKey: task.bankKey || fallbackBankKey
-    }))
-    .filter((task) => task.target);
+      image: !String(task.image || "").trim() ? fallbackImage : task.image
+    } : null)
+    .filter((task) => task && task.target);
 }
 
 function dedupeTasks(tasks) {
   const merged = [];
   const seenIds = new Set();
   tasks.forEach((task) => {
-    const taskId = String(task?.id || taskAnswer(task) || "");
+    const taskId = String(task?.cardId || task?.id || taskAnswer(task) || "");
     if (!taskId || seenIds.has(taskId)) return;
     seenIds.add(taskId);
     merged.push(task);
@@ -1305,13 +1593,17 @@ function updateVocabSelect() {
       VOCAB_BANKS.map((bank) => `<option value="${bank.id}">${vocabOptionLabel(bank.id)}</option>`)
     ).join("");
   }
-  vocabSelect.value = selectedVocabId;
+  vocabSelect.disabled = isHostMode();
+  if (!isHostMode()) vocabSelect.value = selectedVocabId;
   if (vocabLabel) {
-    vocabLabel.textContent = activeVocabId ? `词库：${currentVocabLabel()}` : "词库";
+    vocabLabel.textContent = isHostMode()
+      ? `来源：${currentVocabLabel()}`
+      : (activeVocabId ? `词库：${currentVocabLabel()}` : "词库");
   }
 }
 
 function applyVocabBank(vocabId) {
+  if (isHostMode()) return;
   const requestedVocabId = vocabId === AUTO_GRADED_VOCAB_ID
     ? AUTO_GRADED_VOCAB_ID
     : (getVocabBank(vocabId)?.id || "");
@@ -1345,14 +1637,29 @@ function applyVocabBank(vocabId) {
 
 function getTasksForMode(modeKey) {
   if (isMathMode(modeKey)) {
-    return ENEMY_ROLES.map((_, index) => buildMathTask(index, modeKey));
+    return ENEMY_ROLES
+      .map((_, index) => buildMathTask(index, modeKey))
+      .map((task) => normalizeRuntimeTask(task, modeKey, "math", "local-math"))
+      .filter(Boolean);
   }
   const mode = GAME_MODES[modeKey] || GAME_MODES.words;
-  let tasks = mode.banks.flatMap((bank) => TASK_BANKS[bank].map((task) => ({ ...task, bankKey: bank })));
+  let tasks = isHostMode()
+    ? hostTasks.filter((task) => modeKey === "pinyin" ? task.bankKey === "pinyin" : task.bankKey === "words")
+    : mode.banks.flatMap((bank) => TASK_BANKS[bank].map((task) => ({ ...task, bankKey: bank })));
   if (modeKey === "pinyin") {
     tasks = tasks.filter((task) => (task.pinyinTier || "single") === activePinyinTier);
   }
-  return tasks;
+  return tasks
+    .map((task) => normalizeRuntimeTask(task, modeKey, task.bankKey || "words", isHostMode() ? HOST_VOCAB_ID : activeVocabId))
+    .filter(Boolean);
+}
+
+function getIndependentReviewTaskPool() {
+  if (isHostMode() || !isWordMode(activeMode)) return availableTasks;
+  const localWordTasks = VOCAB_BANKS
+    .filter((bank) => bank.kind === "words")
+    .flatMap((bank) => normalizeVocabBankTasks(bank));
+  return dedupeTasks([...availableTasks, ...localWordTasks]);
 }
 
 function isWordTask(task) {
@@ -1537,16 +1844,13 @@ function playTextVoice(text, lang, eventName, delay = 0) {
   if (TEST_MODE) return;
   clearTimeout(translationVoiceTimer);
   translationVoiceTimer = setTimeout(() => {
-    if (!("speechSynthesis" in window) || typeof SpeechSynthesisUtterance === "undefined") return;
-    try {
-      const utterance = new SpeechSynthesisUtterance(value);
-      utterance.lang = lang;
-      utterance.rate = lang.startsWith("zh") ? 0.92 : 0.88;
-      utterance.pitch = 1;
-      window.speechSynthesis.speak(utterance);
-    } catch {
-      // Ignore synthesis failures and keep gameplay moving.
-    }
+    const result = speakTextSafely(value, {
+      speechSynthesis: window.speechSynthesis,
+      SpeechSynthesisUtterance: window.SpeechSynthesisUtterance,
+      lang,
+      rate: lang.startsWith("zh") ? 0.92 : 0.88
+    });
+    if (!result.spoken && result.supported) rememberSoundEvent(`${eventName}:fallback`);
   }, delay);
 }
 
@@ -1600,10 +1904,29 @@ function startGame() {
   clearExplosion();
   syncActiveVocabBank(1);
   availableTasks = getTasksForMode(activeMode);
+  if (reviewMode) {
+    const reviewTasks = buildIndependentReviewQueue(
+      getIndependentReviewTaskPool(),
+      { session: { mistakeCardIds: reviewCardIds } }
+    );
+    if (reviewTasks.length) {
+      availableTasks = reviewTasks;
+    } else {
+      reviewMode = false;
+      reviewCardIds = [];
+    }
+  }
   activeMathSupportId = isMathMode(activeMode)
     ? normalizeMathSupportSelection(selectedMathSupportId, activeMode)
     : "none";
   mathRetryUsed = false;
+  learningSession = learningStore?.startSession({
+    sessionId: isHostMode() ? hostSessionId : "",
+    mode: activeMode,
+    vocabId: activeVocabId
+  }) || null;
+  learningPresentationIds = new Map();
+  learningTaskStartedAt = Date.now();
   const modeSpeed = activeMode === "pinyin" ? getPinyinTierConfig().speed : (GAME_MODES[activeMode] || GAME_MODES.words).speed;
   const supportAdjustedSpeed = activeMathSupportId === "slow_enemy" ? Math.round(modeSpeed * 1.18) : modeSpeed;
   spawnDuration = TEST_MODE ? 700 : supportAdjustedSpeed;
@@ -1646,13 +1969,17 @@ function startGame() {
   requestAnimationFrame(tick);
 }
 
-function spawnTask() {
+function spawnTask(options = {}) {
+  const carryFeedback = options.feedback || null;
   clearTimeout(celebrateStageTimer);
   celebrateStageTimer = 0;
   stage.classList.remove("is-celebrate");
   clearTimeout(pendingExplosionTimer);
   pendingExplosionTimer = 0;
   activeEnemies = buildActiveEnemies();
+  taskAttemptStates = new Map();
+  feedbackState = null;
+  renderTaskFeedback(null);
   const firstEnemy = activeEnemies[0];
   currentTask = firstEnemy?.task || pickTask();
   activeEnemyId = firstEnemy?.id || "";
@@ -1712,6 +2039,9 @@ function spawnTask() {
   setActiveEnemy(firstEnemy);
   updateListenButton();
   playCurrentTaskVoice();
+  if (carryFeedback) {
+    showTaskFeedback(carryFeedback, { enemy: null, store: false });
+  }
   activeEnemies.forEach((enemy) => rememberTaskUsage(enemy.task));
 }
 
@@ -1960,6 +2290,17 @@ function inputCharacter(rawKey) {
     }
   }
   if (!matches.length) {
+    const attempt = getTaskAttemptState();
+    attempt.wrongCount += 1;
+    const wrongEvent = recordLearningWrong(nextTyped);
+    const detail = wrongEvent?.event || classifyTypingError(taskAnswer(currentTask), nextTyped);
+    showTaskFeedback(buildErrorFeedback({
+      errorTag: detail.errorTag,
+      errorIndex: detail.errorIndex,
+      answer: taskAnswer(currentTask),
+      typed: nextTyped,
+      wrongCount: attempt.wrongCount
+    }), { eventName: `feedback:${detail.errorTag}` });
     wrongNudge();
     return;
   }
@@ -1968,6 +2309,10 @@ function inputCharacter(rawKey) {
   lastKeyFeedback = key;
   const preferred = matches.find((enemy) => enemy.id === activeEnemyId) || matches[0];
   setActiveEnemy(preferred);
+  const attempt = getTaskAttemptState(preferred);
+  if (["error", "hint", "retry"].includes(attempt.feedback?.kind)) {
+    showTaskFeedback(null, { enemy: preferred, speak: false });
+  }
   typedText.textContent = typed;
   renderProgressWord();
   renderKeyboard();
@@ -2126,6 +2471,14 @@ function hitMonster(targetEnemy = getActiveEnemy()) {
   if (hitLock) return;
   hitLock = true;
   lastLetterFeedback = "finish";
+  const learningResult = recordLearningResult(targetEnemy, "correct");
+  const attempt = getTaskAttemptState(targetEnemy);
+  const result = learningResult?.result
+    || (attempt.wrongCount > 0 || attempt.hintUsed > 0 ? LEARNING_EVENT_TYPES.GUIDED_CORRECT : LEARNING_EVENT_TYPES.INDEPENDENT_CORRECT);
+  showTaskFeedback(buildCorrectFeedback({
+    result,
+    answer: targetEnemy?.answer || taskAnswer(targetEnemy?.task)
+  }), { enemy: targetEnemy, eventName: `feedback:${result}` });
   const earnedStarsBeforeHit = getEarnedStarCount();
   combo += 1;
   bestCombo = Math.max(bestCombo, combo);
@@ -2185,6 +2538,12 @@ function triggerComboBurst(sourceEnemy) {
 function takeDamage() {
   hitLock = true;
   lastLetterFeedback = "damage";
+  const targetEnemy = getActiveEnemy();
+  recordLearningResult(targetEnemy, LEARNING_EVENT_TYPES.GAVE_UP, { errorTag: "slow-completion" });
+  showTaskFeedback(buildGiveUpFeedback({
+    reason: "timeout",
+    answer: targetEnemy?.answer || taskAnswer(targetEnemy?.task)
+  }), { enemy: targetEnemy, eventName: "feedback:timeout" });
   if (isMathMode(activeMode) && activeMathSupportId === "retry_once" && !mathRetryUsed) {
     mathRetryUsed = true;
     misses += 1;
@@ -2269,7 +2628,7 @@ function completeRound(success, delay = 900) {
       return;
     }
     roundIndex += 1;
-    if (isAutoVocabEnabled() && isWordMode(activeMode)) {
+    if (!reviewMode && isAutoVocabEnabled() && isWordMode(activeMode)) {
       const previousVocabId = activeVocabId;
       syncActiveVocabBank(roundIndex);
       availableTasks = getTasksForMode(activeMode);
@@ -2285,6 +2644,8 @@ function completeRound(success, delay = 900) {
 function endGame(won = false) {
   state = won ? "win" : "over";
   setUiState("result");
+  updateFeedbackControls();
+  learningStore?.finishSession({ outcome: won ? "win" : "over" });
   clearTimeout(roundTimer);
   startButton.textContent = "再来一局";
   overlayTitle.textContent = won ? "通关成功" : "再来一局";
@@ -2431,6 +2792,14 @@ function renderRewardActions(won) {
   const actions = [
     { action: "replay", label: won ? "再闯一局" : "再试一次", tone: "primary" }
   ];
+  const summary = learningSessionSummary();
+  if (isWordMode(activeMode) && !isHostMode() && summary.mistakeCardIds.length) {
+    actions.push({
+      action: "review",
+      label: `复习本局错词（${summary.mistakeCardIds.length}）`,
+      tone: "secondary"
+    });
+  }
   const nextAction = getNextChallengeAction(won);
   if (nextAction) {
     actions.push({ ...nextAction, tone: "secondary" });
@@ -2457,6 +2826,14 @@ function getDefaultRewardAction() {
 }
 
 function triggerRewardAction(action) {
+  if (action === "review") {
+    const summary = learningSessionSummary();
+    reviewCardIds = [...summary.mistakeCardIds];
+    reviewMode = reviewCardIds.length > 0 && isWordMode(activeMode) && !isHostMode();
+  } else {
+    reviewMode = false;
+    reviewCardIds = [];
+  }
   if (action === "next" || action === "next-grade") {
     const nextAction = getNextChallengeAction(true);
     if (nextAction?.mode) activeMode = nextAction.mode;
@@ -2465,6 +2842,26 @@ function triggerRewardAction(action) {
     availableTasks = getTasksForMode(activeMode);
   }
   startGame();
+}
+
+function renderLearningEvidence() {
+  const summary = learningSessionSummary();
+  const mistakeNames = summary.mistakeCards
+    .map((card) => card.target || card.cardId)
+    .filter(Boolean)
+    .join("、");
+  return `
+    <section class="learning-evidence" aria-label="本局学习记录">
+      <div class="learning-evidence-title">学习记录</div>
+      <div class="learning-evidence-metrics">
+        <span><b>${summary.completed}</b>张已结算</span>
+        <span><b>${summary.firstAnswerRate}%</b>首答正确率</span>
+        <span><b>${summary.guidedCorrect}</b>提示后答对</span>
+        <span><b>${summary.hintCount}</b>次提示</span>
+      </div>
+      <div class="learning-evidence-mistakes">需要复习：${mistakeNames || "暂无"}</div>
+    </section>
+  `;
 }
 
 function renderFinalStats(won) {
@@ -2491,6 +2888,7 @@ function renderFinalStats(won) {
       <span><b>${hits}/${ROUND_GOAL}</b>答对</span>
       <span><b>${bestCombo}</b>连击</span>
     </div>
+    ${renderLearningEvidence()}
     <div class="reward-nextline">${nextChallengeHint(won)}</div>
     ${renderRewardActions(won)}
   `;
@@ -2858,6 +3256,7 @@ function updateListenButton() {
 function updateModeTabs() {
   Array.from(modeTabs.querySelectorAll("[data-mode]")).forEach((button) => {
     button.classList.toggle("is-selected", button.dataset.mode === activeMode);
+    button.disabled = isHostMode() && button.dataset.mode !== activeMode;
   });
   updatePinyinTierControls();
   updateMathGuidePanel();
@@ -2866,6 +3265,8 @@ function updateModeTabs() {
 
 function renderMenu() {
   setUiState("menu");
+  taskAttemptStates = new Map();
+  renderTaskFeedback(null);
   overlay.classList.remove("is-result");
   clearTimeout(menuSummaryTimer);
   menuSummaryTimer = 0;
@@ -2925,13 +3326,56 @@ function renderMenu() {
   updateGoalChip();
 }
 
+function giveHint() {
+  if (state !== "playing" || hitLock || !currentTask) return;
+  const enemy = getActiveEnemy();
+  const answer = taskAnswer(currentTask);
+  const attempt = getTaskAttemptState(enemy);
+  if (typed.length >= answer.length) return;
+  attempt.hintUsed += 1;
+  recordLearningHint({ hintLevel: attempt.hintUsed });
+  showTaskFeedback(buildHintFeedback({
+    answer,
+    typed,
+    hintUsed: attempt.hintUsed
+  }), { enemy, eventName: "feedback:hint" });
+  renderKeyboard();
+  typeBox.focus();
+}
+
+function retryCurrent() {
+  if (state !== "playing" || hitLock || !currentTask) return;
+  const enemy = getActiveEnemy();
+  const attempt = getTaskAttemptState(enemy);
+  typed = "";
+  lastKeyFeedback = "";
+  progress = Math.max(0, progress - 0.24);
+  hitLock = false;
+  showTaskFeedback(buildRetryFeedback({
+    answer: taskAnswer(currentTask),
+    wrongCount: attempt.wrongCount,
+    hintUsed: attempt.hintUsed
+  }), { enemy, eventName: "feedback:retry" });
+  renderProgressWord();
+  renderKeyboard();
+  updateEnemyTaskBadges();
+  placeMonster();
+  typeBox.focus();
+}
+
 function skipCurrent() {
   if (state !== "playing" || hitLock) return;
+  const enemy = getActiveEnemy();
+  const feedback = buildGiveUpFeedback({
+    reason: "gave-up",
+    answer: enemy?.answer || taskAnswer(currentTask)
+  });
+  recordLearningResult(enemy, LEARNING_EVENT_TYPES.GAVE_UP, { errorTag: "gave-up" });
   combo = 0;
   updateHud();
   hideComboRibbon();
   wrongNudge();
-  spawnTask();
+  spawnTask({ feedback });
 }
 
 function getTestSnapshot() {
@@ -2942,6 +3386,8 @@ function getTestSnapshot() {
   const modeConfig = GAME_MODES[activeMode] || GAME_MODES.words;
   const effectiveSpeed = activeMode === "pinyin" ? getPinyinTierConfig().speed : modeConfig.speed;
   const gradeTrackState = getGradeTrackState(roundIndex, activeMode);
+  const learning = learningSessionSummary();
+  const attempt = getTaskAttemptState();
   return {
     state,
     uiState: document.body.dataset.uiState || "menu",
@@ -2987,7 +3433,37 @@ function getTestSnapshot() {
     sceneToastOpen: sceneToast?.classList.contains("is-on") || false,
     sceneToastKicker: sceneToastKicker?.textContent?.trim() || "",
     sceneToastName: sceneToastName?.textContent?.trim() || "",
-    sceneToastVariant: sceneToast?.dataset.variant || "scene"
+    sceneToastVariant: sceneToast?.dataset.variant || "scene",
+    learningSessionId: learningSession?.sessionId || "",
+    learningPresented: learning.presented,
+    learningCompleted: learning.completed,
+    learningIndependentCorrect: learning.independentCorrect,
+    learningGuidedCorrect: learning.guidedCorrect,
+    learningGaveUp: learning.gaveUp,
+    learningHintCount: learning.hintCount,
+    learningFirstAnswerRate: learning.firstAnswerRate,
+    learningMistakeCardIds: learning.mistakeCardIds,
+    learningReviewAvailable: isWordMode(activeMode) && !isHostMode() && learning.mistakeCardIds.length > 0,
+    learningReviewMode: reviewMode,
+    learningReviewCardIds: [...reviewCardIds],
+    learningCurrentPresentationId: learningPresentationIdFor(),
+    runtimeMode,
+    cardSource: isHostMode() ? "host" : "local",
+    hostSessionId,
+    hostCardCount: hostCards.length,
+    currentCardId: currentTask?.cardId || currentTask?.id || "",
+    currentCardDomain: currentTask?.domain || null,
+    currentCardContentType: currentTask?.contentType || null,
+    feedbackKind: feedbackState?.kind || "none",
+    feedbackErrorTag: feedbackState?.errorTag || "",
+    feedbackTitle: feedbackState?.title || "",
+    feedbackMessage: feedbackState?.message || "",
+    feedbackAnswer: feedbackState?.showAnswer === false ? "" : (feedbackState?.answer || ""),
+    feedbackExpectedLetter: feedbackState?.expectedLetter || "",
+    feedbackPosition: feedbackState?.position || 0,
+    feedbackRetryVisible: Boolean(retryButton && !retryButton.hidden),
+    currentWrongCount: attempt.wrongCount,
+    currentHintUsed: attempt.hintUsed
   };
 }
 
@@ -3081,6 +3557,9 @@ if (TEST_MODE) {
     forceDamage() {
       if (state === "playing" && !hitLock) takeDamage();
     },
+    applyHostInit(message) {
+      return applyHostInit(message);
+    },
     previewEnemyWave(round = roundIndex) {
       return createEnemyWavePlan(round).map((role, index) => {
         const route = createEnemyRoute(role, index);
@@ -3099,8 +3578,11 @@ if (TEST_MODE) {
 }
 
 window.addEventListener("keydown", handleKey);
+window.addEventListener("message", handleHostMessage);
 startButton.addEventListener("click", startGame);
 overlayStart.addEventListener("click", startGame);
+hintButton?.addEventListener("click", giveHint);
+retryButton?.addEventListener("click", retryCurrent);
 skipButton.addEventListener("click", skipCurrent);
 listenButton.addEventListener("click", () => {
   if (state !== "playing") return;
@@ -3171,7 +3653,11 @@ keyboard?.addEventListener("click", (event) => {
 
 targetBubble.textContent = "";
 resetBow();
-renderMenu();
+if (window.__TYPING_DEFENSE_HOST_INIT__) {
+  if (!applyHostInit(window.__TYPING_DEFENSE_HOST_INIT__)) renderMenu();
+} else {
+  renderMenu();
+}
 updateHud();
 
 
