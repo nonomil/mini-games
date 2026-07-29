@@ -2,7 +2,7 @@
   "id": "sky-9grid-world-single",
   "theme": "sky",
   "mode": "single",
-  "image": "./assets/generated/world-bg-single/farm-panorama.png",
+  "image": "./assets/generated/world-bg-single/farm-panorama.webp",
   "labels": [
     "云门平台",
     "风翼航道",

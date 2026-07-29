@@ -2336,6 +2336,9 @@ button {
   z-index: 5;
   display: grid;
   place-items: center;
+  box-sizing: border-box;
+  padding: 12px;
+  overflow-y: auto;
   background: rgba(11, 20, 13, 0.38);
 }
 
@@ -2345,9 +2348,12 @@ button {
 
 .finish-card {
   width: min(420px, calc(100vw - 28px));
+  max-height: calc(100vh - 24px);
   display: grid;
   gap: 10px;
   padding: 28px 24px;
+  box-sizing: border-box;
+  overflow-y: auto;
   text-align: center;
   border-radius: 24px;
 }

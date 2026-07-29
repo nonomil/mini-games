@@ -270,6 +270,76 @@ assert.equal(completeMessage.payload.profile, undefined);
 assert.equal(protocol.complete({ score: { player: 1, opponent: 1 } }), null, 'complete must be idempotent');
 assert.equal(protocol.getState().phase, 'complete');
 
+assert.ok(exists('games/tennis-english/grammar-tower-extension.js'), 'grammar tower extension boundary should exist');
+const extensionModule = await import(pathToFileURL(path.join(gameRoot, 'grammar-tower-extension.js')));
+const {
+  AI_GENERATION_POLICY,
+  createGrammarTowerContext,
+  validateAiDraft
+} = extensionModule;
+const towerContext = createGrammarTowerContext({
+  themeId: 'tennis-basics',
+  themeTitle: '球场基础表达',
+  floorId: 'floor-02',
+  floorNumber: 2,
+  chapterId: 'chapter-english-01',
+  nodeId: 'tennis-tower-02',
+  returnTo: 'forest-map'
+});
+assert.deepEqual(towerContext, {
+  contextType: 'grammar-tower',
+  version: 1,
+  themeId: 'tennis-basics',
+  themeTitle: '球场基础表达',
+  floorId: 'floor-02',
+  floorNumber: 2,
+  chapterId: 'chapter-english-01',
+  returnContext: {
+    chapterId: 'chapter-english-01',
+    nodeId: 'tennis-tower-02',
+    returnTo: 'forest-map'
+  }
+});
+assert.throws(
+  () => createGrammarTowerContext({ ...towerContext, floorNumber: 0 }),
+  /floorNumber must be a positive integer/
+);
+assert.ok(AI_GENERATION_POLICY.allowedTypes.includes('explanation'));
+assert.ok(AI_GENERATION_POLICY.allowedTypes.includes('example-candidate'));
+assert.ok(AI_GENERATION_POLICY.allowedTypes.includes('npc-copy'));
+assert.ok(AI_GENERATION_POLICY.forbiddenFields.includes('answer'));
+assert.ok(AI_GENERATION_POLICY.forbiddenFields.includes('targetCardId'));
+const explanationDraft = validateAiDraft({
+  type: 'explanation',
+  text: 'This phrase describes a future plan.',
+  source: 'ai'
+});
+assert.equal(explanationDraft.accepted, true);
+assert.equal(explanationDraft.requiresHumanReview, true);
+assert.equal(explanationDraft.canSetAnswer, false);
+for (const field of AI_GENERATION_POLICY.forbiddenFields) {
+  const forbiddenValue = field === 'distractorIds' ? ['card-1'] : 'forbidden';
+  assert.throws(
+    () => validateAiDraft({
+      type: 'explanation',
+      text: 'Reviewed candidate.',
+      [field]: forbiddenValue
+    }),
+    new RegExp(`AI draft cannot contain ${field}`)
+  );
+  assert.equal(Object.prototype.hasOwnProperty.call(explanationDraft, field), false);
+}
+assert.throws(
+  () => validateAiDraft({ type: 'answer', answer: 'look forward to' }),
+  /AI draft type is not allowed/
+);
+const towerProtocol = createTennisProtocolFixture({
+  sessionId: 'tennis-tower-session',
+  returnContext: towerContext
+});
+towerProtocol.ready();
+assert.deepEqual(towerProtocol.messages[0].payload.returnContext, towerContext);
+
 const errorProtocol = createTennisProtocolFixture({ sessionId: 'tennis-error-session' });
 errorProtocol.ready();
 const errorMessage = errorProtocol.error({ code: 'invalid-card', message: 'Expression card rejected' });

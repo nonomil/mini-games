@@ -2,7 +2,7 @@
   "id": "ocean-9grid-world-single",
   "theme": "ocean",
   "mode": "single",
-  "image": "./assets/generated/world-bg-single/farm-panorama.png",
+  "image": "./assets/generated/world-bg-single/farm-panorama.webp",
   "labels": [
     "珊瑚码头",
     "潮汐交汇",

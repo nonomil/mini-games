@@ -10,7 +10,21 @@
     body{margin:0;background:#0f1b24;color:#f4f7fb;font-family:Microsoft YaHei,sans-serif}
     .shell-bar{display:flex;gap:12px;align-items:center;padding:12px 16px;background:rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.08)}
     .shell-bar a{color:#8ef0d8;text-decoration:none;font-weight:700}
-    #page-explore{min-height:calc(100vh - 52px)}
+    #page-explore{
+      min-height:calc(100vh - 52px);
+      min-width:0;
+      max-width:100%;
+      overflow-x:hidden;
+    }
+    #pixelStoryMapHost{
+      min-width:0;
+      max-width:100%;
+      overflow-x:hidden;
+    }
+    #page-explore .pixel-story-shell{
+      box-sizing:border-box;
+      max-width:100%;
+    }
     .explore-loading-state{padding:48px 24px;text-align:center}
   </style>
 </head>

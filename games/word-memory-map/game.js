@@ -164,7 +164,9 @@
     ,reviewCardIds: [],
     wrongCardIds: [],
     hintsUsed: 0,
-    equippedSupportId: ''
+    equippedSupportId: '',
+    returnContext: null,
+    explorationSession: null
   };
 
   const els = {
@@ -227,6 +229,7 @@
     nextLevelButton: document.getElementById('nextLevelButton'),
     changeWorldButton: document.getElementById('changeWorldButton'),
     equipRewardButton: document.getElementById('equipRewardButton'),
+    returnToExploreButton: document.getElementById('returnToExploreButton'),
     finishRestartButton: document.getElementById('finishRestartButton'),
     levelPanel: document.getElementById('levelPanel'),
     levelText: document.getElementById('levelText'),
@@ -369,6 +372,61 @@
       return '';
     }
     return Object.prototype.hasOwnProperty.call(WORLD_PACK_REGISTRY, raw) ? raw : '';
+  }
+
+  function loadReturnContext() {
+    const api = window.ExplorationSession;
+    if (!api) return;
+    const fromUrl = api.decodeReturnContext(DEBUG_QUERY.get('returnContext'));
+    const saved = api.loadSession();
+    const savedContext = saved && saved.mapId
+      ? api.createReturnContext(saved, { activityId: 'word-memory-map' })
+      : null;
+    state.returnContext = fromUrl || savedContext;
+    if (!state.returnContext?.mapId) return;
+    const session = api.createSession({
+      ...state.returnContext,
+      currentNodeId: state.returnContext.nodeId,
+      currentTaskId: state.returnContext.taskId,
+      learningSessionIds: state.returnContext.learningSessionIds,
+      unclaimedReceiptIds: state.returnContext.unclaimedReceiptIds,
+      remainingCardIds: state.returnContext.remainingCardIds
+    });
+    state.explorationSession = api.saveSession(session) || session;
+  }
+
+  function buildReturnContext() {
+    const api = window.ExplorationSession;
+    if (!api || !state.returnContext?.mapId) return null;
+    const completedCardIds = new Set(
+      state.targets.filter(target => !target.alive && target.card?.id).map(target => target.card.id)
+    );
+    const remainingCardIds = state.deck
+      .map(card => card.id)
+      .filter(Boolean)
+      .filter(cardId => !completedCardIds.has(cardId));
+    const session = api.createSession({
+      ...(state.explorationSession || {}),
+      ...state.returnContext,
+      currentNodeId: state.returnContext.nodeId,
+      currentTaskId: state.returnContext.taskId,
+      learningSessionIds: [...new Set([...(state.returnContext.learningSessionIds || []), HOST_BRIDGE_SESSION_ID])],
+      remainingCardIds
+    });
+    state.explorationSession = api.saveSession(session) || session;
+    return api.createReturnContext(state.explorationSession, {
+      activityId: 'word-memory-map',
+      returnUrl: state.returnContext.returnUrl
+    });
+  }
+
+  function returnToExploreMap() {
+    const api = window.ExplorationSession;
+    const context = buildReturnContext();
+    if (!api || !context?.returnUrl) return;
+    const url = new URL(context.returnUrl, window.location.href);
+    url.searchParams.set('returnContext', api.encodeReturnContext(context));
+    window.location.assign(url.toString());
   }
 
   function loadLevelProgress() {
@@ -2736,6 +2794,7 @@
     els.nextLevelButton.textContent = '下一关（保持地图）';
     els.changeWorldButton.hidden = !next || !isLevelUnlocked(next);
     els.equipRewardButton.hidden = !supportCount;
+    els.returnToExploreButton.hidden = !state.returnContext?.returnUrl;
     els.finishModal.hidden = false;
     setMessage(unlockedNext ? `已完成 ${SESSION_WORD_TARGET} 个单词，新关卡已经解锁。` : `已完成 ${SESSION_WORD_TARGET} 个单词，可以再来一局。`);
     postHostBridge('result', {
@@ -2747,7 +2806,8 @@
       highestUnlockedLevel: state.highestUnlockedLevel,
       heroId: state.selectedHeroId,
       worldPack: state.selectedWorldPack
-      ,reward: state.levelReward
+      ,reward: state.levelReward,
+      returnContext: buildReturnContext()
     });
     updateHud();
   }
@@ -3334,6 +3394,7 @@
       renderOnboarding();
     });
     els.equipRewardButton.addEventListener('click', equipLevelReward);
+    els.returnToExploreButton.addEventListener('click', returnToExploreMap);
     els.finishRestartButton.addEventListener('click', () => startGame());
     window.addEventListener('wordMemoryDebugFinishLevel', () => {
       state.targets.forEach(target => {
@@ -3346,6 +3407,7 @@
 
   async function init() {
     window.__wordMemoryReady = false;
+    loadReturnContext();
     loadLevelProgress();
     loadRewardProgress();
     loadReviewProgress();

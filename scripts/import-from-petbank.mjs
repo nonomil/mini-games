@@ -484,19 +484,19 @@ function patchStandaloneCompleteMode() {
       replacements: [
         [
           "    farm: './assets/generated/world-bg-tiles/farm-9grid/farm_tile_r2_c2.png',",
-          "    farm: './assets/generated/world-bg-single/farm-panorama.png',"
+          "    farm: './assets/generated/world-bg-single/farm-panorama.webp',"
         ],
         [
           "    grassland: './assets/generated/world-bg-tiles/farm-gpt-9grid/farm_tile_r2_c2.png',",
-          "    grassland: './assets/generated/world-bg-single/farm-panorama.png',"
+          "    grassland: './assets/generated/world-bg-single/farm-panorama.webp',"
         ],
         [
           "    sky: './assets/generated/world-bg-tiles/farm-gpt-9grid/farm_tile_r2_c2.png',",
-          "    sky: './assets/generated/world-bg-single/farm-panorama.png',"
+          "    sky: './assets/generated/world-bg-single/farm-panorama.webp',"
         ],
         [
           "    alien: './assets/generated/world-bg-tiles/space-gpt-9grid/space_tile_r2_c2.png'",
-          "    alien: './assets/generated/world-bg-single/space-panorama.png'"
+          "    alien: './assets/generated/world-bg-single/space-panorama.webp'"
         ]
       ]
     },
@@ -505,7 +505,7 @@ function patchStandaloneCompleteMode() {
       replacements: [
         [
           '"image": "./assets/generated/world-bg-single/farm-panorama.png"',
-          '"image": "./assets/generated/world-bg-single/space-panorama.png"'
+          '"image": "./assets/generated/world-bg-single/space-panorama.webp"'
         ]
       ]
     }

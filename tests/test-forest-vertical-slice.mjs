@@ -11,6 +11,7 @@ const routeSource = fs.readFileSync(path.join(root, 'games/explore-map/forest-ro
 const exploreHtml = fs.readFileSync(path.join(root, 'games/explore-map/index.html'), 'utf8');
 const wordMapHtml = fs.readFileSync(path.join(root, 'games/word-memory-map/index.html'), 'utf8');
 const wordMapGame = fs.readFileSync(path.join(root, 'games/word-memory-map/game.js'), 'utf8');
+const wordMapStyles = fs.readFileSync(path.join(root, 'games/word-memory-map/styles.css'), 'utf8');
 const context = { URL, URLSearchParams };
 vm.runInNewContext(sessionSource, context, { filename: 'exploration-session.js' });
 vm.runInNewContext(routeSource, context, { filename: 'forest-route.js' });
@@ -22,6 +23,11 @@ assert.match(exploreHtml, /forest-route\.js/, '探索地图页面必须加载森
 assert.equal((exploreHtml.match(/forest-route\.js/g) || []).length, 1, '森林路线控制器只能加载一次');
 assert.match(wordMapHtml, /id="returnToExploreButton"/, '单词活动必须提供返回探索地图入口');
 assert.match(wordMapGame, /function returnToExploreMap/, '单词活动必须实现上下文返回');
+assert.match(exploreHtml, /#page-explore\s*\{[\s\S]*?min-width:\s*0[\s\S]*?max-width:\s*100%[\s\S]*?overflow-x:\s*hidden/, '探索地图页面根容器必须限制横向溢出');
+assert.match(exploreHtml, /#pixelStoryMapHost\s*\{[\s\S]*?min-width:\s*0[\s\S]*?max-width:\s*100%[\s\S]*?overflow-x:\s*hidden/, '故事地图宿主必须允许在窄视口收缩');
+assert.match(exploreHtml, /#page-explore\s+\.pixel-story-shell\s*\{[\s\S]*?box-sizing:\s*border-box[\s\S]*?max-width:\s*100%/, '故事壳必须把内边距计入最大宽度');
+assert.match(wordMapStyles, /\.finish-modal\s*\{[\s\S]*?overflow-y:\s*auto/, '完成页容器必须允许在短视口滚动');
+assert.match(wordMapStyles, /\.finish-card\s*\{[\s\S]*?max-height:\s*calc\(100vh - 24px\)[\s\S]*?overflow-y:\s*auto/, '完成卡必须限制高度并允许访问底部返回按钮');
 
 const initial = routeApi.createState(manifest);
 assert.equal(initial.mapId, 'forest-farm');

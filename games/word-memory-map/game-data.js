@@ -126,14 +126,14 @@
     ]
   };
   const WORLD_PREVIEW_IMAGES = {
-    farm: './assets/generated/world-bg-single/farm-panorama.png',
+    farm: './assets/generated/world-bg-single/farm-panorama.webp',
     farm_gpt: './assets/generated/world-bg-tiles/farm-gpt-9grid/farm_tile_r2_c2.png',
     forest: './assets/generated/world-bg-tiles/forest-gpt-9grid/forest_tile_r2_c2.png',
-    grassland: './assets/generated/world-bg-single/farm-panorama.png',
+    grassland: './assets/generated/world-bg-single/farm-panorama.webp',
     ocean: './assets/generated/world-bg-tiles/ocean-gpt-9grid/ocean_tile_r2_c2.png',
-    sky: './assets/generated/world-bg-single/farm-panorama.png',
+    sky: './assets/generated/world-bg-single/farm-panorama.webp',
     space: './assets/generated/world-bg-tiles/space-gpt-9grid/space_tile_r2_c2.png',
-    alien: './assets/generated/world-bg-single/space-panorama.png'
+    alien: './assets/generated/world-bg-single/space-panorama.webp'
   };
   const ROUND_SIZE = 3;
   const SESSION_WORD_TARGET = 50;

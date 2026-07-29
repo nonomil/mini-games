@@ -2,7 +2,7 @@
   "id": "grassland-9grid-world-single",
   "theme": "grassland",
   "mode": "single",
-  "image": "./assets/generated/world-bg-single/farm-panorama.png",
+  "image": "./assets/generated/world-bg-single/farm-panorama.webp",
   "labels": [
     "风车坡口",
     "云影大道",

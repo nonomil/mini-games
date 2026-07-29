@@ -2,7 +2,7 @@
   "id": "space-9grid-world-single",
   "theme": "space",
   "mode": "single",
-  "image": "./assets/generated/world-bg-single/space-panorama.png",
+  "image": "./assets/generated/world-bg-single/space-panorama.webp",
   "labels": [
     "观察教室",
     "穹顶观测厅",
