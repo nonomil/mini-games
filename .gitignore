@@ -17,3 +17,9 @@ node_modules/
 .idea/
 .vscode/
 
+# Local browser QA sessions, reports, and screenshots
+/.playwright-mcp/
+/output/
+/*.png
+/*.jpg
+/*.jpeg

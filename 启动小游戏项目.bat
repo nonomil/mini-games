@@ -1,7 +1,7 @@
 @echo off
 setlocal EnableExtensions
 cd /d "%~dp0"
-title Mini Games v0.1.1
+title Mini Games v0.2.0
 
 where node >nul 2>&1
 if errorlevel 1 (
@@ -12,7 +12,7 @@ if errorlevel 1 (
 
 set "HOST=127.0.0.1"
 set "PORT=7003"
-echo [Mini Games] Version: v0.1.1
+echo [Mini Games] Version: v0.2.0
 echo [Mini Games] Starting http://%HOST%:%PORT%/
 start "Mini Games Server" cmd /k "set HOST=%HOST%&& set PORT=%PORT%&& node local-server.mjs"
 

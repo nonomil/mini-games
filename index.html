@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <title>小游戏项目</title>
+  <link rel="icon" type="image/webp" href="./assets/pets/poses/dog_idle.webp">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="./" aria-label="小游戏项目首页"><span class="brand-mark" aria-hidden="true">玩</span><span><strong>小游戏项目</strong><small>完整地图、全量词库、全部玩法 <b class="project-version-badge">v0.1.1</b></small></span></a>
+    <a class="brand" href="./" aria-label="小游戏项目首页"><span class="brand-mark" aria-hidden="true">玩</span><span><strong>小游戏项目</strong><small>完整地图、全量词库、全部玩法 <b class="project-version-badge">v0.2.0</b></small></span></a>
     <nav class="site-nav" aria-label="项目导航">
       <a href="#content-scope">完整内容</a>
       <a href="#games">游戏库</a>
@@ -21,40 +22,67 @@
   <main class="playground-page">
     <section id="playground" class="playground-hero" aria-labelledby="page-title">
       <div class="pg-header">
-        <a class="pg-home-button" href="#games" title="查看全部游戏"><span aria-hidden="true">⌂</span><span>首页</span></a>
-        <img class="pg-mascot-img" src="./assets/ui/pg-mascot.webp" alt="游乐场吉祥物" decoding="async">
+        <div class="pg-route-note"><span>首页</span><strong>学习游戏大厅</strong></div>
         <div class="pg-coin-badge" title="本项目积分"><span class="coin-icon" aria-hidden="true">¥</span><span class="coin-num" data-points>0</span></div>
       </div>
 
       <div class="playground-layout">
-        <aside class="playground-progress-shell" aria-label="完整内容导航">
-          <div class="playground-progress-head">
-            <div><span class="playground-games-kicker">完整内容</span><h2>探险作战看板</h2><p>所有地图、词库和卡牌都在这里开放。</p></div>
-            <span class="playground-progress-badge"><strong data-game-count>11</strong> 个入口</span>
+        <aside class="playground-progress-shell" aria-label="游戏大厅侧边导航">
+          <div class="playground-sidebar-brand">
+            <img src="./assets/ui/pg-mascot.webp" alt="游乐场吉祥物" decoding="async">
+            <div><span>小游戏项目</span><strong>学习冒险</strong></div>
           </div>
-          <div class="playground-progress-grid">
-            <a class="playground-progress-card" href="./games/forest-map/" target="_blank" rel="noopener noreferrer">
-              <span class="playground-progress-kicker">经典路线</span><strong>森林冒险地图</strong><small>12 个自然场景</small><span class="playground-progress-action">查看完整地图 →</span>
-            </a>
-            <a class="playground-progress-card" href="./games/explore-map/" target="_blank" rel="noopener noreferrer">
-              <span class="playground-progress-kicker is-purple">故事远征</span><strong>三世界故事地图</strong><small>60 个主线 + 20 个额外节点</small><span class="playground-progress-action is-purple">打开故事地图 →</span>
-            </a>
-            <a class="playground-progress-card" href="./games/card-collection/">
-              <span class="playground-progress-kicker is-coral">宠物图鉴</span><strong>完整宠物卡册</strong><small>261 种宠物与成长形态</small><span class="playground-progress-action is-coral">进入图鉴 →</span>
-            </a>
-          </div>
+          <nav class="playground-sidebar-nav playground-sidebar-nav-primary" aria-label="游戏大厅导航">
+            <a class="is-active" href="#playground" data-sidebar-category="all"><span class="playground-sidebar-icon" aria-hidden="true">⌂</span><span><strong>首页大厅</strong><small>今天从这里继续</small></span></a>
+          </nav>
+          <section class="playground-sidebar-section" aria-labelledby="sidebarCategoryTitle">
+            <span class="playground-sidebar-section-title" id="sidebarCategoryTitle">按玩法选择</span>
+            <nav class="playground-sidebar-nav playground-sidebar-category-nav" aria-label="游戏分类">
+              <a href="#playgroundGameGrid" data-sidebar-category="explore"><span class="playground-sidebar-icon playground-sidebar-icon-explore" aria-hidden="true">⌘</span><span><strong>探险地图</strong><small>地图路线 · 2 款</small></span><b>2</b></a>
+              <a href="#playgroundGameGrid" data-sidebar-category="typing"><span class="playground-sidebar-icon playground-sidebar-icon-typing" aria-hidden="true">⌨</span><span><strong>打字训练</strong><small>键盘反应 · 3 款</small></span><b>3</b></a>
+              <a href="#playgroundGameGrid" data-sidebar-category="math"><span class="playground-sidebar-icon playground-sidebar-icon-math" aria-hidden="true">＋</span><span><strong>数学挑战</strong><small>加法乘法 · 1 款</small></span><b>1</b></a>
+              <a href="#playgroundGameGrid" data-sidebar-category="literacy"><span class="playground-sidebar-icon playground-sidebar-icon-literacy" aria-hidden="true">文</span><span><strong>拼音识字</strong><small>拼读认字 · 2 款</small></span><b>2</b></a>
+              <a href="#playgroundGameGrid" data-sidebar-category="cards"><span class="playground-sidebar-icon playground-sidebar-icon-cards" aria-hidden="true">◇</span><span><strong>卡牌对战</strong><small>策略回合 · 1 款</small></span><b>1</b></a>
+            </nav>
+          </section>
+          <div class="playground-sidebar-divider" aria-hidden="true"></div>
+          <section class="playground-sidebar-daily" aria-labelledby="sidebarDailyTitle">
+            <span class="playground-daily-label">每日随机 PK</span>
+            <strong id="sidebarDailyTitle">今天也来 5 题</strong>
+            <a href="./games/math-pk/?mode=daily" data-game-path="games/math-pk/?mode=daily" target="_blank" rel="noopener noreferrer">立即挑战<span aria-hidden="true">↗</span></a>
+          </section>
+          <section class="playground-sidebar-status" aria-labelledby="sidebarStatusTitle">
+            <div class="playground-sidebar-status-heading"><span>今日状态</span><strong id="sidebarStatusTitle">准备出发</strong></div>
+            <div class="playground-sidebar-stat"><span>可选玩法</span><strong>5 类</strong></div>
+            <div class="playground-sidebar-stat"><span>精选入口</span><strong><span data-game-count>11</span> 款</strong></div>
+            <div class="playground-sidebar-stat"><span>每日 PK</span><strong>5 题</strong></div>
+          </section>
         </aside>
+
+        <section class="playground-hero-banner" aria-labelledby="page-title">
+          <div class="playground-hero-content">
+            <span class="playground-hero-kicker">今天的学习冒险</span>
+            <h1 id="page-title">学习冒险乐园</h1>
+            <p>加法、乘法、拼音和打字，选一局马上出发。每次完成，都能让自己的冒险地图再亮一格。</p>
+            <div class="playground-hero-actions">
+              <a class="playground-primary-action" href="./games/math-pk/" data-game-path="games/math-pk/" target="_blank" rel="noopener noreferrer">开始数学冒险<span aria-hidden="true">→</span></a>
+              <a class="playground-secondary-action" href="#playgroundGameGrid">浏览游戏库<span aria-hidden="true">↓</span></a>
+            </div>
+          </div>
+        </section>
 
         <section class="playground-games-panel" aria-labelledby="playgroundGamesTitle">
           <header class="playground-games-header">
-            <div><span class="playground-games-kicker">学习游戏库</span><h1 id="page-title">完整游戏世界，随时出发</h1><p id="playgroundCatalogHint">全部 · 9 款精选游戏</p></div>
+            <div><span class="playground-games-kicker">学习游戏库</span><h2 id="playgroundGamesTitle">选一款，马上开玩</h2><p id="playgroundCatalogHint">全部 · 9 款精选游戏</p></div>
             <strong class="playground-visible-count"><span id="playgroundVisibleCount">9</span> 款</strong>
           </header>
           <nav class="playground-category-tabs" aria-label="游戏分类" role="tablist">
             <button class="playground-category-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="playgroundGameGrid" data-playground-category="all"><span>全部</span><small>9</small></button>
-            <button class="playground-category-tab" type="button" role="tab" aria-selected="false" aria-controls="playgroundGameGrid" data-playground-category="english"><span>英语打字</span><small>3</small></button>
-            <button class="playground-category-tab" type="button" role="tab" aria-selected="false" aria-controls="playgroundGameGrid" data-playground-category="pinyin"><span>拼音识字</span><small>3</small></button>
-            <button class="playground-category-tab" type="button" role="tab" aria-selected="false" aria-controls="playgroundGameGrid" data-playground-category="challenge"><span>数学对战</span><small>3</small></button>
+            <button class="playground-category-tab" type="button" role="tab" aria-selected="false" aria-controls="playgroundGameGrid" data-playground-category="explore"><span>探险地图</span><small>2</small></button>
+            <button class="playground-category-tab" type="button" role="tab" aria-selected="false" aria-controls="playgroundGameGrid" data-playground-category="typing"><span>打字训练</span><small>3</small></button>
+            <button class="playground-category-tab" type="button" role="tab" aria-selected="false" aria-controls="playgroundGameGrid" data-playground-category="math"><span>数学挑战</span><small>1</small></button>
+            <button class="playground-category-tab" type="button" role="tab" aria-selected="false" aria-controls="playgroundGameGrid" data-playground-category="literacy"><span>拼音识字</span><small>2</small></button>
+            <button class="playground-category-tab" type="button" role="tab" aria-selected="false" aria-controls="playgroundGameGrid" data-playground-category="cards"><span>卡牌对战</span><small>1</small></button>
           </nav>
           <div class="playground-grid" id="playgroundGameGrid" data-featured-grid aria-label="游乐场精选游戏"></div>
         </section>
