@@ -4,7 +4,7 @@
  * 全屏竞技台：左=人类选手，右=机器人选手，同题竞速。
  * 每轮同一题，机器人有「思考倒计时」（按难度），人若在机器人之前答对则人赢该轮；
  * 答错不结束（继续抢答但机器人仍在计时）。共 5 轮，比胜场，人赢获成长积分。
- * 难度从「设置」页读取（petbank_math_difficulty），综合进阶档约 30% 出 CMATH 应用题。
+ * 难度从独立小游戏设置读取（minigames_math_difficulty），综合进阶档约 30% 出 CMATH 应用题。
  * 美术：assets/arena/（竞技台背景）+ 当前宠物头像 + 分级机器人对手。
  */
 (function() {
@@ -28,11 +28,11 @@
         BASE_SCORE: 10,          // 赢一轮基础分
         WIN_BONUS: 25,           // 赢得整局额外奖励
         WORD_RATIO: 0.3,         // medium_mix 出 CMATH 应用题概率
-        STORAGE_KEY_HIGH_SCORE: 'petbank_math_high_score',
-        STORAGE_KEY_DIFFICULTY: 'petbank_math_difficulty',
-        STORAGE_KEY_SUPPORT_PROGRESS: 'petbank_math_support_progress',
-        STORAGE_KEY_SUPPORT_UNLOCKS: 'petbank_math_support_unlocks',
-        STORAGE_KEY_SUPPORT_SELECTED: 'petbank_math_support_selected',
+        STORAGE_KEY_HIGH_SCORE: 'minigames_math_high_score',
+        STORAGE_KEY_DIFFICULTY: 'minigames_math_difficulty',
+        STORAGE_KEY_SUPPORT_PROGRESS: 'minigames_math_support_progress',
+        STORAGE_KEY_SUPPORT_UNLOCKS: 'minigames_math_support_unlocks',
+        STORAGE_KEY_SUPPORT_SELECTED: 'minigames_math_support_selected',
         MUL_TRAINING_UNLOCK_STREAK: 5
     };
 
