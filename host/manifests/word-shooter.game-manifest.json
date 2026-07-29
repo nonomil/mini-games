@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": 1,
+  "gameId": "word-shooter",
+  "title": "飞机大战",
+  "entry": "games/learning-arcade/index.html",
+  "runtime": {
+    "hostId": "learning-arcade",
+    "mode": "word-shooter"
+  },
+  "domains": ["english"],
+  "capabilities": ["standalone", "host", "legacy-result"],
+  "cardSchema": {
+    "required": ["cardId"],
+    "optional": ["word", "translation", "image", "audio", "example", "domain", "contentType"],
+    "unknownFields": "ignore",
+    "missingOptional": "null",
+    "preserveCardId": true
+  },
+  "legacy": {
+    "source": "petbank-learning-arcade",
+    "messageKind": "result",
+    "cardIdSource": "source card.id when supplied; current normalizer must not replace it with word text",
+    "resultFields": ["gameId", "gameLabel", "title", "copy", "stats", "settings", "activeGame"]
+  }
+}

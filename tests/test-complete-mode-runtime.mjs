@@ -56,15 +56,15 @@ assert.notDeepEqual(
   readBuffer('games/word-memory-map/assets/generated/hero-boy-assets/boy_up_walk_b.png'),
   '向上行走的两帧素材不能是同一张图片'
 );
-assert.match(read('games/word-memory-map/game-data.js'), /farm:\s*'\.\/assets\/generated\/world-bg-single\/farm-panorama\.png'/,
+assert.match(read('games/word-memory-map/game-data.js'), /farm:\s*'\.\/assets\/generated\/world-bg-single\/farm-panorama\.webp'/,
   '农场预览图必须对应实际加载的 farm-panorama 地图');
-assert.match(read('games/word-memory-map/game-data.js'), /grassland:\s*'\.\/assets\/generated\/world-bg-single\/farm-panorama\.png'/,
+assert.match(read('games/word-memory-map/game-data.js'), /grassland:\s*'\.\/assets\/generated\/world-bg-single\/farm-panorama\.webp'/,
   '草原预览图必须对应实际加载的 farm-panorama 地图');
-assert.match(read('games/word-memory-map/game-data.js'), /sky:\s*'\.\/assets\/generated\/world-bg-single\/farm-panorama\.png'/,
+assert.match(read('games/word-memory-map/game-data.js'), /sky:\s*'\.\/assets\/generated\/world-bg-single\/farm-panorama\.webp'/,
   '天空预览图必须对应实际加载的 farm-panorama 地图');
-assert.match(read('games/word-memory-map/game-data.js'), /alien:\s*'\.\/assets\/generated\/world-bg-single\/space-panorama\.png'/,
+assert.match(read('games/word-memory-map/game-data.js'), /alien:\s*'\.\/assets\/generated\/world-bg-single\/space-panorama\.webp'/,
   '外星球预览图必须对应实际加载的 space-panorama 地图');
-assert.match(read('games/word-memory-map/assets/generated/world-bg-tiles/alien-single-manifest.json'), /"image":\s*"\.\/assets\/generated\/world-bg-single\/space-panorama\.png"/,
+assert.match(read('games/word-memory-map/assets/generated/world-bg-tiles/alien-single-manifest.json'), /"image":\s*"\.\/assets\/generated\/world-bg-single\/space-panorama\.webp"/,
   '外星球 manifest 必须使用外星场景背景');
 
 console.log('PASS complete mode runtime contract');

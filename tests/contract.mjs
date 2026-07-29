@@ -16,8 +16,14 @@ assert.equal(manifest.projectUrl, 'https://nonomil.github.io/mini-games/');
 assert.ok(Array.isArray(manifest.games) && manifest.games.length >= 10);
 assert.match(read('index.html'), /<title>小游戏项目<\/title>/);
 assert.match(read('index.html'), /data-featured-grid/);
-assert.equal((read('index.html').match(/data-playground-category="(all|english|pinyin|challenge)"/g) || []).length, 4);
+assert.match(read('index.html'), /rel="icon"[^>]+dog_idle\.webp/);
+assert.equal((read('index.html').match(/data-playground-category="(all|explore|typing|math|literacy|cards)"/g) || []).length, 6);
+assert.match(read('index.html'), /data-sidebar-category="explore"/);
+assert.match(read('index.html'), /data-sidebar-category="typing"/);
+assert.match(read('index.html'), /data-sidebar-category="math"/);
 assert.match(read('app.js'), /target="_blank"/);
+assert.match(read('app.js'), /title: '数学冒险'/);
+assert.match(read('app.js'), /加法篇、乘法篇、每日随机 PK/);
 assert.match(read('bridge.js'), /petbank\.bridge\.v1\.completed/);
 assert.match(read('bridge.js'), /petbank\.bridge\.v1\.reward-result/);
 assert.doesNotMatch(read('app.js'), /petbank_points/);
@@ -37,6 +43,10 @@ for (const id of [
 ]) {
   assert.ok(gameIds.has(id), `${id} should be in the complete game library`);
 }
+const mathGame = manifest.games.find((game) => game.id === 'math-pk');
+assert.equal(mathGame.title, '数学冒险');
+assert.equal(mathGame.kicker, '加法篇 · 乘法篇');
+assert.match(mathGame.description, /每日随机 PK/);
 assert.ok(exists('data/pets.json'));
 assert.ok(exists('data/arena-stages.json'));
 assert.ok(exists('data/stories/forest.json'));
@@ -45,7 +55,7 @@ assert.ok(exists('assets/scenes/forest.webp'));
 assert.ok(exists('host/petbank-host-shim.js'));
 assert.ok(exists('vendor/css/playground.css'));
 assert.ok(exists('vendor/js/exploration.js'));
-assert.match(read('games/math-pk/index.html'), /MathPKGame\.renderUI\(['"]math-pk-container['"]\)/);
+assert.match(read('games/math-pk/game.js'), /MathAdventureGame\.render\(['"]math-pk-container['"]\)/);
 assert.match(read('games/hanzi/index.html'), /HanziGame\.renderUI\(['"]hanzi-container['"]\)/);
 assert.match(read('games/forest-map/index.html'), /ExplorationSystem\.loadScenes\(\)/);
 assert.match(read('games/forest-map/index.html'), /DOMContentLoaded', async function/);

@@ -10,15 +10,15 @@ const visibleCount = document.querySelector('#playgroundVisibleCount');
 const contentSummary = document.querySelector('[data-content-summary]');
 
 const FEATURED_CATALOG = Object.freeze([
-  { id: 'word-memory-map', category: 'english', title: '单词跑酷', kicker: '英语跑酷', description: '沿着像素地图跑起来，把单词、记忆和闯关放进一局游戏里。', image: 'assets/ui/pg-card-word-memory.webp', action: '进入游戏' },
-  { id: 'typing-defense', category: 'english', title: '消灭苦力怕', kicker: '输入训练', description: '弓箭起手、键盘命中，适合先热手再切别的训练。', image: 'assets/ui/pg-card-typing-defense.webp', action: '进入游戏' },
-  { id: 'word-cannon', category: 'pinyin', title: '拼音赛车', kicker: '合集子游戏', description: '看字换道、拼音发射，短局节奏很干脆，适合轮换着玩。', image: 'assets/ui/pg-card-word-cannon.webp', action: '直接开打', query: 'game=word-cannon' },
-  { id: 'word-shooter', category: 'english', title: '飞机大战', kicker: '合集子游戏', description: '用字母射击开局，适合孩子先建立按键马上有反馈的感觉。', image: 'assets/ui/pg-card-word-shooter.webp', action: '直接开打', query: 'game=word-shooter' },
-  { id: 'math-pk', category: 'challenge', title: '数学 PK', kicker: '数学练习', description: '从热身到冲星轨，适合先打一局把状态拉起来。', image: 'assets/ui/pg-card-mathpk.webp', action: '进入游戏' },
-  { id: 'hanzi', category: 'pinyin', title: '汉字游戏', kicker: '汉字挑战', description: '看字、认音、接气泡，适合把记字和反应放在一起练。', image: 'assets/ui/pg-card-hanzi.webp', action: '进入游戏' },
-  { id: 'card-arena', category: 'challenge', title: '卡牌对战', kicker: '战斗玩法', description: '把组队、出招和结算接成完整一局，适合继续推训练营。', image: 'assets/ui/pg-card-arena.webp', action: '进入游戏' },
-  { id: 'pinyin-snake', category: 'pinyin', title: '贪吃蛇', kicker: '合集子游戏', description: '方向键配拼音块，轻一点也很上头，适合切换手感。', image: 'assets/ui/pg-card-pinyin-snake.webp', action: '直接开打', query: 'game=pinyin-snake' },
-  { id: 'hanzi-bubble-runner', category: 'challenge', title: '独立小游戏项目', kicker: '独立项目', description: '汉字泡泡跑酷和拼音星际巡航保持独立进度，打开即可游玩。', image: 'assets/ui/pg-card-hanzi.webp', action: '打开新窗口' }
+  { id: 'word-memory-map', category: 'explore', title: '单词跑酷', kicker: '英语跑酷', description: '沿着像素地图跑起来，把单词、记忆和闯关放进一局游戏里。', image: 'assets/ui/pg-card-word-memory.webp', action: '进入游戏' },
+  { id: 'typing-defense', category: 'typing', title: '消灭苦力怕', kicker: '输入训练', description: '弓箭起手、键盘命中，适合先热手再切别的训练。', image: 'assets/ui/pg-card-typing-defense.webp', action: '进入游戏' },
+  { id: 'word-cannon', category: 'typing', title: '拼音赛车', kicker: '合集子游戏', description: '看字换道、拼音发射，短局节奏很干脆，适合轮换着玩。', image: 'assets/ui/pg-card-word-cannon.webp', action: '直接开打', query: 'game=word-cannon' },
+  { id: 'word-shooter', category: 'typing', title: '飞机大战', kicker: '合集子游戏', description: '用字母射击开局，适合孩子先建立按键马上有反馈的感觉。', image: 'assets/ui/pg-card-word-shooter.webp', action: '直接开打', query: 'game=word-shooter' },
+  { id: 'math-pk', category: 'math', title: '数学冒险', kicker: '加法篇 · 乘法篇', description: '加法篇、乘法篇、每日随机 PK，按关卡一步步玩下去。', image: 'assets/ui/pg-card-mathpk.webp', action: '开始冒险' },
+  { id: 'hanzi', category: 'literacy', title: '汉字游戏', kicker: '汉字挑战', description: '看字、认音、接气泡，适合把记字和反应放在一起练。', image: 'assets/ui/pg-card-hanzi.webp', action: '进入游戏' },
+  { id: 'card-arena', category: 'cards', title: '卡牌对战', kicker: '战斗玩法', description: '把组队、出招和结算接成完整一局，适合继续推训练营。', image: 'assets/ui/pg-card-arena.webp', action: '进入游戏' },
+  { id: 'pinyin-snake', category: 'literacy', title: '贪吃蛇', kicker: '合集子游戏', description: '方向键配拼音块，轻一点也很上头，适合切换手感。', image: 'assets/ui/pg-card-pinyin-snake.webp', action: '直接开打', query: 'game=pinyin-snake' },
+  { id: 'hanzi-bubble-runner', category: 'explore', title: '独立小游戏项目', kicker: '独立项目', description: '汉字泡泡跑酷和拼音星际巡航保持独立进度，打开即可游玩。', image: 'assets/ui/pg-card-hanzi.webp', action: '打开新窗口' }
 ]);
 
 function escapeHtml(value) {
@@ -62,7 +62,7 @@ function renderFeaturedGame(game) {
   const image = escapeHtml(game.image || 'assets/ui/pg-card-hanzi.webp');
   const cropClass = ['typing-defense', 'word-shooter', 'hanzi'].includes(game.id) ? ' pg-card-media-crop-right' : '';
   return `<a class="pg-img-card pg-feature-card" href="${path}" data-game-path="${path}" data-playground-category="${escapeHtml(game.category)}" target="_blank" rel="noopener noreferrer">
-    <span class="pg-card-media${cropClass}"><img src="${image}" alt="${escapeHtml(game.title)}" loading="lazy" decoding="async"></span>
+    <span class="pg-card-media${cropClass}"><img src="${image}" alt="${escapeHtml(game.title)}" loading="eager" decoding="async"></span>
     <span class="pg-card-copy"><span class="pg-card-kicker">${escapeHtml(game.kicker)}</span><strong class="pg-card-title">${escapeHtml(game.title)}</strong><span class="pg-card-desc">${escapeHtml(game.description)}</span></span>
     <span class="pg-card-footer">${escapeHtml(game.action)}<span aria-hidden="true">${game.action === '打开新窗口' ? '↗' : '→'}</span></span>
   </a>`;
@@ -107,7 +107,8 @@ function wireGameLinks() {
 function setFeaturedCategory(category) {
   const tabs = [...document.querySelectorAll('[data-playground-category]')].filter((node) => node.matches('button'));
   const cards = [...document.querySelectorAll('[data-featured-grid] [data-playground-category]')];
-  const nextCategory = ['all', 'english', 'pinyin', 'challenge'].includes(category) ? category : 'all';
+  const sidebarLinks = [...document.querySelectorAll('[data-sidebar-category]')];
+  const nextCategory = ['all', 'explore', 'typing', 'math', 'literacy', 'cards'].includes(category) ? category : 'all';
   let count = 0;
   tabs.forEach((tab) => {
     const selected = tab.dataset.playgroundCategory === nextCategory;
@@ -120,8 +121,9 @@ function setFeaturedCategory(category) {
     card.hidden = !visible;
     if (visible) count += 1;
   });
+  sidebarLinks.forEach((link) => link.classList.toggle('is-active', link.dataset.sidebarCategory === nextCategory));
   if (visibleCount) visibleCount.textContent = String(count);
-  if (categoryHint) categoryHint.textContent = `${nextCategory === 'all' ? '全部' : ({ english: '英语打字', pinyin: '拼音识字', challenge: '数学对战' }[nextCategory])} · ${count} 款精选游戏`;
+  if (categoryHint) categoryHint.textContent = `${nextCategory === 'all' ? '全部' : ({ explore: '探险地图', typing: '打字训练', math: '数学挑战', literacy: '拼音识字', cards: '卡牌对战' }[nextCategory])} · ${count} 款精选游戏`;
 }
 
 function wireFeaturedTabs() {
@@ -135,6 +137,12 @@ function wireFeaturedTabs() {
       tabs[nextIndex].focus();
       setFeaturedCategory(tabs[nextIndex].dataset.playgroundCategory);
     });
+  });
+}
+
+function wireSidebarCategories() {
+  document.querySelectorAll('[data-sidebar-category]').forEach((link) => {
+    link.addEventListener('click', () => setFeaturedCategory(link.dataset.sidebarCategory));
   });
 }
 
@@ -163,6 +171,7 @@ try {
   projectLinks.innerHTML = Object.values(manifest.links || {}).map(renderProjectLink).join('');
   setFeaturedCategory('all');
   wireFeaturedTabs();
+  wireSidebarCategories();
   wireGameLinks();
 } catch (error) {
   console.warn('[mini-games] boot failed', error);

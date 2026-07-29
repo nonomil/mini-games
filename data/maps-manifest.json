@@ -136,7 +136,7 @@
       "activityIds": ["word-memory-map"],
       "routeId": "forest-farm-main-v1",
       "checkpointPolicy": "chapter-group",
-      "background": "games/word-memory-map/assets/generated/world-bg-single/farm-panorama.png",
+      "background": "games/word-memory-map/assets/generated/world-bg-single/farm-panorama.webp",
       "freeEntry": true,
       "routePolicy": "recommended-not-locked",
       "nodes": [
@@ -267,7 +267,7 @@
       "activityIds": ["typing-defense", "learning-arcade"],
       "routeId": "space-farm-main-v1",
       "checkpointPolicy": "chapter-group",
-      "background": "games/word-memory-map/assets/generated/world-bg-single/space-panorama.png",
+      "background": "games/word-memory-map/assets/generated/world-bg-single/space-panorama.webp",
       "freeEntry": true,
       "routePolicy": "recommended-not-locked",
       "nodes": [
@@ -398,7 +398,7 @@
       "activityIds": ["word-memory-map"],
       "routeId": "alien-farm-main-v1",
       "checkpointPolicy": "chapter-group",
-      "background": "games/word-memory-map/assets/generated/world-bg-single/space-panorama.png",
+      "background": "games/word-memory-map/assets/generated/world-bg-single/space-panorama.webp",
       "freeEntry": true,
       "routePolicy": "recommended-not-locked",
       "nodes": [

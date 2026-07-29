@@ -387,8 +387,25 @@
     };
   }
 
+  const hostCleanups = new Set();
+  function registerHostCleanup(cleanup) {
+    if (typeof cleanup !== 'function') return () => {};
+    hostCleanups.add(cleanup);
+    return () => hostCleanups.delete(cleanup);
+  }
+  function cleanupHost() {
+    const cleanups = Array.from(hostCleanups);
+    hostCleanups.clear();
+    cleanups.forEach((cleanup) => {
+      try { cleanup(); } catch (error) { console.warn('[mini-games-host] cleanup failed', error); }
+    });
+    return cleanups.length;
+  }
+
   global.MiniGamesHost = Object.freeze({
     toast,
-    ready: true
+    ready: true,
+    registerCleanup: registerHostCleanup,
+    cleanup: cleanupHost
   });
 }(window));

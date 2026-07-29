@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": 1,
+  "gameId": "typing-defense",
+  "title": "消灭苦力怕",
+  "entry": "games/typing-defense/web/index.html",
+  "runtime": {
+    "hostId": "typing-defense",
+    "mode": "default"
+  },
+  "domains": ["english", "pinyin", "math"],
+  "capabilities": ["standalone", "host", "legacy-result"],
+  "cardSchema": {
+    "required": ["cardId"],
+    "optional": ["word", "translation", "image", "audio", "example", "domain", "contentType"],
+    "unknownFields": "ignore",
+    "missingOptional": "null",
+    "preserveCardId": true
+  },
+  "legacy": {
+    "source": "petbank-typing-defense",
+    "messageKind": "result",
+    "cardIdSource": "task.id when supplied; no generated fallback",
+    "resultFields": ["won", "score", "hits", "misses", "hp", "combo", "bestCombo", "roundIndex", "roundGoal", "mode", "vocabId", "earnedStars"]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mini-games://host/game-manifest.schema.json",
+  "title": "Mini-games host manifest draft",
+  "description": "跨游戏宿主清单 v1 草案。用于静态发现入口、能力和卡片字段，不改变现有游戏运行时。",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "protocolVersion",
+    "gameId",
+    "title",
+    "entry",
+    "domains",
+    "capabilities",
+    "cardSchema"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "protocolVersion": { "const": 1 },
+    "gameId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "entry": { "type": "string", "minLength": 1 },
+    "runtime": {
+      "type": "object",
+      "required": ["hostId", "mode"],
+      "properties": {
+        "hostId": { "type": "string", "minLength": 1 },
+        "mode": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "domains": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "capabilities": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "standalone",
+          "host",
+          "legacy-result",
+          "card-input",
+          "ready",
+          "init",
+          "card-result",
+          "complete",
+          "stop",
+          "error",
+          "idempotent-result"
+        ]
+      }
+    },
+    "cardSchema": {
+      "type": "object",
+      "required": [
+        "required",
+        "optional",
+        "unknownFields",
+        "missingOptional",
+        "preserveCardId"
+      ],
+      "properties": {
+        "required": {
+          "const": ["cardId"]
+        },
+        "optional": {
+          "const": [
+            "word",
+            "translation",
+            "image",
+            "audio",
+            "example",
+            "domain",
+            "contentType"
+          ]
+        },
+        "unknownFields": { "const": "ignore" },
+        "missingOptional": { "const": "null" },
+        "preserveCardId": { "const": true }
+      },
+      "additionalProperties": false
+    },
+    "legacy": {
+      "type": "object",
+      "required": ["source", "messageKind"],
+      "properties": {
+        "source": { "type": "string", "minLength": 1 },
+        "messageKind": { "type": "string", "minLength": 1 },
+        "cardIdSource": { "type": "string" },
+        "resultFields": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

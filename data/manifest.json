@@ -108,14 +108,15 @@
     },
     {
       "id": "math-pk",
-      "title": "数学 PK",
-      "kicker": "数学对战",
-      "description": "完整加减、混合和乘法训练，保留全部难度、支援卡和成长进度。",
+      "title": "数学冒险",
+      "kicker": "加法篇 · 乘法篇",
+      "description": "加法篇、乘法篇、每日随机 PK 和共用错题本，按关卡一步步练习。",
       "path": "games/math-pk/",
       "tags": [
-        "口算",
+        "加法",
         "乘法",
-        "PK"
+        "每日 PK",
+        "错题本"
       ],
       "accent": "#bb815d",
       "mode": "complete"
